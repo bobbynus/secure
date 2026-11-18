@@ -1,0 +1,130 @@
+{
+  "id": "sr-26-0016",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": true,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Fortinet",
+  "products": [
+    "fortios"
+  ],
+  "identifiers": {
+    "cve": [],
+    "advisory": [
+      "FG-IR-26-268"
+    ],
+    "kb": []
+  },
+  "affected": [
+    {
+      "product": "FortiOS 8.0",
+      "versions": "8.0.0 through 8.0.1",
+      "fixed": "8.0.2"
+    },
+    {
+      "product": "FortiOS 7.6",
+      "versions": "7.6.0 through 7.6.7",
+      "fixed": "7.6.8"
+    },
+    {
+      "product": "FortiOS 7.4",
+      "versions": "7.4.0 through 7.4.12",
+      "fixed": "7.4.13"
+    },
+    {
+      "product": "FortiOS 7.2",
+      "versions": "7.2.0 through 7.2.13",
+      "fixed": "7.2.14"
+    }
+  ],
+  "cvss": {
+    "score": 9.6,
+    "version": "3.x",
+    "source": "FortiGuard PSIRT advisories"
+  },
+  "dates": {
+    "event": "2026-11-10T08:00:00Z",
+    "published": "2026-11-18T20:01:29Z",
+    "updated": "2026-11-18T20:01:29Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Numeric truncation error",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-268",
+      "publisher": "FortiGuard PSIRT advisories",
+      "kind": "vendor",
+      "date": "2026-11-10"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-18T20:01:29Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-18T20:01:29Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "fortios-i-fortisase-oshibka-chislennogo-usecheniya-v-bgp-daemon",
+      "title": "FortiOS и FortiSASE: ошибка численного усечения в bgp daemon",
+      "summary": "Уязвимость ошибки численного усечения в bgp daemon FortiOS и FortiSASE может позволить настроенному соседу ibgp отправить вредоносные атрибуты через специально сформированный запрос, приводя к отказу в обслуживании.",
+      "impact": "Настроенный сосед ibgp может отправить вредоносные или некорректные атрибуты всем подключенным маршрутизаторам через специально сформированный запрос, вызывая отказ в обслуживании.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Обновитесь до FortiOS 8.0.2, 7.6.8, 7.4.13, 7.2.14 или выше либо мигрируйте на исправленный выпуск для FortiSASE.",
+      "checks": [
+        "Проверьте системы FortiOS и FortiSASE на наличие затронутых версий.",
+        "Проверьте настройки BGP и соседей ibgp.",
+        "Примените рекомендуемое обновление или виртуальный патч `FG-VD-62507.0day.`."
+      ],
+      "workaround": "Виртуальный патч с именем `FG-VD-62507.0day.` доступен в обновлении базы данных FMWP 26.118."
+    },
+    "de": {
+      "status": "ready",
+      "slug": "fortios-und-fortisase-numerischer-kuerzungsfehler-im-bgp-daemon",
+      "title": "FortiOS und FortiSASE: Numerischer Kürzungsfehler im bgp daemon",
+      "summary": "Eine Schwachstelle durch numerische Kürzung im bgp daemon von FortiOS und FortiSASE kann es einem konfigurierten ibgp-Nachbarn ermöglichen, bösartige Attribute über eine speziell crafted Anfrage zu senden, was zu einem Denial of Service führt.",
+      "impact": "Ein konfigurierter ibgp-Nachbar kann bösartige oder fehlerhafte Attribute über eine speziell erstellte Anfrage an alle verbundenen Router senden, was einen Denial of Service verursacht.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Führen Sie ein Upgrade auf FortiOS 8.0.2, 7.6.8, 7.4.13, 7.2.14 oder höher durch oder migrieren Sie zu einer korrigierten Version für FortiSASE.",
+      "checks": [
+        "Überprüfen Sie FortiOS- und FortiSASE-Systeme auf betroffene Versionen.",
+        "Überprüfen Sie die BGP- und ibgp-Nachbarkonfigurationen.",
+        "Wenden Sie das empfohlene Update oder den virtuellen Patch `FG-VD-62507.0day.` an."
+      ],
+      "workaround": "Ein virtueller Patch namens `FG-VD-62507.0day.` ist im FMWP-DB-Update 26.118 verfügbar."
+    },
+    "en": {
+      "status": "ready",
+      "slug": "fortios-and-fortisase-numeric-truncation-error-in-bgp-daemon",
+      "title": "FortiOS and FortiSASE: numeric truncation error in bgp daemon",
+      "summary": "A numeric truncation error vulnerability in FortiOS and FortiSASE bgp daemon may allow a configured ibgp neighbor to send malicious attributes via a specially crafted request, leading to denial of service.",
+      "impact": "A configured ibgp neighbor can send malicious or malformed attributes to all connected routers via a specially crafted request, causing a denial of service.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Upgrade to FortiOS 8.0.2, 7.6.8, 7.4.13, 7.2.14 or above, or migrate to a fixed release for FortiSASE.",
+      "checks": [
+        "Check FortiOS and FortiSASE systems for running affected version ranges.",
+        "Verify BGP and ibgp neighbor configurations.",
+        "Apply the recommended upgrade or the virtual patch `FG-VD-62507.0day.`."
+      ],
+      "workaround": "A virtual patch named `FG-VD-62507.0day.` is available in FMWP db update 26.118."
+    }
+  }
+}

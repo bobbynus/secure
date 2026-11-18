@@ -1,0 +1,107 @@
+{
+  "id": "sr-26-0023",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-18",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Vanderbilt University",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-90817"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-18T00:00:00Z",
+    "published": "2026-11-18T20:01:29Z",
+    "updated": "2026-11-18T20:01:29Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-90817",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-18"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-18T20:01:29Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-18T20:01:29Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "redcap-inektsiya-koda-cherez-publichnyy-kontekst-oprosa",
+      "title": "REDCap: инъекция кода через публичный контекст опроса",
+      "summary": "Research Electronic Data Capture (REDCap) от Vanderbilt University содержит уязвимость внедрения кода, позволяющую неаутентифицированным злоумышленникам выполнять произвольный код. CISA добавила эту уязвимость в свой каталог эксплуатируемых уязвимостей.",
+      "impact": "Неаутентифицированный злоумышленник, обладающий действительным хешем публичного опроса, может выполнить произвольный код на сервере с помощью специально сформированных HTTP-запросов.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 18.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проведите инвентаризацию развертываний Research Electronic Data Capture (REDCap) в инфраструктуре.",
+        "Проверьте доступ из интернета и средства контроля доступа для маршрутов публичных опросов.",
+        "Проверьте инструкции вендора на наличие доступных средств снижения рисков или обновлений."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "redcap-code-injektion-ueber-oeffentlichen-umfragekontext",
+      "title": "REDCap: Code-Injektion über öffentlichen Umfragekontext",
+      "summary": "Research Electronic Data Capture (REDCap) von Vanderbilt University enthält eine Code-Injektions-Schwachstelle, die es unauthentifizierten Angreifern ermöglicht, beliebigen Code auszuführen. CISA hat diese Schwachstelle in den Katalog bekannter ausgenutzter Schwachstellen aufgenommen.",
+      "impact": "Ein unauthentifizierter Angreifer mit Kenntnis eines gültigen Hash-Werts einer öffentlichen Umfrage kann über manipulierte HTTP-Anfragen beliebigen Code auf dem Server ausführen.",
+      "exploitation": "CISA hat die Schwachstelle am 18.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "In den Quellen sind keine korrigierten Versionen genannt.",
+      "checks": [
+        "Inventarisieren Sie Research Electronic Data Capture (REDCap)-Installationen in der Infrastruktur.",
+        "Überprüfen Sie die Internetexposition und Zugriffskontrollen für öffentliche Umfragerouten.",
+        "Prüfen Sie die Herstelleranweisungen auf verfügbare Mitigationsmaßnahmen oder Updates."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "redcap-code-injection-via-public-survey-context",
+      "title": "REDCap: code injection via public survey context",
+      "summary": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability allowing unauthenticated attackers to execute arbitrary code. CISA has added this vulnerability to its Known Exploited Vulnerabilities catalog.",
+      "impact": "An unauthenticated attacker with knowledge of a valid public survey hash can execute arbitrary code on the server via crafted HTTP requests.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 18, 2026: exploitation in real attacks is confirmed.",
+      "fix": "The sources do not list fixed versions.",
+      "checks": [
+        "Inventory Research Electronic Data Capture (REDCap) deployments across the infrastructure.",
+        "Verify internet exposure and access controls for public survey routes.",
+        "Check vendor instructions for available mitigations or updates."
+      ]
+    }
+  }
+}

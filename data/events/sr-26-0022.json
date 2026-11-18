@@ -1,0 +1,104 @@
+{
+  "id": "sr-26-0022",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-18",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "BerriAI",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-40217"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-18T00:00:00Z",
+    "published": "2026-11-18T20:01:29Z",
+    "updated": "2026-11-18T20:01:29Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-40217",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-18"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-18T20:01:29Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-18T20:01:29Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "berriai-litellm-uyazvimost-nezashchishchennogo-alternativnogo",
+      "title": "BerriAI LiteLLM: уязвимость незащищенного альтернативного канала (CVE-2026-40217)",
+      "summary": "BerriAI LiteLLM содержит уязвимость незащищенного альтернативного канала, которая позволяет удаленным злоумышленникам выполнять произвольный код путем перезаписи байт-кода через URI /guardrails/test_custom_code. CISA добавила CVE-2026-40217 в каталог KEV.",
+      "impact": "Удаленные злоумышленники могут выполнять произвольный код посредством перезаписи байт-кода через URI /guardrails/test_custom_code.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 18.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "В источниках не указаны исправленные версии. Примените смягчающие меры в соответствии с инструкциями производителя.",
+      "checks": [
+        "Проверьте системы на наличие BerriAI LiteLLM.",
+        "Проверьте доступность URI /guardrails/test_custom_code."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "berriai-litellm-schwachstelle-durch-ungeschuetzten-alternativen",
+      "title": "BerriAI LiteLLM: Schwachstelle durch ungeschützten alternativen Kanal (CVE-2026-40217)",
+      "summary": "BerriAI LiteLLM enthält eine Schwachstelle durch einen ungeschützten alternativen Kanal, die es Angreifern ermöglicht, über Bytecode-Umschreibung an der URI /guardrails/test_custom_code beliebigen Code auszuführen. CISA hat CVE-2026-40217 in den KEV-Katalog aufgenommen.",
+      "impact": "Entfernte Angreifer können über Bytecode-Umschreibung an der URI /guardrails/test_custom_code beliebigen Code ausführen.",
+      "exploitation": "CISA hat die Schwachstelle am 18.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen. Wenden Sie Mitigationsmaßnahmen gemäß den Anweisungen des Herstellers an.",
+      "checks": [
+        "Überprüfen Sie Systeme auf das Vorhandensein von BerriAI LiteLLM.",
+        "Überprüfen Sie die Erreichbarkeit der URI /guardrails/test_custom_code."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "berriai-litellm-unprotected-alternate-channel-vulnerability-cve",
+      "title": "BerriAI LiteLLM: unprotected alternate channel vulnerability (CVE-2026-40217)",
+      "summary": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability allowing remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI. CISA added CVE-2026-40217 to its KEV catalog.",
+      "impact": "Remote attackers can execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 18, 2026: exploitation in real attacks is confirmed.",
+      "fix": "The sources do not state fixed versions. Apply mitigations in accordance with vendor instructions.",
+      "checks": [
+        "Check systems for the presence of BerriAI LiteLLM.",
+        "Verify exposure of the /guardrails/test_custom_code URI."
+      ]
+    }
+  }
+}

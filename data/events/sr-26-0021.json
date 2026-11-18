@@ -1,0 +1,104 @@
+{
+  "id": "sr-26-0021",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-18",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Synology",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2024-10441"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-18T00:00:00Z",
+    "published": "2026-11-18T20:01:29Z",
+    "updated": "2026-11-18T20:01:29Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2024-10441",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-18"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-18T20:01:29Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-18T20:01:29Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "synology-diskstation-manager-dsm-uyazvimost-kodirovaniya-vyvoda",
+      "title": "Synology DiskStation Manager (DSM): уязвимость кодирования вывода",
+      "summary": "Synology DiskStation Manager (DSM) содержит уязвимость некорректного кодирования или экранирования вывода, позволяющую удаленным злоумышленникам выполнять произвольный код.",
+      "impact": "Удаленный злоумышленник может выполнить произвольный код через неуказанные векторы.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 18.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "Примените смягчающие меры в соответствии с инструкциями производителя.",
+      "checks": [
+        "Проверьте системы на наличие развертываний Synology DiskStation Manager (DSM).",
+        "Проверьте уровень воздействия и примените смягчающие меры от производителя."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "synology-diskstation-manager-dsm-schwachstelle-bei-der-ausgabe",
+      "title": "Synology DiskStation Manager (DSM): Schwachstelle bei der Ausgabe-Codierung",
+      "summary": "Synology DiskStation Manager (DSM) enthält eine Schwachstelle durch unsachgemäße Codierung oder Maskierung von Ausgaben, die es Angreifern ermöglicht, beliebigen Code auszuführen.",
+      "impact": "Ein Remotegreifer kann über nicht näher bezeichnete Vektoren beliebigen Code ausführen.",
+      "exploitation": "CISA hat die Schwachstelle am 18.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Wenden Sie Abhilfemaßnahmen gemäß den Anweisungen des Herstellers an.",
+      "checks": [
+        "Überprüfen Sie Systeme auf den Einsatz von Synology DiskStation Manager (DSM).",
+        "Überprüfen Sie die Exposition und wenden Sie die vom Hersteller bereitgestellten Abhilfemaßnahmen an."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "synology-diskstation-manager-dsm-improper-output-encoding",
+      "title": "Synology DiskStation Manager (DSM): Improper output encoding vulnerability",
+      "summary": "Synology DiskStation Manager (DSM) contains an improper encoding or escaping of output vulnerability that allows remote attackers to execute arbitrary code.",
+      "impact": "A remote attacker can execute arbitrary code via unspecified vectors.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 18, 2026: exploitation in real attacks is confirmed.",
+      "fix": "Apply mitigations in accordance with vendor instructions.",
+      "checks": [
+        "Check systems for Synology DiskStation Manager (DSM) deployments.",
+        "Verify exposure and apply vendor-provided mitigations."
+      ]
+    }
+  }
+}
