@@ -90,7 +90,8 @@ export async function suggest(req: Request, env: Env): Promise<Response> {
 
   try {
     const issue = await createIssue(env, {
-      title: `[Source suggestion] ${oneLine(name)}`.slice(0, 200),
+      // Titles render as plain text; only neutralise @mentions.
+      title: `[Source suggestion] ${oneLine(name).replace(/@/g, '@​')}`.slice(0, 200),
       body: issueBody({ name, url: url.href, kind, format, language, products, rationale, docs: docs?.href ?? '' }),
     });
     await env.DB.prepare(`UPDATE suggestions SET status = 'created', issue_number = ?1, issue_url = ?2 WHERE request_id = ?3`)
