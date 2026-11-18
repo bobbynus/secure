@@ -1,0 +1,104 @@
+{
+  "id": "sr-26-0013",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-09",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "IBM",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-123218"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-09T00:00:00Z",
+    "published": "2026-11-18T19:30:45Z",
+    "updated": "2026-11-18T19:30:45Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "IBM Aspera Faspex Incorrect Authorization Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123218",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-09"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-18T19:30:45Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-18T19:30:45Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "ibm-aspera-faspex-uyazvimost-nekorrektnoy-avtorizatsii",
+      "title": "IBM Aspera Faspex: уязвимость некорректной авторизации",
+      "summary": "IBM Aspera Faspex содержит уязвимость некорректной авторизации, позволяющую аутентифицированным пользователям обходить авторизацию и повышать привилегии.",
+      "impact": "Аутентифицированный пользователь может сформировать специальное сообщение для обхода авторизации, что приводит к повышению привилегий.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 09.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "В источниках не указаны исправленные версии; примените смягчающие меры в соответствии с инструкциями производителя.",
+      "checks": [
+        "Проведите инвентаризацию развертываний IBM Aspera Faspex в инфраструктуре.",
+        "Проверьте системы на предмет доступности и примените смягчающие меры согласно инструкциям производителя."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "ibm-aspera-faspex-fehlerhafte-autorisierungsschwachstelle",
+      "title": "IBM Aspera Faspex: Fehlerhafte Autorisierungsschwachstelle",
+      "summary": "IBM Aspera Faspex enthält eine fehlerhafte Autorisierungsschwachstelle, die es authentifizierten Benutzern ermöglicht, die Autorisierung zu umgehen und Privilegien zu eskalieren.",
+      "impact": "Ein authentifizierter Benutzer kann eine spezifische Nachricht erstellen, um die Autorisierung zu umgehen, was zu einer Privilegienerweiterung führt.",
+      "exploitation": "CISA hat die Schwachstelle am 09.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen; wenden Sie Abhilfemaßnahmen gemäß den Herstelleranweisungen an.",
+      "checks": [
+        "Erfassen Sie IBM Aspera Faspex-Installationen in der Infrastruktur.",
+        "Überprüfen Sie Systeme auf Exponiertheit und wenden Sie Abhilfemaßnahmen gemäß den Herstelleranweisungen an."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "ibm-aspera-faspex-incorrect-authorization-vulnerability",
+      "title": "IBM Aspera Faspex: Incorrect Authorization Vulnerability",
+      "summary": "IBM Aspera Faspex contains an incorrect authorization vulnerability allowing authenticated users to bypass authorization and escalate privileges.",
+      "impact": "An authenticated user can craft a specific message to bypass authorization, resulting in privilege escalation.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 9, 2026: exploitation in real attacks is confirmed.",
+      "fix": "The sources do not list fixed versions; apply mitigations in accordance with vendor instructions.",
+      "checks": [
+        "Inventory IBM Aspera Faspex deployments across the infrastructure.",
+        "Check systems for exposure and apply mitigations according to vendor instructions."
+      ]
+    }
+  }
+}
