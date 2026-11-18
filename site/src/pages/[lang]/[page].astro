@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE } from '../../config';
+import { inline } from '../../lib/format';
+import { PAGES, STATIC_PAGES, type StaticPage } from '../../i18n/pages';
+import { LANGS, t, type Lang } from '../../i18n/ui';
+
+export const getStaticPaths = () => LANGS.flatMap((lang) => STATIC_PAGES.map((page) => ({ params: { lang, page } })));
+const lang = Astro.params.lang as Lang;
+const page = Astro.params.page as StaticPage;
+const title = t(lang, `${page}.title`);
+---
+
+<Base lang={lang} title={title}>
+  <div class="wrap page narrow prose">
+    <h1>{title}</h1>
+    {
+      PAGES[page][lang].map((s) => (
+        <section>
+          {s.h && <h2>{s.h}</h2>}
+          {s.p.map((p) => <p set:html={inline(p)} />)}
+        </section>
+      ))
+    }
+    {
+      page === 'contacts' && (
+        <ul class="contact-links">
+          {SITE.repoUrl && <li><a href={`${SITE.repoUrl}/issues`} rel="noopener">GitHub Issues ↗</a></li>}
+          {SITE.contactEmail && <li><a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a></li>}
+        </ul>
+      )
+    }
+  </div>
+</Base>

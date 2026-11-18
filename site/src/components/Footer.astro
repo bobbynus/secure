@@ -1,0 +1,36 @@
+---
+import { SITE } from '../config';
+import { t, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const follow = [
+  { href: `/${lang}/rss.xml`, label: 'RSS' },
+  SITE.telegram[lang] ? { href: SITE.telegram[lang], label: 'Telegram' } : null,
+  SITE.repoUrl ? { href: SITE.repoUrl, label: 'GitHub' } : null,
+  SITE.kofiUrl ? { href: SITE.kofiUrl, label: 'Ko-fi' } : null,
+].filter((x): x is { href: string; label: string } => !!x);
+const pages = [
+  { href: `/${lang}/about/`, label: t(lang, 'footer.about') },
+  { href: `/${lang}/sources/`, label: t(lang, 'footer.sources') },
+  { href: `/${lang}/privacy/`, label: t(lang, 'footer.privacy') },
+  { href: `/${lang}/contacts/`, label: t(lang, 'footer.contacts') },
+];
+---
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <nav aria-label={t(lang, 'footer.follow')}>
+      <ul class="footer-links">
+        {follow.map((f) => <li><a href={f.href}>[{f.label}]</a></li>)}
+      </ul>
+    </nav>
+    <nav aria-label={t(lang, 'footer.about')}>
+      <ul class="footer-links">
+        {pages.map((p) => <li><a href={p.href}>{p.label}</a></li>)}
+      </ul>
+    </nav>
+    <p class="footer-note">{t(lang, 'footer.note')}</p>
+    <p class="footer-note mono">© {new Date().getUTCFullYear()} {SITE.name}</p>
+  </div>
+</footer>

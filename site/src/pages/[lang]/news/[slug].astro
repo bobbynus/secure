@@ -1,0 +1,209 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Support from '../../../components/Support.astro';
+import { alternates, eventsIn, loadAll } from '../../../lib/events';
+import { esc, fmtDate, fmtDateTime, inline } from '../../../lib/format';
+import { LANGS, LANG_NAME, t, type Lang } from '../../../i18n/ui';
+import type { SecEvent } from '../../../lib/events';
+
+export async function getStaticPaths() {
+  const out = [];
+  for (const lang of LANGS) {
+    for (const e of await eventsIn(lang)) {
+      out.push({ params: { lang, slug: `${e.id}-${e.translations[lang].slug}` }, props: { e } });
+    }
+  }
+  return out;
+}
+
+interface Props { e: SecEvent }
+const { e } = Astro.props;
+const lang = Astro.params.lang as Lang;
+const tr = e.translations[lang];
+const { products } = await loadAll();
+const alt = alternates(e);
+const pname = (id: string) => products.get(id)?.name ?? id;
+const ids = [...e.identifiers.cve, ...e.identifiers.advisory, ...e.identifiers.kb];
+const PRIO_ICON = { critical: '◆', high: '▲', medium: '■', low: '●', info: 'i' } as const;
+const revisions = [...e.revisions].sort((a, b) => b.date.localeCompare(a.date));
+const sourceById = new Map(e.sources.map((s, i) => [s.id, i + 1]));
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  headline: tr.title,
+  description: tr.summary,
+  datePublished: e.dates.published,
+  dateModified: e.dates.updated,
+  inLanguage: lang,
+  isBasedOn: e.sources.map((s) => s.url),
+};
+---
+
+<Base lang={lang} title={tr.title} description={tr.summary} alternates={alt} ogType="article">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
+  <article class="wrap article">
+    <p class="crumbs"><a href={`/${lang}/`}>{t(lang, 'art.back')}</a> <span class="mono muted">/ {e.id}</span></p>
+
+    <header class="article-head">
+      <div class="card-meta">
+        <span class={`flag flag-${e.priority}`}><span aria-hidden="true">{PRIO_ICON[e.priority]}</span> {t(lang, `prio.${e.priority}`)}</span>
+        <span class="flag flag-cat">{t(lang, `cat.${e.category}`)}</span>
+        {e.exploitation.status === 'confirmed' && <span class="flag flag-exp"><span aria-hidden="true">⚠</span> {t(lang, 'exp.confirmed')}</span>}
+        {e.exploitation.status === 'reported' && <span class="flag flag-exp-rep">{t(lang, 'exp.reported')}</span>}
+        {e.exploitation.kev && <span class="flag flag-kev">KEV</span>}
+      </div>
+      <h1>{tr.title}</h1>
+      <p class="lede">{tr.summary}</p>
+    </header>
+
+    <section class="facts" aria-labelledby="facts-h">
+      <h2 id="facts-h" class="visually-hidden">{t(lang, 'art.facts')}</h2>
+      <dl class="facts-grid">
+        <div><dt>{t(lang, 'art.type')}</dt><dd>{t(lang, `cat.${e.category}`)}</dd></div>
+        <div><dt>{t(lang, 'art.priority')}</dt><dd>{t(lang, `prio.${e.priority}`)}</dd></div>
+        <div><dt>{t(lang, 'art.confirmation')}</dt><dd>{t(lang, `conf.${e.confirmation}`)}</dd></div>
+        <div><dt>{t(lang, 'art.lifecycle')}</dt><dd>{t(lang, `life.${e.lifecycle}`)} · {t(lang, `fix.${e.fix}`)}</dd></div>
+        <div><dt>{t(lang, 'art.event')}</dt><dd class="mono"><time datetime={e.dates.event}>{fmtDateTime(e.dates.event)} UTC</time></dd></div>
+        <div><dt>{t(lang, 'art.published')}</dt><dd class="mono"><time datetime={e.dates.published}>{fmtDateTime(e.dates.published)} UTC</time></dd></div>
+        <div><dt>{t(lang, 'art.updated')}</dt><dd class="mono"><time datetime={e.dates.updated}>{fmtDateTime(e.dates.updated)} UTC</time></dd></div>
+        {ids.length > 0 && <div><dt>{t(lang, 'art.ids')}</dt><dd class="mono ids">{ids.join(', ')}</dd></div>}
+        {
+          e.cvss && (
+            <div>
+              <dt>{t(lang, 'art.cvss')}</dt>
+              <dd>
+                <span class="mono">{e.cvss.score.toFixed(1)}</span>{' '}
+                <span class="muted small">{t(lang, 'art.cvssNote', { v: e.cvss.version, s: e.cvss.source })}</span>
+              </dd>
+            </div>
+          )
+        }
+      </dl>
+    </section>
+
+    <section aria-labelledby="products-h">
+      <h2 id="products-h">{t(lang, 'art.products')}</h2>
+      <div class="table-scroll">
+        <table class="table">
+          <thead>
+            <tr><th scope="col">{t(lang, 'art.product')}</th><th scope="col">{t(lang, 'art.versions')}</th><th scope="col">{t(lang, 'art.fixedIn')}</th></tr>
+          </thead>
+          <tbody>
+            {
+              e.affected.map((a) => (
+                <tr>
+                  <th scope="row"><a href={`/${lang}/products/${a.product}/`}>{pname(a.product)}</a></th>
+                  <td class="mono">{a.versions}</td>
+                  <td class="mono">{a.fixed ?? '—'}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {
+      tr.regression && (
+        <section aria-labelledby="reg-h" class="callout callout-amber">
+          <h2 id="reg-h">{t(lang, 'art.regression')}</h2>
+          <dl class="reg">
+            <dt>{t(lang, 'reg.update')}</dt>
+            <dd set:html={inline(tr.regression.update)} />
+            <dt>{t(lang, 'reg.symptoms')}</dt>
+            <dd><ul>{tr.regression.symptoms.map((s) => <li set:html={inline(s)} />)}</ul></dd>
+            <dt>{t(lang, 'reg.conditions')}</dt>
+            <dd set:html={inline(tr.regression.conditions)} />
+            <dt>{t(lang, 'reg.vendorStatus')}</dt>
+            <dd set:html={inline(tr.regression.vendorStatus)} />
+            {tr.regression.fixedBy && <><dt>{t(lang, 'reg.fixedBy')}</dt><dd set:html={inline(tr.regression.fixedBy)} /></>}
+            {tr.regression.rollback && <><dt>{t(lang, 'reg.rollback')}</dt><dd set:html={inline(tr.regression.rollback)} /></>}
+          </dl>
+        </section>
+      )
+    }
+
+    <section aria-labelledby="impact-h">
+      <h2 id="impact-h">{t(lang, 'art.impact')}</h2>
+      <p set:html={inline(tr.impact)} />
+    </section>
+
+    <section aria-labelledby="exp-h">
+      <h2 id="exp-h">{t(lang, 'art.exploitation')}</h2>
+      <p>
+        <span class={`flag ${e.exploitation.status === 'confirmed' ? 'flag-exp' : 'flag-cat'}`}>{t(lang, `exp.${e.exploitation.status}`)}</span>
+        {e.exploitation.kevAdded && <span class="mono small muted"> {t(lang, 'art.kevAdded', { d: e.exploitation.kevAdded })}</span>}
+      </p>
+      <p set:html={inline(tr.exploitation)} />
+      {
+        e.exploitation.evidence.length > 0 && (
+          <p class="small muted">
+            {e.exploitation.evidence.map((id) => <a class="src-ref" href={`#src-${id}`}>[{sourceById.get(id)}]</a>)}
+          </p>
+        )
+      }
+    </section>
+
+    <section aria-labelledby="fix-h">
+      <h2 id="fix-h">{t(lang, 'art.fix')}</h2>
+      <p set:html={inline(tr.fix)} />
+      {
+        tr.workaround && (
+          <>
+            <h3>{t(lang, 'art.workaround')}</h3>
+            <p set:html={inline(tr.workaround)} />
+          </>
+        )
+      }
+    </section>
+
+    <section aria-labelledby="checks-h" class="callout">
+      <h2 id="checks-h">{t(lang, 'art.checks')}</h2>
+      <ul class="checks">{tr.checks.map((c) => <li set:html={inline(c)} />)}</ul>
+      <p class="small muted">{t(lang, 'art.checksNote')}</p>
+    </section>
+
+    <section aria-labelledby="hist-h">
+      <h2 id="hist-h">{t(lang, 'art.history')}</h2>
+      <ol class="history">
+        {
+          revisions.map((r) => (
+            <li>
+              <time class="mono" datetime={r.date}>{fmtDateTime(r.date)} UTC</time>
+              <span>{r.note[lang]}</span>
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+
+    <section aria-labelledby="src-h">
+      <h2 id="src-h">{t(lang, 'art.sources')}</h2>
+      <ol class="sources">
+        {
+          e.sources.map((s) => (
+            <li id={`src-${s.id}`}>
+              <a href={s.url} rel="noopener nofollow" set:html={esc(s.title)} />
+              <span class="muted small mono"> — {s.publisher} · {t(lang, `src.${s.kind}`)}{s.date && ` · ${fmtDate(s.date)}`}</span>
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+
+    <nav class="other-langs small" aria-label={t(lang, 'art.otherLangs')}>
+      <span class="muted">{t(lang, 'art.otherLangs')}:</span>
+      {
+        LANGS.filter((l) => l !== lang).map((l) =>
+          alt[l] ? (
+            <a href={alt[l]} hreflang={l} lang={l}>{LANG_NAME[l]}</a>
+          ) : (
+            <span class="muted" lang={l}>{LANG_NAME[l]} ({t(lang, 'art.notTranslated')})</span>
+          ),
+        )
+      }
+    </nav>
+
+    <Support lang={lang} />
+  </article>
+</Base>

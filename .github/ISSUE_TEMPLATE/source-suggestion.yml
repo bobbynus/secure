@@ -1,0 +1,69 @@
+name: Source suggestion
+description: Suggest a feed, API or advisory page to add to secure.abramov.vip
+title: "[Source suggestion] "
+labels: ["source-suggestion", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Do not include confidential data, internal addresses, credentials or personal contact details.
+        A suggestion does not add the source automatically: origin, terms of use, format and a test collection are reviewed first.
+        RU: Issue публичный — не указывайте конфиденциальные данные. DE: Das Issue ist öffentlich – keine vertraulichen Daten angeben.
+  - type: input
+    id: name
+    attributes:
+      label: Source name
+      placeholder: e.g. Proxmox VE security advisories
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL of the site / RSS / API
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Source type
+      options:
+        - Vendor advisory / release notes / status page
+        - CERT / government
+        - Vulnerability database
+        - Security research
+        - Media
+        - Community (forum, issue tracker)
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options:
+        - RSS / Atom
+        - API (JSON)
+        - JSON / CSV file
+        - HTML page only
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Language of the source
+      placeholder: en / de / ru / …
+    validations:
+      required: true
+  - type: input
+    id: products
+    attributes:
+      label: Products and topics (optional)
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why is it useful? (optional)
+  - type: input
+    id: docs
+    attributes:
+      label: API / RSS documentation link (optional)

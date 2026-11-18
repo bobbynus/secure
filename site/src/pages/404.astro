@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import { LANGS, t } from '../i18n/ui';
+---
+
+<Base lang="en" title={t('en', 'notfound.title')} noindex alternates={{}}>
+  <div class="wrap page narrow">
+    <p class="mono err big">404</p>
+    {
+      LANGS.map((l) => (
+        <section lang={l} class="nf">
+          <h2>{t(l, 'notfound.title')}</h2>
+          <p>{t(l, 'notfound.text')} <a href={`/${l}/`}>{t(l, 'art.back')}</a></p>
+        </section>
+      ))
+    }
+  </div>
+</Base>

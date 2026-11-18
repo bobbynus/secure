@@ -1,0 +1,84 @@
+{
+  "id": "sr-24-0005",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": true,
+  "exploitation": { "status": "confirmed", "kev": true, "kevAdded": "2024-02-09", "evidence": ["fg", "kev"] },
+  "vendor": "Fortinet",
+  "products": ["fortios", "fortiproxy"],
+  "identifiers": { "cve": ["CVE-2024-21762"], "advisory": ["FG-IR-24-015"], "kb": [] },
+  "affected": [
+    { "product": "fortios", "versions": "7.4.0–7.4.2", "fixed": "7.4.3" },
+    { "product": "fortios", "versions": "7.2.0–7.2.6", "fixed": "7.2.7" },
+    { "product": "fortios", "versions": "7.0.0–7.0.13", "fixed": "7.0.14" },
+    { "product": "fortios", "versions": "6.4.0–6.4.14", "fixed": "6.4.15" },
+    { "product": "fortios", "versions": "6.2.0–6.2.15", "fixed": "6.2.16" },
+    { "product": "fortios", "versions": "6.0 (all)", "fixed": "migrate to a fixed release" },
+    { "product": "fortiproxy", "versions": "several 7.x and 2.0 releases", "fixed": "see FG-IR-24-015" }
+  ],
+  "cvss": { "score": 9.6, "version": "3.1", "source": "Fortinet" },
+  "dates": {
+    "event": "2024-02-08T17:00:00Z",
+    "published": "2024-02-09T07:00:00Z",
+    "updated": "2024-02-09T20:00:00Z"
+  },
+  "sources": [
+    { "id": "fg", "title": "FG-IR-24-015: Out-of-bound Write in sslvpnd", "url": "https://www.fortiguard.com/psirt/FG-IR-24-015", "publisher": "Fortinet PSIRT", "kind": "vendor", "date": "2024-02-08" },
+    { "id": "kev", "title": "Known Exploited Vulnerabilities Catalog", "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog", "publisher": "CISA", "kind": "kev", "date": "2024-02-09" },
+    { "id": "nvd", "title": "CVE-2024-21762", "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-21762", "publisher": "NVD", "kind": "nvd" }
+  ],
+  "revisions": [
+    { "date": "2024-02-09T07:00:00Z", "kind": "created", "note": { "ru": "Первая публикация.", "de": "Erstveröffentlichung.", "en": "First published." } },
+    { "date": "2024-02-09T20:00:00Z", "kind": "exploitation", "note": { "ru": "CVE добавлена в CISA KEV.", "de": "CVE in CISA KEV aufgenommen.", "en": "CVE added to CISA KEV." } }
+  ],
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "fortios-ssl-vpn-cve-2024-21762",
+      "title": "FortiOS SSL VPN: запись за границами буфера, возможно выполнение кода без аутентификации (CVE-2024-21762)",
+      "summary": "Уязвимость в sslvpnd позволяет удалённому злоумышленнику выполнить код или команды с помощью специально сформированных HTTP-запросов. Fortinet сообщает о вероятной эксплуатации.",
+      "impact": "Компрометация межсетевого экрана с включённым SSL VPN: доступ к внутренней сети, перехват трафика, кража учётных данных VPN.",
+      "exploitation": "Fortinet указала, что уязвимость, вероятно, эксплуатируется. CISA добавила CVE в KEV на следующий день после публикации.",
+      "fix": "Обновите FortiOS до 7.4.3, 7.2.7, 7.0.14, 6.4.15 или 6.2.16. FortiOS 7.6 не затронута. Ветку 6.0 нужно перевести на поддерживаемый выпуск.",
+      "workaround": "Отключите SSL VPN. Отключение только webmode не является обходным решением.",
+      "checks": [
+        "Проверьте, включён ли SSL VPN на устройствах FortiGate.",
+        "Сверьте версию прошивки с таблицей исправленных версий.",
+        "Проверьте журналы VPN на подозрительные подключения и смените учётные данные при признаках компрометации."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "fortios-ssl-vpn-cve-2024-21762",
+      "title": "FortiOS SSL VPN: Out-of-Bounds Write, Codeausführung ohne Authentifizierung möglich (CVE-2024-21762)",
+      "summary": "Eine Schwachstelle in sslvpnd erlaubt entfernten Angreifern, mit präparierten HTTP-Anfragen Code oder Befehle auszuführen. Fortinet meldet eine wahrscheinliche Ausnutzung.",
+      "impact": "Kompromittierung der Firewall mit aktiviertem SSL VPN: Zugriff auf das interne Netz, Mitschneiden von Datenverkehr, Diebstahl von VPN-Zugangsdaten.",
+      "exploitation": "Fortinet gab an, dass die Lücke wahrscheinlich ausgenutzt wird. CISA nahm die CVE einen Tag nach der Veröffentlichung in KEV auf.",
+      "fix": "FortiOS auf 7.4.3, 7.2.7, 7.0.14, 6.4.15 oder 6.2.16 aktualisieren. FortiOS 7.6 ist nicht betroffen. Der Zweig 6.0 muss auf ein unterstütztes Release migriert werden.",
+      "workaround": "SSL VPN deaktivieren. Nur webmode zu deaktivieren ist kein gültiger Workaround.",
+      "checks": [
+        "Prüfen, ob SSL VPN auf FortiGate-Geräten aktiviert ist.",
+        "Firmware-Version mit der Tabelle der korrigierten Versionen abgleichen.",
+        "VPN-Logs auf verdächtige Verbindungen prüfen und bei Anzeichen einer Kompromittierung Zugangsdaten wechseln."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "fortios-ssl-vpn-cve-2024-21762",
+      "title": "FortiOS SSL VPN: out-of-bounds write may allow unauthenticated code execution (CVE-2024-21762)",
+      "summary": "A vulnerability in sslvpnd lets a remote attacker execute code or commands via crafted HTTP requests. Fortinet reports potential exploitation in the wild.",
+      "impact": "Compromise of firewalls with SSL VPN enabled: access to the internal network, traffic interception, theft of VPN credentials.",
+      "exploitation": "Fortinet stated the flaw is potentially being exploited. CISA added the CVE to KEV the day after publication.",
+      "fix": "Upgrade FortiOS to 7.4.3, 7.2.7, 7.0.14, 6.4.15 or 6.2.16. FortiOS 7.6 is not affected. The 6.0 branch must be migrated to a supported release.",
+      "workaround": "Disable SSL VPN. Disabling webmode alone is not a valid workaround.",
+      "checks": [
+        "Check whether SSL VPN is enabled on FortiGate devices.",
+        "Compare firmware versions with the fixed-version table.",
+        "Review VPN logs for suspicious connections and rotate credentials if you see signs of compromise."
+      ]
+    }
+  }
+}

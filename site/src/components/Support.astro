@@ -1,0 +1,17 @@
+---
+import { SITE } from '../config';
+import { t, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+---
+
+{
+  SITE.kofiUrl && (
+    <aside class="support" aria-labelledby="support-h">
+      <h2 id="support-h">{t(lang, 'support.title')}</h2>
+      <p>{t(lang, 'support.text')}</p>
+      <a class="btn" href={SITE.kofiUrl} rel="noopener" target="_blank"><span aria-hidden="true">☕</span> {t(lang, 'support.cta')}</a>
+    </aside>
+  )
+}

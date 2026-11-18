@@ -1,0 +1,76 @@
+{
+  "id": "sr-24-0004",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": { "status": "none-known", "kev": false, "evidence": [] },
+  "vendor": "Open Container Initiative",
+  "products": ["runc", "docker-engine"],
+  "identifiers": { "cve": ["CVE-2024-21626"], "advisory": ["GHSA-xr7r-f8xq-vfvv"], "kb": [] },
+  "affected": [
+    { "product": "runc", "versions": "1.0.0-rc93 – 1.1.11", "fixed": "1.1.12" },
+    { "product": "docker-engine", "versions": "< 25.0.2, < 24.0.9", "fixed": "25.0.2, 24.0.9" }
+  ],
+  "cvss": { "score": 8.6, "version": "3.1", "source": "GitHub (CNA)" },
+  "dates": {
+    "event": "2024-01-31T15:00:00Z",
+    "published": "2024-01-31T18:00:00Z",
+    "updated": "2024-02-01T09:00:00Z"
+  },
+  "sources": [
+    { "id": "gh", "title": "runc: container breakout through process.cwd trickery and leaked fds", "url": "https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv", "publisher": "opencontainers/runc", "kind": "vendor", "date": "2024-01-31" },
+    { "id": "snyk", "title": "Leaky Vessels: Docker and runc container breakout vulnerabilities", "url": "https://snyk.io/blog/leaky-vessels-docker-runc-container-breakout-vulnerabilities/", "publisher": "Snyk", "kind": "research", "date": "2024-01-31" },
+    { "id": "docker", "title": "Docker Security Advisory: Multiple Vulnerabilities in runc, BuildKit, and Moby", "url": "https://www.docker.com/blog/docker-security-advisory-multiple-vulnerabilities-in-runc-buildkit-and-moby/", "publisher": "Docker", "kind": "vendor", "date": "2024-01-31" }
+  ],
+  "revisions": [
+    { "date": "2024-01-31T18:00:00Z", "kind": "created", "note": { "ru": "Первая публикация.", "de": "Erstveröffentlichung.", "en": "First published." } },
+    { "date": "2024-02-01T09:00:00Z", "kind": "versions", "note": { "ru": "Добавлены исправленные версии Docker Engine.", "de": "Korrigierte Docker-Engine-Versionen ergänzt.", "en": "Added fixed Docker Engine versions." } }
+  ],
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "runc-leaky-vessels-pobeg-iz-konteynera",
+      "title": "Leaky Vessels: побег из контейнера через runc (CVE-2024-21626)",
+      "summary": "Утечка файлового дескриптора в runc позволяет процессу в контейнере получить доступ к файловой системе хоста. Атака возможна через вредоносный образ или Dockerfile.",
+      "impact": "Запуск недоверенного образа или сборка недоверенного Dockerfile может дать доступ к файловой системе хоста и, как следствие, к другим контейнерам и узлу кластера.",
+      "exploitation": "На момент публикации эксплуатация в реальных атаках не подтверждена.",
+      "fix": "Обновите runc до 1.1.12. Docker Engine — до 25.0.2 или 24.0.9; containerd и дистрибутивы Kubernetes — до версий, включающих исправленный runc.",
+      "checks": [
+        "Проверьте версию: `runc --version` и `docker version --format '{{.Server.Version}}'`.",
+        "Проверьте версии runc на узлах Kubernetes, в том числе в управляемых сервисах.",
+        "Ограничьте запуск образов и сборку Dockerfile из недоверенных источников до обновления."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "runc-leaky-vessels-container-ausbruch",
+      "title": "Leaky Vessels: Container-Ausbruch über runc (CVE-2024-21626)",
+      "summary": "Ein geleakter Dateideskriptor in runc erlaubt einem Prozess im Container den Zugriff auf das Host-Dateisystem. Ein Angriff ist über ein bösartiges Image oder Dockerfile möglich.",
+      "impact": "Das Starten eines nicht vertrauenswürdigen Images oder das Bauen eines nicht vertrauenswürdigen Dockerfiles kann Zugriff auf das Host-Dateisystem und damit auf andere Container und den Cluster-Knoten verschaffen.",
+      "exploitation": "Zum Zeitpunkt der Veröffentlichung keine bestätigte Ausnutzung in realen Angriffen.",
+      "fix": "runc auf 1.1.12 aktualisieren. Docker Engine auf 25.0.2 oder 24.0.9; containerd und Kubernetes-Distributionen auf Versionen mit korrigiertem runc.",
+      "checks": [
+        "Version prüfen: `runc --version` und `docker version --format '{{.Server.Version}}'`.",
+        "runc-Versionen auf Kubernetes-Knoten prüfen, auch bei verwalteten Diensten.",
+        "Bis zum Update das Starten von Images und Bauen von Dockerfiles aus nicht vertrauenswürdigen Quellen einschränken."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "runc-leaky-vessels-container-breakout",
+      "title": "Leaky Vessels: container breakout via runc (CVE-2024-21626)",
+      "summary": "A leaked file descriptor in runc lets a process inside a container access the host filesystem. Attacks are possible through a malicious image or Dockerfile.",
+      "impact": "Running an untrusted image or building an untrusted Dockerfile can give access to the host filesystem and therefore to other containers and the cluster node.",
+      "exploitation": "No confirmed in-the-wild exploitation at publication time.",
+      "fix": "Upgrade runc to 1.1.12. Docker Engine to 25.0.2 or 24.0.9; containerd and Kubernetes distributions to releases that include the fixed runc.",
+      "checks": [
+        "Check versions: `runc --version` and `docker version --format '{{.Server.Version}}'`.",
+        "Check runc versions on Kubernetes nodes, including managed services.",
+        "Until updated, restrict running images and building Dockerfiles from untrusted sources."
+      ]
+    }
+  }
+}

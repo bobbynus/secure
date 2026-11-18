@@ -1,0 +1,96 @@
+{
+  "id": "sr-24-0012",
+  "category": "update-issue",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "n/a",
+  "workaround": true,
+  "exploitation": { "status": "none-known", "kev": false, "evidence": [] },
+  "vendor": "Microsoft",
+  "products": ["windows-server"],
+  "identifiers": { "cve": [], "advisory": [], "kb": ["KB5044284"] },
+  "affected": [
+    { "product": "windows-server", "versions": "Windows Server 2019, 2022 managed by third-party patch tools" }
+  ],
+  "dates": {
+    "event": "2024-11-05T12:00:00Z",
+    "published": "2024-11-06T09:30:00Z",
+    "updated": "2024-11-08T16:00:00Z"
+  },
+  "sources": [
+    { "id": "rh", "title": "Windows Server 2025 known issues and notifications", "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025", "publisher": "Microsoft", "kind": "vendor" }
+  ],
+  "revisions": [
+    { "date": "2024-11-06T09:30:00Z", "kind": "created", "note": { "ru": "Первая публикация по сообщениям администраторов (предварительно).", "de": "Erstveröffentlichung auf Basis von Admin-Berichten (vorläufig).", "en": "First published based on administrator reports (preliminary)." } },
+    { "date": "2024-11-08T16:00:00Z", "kind": "status", "note": { "ru": "Microsoft подтвердил проблему в Release Health; уровень подтверждения повышен.", "de": "Microsoft hat das Problem in Release Health bestätigt; Bestätigungsstufe angehoben.", "en": "Microsoft confirmed the issue in Release Health; confirmation level raised." } }
+  ],
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "windows-server-2025-neozhidannoe-obnovlenie",
+      "title": "Серверы Windows неожиданно обновились до Windows Server 2025 через сторонние системы патчинга",
+      "summary": "Часть серверов Windows Server 2019/2022 была обновлена до Windows Server 2025 без намерения администраторов: сторонние инструменты управления обновлениями классифицировали обновление компонентов как обычное.",
+      "impact": "Незапланированная смена версии ОС на рабочих серверах: возможные несовместимости приложений и вопросы лицензирования. Откат штатными средствами не предусмотрен.",
+      "exploitation": "Не применимо: это эксплуатационная проблема, а не уязвимость.",
+      "fix": "Отдельного исправления нет: проблема связана с классификацией обновления в сторонних продуктах. Microsoft рекомендует проверять, как такие инструменты обрабатывают обновления компонентов.",
+      "workaround": "Временно запретите в системе патчинга автоматическую установку обновлений компонентов (feature updates) для серверов до проверки её настроек.",
+      "regression": {
+        "update": "Обновление компонентов до Windows Server 2025 (`KB5044284`), предложенное сторонними инструментами как рекомендуемое.",
+        "symptoms": ["После перезагрузки сервер работает под Windows Server 2025.", "В истории обновлений есть установка обновления компонентов, которое никто не утверждал."],
+        "conditions": "Серверы, обновления на которых управляются сторонними продуктами с автоматическим утверждением.",
+        "vendorStatus": "Подтверждено Microsoft в Windows Release Health; причина — обработка обновления сторонними продуктами.",
+        "rollback": "Возврат к прежней версии возможен только восстановлением из резервной копии, сделанной до обновления."
+      },
+      "checks": [
+        "Проверьте версию ОС на серверах: `Get-ComputerInfo -Property OsName, OsVersion`.",
+        "Просмотрите правила автоматического утверждения в системе патчинга для категорий feature/upgrade.",
+        "Убедитесь, что для критичных серверов есть свежие резервные копии с возможностью полного восстановления."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "windows-server-2025-ungeplantes-upgrade",
+      "title": "Windows-Server unerwartet auf Windows Server 2025 aktualisiert – über Patch-Tools von Drittanbietern",
+      "summary": "Einige Windows Server 2019/2022 wurden ungewollt auf Windows Server 2025 aktualisiert: Patch-Management-Tools von Drittanbietern stuften das Funktionsupdate als reguläres Update ein.",
+      "impact": "Ungeplanter Wechsel der Betriebssystemversion auf Produktivservern: mögliche Anwendungsinkompatibilitäten und Lizenzfragen. Ein Rollback mit Bordmitteln ist nicht vorgesehen.",
+      "exploitation": "Nicht zutreffend: Es handelt sich um ein Betriebsproblem, nicht um eine Schwachstelle.",
+      "fix": "Kein eigener Fix: Ursache ist die Einstufung des Updates in Produkten von Drittanbietern. Microsoft empfiehlt zu prüfen, wie solche Tools Funktionsupdates behandeln.",
+      "workaround": "Automatische Installation von Funktionsupdates für Server im Patch-Tool vorübergehend sperren, bis dessen Einstellungen geprüft sind.",
+      "regression": {
+        "update": "Funktionsupdate auf Windows Server 2025 (`KB5044284`), von Drittanbieter-Tools als empfohlen angeboten.",
+        "symptoms": ["Nach dem Neustart läuft der Server mit Windows Server 2025.", "Der Updateverlauf zeigt ein nicht freigegebenes Funktionsupdate."],
+        "conditions": "Server, deren Updates von Drittanbieterprodukten mit automatischer Freigabe verwaltet werden.",
+        "vendorStatus": "Von Microsoft in Windows Release Health bestätigt; Ursache ist die Behandlung des Updates durch Drittanbieterprodukte.",
+        "rollback": "Eine Rückkehr zur vorherigen Version ist nur per Wiederherstellung aus einem Backup vor dem Upgrade möglich."
+      },
+      "checks": [
+        "OS-Version der Server prüfen: `Get-ComputerInfo -Property OsName, OsVersion`.",
+        "Regeln für automatische Freigaben im Patch-Tool für Feature-/Upgrade-Kategorien prüfen.",
+        "Sicherstellen, dass für kritische Server aktuelle, vollständig wiederherstellbare Backups vorliegen."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "windows-server-2025-unexpected-upgrade",
+      "title": "Windows servers unexpectedly upgraded to Windows Server 2025 via third-party patch tools",
+      "summary": "Some Windows Server 2019/2022 machines were upgraded to Windows Server 2025 without administrators intending it: third-party patch management tools classified the feature update as a regular update.",
+      "impact": "Unplanned OS version change on production servers: possible application incompatibilities and licensing questions. There is no built-in rollback.",
+      "exploitation": "Not applicable: this is an operational problem, not a vulnerability.",
+      "fix": "No separate fix: the cause is how third-party products classify the update. Microsoft recommends checking how such tools handle feature updates.",
+      "workaround": "Temporarily block automatic installation of feature updates for servers in your patch tool until its settings are reviewed.",
+      "regression": {
+        "update": "Feature update to Windows Server 2025 (`KB5044284`) offered by third-party tools as recommended.",
+        "symptoms": ["After a reboot the server runs Windows Server 2025.", "Update history shows a feature update nobody approved."],
+        "conditions": "Servers whose updates are managed by third-party products with automatic approval.",
+        "vendorStatus": "Confirmed by Microsoft in Windows Release Health; caused by how third-party products handle the update.",
+        "rollback": "Returning to the previous version is only possible by restoring a backup taken before the upgrade."
+      },
+      "checks": [
+        "Check the OS version on servers: `Get-ComputerInfo -Property OsName, OsVersion`.",
+        "Review auto-approval rules in your patch tool for feature/upgrade categories.",
+        "Make sure critical servers have recent backups that can be fully restored."
+      ]
+    }
+  }
+}

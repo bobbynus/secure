@@ -1,0 +1,23 @@
+[
+  { "id": "panos", "name": "PAN-OS", "vendor": "Palo Alto Networks" },
+  { "id": "fortios", "name": "FortiOS", "vendor": "Fortinet" },
+  { "id": "fortiproxy", "name": "FortiProxy", "vendor": "Fortinet" },
+  { "id": "ivanti-connect-secure", "name": "Ivanti Connect Secure", "vendor": "Ivanti" },
+  { "id": "ivanti-policy-secure", "name": "Ivanti Policy Secure", "vendor": "Ivanti" },
+  { "id": "cisco-asa", "name": "Cisco ASA", "vendor": "Cisco" },
+  { "id": "cisco-ftd", "name": "Cisco Firepower Threat Defense", "vendor": "Cisco" },
+  { "id": "netscaler-adc", "name": "NetScaler ADC", "vendor": "Citrix" },
+  { "id": "netscaler-gateway", "name": "NetScaler Gateway", "vendor": "Citrix" },
+  { "id": "esxi", "name": "ESXi", "vendor": "Broadcom VMware" },
+  { "id": "windows-10", "name": "Windows 10", "vendor": "Microsoft" },
+  { "id": "windows-server", "name": "Windows Server", "vendor": "Microsoft" },
+  { "id": "crowdstrike-falcon", "name": "Falcon Sensor for Windows", "vendor": "CrowdStrike" },
+  { "id": "openssh", "name": "OpenSSH", "vendor": "OpenSSH" },
+  { "id": "xz-utils", "name": "XZ Utils", "vendor": "Tukaani" },
+  { "id": "debian", "name": "Debian", "vendor": "Debian" },
+  { "id": "ubuntu", "name": "Ubuntu", "vendor": "Canonical" },
+  { "id": "fedora", "name": "Fedora", "vendor": "Fedora Project" },
+  { "id": "runc", "name": "runc", "vendor": "Open Container Initiative" },
+  { "id": "docker-engine", "name": "Docker Engine", "vendor": "Docker" },
+  { "id": "ingress-nginx", "name": "ingress-nginx", "vendor": "Kubernetes" }
+]

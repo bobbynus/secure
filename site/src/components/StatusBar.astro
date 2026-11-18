@@ -1,0 +1,27 @@
+---
+import { collectedAt, loadAll } from '../lib/events';
+import { fmtTime, fmtDate } from '../lib/format';
+import { t, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const { sources } = await loadAll();
+const active = sources.filter((s) => s.state === 'ok' || s.state === 'error');
+const ok = active.filter((s) => s.state === 'ok').length;
+const err = active.length - ok;
+const at = await collectedAt();
+---
+
+<div class="status-bar" role="status" aria-label={t(lang, 'status.label')}>
+  <div class="wrap status-inner">
+    <span class="status-item">
+      <span class="dot dot-ok" aria-hidden="true"></span>
+      {t(lang, 'status.collected')}: <time datetime={at}>{fmtDate(at)} {fmtTime(at)} UTC</time>
+    </span>
+    <span class="status-sep" aria-hidden="true">|</span>
+    <a class="status-item" href={`/${lang}/sources/`}>
+      {t(lang, 'status.sources')}: <span class="ok">{ok} OK</span>
+      {err > 0 && <> / <span class="err"><span aria-hidden="true">✕</span> {err} {t(lang, 'state.error')}</span></>}
+    </a>
+  </div>
+</div>

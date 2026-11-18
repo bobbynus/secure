@@ -1,0 +1,111 @@
+---
+import { renderCard, type FeedItem } from '../lib/card';
+import { cardLabels, productsWithEvents, TOPICS, type Topic } from '../lib/events';
+import { t, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  items: FeedItem[];
+  /** Current view: 'all' or a topic id. */
+  view: 'all' | Topic;
+  page?: number;
+  totalPages?: number;
+  /** Enable client-side filters / load more / new events (main feed only). */
+  interactive?: boolean;
+  heading?: string;
+  pageSize?: number;
+}
+
+const { lang, items, view, page = 1, totalPages = 1, interactive = false } = Astro.props;
+const heading = Astro.props.heading ?? t(lang, 'feed.title');
+const L = cardLabels(lang);
+const base = `/${lang}`;
+const products = interactive ? await productsWithEvents(lang) : [];
+const views: { id: 'all' | Topic; href: string; label: string }[] = [
+  { id: 'all', href: `${base}/`, label: t(lang, 'view.all') },
+  ...TOPICS.map((id) => ({ id, href: `${base}/topics/${id}/`, label: t(lang, `view.${id}`) })),
+];
+const pageHref = (n: number) => (n === 1 ? `${base}/` : `${base}/page/${n}/`);
+---
+
+<section class="feed" aria-labelledby="feed-heading">
+  <h1 id="feed-heading" class="feed-heading">{heading}</h1>
+
+  <nav class="views" aria-label={t(lang, 'views.label')}>
+    <ul>
+      {views.map((v) => <li><a href={v.href} aria-current={v.id === view ? 'page' : undefined}>{v.label}</a></li>)}
+    </ul>
+  </nav>
+
+  {
+    interactive && (
+      <details class="filters-box" id="filters-box" hidden>
+      <summary>{t(lang, 'filter.label')}</summary>
+      <form class="filters" id="filters" aria-label={t(lang, 'filter.label')} role="search">
+        <label class="filter-search">
+          <span>{t(lang, 'filter.search')}</span>
+          <input type="search" name="q" placeholder={t(lang, 'filter.searchPh')} autocomplete="off" spellcheck="false" />
+        </label>
+        <label>
+          <span>{t(lang, 'filter.product')}</span>
+          <select name="product">
+            <option value="">{t(lang, 'filter.any')}</option>
+            {products.map((p) => <option value={p.id}>{p.name}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>{t(lang, 'filter.priority')}</span>
+          <select name="priority">
+            <option value="">{t(lang, 'filter.any')}</option>
+            {(['critical', 'high', 'medium', 'low', 'info'] as const).map((p) => <option value={p}>{t(lang, `prio.${p}`)}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>{t(lang, 'filter.period')}</span>
+          <select name="period">
+            <option value="">{t(lang, 'filter.any')}</option>
+            {(['1d', '7d', '30d', '365d'] as const).map((p) => <option value={p}>{t(lang, `period.${p}`)}</option>)}
+          </select>
+        </label>
+        <button type="reset" class="btn btn-ghost">{t(lang, 'filter.reset')}</button>
+      </form>
+      </details>
+    )
+  }
+
+  {interactive && <button type="button" class="btn new-events" id="new-events" hidden></button>}
+
+  <p class="feed-count mono" id="feed-count" aria-live="polite"></p>
+
+  <div class="feed-list" id="feed-list" data-page={page}>
+    {items.length ? <Fragment set:html={items.map((i) => renderCard(i, L, base)).join('\n')} /> : <p class="empty">{t(lang, 'feed.empty')}</p>}
+  </div>
+
+  {interactive && <button type="button" class="btn btn-more" id="load-more" hidden>{t(lang, 'feed.more')}</button>}
+
+  {
+    totalPages > 1 && (
+      <nav class="pagination" id="pagination" aria-label={t(lang, 'page.label')}>
+        {page > 1 ? <a rel="prev" href={pageHref(page - 1)}>{t(lang, 'page.prev')}</a> : <span />}
+        <ol>
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((n) => (
+            <li>
+              {n === page ? (
+                <span aria-current="page">{n}</span>
+              ) : (
+                <a href={pageHref(n)} aria-label={t(lang, 'page.n', { n })}>{n}</a>
+              )}
+            </li>
+          ))}
+        </ol>
+        {page < totalPages ? <a rel="next" href={pageHref(page + 1)}>{t(lang, 'page.next')}</a> : <span />}
+      </nav>
+    )
+  }
+</section>
+
+{interactive && <div id="feed-config" hidden data-page-size={Astro.props.pageSize} data-offset={(page - 1) * (Astro.props.pageSize ?? 10)}></div>}
+
+<script>
+  import '../scripts/feed';
+</script>

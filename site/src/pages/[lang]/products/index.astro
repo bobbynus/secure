@@ -1,0 +1,36 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { productsWithEvents } from '../../../lib/events';
+import { LANGS, t, type Lang } from '../../../i18n/ui';
+
+export const getStaticPaths = () => LANGS.map((lang) => ({ params: { lang } }));
+const lang = Astro.params.lang as Lang;
+const list = await productsWithEvents(lang);
+const byVendor = new Map<string, typeof list>();
+for (const p of list) byVendor.set(p.vendor, [...(byVendor.get(p.vendor) ?? []), p]);
+const vendors = [...byVendor.keys()].sort((a, b) => a.localeCompare(b));
+---
+
+<Base lang={lang} title={t(lang, 'products.title')}>
+  <div class="wrap page">
+    <h1>{t(lang, 'products.title')}</h1>
+    <p class="muted">{t(lang, 'products.intro')}</p>
+    <div class="vendor-grid">
+      {
+        vendors.map((v) => (
+          <section class="vendor">
+            <h2>{v}</h2>
+            <ul>
+              {byVendor.get(v)!.map((p) => (
+                <li>
+                  <a href={`/${lang}/products/${p.id}/`}>{p.name}</a>{' '}
+                  <span class="muted mono small">{t(lang, 'products.events', { n: p.count })}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+    </div>
+  </div>
+</Base>

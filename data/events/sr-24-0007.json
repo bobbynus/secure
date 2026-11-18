@@ -1,0 +1,83 @@
+{
+  "id": "sr-24-0007",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": true,
+  "exploitation": { "status": "confirmed", "kev": true, "kevAdded": "2024-04-12", "evidence": ["volexity", "pan"] },
+  "vendor": "Palo Alto Networks",
+  "products": ["panos"],
+  "identifiers": { "cve": ["CVE-2024-3400"], "advisory": [], "kb": [] },
+  "affected": [
+    { "product": "panos", "versions": "10.2, 11.0, 11.1 with GlobalProtect gateway or portal", "fixed": "10.2.9-h1, 11.0.4-h1, 11.1.2-h3 (and other hotfixes)" }
+  ],
+  "cvss": { "score": 10.0, "version": "4.0", "source": "Palo Alto Networks" },
+  "dates": {
+    "event": "2024-04-10T00:00:00Z",
+    "published": "2024-04-12T06:00:00Z",
+    "updated": "2024-04-16T20:00:00Z"
+  },
+  "sources": [
+    { "id": "pan", "title": "CVE-2024-3400 PAN-OS: Arbitrary File Creation Leads to OS Command Injection Vulnerability in GlobalProtect", "url": "https://security.paloaltonetworks.com/CVE-2024-3400", "publisher": "Palo Alto Networks", "kind": "vendor", "date": "2024-04-12" },
+    { "id": "volexity", "title": "Zero-Day Exploitation of Unauthenticated Remote Code Execution Vulnerability in GlobalProtect (CVE-2024-3400)", "url": "https://www.volexity.com/blog/2024/04/12/zero-day-exploitation-of-unauthenticated-remote-code-execution-vulnerability-in-globalprotect-cve-2024-3400/", "publisher": "Volexity", "kind": "research", "date": "2024-04-12" },
+    { "id": "unit42", "title": "Threat Brief: Operation MidnightEclipse", "url": "https://unit42.paloaltonetworks.com/cve-2024-3400/", "publisher": "Unit 42", "kind": "vendor", "date": "2024-04-12" }
+  ],
+  "revisions": [
+    { "date": "2024-04-12T06:00:00Z", "kind": "created", "note": { "ru": "Первая публикация: уязвимость нулевого дня, эксплуатируется.", "de": "Erstveröffentlichung: Zero-Day, wird ausgenutzt.", "en": "First published: zero-day under active exploitation." } },
+    { "date": "2024-04-14T22:00:00Z", "kind": "fix", "note": { "ru": "Выпущены первые хотфиксы.", "de": "Erste Hotfixes veröffentlicht.", "en": "First hotfixes released." } },
+    { "date": "2024-04-16T20:00:00Z", "kind": "workaround", "note": { "ru": "Отключение телеметрии больше не считается обходным решением.", "de": "Deaktivieren der Telemetrie gilt nicht mehr als Workaround.", "en": "Disabling telemetry is no longer considered a workaround." } }
+  ],
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "pan-os-globalprotect-cve-2024-3400",
+      "title": "PAN-OS GlobalProtect: внедрение команд без аутентификации, эксплуатируется (CVE-2024-3400)",
+      "summary": "Уязвимость в GlobalProtect позволяет без аутентификации выполнить команды с правами root на межсетевых экранах Palo Alto Networks. Эксплуатировалась как уязвимость нулевого дня.",
+      "impact": "Полный контроль над межсетевым экраном периметра: установка бэкдоров, кража конфигурации и учётных данных, дальнейшее продвижение в сеть.",
+      "exploitation": "Volexity обнаружила эксплуатацию группой UTA0218 с установкой бэкдора UPSTYLE (операция MidnightEclipse). CISA добавила CVE в KEV.",
+      "fix": "Установите хотфиксы: 10.2.9-h1, 11.0.4-h1, 11.1.2-h3 или более новые для своей ветки. Cloud NGFW, Panorama и Prisma Access не затронуты.",
+      "workaround": "До установки исправления — сигнатура Threat Prevention 95187 с включённой защитой уязвимостей на интерфейсе GlobalProtect. Отключение телеметрии устройства не является эффективной мерой.",
+      "checks": [
+        "Проверьте, настроены ли на устройстве GlobalProtect gateway или portal.",
+        "Сверьте версию PAN-OS с исправленными версиями.",
+        "Проверьте индикаторы компрометации из отчётов Volexity и Unit 42.",
+        "При подтверждённой компрометации следуйте рекомендациям производителя по восстановлению, включая смену учётных данных."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "pan-os-globalprotect-cve-2024-3400",
+      "title": "PAN-OS GlobalProtect: Command Injection ohne Authentifizierung, wird ausgenutzt (CVE-2024-3400)",
+      "summary": "Eine Schwachstelle in GlobalProtect erlaubt ohne Authentifizierung die Ausführung von Befehlen als root auf Firewalls von Palo Alto Networks. Sie wurde als Zero-Day ausgenutzt.",
+      "impact": "Volle Kontrolle über die Perimeter-Firewall: Installation von Backdoors, Diebstahl von Konfiguration und Zugangsdaten, weitere Ausbreitung im Netz.",
+      "exploitation": "Volexity entdeckte die Ausnutzung durch UTA0218 mit Installation der Backdoor UPSTYLE (Operation MidnightEclipse). CISA hat die CVE in KEV aufgenommen.",
+      "fix": "Hotfixes installieren: 10.2.9-h1, 11.0.4-h1, 11.1.2-h3 oder neuer für den jeweiligen Zweig. Cloud NGFW, Panorama und Prisma Access sind nicht betroffen.",
+      "workaround": "Bis zum Fix: Threat-Prevention-Signatur 95187 mit aktiviertem Vulnerability Protection auf dem GlobalProtect-Interface. Das Deaktivieren der Geräte-Telemetrie ist keine wirksame Maßnahme.",
+      "checks": [
+        "Prüfen, ob auf dem Gerät ein GlobalProtect-Gateway oder -Portal konfiguriert ist.",
+        "PAN-OS-Version mit den korrigierten Versionen abgleichen.",
+        "Kompromittierungsindikatoren aus den Berichten von Volexity und Unit 42 prüfen.",
+        "Bei bestätigter Kompromittierung den Wiederherstellungsempfehlungen des Herstellers folgen, inklusive Wechsel der Zugangsdaten."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "pan-os-globalprotect-cve-2024-3400",
+      "slugHistory": ["pan-os-globalprotect-zero-day"],
+      "title": "PAN-OS GlobalProtect: unauthenticated command injection under active exploitation (CVE-2024-3400)",
+      "summary": "A GlobalProtect vulnerability lets unauthenticated attackers run commands as root on Palo Alto Networks firewalls. It was exploited as a zero-day.",
+      "impact": "Full control of the perimeter firewall: backdoor installation, theft of configuration and credentials, lateral movement into the network.",
+      "exploitation": "Volexity found exploitation by UTA0218 deploying the UPSTYLE backdoor (Operation MidnightEclipse). CISA added the CVE to KEV.",
+      "fix": "Install hotfixes: 10.2.9-h1, 11.0.4-h1, 11.1.2-h3 or later for your branch. Cloud NGFW, Panorama and Prisma Access are not affected.",
+      "workaround": "Until patched: Threat Prevention signature 95187 with vulnerability protection applied to the GlobalProtect interface. Disabling device telemetry is not an effective mitigation.",
+      "checks": [
+        "Check whether a GlobalProtect gateway or portal is configured on the device.",
+        "Compare your PAN-OS version with the fixed versions.",
+        "Check for indicators of compromise from the Volexity and Unit 42 reports.",
+        "If compromise is confirmed, follow the vendor’s remediation guidance, including credential rotation."
+      ]
+    }
+  }
+}

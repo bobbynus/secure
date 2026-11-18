@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadAll } from '../../lib/events';
+import { fmtDateTime } from '../../lib/format';
+import { LANGS, t, type Lang } from '../../i18n/ui';
+
+export const getStaticPaths = () => LANGS.map((lang) => ({ params: { lang } }));
+const lang = Astro.params.lang as Lang;
+const { sources } = await loadAll();
+const order = { error: 0, ok: 1, paused: 2, planned: 3 } as const;
+const list = [...sources].sort((a, b) => order[a.state] - order[b.state] || a.name.localeCompare(b.name));
+const ICON = { ok: '●', error: '✕', planned: '○', paused: '‖' } as const;
+---
+
+<Base lang={lang} title={t(lang, 'srcs.title')}>
+  <div class="wrap page">
+    <h1>{t(lang, 'srcs.title')}</h1>
+    <p>{t(lang, 'srcs.intro')}</p>
+    <div class="table-scroll">
+      <table class="table sources-table">
+        <thead>
+          <tr>
+            <th scope="col">{t(lang, 'srcs.name')}</th>
+            <th scope="col">{t(lang, 'srcs.kind')}</th>
+            <th scope="col">{t(lang, 'srcs.format')}</th>
+            <th scope="col">{t(lang, 'srcs.interval')}</th>
+            <th scope="col">{t(lang, 'srcs.state')}</th>
+            <th scope="col">{t(lang, 'srcs.last')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            list.map((s) => (
+              <tr>
+                <th scope="row"><a href={s.url} rel="noopener nofollow">{s.name}</a></th>
+                <td>{t(lang, `src.${s.kind}`)}</td>
+                <td class="mono">{s.format.toUpperCase()}</td>
+                <td class="mono">{s.interval}</td>
+                <td><span class={`state state-${s.state}`}><span aria-hidden="true">{ICON[s.state]}</span> {t(lang, `state.${s.state}`)}</span></td>
+                <td class="mono">{s.lastSuccess ? `${fmtDateTime(s.lastSuccess)} UTC` : '—'}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+    <p><a class="btn" href={`/${lang}/suggest/`}>{t(lang, 'nav.suggest')}</a></p>
+  </div>
+</Base>

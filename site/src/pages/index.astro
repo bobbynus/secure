@@ -1,0 +1,49 @@
+---
+import '@fontsource-variable/jetbrains-mono';
+import '../styles/global.css';
+import { SITE } from '../config';
+import { LANGS, LANG_NAME, UI } from '../i18n/ui';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{SITE.name}</title>
+    <meta name="description" content={UI.en.description} />
+    <link rel="canonical" href={`${SITE.url}/`} />
+    {SITE.demo && <meta name="robots" content="noindex, nofollow" />}
+    {LANGS.map((l) => <link rel="alternate" hreflang={l} href={`${SITE.url}/${l}/`} />)}
+    <link rel="alternate" hreflang="x-default" href={`${SITE.url}/en/`} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="color-scheme" content="dark" />
+  </head>
+  <body class="root-chooser">
+    <main class="wrap root-main">
+      <p class="brand-name"><span class="prompt" aria-hidden="true">&gt;_</span> {SITE.name}</p>
+      <ul class="root-langs">
+        {
+          LANGS.map((l) => (
+            <li lang={l}>
+              <a href={`/${l}/`} hreflang={l} data-lang={l}>
+                <span class="mono">{l.toUpperCase()}</span> {LANG_NAME[l]}
+              </a>
+              <span class="muted small">{UI[l].tagline}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </main>
+    <script>
+      // Remember the explicit choice; otherwise pick the browser language once.
+      const langs = ['ru', 'de', 'en'];
+      document.querySelectorAll<HTMLAnchorElement>('a[data-lang]').forEach((a) =>
+        a.addEventListener('click', () => localStorage.setItem('lang', a.dataset.lang!)),
+      );
+      const saved = localStorage.getItem('lang');
+      const pref = saved ?? navigator.languages.map((l) => l.slice(0, 2)).find((l) => langs.includes(l));
+      if (pref && langs.includes(pref)) location.replace(`/${pref}/`);
+    </script>
+  </body>
+</html>

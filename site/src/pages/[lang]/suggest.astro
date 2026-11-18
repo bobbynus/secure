@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE } from '../../config';
+import { LANGS, t, type Lang } from '../../i18n/ui';
+
+export const getStaticPaths = () => LANGS.map((lang) => ({ params: { lang } }));
+const lang = Astro.params.lang as Lang;
+---
+
+<Base lang={lang} title={t(lang, 'suggest.title')}>
+  <div class="wrap page narrow">
+    <h1>{t(lang, 'suggest.title')}</h1>
+    <p>{t(lang, 'suggest.intro')}</p>
+    <p>{t(lang, 'suggest.fields')}</p>
+    <div class="callout callout-amber" role="note">
+      <p><strong><span aria-hidden="true">⚠</span> {t(lang, 'suggest.public')}</strong></p>
+      <p>{t(lang, 'suggest.review')}</p>
+    </div>
+    <p><a class="btn" href={SITE.suggestUrl} rel="noopener">{t(lang, 'suggest.cta')} ↗</a></p>
+    <p class="small muted">{t(lang, 'suggest.account')}</p>
+  </div>
+</Base>

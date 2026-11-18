@@ -1,0 +1,25 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Feed from '../../../components/Feed.astro';
+import { eventsIn, loadAll, productsWithEvents, toFeedItem } from '../../../lib/events';
+import { LANGS, t, type Lang } from '../../../i18n/ui';
+
+export async function getStaticPaths() {
+  const out = [];
+  for (const lang of LANGS) for (const p of await productsWithEvents(lang)) out.push({ params: { lang, product: p.id } });
+  return out;
+}
+const lang = Astro.params.lang as Lang;
+const id = Astro.params.product!;
+const { products } = await loadAll();
+const p = products.get(id)!;
+const items = (await eventsIn(lang)).filter((e) => e.products.includes(id)).map((e) => toFeedItem(e, lang, products));
+const title = p.name.startsWith(p.vendor) ? p.name : `${p.vendor} ${p.name}`;
+---
+
+<Base lang={lang} title={title}>
+  <div class="wrap">
+    <p class="crumbs"><a href={`/${lang}/products/`}>← {t(lang, 'products.title')}</a></p>
+    <Feed lang={lang} items={items} view="all" heading={title} />
+  </div>
+</Base>

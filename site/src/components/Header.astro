@@ -1,0 +1,71 @@
+---
+import { SITE } from '../config';
+import { LANGS, LANG_NAME, t, type Lang } from '../i18n/ui';
+import StatusBar from './StatusBar.astro';
+
+interface Props {
+  lang: Lang;
+  alternates: Partial<Record<Lang, string>>;
+}
+const { lang, alternates } = Astro.props;
+const path = Astro.url.pathname;
+const nav = [
+  { href: `/${lang}/`, label: t(lang, 'nav.feed'), match: (p: string) => p === `/${lang}/` || p.startsWith(`/${lang}/page/`) || p.startsWith(`/${lang}/topics/`) },
+  { href: `/${lang}/products/`, label: t(lang, 'nav.products'), match: (p: string) => p.startsWith(`/${lang}/products/`) },
+  { href: `/${lang}/archive/`, label: t(lang, 'nav.archive'), match: (p: string) => p.startsWith(`/${lang}/archive/`) },
+  { href: `/${lang}/suggest/`, label: t(lang, 'nav.suggest'), match: (p: string) => p.startsWith(`/${lang}/suggest/`) },
+];
+---
+
+<header class="site-header">
+  <div class="wrap header-top">
+    <div class="brand">
+      <a class="brand-name" href={`/${lang}/`}><span class="prompt" aria-hidden="true">&gt;_</span> {SITE.name}</a>
+      <span class="brand-tagline">{t(lang, 'tagline')}</span>
+    </div>
+    <nav class="lang-switch" aria-label={t(lang, 'nav.lang')}>
+      <ul>
+        {
+          LANGS.map((l) =>
+            l === lang ? (
+              <li><span class="lang-current" aria-current="true" lang={l} title={LANG_NAME[l]}>{l.toUpperCase()}</span></li>
+            ) : (
+              <li>
+                <a
+                  href={alternates[l] ?? `/${l}/`}
+                  hreflang={l}
+                  lang={l}
+                  title={alternates[l] ? LANG_NAME[l] : `${LANG_NAME[l]} — ${t(lang, 'art.notTranslated')}`}
+                  class:list={[{ 'lang-missing': !alternates[l] }]}
+                >
+                  {l.toUpperCase()}
+                </a>
+              </li>
+            ),
+          )
+        }
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap header-nav">
+    <nav aria-label={t(lang, 'nav.main')}>
+      <ul class="main-nav">
+        {
+          nav.map((n) => (
+            <li>
+              <a href={n.href} aria-current={n.match(path) ? 'page' : undefined}>{n.label}</a>
+            </li>
+          ))
+        }
+        {
+          SITE.kofiUrl && (
+            <li class="nav-support">
+              <a href={SITE.kofiUrl} rel="noopener" target="_blank"><span aria-hidden="true">☕</span> {t(lang, 'nav.support')}</a>
+            </li>
+          )
+        }
+      </ul>
+    </nav>
+  </div>
+  <StatusBar lang={lang} />
+</header>

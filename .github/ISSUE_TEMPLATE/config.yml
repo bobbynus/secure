@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a vulnerability in a third-party product
+    url: https://www.cisa.gov/report
+    about: Please report unpatched vulnerabilities to the vendor or a CERT, not here.

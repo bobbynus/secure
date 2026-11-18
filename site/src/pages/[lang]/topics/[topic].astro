@@ -1,0 +1,21 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Feed from '../../../components/Feed.astro';
+import { collectedAt, eventsIn, loadAll, toFeedItem, topicFilter, TOPICS, type Topic } from '../../../lib/events';
+import { LANGS, t, type Lang } from '../../../i18n/ui';
+
+export const getStaticPaths = () => LANGS.flatMap((lang) => TOPICS.map((topic) => ({ params: { lang, topic } })));
+
+const lang = Astro.params.lang as Lang;
+const topic = Astro.params.topic as Topic;
+const { products } = await loadAll();
+const now = await collectedAt();
+const items = (await eventsIn(lang)).filter(topicFilter(topic, now)).map((e) => toFeedItem(e, lang, products));
+const title = t(lang, `view.${topic}`);
+---
+
+<Base lang={lang} title={title}>
+  <div class="wrap">
+    <Feed lang={lang} items={items} view={topic} heading={title} />
+  </div>
+</Base>

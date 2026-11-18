@@ -1,0 +1,101 @@
+{
+  "id": "sr-24-0010",
+  "category": "update-issue",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "resolved",
+  "fix": "available",
+  "workaround": true,
+  "exploitation": { "status": "none-known", "kev": false, "evidence": [] },
+  "vendor": "CrowdStrike",
+  "products": ["crowdstrike-falcon"],
+  "identifiers": { "cve": [], "advisory": [], "kb": [] },
+  "affected": [
+    { "product": "crowdstrike-falcon", "versions": "7.11+ on Windows, online 2024-07-19 04:09–05:27 UTC", "fixed": "channel file 291 reverted at 05:27 UTC" }
+  ],
+  "dates": {
+    "event": "2024-07-19T04:09:00Z",
+    "published": "2024-07-19T06:40:00Z",
+    "updated": "2024-07-24T12:00:00Z"
+  },
+  "sources": [
+    { "id": "cs", "title": "Technical Details: Falcon Content Update for Windows Hosts", "url": "https://www.crowdstrike.com/blog/falcon-update-for-windows-hosts-technical-details/", "publisher": "CrowdStrike", "kind": "vendor", "date": "2024-07-20" },
+    { "id": "ms", "title": "Helping our customers through the CrowdStrike outage", "url": "https://blogs.microsoft.com/blog/2024/07/20/helping-our-customers-through-the-crowdstrike-outage/", "publisher": "Microsoft", "kind": "vendor", "date": "2024-07-20" }
+  ],
+  "revisions": [
+    { "date": "2024-07-19T06:40:00Z", "kind": "created", "note": { "ru": "Первая публикация.", "de": "Erstveröffentlichung.", "en": "First published." } },
+    { "date": "2024-07-20T10:00:00Z", "kind": "edit", "note": { "ru": "Добавлены технические подробности производителя и оценка Microsoft (около 8,5 млн устройств).", "de": "Technische Details des Herstellers und Microsofts Schätzung (rund 8,5 Mio. Geräte) ergänzt.", "en": "Added vendor technical details and Microsoft's estimate (about 8.5 million devices)." } },
+    { "date": "2024-07-24T12:00:00Z", "kind": "status", "note": { "ru": "Производитель опубликовал предварительный разбор инцидента; статус — устранено.", "de": "Hersteller hat eine vorläufige Analyse veröffentlicht; Status: behoben.", "en": "Vendor published a preliminary post-incident review; status: resolved." } }
+  ],
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "crowdstrike-falcon-bsod-channel-file-291",
+      "title": "Обновление контента CrowdStrike Falcon вызвало массовые BSOD на Windows",
+      "summary": "Ошибочный файл конфигурации (channel file 291) для Falcon Sensor привёл к сбою Windows и циклической перезагрузке на миллионах устройств по всему миру.",
+      "impact": "Хосты Windows с Falcon Sensor уходили в BSOD и циклическую перезагрузку. Пострадали авиакомпании, банки, больницы и другие организации. По оценке Microsoft — около 8,5 млн устройств.",
+      "exploitation": "Не кибератака: сбой вызван ошибкой в обновлении контента. Фиксировались фишинговые кампании, использующие тему инцидента.",
+      "fix": "Проблемный файл был отозван в 05:27 UTC. Хосты, подключившиеся после этого, не затронуты. Уже упавшие хосты требуют ручного восстановления.",
+      "workaround": "Загрузите систему в безопасном режиме или WinRE и удалите файлы `C-00000291*.sys` с меткой времени 0409 из `%WINDIR%\\System32\\drivers\\CrowdStrike`, затем перезагрузитесь. Для томов с BitLocker понадобится ключ восстановления.",
+      "regression": {
+        "update": "Обновление контента Falcon Sensor for Windows (channel file 291) от 19.07.2024, 04:09 UTC.",
+        "symptoms": ["BSOD при загрузке и циклическая перезагрузка.", "Хост не поднимается до уровня, где агент может получить исправленный файл."],
+        "conditions": "Windows-хосты с Falcon Sensor 7.11 и новее, которые были онлайн между 04:09 и 05:27 UTC. macOS и Linux не затронуты.",
+        "vendorStatus": "Подтверждено производителем; опубликованы технические подробности и разбор инцидента.",
+        "fixedBy": "Исправленная версия channel file 291 (05:27 UTC).",
+        "rollback": "Ручное удаление проблемного файла через безопасный режим или WinRE; Microsoft выпустила утилиту восстановления на USB."
+      },
+      "checks": [
+        "Найдите хосты, не вернувшиеся в консоль после 19.07.2024.",
+        "Подготовьте доступ к ключам восстановления BitLocker для затронутых машин.",
+        "Проверьте процедуры поэтапного развёртывания обновлений средств защиты в своей организации."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "crowdstrike-falcon-bluescreen-channel-file-291",
+      "title": "Inhaltsupdate von CrowdStrike Falcon verursacht massenhaft Bluescreens unter Windows",
+      "summary": "Eine fehlerhafte Konfigurationsdatei (Channel File 291) für den Falcon Sensor führte weltweit auf Millionen Geräten zu Windows-Abstürzen und Boot-Schleifen.",
+      "impact": "Windows-Hosts mit Falcon Sensor stürzten mit Bluescreen ab und starteten in einer Schleife neu. Betroffen waren Fluggesellschaften, Banken, Krankenhäuser und andere Organisationen. Laut Microsoft rund 8,5 Mio. Geräte.",
+      "exploitation": "Kein Cyberangriff: Ursache war ein Fehler im Inhaltsupdate. Es wurden Phishing-Kampagnen beobachtet, die das Thema ausnutzen.",
+      "fix": "Die fehlerhafte Datei wurde um 05:27 UTC zurückgezogen. Danach verbundene Hosts sind nicht betroffen. Bereits abgestürzte Hosts müssen manuell wiederhergestellt werden.",
+      "workaround": "System im abgesicherten Modus oder in WinRE starten und Dateien `C-00000291*.sys` mit Zeitstempel 0409 aus `%WINDIR%\\System32\\drivers\\CrowdStrike` löschen, dann neu starten. Bei BitLocker-Volumes wird der Wiederherstellungsschlüssel benötigt.",
+      "regression": {
+        "update": "Inhaltsupdate für Falcon Sensor for Windows (Channel File 291) vom 19.07.2024, 04:09 UTC.",
+        "symptoms": ["Bluescreen beim Start und Boot-Schleife.", "Der Host startet nicht weit genug, um die korrigierte Datei zu erhalten."],
+        "conditions": "Windows-Hosts mit Falcon Sensor ab 7.11, die zwischen 04:09 und 05:27 UTC online waren. macOS und Linux nicht betroffen.",
+        "vendorStatus": "Vom Hersteller bestätigt; technische Details und eine Vorfallsanalyse wurden veröffentlicht.",
+        "fixedBy": "Korrigierte Version von Channel File 291 (05:27 UTC).",
+        "rollback": "Manuelles Löschen der Datei über den abgesicherten Modus oder WinRE; Microsoft stellte ein USB-Wiederherstellungstool bereit."
+      },
+      "checks": [
+        "Hosts ermitteln, die sich nach dem 19.07.2024 nicht mehr in der Konsole gemeldet haben.",
+        "Zugriff auf BitLocker-Wiederherstellungsschlüssel für betroffene Geräte vorbereiten.",
+        "Prozesse für gestaffelte Rollouts von Sicherheitssoftware-Updates im eigenen Unternehmen prüfen."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "crowdstrike-falcon-bsod-channel-file-291",
+      "title": "CrowdStrike Falcon content update causes mass BSODs on Windows",
+      "summary": "A faulty configuration file (channel file 291) for the Falcon Sensor crashed Windows and caused boot loops on millions of devices worldwide.",
+      "impact": "Windows hosts running the Falcon Sensor hit a BSOD and boot loop. Airlines, banks, hospitals and many other organisations were affected. Microsoft estimated about 8.5 million devices.",
+      "exploitation": "Not a cyberattack: the outage was caused by a defect in a content update. Phishing campaigns exploiting the incident were observed.",
+      "fix": "The faulty file was reverted at 05:27 UTC. Hosts that came online afterwards are not affected. Hosts that already crashed need manual recovery.",
+      "workaround": "Boot into Safe Mode or WinRE, delete files matching `C-00000291*.sys` with timestamp 0409 from `%WINDIR%\\System32\\drivers\\CrowdStrike`, then reboot. BitLocker-protected volumes require the recovery key.",
+      "regression": {
+        "update": "Falcon Sensor for Windows content update (channel file 291), 2024-07-19 04:09 UTC.",
+        "symptoms": ["BSOD during boot and a reboot loop.", "The host does not boot far enough to receive the corrected file."],
+        "conditions": "Windows hosts with Falcon Sensor 7.11 or later that were online between 04:09 and 05:27 UTC. macOS and Linux were not affected.",
+        "vendorStatus": "Confirmed by the vendor; technical details and a post-incident review were published.",
+        "fixedBy": "Corrected channel file 291 (05:27 UTC).",
+        "rollback": "Manually delete the file via Safe Mode or WinRE; Microsoft released a USB recovery tool."
+      },
+      "checks": [
+        "Identify hosts that have not checked in to the console since 2024-07-19.",
+        "Prepare access to BitLocker recovery keys for affected machines.",
+        "Review your organisation’s staged-rollout process for security tooling updates."
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "sr-24-0008",
+  "category": "attack",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": { "status": "confirmed", "kev": true, "kevAdded": "2024-04-24", "evidence": ["talos", "kev"] },
+  "vendor": "Cisco",
+  "products": ["cisco-asa", "cisco-ftd"],
+  "identifiers": { "cve": ["CVE-2024-20353", "CVE-2024-20359"], "advisory": [], "kb": [] },
+  "affected": [
+    { "product": "cisco-asa", "versions": "multiple release trains (see Cisco Software Checker)", "fixed": "fixed releases per Cisco advisories" },
+    { "product": "cisco-ftd", "versions": "multiple release trains (see Cisco Software Checker)", "fixed": "fixed releases per Cisco advisories" }
+  ],
+  "cvss": { "score": 8.6, "version": "3.1", "source": "Cisco (CVE-2024-20353)" },
+  "dates": {
+    "event": "2024-04-24T15:00:00Z",
+    "published": "2024-04-24T17:45:00Z",
+    "updated": "2024-04-25T08:00:00Z"
+  },
+  "sources": [
+    { "id": "talos", "title": "ArcaneDoor – New espionage-focused campaign found targeting perimeter network devices", "url": "https://blog.talosintelligence.com/arcanedoor-new-espionage-focused-campaign-found-targeting-perimeter-network-devices/", "publisher": "Cisco Talos", "kind": "vendor", "date": "2024-04-24" },
+    { "id": "kev", "title": "Known Exploited Vulnerabilities Catalog", "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog", "publisher": "CISA", "kind": "kev", "date": "2024-04-24" }
+  ],
+  "revisions": [
+    { "date": "2024-04-24T17:45:00Z", "kind": "created", "note": { "ru": "Первая публикация.", "de": "Erstveröffentlichung.", "en": "First published." } },
+    { "date": "2024-04-25T08:00:00Z", "kind": "edit", "note": { "ru": "Добавлена команда проверки индикатора компрометации из отчёта Talos.", "de": "Prüfbefehl für Kompromittierungsindikator aus dem Talos-Bericht ergänzt.", "en": "Added the compromise indicator check from the Talos report." } }
+  ],
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "cisco-asa-arcanedoor",
+      "title": "ArcaneDoor: шпионская кампания против Cisco ASA и FTD через две уязвимости нулевого дня",
+      "summary": "Государственная группировка (UAT4356 / STORM-1849) компрометировала периметровые межсетевые экраны Cisco, установив импланты Line Dancer и Line Runner. Cisco выпустила исправления.",
+      "impact": "Злоумышленники получали контроль над устройствами периметра: перехват трафика, изменение конфигурации, выполнение команд. Line Runner сохраняется после перезагрузки и обновления.",
+      "exploitation": "Эксплуатация подтверждена Cisco Talos; обе CVE добавлены в CISA KEV. Начальный вектор проникновения на момент публикации не установлен.",
+      "fix": "Обновите ASA и FTD до исправленных версий согласно advisory Cisco (используйте Cisco Software Checker).",
+      "checks": [
+        "Выполните `show memory region | include lina`: более одного исполняемого региона памяти `lina` может указывать на компрометацию (см. отчёт Talos).",
+        "Проверьте журналы на неожиданные перезагрузки и изменения конфигурации.",
+        "Ограничьте доступ к управляющим интерфейсам и VPN-веб-сервисам доверенными адресами.",
+        "При признаках компрометации обратитесь в Cisco TAC до переустановки."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "cisco-asa-arcanedoor",
+      "title": "ArcaneDoor: Spionagekampagne gegen Cisco ASA und FTD über zwei Zero-Day-Lücken",
+      "summary": "Eine staatliche Gruppe (UAT4356 / STORM-1849) kompromittierte Cisco-Perimeter-Firewalls mit den Implantaten Line Dancer und Line Runner. Cisco hat Fixes veröffentlicht.",
+      "impact": "Angreifer erlangten Kontrolle über Perimetergeräte: Mitschneiden von Datenverkehr, Konfigurationsänderungen, Befehlsausführung. Line Runner überdauert Neustarts und Updates.",
+      "exploitation": "Ausnutzung von Cisco Talos bestätigt; beide CVEs in CISA KEV aufgenommen. Der initiale Angriffsvektor war zum Zeitpunkt der Veröffentlichung unbekannt.",
+      "fix": "ASA und FTD gemäß Cisco-Advisories auf korrigierte Versionen aktualisieren (Cisco Software Checker verwenden).",
+      "checks": [
+        "`show memory region | include lina` ausführen: mehr als ein ausführbarer `lina`-Speicherbereich kann auf eine Kompromittierung hinweisen (siehe Talos-Bericht).",
+        "Logs auf unerwartete Neustarts und Konfigurationsänderungen prüfen.",
+        "Zugriff auf Management-Schnittstellen und VPN-Webdienste auf vertrauenswürdige Adressen beschränken.",
+        "Bei Anzeichen einer Kompromittierung vor einer Neuinstallation Cisco TAC kontaktieren."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "cisco-asa-arcanedoor",
+      "title": "ArcaneDoor: espionage campaign targets Cisco ASA and FTD via two zero-days",
+      "summary": "A state-sponsored actor (UAT4356 / STORM-1849) compromised Cisco perimeter firewalls and deployed the Line Dancer and Line Runner implants. Cisco has released fixes.",
+      "impact": "Attackers gained control of perimeter devices: traffic capture, configuration changes, command execution. Line Runner persists across reboots and upgrades.",
+      "exploitation": "Exploitation confirmed by Cisco Talos; both CVEs added to CISA KEV. The initial access vector was unknown at publication time.",
+      "fix": "Upgrade ASA and FTD to fixed releases per the Cisco advisories (use the Cisco Software Checker).",
+      "checks": [
+        "Run `show memory region | include lina`: more than one executable `lina` memory region may indicate compromise (see the Talos report).",
+        "Review logs for unexpected reboots and configuration changes.",
+        "Restrict management interfaces and VPN web services to trusted addresses.",
+        "If you see signs of compromise, contact Cisco TAC before reimaging."
+      ]
+    }
+  }
+}

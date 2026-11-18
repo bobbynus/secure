@@ -1,0 +1,79 @@
+{
+  "id": "sr-24-0003",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": true,
+  "exploitation": { "status": "confirmed", "kev": true, "kevAdded": "2024-01-10", "evidence": ["volexity", "cisa"] },
+  "vendor": "Ivanti",
+  "products": ["ivanti-connect-secure", "ivanti-policy-secure"],
+  "identifiers": { "cve": ["CVE-2023-46805", "CVE-2024-21887"], "advisory": [], "kb": [] },
+  "affected": [
+    { "product": "ivanti-connect-secure", "versions": "9.x, 22.x (supported versions)", "fixed": "patches released from 2024-01-31, staged per version" },
+    { "product": "ivanti-policy-secure", "versions": "9.x, 22.x (supported versions)", "fixed": "patches released from 2024-01-31, staged per version" }
+  ],
+  "cvss": { "score": 9.1, "version": "3.1", "source": "Ivanti (CVE-2024-21887)" },
+  "dates": {
+    "event": "2024-01-10T15:00:00Z",
+    "published": "2024-01-10T20:00:00Z",
+    "updated": "2024-01-31T22:00:00Z"
+  },
+  "sources": [
+    { "id": "volexity", "title": "Active Exploitation of Two Zero-Day Vulnerabilities in Ivanti Connect Secure VPN", "url": "https://www.volexity.com/blog/2024/01/10/active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn/", "publisher": "Volexity", "kind": "research", "date": "2024-01-10" },
+    { "id": "cisa", "title": "ED 24-01: Mitigate Ivanti Connect Secure and Ivanti Policy Secure Vulnerabilities", "url": "https://www.cisa.gov/news-events/directives/ed-24-01-mitigate-ivanti-connect-secure-and-ivanti-policy-secure-vulnerabilities", "publisher": "CISA", "kind": "cert", "date": "2024-01-19" }
+  ],
+  "revisions": [
+    { "date": "2024-01-10T20:00:00Z", "kind": "created", "note": { "ru": "Первая публикация: две уязвимости нулевого дня, эксплуатируются в цепочке.", "de": "Erstveröffentlichung: zwei Zero-Days, verkettet ausgenutzt.", "en": "First published: two zero-days exploited as a chain." } },
+    { "date": "2024-01-19T18:00:00Z", "kind": "exploitation", "note": { "ru": "CISA выпустила экстренную директиву ED 24-01.", "de": "CISA hat die Notfallrichtlinie ED 24-01 erlassen.", "en": "CISA issued Emergency Directive ED 24-01." } },
+    { "date": "2024-01-31T22:00:00Z", "kind": "fix", "note": { "ru": "Ivanti начала выпуск исправлений для первых версий.", "de": "Ivanti hat mit der Auslieferung von Patches für erste Versionen begonnen.", "en": "Ivanti started releasing patches for the first versions." } }
+  ],
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "ivanti-connect-secure-cepochka-zero-day",
+      "title": "Ivanti Connect Secure: цепочка из двух уязвимостей нулевого дня даёт выполнение кода без аутентификации",
+      "summary": "Обход аутентификации (CVE-2023-46805) и внедрение команд (CVE-2024-21887) в Ivanti Connect Secure и Policy Secure использовались в связке для захвата VPN-шлюзов.",
+      "impact": "Злоумышленник без учётных данных выполняет команды на VPN-шлюзе: установка веб-шеллов, кража учётных данных и конфигурации, доступ во внутреннюю сеть.",
+      "exploitation": "Volexity обнаружила эксплуатацию с декабря 2023 года группой UTA0178. После публикации последовала массовая эксплуатация. CISA выпустила экстренную директиву ED 24-01.",
+      "fix": "Установите исправления Ivanti для своей версии (выпускались поэтапно с 31.01.2024). После компрометации производитель рекомендует сброс устройства к заводским настройкам перед обновлением.",
+      "workaround": "До установки исправления — импорт XML-файла с мерами смягчения от Ivanti. Мера может нарушать часть функций управления.",
+      "checks": [
+        "Запустите внешний Integrity Checker Tool (ICT) Ivanti; учтите, что CISA сообщала о случаях, когда ICT не выявлял компрометацию.",
+        "Проверьте журналы на признаки веб-шеллов и необычных запросов к API.",
+        "Смените учётные данные и сертификаты, хранившиеся на устройстве, при любых признаках компрометации."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "ivanti-connect-secure-zero-day-kette",
+      "title": "Ivanti Connect Secure: Kette aus zwei Zero-Days ermöglicht Codeausführung ohne Authentifizierung",
+      "summary": "Ein Authentifizierungs-Bypass (CVE-2023-46805) und eine Command Injection (CVE-2024-21887) in Ivanti Connect Secure und Policy Secure wurden kombiniert, um VPN-Gateways zu übernehmen.",
+      "impact": "Ein Angreifer ohne Zugangsdaten führt Befehle auf dem VPN-Gateway aus: Webshells, Diebstahl von Zugangsdaten und Konfiguration, Zugriff auf das interne Netz.",
+      "exploitation": "Volexity beobachtete die Ausnutzung durch UTA0178 seit Dezember 2023. Nach der Veröffentlichung folgte eine Massenausnutzung. CISA erließ die Notfallrichtlinie ED 24-01.",
+      "fix": "Ivanti-Patches für die eigene Version installieren (gestaffelt ab 31.01.2024 veröffentlicht). Nach einer Kompromittierung empfiehlt der Hersteller vor dem Update einen Werksreset.",
+      "workaround": "Bis zum Patch die XML-Datei mit Mitigations von Ivanti importieren. Die Maßnahme kann einige Verwaltungsfunktionen beeinträchtigen.",
+      "checks": [
+        "Den externen Integrity Checker Tool (ICT) von Ivanti ausführen; CISA berichtete von Fällen, in denen ICT eine Kompromittierung nicht erkannte.",
+        "Logs auf Hinweise auf Webshells und ungewöhnliche API-Anfragen prüfen.",
+        "Bei jedem Hinweis auf Kompromittierung die auf dem Gerät gespeicherten Zugangsdaten und Zertifikate wechseln."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "ivanti-connect-secure-zero-day-chain",
+      "title": "Ivanti Connect Secure: chain of two zero-days enables unauthenticated code execution",
+      "summary": "An authentication bypass (CVE-2023-46805) and a command injection (CVE-2024-21887) in Ivanti Connect Secure and Policy Secure were chained to take over VPN gateways.",
+      "impact": "An attacker without credentials runs commands on the VPN gateway: webshells, theft of credentials and configuration, access to the internal network.",
+      "exploitation": "Volexity observed exploitation by UTA0178 since December 2023. Mass exploitation followed disclosure. CISA issued Emergency Directive ED 24-01.",
+      "fix": "Install Ivanti patches for your version (released in stages from 2024-01-31). After a compromise, the vendor recommends a factory reset before upgrading.",
+      "workaround": "Until patched, import Ivanti’s mitigation XML file. It may break some management functions.",
+      "checks": [
+        "Run Ivanti’s external Integrity Checker Tool (ICT); note that CISA reported cases where ICT did not detect compromise.",
+        "Review logs for signs of webshells and unusual API requests.",
+        "Rotate credentials and certificates stored on the device at any sign of compromise."
+      ]
+    }
+  }
+}

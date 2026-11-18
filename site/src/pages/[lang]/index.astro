@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import Feed from '../../components/Feed.astro';
+import { SITE } from '../../config';
+import { eventsIn, loadAll, toFeedItem } from '../../lib/events';
+import { LANGS, t, type Lang } from '../../i18n/ui';
+
+export const getStaticPaths = () => LANGS.map((lang) => ({ params: { lang } }));
+
+const lang = Astro.params.lang as Lang;
+const { products } = await loadAll();
+const events = await eventsIn(lang);
+const totalPages = Math.max(1, Math.ceil(events.length / SITE.pageSize));
+const items = events.slice(0, SITE.pageSize).map((e) => toFeedItem(e, lang, products));
+---
+
+<Base lang={lang} title={SITE.name} description={t(lang, 'description')}>
+  <div class="wrap">
+    <Feed lang={lang} items={items} view="all" page={1} totalPages={totalPages} interactive pageSize={SITE.pageSize} />
+  </div>
+</Base>
