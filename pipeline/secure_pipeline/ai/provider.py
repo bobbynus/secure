@@ -1,0 +1,186 @@
+"""Model providers. Swappable: the pipeline only needs `complete_json(system, prompt, schema)`.
+
+Gemini (free tier) via the REST generateContent endpoint:
+- paced requests (free tier RPM), bounded retries for 5xx and per-minute 429 with the server's RetryInfo;
+- a daily-quota 429 marks the model exhausted and the next model in the list is tried;
+- when every model is exhausted `QuotaExhausted` stops the AI step for this run (the queue waits).
+The API key is sent as a header and never logged.
+"""
+
+from __future__ import annotations
+
+import json
+import re
+import time
+from dataclasses import dataclass, field
+from typing import Callable, Optional, Protocol
+
+import httpx
+
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+DEFAULT_MODELS = ("gemini-3.6-flash", "gemini-3.5-flash-lite")
+
+
+class ProviderError(Exception):
+    pass
+
+
+class QuotaExhausted(ProviderError):
+    pass
+
+
+@dataclass
+class Completion:
+    data: dict
+    model: str
+    usage: dict = field(default_factory=dict)
+    latency: float = 0.0
+    cached: bool = False
+
+
+class Provider(Protocol):
+    models: list[str]
+
+    def complete_json(self, system: str, prompt: str, schema: dict) -> Completion: ...
+
+
+def parse_json_text(text: str) -> dict:
+    t = text.strip()
+    if t.startswith("```"):
+        t = re.sub(r"^```(?:json)?\s*|\s*```$", "", t)
+    data = json.loads(t)
+    if not isinstance(data, dict):
+        raise ValueError("model output is not a JSON object")
+    return data
+
+
+class Gemini:
+    def __init__(self, api_key: str, models: Optional[list[str]] = None, *, client: Optional[httpx.Client] = None,
+                 min_interval: float = 6.5, max_output_tokens: int = 8192,
+                 sleep: Callable[[float], None] = time.sleep, clock: Callable[[], float] = time.monotonic):
+        if not api_key:
+            raise ValueError("GEMINI_API_KEY is empty")
+        self.key = api_key
+        self.models = list(models or DEFAULT_MODELS)
+        self.client = client or httpx.Client(timeout=httpx.Timeout(120.0, connect=10.0))
+        self.min_interval = min_interval
+        self.max_output_tokens = max_output_tokens
+        self.sleep, self.clock = sleep, clock
+        self.exhausted: set[str] = set()
+        self._last = -1e9
+        self._compat: set[str] = set()  # models that rejected optional config fields
+        self.calls = 0
+
+    def close(self):
+        self.client.close()
+
+    def available(self) -> list[str]:
+        return [m for m in self.models if m not in self.exhausted]
+
+    def complete_json(self, system: str, prompt: str, schema: dict, *, models: Optional[list[str]] = None) -> Completion:
+        for model in models or self.available():
+            if model in self.exhausted:
+                continue
+            try:
+                return self._call(model, system, prompt, schema)
+            except QuotaExhausted:
+                self.exhausted.add(model)
+        raise QuotaExhausted("daily quota exhausted for all models: " + ", ".join(self.models))
+
+    # ------------------------------------------------------------------
+
+    def _body(self, model: str, system: str, prompt: str, schema: dict) -> dict:
+        cfg: dict = {"responseMimeType": "application/json", "maxOutputTokens": self.max_output_tokens}
+        if model not in self._compat:
+            cfg["responseJsonSchema"] = schema
+            if model.startswith("gemini-3") or model.startswith("gemini-4"):
+                cfg["thinkingConfig"] = {"thinkingLevel": "LOW"}
+        return {
+            "systemInstruction": {"parts": [{"text": system}]},
+            "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+            "generationConfig": cfg,
+        }
+
+    def _pace(self):
+        wait = self._last + self.min_interval - self.clock()
+        if wait > 0:
+            self.sleep(wait)
+        self._last = self.clock()
+
+    def _call(self, model: str, system: str, prompt: str, schema: dict) -> Completion:
+        url = GEMINI_URL.format(model=model)
+        for attempt in range(5):
+            self._pace()
+            started = self.clock()
+            try:
+                r = self.client.post(url, json=self._body(model, system, prompt, schema),
+                                     headers={"x-goog-api-key": self.key, "Content-Type": "application/json"})
+            except httpx.TransportError as e:
+                if attempt >= 3:
+                    raise ProviderError(f"{model}: network {type(e).__name__}") from None
+                self.sleep(5 * 2 ** attempt)
+                continue
+            self.calls += 1
+            if r.status_code == 200:
+                return self._parse(model, r, self.clock() - started)
+            err = _error(r)
+            if r.status_code == 429:
+                if err["daily"]:
+                    raise QuotaExhausted(f"{model}: {err['message'][:160]}")
+                if attempt >= 3:
+                    raise ProviderError(f"{model}: rate limited")
+                self.sleep(min(err["retry"] or 20 * (attempt + 1), 65))
+                continue
+            if r.status_code in (500, 502, 503, 504) and attempt < 3:
+                self.sleep(min(err["retry"] or 10 * 2 ** attempt, 60))
+                continue
+            if r.status_code == 400 and model not in self._compat and re.search(
+                    r"responseJsonSchema|thinking|Unknown name|schema", err["message"], re.I):
+                self._compat.add(model)  # older model or API revision: schema goes in the prompt only
+                continue
+            if r.status_code == 404:
+                raise QuotaExhausted(f"{model}: model not available ({err['message'][:120]})")
+            raise ProviderError(f"{model}: HTTP {r.status_code} {err['message'][:200]}")
+        raise ProviderError(f"{model}: retries exhausted")
+
+    def _parse(self, model: str, r: httpx.Response, latency: float) -> Completion:
+        body = r.json()
+        block = (body.get("promptFeedback") or {}).get("blockReason")
+        if block:
+            raise ProviderError(f"{model}: prompt blocked ({block})")
+        cands = body.get("candidates") or []
+        if not cands:
+            raise ProviderError(f"{model}: no candidates")
+        c = cands[0]
+        reason = c.get("finishReason", "STOP")
+        parts = (c.get("content") or {}).get("parts") or []
+        text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
+        if reason not in ("STOP", "FINISH_REASON_UNSPECIFIED") or not text:
+            raise ProviderError(f"{model}: finishReason {reason}")
+        try:
+            data = parse_json_text(text)
+        except ValueError as e:  # json.JSONDecodeError is a ValueError
+            raise ProviderError(f"{model}: invalid JSON ({e})") from None
+        u = body.get("usageMetadata") or {}
+        usage = {k: u.get(k, 0) for k in ("promptTokenCount", "candidatesTokenCount", "thoughtsTokenCount", "totalTokenCount")}
+        return Completion(data=data, model=model, usage=usage, latency=round(latency, 2))
+
+
+def _error(r: httpx.Response) -> dict:
+    out = {"message": f"HTTP {r.status_code}", "daily": False, "retry": None}
+    try:
+        e = r.json().get("error") or {}
+    except ValueError:
+        return out
+    out["message"] = str(e.get("message") or out["message"]).replace("\n", " ")
+    for d in e.get("details") or []:
+        t = str(d.get("@type", ""))
+        if t.endswith("QuotaFailure"):
+            for v in d.get("violations") or []:
+                if "PerDay" in str(v.get("quotaId", "")) or "per_day" in str(v.get("quotaMetric", "")).lower():
+                    out["daily"] = True
+        elif t.endswith("RetryInfo"):
+            m = re.match(r"([\d.]+)s", str(d.get("retryDelay", "")))
+            if m:
+                out["retry"] = float(m.group(1)) + 1
+    return out

@@ -118,7 +118,32 @@ class Event(BaseModel):
     revisions: list[Revision] = Field(default_factory=list)
     related: list[str] = Field(default_factory=list)  # e.g. older event of the same CVE
     reason: str = ""  # why it is newsworthy
-    publish_state: Literal["pending", "published", "quarantined"] = "pending"
+    # Source texts by "source_id:item_key" (plain, untrusted); input of the AI step.
+    texts: dict[str, str] = Field(default_factory=dict)
+    publish_state: Literal["pending", "published", "quarantined", "withdrawn", "skipped"] = "pending"
+    ai: "AiState" = Field(default_factory=lambda: AiState())
+
+
+class AiState(BaseModel):
+    """Stage 4 state of one event: generated texts, retry queue, publication."""
+
+    input_hash: Optional[str] = None  # facts + texts + prompt version the current texts were made from
+    texts: dict[str, dict] = Field(default_factory=dict)  # lang -> article fields (validated)
+    affected: list[dict] = Field(default_factory=list)  # grounded product/version rows
+    workaround: bool = False
+    model: Optional[str] = None
+    prompt: Optional[str] = None
+    generated_at: Optional[datetime] = None
+    slugs: dict[str, str] = Field(default_factory=dict)  # frozen on first publication
+    published_at: Optional[datetime] = None
+    attempts: int = 0
+    failed_hash: Optional[str] = None  # input that exhausted its attempts: not retried until the input changes
+    last_error: Optional[str] = None
+    next_try: Optional[datetime] = None
+    calls: int = 0  # model calls spent on this event (all attempts)
+
+
+Event.model_rebuild()
 
 
 class SourceConfig(BaseModel):
@@ -134,6 +159,8 @@ class SourceConfig(BaseModel):
     state: str = "planned"
     adapter: Optional[str] = None
     feed: Optional[str] = None
+    # Hosts whose advisory pages may be fetched for details (affected/fixed versions) by the AI step.
+    detail: list[str] = Field(default_factory=list)
     terms: Optional[str] = None
 
     def interval_seconds(self) -> int:

@@ -222,6 +222,7 @@ a.chip:hover { border-color: var(--accent-dim); color: var(--accent); }
 .chip-fix-available { color: var(--accent); border-color: var(--accent-dim); }
 .chip-fix-partial { color: var(--amber); }
 .chip-fix-none { color: var(--red); }
+.chip-fix-unknown { color: var(--muted); }
 .chip-conf-preliminary { color: var(--amber); border-style: dashed; }
 .chip-muted { color: var(--muted); }
 

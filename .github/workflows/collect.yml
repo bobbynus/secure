@@ -15,7 +15,8 @@ on:
         default: ""
 
 permissions:
-  contents: write # push to the pipeline-state branch only
+  contents: write # pipeline-state branch; data/events on main when publishing is enabled
+  actions: write # start the deploy workflow after publishing (pushes made with GITHUB_TOKEN trigger nothing)
 
 concurrency:
   group: collect
@@ -24,9 +25,15 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
+    env:
+      # Repository variable PUBLISH_ENABLED=true turns publication on; until then texts are generated only (dry run).
+      PUBLISH_ENABLED: ${{ vars.PUBLISH_ENABLED }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: "3.12"
@@ -64,6 +71,17 @@ jobs:
           fi
           python -m secure_pipeline --state .state collect "${args[@]}"
 
+      - name: AI texts and translations
+        working-directory: pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODELS: ${{ vars.GEMINI_MODELS }}
+        run: |
+          args=()
+          if [ "${PUBLISH_ENABLED:-}" = "true" ]; then args+=(--publish); fi
+          # A failure here must not lose the collection state saved below.
+          python -m secure_pipeline --state .state ai "${args[@]}" || echo "::warning::AI step failed"
+
       - name: Save state
         run: |
           cd pipeline/.state
@@ -71,6 +89,23 @@ jobs:
           if git diff --cached --quiet; then echo "no state changes"; exit 0; fi
           git commit -q -m "state: $(date -u +%Y-%m-%dT%H:%MZ)"
           git push -q origin HEAD:pipeline-state
+
+      - name: Publish events
+        if: ${{ env.PUBLISH_ENABLED == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -eu
+          (cd pipeline && python -m secure_pipeline --state .state publish --out ../data/events)
+          git add data/events
+          if git diff --cached --quiet; then echo "nothing to publish"; exit 0; fi
+          n=$(git diff --cached --name-only | wc -l)
+          git commit -q -m "content: publish/update $n event file(s)"
+          for i in 1 2 3; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && break
+            sleep 5
+          done
+          gh workflow run deploy.yml --ref main
 
       - name: Publish collector status
         if: always()

@@ -62,7 +62,7 @@ const jsonLd = {
         <div><dt>{t(lang, 'art.type')}</dt><dd>{t(lang, `cat.${e.category}`)}</dd></div>
         <div><dt>{t(lang, 'art.priority')}</dt><dd>{t(lang, `prio.${e.priority}`)}</dd></div>
         <div><dt>{t(lang, 'art.confirmation')}</dt><dd>{t(lang, `conf.${e.confirmation}`)}</dd></div>
-        <div><dt>{t(lang, 'art.lifecycle')}</dt><dd>{t(lang, `life.${e.lifecycle}`)} · {t(lang, `fix.${e.fix}`)}</dd></div>
+        <div><dt>{t(lang, 'art.lifecycle')}</dt><dd>{t(lang, `life.${e.lifecycle}`)}{t(lang, `fix.${e.fix}`) !== t(lang, `life.${e.lifecycle}`) && ` · ${t(lang, `fix.${e.fix}`)}`}</dd></div>
         <div><dt>{t(lang, 'art.event')}</dt><dd class="mono"><time datetime={e.dates.event}>{fmtDateTime(e.dates.event)} UTC</time></dd></div>
         <div><dt>{t(lang, 'art.published')}</dt><dd class="mono"><time datetime={e.dates.published}>{fmtDateTime(e.dates.published)} UTC</time></dd></div>
         <div><dt>{t(lang, 'art.updated')}</dt><dd class="mono"><time datetime={e.dates.updated}>{fmtDateTime(e.dates.updated)} UTC</time></dd></div>
@@ -84,24 +84,27 @@ const jsonLd = {
 
     <section aria-labelledby="products-h">
       <h2 id="products-h">{t(lang, 'art.products')}</h2>
-      <div class="table-scroll">
-        <table class="table">
-          <thead>
-            <tr><th scope="col">{t(lang, 'art.product')}</th><th scope="col">{t(lang, 'art.versions')}</th><th scope="col">{t(lang, 'art.fixedIn')}</th></tr>
-          </thead>
-          <tbody>
-            {
-              e.affected.map((a) => (
-                <tr>
-                  <th scope="row"><a href={`/${lang}/products/${a.product}/`}>{pname(a.product)}</a></th>
-                  <td class="mono">{a.versions}</td>
-                  <td class="mono">{a.fixed ?? '—'}</td>
-                </tr>
-              ))
-            }
-          </tbody>
-        </table>
-      </div>
+      {e.affected.length === 0 && <p class="muted">{t(lang, 'art.noVersions')}</p>}
+      {e.affected.length > 0 && (
+        <div class="table-scroll">
+          <table class="table">
+            <thead>
+              <tr><th scope="col">{t(lang, 'art.product')}</th><th scope="col">{t(lang, 'art.versions')}</th><th scope="col">{t(lang, 'art.fixedIn')}</th></tr>
+            </thead>
+            <tbody>
+              {
+                e.affected.map((a) => (
+                  <tr>
+                    <th scope="row">{products.has(a.product) ? <a href={`/${lang}/products/${a.product}/`}>{pname(a.product)}</a> : a.product}</th>
+                    <td class="mono">{a.versions}</td>
+                    <td class="mono">{a.fixed ?? '—'}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+      )}
     </section>
 
     {
@@ -191,6 +194,8 @@ const jsonLd = {
         }
       </ol>
     </section>
+
+    {e.generated && <p class="small muted ai-note">{t(lang, 'art.generated', { m: e.generated.model })}</p>}
 
     <nav class="other-langs small" aria-label={t(lang, 'art.otherLangs')}>
       <span class="muted">{t(lang, 'art.otherLangs')}:</span>

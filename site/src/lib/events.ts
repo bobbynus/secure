@@ -17,7 +17,6 @@ export function loadAll() {
     const events = ev.map((e) => e.data).sort((a, b) => b.dates.published.localeCompare(a.dates.published));
     for (const e of events) {
       for (const p of e.products) if (!products.has(p)) throw new Error(`${e.id}: unknown product "${p}"`);
-      if (e.affected.some((a) => !products.has(a.product))) throw new Error(`${e.id}: unknown product in affected`);
     }
     return { events, products, sources: sr.map((s) => s.data) };
   })();

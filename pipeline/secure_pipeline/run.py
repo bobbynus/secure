@@ -40,12 +40,13 @@ def allowed_hosts(cat: Catalog) -> set[str]:
     for s in cat.sources.values():
         if s.adapter and s.feed:
             hosts.add(urlsplit(s.feed).hostname or "")
+            hosts.update(h.lower() for h in s.detail)
     return {h for h in hosts if h}
 
 
 def run(data_dir: Path, state_dir: Path, *, only: Optional[set[str]] = None, force: bool = False,
         now: Optional[datetime] = None, fetcher: Optional[Fetcher] = None,
-        log: Callable[[str], None] = print) -> dict:
+        log: Callable[[str], None] = print, bootstrap: timedelta = BOOTSTRAP) -> dict:
     now = now or utcnow()
     cat = load_catalog(data_dir)
     store = Store(state_dir)
@@ -68,7 +69,7 @@ def run(data_dir: Path, state_dir: Path, *, only: Optional[set[str]] = None, for
                 created = updated = 0
                 relevant = []  # items that created or changed an event: kept in the audit log
                 for it in fresh:
-                    if not st.bootstrapped and (it.published is None or it.published < now - BOOTSTRAP):
+                    if not st.bootstrapped and (it.published is None or it.published < now - bootstrap):
                         st.seen[it.key] = it.checksum  # baseline: existing archive is not news
                         continue
                     out = cl.process(it)
@@ -167,6 +168,7 @@ def build_status(cat: Catalog, store: Store, now: datetime, totals: dict) -> dic
         "lastSuccess": last_success,
         "run": {"ok": sum(s["state"] == "ok" for s in active), "error": sum(s["state"] == "error" for s in active)},
         "totals": totals,
-        "events": {"total": len(store.events), "pending": sum(e.publish_state == "pending" for e in store.events.values())},
+        "events": {"total": len(store.events), **{k: sum(e.publish_state == k for e in store.events.values())
+                                                     for k in ("pending", "published", "quarantined")}},
         "sources": sources,
     }

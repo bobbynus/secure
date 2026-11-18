@@ -60,7 +60,10 @@
     "interval": "30m",
     "state": "ok",
     "adapter": "rss",
-    "feed": "https://filestore.fortinet.com/fortiguard/rss/ir.xml"
+    "feed": "https://filestore.fortinet.com/fortiguard/rss/ir.xml",
+    "detail": [
+      "fortiguard.fortinet.com"
+    ]
   },
   {
     "id": "paloalto-psirt",
@@ -74,7 +77,10 @@
     "interval": "30m",
     "state": "ok",
     "adapter": "rss",
-    "feed": "https://security.paloaltonetworks.com/rss.xml"
+    "feed": "https://security.paloaltonetworks.com/rss.xml",
+    "detail": [
+      "security.paloaltonetworks.com"
+    ]
   },
   {
     "id": "ivanti-advisories",
@@ -114,7 +120,10 @@
     "interval": "60m",
     "state": "ok",
     "adapter": "rss",
-    "feed": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml"
+    "feed": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml",
+    "detail": [
+      "sec.cloudapps.cisco.com"
+    ]
   },
   {
     "id": "citrix-bulletins",
@@ -141,7 +150,10 @@
     "interval": "30m",
     "state": "ok",
     "adapter": "rss",
-    "feed": "https://ubuntu.com/security/notices/rss.xml"
+    "feed": "https://ubuntu.com/security/notices/rss.xml",
+    "detail": [
+      "ubuntu.com"
+    ]
   },
   {
     "id": "debian-dsa",
@@ -155,7 +167,10 @@
     "interval": "30m",
     "state": "ok",
     "adapter": "rss",
-    "feed": "https://www.debian.org/security/dsa"
+    "feed": "https://www.debian.org/security/dsa",
+    "detail": [
+      "www.debian.org"
+    ]
   },
   {
     "id": "redhat-secdata",

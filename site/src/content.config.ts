@@ -54,7 +54,7 @@ const events = defineCollection({
     priority: z.enum(['critical', 'high', 'medium', 'low', 'info']),
     confirmation: z.enum(['vendor', 'official', 'preliminary']),
     lifecycle: z.enum(['detected', 'confirmed', 'fix-available', 'resolved']),
-    fix: z.enum(['available', 'partial', 'none', 'n/a']),
+    fix: z.enum(['available', 'partial', 'none', 'n/a', 'unknown']),
     workaround: z.boolean(),
     exploitation: z.object({
       status: z.enum(['confirmed', 'reported', 'none-known']),
@@ -63,19 +63,21 @@ const events = defineCollection({
       evidence: z.array(z.string()).default([]),
     }),
     vendor: z.string(),
-    products: z.array(z.string()).min(1),
+    /** Catalog product ids (may be empty: not every vendor product is in the catalog). */
+    products: z.array(z.string()).default([]),
     identifiers: z.object({
       cve: z.array(z.string().regex(/^CVE-\d{4}-\d{4,}$/)).default([]),
       advisory: z.array(z.string()).default([]),
       kb: z.array(z.string()).default([]),
     }),
     affected: z.array(
+      /** `product`: catalog id, or the vendor's product name when it is not in the catalog. */
       z.object({ product: z.string(), versions: z.string(), fixed: z.string().optional() }),
     ),
     cvss: z
       .object({
         score: z.number().min(0).max(10),
-        version: z.enum(['3.0', '3.1', '4.0']),
+        version: z.enum(['3.0', '3.1', '3.x', '4.0']),
         source: z.string(),
       })
       .optional(),
@@ -92,6 +94,8 @@ const events = defineCollection({
         note: localized,
       }),
     ),
+    /** Set when texts were written by the AI step (stage 4); shown on the article. */
+    generated: z.object({ model: z.string(), prompt: z.string(), at: z.iso.datetime() }).optional(),
     translations: z.object(Object.fromEntries(LANGS.map((l) => [l, translation])) as Record<(typeof LANGS)[number], typeof translation>),
   }),
 });

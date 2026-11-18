@@ -12,7 +12,7 @@ export interface FeedItem {
   category: 'vulnerability' | 'attack' | 'update-issue';
   priority: 'critical' | 'high' | 'medium' | 'low' | 'info';
   confirmation: 'vendor' | 'official' | 'preliminary';
-  fix: 'available' | 'partial' | 'none' | 'n/a';
+  fix: 'available' | 'partial' | 'none' | 'n/a' | 'unknown';
   exploitation: 'confirmed' | 'reported' | 'none-known';
   kev: boolean;
   products: { id: string; name: string }[];
@@ -72,7 +72,7 @@ function fixClass(f: FeedItem['fix']): string {
 export const CARD_LABEL_KEYS = [
   'prio.critical', 'prio.high', 'prio.medium', 'prio.low', 'prio.info',
   'cat.vulnerability', 'cat.attack', 'cat.update-issue',
-  'fix.available', 'fix.partial', 'fix.none', 'fix.n/a',
+  'fix.available', 'fix.partial', 'fix.none', 'fix.n/a', 'fix.unknown',
   'conf.vendor', 'conf.official', 'conf.preliminary',
   'exp.confirmed', 'exp.reported', 'sources.n',
   'feed.empty', 'feed.new', 'feed.count', 'quick.open',

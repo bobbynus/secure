@@ -87,7 +87,20 @@ EXPLOITED_RE = re.compile(
     r"(exploited in the wild|actively exploited|active exploitation|is aware of (?:attempted )?exploitation"
     r"|has been exploited|have been exploited|known to be exploited|exploitation (?:has been|was) observed"
     r"|observed (?:attempted )?exploitation)", re.I)
-NOT_EXPLOITED_RE = re.compile(r"(not aware of any (?:malicious use|exploitation|public)|no known exploitation)", re.I)
+NOT_EXPLOITED_RE = re.compile(
+    r"(not aware of any (?:malicious use|malicious exploitation|exploitation|public)|no known exploitation"
+    r"|no (?:evidence|indication|reports?) of (?:active )?exploitation)", re.I)
+NEGATION_RE = re.compile(r"\b(not|no|never|without|nor|isn't|aren't|wasn't|weren't|unaware)\b[^.;:]*$", re.I)
+
+
+def exploitation_claimed(text: str) -> bool:
+    """True only for a positive statement: "not known to be actively exploited" is not one."""
+    if NOT_EXPLOITED_RE.search(text):
+        return False
+    for m in EXPLOITED_RE.finditer(text):
+        if not NEGATION_RE.search(text[max(0, m.start() - 60):m.start()]):
+            return True
+    return False
 
 FEED_KIND: dict[str, ItemKind] = {
     "ubuntu-usn": "notice", "debian-dsa": "notice",
@@ -134,7 +147,7 @@ def rss(src: SourceConfig, state: SourceState, fetch: Fetcher):
         title = plain(e.get("title"), 300)
         summary = plain(raw)
         sev, score = _severity_and_score(f"{title}\n{summary}")
-        exploited = True if EXPLOITED_RE.search(summary) and not NOT_EXPLOITED_RE.search(summary) else None
+        exploited = True if exploitation_claimed(summary) else None
         published = parse_date(e.get("published") or e.get("updated") or e.get("dc_date"))
         items.append(SourceItem(
             source_id=src.id, key=key, kind=FEED_KIND.get(src.id, "advisory"),

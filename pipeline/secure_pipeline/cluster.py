@@ -21,6 +21,8 @@ from .store import Store
 from .text import similarity
 
 WINDOW = timedelta(days=120)
+MAX_TEXTS = 8
+TEXT_LIMIT = 2500
 TITLE_WINDOW = timedelta(days=14)
 ORDER = ["info", "low", "medium", "high", "critical"]
 PERIMETER = {"panos", "fortios", "fortiproxy", "ivanti-connect-secure", "ivanti-policy-secure", "cisco-asa",
@@ -147,6 +149,7 @@ class Clusterer:
             title_hint=it.title, summary_hint=it.summary[:1500],
             created_at=self.now, updated_at=self.now, event_date=when,
             sources=[_ref(it, src)], related=related, reason=reason,
+            texts={f"{it.source_id}:{it.key}": _text(it)},
         )
         e.lifecycle = "fix-available" if e.fix == "available" else "confirmed"
         e.priority = editorial_priority(e)
@@ -167,6 +170,10 @@ class Clusterer:
             e.sources.append(_ref(it, src))
             changed = True
         if e.identifiers.merge(it.identifiers):
+            changed = True
+        text = _text(it)
+        if e.texts.get(tag) != text and (tag in e.texts or len(e.texts) < MAX_TEXTS):
+            e.texts[tag] = text
             changed = True
         for p in self.catalog.match_products(it.vendor_hint, *it.product_hints):
             if p not in e.products:
@@ -235,6 +242,10 @@ def _confirmation(src: Optional[SourceConfig]) -> str:
     if src.kind == "vendor":
         return "vendor"
     return "preliminary"
+
+
+def _text(it: SourceItem) -> str:
+    return f"{it.title}\n{it.summary}".strip()[:TEXT_LIMIT]
 
 
 def _ref(it: SourceItem, src: Optional[SourceConfig]) -> SourceRef:
