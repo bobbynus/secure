@@ -56,5 +56,63 @@
  ],
  "related": [],
  "reason": "added to CISA KEV",
- "publish_state": "pending"
+ "texts": {},
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "ead195fa2a2a015480694237",
+  "texts": {
+   "en": {
+    "title": "GPUStack: improper authentication vulnerability",
+    "summary": "GPUStack contains an improper authentication vulnerability (CVE-2026-102895) allowing unauthenticated administrative access and code execution.",
+    "impact": "Unauthenticated attackers can gain administrative access, perform user and model changes, create persistent administrator API-keys, disclose worker and cloud-provider secrets, and execute code via POST /v2/inference-backends/from-yaml.",
+    "fix": "Apply mitigations in accordance with vendor instructions.",
+    "workaround": null,
+    "checks": [
+     "Check GPUStack deployments for exposure.",
+     "Apply mitigations in accordance with vendor instructions."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "GPUStack: уязвимость неправильной аутентификации",
+    "summary": "GPUStack содержит уязвимость неправильной аутентификации (CVE-2026-102895), позволяющую получить неавторизованный административный доступ и выполнить код.",
+    "impact": "Неаутентифицированные злоумышленники могут получить административный доступ, изменять пользователей и модели, создавать постоянные ключи администратора API, раскрывать секреты воркеров и облачных провайдеров, а также выполнять код через POST /v2/inference-backends/from-yaml.",
+    "fix": "Примените средства снижения риска в соответствии с инструкциями производителя.",
+    "workaround": null,
+    "checks": [
+     "Проверьте развертывания GPUStack на предмет сетевой доступности.",
+     "Примените средства снижения риска в соответствии с инструкциями производителя."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "GPUStack: Schwachstelle durch fehlerhafte Authentifizierung",
+    "summary": "GPUStack enthält eine Schwachstelle durch fehlerhafte Authentifizierung (CVE-2026-102895), die unauthentifizierten administrativen Zugriff und Codeausführung ermöglicht.",
+    "impact": "Nicht authentifizierte Angreifer können administrativen Zugriff erlangen, Benutzer- und Modelländerungen vornehmen, persistente Administrator-API-Schlüssel erstellen, Worker- und Cloud-Provider-Geheimnisse offenlegen und Code über POST /v2/inference-backends/from-yaml ausführen.",
+    "fix": "Wenden Sie die Mitigationsmaßnahmen gemäß den Herstelleranweisungen an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie GPUStack-Installationen auf Exposition.",
+     "Wenden Sie die Mitigationsmaßnahmen gemäß den Herstelleranweisungen an."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-18T18:50:40Z",
+  "slugs": {
+   "ru": "gpustack-uyazvimost-nepravilnoy-autentifikatsii",
+   "de": "gpustack-schwachstelle-durch-fehlerhafte-authentifizierung",
+   "en": "gpustack-improper-authentication-vulnerability"
+  },
+  "published_at": "2026-11-18T18:50:40Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 1
+ }
 }

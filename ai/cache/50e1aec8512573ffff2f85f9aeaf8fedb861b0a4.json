@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Google Chromium: Use-After-Free Vulnerability in XML",
+  "summary": "Google Chromium contains a use-after-free vulnerability in the XML component, which is actively exploited in the wild.",
+  "impact": "A remote attacker can execute arbitrary code inside the sandbox via a specially crafted webpage. Multiple web browsers utilizing Chromium may be affected.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check systems for installed Google Chromium or browsers utilizing Chromium.",
+   "Review systems for internet exposure as outlined in CISA guidance."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Google Chromium: уязвимость use-after-free в компоненте XML",
+  "summary": "Google Chromium содержит уязвимость use-after-free в компоненте XML, которая активно эксплуатируется.",
+  "impact": "Удаленный злоумышленник может выполнить произвольный код внутри песочницы с помощью специально сформированной веб-страницы. Затронуты могут быть различные браузеры на базе Chromium.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие установленного Google Chromium или браузеров на базе Chromium.",
+   "Проверьте системы на предмет выхода в интернет в соответствии с рекомендациями CISA."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Google Chromium: Use-After-Free-Schwachstelle in XML",
+  "summary": "Google Chromium enthält eine Use-After-Free-Schwachstelle in der XML-Komponente, die aktiv ausgenutzt wird.",
+  "impact": "Ein entfernter Angreifer kann über eine speziell präparierte Webseite beliebigen Code innerhalb der Sandbox ausführen. Mehrere Webbrowser, die Chromium verwenden, können betroffen sein.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf installierte Google Chromium-Instanzen oder Browser, die Chromium verwenden.",
+   "Überprüfen Sie Systeme hinsichtlich ihrer Internetexposition gemäß den CISA-Richtlinien."
+  ],
+  "regression": null
+ }
+}
