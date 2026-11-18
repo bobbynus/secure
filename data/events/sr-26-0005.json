@@ -1,0 +1,104 @@
+{
+  "id": "sr-26-0005",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-10",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Openwave Messaging Limited",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-111793"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 4.3,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-10T00:00:00Z",
+    "published": "2026-11-18T15:04:29Z",
+    "updated": "2026-11-18T15:04:29Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111793",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-10"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-18T15:04:29Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-18T15:04:29Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "openwave-messaging-limited-webtop-media-transcoder-uyazvimost",
+      "title": "Openwave Messaging Limited Webtop Media Transcoder: уязвимость",
+      "summary": "Openwave Messaging Limited Webtop Media Transcoder содержит уязвимость некорректной передачи ресурсов между сферами, которая эксплуатируется.",
+      "impact": "Аутентифицированный пользователь может обрабатывать и конвертировать непредназначенные типы документов при обходе интерфейса Webmail.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 10.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "Примените смягчающие меры в соответствии с инструкциями производителя.",
+      "checks": [
+        "Инвентаризируйте экземпляры Openwave Messaging Limited Webtop Media Transcoder.",
+        "Проверьте системы на предмет уязвимости и выполните инструкции производителя по устранению."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "openwave-messaging-limited-webtop-media-transcoder-schwachstelle",
+      "title": "Openwave Messaging Limited Webtop Media Transcoder: Schwachstelle",
+      "summary": "Openwave Messaging Limited Webtop Media Transcoder enthält eine Schwachstelle durch inkorrekte Ressourcenübertragung zwischen Sphären, die ausgenutzt wird.",
+      "impact": "Ein authentifizierter Benutzer kann unbeabsichtigte Dokumententypen verarbeiten und konvertieren, wenn das Webmail-Erlebnis umgangen wird.",
+      "exploitation": "CISA hat die Schwachstelle am 10.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Wenden Sie Milderungsmaßnahmen gemäß den Anweisungen des Herstellers an.",
+      "checks": [
+        "Inventarisieren Sie Openwave Messaging Limited Webtop Media Transcoder Instanzen.",
+        "Überprüfen Sie Systeme auf Exposition und verifizieren Sie die Milderungsanweisungen des Herstellers."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "openwave-messaging-limited-webtop-media-transcoder-vulnerability",
+      "title": "Openwave Messaging Limited Webtop Media Transcoder: vulnerability",
+      "summary": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability, which is known to be exploited.",
+      "impact": "An authenticated user may process and convert unintended document types if bypassing the Webmail experience.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 10, 2026: exploitation in real attacks is confirmed.",
+      "fix": "Apply mitigations in accordance with vendor instructions.",
+      "checks": [
+        "Inventory Openwave Messaging Limited Webtop Media Transcoder instances.",
+        "Check systems for exposure and verify vendor mitigation instructions."
+      ]
+    }
+  }
+}
