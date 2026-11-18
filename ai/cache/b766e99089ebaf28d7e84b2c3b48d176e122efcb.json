@@ -1,0 +1,42 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Barracuda Email Security Gateway: authentication bypass via alternate path",
+  "summary": "Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass vulnerability allowing unauthenticated remote attackers to modify the global configuration.",
+  "impact": "An unauthenticated remote attacker can invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance's global configuration. This issue can be chained with CVE-2026-111560.",
+  "fix": "The sources do not list specific fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check inventory for Barracuda Networks Email Security Gateway (ESG) deployments.",
+   "Evaluate internet exposure of ESG assets.",
+   "Apply vendor mitigations as instructed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Barracuda Email Security Gateway: обход аутентификации через альтернативный путь",
+  "summary": "Barracuda Networks Email Security Gateway (ESG) содержит уязвимость обхода аутентификации, позволяющую неаутентифицированным удаленным злоумышленникам изменять глобальную конфигурацию.",
+  "impact": "Неаутентифицированный удаленный злоумышленник может вызвать функцию импорта конфигурации и восстановить специально сформированный совместимый архив резервной копии, что приведет к несанкционированному изменению глобальной конфигурации устройства. Эта уязвимость может объединяться в цепочку с CVE-2026-111560.",
+  "fix": "В источниках не указаны конкретные исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте инвентарный список на наличие устройств Barracuda Networks Email Security Gateway (ESG).",
+   "Оцените доступность активов ESG из сети Интернет.",
+   "Примените смягчающие меры производителя согласно инструкциям."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Barracuda Email Security Gateway: Authentifizierungsumgehung über alternativen Pfad",
+  "summary": "Das Barracuda Networks Email Security Gateway (ESG) enthält eine Authentifizierungsumgehung, die es unauthentifizierten Angreifern ermöglicht, die globale Konfiguration zu modifizieren.",
+  "impact": "Ein unauthentifizierter Remote-Angreifer kann eine Konfigurationsimportfunktion aufrufen und ein präpariertes, kompatibles Backup-Archiv wiederherstellen, was zu einer unbefugten Änderung der globalen Konfiguration des Geräts führt. Diese Schwachstelle kann mit CVE-2026-111560 verkettet werden.",
+  "fix": "Die Quellen nennen keine spezifischen korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Prüfen Sie den Bestand auf Barracuda Networks Email Security Gateway (ESG) Systeme.",
+   "Bewerten Sie die Internetexposition von ESG-Assets.",
+   "Wenden Sie die vom Hersteller empfohlenen Mitigationen an."
+  ],
+  "regression": null
+ }
+}

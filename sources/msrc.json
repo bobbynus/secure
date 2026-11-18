@@ -1511,8 +1511,8 @@
   "CVE-2026-97013": "e17748293ca2209a3ee7c653",
   "CVE-2026-97015": "e5a502277585d1a4da6b069a"
  },
- "last_attempt": "2026-11-18T20:30:52Z",
- "last_success": "2026-11-18T20:30:52Z",
+ "last_attempt": "2026-11-18T21:30:39Z",
+ "last_success": "2026-11-18T21:30:39Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

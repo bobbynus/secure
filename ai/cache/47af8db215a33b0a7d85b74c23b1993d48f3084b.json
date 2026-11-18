@@ -1,0 +1,42 @@
+{
+ "affected": [],
+ "en": {
+  "title": "OpenBSD OpenSSH: Password authentication bypass vulnerability",
+  "summary": "OpenBSD OpenSSH on Linux contains a critical password authentication bypass vulnerability tracked as CVE-2026-123158, which is actively exploited in the wild.",
+  "impact": "An attacker can bypass password authentication via password hash misinterpretation on affected OpenSSH installations.",
+  "fix": "The sources do not list specific fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory OpenBSD OpenSSH installations on Linux systems.",
+   "Check systems for exposure to CVE-2026-123158.",
+   "Apply mitigations in accordance with vendor instructions."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "OpenBSD OpenSSH: уязвимость обхода аутентификации по паролю",
+  "summary": "OpenBSD OpenSSH в Linux содержит критическую уязвимость обхода аутентификации по паролю (CVE-2026-123158), которая активно эксплуатируется.",
+  "impact": "Злоумышленник может обойти аутентификацию по паролю из-за неверной интерпретации хэша пароля в затронутых установках OpenSSH.",
+  "fix": "В источниках не указаны конкретные исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установок OpenBSD OpenSSH на системах Linux.",
+   "Проверьте системы на наличие уязвимости CVE-2026-123158.",
+   "Примените защитные меры в соответствии с инструкциями производителя."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "OpenBSD OpenSSH: Schwachstelle zur Umgehung der Passwortauthentifizierung",
+  "summary": "OpenBSD OpenSSH unter Linux enthält eine kritische Schwachstelle zur Umgehung der Passwortauthentifizierung (CVE-2026-123158), die aktiv ausgenutzt wird.",
+  "impact": "Ein Angreifer kann die Passwortauthentifizierung bei betroffenen OpenSSH-Installation durch Fehlinterpretation von Passwort-Hashes umgehen.",
+  "fix": "Die Quellen nennen keine konkreten korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie OpenBSD OpenSSH-Installation auf Linux-Systemen.",
+   "Überprüfen Sie Systeme auf Anfälligkeit für CVE-2026-123158.",
+   "Wenden Sie Abhilfemaßnahmen gemäß den Anweisungen des Herstellers an."
+  ],
+  "regression": null
+ }
+}

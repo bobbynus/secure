@@ -79,58 +79,53 @@
  "texts": {},
  "publish_state": "published",
  "ai": {
-  "input_hash": "4b848b96df0e51e790ea3130",
+  "input_hash": "acfa8a97f1abffaddf8144ea",
   "texts": {
    "en": {
-    "title": "OpenBSD OpenSSH: Authentication bypass via password hash misinterpretation",
-    "summary": "OpenBSD OpenSSH on Linux has an authentication bypass vulnerability due to password hash misinterpretation, which is known to be exploited in the wild.",
-    "impact": "An attacker can bypass password authentication.",
-    "fix": "The sources do not list fixed versions.",
+    "title": "OpenBSD OpenSSH: Password authentication bypass vulnerability",
+    "summary": "OpenBSD OpenSSH on Linux contains a critical password authentication bypass vulnerability tracked as CVE-2026-123158, which is actively exploited in the wild.",
+    "impact": "An attacker can bypass password authentication via password hash misinterpretation on affected OpenSSH installations.",
+    "fix": "The sources do not list specific fixed versions.",
     "workaround": null,
     "checks": [
-     "Inventory OpenBSD OpenSSH installations on Linux.",
-     "Check vendor instructions for available mitigations or updates.",
-     "Evaluate internet exposure of affected assets."
+     "Inventory OpenBSD OpenSSH installations on Linux systems.",
+     "Check systems for exposure to CVE-2026-123158.",
+     "Apply mitigations in accordance with vendor instructions."
     ],
     "regression": null
    },
    "ru": {
-    "title": "OpenBSD OpenSSH: обход аутентификации из-за неверной интерпретации хэша пароля",
-    "summary": "В OpenBSD OpenSSH на Linux имеется уязвимость обхода аутентификации из-за неверной интерпретации хэша пароля, которая эксплуатируется в реальных атаках.",
-    "impact": "Злоумышленник может обойти аутентификацию по паролю.",
-    "fix": "В источниках не указаны исправленные версии.",
+    "title": "OpenBSD OpenSSH: уязвимость обхода аутентификации по паролю",
+    "summary": "OpenBSD OpenSSH в Linux содержит критическую уязвимость обхода аутентификации по паролю (CVE-2026-123158), которая активно эксплуатируется.",
+    "impact": "Злоумышленник может обойти аутентификацию по паролю из-за неверной интерпретации хэша пароля в затронутых установках OpenSSH.",
+    "fix": "В источниках не указаны конкретные исправленные версии.",
     "workaround": null,
     "checks": [
-     "Провести инвентаризацию установленных OpenBSD OpenSSH на Linux.",
-     "Проверить инструкции вендора на предмет доступных обновлений или смягчающих мер.",
-     "Оценить доступность уязвимых систем из интернета."
+     "Проведите инвентаризацию установок OpenBSD OpenSSH на системах Linux.",
+     "Проверьте системы на наличие уязвимости CVE-2026-123158.",
+     "Примените защитные меры в соответствии с инструкциями производителя."
     ],
     "regression": null
    },
    "de": {
-    "title": "OpenBSD OpenSSH: Authentifizierungs-Bypass durch Fehlinterpretation von Passwort-Hashes",
-    "summary": "OpenBSD OpenSSH unter Linux enthält eine Schwachstelle zum Authentifizierungs-Bypass durch Fehlinterpretation von Passwort-Hashes, die aktiv ausgenutzt wird.",
-    "impact": "Ein Angreifer kann die Passwort-Authentifizierung umgehen.",
-    "fix": "Die Quellen nennen keine behobenen Versionen.",
+    "title": "OpenBSD OpenSSH: Schwachstelle zur Umgehung der Passwortauthentifizierung",
+    "summary": "OpenBSD OpenSSH unter Linux enthält eine kritische Schwachstelle zur Umgehung der Passwortauthentifizierung (CVE-2026-123158), die aktiv ausgenutzt wird.",
+    "impact": "Ein Angreifer kann die Passwortauthentifizierung bei betroffenen OpenSSH-Installation durch Fehlinterpretation von Passwort-Hashes umgehen.",
+    "fix": "Die Quellen nennen keine konkreten korrigierten Versionen.",
     "workaround": null,
     "checks": [
-     "OpenBSD OpenSSH-Installationem unter Linux inventarisieren.",
-     "Herstelleranweisungen bezüglich verfügbarer Updates oder Mitigationen prüfen.",
-     "Die Internetexposition der betroffenen Systeme bewerten."
+     "Inventarisieren Sie OpenBSD OpenSSH-Installation auf Linux-Systemen.",
+     "Überprüfen Sie Systeme auf Anfälligkeit für CVE-2026-123158.",
+     "Wenden Sie Abhilfemaßnahmen gemäß den Anweisungen des Herstellers an."
     ],
     "regression": null
    }
   },
-  "affected": [
-   {
-    "product": "OpenBSD OpenSSH",
-    "versions": "all"
-   }
-  ],
+  "affected": [],
   "workaround": false,
   "model": "gemini-3.5-flash-lite",
-  "prompt": "p2",
-  "generated_at": "2026-11-18T14:56:49Z",
+  "prompt": "p3",
+  "generated_at": "2026-11-18T21:30:42Z",
   "slugs": {
    "ru": "openbsd-openssh-obkhod-autentifikatsii-iz-za-nevernoy",
    "de": "openbsd-openssh-authentifizierungs-bypass-durch",
@@ -141,6 +136,6 @@
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 3
+  "calls": 4
  }
 }

@@ -56,5 +56,87 @@
  ],
  "related": [],
  "reason": "critical severity in infrastructure product",
- "publish_state": "pending"
+ "texts": {},
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "9c97c5ea36fc9bc0d0a8764a",
+  "texts": {
+   "en": {
+    "title": "FortiManager: improper authorization in FGFM allows remote code execution",
+    "summary": "An improper authorization vulnerability in FortiManager FGFM allows unauthenticated attackers with network access to the FGFM port to execute unauthorized code or commands via crafted packets.",
+    "impact": "An unauthenticated attacker who can reach the FGFM port can execute unauthorized code or commands.",
+    "fix": "Upgrade to FortiManager version 8.0.1, 7.6.8, 7.4.6, 7.2.9 or above.",
+    "workaround": null,
+    "checks": [
+     "Inventory FortiManager instances running versions 8.0.0, 7.6.0 through 7.6.7, 7.4.0 through 7.4.5, or 7.2.0 through 7.2.8.",
+     "Verify network exposure and accessibility of the FGFM port.",
+     "Apply the appropriate vendor-supplied update."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "FortiManager: некорректная авторизация в FGFM позволяет выполнять удаленный код",
+    "summary": "Уязвимость некорректной авторизации в FGFM FortiManager позволяет неаутентифицированным злоумышленникам с сетевым доступом к порту FGFM выполнять произвольный код или команды с помощью специально сформированных пакетов.",
+    "impact": "Неаутентифицированный злоумышленник, имеющий доступ к порту FGFM, может выполнить неавторизованный код или команды.",
+    "fix": "Обновите FortiManager до версии 8.0.1, 7.6.8, 7.4.6, 7.2.9 или выше.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию экземпляров FortiManager, использующих версии 8.0.0, 7.6.0–7.6.7, 7.4.0–7.4.5 или 7.2.0–7.2.8.",
+     "Проверьте сетевую доступность порта FGFM.",
+     "Установите соответствующее обновление от производителя."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "FortiManager: Fehlerhafte Autorisierung in FGFM ermöglicht Remotecodeausführung",
+    "summary": "Eine Schwachstelle durch unzureichende Autorisierung im FortiManager FGFM ermöglicht es unauthentifizierten Angreifern mit Zugriff auf den FGFM-Port, über manipulierte Pakete Code oder Befehle auszuführen.",
+    "impact": "Ein unauthentifizierter Angreifer, der den FGFM-Port erreichen kann, kann unautorisierten Code oder Befehle ausführen.",
+    "fix": "Aktualisieren Sie FortiManager auf Version 8.0.1, 7.6.8, 7.4.6, 7.2.9 oder höher.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie FortiManager-Instanzen mit den Versionen 8.0.0, 7.6.0 bis 7.6.7, 7.4.0 bis 7.4.5 oder 7.2.0 bis 7.2.8.",
+     "Überprüfen Sie die Netzwerkexposition und Erreichbarkeit des FGFM-Ports.",
+     "Wenden Sie das entsprechende Update des Herstellers an."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [
+   {
+    "product": "FortiManager 8.0",
+    "versions": "8.0.0",
+    "fixed": "8.0.1"
+   },
+   {
+    "product": "FortiManager 7.6",
+    "versions": "7.6.0-7.6.7",
+    "fixed": "7.6.8"
+   },
+   {
+    "product": "FortiManager 7.4",
+    "versions": "7.4.0-7.4.5",
+    "fixed": "7.4.6"
+   },
+   {
+    "product": "FortiManager 7.2",
+    "versions": "7.2.0-7.2.8",
+    "fixed": "7.2.9"
+   }
+  ],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-18T21:30:42Z",
+  "slugs": {
+   "ru": "fortimanager-nekorrektnaya-avtorizatsiya-v-fgfm-pozvolyaet",
+   "de": "fortimanager-fehlerhafte-autorisierung-in-fgfm-ermoeglicht",
+   "en": "fortimanager-improper-authorization-in-fgfm-allows-remote-code"
+  },
+  "published_at": "2026-11-18T21:30:42Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 1
+ }
 }

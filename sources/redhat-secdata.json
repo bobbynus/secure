@@ -300,8 +300,8 @@
   "CVE-2026-128134": "fabf74d79b6e82c869f4b7ac",
   "CVE-2026-130507": "a51e0e2ac4cb79d075467e09"
  },
- "last_attempt": "2026-11-18T20:30:52Z",
- "last_success": "2026-11-18T20:30:52Z",
+ "last_attempt": "2026-11-18T21:30:39Z",
+ "last_success": "2026-11-18T21:30:39Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

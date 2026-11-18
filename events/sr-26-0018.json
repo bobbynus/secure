@@ -56,5 +56,117 @@
  ],
  "related": [],
  "reason": "critical severity in infrastructure product",
- "publish_state": "pending"
+ "texts": {},
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "0ddd09ae49bd5cf30d71345d",
+  "texts": {
+   "en": {
+    "title": "FortiManager and FortiAnalyzer: Authorization bypass in dmserver",
+    "summary": "An authorization bypass vulnerability in `dmserver` allows an authenticated administrator to access other VDOMs via specially crafted HTTP requests.",
+    "impact": "An authenticated administrator can access other VDOMs using specially crafted HTTP requests.",
+    "fix": "Upgrade to FortiAnalyzer/FortiManager version 8.0.2, 7.6.8, 7.4.12, 7.2.13, or migrate 7.0 versions to a fixed release.",
+    "workaround": null,
+    "checks": [
+     "Inventory FortiManager, FortiAnalyzer, FortiManager Cloud, and FortiAnalyzer Cloud installations.",
+     "Verify running versions against affected ranges across branches 8.0, 7.6, 7.4, 7.2, and 7.0.",
+     "Apply the appropriate vendor updates or migrate to fixed releases."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "FortiManager и FortiAnalyzer: обход авторизации в dmserver",
+    "summary": "Уязвимость обхода авторизации в `dmserver` позволяет аутентифицированному администратору получать доступ к другим VDOM с помощью специально сформированных HTTP-запросов.",
+    "impact": "Аутентифицированный администратор может получить доступ к другим VDOM посредством специально сформированных HTTP-запросов.",
+    "fix": "Обновитесь до версий FortiAnalyzer/FortiManager 8.0.2, 7.6.8, 7.4.12, 7.2.13 или мигрируйте версию 7.0 на исправленный релиз.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию установленных систем FortiManager, FortiAnalyzer, FortiManager Cloud и FortiAnalyzer Cloud.",
+     "Проверьте версию ПО на соответствие уязвимым диапазонам для ветвей 8.0, 7.6, 7.4, 7.2 и 7.0.",
+     "Установите соответствующие обновления производителя или выполните миграцию на исправленные релизы."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "FortiManager und FortiAnalyzer: Autorisierungsumgehung in dmserver",
+    "summary": "Eine Autorisierungsumgehungsschwachstelle in `dmserver` ermöglicht es einem authentifizierten Administrator, über speziell gestaltete HTTP-Anfragen auf andere VDOMs zuzugreifen.",
+    "impact": "Ein authentifizierter Administrator kann mittels speziell gestalteter HTTP-Anfragen auf andere VDOMs zugreifen.",
+    "fix": "Ein Upgrade auf FortiAnalyzer/FortiManager Version 8.0.2, 7.6.8, 7.4.12, 7.2.13 durchführen oder 7.0-Versionen auf ein korrigiertes Release migrieren.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie FortiManager-, FortiAnalyzer-, FortiManager Cloud- und FortiAnalyzer Cloud-Installationen.",
+     "Überprüfen Sie die ausgeführten Versionen anhand der betroffenen Bereiche in den Zweigen 8.0, 7.6, 7.4, 7.2 und 7.0.",
+     "Wenden Sie die entsprechenden Herstellerupdates an oder migrieren Sie auf korrigierte Releases."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [
+   {
+    "product": "FortiAnalyzer 8.0",
+    "versions": "8.0.0 through 8.0.1",
+    "fixed": "8.0.2"
+   },
+   {
+    "product": "FortiAnalyzer 7.6",
+    "versions": "7.6.0 through 7.6.7",
+    "fixed": "7.6.8"
+   },
+   {
+    "product": "FortiAnalyzer 7.4",
+    "versions": "7.4.0 through 7.4.11",
+    "fixed": "7.4.12"
+   },
+   {
+    "product": "FortiAnalyzer 7.2",
+    "versions": "7.2.0 through 7.2.12",
+    "fixed": "7.2.13"
+   },
+   {
+    "product": "FortiAnalyzer Cloud 8.0",
+    "versions": "8.0.1",
+    "fixed": "8.0.2"
+   },
+   {
+    "product": "FortiAnalyzer Cloud 7.6",
+    "versions": "7.6.0 through 7.6.7",
+    "fixed": "7.6.8"
+   },
+   {
+    "product": "FortiAnalyzer Cloud 7.4",
+    "versions": "7.4.1 through 7.4.11",
+    "fixed": "7.4.12"
+   },
+   {
+    "product": "FortiAnalyzer Cloud 7.2",
+    "versions": "7.2.1 through 7.2.12",
+    "fixed": "7.2.13"
+   },
+   {
+    "product": "FortiManager 8.0",
+    "versions": "8.0.0 through 8.0.1",
+    "fixed": "8.0.2"
+   },
+   {
+    "product": "FortiManager 7.6",
+    "versions": "7.6.0 through 7.6.7",
+    "fixed": "7.6.8"
+   }
+  ],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-18T21:30:42Z",
+  "slugs": {
+   "ru": "fortimanager-i-fortianalyzer-obkhod-avtorizatsii-v-dmserver",
+   "de": "fortimanager-und-fortianalyzer-autorisierungsumgehung-in",
+   "en": "fortimanager-and-fortianalyzer-authorization-bypass-in-dmserver"
+  },
+  "published_at": "2026-11-18T21:30:42Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 1
+ }
 }
