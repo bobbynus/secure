@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T18:50:39Z",
+ "generatedAt": "2026-11-18T19:00:22Z",
  "lastSuccess": "2026-11-18T18:50:39Z",
  "run": {
   "ok": 12,
@@ -13,8 +13,8 @@
  },
  "events": {
   "total": 20,
-  "pending": 10,
-  "published": 9,
+  "pending": 7,
+  "published": 12,
   "quarantined": 0
  },
  "sources": [
