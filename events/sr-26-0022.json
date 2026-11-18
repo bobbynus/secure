@@ -1,0 +1,120 @@
+{
+ "id": "sr-26-0022",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "official",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "BerriAI",
+ "products": [],
+ "product_names": [
+  "LiteLLM"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-40217"
+  ],
+  "advisory": [],
+  "kb": []
+ },
+ "severity": null,
+ "cvss": {
+  "score": 8.8,
+  "version": "3.1",
+  "source": "NVD",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+ },
+ "exploited": true,
+ "kev": true,
+ "kev_added": "2026-11-18",
+ "ransomware": false,
+ "title_hint": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+ "summary_hint": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+ "created_at": "2026-11-18T20:00:42Z",
+ "updated_at": "2026-11-18T20:00:42Z",
+ "event_date": "2026-11-18T00:00:00Z",
+ "sources": [
+  {
+   "source_id": "cisa-kev",
+   "item_key": "CVE-2026-40217",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-40217",
+   "title": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+   "publisher": "CISA Known Exploited Vulnerabilities",
+   "kind": "kev",
+   "date": "2026-11-18"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-18T20:00:42Z",
+   "kind": "created",
+   "facts": {
+    "reason": "added to CISA KEV"
+   },
+   "source": "cisa-kev:CVE-2026-40217"
+  }
+ ],
+ "related": [],
+ "reason": "added to CISA KEV",
+ "texts": {
+  "cisa-kev:CVE-2026-40217": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability\nBerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+ },
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "9c6c7cd7493965a8acc6a5c6",
+  "texts": {
+   "en": {
+    "title": "BerriAI LiteLLM: unprotected alternate channel vulnerability (CVE-2026-40217)",
+    "summary": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability allowing remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI. CISA added CVE-2026-40217 to its KEV catalog.",
+    "impact": "Remote attackers can execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
+    "fix": "The sources do not state fixed versions. Apply mitigations in accordance with vendor instructions.",
+    "workaround": null,
+    "checks": [
+     "Check systems for the presence of BerriAI LiteLLM.",
+     "Verify exposure of the /guardrails/test_custom_code URI."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "BerriAI LiteLLM: уязвимость незащищенного альтернативного канала (CVE-2026-40217)",
+    "summary": "BerriAI LiteLLM содержит уязвимость незащищенного альтернативного канала, которая позволяет удаленным злоумышленникам выполнять произвольный код путем перезаписи байт-кода через URI /guardrails/test_custom_code. CISA добавила CVE-2026-40217 в каталог KEV.",
+    "impact": "Удаленные злоумышленники могут выполнять произвольный код посредством перезаписи байт-кода через URI /guardrails/test_custom_code.",
+    "fix": "В источниках не указаны исправленные версии. Примените смягчающие меры в соответствии с инструкциями производителя.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие BerriAI LiteLLM.",
+     "Проверьте доступность URI /guardrails/test_custom_code."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "BerriAI LiteLLM: Schwachstelle durch ungeschützten alternativen Kanal (CVE-2026-40217)",
+    "summary": "BerriAI LiteLLM enthält eine Schwachstelle durch einen ungeschützten alternativen Kanal, die es Angreifern ermöglicht, über Bytecode-Umschreibung an der URI /guardrails/test_custom_code beliebigen Code auszuführen. CISA hat CVE-2026-40217 in den KEV-Katalog aufgenommen.",
+    "impact": "Entfernte Angreifer können über Bytecode-Umschreibung an der URI /guardrails/test_custom_code beliebigen Code ausführen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen. Wenden Sie Mitigationsmaßnahmen gemäß den Anweisungen des Herstellers an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf das Vorhandensein von BerriAI LiteLLM.",
+     "Überprüfen Sie die Erreichbarkeit der URI /guardrails/test_custom_code."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-18T20:01:29Z",
+  "slugs": {
+   "ru": "berriai-litellm-uyazvimost-nezashchishchennogo-alternativnogo",
+   "de": "berriai-litellm-schwachstelle-durch-ungeschuetzten-alternativen",
+   "en": "berriai-litellm-unprotected-alternate-channel-vulnerability-cve"
+  },
+  "published_at": "2026-11-18T20:01:29Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 2
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Synology DiskStation Manager (DSM)",
+   "versions": "unspecified",
+   "fixed": null,
+   "evidence": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Synology DiskStation Manager (DSM): Improper output encoding vulnerability",
+  "summary": "Synology DiskStation Manager (DSM) contains an improper encoding or escaping of output vulnerability that allows remote attackers to execute arbitrary code.",
+  "impact": "A remote attacker can execute arbitrary code via unspecified vectors.",
+  "fix": "Apply mitigations in accordance with vendor instructions.",
+  "workaround": null,
+  "checks": [
+   "Check systems for Synology DiskStation Manager (DSM) deployments.",
+   "Verify exposure and apply vendor-provided mitigations."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Synology DiskStation Manager (DSM): уязвимость кодирования вывода",
+  "summary": "Synology DiskStation Manager (DSM) содержит уязвимость некорректного кодирования или экранирования вывода, позволяющую удаленным злоумышленникам выполнять произвольный код.",
+  "impact": "Удаленный злоумышленник может выполнить произвольный код через неуказанные векторы.",
+  "fix": "Примените смягчающие меры в соответствии с инструкциями производителя.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие развертываний Synology DiskStation Manager (DSM).",
+   "Проверьте уровень воздействия и примените смягчающие меры от производителя."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Synology DiskStation Manager (DSM): Schwachstelle bei der Ausgabe-Codierung",
+  "summary": "Synology DiskStation Manager (DSM) enthält eine Schwachstelle durch unsachgemäße Codierung oder Maskierung von Ausgaben, die es Angreifern ermöglicht, beliebigen Code auszuführen.",
+  "impact": "Ein Remotegreifer kann über nicht näher bezeichnete Vektoren beliebigen Code ausführen.",
+  "fix": "Wenden Sie Abhilfemaßnahmen gemäß den Anweisungen des Herstellers an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf den Einsatz von Synology DiskStation Manager (DSM).",
+   "Überprüfen Sie die Exposition und wenden Sie die vom Hersteller bereitgestellten Abhilfemaßnahmen an."
+  ],
+  "regression": null
+ }
+}

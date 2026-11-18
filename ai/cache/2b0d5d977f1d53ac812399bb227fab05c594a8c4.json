@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "BerriAI LiteLLM: unprotected alternate channel vulnerability (CVE-2026-40217)",
+  "summary": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability allowing remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI. CISA added CVE-2026-40217 to its KEV catalog.",
+  "impact": "Remote attackers can execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
+  "fix": "The sources do not state fixed versions. Apply mitigations in accordance with vendor instructions.",
+  "workaround": null,
+  "checks": [
+   "Check systems for the presence of BerriAI LiteLLM.",
+   "Verify exposure of the /guardrails/test_custom_code URI."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "BerriAI LiteLLM: уязвимость незащищенного альтернативного канала (CVE-2026-40217)",
+  "summary": "BerriAI LiteLLM содержит уязвимость незащищенного альтернативного канала, которая позволяет удаленным злоумышленникам выполнять произвольный код путем перезаписи байт-кода через URI /guardrails/test_custom_code. CISA добавила CVE-2026-40217 в каталог KEV.",
+  "impact": "Удаленные злоумышленники могут выполнять произвольный код посредством перезаписи байт-кода через URI /guardrails/test_custom_code.",
+  "fix": "В источниках не указаны исправленные версии. Примените смягчающие меры в соответствии с инструкциями производителя.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие BerriAI LiteLLM.",
+   "Проверьте доступность URI /guardrails/test_custom_code."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "BerriAI LiteLLM: Schwachstelle durch ungeschützten alternativen Kanal (CVE-2026-40217)",
+  "summary": "BerriAI LiteLLM enthält eine Schwachstelle durch einen ungeschützten alternativen Kanal, die es Angreifern ermöglicht, über Bytecode-Umschreibung an der URI /guardrails/test_custom_code beliebigen Code auszuführen. CISA hat CVE-2026-40217 in den KEV-Katalog aufgenommen.",
+  "impact": "Entfernte Angreifer können über Bytecode-Umschreibung an der URI /guardrails/test_custom_code beliebigen Code ausführen.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen. Wenden Sie Mitigationsmaßnahmen gemäß den Anweisungen des Herstellers an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf das Vorhandensein von BerriAI LiteLLM.",
+   "Überprüfen Sie die Erreichbarkeit der URI /guardrails/test_custom_code."
+  ],
+  "regression": null
+ }
+}

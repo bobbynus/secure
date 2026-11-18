@@ -1,0 +1,123 @@
+{
+ "id": "sr-26-0024",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "official",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Apache",
+ "products": [],
+ "product_names": [
+  "Axis"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-90436"
+  ],
+  "advisory": [],
+  "kb": []
+ },
+ "severity": null,
+ "cvss": {
+  "score": 9.8,
+  "version": "3.1",
+  "source": "NVD",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+ },
+ "exploited": true,
+ "kev": true,
+ "kev_added": "2026-11-18",
+ "ransomware": false,
+ "title_hint": "Apache Axis Unsafe Reflection Vulnerability",
+ "summary_hint": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class is available on the application classpath. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+ "created_at": "2026-11-18T20:00:42Z",
+ "updated_at": "2026-11-18T20:00:42Z",
+ "event_date": "2026-11-18T00:00:00Z",
+ "sources": [
+  {
+   "source_id": "cisa-kev",
+   "item_key": "CVE-2026-90436",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-90436",
+   "title": "Apache Axis Unsafe Reflection Vulnerability",
+   "publisher": "CISA Known Exploited Vulnerabilities",
+   "kind": "kev",
+   "date": "2026-11-18"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-18T20:00:42Z",
+   "kind": "created",
+   "facts": {
+    "reason": "added to CISA KEV"
+   },
+   "source": "cisa-kev:CVE-2026-90436"
+  }
+ ],
+ "related": [],
+ "reason": "added to CISA KEV",
+ "texts": {
+  "cisa-kev:CVE-2026-90436": "Apache Axis Unsafe Reflection Vulnerability\nApache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class is available on the application classpath. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+ },
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "d4628ab35f17bed0c8aa4c8e",
+  "texts": {
+   "en": {
+    "title": "Apache Axis: Unsafe Reflection Vulnerability (CVE-2026-90436)",
+    "summary": "Apache Axis contains an unsafe reflection vulnerability allowing unauthenticated remote attackers to execute arbitrary code via a crafted SOAP fault message.",
+    "impact": "An unauthenticated remote attacker can execute arbitrary code by sending a crafted SOAP fault message that causes Apache Axis to load and instantiate an attacker-specified class, provided a suitable class is available on the application classpath.",
+    "fix": "The sources state that the impacted product could be end-of-life (EoL) and/or end-of-service (EoS), and users are advised to discontinue use and/or transition to a supported version.",
+    "workaround": null,
+    "checks": [
+     "Inventory systems running Apache Axis to identify potentially exposed and end-of-life instances.",
+     "Verify network exposure and check if the product is used in production environments.",
+     "Discontinue use of unsupported or end-of-life instances in accordance with vendor and CISA guidance."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Apache Axis: уязвимость небезопасного отражения (CVE-2026-90436)",
+    "summary": "Apache Axis содержит уязвимость небезопасного отражения, позволяющую неаутентифицированным удаленным злоумышленникам выполнять произвольный код.",
+    "impact": "Неаутентифицированный удаленный злоумышленник может выполнить произвольный код, отправив специально сформированное сообщение SOAP fault, которое заставляет Apache Axis загрузить и создать экземпляр указанного злоумышленником класса, если подходящий класс доступен в пути к классам приложения.",
+    "fix": "В источниках указано, что затронутый продукт может иметь прекращенный срок службы (EoL/EoS), а пользователям рекомендуется прекратить его использование и/или перейти на поддерживаемую версию.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем под управлением Apache Axis для выявления потенциально уязвимых экземпляров с истекшим сроком поддержки.",
+     "Проверьте сетевую доступность и использование продукта в производственных средах.",
+     "Прекратите использование неподдерживаемых экземпляров в соответствии с рекомендациями поставщика и CISA."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Apache Axis: Schwachstelle durch unsichere Reflektion (CVE-2026-90436)",
+    "summary": "Apache Axis enthält eine Schwachstelle durch unsichere Reflektion, die es unauthentifizierten Angreifern ermöglicht, beliebigen Code auszuführen.",
+    "impact": "Ein unauthentifizierter, fernzugreifender Angreifer kann durch eine manipulierte SOAP-Fault-Nachricht beliebigen Code ausführen, indem Apache Axis veranlasst wird, eine vom Angreifer spezifizierte Klasse zu laden und zu instanziieren, sofern eine geeignete Klasse im Classpath der Anwendung verfügbar ist.",
+    "fix": "Die Quellen geben an, dass das betroffene Produkt das Ende seines Lebenszyklus (EoL/EoS) erreicht haben könnte, und empfehlen Benutzern, die Nutzung einzustellen und/oder auf eine unterstützte Version zu wechseln.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Systeme mit Apache Axis, um potenziell exponierte und abgekündigte Instanzen zu identifizieren.",
+     "Überprüfen Sie die Netzwerkexposition und den Einsatz des Produkts in Produktionsumgebungen.",
+     "Stellen Sie die Nutzung nicht unterstützter Instanzen gemäß den Hersteller- und CISA-Empfehlungen ein."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-18T20:01:29Z",
+  "slugs": {
+   "ru": "apache-axis-uyazvimost-nebezopasnogo-otrazheniya-cve-2026-90436",
+   "de": "apache-axis-schwachstelle-durch-unsichere-reflektion-cve-2026",
+   "en": "apache-axis-unsafe-reflection-vulnerability-cve-2026-90436"
+  },
+  "published_at": "2026-11-18T20:01:29Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 1
+ }
+}

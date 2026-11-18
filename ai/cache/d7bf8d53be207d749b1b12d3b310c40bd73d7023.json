@@ -1,0 +1,67 @@
+{
+ "affected": [
+  {
+   "product": "FortiOS 8.0",
+   "versions": "8.0.0 through 8.0.1",
+   "fixed": "8.0.2",
+   "evidence": "FortiOS 8.0\n8.0.0 through 8.0.1\nUpgrade to 8.0.2 or above"
+  },
+  {
+   "product": "FortiOS 7.6",
+   "versions": "7.6.0 through 7.6.7",
+   "fixed": "7.6.8",
+   "evidence": "FortiOS 7.6\n7.6.0 through 7.6.7\nUpgrade to 7.6.8 or above"
+  },
+  {
+   "product": "FortiOS 7.4",
+   "versions": "7.4.0 through 7.4.12",
+   "fixed": "7.4.13",
+   "evidence": "FortiOS 7.4\n7.4.0 through 7.4.12\nUpgrade to 7.4.13 or above"
+  },
+  {
+   "product": "FortiOS 7.2",
+   "versions": "7.2.0 through 7.2.13",
+   "fixed": "7.2.14",
+   "evidence": "FortiOS 7.2\n7.2.0 through 7.2.13\nUpgrade to 7.2.14 or above"
+  }
+ ],
+ "en": {
+  "title": "FortiOS and FortiSASE: numeric truncation error in bgp daemon",
+  "summary": "A numeric truncation error vulnerability in FortiOS and FortiSASE bgp daemon may allow a configured ibgp neighbor to send malicious attributes via a specially crafted request, leading to denial of service.",
+  "impact": "A configured ibgp neighbor can send malicious or malformed attributes to all connected routers via a specially crafted request, causing a denial of service.",
+  "fix": "Upgrade to FortiOS 8.0.2, 7.6.8, 7.4.13, 7.2.14 or above, or migrate to a fixed release for FortiSASE.",
+  "workaround": "A virtual patch named `FG-VD-62507.0day.` is available in FMWP db update 26.118.",
+  "checks": [
+   "Check FortiOS and FortiSASE systems for running affected version ranges.",
+   "Verify BGP and ibgp neighbor configurations.",
+   "Apply the recommended upgrade or the virtual patch `FG-VD-62507.0day.`."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "FortiOS и FortiSASE: ошибка численного усечения в bgp daemon",
+  "summary": "Уязвимость ошибки численного усечения в bgp daemon FortiOS и FortiSASE может позволить настроенному соседу ibgp отправить вредоносные атрибуты через специально сформированный запрос, приводя к отказу в обслуживании.",
+  "impact": "Настроенный сосед ibgp может отправить вредоносные или некорректные атрибуты всем подключенным маршрутизаторам через специально сформированный запрос, вызывая отказ в обслуживании.",
+  "fix": "Обновитесь до FortiOS 8.0.2, 7.6.8, 7.4.13, 7.2.14 или выше либо мигрируйте на исправленный выпуск для FortiSASE.",
+  "workaround": "Виртуальный патч с именем `FG-VD-62507.0day.` доступен в обновлении базы данных FMWP 26.118.",
+  "checks": [
+   "Проверьте системы FortiOS и FortiSASE на наличие затронутых версий.",
+   "Проверьте настройки BGP и соседей ibgp.",
+   "Примените рекомендуемое обновление или виртуальный патч `FG-VD-62507.0day.`."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "FortiOS und FortiSASE: Numerischer Kürzungsfehler im bgp daemon",
+  "summary": "Eine Schwachstelle durch numerische Kürzung im bgp daemon von FortiOS und FortiSASE kann es einem konfigurierten ibgp-Nachbarn ermöglichen, bösartige Attribute über eine speziell crafted Anfrage zu senden, was zu einem Denial of Service führt.",
+  "impact": "Ein konfigurierter ibgp-Nachbar kann bösartige oder fehlerhafte Attribute über eine speziell erstellte Anfrage an alle verbundenen Router senden, was einen Denial of Service verursacht.",
+  "fix": "Führen Sie ein Upgrade auf FortiOS 8.0.2, 7.6.8, 7.4.13, 7.2.14 oder höher durch oder migrieren Sie zu einer korrigierten Version für FortiSASE.",
+  "workaround": "Ein virtueller Patch namens `FG-VD-62507.0day.` ist im FMWP-DB-Update 26.118 verfügbar.",
+  "checks": [
+   "Überprüfen Sie FortiOS- und FortiSASE-Systeme auf betroffene Versionen.",
+   "Überprüfen Sie die BGP- und ibgp-Nachbarkonfigurationen.",
+   "Wenden Sie das empfohlene Update oder den virtuellen Patch `FG-VD-62507.0day.` an."
+  ],
+  "regression": null
+ }
+}

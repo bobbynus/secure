@@ -1,0 +1,42 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Apache Axis: Unsafe Reflection Vulnerability (CVE-2026-90436)",
+  "summary": "Apache Axis contains an unsafe reflection vulnerability allowing unauthenticated remote attackers to execute arbitrary code via a crafted SOAP fault message.",
+  "impact": "An unauthenticated remote attacker can execute arbitrary code by sending a crafted SOAP fault message that causes Apache Axis to load and instantiate an attacker-specified class, provided a suitable class is available on the application classpath.",
+  "fix": "The sources state that the impacted product could be end-of-life (EoL) and/or end-of-service (EoS), and users are advised to discontinue use and/or transition to a supported version.",
+  "workaround": null,
+  "checks": [
+   "Inventory systems running Apache Axis to identify potentially exposed and end-of-life instances.",
+   "Verify network exposure and check if the product is used in production environments.",
+   "Discontinue use of unsupported or end-of-life instances in accordance with vendor and CISA guidance."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Apache Axis: уязвимость небезопасного отражения (CVE-2026-90436)",
+  "summary": "Apache Axis содержит уязвимость небезопасного отражения, позволяющую неаутентифицированным удаленным злоумышленникам выполнять произвольный код.",
+  "impact": "Неаутентифицированный удаленный злоумышленник может выполнить произвольный код, отправив специально сформированное сообщение SOAP fault, которое заставляет Apache Axis загрузить и создать экземпляр указанного злоумышленником класса, если подходящий класс доступен в пути к классам приложения.",
+  "fix": "В источниках указано, что затронутый продукт может иметь прекращенный срок службы (EoL/EoS), а пользователям рекомендуется прекратить его использование и/или перейти на поддерживаемую версию.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем под управлением Apache Axis для выявления потенциально уязвимых экземпляров с истекшим сроком поддержки.",
+   "Проверьте сетевую доступность и использование продукта в производственных средах.",
+   "Прекратите использование неподдерживаемых экземпляров в соответствии с рекомендациями поставщика и CISA."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Apache Axis: Schwachstelle durch unsichere Reflektion (CVE-2026-90436)",
+  "summary": "Apache Axis enthält eine Schwachstelle durch unsichere Reflektion, die es unauthentifizierten Angreifern ermöglicht, beliebigen Code auszuführen.",
+  "impact": "Ein unauthentifizierter, fernzugreifender Angreifer kann durch eine manipulierte SOAP-Fault-Nachricht beliebigen Code ausführen, indem Apache Axis veranlasst wird, eine vom Angreifer spezifizierte Klasse zu laden und zu instanziieren, sofern eine geeignete Klasse im Classpath der Anwendung verfügbar ist.",
+  "fix": "Die Quellen geben an, dass das betroffene Produkt das Ende seines Lebenszyklus (EoL/EoS) erreicht haben könnte, und empfehlen Benutzern, die Nutzung einzustellen und/oder auf eine unterstützte Version zu wechseln.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Systeme mit Apache Axis, um potenziell exponierte und abgekündigte Instanzen zu identifizieren.",
+   "Überprüfen Sie die Netzwerkexposition und den Einsatz des Produkts in Produktionsumgebungen.",
+   "Stellen Sie die Nutzung nicht unterstützter Instanzen gemäß den Hersteller- und CISA-Empfehlungen ein."
+  ],
+  "regression": null
+ }
+}

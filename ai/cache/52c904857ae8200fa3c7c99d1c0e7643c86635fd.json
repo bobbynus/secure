@@ -1,0 +1,42 @@
+{
+ "affected": [],
+ "en": {
+  "title": "REDCap: code injection via public survey context",
+  "summary": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability allowing unauthenticated attackers to execute arbitrary code. CISA has added this vulnerability to its Known Exploited Vulnerabilities catalog.",
+  "impact": "An unauthenticated attacker with knowledge of a valid public survey hash can execute arbitrary code on the server via crafted HTTP requests.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Research Electronic Data Capture (REDCap) deployments across the infrastructure.",
+   "Verify internet exposure and access controls for public survey routes.",
+   "Check vendor instructions for available mitigations or updates."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "REDCap: инъекция кода через публичный контекст опроса",
+  "summary": "Research Electronic Data Capture (REDCap) от Vanderbilt University содержит уязвимость внедрения кода, позволяющую неаутентифицированным злоумышленникам выполнять произвольный код. CISA добавила эту уязвимость в свой каталог эксплуатируемых уязвимостей.",
+  "impact": "Неаутентифицированный злоумышленник, обладающий действительным хешем публичного опроса, может выполнить произвольный код на сервере с помощью специально сформированных HTTP-запросов.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию развертываний Research Electronic Data Capture (REDCap) в инфраструктуре.",
+   "Проверьте доступ из интернета и средства контроля доступа для маршрутов публичных опросов.",
+   "Проверьте инструкции вендора на наличие доступных средств снижения рисков или обновлений."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "REDCap: Code-Injektion über öffentlichen Umfragekontext",
+  "summary": "Research Electronic Data Capture (REDCap) von Vanderbilt University enthält eine Code-Injektions-Schwachstelle, die es unauthentifizierten Angreifern ermöglicht, beliebigen Code auszuführen. CISA hat diese Schwachstelle in den Katalog bekannter ausgenutzter Schwachstellen aufgenommen.",
+  "impact": "Ein unauthentifizierter Angreifer mit Kenntnis eines gültigen Hash-Werts einer öffentlichen Umfrage kann über manipulierte HTTP-Anfragen beliebigen Code auf dem Server ausführen.",
+  "fix": "In den Quellen sind keine korrigierten Versionen genannt.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Research Electronic Data Capture (REDCap)-Installationen in der Infrastruktur.",
+   "Überprüfen Sie die Internetexposition und Zugriffskontrollen für öffentliche Umfragerouten.",
+   "Prüfen Sie die Herstelleranweisungen auf verfügbare Mitigationsmaßnahmen oder Updates."
+  ],
+  "regression": null
+ }
+}

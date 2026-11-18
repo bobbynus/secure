@@ -1,0 +1,120 @@
+{
+ "id": "sr-26-0021",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "official",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Synology",
+ "products": [],
+ "product_names": [
+  "DiskStation Manager (DSM)"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2024-10441"
+  ],
+  "advisory": [],
+  "kb": []
+ },
+ "severity": null,
+ "cvss": {
+  "score": 9.8,
+  "version": "3.1",
+  "source": "NVD",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+ },
+ "exploited": true,
+ "kev": true,
+ "kev_added": "2026-11-18",
+ "ransomware": false,
+ "title_hint": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+ "summary_hint": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+ "created_at": "2026-11-18T20:00:42Z",
+ "updated_at": "2026-11-18T20:00:42Z",
+ "event_date": "2026-11-18T00:00:00Z",
+ "sources": [
+  {
+   "source_id": "cisa-kev",
+   "item_key": "CVE-2024-10441",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2024-10441",
+   "title": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+   "publisher": "CISA Known Exploited Vulnerabilities",
+   "kind": "kev",
+   "date": "2026-11-18"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-18T20:00:42Z",
+   "kind": "created",
+   "facts": {
+    "reason": "added to CISA KEV"
+   },
+   "source": "cisa-kev:CVE-2024-10441"
+  }
+ ],
+ "related": [],
+ "reason": "added to CISA KEV",
+ "texts": {
+  "cisa-kev:CVE-2024-10441": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability\nSynology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+ },
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "49189693280554e21c138642",
+  "texts": {
+   "en": {
+    "title": "Synology DiskStation Manager (DSM): Improper output encoding vulnerability",
+    "summary": "Synology DiskStation Manager (DSM) contains an improper encoding or escaping of output vulnerability that allows remote attackers to execute arbitrary code.",
+    "impact": "A remote attacker can execute arbitrary code via unspecified vectors.",
+    "fix": "Apply mitigations in accordance with vendor instructions.",
+    "workaround": null,
+    "checks": [
+     "Check systems for Synology DiskStation Manager (DSM) deployments.",
+     "Verify exposure and apply vendor-provided mitigations."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Synology DiskStation Manager (DSM): уязвимость кодирования вывода",
+    "summary": "Synology DiskStation Manager (DSM) содержит уязвимость некорректного кодирования или экранирования вывода, позволяющую удаленным злоумышленникам выполнять произвольный код.",
+    "impact": "Удаленный злоумышленник может выполнить произвольный код через неуказанные векторы.",
+    "fix": "Примените смягчающие меры в соответствии с инструкциями производителя.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие развертываний Synology DiskStation Manager (DSM).",
+     "Проверьте уровень воздействия и примените смягчающие меры от производителя."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Synology DiskStation Manager (DSM): Schwachstelle bei der Ausgabe-Codierung",
+    "summary": "Synology DiskStation Manager (DSM) enthält eine Schwachstelle durch unsachgemäße Codierung oder Maskierung von Ausgaben, die es Angreifern ermöglicht, beliebigen Code auszuführen.",
+    "impact": "Ein Remotegreifer kann über nicht näher bezeichnete Vektoren beliebigen Code ausführen.",
+    "fix": "Wenden Sie Abhilfemaßnahmen gemäß den Anweisungen des Herstellers an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf den Einsatz von Synology DiskStation Manager (DSM).",
+     "Überprüfen Sie die Exposition und wenden Sie die vom Hersteller bereitgestellten Abhilfemaßnahmen an."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-18T20:01:29Z",
+  "slugs": {
+   "ru": "synology-diskstation-manager-dsm-uyazvimost-kodirovaniya-vyvoda",
+   "de": "synology-diskstation-manager-dsm-schwachstelle-bei-der-ausgabe",
+   "en": "synology-diskstation-manager-dsm-improper-output-encoding"
+  },
+  "published_at": "2026-11-18T20:01:29Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 2
+ }
+}
