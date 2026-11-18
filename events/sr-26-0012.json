@@ -56,5 +56,66 @@
  ],
  "related": [],
  "reason": "added to CISA KEV",
- "publish_state": "pending"
+ "texts": {},
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "58e841343dc885872debc565",
+  "texts": {
+   "en": {
+    "title": "SignalWire FreeSwitch: Code Injection Vulnerability (CVE-2026-116779)",
+    "summary": "SignalWire FreeSwitch contains a code injection vulnerability tracked as CVE-2026-116779, which is actively exploited in the wild.",
+    "impact": "Permits configuration and credential disclosure, arbitrary call control, and command execution.",
+    "fix": "Apply mitigations in accordance with vendor instructions.",
+    "workaround": null,
+    "checks": [
+     "Inventory systems running SignalWire FreeSwitch.",
+     "Check asset internet exposure.",
+     "Apply mitigations in accordance with vendor instructions."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "SignalWire FreeSwitch: уязвимость внедрения кода (CVE-2026-116779)",
+    "summary": "SignalWire FreeSwitch содержит уязвимость внедрения кода CVE-2026-116779, которая активно эксплуатируется.",
+    "impact": "Позволяет раскрывать конфигурацию и учетные данные, осуществлять произвольное управление вызовами и выполнять команды.",
+    "fix": "Примените смягчающие меры в соответствии с инструкциями производителя.",
+    "workaround": null,
+    "checks": [
+     "Проинвентаризируйте системы под управлением SignalWire FreeSwitch.",
+     "Проверьте доступность активов из сети Интернет.",
+     "Примените смягчающие меры в соответствии с инструкциями производителя."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "SignalWire FreeSwitch: Code-Injektions-Schwachstelle (CVE-2026-116779)",
+    "summary": "SignalWire FreeSwitch enthält eine Code-Injektions-Schwachstelle (CVE-2026-116779), die aktiv ausgenutzt wird.",
+    "impact": "Ermöglicht die Offenlegung von Konfigurationen und Anmeldeinformationen, beliebige Anrufsteuerung und Befehlsausführung.",
+    "fix": "Wenden Sie Milderungsmaßnahmen gemäß den Anweisungen des Herstellers an.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Systeme, auf denen SignalWire FreeSwitch läuft.",
+     "Überprüfen Sie die Internetexposition der Assets.",
+     "Wenden Sie Milderungsmaßnahmen gemäß den Anweisungen des Herstellers an."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-18T19:30:45Z",
+  "slugs": {
+   "ru": "signalwire-freeswitch-uyazvimost-vnedreniya-koda-cve-2026-116779",
+   "de": "signalwire-freeswitch-code-injektions-schwachstelle-cve-2026",
+   "en": "signalwire-freeswitch-code-injection-vulnerability-cve-2026"
+  },
+  "published_at": "2026-11-18T19:30:45Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 2
+ }
 }

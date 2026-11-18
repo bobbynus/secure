@@ -36,8 +36,8 @@
   "https://lists.debian.org/debian-security-announce/2026/msg00527.html": "658cb15ef9404c1be4ae9496",
   "https://lists.debian.org/debian-security-announce/2026/msg00526.html": "93416e5d3654390277ea06b1"
  },
- "last_attempt": "2026-11-18T18:50:39Z",
- "last_success": "2026-11-18T18:50:39Z",
+ "last_attempt": "2026-11-18T19:30:41Z",
+ "last_success": "2026-11-18T19:30:41Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

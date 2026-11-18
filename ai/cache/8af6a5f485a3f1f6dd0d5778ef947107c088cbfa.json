@@ -1,0 +1,42 @@
+{
+ "affected": [],
+ "en": {
+  "title": "SignalWire FreeSwitch: Code Injection Vulnerability (CVE-2026-116779)",
+  "summary": "SignalWire FreeSwitch contains a code injection vulnerability tracked as CVE-2026-116779, which is actively exploited in the wild.",
+  "impact": "Permits configuration and credential disclosure, arbitrary call control, and command execution.",
+  "fix": "Apply mitigations in accordance with vendor instructions.",
+  "workaround": null,
+  "checks": [
+   "Inventory systems running SignalWire FreeSwitch.",
+   "Check asset internet exposure.",
+   "Apply mitigations in accordance with vendor instructions."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "SignalWire FreeSwitch: уязвимость внедрения кода (CVE-2026-116779)",
+  "summary": "SignalWire FreeSwitch содержит уязвимость внедрения кода CVE-2026-116779, которая активно эксплуатируется.",
+  "impact": "Позволяет раскрывать конфигурацию и учетные данные, осуществлять произвольное управление вызовами и выполнять команды.",
+  "fix": "Примените смягчающие меры в соответствии с инструкциями производителя.",
+  "workaround": null,
+  "checks": [
+   "Проинвентаризируйте системы под управлением SignalWire FreeSwitch.",
+   "Проверьте доступность активов из сети Интернет.",
+   "Примените смягчающие меры в соответствии с инструкциями производителя."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "SignalWire FreeSwitch: Code-Injektions-Schwachstelle (CVE-2026-116779)",
+  "summary": "SignalWire FreeSwitch enthält eine Code-Injektions-Schwachstelle (CVE-2026-116779), die aktiv ausgenutzt wird.",
+  "impact": "Ermöglicht die Offenlegung von Konfigurationen und Anmeldeinformationen, beliebige Anrufsteuerung und Befehlsausführung.",
+  "fix": "Wenden Sie Milderungsmaßnahmen gemäß den Anweisungen des Herstellers an.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Systeme, auf denen SignalWire FreeSwitch läuft.",
+   "Überprüfen Sie die Internetexposition der Assets.",
+   "Wenden Sie Milderungsmaßnahmen gemäß den Anweisungen des Herstellers an."
+  ],
+  "regression": null
+ }
+}

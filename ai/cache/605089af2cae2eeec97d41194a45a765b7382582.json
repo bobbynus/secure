@@ -1,0 +1,73 @@
+{
+ "affected": [
+  {
+   "product": "FortiOS 8.0",
+   "versions": "8.0.0",
+   "fixed": "8.0.1",
+   "evidence": "FortiOS 8.0\n8.0.0\nUpgrade to 8.0.1 or above"
+  },
+  {
+   "product": "FortiOS 7.6",
+   "versions": "7.6.0–7.6.7",
+   "fixed": "7.6.8",
+   "evidence": "FortiOS 7.6\n7.6.0 through 7.6.7\nUpgrade to 7.6.8 or above"
+  },
+  {
+   "product": "FortiOS 7.4",
+   "versions": "7.4.0–7.4.12",
+   "fixed": "7.4.13",
+   "evidence": "FortiOS 7.4\n7.4.0 through 7.4.12\nUpgrade to 7.4.13 or above"
+  },
+  {
+   "product": "FortiOS 7.2",
+   "versions": "7.2.0–7.2.13",
+   "fixed": "7.2.14",
+   "evidence": "FortiOS 7.2\n7.2.0 through 7.2.13\nUpgrade to 7.2.14 or above"
+  },
+  {
+   "product": "FortiOS 7.0",
+   "versions": "all versions",
+   "fixed": null,
+   "evidence": "FortiOS 7.0\n7.0 all versions\nMigrate to a fixed release"
+  }
+ ],
+ "en": {
+  "title": "FortiOS: unauthenticated command execution via HA packets",
+  "summary": "A missing authentication vulnerability in FortiOS allows an unauthenticated adjacent attacker to execute commands as super admin via crafted HA packets.",
+  "impact": "An unauthenticated attacker with HA FGSP + standalone-config-sync, autoscale, or via HA-segment adjacent attack vector can execute unauthorized code or commands as super admin.",
+  "fix": "Upgrade to FortiOS 8.0.1, 7.6.8, 7.4.13, 7.2.14, or migrate from 7.0 to a fixed release.",
+  "workaround": "Enable authentication, encryption, and passwords/secrets in `config system ha`, `config system standalone-cluster`, or `config system autoscale` depending on the deployment type.",
+  "checks": [
+   "Check FortiOS version across the infrastructure against affected branches (8.0.0, 7.6.0-7.6.7, 7.4.0-7.4.12, 7.2.0-7.2.13, and 7.0).",
+   "Verify if HA FGSP, standalone-config-sync, autoscale, or FGCP HA clusters are active.",
+   "Apply the recommended updates or configure encryption and authentication settings for HA segments."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "FortiOS: выполнение команд без аутентификации через HA-пакеты",
+  "summary": "Уязвимость отсутствия аутентификации в FortiOS позволяет неаутентифицированному злоумышленнику выполнять команды в роли суперадминистратора с помощью специально сформированных HA-пакетов.",
+  "impact": "Неаутентифицированный злоумышленник с доступом к сети HA (FGSP + standalone-config-sync, autoscale или через смежный сегмент HA) может выполнить неавторизованный код или команды в качестве суперадминистратора.",
+  "fix": "Обновитесь до FortiOS 8.0.1, 7.6.8, 7.4.13, 7.2.14 или мигрируйте с 7.0 на исправленный релиз.",
+  "workaround": "Включите аутентификацию, шифрование и пароли/секреты в `config system ha`, `config system standalone-cluster` или `config system autoscale` в зависимости от типа развертывания.",
+  "checks": [
+   "Проверьте версию FortiOS в инфраструктуре на предмет уязвимых веток (8.0.0, 7.6.0-7.6.7, 7.4.0-7.4.12, 7.2.0-7.2.13 и 7.0).",
+   "Убедитесь, задействованы ли кластеры HA FGSP, standalone-config-sync, autoscale или FGCP HA.",
+   "Примените рекомендуемые обновления или настройте параметры шифрования и аутентификации для сегментов HA."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "FortiOS: Nicht authentifizierte Befehlsausführung über HA-Pakete",
+  "summary": "Eine Schwachstelle durch fehlende Authentifizierung in FortiOS ermöglicht es nicht authentifizierten Angreifern, Befehle als Super-Administrator über manipulierte HA-Pakete auszuführen.",
+  "impact": "Ein nicht authentifizierter Angreifer mit Zugriff auf das HA-Segment (über HA FGSP + standalone-config-sync, autoscale oder benachbarte HA-Segmente) kann unautorisierten Code oder Befehle als Super-Administrator ausführen.",
+  "fix": "Ein Update auf FortiOS 8.0.1, 7.6.8, 7.4.13, 7.2.14 durchführen oder von 7.0 auf eine korrigierte Version migrieren.",
+  "workaround": "Authentifizierung, Verschlüsselung und Passwörter/Geheimnisse in `config system ha`, `config system standalone-cluster` oder `config system autoscale` je nach Bereitstellungstyp aktivieren.",
+  "checks": [
+   "Überprüfen Sie die FortiOS-Version in der Infrastruktur auf betroffene Zwecke (8.0.0, 7.6.0-7.6.7, 7.4.0-7.4.12, 7.2.0-7.2.13 und 7.0).",
+   "Prüfen Sie, ob HA FGSP, standalone-config-sync, autoscale oder FGCP HA-Cluster aktiv sind.",
+   "Wenden Sie die empfohlenen Updates an oder konfigurieren Sie Verschlüsselungs- und Authentifizierungseinstellungen für HA-Segmente."
+  ],
+  "regression": null
+ }
+}

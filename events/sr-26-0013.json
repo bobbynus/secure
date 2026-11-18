@@ -57,21 +57,62 @@
  "related": [],
  "reason": "added to CISA KEV",
  "texts": {},
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "1f3dd55cd7fea709b0b61822",
+  "texts": {
+   "en": {
+    "title": "IBM Aspera Faspex: Incorrect Authorization Vulnerability",
+    "summary": "IBM Aspera Faspex contains an incorrect authorization vulnerability allowing authenticated users to bypass authorization and escalate privileges.",
+    "impact": "An authenticated user can craft a specific message to bypass authorization, resulting in privilege escalation.",
+    "fix": "The sources do not list fixed versions; apply mitigations in accordance with vendor instructions.",
+    "workaround": null,
+    "checks": [
+     "Inventory IBM Aspera Faspex deployments across the infrastructure.",
+     "Check systems for exposure and apply mitigations according to vendor instructions."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "IBM Aspera Faspex: уязвимость некорректной авторизации",
+    "summary": "IBM Aspera Faspex содержит уязвимость некорректной авторизации, позволяющую аутентифицированным пользователям обходить авторизацию и повышать привилегии.",
+    "impact": "Аутентифицированный пользователь может сформировать специальное сообщение для обхода авторизации, что приводит к повышению привилегий.",
+    "fix": "В источниках не указаны исправленные версии; примените смягчающие меры в соответствии с инструкциями производителя.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию развертываний IBM Aspera Faspex в инфраструктуре.",
+     "Проверьте системы на предмет доступности и примените смягчающие меры согласно инструкциям производителя."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "IBM Aspera Faspex: Fehlerhafte Autorisierungsschwachstelle",
+    "summary": "IBM Aspera Faspex enthält eine fehlerhafte Autorisierungsschwachstelle, die es authentifizierten Benutzern ermöglicht, die Autorisierung zu umgehen und Privilegien zu eskalieren.",
+    "impact": "Ein authentifizierter Benutzer kann eine spezifische Nachricht erstellen, um die Autorisierung zu umgehen, was zu einer Privilegienerweiterung führt.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen; wenden Sie Abhilfemaßnahmen gemäß den Herstelleranweisungen an.",
+    "workaround": null,
+    "checks": [
+     "Erfassen Sie IBM Aspera Faspex-Installationen in der Infrastruktur.",
+     "Überprüfen Sie Systeme auf Exponiertheit und wenden Sie Abhilfemaßnahmen gemäß den Herstelleranweisungen an."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-18T19:30:45Z",
+  "slugs": {
+   "ru": "ibm-aspera-faspex-uyazvimost-nekorrektnoy-avtorizatsii",
+   "de": "ibm-aspera-faspex-fehlerhafte-autorisierungsschwachstelle",
+   "en": "ibm-aspera-faspex-incorrect-authorization-vulnerability"
+  },
+  "published_at": "2026-11-18T19:30:45Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
