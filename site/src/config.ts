@@ -6,7 +6,7 @@ export const SITE = {
    * Demo mode: test content. Adds a visible banner, `noindex` on every page
    * and `Disallow: /` in robots.txt. Switch off once the real pipeline publishes.
    */
-  demo: true,
+  demo: false,
   pageSize: 10,
   repoUrl: 'https://github.com/bobbynus/secure',
   /** GitHub Issue Form used by "+ Source" until the on-site form (stage 6). */
