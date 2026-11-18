@@ -1,0 +1,49 @@
+{
+ "affected": [
+  {
+   "product": "OpenBSD OpenSSH",
+   "versions": "all",
+   "fixed": null,
+   "evidence": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass."
+  }
+ ],
+ "en": {
+  "title": "OpenBSD OpenSSH: Authentication bypass via password hash misinterpretation",
+  "summary": "OpenBSD OpenSSH on Linux has an authentication bypass vulnerability due to password hash misinterpretation, which is known to be exploited in the wild.",
+  "impact": "An attacker can bypass password authentication.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory OpenBSD OpenSSH installations on Linux.",
+   "Check vendor instructions for available mitigations or updates.",
+   "Evaluate internet exposure of affected assets."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "OpenBSD OpenSSH: обход аутентификации из-за неверной интерпретации хэша пароля",
+  "summary": "В OpenBSD OpenSSH на Linux имеется уязвимость обхода аутентификации из-за неверной интерпретации хэша пароля, которая эксплуатируется в реальных атаках.",
+  "impact": "Злоумышленник может обойти аутентификацию по паролю.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Провести инвентаризацию установленных OpenBSD OpenSSH на Linux.",
+   "Проверить инструкции вендора на предмет доступных обновлений или смягчающих мер.",
+   "Оценить доступность уязвимых систем из интернета."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "OpenBSD OpenSSH: Authentifizierungs-Bypass durch Fehlinterpretation von Passwort-Hashes",
+  "summary": "OpenBSD OpenSSH unter Linux enthält eine Schwachstelle zum Authentifizierungs-Bypass durch Fehlinterpretation von Passwort-Hashes, die aktiv ausgenutzt wird.",
+  "impact": "Ein Angreifer kann die Passwort-Authentifizierung umgehen.",
+  "fix": "Die Quellen nennen keine behobenen Versionen.",
+  "workaround": null,
+  "checks": [
+   "OpenBSD OpenSSH-Installationem unter Linux inventarisieren.",
+   "Herstelleranweisungen bezüglich verfügbarer Updates oder Mitigationen prüfen.",
+   "Die Internetexposition der betroffenen Systeme bewerten."
+  ],
+  "regression": null
+ }
+}

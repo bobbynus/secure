@@ -56,5 +56,69 @@
  ],
  "related": [],
  "reason": "added to CISA KEV",
- "publish_state": "pending"
+ "texts": {},
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "8f588bf00c078adc7be4d8db",
+  "texts": {
+   "en": {
+    "title": "Barracuda Email Security Gateway: authentication bypass via alternate path",
+    "summary": "Barracuda Email Security Gateway (ESG) contains an authentication bypass vulnerability allowing unauthenticated remote attackers to modify the global configuration.",
+    "impact": "An unauthenticated remote attacker can invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance's global configuration.",
+    "fix": "The sources list no fixed versions; apply mitigations in accordance with vendor instructions.",
+    "workaround": null,
+    "checks": [
+     "Inventory Barracuda Email Security Gateway (ESG) appliances in the infrastructure.",
+     "Evaluate each asset's internet exposure.",
+     "Check systems for potential indicators of exploitation or unauthorized configuration modifications.",
+     "Apply mitigations in accordance with vendor instructions and CISA guidance."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Barracuda Email Security Gateway: обход аутентификации через альтернативный путь",
+    "summary": "Barracuda Email Security Gateway (ESG) содержит уязвимость обхода аутентификации, позволяющую неаутентифицированным удаленным злоумышленникам изменять глобальную конфигурацию.",
+    "impact": "Неаутентифицированный удаленный злоумышленник может вызвать функцию импорта конфигурации и восстановить специально созданный совместимый архив бэкапа, что приведет к несанкционированному изменению глобальной конфигурации устройства.",
+    "fix": "В источниках не указаны исправленные версии; примените средства защиты в соответствии с инструкциями производителя.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию устройств Barracuda Email Security Gateway (ESG) в инфраструктуре.",
+     "Оцените уровень доступа каждого актива к сети Интернет.",
+     "Проверьте системы на предмет возможных признаков эксплуатации или несанкционированных изменений конфигурации.",
+     "Примените средства защиты в соответствии с инструкциями производителя и рекомендациями CISA."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Barracuda Email Security Gateway: Authentifizierungsumgehung über alternativen Pfad",
+    "summary": "Barracuda Email Security Gateway (ESG) enthält eine Authentifizierungsumgehung, die es unauthentifizierten Angreifern ermöglicht, die globale Konfiguration zu modifizieren.",
+    "impact": "Ein unauthentifizierter Remote-Angreifer kann eine Konfigurationsimportfunktion aufrufen und ein präpariertes, kompatibles Backup-Archiv wiederherstellen, was zu einer unbefugten Änderung der globalen Konfiguration des Geräts führt.",
+    "fix": "Die Quellen nennen keine behobenen Versionen; wenden Sie Abhilfemaßnahmen gemäß den Herstelleranweisungen an.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Barracuda Email Security Gateway (ESG) Geräte in der Infrastruktur.",
+     "Überprüfen Sie die Internetexposition jedes Assets.",
+     "Überprüfen Sie Systeme auf potenzielle Anzeichen einer Ausnutzung oder unbefugte Konfigurationsänderungen.",
+     "Wenden Sie Abhilfemaßnahmen gemäß den Herstelleranweisungen und CISA-Richtlinien an."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p2",
+  "generated_at": "2026-11-18T14:56:49Z",
+  "slugs": {
+   "ru": "barracuda-email-security-gateway-obkhod-autentifikatsii-cherez",
+   "de": "barracuda-email-security-gateway-authentifizierungsumgehung",
+   "en": "barracuda-email-security-gateway-authentication-bypass-via"
+  },
+  "published_at": "2026-11-18T14:56:49Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 2
+ }
 }

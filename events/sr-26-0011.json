@@ -76,5 +76,71 @@
  ],
  "related": [],
  "reason": "added to CISA KEV",
- "publish_state": "pending"
+ "texts": {},
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "4b848b96df0e51e790ea3130",
+  "texts": {
+   "en": {
+    "title": "OpenBSD OpenSSH: Authentication bypass via password hash misinterpretation",
+    "summary": "OpenBSD OpenSSH on Linux has an authentication bypass vulnerability due to password hash misinterpretation, which is known to be exploited in the wild.",
+    "impact": "An attacker can bypass password authentication.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Inventory OpenBSD OpenSSH installations on Linux.",
+     "Check vendor instructions for available mitigations or updates.",
+     "Evaluate internet exposure of affected assets."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "OpenBSD OpenSSH: обход аутентификации из-за неверной интерпретации хэша пароля",
+    "summary": "В OpenBSD OpenSSH на Linux имеется уязвимость обхода аутентификации из-за неверной интерпретации хэша пароля, которая эксплуатируется в реальных атаках.",
+    "impact": "Злоумышленник может обойти аутентификацию по паролю.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Провести инвентаризацию установленных OpenBSD OpenSSH на Linux.",
+     "Проверить инструкции вендора на предмет доступных обновлений или смягчающих мер.",
+     "Оценить доступность уязвимых систем из интернета."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "OpenBSD OpenSSH: Authentifizierungs-Bypass durch Fehlinterpretation von Passwort-Hashes",
+    "summary": "OpenBSD OpenSSH unter Linux enthält eine Schwachstelle zum Authentifizierungs-Bypass durch Fehlinterpretation von Passwort-Hashes, die aktiv ausgenutzt wird.",
+    "impact": "Ein Angreifer kann die Passwort-Authentifizierung umgehen.",
+    "fix": "Die Quellen nennen keine behobenen Versionen.",
+    "workaround": null,
+    "checks": [
+     "OpenBSD OpenSSH-Installationem unter Linux inventarisieren.",
+     "Herstelleranweisungen bezüglich verfügbarer Updates oder Mitigationen prüfen.",
+     "Die Internetexposition der betroffenen Systeme bewerten."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [
+   {
+    "product": "OpenBSD OpenSSH",
+    "versions": "all"
+   }
+  ],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p2",
+  "generated_at": "2026-11-18T14:56:49Z",
+  "slugs": {
+   "ru": "openbsd-openssh-obkhod-autentifikatsii-iz-za-nevernoy",
+   "de": "openbsd-openssh-authentifizierungs-bypass-durch",
+   "en": "openbsd-openssh-authentication-bypass-via-password-hash"
+  },
+  "published_at": "2026-11-18T14:56:49Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 3
+ }
 }

@@ -57,21 +57,65 @@
  "related": [],
  "reason": "added to CISA KEV",
  "texts": {},
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "9b2a1028d10ebf09c339667b",
+  "texts": {
+   "en": {
+    "title": "SonicWall SonicOS SSLVPN: single-factor authentication bypass vulnerability",
+    "summary": "SonicWall SonicOS SSLVPN contains an authentication bypass vulnerability allowing users with valid credentials for an alternate method to bypass SAML authentication and MFA.",
+    "impact": "An attacker or user with valid credentials for an alternate authentication method can bypass SAML authentication controls and SAML-enforced multi-factor authentication (MFA).",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Inventory SonicOS SSLVPN installations.",
+     "Verify authentication configuration and alternate authentication methods.",
+     "Apply vendor mitigations in accordance with CISA BOD 26-04 guidance."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "SonicWall SonicOS SSLVPN: уязвимость обхода однофакторной аутентификации",
+    "summary": "SonicWall SonicOS SSLVPN содержит уязвимость обхода аутентификации, позволяющую пользователям с действующими учетными данными для альтернативного метода обходить SAML и MFA.",
+    "impact": "Злоумышленник или пользователь с действующими учетными данными для альтернативного метода аутентификации может обойти средства контроля SAML и многофакторную аутентификацию (MFA).",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Провести инвентаризацию установок SonicOS SSLVPN.",
+     "Проверить конфигурацию аутентификации и альтернативные методы аутентификации.",
+     "Применить смягчающие меры производителя в соответствии с рекомендациями CISA BOD 26-04."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "SonicWall SonicOS SSLVPN: Schwachstelle durch Umgehung der Ein-Faktor-Authentifizierung",
+    "summary": "SonicWall SonicOS SSLVPN enthält eine Schwachstelle bei der Authentifizierung, die es Benutzern mit gültigen Anmeldeinformationen ermöglicht, SAML und MFA zu umgehen.",
+    "impact": "Ein Angreifer oder Benutzer mit gültigen Anmeldeinformationen für eine alternative Authentifizierungsmethode kann SAML-Authentifizierungskontrollen und MFA umgehen.",
+    "fix": "Die Quellen nennen keine behobenen Versionen.",
+    "workaround": null,
+    "checks": [
+     "SonicOS SSLVPN-Installationen inventarisieren.",
+     "Authentifizierungskonfiguration und alternative Authentifizierungsmethoden überprüfen.",
+     "Hersteller-Mitigationsmaßnahmen gemäß den CISA BOD 26-04-Richtlinien anwenden."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p2",
+  "generated_at": "2026-11-18T14:56:49Z",
+  "slugs": {
+   "ru": "sonicwall-sonicos-sslvpn-uyazvimost-obkhoda-odnofaktornoy",
+   "de": "sonicwall-sonicos-sslvpn-schwachstelle-durch-umgehung-der-ein",
+   "en": "sonicwall-sonicos-sslvpn-single-factor-authentication-bypass"
+  },
+  "published_at": "2026-11-18T14:56:49Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }
