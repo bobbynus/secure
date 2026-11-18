@@ -37,7 +37,7 @@ Only translations with `"status": "ready"` are published.
 npm ci                      # root: wrangler, typescript, workers types
 npm run db:migrate:local
 npx wrangler dev            # site + /api on http://localhost:8787 (needs site/dist)
-node --test worker/test/    # Web Push crypto round-trip etc.
+node --test "worker/test/*.test.ts"   # Web Push crypto round-trip etc.
 ```
 
 Local secrets go to `.dev.vars` (gitignored). Production secrets (`wrangler secret put <NAME>`):

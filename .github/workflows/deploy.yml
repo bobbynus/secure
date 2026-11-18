@@ -40,7 +40,7 @@ jobs:
       - name: Check (types, content schema, worker tests)
         run: |
           npx tsc -p worker
-          node --test worker/test/
+          node --test "worker/test/*.test.ts"
           cd site && npx astro check
 
       - name: Build site
