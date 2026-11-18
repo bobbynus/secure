@@ -73,5 +73,66 @@
  ],
  "related": [],
  "reason": "added to CISA KEV",
- "publish_state": "pending"
+ "texts": {},
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "4cd50898763db59e443b3214",
+  "texts": {
+   "en": {
+    "title": "Cisco BroadWorks: XML External Entity Vulnerability in OCI Parser",
+    "summary": "An out-of-band blind XML external entity injection vulnerability in Cisco BroadWorks allows unauthenticated remote attackers to read sensitive configuration files.",
+    "impact": "An unauthenticated remote attacker can send a crafted XML message to the Open Client Interface - Provisioning (OCI-P) service, leading to the disclosure of sensitive files from the filesystem with the privileges of the Cisco BroadWorks user.",
+    "fix": "Upgrade to fixed software releases indicated by Cisco (RI.2026.07 or later).",
+    "workaround": null,
+    "checks": [
+     "Inventory Cisco BroadWorks deployments including Application Delivery Platform, Application Server, Profile Server, and Xtended Services Platform.",
+     "Verify running software release versions against vulnerable configurations (earlier than RI.2026.07).",
+     "Apply software updates provided by Cisco to remediate CVE-2026-20320."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Cisco BroadWorks: уязвимость XXE в парсере OCI",
+    "summary": "Уязвимость внедрения внешних XML-сущностей в Cisco BroadWorks позволяет неаутентифицированным удаленным злоумышленникам читать конфиденциальные файлы конфигурации.",
+    "impact": "Неаутентифицированный удаленный злоумышленник может отправить специально сформированное XML-сообщение в службу Open Client Interface - Provisioning (OCI-P), что приведет к раскрытию конфиденциальных файлов с привилегиями пользователя Cisco BroadWorks.",
+    "fix": "Обновитесь до исправленных версий программного обеспечения, указанных Cisco (RI.2026.07 или новее).",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию развертываний Cisco BroadWorks, включая Application Delivery Platform, Application Server, Profile Server и Xtended Services Platform.",
+     "Проверьте установленные версии программного обеспечения на предмет уязвимости (ранние версии до RI.2026.07).",
+     "Примените обновления программного обеспечения, предоставленные Cisco для устранения CVE-2026-20320."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Cisco BroadWorks: XXE-Schwachstelle im OCI-Parser",
+    "summary": "Eine Out-of-Band Blind XXE-Schwachstelle in Cisco BroadWorks ermöglicht es unauthentifizierten, entfernten Angreifern, sensible Konfigurationsdaten zu lesen.",
+    "impact": "Ein unauthentifizierter, fernzugreifender Angreifer kann eine manipulierte XML-Nachricht an den Open Client Interface - Provisioning (OCI-P)-Dienst senden, was zum Auslesen sensibler Dateien mit den Rechten des Cisco BroadWorks-Benutzers führt.",
+    "fix": "Führen Sie ein Upgrade auf die von Cisco genannten korrigierten Software-Versionen durch (RI.2026.07 oder neuer).",
+    "workaround": null,
+    "checks": [
+     "Erfassen Sie alle Cisco BroadWorks-Installationen, einschließlich Application Delivery Platform, Application Server, Profile Server und Xtended Services Platform.",
+     "Überprüfen Sie die installierten Softwareversionen auf Verwundbarkeit (Versionen vor RI.2026.07).",
+     "Wenden Sie die von Cisco bereitgestellten Software-Updates zur Behebung von CVE-2026-20320 an."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-18T16:50:57Z",
+  "slugs": {
+   "ru": "cisco-broadworks-uyazvimost-xxe-v-parsere-oci",
+   "de": "cisco-broadworks-xxe-schwachstelle-im-oci-parser",
+   "en": "cisco-broadworks-xml-external-entity-vulnerability-in-oci-parser"
+  },
+  "published_at": "2026-11-18T16:50:57Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 2
+ }
 }
