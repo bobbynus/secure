@@ -1,0 +1,42 @@
+{
+ "affected": [],
+ "en": {
+  "title": "UnrealIRCd: CVE-2026-114713 improper neutralization of delimiters",
+  "summary": "UnrealIRCd contains an improper neutralization of delimiters vulnerability allowing network users to inject server-to-server commands.",
+  "impact": "Allows any user on a network with two or more linked servers to inject server-to-server commands executed with server authority.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory UnrealIRCd deployments across the network.",
+   "Verify whether multiple servers are linked in a network configuration.",
+   "Apply mitigations in accordance with vendor instructions per CISA guidance."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "UnrealIRCd: CVE-2026-114713 ненадлежащая нейтрализация разделителей",
+  "summary": "UnrealIRCd содержит уязвимость, связанную с ненадлежащей нейтрализацией разделителей, позволяющую пользователям внедрять команды.",
+  "impact": "Позволяет любому пользователю в сети с двумя или более связанными серверами внедрять межсерверные команды, выполняемые с правами сервера.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию развертываний UnrealIRCd в сети.",
+   "Проверьте, связаны ли несколько серверов в сетевой конфигурации.",
+   "Примените смягчающие меры в соответствии с инструкциями производителя согласно рекомендациям CISA."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "UnrealIRCd: CVE-2026-114713 mangelnde Neutralisierung von Trennzeichen",
+  "summary": "UnrealIRCd enthält eine Schwachstelle durch mangelnde Neutralisierung von Trennzeichen, die Befehlsinjektionen erlaubt.",
+  "impact": "Ermöglicht Benutzern in einem Netzwerk mit zwei oder mehr verknüpften Servern, Server-zu-Server-Befehle mit Serverberechtigungen einzuschleusen.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie UnrealIRCd-Installationen im Netzwerk.",
+   "Überprüfen Sie, ob mehrere Server in einer Netzwerkkonfiguration verknüpft sind.",
+   "Wenden Sie Minderungsmaßnahmen gemäß den Herstelleranweisungen und CISA-Richtlinien an."
+  ],
+  "regression": null
+ }
+}

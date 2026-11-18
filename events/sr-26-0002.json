@@ -59,44 +59,44 @@
  "texts": {},
  "publish_state": "published",
  "ai": {
-  "input_hash": "91131ef9171def7bbbcdad07",
+  "input_hash": "38e377580a88cb0e7d139b1c",
   "texts": {
    "en": {
-    "title": "UnrealIRCd: improper neutralization of delimiters vulnerability (CVE-2026-114713)",
-    "summary": "UnrealIRCd contains a vulnerability allowing network users on linked servers to inject server-to-server commands.",
-    "impact": "Any user on a network with two or more linked servers can inject server-to-server commands executed with server authority.",
-    "fix": "The sources list no fixed versions.",
+    "title": "UnrealIRCd: CVE-2026-114713 improper neutralization of delimiters",
+    "summary": "UnrealIRCd contains an improper neutralization of delimiters vulnerability allowing network users to inject server-to-server commands.",
+    "impact": "Allows any user on a network with two or more linked servers to inject server-to-server commands executed with server authority.",
+    "fix": "The sources do not list fixed versions.",
     "workaround": null,
     "checks": [
-     "Inventory UnrealIRCd deployments across the infrastructure.",
-     "Verify whether multiple servers are linked within the network.",
-     "Check for vendor instructions and mitigations regarding CVE-2026-114713."
+     "Inventory UnrealIRCd deployments across the network.",
+     "Verify whether multiple servers are linked in a network configuration.",
+     "Apply mitigations in accordance with vendor instructions per CISA guidance."
     ],
     "regression": null
    },
    "ru": {
-    "title": "UnrealIRCd: уязвимость неправильной нейтрализации разделителей (CVE-2026-114713)",
-    "summary": "UnrealIRCd содержит уязвимость, позволяющую пользователям сети на связанных серверах внедрять команды между серверами.",
-    "impact": "Любой пользователь в сети с двумя или более связанными серверами может внедрять межсерверные команды, выполняемые с правами сервера.",
+    "title": "UnrealIRCd: CVE-2026-114713 ненадлежащая нейтрализация разделителей",
+    "summary": "UnrealIRCd содержит уязвимость, связанную с ненадлежащей нейтрализацией разделителей, позволяющую пользователям внедрять команды.",
+    "impact": "Позволяет любому пользователю в сети с двумя или более связанными серверами внедрять межсерверные команды, выполняемые с правами сервера.",
     "fix": "В источниках не указаны исправленные версии.",
     "workaround": null,
     "checks": [
-     "Проведите инвентаризацию развертываний UnrealIRCd в инфраструктуре.",
-     "Проверьте, связаны ли между собой несколько серверов в сети.",
-     "Проверьте наличие инструкций и рекомендаций производителя относительно CVE-2026-114713."
+     "Проведите инвентаризацию развертываний UnrealIRCd в сети.",
+     "Проверьте, связаны ли несколько серверов в сетевой конфигурации.",
+     "Примените смягчающие меры в соответствии с инструкциями производителя согласно рекомендациям CISA."
     ],
     "regression": null
    },
    "de": {
-    "title": "UnrealIRCd: Schwachstelle durch mangelnde Neutralisation von Trennzeichen (CVE-2026-114713)",
-    "summary": "UnrealIRCd enthält eine Schwachstelle, die es Netzwerkbenutzern auf verknüpften Servern ermöglicht, Server-zu-Server-Befehle einzuschleusen.",
-    "impact": "Jeder Benutzer in einem Netzwerk mit zwei oder mehr verknüpften Servern kann Server-zu-Server-Befehle einschleusen, die mit Serverberechtigungen ausgeführt werden.",
-    "fix": "Die Quellen nennen keine behobenen Versionen.",
+    "title": "UnrealIRCd: CVE-2026-114713 mangelnde Neutralisierung von Trennzeichen",
+    "summary": "UnrealIRCd enthält eine Schwachstelle durch mangelnde Neutralisierung von Trennzeichen, die Befehlsinjektionen erlaubt.",
+    "impact": "Ermöglicht Benutzern in einem Netzwerk mit zwei oder mehr verknüpften Servern, Server-zu-Server-Befehle mit Serverberechtigungen einzuschleusen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
     "workaround": null,
     "checks": [
-     "Inventarisieren Sie UnrealIRCd-Installationen in der Infrastruktur.",
-     "Überprüfen Sie, ob mehrere Server im Netzwerk miteinander verknüpft sind.",
-     "Prüfen Sie auf Herstelleranweisungen und Minderungsmaßnahmen bezüglich CVE-2026-114713."
+     "Inventarisieren Sie UnrealIRCd-Installationen im Netzwerk.",
+     "Überprüfen Sie, ob mehrere Server in einer Netzwerkkonfiguration verknüpft sind.",
+     "Wenden Sie Minderungsmaßnahmen gemäß den Herstelleranweisungen und CISA-Richtlinien an."
     ],
     "regression": null
    }
@@ -104,8 +104,8 @@
   "affected": [],
   "workaround": false,
   "model": "gemini-3.5-flash-lite",
-  "prompt": "p2",
-  "generated_at": "2026-11-18T14:56:49Z",
+  "prompt": "p3",
+  "generated_at": "2026-11-18T22:00:44Z",
   "slugs": {
    "ru": "unrealircd-uyazvimost-nepravilnoy-neytralizatsii-razdeliteley",
    "de": "unrealircd-schwachstelle-durch-mangelnde-neutralisation-von",
@@ -116,6 +116,6 @@
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 1
+  "calls": 2
  }
 }

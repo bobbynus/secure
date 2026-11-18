@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server",
+   "versions": "all",
+   "fixed": null,
+   "evidence": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Check Point Multiple Products: incorrect permission assignment vulnerability",
+  "summary": "Check Point Multiple Products contain an incorrect permissions assignment for critical resources vulnerability allowing an authenticated local user to execute commands as root.",
+  "impact": "An authenticated local user can send a command to the socket and have it executed as root when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes.",
+  "fix": "Apply mitigations in accordance with vendor instructions.",
+  "workaround": null,
+  "checks": [
+   "Check systems for Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server.",
+   "Verify if the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Множественные продукты Check Point: уязвимость неправильного назначения прав",
+  "summary": "Множественные продукты Check Point содержат уязвимость неправильного назначения прав для критических ресурсов, позволяющую аутентифицированному локальному пользователю выполнять команды с правами root.",
+  "impact": "Аутентифицированный локальный пользователь может отправить команду в сокет и выполнить ее с правами root, когда демон Gaia OS DynamicCLI запускается от имени root и прослушивает локальный сокет с правами записи для всех без аутентификации подключающихся процессов.",
+  "fix": "Примените смягчающие меры в соответствии с инструкциями производителя.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие продуктов Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway и Security Management Server.",
+   "Проверьте, запущен ли демон Gaia OS DynamicCLI от имени root и прослушивает ли он локальный сокет с правами записи для всех."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Check Point Mehrere Produkte: Schwachstelle durch falsche Berechtigungsvergabe",
+  "summary": "Mehrere Check Point Produkte enthalten eine Schwachstelle durch falsche Berechtigungsvergabe für kritische Ressourcen, die es einem authentifizierten lokalen Benutzer ermöglicht, Befehle als root auszuführen.",
+  "impact": "Ein authentifizierter lokaler Benutzer kann einen Befehl an den Socket senden und ihn als root ausführen lassen, wenn der Gaia OS DynamicCLI-Dämon als root läuft und an einem für jeden beschreibbaren lokalen Socket lauscht, ohne verbindende Prozesse zu authentifizieren.",
+  "fix": "Wenden Sie Minderungsmassnahmen gemäß den Anweisungen des Herstellers an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway und Security Management Server.",
+   "Überprüfen Sie, ob der Gaia OS DynamicCLI-Dämon als root läuft und an einem für jeden beschreibbaren lokalen Socket lauscht."
+  ],
+  "regression": null
+ }
+}

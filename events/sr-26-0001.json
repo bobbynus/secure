@@ -59,61 +59,50 @@
  "texts": {},
  "publish_state": "published",
  "ai": {
-  "input_hash": "371a8e12a278c4c999cc0e2b",
+  "input_hash": "fb8a90cb68623bbdedf15e06",
   "texts": {
    "en": {
-    "title": "Perforce Puppet Enterprise: deserialization vulnerability in report-processing code",
+    "title": "Perforce Puppet Enterprise: deserialization vulnerability in report processing",
     "summary": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability allowing arbitrary code execution.",
-    "impact": "A client with any CA-signed agent certificate can execute arbitrary code on the Puppet Server as the service user by submitting a report containing a crafted rich-data type through a PUT request. If the certificate authority automatically signs requests without strong verification, an unauthenticated network attacker can obtain a valid certificate and exploit the vulnerability.",
-    "fix": "Apply mitigations in accordance with vendor instructions. The sources do not list specific fixed versions.",
-    "workaround": null,
+    "impact": "A client with any CA-signed agent certificate can execute arbitrary code on the Puppet Server as the service user by submitting a crafted report via a PUT request. If certificates are signed without strong verification, unauthenticated network attackers can obtain a certificate and exploit the vulnerability.",
+    "fix": "The sources do not list specific fixed versions.",
+    "workaround": "Apply mitigations in accordance with vendor instructions.",
     "checks": [
-     "Inventory Perforce Puppet Enterprise deployments.",
-     "Verify if the certificate authority automatically signs requests without strong verification.",
-     "Check report-processing code and access controls for PUT requests submitting rich-data types.",
-     "Apply vendor-provided mitigations and adhere to CISA BOD 26-04 guidance."
+     "Check Puppet Enterprise instances for exposure and review certificate authority signing policies.",
+     "Audit report-processing logs and submission mechanisms for crafted rich-data types."
     ],
     "regression": null
    },
    "ru": {
-    "title": "Perforce Puppet Enterprise: уязвимость десериализации в коде обработки отчетов",
-    "summary": "В Perforce Puppet Enterprise обнаружена уязвимость десериализации недоверенных данных, позволяющая выполнять произвольный код.",
-    "impact": "Клиент с любым подписанным CA сертификатом агента может выполнить произвольный код на Puppet Server от имени пользователя службы, отправив отчет со специально сформированным типом данных rich-data через PUT-запрос. Если центр сертификации автоматически подписывает запросы без строгой проверки, неаутентифицированный сетевой злоумышленник может получить действительный сертификат и проэксплуатировать уязвимость.",
-    "fix": "Примените средства защиты в соответствии с инструкциями производителя. В источниках не указаны конкретные исправленные версии.",
-    "workaround": null,
+    "title": "Perforce Puppet Enterprise: уязвимость десериализации при обработке отчетов",
+    "summary": "Perforce Puppet Enterprise содержит уязвимость десериализации недоверенных данных, позволяющую выполнять произвольный код.",
+    "impact": "Клиент с любым подписанным удостоверяющим центром сертификатом агента может выполнить произвольный код на сервере Puppet от имени пользователя службы, отправив специально сформированный отчет через PUT-запрос. Если центр сертификации автоматически подписывает запросы без строгой проверки, неаутентифицированный сетевой злоумышленник может получить действующий сертификат и проэксплуатировать уязвимость.",
+    "fix": "В источниках не указаны конкретные исправленные версии.",
+    "workaround": "Примените средства защиты в соответствии с инструкциями производителя.",
     "checks": [
-     "Инвентаризуйте развертывания Perforce Puppet Enterprise.",
-     "Проверьте, подписывает ли центр сертификации запросы автоматически без строгой проверки.",
-     "Проверьте код обработки отчетов и контроль доступа для PUT-запросов с передачей типов данных rich-data.",
-     "Примените смягчающие меры от производителя и соблюдайте указания CISA BOD 26-04."
+     "Проверьте экземпляры Puppet Enterprise на предмет доступности и изучите политики подписи центра сертификации.",
+     "Проведите аудит журналов обработки отчетов и механизмов отправки на наличие специально сформированных типов данных."
     ],
     "regression": null
    },
    "de": {
-    "title": "Perforce Puppet Enterprise: Deserialisierungsschwachstelle im Report-Verarbeitungscode",
-    "summary": "Perforce Puppet Enterprise enthält eine Deserialisierungsschwachstelle für untrusted data, die Remotecodeausführung ermöglicht.",
-    "impact": "Ein Client mit einem beliebigen CA-signierten Agentenzertifikat kann beliebigen Code auf dem Puppet Server als Dienstbenutzer ausführen, indem er einen Report mit einem manipulierten rich-data-Typ über eine PUT-Anfrage übermittelt. Wenn die Zertifizierungsstelle Anfragen ohne starke Verifizierung automatisch signiert, kann ein unauthentifizierter Netzwerkangreifer ein gültiges Zertifikat erhalten und die Schwachstelle ausnutzen.",
-    "fix": "Wenden Sie Minderungsmassnahmen gemäß den Herstelleranweisungen an. Die Quellen nennen keine spezifischen behobenen Versionen.",
-    "workaround": null,
+    "title": "Perforce Puppet Enterprise: Deserialisierungsschwachstelle bei der Berichtsverarbeitung",
+    "summary": "Perforce Puppet Enterprise enthält eine Schwachstelle durch Deserialisierung nicht vertrauenswürdiger Daten, die Remotecodeausführung ermöglicht.",
+    "impact": "Ein Client mit einem beliebigen CA-signierten Agentenzertifikat kann auf dem Puppet Server als Dienstbenutzer beliebigen Code ausführen, indem er einen manipulierten Bericht per PUT-Anfrage übermittelt. Wenn Zertifikate ohne starke Verifizierung automatisch signiert werden, können unauthentifizierte Netzwerkangreifer ein gültiges Zertifikat erhalten und die Schwachstelle ausnutzen.",
+    "fix": "Die Quellen nennen keine spezifischen korrigierten Versionen.",
+    "workaround": "Wenden Sie Migaierungsmaßnahmen gemäß den Anweisungen des Herstellers an.",
     "checks": [
-     "Inventarisieren Sie Perforce Puppet Enterprise-Bereitstellungen.",
-     "Überprüfen Sie, ob die Zertifizierungsstelle Anfragen ohne starke Verifizierung automatisch signiert.",
-     "Überprüfen Sie den Report-Verarbeitungscode und die Zugriffskontrollen für PUT-Anfragen mit rich-data-Typen.",
-     "Wenden Sie die vom Hersteller bereitgestellten Schutzmassnahmen an und befolgen Sie die CISA BOD 26-04 Richtlinien."
+     "Überprüfen Sie Puppet Enterprise-Instanzen auf Exposition und überprüfen Sie die Signierrichtlinien der Zertifizierungsstelle.",
+     "Überprüfen Sie Berichtsprotokolle und Übermittlungsmechanismen auf manipulierte Datentypen."
     ],
     "regression": null
    }
   },
-  "affected": [
-   {
-    "product": "Perforce Puppet Enterprise",
-    "versions": "all"
-   }
-  ],
-  "workaround": false,
+  "affected": [],
+  "workaround": true,
   "model": "gemini-3.5-flash-lite",
-  "prompt": "p2",
-  "generated_at": "2026-11-18T14:56:49Z",
+  "prompt": "p3",
+  "generated_at": "2026-11-18T22:00:44Z",
   "slugs": {
    "ru": "perforce-puppet-enterprise-uyazvimost-deserializatsii-v-kode",
    "de": "perforce-puppet-enterprise-deserialisierungsschwachstelle-im",
@@ -124,6 +113,6 @@
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 4
+  "calls": 6
  }
 }
