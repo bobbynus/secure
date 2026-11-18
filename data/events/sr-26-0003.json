@@ -23,12 +23,7 @@
     "advisory": [],
     "kb": []
   },
-  "affected": [
-    {
-      "product": "Check Point Gaia OS",
-      "versions": "multiple"
-    }
-  ],
+  "affected": [],
   "cvss": {
     "score": 7.8,
     "version": "3.1",
@@ -62,50 +57,47 @@
   ],
   "generated": {
     "model": "gemini-3.5-flash-lite",
-    "prompt": "p2",
-    "at": "2026-11-18T14:56:49Z"
+    "prompt": "p3",
+    "at": "2026-11-18T22:00:44Z"
   },
   "translations": {
     "ru": {
       "status": "ready",
       "slug": "check-point-multiple-products-lokalnoe-povyshenie-privilegiy",
-      "title": "Check Point Multiple Products: локальное повышение привилегий через демон DynamicCLI",
-      "summary": "Множественные продукты Check Point содержат уязвимость неправильного назначения разрешений в демоне Gaia OS DynamicCLI. Аутентифицированный локальный пользователь может использовать ее для выполнения команд от имени root.",
-      "impact": "Аутентифицированный локальный пользователь может отправить команду на локальный сокет демона Gaia OS DynamicCLI с правами записи для всех без аутентификации и выполнить ее с привилегиями root.",
+      "title": "Множественные продукты Check Point: уязвимость неправильного назначения прав",
+      "summary": "Множественные продукты Check Point содержат уязвимость неправильного назначения прав для критических ресурсов, позволяющую аутентифицированному локальному пользователю выполнять команды с правами root.",
+      "impact": "Аутентифицированный локальный пользователь может отправить команду в сокет и выполнить ее с правами root, когда демон Gaia OS DynamicCLI запускается от имени root и прослушивает локальный сокет с правами записи для всех без аутентификации подключающихся процессов.",
       "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 13.11.2026: зафиксирована эксплуатация в реальных атаках.",
-      "fix": "Примените смягчающие меры в соответствии с инструкциями вендора.",
+      "fix": "Примените смягчающие меры в соответствии с инструкциями производителя.",
       "checks": [
-        "Проведите инвентаризацию устройств Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway и Security Management Server.",
-        "Проверьте разрешения демона Gaia OS DynamicCLI и конфигурацию сокета.",
-        "Примените предоставленные вендором смягчающие меры или обновления."
+        "Проверьте системы на наличие продуктов Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway и Security Management Server.",
+        "Проверьте, запущен ли демон Gaia OS DynamicCLI от имени root и прослушивает ли он локальный сокет с правами записи для всех."
       ]
     },
     "de": {
       "status": "ready",
       "slug": "check-point-multiple-products-lokale-privilegieneskalation",
-      "title": "Check Point Multiple Products: Lokale Privilegieneskalation über DynamicCLI-Daemon",
-      "summary": "Mehrere Check Point-Produkte enthalten eine Schwachstelle bei der Zuweisung falscher Berechtigungen im Gaia OS DynamicCLI-Daemon. Ein authentifizierter lokaler Benutzer kann dies ausnutzen, um Befehle als root auszuführen.",
-      "impact": "Ein authentifizierter lokaler Benutzer kann ohne Authentifizierung einen Befehl an den für alle beschreibbaren lokalen Socket des Gaia OS DynamicCLI-Daemons senden und diesen mit root-Privilegien ausführen lassen.",
+      "title": "Check Point Mehrere Produkte: Schwachstelle durch falsche Berechtigungsvergabe",
+      "summary": "Mehrere Check Point Produkte enthalten eine Schwachstelle durch falsche Berechtigungsvergabe für kritische Ressourcen, die es einem authentifizierten lokalen Benutzer ermöglicht, Befehle als root auszuführen.",
+      "impact": "Ein authentifizierter lokaler Benutzer kann einen Befehl an den Socket senden und ihn als root ausführen lassen, wenn der Gaia OS DynamicCLI-Dämon als root läuft und an einem für jeden beschreibbaren lokalen Socket lauscht, ohne verbindende Prozesse zu authentifizieren.",
       "exploitation": "CISA hat die Schwachstelle am 13.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
-      "fix": "Wenden Sie Minderungsmassnahmen gemäß den Herstelleranweisungen an.",
+      "fix": "Wenden Sie Minderungsmassnahmen gemäß den Anweisungen des Herstellers an.",
       "checks": [
-        "Erfassen Sie Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway und Security Management Server in der Inventarliste.",
-        "Überprüfen Sie die Berechtigungen des Gaia OS DynamicCLI-Daemons und die Socket-Konfiguration.",
-        "Wenden Sie die vom Hersteller bereitgestellten Minderungsmassnahmen oder Updates an."
+        "Überprüfen Sie Systeme auf Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway und Security Management Server.",
+        "Überprüfen Sie, ob der Gaia OS DynamicCLI-Dämon als root läuft und an einem für jeden beschreibbaren lokalen Socket lauscht."
       ]
     },
     "en": {
       "status": "ready",
       "slug": "check-point-multiple-products-local-privilege-escalation-via",
-      "title": "Check Point Multiple Products: local privilege escalation via DynamicCLI daemon",
-      "summary": "Check Point multiple products contain an incorrect permissions assignment vulnerability in the Gaia OS DynamicCLI daemon. An authenticated local user can exploit this to execute commands as root.",
-      "impact": "An authenticated local user can send a command to the world-writable local socket of the Gaia OS DynamicCLI daemon without authentication and have it executed with root privileges.",
+      "title": "Check Point Multiple Products: incorrect permission assignment vulnerability",
+      "summary": "Check Point Multiple Products contain an incorrect permissions assignment for critical resources vulnerability allowing an authenticated local user to execute commands as root.",
+      "impact": "An authenticated local user can send a command to the socket and have it executed as root when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes.",
       "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 13, 2026: exploitation in real attacks is confirmed.",
       "fix": "Apply mitigations in accordance with vendor instructions.",
       "checks": [
-        "Inventory Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server instances.",
-        "Verify Gaia OS DynamicCLI daemon permissions and socket configuration.",
-        "Apply vendor-provided mitigations or updates."
+        "Check systems for Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server.",
+        "Verify if the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket."
       ]
     }
   }
