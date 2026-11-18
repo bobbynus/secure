@@ -1,0 +1,104 @@
+{
+  "id": "sr-26-0010",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-09",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "GPUStack",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-102895"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-09T00:00:00Z",
+    "published": "2026-11-18T18:50:40Z",
+    "updated": "2026-11-18T18:50:40Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "GPUStack Improper Authentication Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-102895",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-09"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-18T18:50:40Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-18T18:50:40Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "gpustack-uyazvimost-nepravilnoy-autentifikatsii",
+      "title": "GPUStack: уязвимость неправильной аутентификации",
+      "summary": "GPUStack содержит уязвимость неправильной аутентификации (CVE-2026-102895), позволяющую получить неавторизованный административный доступ и выполнить код.",
+      "impact": "Неаутентифицированные злоумышленники могут получить административный доступ, изменять пользователей и модели, создавать постоянные ключи администратора API, раскрывать секреты воркеров и облачных провайдеров, а также выполнять код через POST /v2/inference-backends/from-yaml.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 09.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "Примените средства снижения риска в соответствии с инструкциями производителя.",
+      "checks": [
+        "Проверьте развертывания GPUStack на предмет сетевой доступности.",
+        "Примените средства снижения риска в соответствии с инструкциями производителя."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "gpustack-schwachstelle-durch-fehlerhafte-authentifizierung",
+      "title": "GPUStack: Schwachstelle durch fehlerhafte Authentifizierung",
+      "summary": "GPUStack enthält eine Schwachstelle durch fehlerhafte Authentifizierung (CVE-2026-102895), die unauthentifizierten administrativen Zugriff und Codeausführung ermöglicht.",
+      "impact": "Nicht authentifizierte Angreifer können administrativen Zugriff erlangen, Benutzer- und Modelländerungen vornehmen, persistente Administrator-API-Schlüssel erstellen, Worker- und Cloud-Provider-Geheimnisse offenlegen und Code über POST /v2/inference-backends/from-yaml ausführen.",
+      "exploitation": "CISA hat die Schwachstelle am 09.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Wenden Sie die Mitigationsmaßnahmen gemäß den Herstelleranweisungen an.",
+      "checks": [
+        "Überprüfen Sie GPUStack-Installationen auf Exposition.",
+        "Wenden Sie die Mitigationsmaßnahmen gemäß den Herstelleranweisungen an."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "gpustack-improper-authentication-vulnerability",
+      "title": "GPUStack: improper authentication vulnerability",
+      "summary": "GPUStack contains an improper authentication vulnerability (CVE-2026-102895) allowing unauthenticated administrative access and code execution.",
+      "impact": "Unauthenticated attackers can gain administrative access, perform user and model changes, create persistent administrator API-keys, disclose worker and cloud-provider secrets, and execute code via POST /v2/inference-backends/from-yaml.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 9, 2026: exploitation in real attacks is confirmed.",
+      "fix": "Apply mitigations in accordance with vendor instructions.",
+      "checks": [
+        "Check GPUStack deployments for exposure.",
+        "Apply mitigations in accordance with vendor instructions."
+      ]
+    }
+  }
+}

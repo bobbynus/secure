@@ -1,0 +1,104 @@
+{
+  "id": "sr-26-0007",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-10",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Barracuda Networks",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-111560"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.6,
+    "version": "4.0",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-10T00:00:00Z",
+    "published": "2026-11-18T18:50:40Z",
+    "updated": "2026-11-18T18:50:40Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111560",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-10"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-18T18:50:40Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-18T18:50:40Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "mnozhestvo-produktov-barracuda-networks-uyazvimost-vnedreniya",
+      "title": "Множество продуктов Barracuda Networks: уязвимость внедрения команд ОС",
+      "summary": "Множество продуктов Barracuda Networks содержат уязвимость внедрения команд ОС, позволяющую аутентифицированному администратору выполнять команды с правами root.",
+      "impact": "Аутентифицированный администратор может внедрить команды ОС, которые выполняются с правами root при обработке специально сформированного значения часового пояса. Эту уязвимость можно объединить с CVE-2026-116606.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 10.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "Примените средства защиты в соответствии с инструкциями производителя.",
+      "checks": [
+        "Проверьте на уязвимость продукты Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF) и Web Security Gateway (WSG).",
+        "Примените рекомендации производителя и следуйте указаниям CISA BOD 26-04."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "mehrere-produkte-von-barracuda-networks-os",
+      "title": "Mehrere Produkte von Barracuda Networks: OS-Befehlsinjektionsschwachstelle",
+      "summary": "Mehrere Produkte von Barracuda Networks enthalten eine OS-Befehlsinjektionsschwachstelle, die es einem authentifizierten Administrator ermöglicht, Root-Befehle auszuführen.",
+      "impact": "Ein authentifizierter Administrator kann OS-Befehle injizieren, die mit Root-Rechten ausgeführt werden, wenn ein manipulierter Zeitzonenwert verarbeitet wird. Diese Schwachstelle kann mit CVE-2026-116606 verkettet werden.",
+      "exploitation": "CISA hat die Schwachstelle am 10.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Wenden Sie Abhilfemaßnahmen gemäß den Anweisungen des Herstellers an.",
+      "checks": [
+        "Überprüfen Sie Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF) und Web Security Gateway (WSG) auf Exposition.",
+        "Wenden Sie die vom Hersteller empfohlenen Abhilfemaßnahmen und die CISA-Richtlinie BOD 26-04 an."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "barracuda-networks-multiple-products-os-command-injection",
+      "title": "Barracuda Networks Multiple Products: OS command injection vulnerability",
+      "summary": "Multiple Barracuda Networks products contain an OS command injection vulnerability allowing authenticated administrators to execute root commands.",
+      "impact": "An authenticated administrator can inject OS commands that execute with root privileges when a crafted timezone value is processed. This can also be chained with CVE-2026-116606.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 10, 2026: exploitation in real attacks is confirmed.",
+      "fix": "Apply mitigations in accordance with vendor instructions.",
+      "checks": [
+        "Check Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) for exposure.",
+        "Apply vendor mitigations and follow CISA BOD 26-04 guidance."
+      ]
+    }
+  }
+}

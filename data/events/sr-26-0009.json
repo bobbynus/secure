@@ -1,0 +1,112 @@
+{
+  "id": "sr-26-0009",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-10",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Google",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-125350"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.x",
+    "source": "Red Hat"
+  },
+  "dates": {
+    "event": "2026-11-10T00:00:00Z",
+    "published": "2026-11-18T18:50:40Z",
+    "updated": "2026-11-18T18:50:40Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Google Chromium Use-After-Free Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-125350",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-10"
+    },
+    {
+      "id": "s2",
+      "title": "chromium-browser: Use after free in XML",
+      "url": "https://access.redhat.com/security/cve/cve-2026-125350",
+      "publisher": "Red Hat Security Data API",
+      "kind": "vendor",
+      "date": "2026-11-10"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-18T18:50:40Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-18T18:50:40Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "google-chromium-uyazvimost-use-after-free-v-komponente-xml",
+      "title": "Google Chromium: уязвимость use-after-free в компоненте XML",
+      "summary": "Google Chromium содержит уязвимость use-after-free в компоненте XML, которая активно эксплуатируется.",
+      "impact": "Удаленный злоумышленник может выполнить произвольный код внутри песочницы с помощью специально сформированной веб-страницы. Затронуты могут быть различные браузеры на базе Chromium.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 10.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проверьте системы на наличие установленного Google Chromium или браузеров на базе Chromium.",
+        "Проверьте системы на предмет выхода в интернет в соответствии с рекомендациями CISA."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "google-chromium-use-after-free-schwachstelle-in-xml",
+      "title": "Google Chromium: Use-After-Free-Schwachstelle in XML",
+      "summary": "Google Chromium enthält eine Use-After-Free-Schwachstelle in der XML-Komponente, die aktiv ausgenutzt wird.",
+      "impact": "Ein entfernter Angreifer kann über eine speziell präparierte Webseite beliebigen Code innerhalb der Sandbox ausführen. Mehrere Webbrowser, die Chromium verwenden, können betroffen sein.",
+      "exploitation": "CISA hat die Schwachstelle am 10.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Überprüfen Sie Systeme auf installierte Google Chromium-Instanzen oder Browser, die Chromium verwenden.",
+        "Überprüfen Sie Systeme hinsichtlich ihrer Internetexposition gemäß den CISA-Richtlinien."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "google-chromium-use-after-free-vulnerability-in-xml",
+      "title": "Google Chromium: Use-After-Free Vulnerability in XML",
+      "summary": "Google Chromium contains a use-after-free vulnerability in the XML component, which is actively exploited in the wild.",
+      "impact": "A remote attacker can execute arbitrary code inside the sandbox via a specially crafted webpage. Multiple web browsers utilizing Chromium may be affected.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 10, 2026: exploitation in real attacks is confirmed.",
+      "fix": "The sources do not list fixed versions.",
+      "checks": [
+        "Check systems for installed Google Chromium or browsers utilizing Chromium.",
+        "Review systems for internet exposure as outlined in CISA guidance."
+      ]
+    }
+  }
+}
