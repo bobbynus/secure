@@ -18,7 +18,12 @@
   "kb": []
  },
  "severity": null,
- "cvss": null,
+ "cvss": {
+  "score": 7.5,
+  "version": "3.1",
+  "source": "NVD",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:L/A:N"
+ },
  "exploited": true,
  "kev": true,
  "kev_added": "2026-11-06",
@@ -51,5 +56,22 @@
  ],
  "related": [],
  "reason": "added to CISA KEV",
- "publish_state": "pending"
+ "texts": {},
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
 }

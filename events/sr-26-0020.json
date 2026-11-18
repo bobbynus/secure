@@ -24,7 +24,12 @@
   "kb": []
  },
  "severity": "critical",
- "cvss": null,
+ "cvss": {
+  "score": 8.8,
+  "version": "3.1",
+  "source": "NVD",
+  "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:L"
+ },
  "exploited": false,
  "kev": false,
  "kev_added": null,
@@ -57,5 +62,22 @@
  ],
  "related": [],
  "reason": "vendor reports exploitation (misread negation; corrected 2026-11-18, not newsworthy by policy)",
- "publish_state": "skipped"
+ "texts": {},
+ "publish_state": "skipped",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
 }
