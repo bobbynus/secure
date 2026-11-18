@@ -1,0 +1,107 @@
+{
+  "id": "sr-26-0014",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-06",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "SonicWall",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-19868"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.5,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-06T00:00:00Z",
+    "published": "2026-11-18T14:56:49Z",
+    "updated": "2026-11-18T14:56:49Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-19868",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-06"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-18T14:56:49Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p2",
+    "at": "2026-11-18T14:56:49Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "sonicwall-sonicos-sslvpn-uyazvimost-obkhoda-odnofaktornoy",
+      "title": "SonicWall SonicOS SSLVPN: уязвимость обхода однофакторной аутентификации",
+      "summary": "SonicWall SonicOS SSLVPN содержит уязвимость обхода аутентификации, позволяющую пользователям с действующими учетными данными для альтернативного метода обходить SAML и MFA.",
+      "impact": "Злоумышленник или пользователь с действующими учетными данными для альтернативного метода аутентификации может обойти средства контроля SAML и многофакторную аутентификацию (MFA).",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 06.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Провести инвентаризацию установок SonicOS SSLVPN.",
+        "Проверить конфигурацию аутентификации и альтернативные методы аутентификации.",
+        "Применить смягчающие меры производителя в соответствии с рекомендациями CISA BOD 26-04."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "sonicwall-sonicos-sslvpn-schwachstelle-durch-umgehung-der-ein",
+      "title": "SonicWall SonicOS SSLVPN: Schwachstelle durch Umgehung der Ein-Faktor-Authentifizierung",
+      "summary": "SonicWall SonicOS SSLVPN enthält eine Schwachstelle bei der Authentifizierung, die es Benutzern mit gültigen Anmeldeinformationen ermöglicht, SAML und MFA zu umgehen.",
+      "impact": "Ein Angreifer oder Benutzer mit gültigen Anmeldeinformationen für eine alternative Authentifizierungsmethode kann SAML-Authentifizierungskontrollen und MFA umgehen.",
+      "exploitation": "CISA hat die Schwachstelle am 06.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Die Quellen nennen keine behobenen Versionen.",
+      "checks": [
+        "SonicOS SSLVPN-Installationen inventarisieren.",
+        "Authentifizierungskonfiguration und alternative Authentifizierungsmethoden überprüfen.",
+        "Hersteller-Mitigationsmaßnahmen gemäß den CISA BOD 26-04-Richtlinien anwenden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "sonicwall-sonicos-sslvpn-single-factor-authentication-bypass",
+      "title": "SonicWall SonicOS SSLVPN: single-factor authentication bypass vulnerability",
+      "summary": "SonicWall SonicOS SSLVPN contains an authentication bypass vulnerability allowing users with valid credentials for an alternate method to bypass SAML authentication and MFA.",
+      "impact": "An attacker or user with valid credentials for an alternate authentication method can bypass SAML authentication controls and SAML-enforced multi-factor authentication (MFA).",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 6, 2026: exploitation in real attacks is confirmed.",
+      "fix": "The sources do not list fixed versions.",
+      "checks": [
+        "Inventory SonicOS SSLVPN installations.",
+        "Verify authentication configuration and alternate authentication methods.",
+        "Apply vendor mitigations in accordance with CISA BOD 26-04 guidance."
+      ]
+    }
+  }
+}

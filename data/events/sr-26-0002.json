@@ -1,0 +1,107 @@
+{
+  "id": "sr-26-0002",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-13",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "UnrealIRCd",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-114713"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.7,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-13T00:00:00Z",
+    "published": "2026-11-18T14:56:49Z",
+    "updated": "2026-11-18T14:56:49Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-114713",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-13"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-18T14:56:49Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p2",
+    "at": "2026-11-18T14:56:49Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "unrealircd-uyazvimost-nepravilnoy-neytralizatsii-razdeliteley",
+      "title": "UnrealIRCd: уязвимость неправильной нейтрализации разделителей (CVE-2026-114713)",
+      "summary": "UnrealIRCd содержит уязвимость, позволяющую пользователям сети на связанных серверах внедрять команды между серверами.",
+      "impact": "Любой пользователь в сети с двумя или более связанными серверами может внедрять межсерверные команды, выполняемые с правами сервера.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 13.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проведите инвентаризацию развертываний UnrealIRCd в инфраструктуре.",
+        "Проверьте, связаны ли между собой несколько серверов в сети.",
+        "Проверьте наличие инструкций и рекомендаций производителя относительно CVE-2026-114713."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "unrealircd-schwachstelle-durch-mangelnde-neutralisation-von",
+      "title": "UnrealIRCd: Schwachstelle durch mangelnde Neutralisation von Trennzeichen (CVE-2026-114713)",
+      "summary": "UnrealIRCd enthält eine Schwachstelle, die es Netzwerkbenutzern auf verknüpften Servern ermöglicht, Server-zu-Server-Befehle einzuschleusen.",
+      "impact": "Jeder Benutzer in einem Netzwerk mit zwei oder mehr verknüpften Servern kann Server-zu-Server-Befehle einschleusen, die mit Serverberechtigungen ausgeführt werden.",
+      "exploitation": "CISA hat die Schwachstelle am 13.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Die Quellen nennen keine behobenen Versionen.",
+      "checks": [
+        "Inventarisieren Sie UnrealIRCd-Installationen in der Infrastruktur.",
+        "Überprüfen Sie, ob mehrere Server im Netzwerk miteinander verknüpft sind.",
+        "Prüfen Sie auf Herstelleranweisungen und Minderungsmaßnahmen bezüglich CVE-2026-114713."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "unrealircd-improper-neutralization-of-delimiters-vulnerability",
+      "title": "UnrealIRCd: improper neutralization of delimiters vulnerability (CVE-2026-114713)",
+      "summary": "UnrealIRCd contains a vulnerability allowing network users on linked servers to inject server-to-server commands.",
+      "impact": "Any user on a network with two or more linked servers can inject server-to-server commands executed with server authority.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 13, 2026: exploitation in real attacks is confirmed.",
+      "fix": "The sources list no fixed versions.",
+      "checks": [
+        "Inventory UnrealIRCd deployments across the infrastructure.",
+        "Verify whether multiple servers are linked within the network.",
+        "Check for vendor instructions and mitigations regarding CVE-2026-114713."
+      ]
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "sr-26-0011",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-09",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "OpenBSD",
+  "products": [
+    "openssh"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-123158"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [
+    {
+      "product": "OpenBSD OpenSSH",
+      "versions": "all"
+    }
+  ],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.x",
+    "source": "Red Hat"
+  },
+  "dates": {
+    "event": "2026-11-09T00:00:00Z",
+    "published": "2026-11-18T14:56:49Z",
+    "updated": "2026-11-18T14:56:49Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123158",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-09"
+    },
+    {
+      "id": "s2",
+      "title": "openssh: OpenSSH: Password authentication bypass via password hash misinterpretation",
+      "url": "https://access.redhat.com/security/cve/cve-2026-123158",
+      "publisher": "Red Hat Security Data API",
+      "kind": "vendor",
+      "date": "2026-11-05"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-18T14:56:49Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p2",
+    "at": "2026-11-18T14:56:49Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "openbsd-openssh-obkhod-autentifikatsii-iz-za-nevernoy",
+      "title": "OpenBSD OpenSSH: обход аутентификации из-за неверной интерпретации хэша пароля",
+      "summary": "В OpenBSD OpenSSH на Linux имеется уязвимость обхода аутентификации из-за неверной интерпретации хэша пароля, которая эксплуатируется в реальных атаках.",
+      "impact": "Злоумышленник может обойти аутентификацию по паролю.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 09.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Провести инвентаризацию установленных OpenBSD OpenSSH на Linux.",
+        "Проверить инструкции вендора на предмет доступных обновлений или смягчающих мер.",
+        "Оценить доступность уязвимых систем из интернета."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "openbsd-openssh-authentifizierungs-bypass-durch",
+      "title": "OpenBSD OpenSSH: Authentifizierungs-Bypass durch Fehlinterpretation von Passwort-Hashes",
+      "summary": "OpenBSD OpenSSH unter Linux enthält eine Schwachstelle zum Authentifizierungs-Bypass durch Fehlinterpretation von Passwort-Hashes, die aktiv ausgenutzt wird.",
+      "impact": "Ein Angreifer kann die Passwort-Authentifizierung umgehen.",
+      "exploitation": "CISA hat die Schwachstelle am 09.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Die Quellen nennen keine behobenen Versionen.",
+      "checks": [
+        "OpenBSD OpenSSH-Installationem unter Linux inventarisieren.",
+        "Herstelleranweisungen bezüglich verfügbarer Updates oder Mitigationen prüfen.",
+        "Die Internetexposition der betroffenen Systeme bewerten."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "openbsd-openssh-authentication-bypass-via-password-hash",
+      "title": "OpenBSD OpenSSH: Authentication bypass via password hash misinterpretation",
+      "summary": "OpenBSD OpenSSH on Linux has an authentication bypass vulnerability due to password hash misinterpretation, which is known to be exploited in the wild.",
+      "impact": "An attacker can bypass password authentication.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 9, 2026: exploitation in real attacks is confirmed.",
+      "fix": "The sources do not list fixed versions.",
+      "checks": [
+        "Inventory OpenBSD OpenSSH installations on Linux.",
+        "Check vendor instructions for available mitigations or updates.",
+        "Evaluate internet exposure of affected assets."
+      ]
+    }
+  }
+}
