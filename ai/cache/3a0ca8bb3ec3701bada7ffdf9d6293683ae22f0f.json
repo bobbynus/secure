@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Openwave Messaging Limited Webtop Media Transcoder: vulnerability",
+  "summary": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability, which is known to be exploited.",
+  "impact": "An authenticated user may process and convert unintended document types if bypassing the Webmail experience.",
+  "fix": "Apply mitigations in accordance with vendor instructions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Openwave Messaging Limited Webtop Media Transcoder instances.",
+   "Check systems for exposure and verify vendor mitigation instructions."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Openwave Messaging Limited Webtop Media Transcoder: уязвимость",
+  "summary": "Openwave Messaging Limited Webtop Media Transcoder содержит уязвимость некорректной передачи ресурсов между сферами, которая эксплуатируется.",
+  "impact": "Аутентифицированный пользователь может обрабатывать и конвертировать непредназначенные типы документов при обходе интерфейса Webmail.",
+  "fix": "Примените смягчающие меры в соответствии с инструкциями производителя.",
+  "workaround": null,
+  "checks": [
+   "Инвентаризируйте экземпляры Openwave Messaging Limited Webtop Media Transcoder.",
+   "Проверьте системы на предмет уязвимости и выполните инструкции производителя по устранению."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Openwave Messaging Limited Webtop Media Transcoder: Schwachstelle",
+  "summary": "Openwave Messaging Limited Webtop Media Transcoder enthält eine Schwachstelle durch inkorrekte Ressourcenübertragung zwischen Sphären, die ausgenutzt wird.",
+  "impact": "Ein authentifizierter Benutzer kann unbeabsichtigte Dokumententypen verarbeiten und konvertieren, wenn das Webmail-Erlebnis umgangen wird.",
+  "fix": "Wenden Sie Milderungsmaßnahmen gemäß den Anweisungen des Herstellers an.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Openwave Messaging Limited Webtop Media Transcoder Instanzen.",
+   "Überprüfen Sie Systeme auf Exposition und verifizieren Sie die Milderungsanweisungen des Herstellers."
+  ],
+  "regression": null
+ }
+}

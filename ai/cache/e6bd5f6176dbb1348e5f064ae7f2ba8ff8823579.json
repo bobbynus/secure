@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Office Outlook: spoofing vulnerability (CVE-2026-124194)",
+  "summary": "Microsoft Office Outlook has a missing user interaction vulnerability allowing unauthorized network attackers to perform spoofing. CISA lists this issue in its Known Exploited Vulnerabilities catalog.",
+  "impact": "An unauthorized attacker can perform spoofing over a network due to a missing user interaction for a potentially unsafe action.",
+  "fix": "Apply mitigations in accordance with vendor instructions.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Office Outlook systems for exposure to CVE-2026-124194",
+   "Apply vendor instructions and mitigations per CISA BOD 26-04 guidance"
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Office Outlook: уязвимость спуфинга (CVE-2026-124194)",
+  "summary": "В Microsoft Office Outlook обнаружена уязвимость отсутствия взаимодействия с пользователем, позволяющая неавторизованным злоумышленникам выполнять спуфинг по сети. CISA внесла эту проблему в каталог эксплуатируемых уязвимостей.",
+  "impact": "Неавторизованный злоумышленник может осуществить спуфинг по сети из-за отсутствия взаимодействия с пользователем для потенциально небезопасного действия.",
+  "fix": "Примените средства защиты в соответствии с инструкциями производителя.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Microsoft Office Outlook на наличие уязвимости CVE-2026-124194",
+   "Примените инструкции производителя и защитные меры в соответствии с рекомендациями CISA BOD 26-04"
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Office Outlook: Spoofing-Schwachstelle (CVE-2026-124194)",
+  "summary": "Microsoft Office Outlook weist eine Schwachstelle durch fehlende Benutzerinteraktion auf, die es unbefugten Angreifern ermöglicht, Spoofing über ein Netzwerk durchzuführen. CISA listet dieses Problem im Katalog bekannter ausgenutzter Schwachstellen.",
+  "impact": "Ein unbefugter Angreifer kann aufgrund einer fehlenden Benutzerinteraktion für eine potenziell unsichere Aktion Spoofing über ein Netzwerk durchführen.",
+  "fix": "Wenden Sie Abhilfemaßnahmen gemäß den Anweisungen des Herstellers an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft Office Outlook-Systeme auf Betroffenheit von CVE-2026-124194",
+   "Wenden Sie Herstelleranweisungen und Abhilfemaßnahmen gemäß den CISA BOD 26-04-Richtlinien an"
+  ],
+  "regression": null
+ }
+}
