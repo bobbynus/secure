@@ -10,15 +10,60 @@ The API key is sent as a header and never logged.
 from __future__ import annotations
 
 import json
+import os
 import re
 import time
 from dataclasses import dataclass, field
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
 from typing import Callable, Optional, Protocol
 
 import httpx
 
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-DEFAULT_MODELS = ("gemini-3.6-flash", "gemini-3.5-flash-lite")
+# The key's Google project quota is shared with other projects of the owner (free tier, 2026-11):
+#   gemini-3.5-flash-lite 15 RPM / 250K TPM / 500 RPD;  gemini-3.6-flash 5 RPM / 250K TPM / 20 RPD.
+# This pipeline takes a small, fixed share: flash-lite only, <= 4 requests per minute, a daily request budget.
+DEFAULT_MODELS = ("gemini-3.5-flash-lite",)
+PACIFIC = timezone(timedelta(hours=-8))  # quota day of the Gemini API (PST; DST shifts it by an hour, harmless)
+
+
+class DailyBudget:
+    """Requests sent per quota day, persisted in the state so all runs of a day share one budget."""
+
+    def __init__(self, path: Path, max_requests: int, now: Callable[[], datetime] = lambda: datetime.now(timezone.utc)):
+        self.path, self.max, self.now = Path(path), max_requests, now
+
+    def _day(self) -> str:
+        return self.now().astimezone(PACIFIC).strftime("%Y-%m-%d")
+
+    def _load(self) -> dict:
+        return json.loads(self.path.read_text(encoding="utf-8")) if self.path.exists() else {}
+
+    def used(self) -> int:
+        return int(self._load().get(self._day(), {}).get("requests", 0))
+
+    def take(self, tokens: int = 0):
+        """Reserve one request; raises QuotaExhausted when today's budget is spent."""
+        data = self._load()
+        day = self._day()
+        row = data.setdefault(day, {"requests": 0, "tokens": 0})
+        if row["requests"] >= self.max:
+            raise QuotaExhausted(f"local daily budget of {self.max} requests reached")
+        row["requests"] += 1
+        row["tokens"] += tokens
+        data = {k: data[k] for k in sorted(data)[-14:]}
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        tmp = self.path.with_suffix(".tmp")
+        tmp.write_text(json.dumps(data, indent=1), encoding="utf-8")
+        os.replace(tmp, self.path)
+
+    def add_tokens(self, tokens: int):
+        data = self._load()
+        row = data.get(self._day())
+        if row is not None:
+            row["tokens"] = row.get("tokens", 0) + tokens
+            self.path.write_text(json.dumps(data, indent=1), encoding="utf-8")
 
 
 class ProviderError(Exception):
@@ -56,7 +101,7 @@ def parse_json_text(text: str) -> dict:
 
 class Gemini:
     def __init__(self, api_key: str, models: Optional[list[str]] = None, *, client: Optional[httpx.Client] = None,
-                 min_interval: float = 6.5, max_output_tokens: int = 8192,
+                 min_interval: float = 15.0, max_output_tokens: int = 6144, budget: Optional[DailyBudget] = None,
                  sleep: Callable[[float], None] = time.sleep, clock: Callable[[], float] = time.monotonic):
         if not api_key:
             raise ValueError("GEMINI_API_KEY is empty")
@@ -70,6 +115,7 @@ class Gemini:
         self._last = -1e9
         self._compat: set[str] = set()  # models that rejected optional config fields
         self.calls = 0
+        self.budget = budget
 
     def close(self):
         self.client.close()
@@ -111,6 +157,8 @@ class Gemini:
         url = GEMINI_URL.format(model=model)
         for attempt in range(5):
             self._pace()
+            if self.budget:
+                self.budget.take()
             started = self.clock()
             try:
                 r = self.client.post(url, json=self._body(model, system, prompt, schema),
@@ -122,7 +170,10 @@ class Gemini:
                 continue
             self.calls += 1
             if r.status_code == 200:
-                return self._parse(model, r, self.clock() - started)
+                comp = self._parse(model, r, self.clock() - started)
+                if self.budget:
+                    self.budget.add_tokens(int(comp.usage.get("totalTokenCount") or 0))
+                return comp
             err = _error(r)
             if r.status_code == 429:
                 if err["daily"]:

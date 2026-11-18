@@ -1,4 +1,4 @@
-"""Facts → English base article (+ grounded affected versions) → RU/DE translation, all checked.
+"""Facts → English article + grounded affected versions + RU/DE translations (one call), all checked.
 
 Every model answer is validated; one repair round with the list of problems is allowed per step. Validated
 answers are cached by (prompt version, step, model, exact input), so re-runs and retries cost no quota.
@@ -17,12 +17,11 @@ from ..adapters import exploitation_claimed
 from ..cluster import Catalog
 from ..models import Event
 from . import guard
-from .prompts import (BASE_SCHEMA, PROMPT_VERSION, SYSTEM_BASE, SYSTEM_TRANSLATE, TRANSLATE_SCHEMA, base_prompt,
-                      repair_prompt, translate_prompt)
+from .prompts import PROMPT_VERSION, SCHEMA, SYSTEM, base_prompt, repair_prompt
 from .provider import Completion, Provider
 
-MAX_SOURCE_CHARS = 9000
-MAX_TOTAL_CHARS = 30000
+MAX_SOURCE_CHARS = 7000
+MAX_TOTAL_CHARS = 16000  # ~4-5K input tokens: keeps per-minute token use small on a shared quota
 
 
 class ValidationFailed(Exception):
@@ -134,24 +133,30 @@ def generate(e: Event, catalog: Catalog, details: dict[str, str], provider: Prov
     fact_ids, fact_nums = _fact_ids(e), _fact_numbers(e)
     exploited = e.exploited or e.kev
 
-    def check_base(d: dict) -> list[str]:
-        a = d.get("article")
+    def check(d: dict) -> list[str]:
+        a = d.get("en")
         if not isinstance(a, dict):
-            return ["'article' object is missing"]
-        p = guard.check_base(a, corpus, fact_ids, fact_nums)
-        if not exploited and exploitation_claimed("\n".join(guard.article_strings(a))):
+            return ["'en' object is missing"]
+        en_ = _clean_article(a, e.category)
+        p = guard.check_base(en_, corpus, fact_ids, fact_nums)
+        if not exploited and exploitation_claimed(" \n ".join(guard.article_strings(en_))):
             p.append("the text claims exploitation, but FACTS do not report exploitation; remove that claim")
         if not isinstance(d.get("affected"), list):
             p.append("'affected' must be a list")
+        for lang in ("ru", "de"):
+            if not isinstance(d.get(lang), dict):
+                p.append(f"'{lang}' object is missing")
+            else:
+                p += guard.check_translation(en_, _clean_article(d[lang], e.category), lang)
         return p
 
     stats = Generated(texts={}, affected=[], workaround=False, model="")
     prompt = base_prompt(json.dumps(f, ensure_ascii=False, indent=1), srcs)
-    base, model = _ask(provider, cache, "base", SYSTEM_BASE, prompt, BASE_SCHEMA, check_base, stats, log)
-    en = _clean_article(base["article"], e.category)
+    out, model = _ask(provider, cache, "article", SYSTEM, prompt, SCHEMA, check, stats, log)
+    stats.texts = {lang: _clean_article(out[lang], e.category) for lang in ("en", "ru", "de")}
 
     rows, dropped = [], 0
-    for r in base.get("affected") or []:
+    for r in out.get("affected") or []:
         if not isinstance(r, dict):
             continue
         vals = [str(r.get("versions") or ""), str(r.get("fixed") or "")]
@@ -164,23 +169,10 @@ def generate(e: Event, catalog: Catalog, details: dict[str, str], provider: Prov
                          **({"fixed": str(r["fixed"]).strip()[:120]} if r.get("fixed") else {})})
         else:
             dropped += 1
-
-    def check_tr(d: dict) -> list[str]:
-        p = []
-        for lang in ("ru", "de"):
-            if not isinstance(d.get(lang), dict):
-                p.append(f"'{lang}' object is missing")
-                continue
-            p += guard.check_translation(en, _clean_article(d[lang], e.category), lang)
-        return p
-
-    tr, tr_model = _ask(provider, cache, "translate", SYSTEM_TRANSLATE,
-                        translate_prompt(json.dumps(en, ensure_ascii=False, indent=1)), TRANSLATE_SCHEMA, check_tr, stats, log)
-    stats.texts = {"en": en, "ru": _clean_article(tr["ru"], e.category), "de": _clean_article(tr["de"], e.category)}
     stats.affected = rows
     stats.dropped_affected = dropped
-    stats.workaround = bool(en.get("workaround"))
-    stats.model = model if tr_model == model else f"{model} + {tr_model}"
+    stats.workaround = bool(stats.texts["en"].get("workaround"))
+    stats.model = model
     return stats
 
 

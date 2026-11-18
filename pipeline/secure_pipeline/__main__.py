@@ -18,14 +18,16 @@ from .store import Store
 REPO = Path(__file__).resolve().parents[2]
 
 
-def _provider():
-    from .ai.provider import Gemini
+def _provider(budget_file: Path, max_requests: int):
+    """Gemini with a persisted daily request budget (the key's quota is shared with other projects)."""
+    from .ai.provider import DailyBudget, Gemini
 
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not key:
         return None
     models = [m.strip() for m in os.environ.get("GEMINI_MODELS", "").split(",") if m.strip()] or None
-    return Gemini(key, models, min_interval=float(os.environ.get("GEMINI_MIN_INTERVAL", "6.5")))
+    return Gemini(key, models, min_interval=float(os.environ.get("GEMINI_MIN_INTERVAL", "15")),
+                  budget=DailyBudget(budget_file, max_requests))
 
 
 def main(argv=None) -> int:
@@ -79,7 +81,7 @@ def main(argv=None) -> int:
         from .fetch import Fetcher
         from .stage4 import process
 
-        provider = _provider()
+        provider = _provider(a_.state / "ai" / "usage.json", int(os.environ.get("AI_DAILY_REQUESTS", "100")))
         if provider is None:
             print("skip: GEMINI_API_KEY is not set")
             return 0
@@ -95,7 +97,8 @@ def main(argv=None) -> int:
         _append(a_.state / "ai" / "runs.jsonl", {"at": utcnow().isoformat(), "publish": a_.publish,
                                                  **{k: v for k, v in st.items() if k != "results"}})
         print(f"ai: generated {st['generated']}, failed {st['failed']}, quarantined {st['quarantined']}, "
-              f"published {st['published']}, queue {st['queued']}, calls {st['calls']}"
+              f"published {st['published']}, queue {st['queued']}, calls {st['calls']}, "
+              f"budget used today {provider.budget.used()}/{provider.budget.max}"
               + (", stopped by quota" if st["quota_stop"] else ""))
         return 0
 
@@ -173,11 +176,11 @@ def _eval(a_) -> int:
     from .fetch import Fetcher
     from .stage4 import process
 
-    provider = _provider()
+    out = Path(a_.out)
+    provider = _provider(out / "usage.json", int(os.environ.get("AI_EVAL_REQUESTS", "60")))
     if provider is None:
         print("GEMINI_API_KEY is not set")
         return 1
-    out = Path(a_.out)
     state = out / "state"
     run(a_.data, state, force=True, bootstrap=timedelta(days=a_.days), log=lambda s: None)
     cat = load_catalog(a_.data)

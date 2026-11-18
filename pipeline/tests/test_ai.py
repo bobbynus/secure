@@ -13,7 +13,7 @@ import pytest
 from secure_pipeline.adapters import exploitation_claimed
 from secure_pipeline.ai import guard
 from secure_pipeline.ai.prompts import base_prompt
-from secure_pipeline.ai.provider import Completion, Gemini, QuotaExhausted
+from secure_pipeline.ai.provider import Completion, DailyBudget, Gemini, QuotaExhausted
 from secure_pipeline.ai.writer import Cache, ValidationFailed, generate
 from secure_pipeline.cluster import Catalog, Clusterer
 from secure_pipeline.fetch import Fetcher
@@ -64,8 +64,11 @@ BASE = {"affected": [
     {"product": "FortiOS 7.6", "versions": "7.6.0–7.6.7", "fixed": "7.6.8", "evidence": "FortiOS 7.6 7.6.0 through 7.6.7"},
     {"product": "FortiOS 7.4", "versions": "7.4.0–7.4.12", "fixed": "7.4.13", "evidence": "FortiOS 7.4 7.4.0 through 7.4.12"},
     {"product": "FortiOS 7.2", "versions": "7.2.0–7.2.13", "fixed": "7.2.14", "evidence": "FortiOS 7.2 7.2.0 through 7.2.13"},
-], "article": article()}
-TR = {"ru": RU, "de": DE}
+], "en": article(), "ru": RU, "de": DE}
+
+
+def answer(**en) -> dict:
+    return {"affected": [], "en": article(**en), "ru": RU, "de": DE}
 
 
 class Fake:
@@ -161,9 +164,9 @@ def test_slugify():
 
 def test_generate_grounds_affected_and_maps_catalog(tmp_path):
     store, cat, e = make_event(tmp_path)
-    fake = Fake(BASE, TR)
+    fake = Fake(BASE)
     g = generate(e, cat, {"fortiguard-psirt:FG-IR-26-273": DETAIL}, fake, Cache(tmp_path / "c"), log=lambda s: None)
-    assert fake.calls == 2 and g.repairs == 0
+    assert fake.calls == 1 and g.repairs == 0
     assert [r["versions"] for r in g.affected] == ["7.6.0–7.6.7", "7.4.0–7.4.12"]  # 7.2 row is not in the sources
     assert g.dropped_affected == 1 and g.workaround
     assert "IGNORE PREVIOUS INSTRUCTIONS" in fake.prompts[0]  # passed as quoted data only…
@@ -176,11 +179,11 @@ def test_generate_grounds_affected_and_maps_catalog(tmp_path):
 
 def test_generate_repairs_once_then_fails(tmp_path):
     store, cat, e = make_event(tmp_path)
-    invented = {"affected": [], "article": article(fix="Upgrade to 7.6.9.")}
-    exploited = {"affected": [], "article": article(summary="The flaw is actively exploited in the wild.")}
-    fake = Fake(invented, BASE, TR)
+    invented = answer(fix="Upgrade to 7.6.9.")
+    exploited = answer(summary="The flaw is actively exploited in the wild.")
+    fake = Fake(invented, BASE)
     g = generate(e, cat, {"fortiguard-psirt:FG-IR-26-273": DETAIL}, fake, Cache(tmp_path / "c1"), log=lambda s: None)
-    assert g.repairs == 1 and fake.calls == 3 and "7.6.9" in fake.prompts[1]
+    assert g.repairs == 1 and fake.calls == 2 and "7.6.9" in fake.prompts[1]
     with pytest.raises(ValidationFailed) as ex:
         generate(e, cat, {"fortiguard-psirt:FG-IR-26-273": DETAIL}, Fake(exploited, exploited), Cache(tmp_path / "c2"),
                  log=lambda s: None)
@@ -191,7 +194,7 @@ def test_generate_repairs_once_then_fails(tmp_path):
 
 def test_queue_dry_run_then_publish_and_render(tmp_path):
     store, cat, e = make_event(tmp_path)
-    st = process(store, cat, Fake(BASE, TR), detail_fetcher(), NOW, publish=False, log=lambda s: None)
+    st = process(store, cat, Fake(BASE), detail_fetcher(), NOW, publish=False, log=lambda s: None)
     assert st["generated"] == 1 and store.events[e.id].publish_state == "pending"
     st = process(store, cat, Fake(), detail_fetcher(), NOW + timedelta(minutes=30), publish=True, log=lambda s: None)
     e = store.events[e.id]
@@ -219,7 +222,7 @@ def test_queue_dry_run_then_publish_and_render(tmp_path):
 
 def test_queue_backoff_quarantine_and_quota_stop(tmp_path):
     store, cat, e = make_event(tmp_path)
-    bad = {"affected": [], "article": article(fix="Upgrade to 9.9.9.")}
+    bad = answer(fix="Upgrade to 9.9.9.")
     t = NOW
     for i in range(MAX_ATTEMPTS):
         st = process(store, cat, Fake(bad, bad), detail_fetcher(), t, log=lambda s: None)
@@ -293,3 +296,23 @@ def test_gemini_drops_schema_fields_when_rejected():
         return _ok({"x": 1})
     assert _gemini(handler, models=("gemini-3.6-flash",)).complete_json("s", "p", {"type": "object"}).data == {"x": 1}
     assert "thinkingConfig" in bodies[0]["generationConfig"] and len(bodies) == 2
+
+
+def test_daily_budget_is_shared_and_resets_on_the_quota_day(tmp_path):
+    t = [datetime(2026, 11, 18, 20, 0, tzinfo=timezone.utc)]  # 12:00 Pacific
+    b = DailyBudget(tmp_path / "usage.json", 2, now=lambda: t[0])
+    b.take()
+    DailyBudget(tmp_path / "usage.json", 2, now=lambda: t[0]).take()  # another run, same day
+    with pytest.raises(QuotaExhausted):
+        b.take()
+    t[0] += timedelta(hours=12)  # 00:00 Pacific next day
+    b.take()
+    assert b.used() == 1
+
+    sent = []
+    g = Gemini("k", ["m"], client=httpx.Client(transport=httpx.MockTransport(lambda r: sent.append(1) or _ok({}))),
+               min_interval=0, sleep=lambda s: None, budget=DailyBudget(tmp_path / "u2.json", 1))
+    g.complete_json("s", "p", {})
+    with pytest.raises(QuotaExhausted):
+        g.complete_json("s", "p", {})
+    assert len(sent) == 1  # the over-budget request is never sent
