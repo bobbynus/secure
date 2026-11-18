@@ -1,7 +1,7 @@
 {
  "id": "sr-26-0020",
  "category": "vulnerability",
- "priority": "critical",
+ "priority": "high",
  "confirmation": "vendor",
  "lifecycle": "confirmed",
  "fix": "unknown",
@@ -25,7 +25,7 @@
  },
  "severity": "critical",
  "cvss": null,
- "exploited": true,
+ "exploited": false,
  "kev": false,
  "kev_added": null,
  "ransomware": false,
@@ -56,6 +56,6 @@
   }
  ],
  "related": [],
- "reason": "vendor reports exploitation",
- "publish_state": "pending"
+ "reason": "vendor reports exploitation (misread negation; corrected 2026-11-18, not newsworthy by policy)",
+ "publish_state": "skipped"
 }
