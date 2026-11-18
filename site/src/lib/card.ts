@@ -20,6 +20,8 @@ export interface FeedItem {
   sources: number;
   published: string;
   updated: string;
+  /** Latest revision (push notifications react to significant kinds only). */
+  rev?: { date: string; kind: string };
 }
 
 /** Label strings the card needs; shipped with index.json for the client. */
@@ -58,6 +60,7 @@ export function renderCard(it: FeedItem, L: CardLabels, base = ''): string {
   ${ids ? `<p class="card-ids">${ids}${more}</p>` : ''}
   <p class="card-summary">${esc(it.summary)}</p>
   <ul class="card-tags">${tags.join('')}</ul>
+  <button type="button" class="quick-btn" data-quick="${esc(it.url)}" aria-haspopup="dialog">${esc(L['quick.open'] ?? 'Quick view')}</button>
 </article>`;
 }
 
@@ -72,5 +75,5 @@ export const CARD_LABEL_KEYS = [
   'fix.available', 'fix.partial', 'fix.none', 'fix.n/a',
   'conf.vendor', 'conf.official', 'conf.preliminary',
   'exp.confirmed', 'exp.reported', 'sources.n',
-  'feed.empty', 'feed.new', 'feed.count',
+  'feed.empty', 'feed.new', 'feed.count', 'quick.open',
 ] as const;

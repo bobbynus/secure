@@ -23,5 +23,13 @@ const at = await collectedAt();
       {t(lang, 'status.sources')}: <span class="ok">{ok} OK</span>
       {err > 0 && <> / <span class="err"><span aria-hidden="true">✕</span> {err} {t(lang, 'state.error')}</span></>}
     </a>
+    <span class="status-item live-stats" id="live-stats" hidden aria-label={t(lang, 'live.label')}>
+      <span class="status-sep" aria-hidden="true">|</span>
+      <span class="dot dot-live" aria-hidden="true"></span>
+      <span data-tpl="active" data-text={t(lang, 'live.active')}></span>
+      <span class="status-sep" aria-hidden="true">·</span>
+      <span data-tpl="today" data-text={t(lang, 'live.today')}></span>
+      <a href={`/${lang}/privacy/#stats`} class="live-help" title={t(lang, 'live.label')}>?</a>
+    </span>
   </div>
 </div>

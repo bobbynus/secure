@@ -4,7 +4,7 @@ import type { Lang } from './ui';
 export const STATIC_PAGES = ['about', 'privacy', 'contacts'] as const;
 export type StaticPage = (typeof STATIC_PAGES)[number];
 
-type Section = { h?: string; p: string[] };
+type Section = { id?: string; h?: string; p: string[] };
 
 export const PAGES: Record<StaticPage, Record<Lang, Section[]>> = {
   about: {
@@ -100,9 +100,24 @@ export const PAGES: Record<StaticPage, Record<Lang, Section[]>> = {
         ],
       },
       {
-        h: 'Будущие функции',
+        id: 'stats',
+        h: 'Статистика просмотров и онлайн',
         p: [
-          'Счётчики просмотров и оценка активных сессий будут работать без cookie, fingerprinting и постоянных идентификаторов, без хранения IP в прикладных данных. Методика будет опубликована до включения. Эта страница будет обновлена.',
+          'Публичная статусная панель показывает приблизительные значения. «Просмотры сегодня» — зарегистрированные открытия страниц за текущие сутки UTC; «всего» — с запуска счётчика; просмотры статьи — сумма трёх языковых версий одного события.',
+          '«Активные сессии» — число вкладок, которые за последние 2 минуты отправили сигнал активности (раз в ~50 секунд, только для видимой вкладки). Идентификатор — случайное значение, живущее в sessionStorage до закрытия вкладки. Это оценка, а не число людей.',
+          'Не используются cookie, fingerprinting и постоянные идентификаторы; IP-адреса не сохраняются в данных приложения и применяются только для кратковременного ограничения частоты запросов. Очевидные боты отсеиваются, но блокировщики скриптов и накрутка возможны — статистика приблизительная. Отказ статистики не влияет на работу сайта.',
+        ],
+      },
+      {
+        h: 'Push-уведомления',
+        p: [
+          'При подписке сохраняются адрес подписки, выданный вашим браузером его push-сервисом (Google, Mozilla, Apple, Microsoft), ключи шифрования и выбранные настройки. Содержимое уведомлений шифруется. Отписка на странице «Push» удаляет эти данные.',
+        ],
+      },
+      {
+        h: 'Предложение источника',
+        p: [
+          'Форма создаёт открытый GitHub Issue от имени проекта. Контакты не запрашиваются; сохраняется только нормализованный адрес источника для проверки дублей.',
         ],
       },
     ],
@@ -115,9 +130,24 @@ export const PAGES: Record<StaticPage, Record<Lang, Section[]>> = {
         ],
       },
       {
-        h: 'Künftige Funktionen',
+        id: 'stats',
+        h: 'Aufrufstatistik und aktive Sitzungen',
         p: [
-          'Aufrufzähler und die Schätzung aktiver Sitzungen werden ohne Cookies, Fingerprinting und dauerhafte Kennungen arbeiten und keine IP-Adressen in Anwendungsdaten speichern. Die Methodik wird vor der Aktivierung veröffentlicht. Diese Seite wird dann aktualisiert.',
+          'Die öffentliche Statusleiste zeigt ungefähre Werte. „Aufrufe heute“ – registrierte Seitenaufrufe am aktuellen UTC-Tag; „gesamt“ – seit Start des Zählers; Aufrufe eines Beitrags – Summe der drei Sprachversionen eines Ereignisses.',
+          '„Aktive Sitzungen“ – Anzahl der Tabs, die in den letzten 2 Minuten ein Aktivitätssignal gesendet haben (etwa alle 50 Sekunden, nur sichtbare Tabs). Die Kennung ist ein Zufallswert in sessionStorage, der mit dem Tab verschwindet. Es ist eine Schätzung, keine Personenzahl.',
+          'Es werden keine Cookies, kein Fingerprinting und keine dauerhaften Kennungen verwendet; IP-Adressen werden nicht in Anwendungsdaten gespeichert und nur kurzzeitig zur Ratenbegrenzung genutzt. Offensichtliche Bots werden herausgefiltert, Skriptblocker und Manipulation sind dennoch möglich – die Statistik ist ungefähr. Ein Ausfall beeinträchtigt die Seite nicht.',
+        ],
+      },
+      {
+        h: 'Push-Benachrichtigungen',
+        p: [
+          'Beim Abonnieren werden die von Ihrem Browser bei seinem Push-Dienst (Google, Mozilla, Apple, Microsoft) erzeugte Abonnement-Adresse, die Schlüssel und die gewählten Einstellungen gespeichert. Inhalte werden verschlüsselt übertragen. Abmelden auf der Seite „Push“ löscht diese Daten.',
+        ],
+      },
+      {
+        h: 'Quellenvorschläge',
+        p: [
+          'Das Formular erstellt ein öffentliches GitHub-Issue im Namen des Projekts. Kontaktdaten werden nicht abgefragt; gespeichert wird nur die normalisierte Quell-URL zur Dublettenprüfung.',
         ],
       },
     ],
@@ -130,9 +160,24 @@ export const PAGES: Record<StaticPage, Record<Lang, Section[]>> = {
         ],
       },
       {
-        h: 'Upcoming features',
+        id: 'stats',
+        h: 'View statistics and active sessions',
         p: [
-          'View counters and the active-session estimate will work without cookies, fingerprinting or persistent identifiers, and without storing IP addresses in application data. The methodology will be published before they are enabled. This page will be updated.',
+          'The public status bar shows approximate values. “Views today” are registered page opens during the current UTC day; “total” since the counter started; article views are the sum of an event’s three language versions.',
+          '“Active sessions” is the number of tabs that sent an activity signal in the last 2 minutes (about every 50 seconds, visible tabs only). The identifier is a random value kept in sessionStorage until the tab is closed. It is an estimate, not a number of people.',
+          'No cookies, fingerprinting or persistent identifiers are used; IP addresses are not stored in application data and are only used briefly for rate limiting. Obvious bots are filtered out, but script blockers and manipulation are possible — the numbers are approximate. A statistics outage does not affect the site.',
+        ],
+      },
+      {
+        h: 'Push notifications',
+        p: [
+          'When you subscribe, the subscription address issued by your browser’s push service (Google, Mozilla, Apple, Microsoft), its encryption keys and your settings are stored. Notification content is encrypted. Unsubscribing on the “Push” page deletes this data.',
+        ],
+      },
+      {
+        h: 'Source suggestions',
+        p: [
+          'The form creates a public GitHub issue on behalf of the project. No contact details are requested; only the normalised source URL is kept for duplicate checks.',
         ],
       },
     ],

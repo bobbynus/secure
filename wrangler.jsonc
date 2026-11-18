@@ -1,13 +1,41 @@
 {
-  "$schema": "site/node_modules/wrangler/config-schema.json",
+  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "secure",
+  "main": "worker/src/index.ts",
   "compatibility_date": "2026-11-01",
   "routes": [
     { "pattern": "secure.abramov.vip", "custom_domain": true }
   ],
+  // Static site; the Worker script runs only for /api/* (and the cron trigger).
   "assets": {
     "directory": "./site/dist",
+    "binding": "ASSETS",
     "html_handling": "auto-trailing-slash",
-    "not_found_handling": "404-page"
-  }
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "secure-db",
+      "database_id": "bc3b9ad4-9736-4464-a974-b259d045565b",
+      "migrations_dir": "worker/migrations"
+    }
+  ],
+  // Workers Rate Limiting: in-memory counters keyed by client IP; nothing is stored.
+  "ratelimits": [
+    { "name": "RL_HIT", "namespace_id": "1001", "simple": { "limit": 30, "period": 60 } },
+    { "name": "RL_SUGGEST", "namespace_id": "1002", "simple": { "limit": 3, "period": 60 } },
+    { "name": "RL_PUSH", "namespace_id": "1003", "simple": { "limit": 10, "period": 60 } }
+  ],
+  // Cleanup of expired sessions + push outbox retries.
+  "triggers": { "crons": ["*/10 * * * *"] },
+  "vars": {
+    "SITE_ORIGIN": "https://secure.abramov.vip",
+    "GITHUB_REPO": "bobbynus/secure",
+    "VAPID_PUBLIC_KEY": "BMw32iO96XH7to_mvkOJ4FqnkIRIerGjErL4_Z2IhK4LFaG5FIp7udNpksvcmM6CQE1x8X-YsM1XzCE6CElIuyU",
+    "VAPID_SUBJECT": "https://secure.abramov.vip"
+  },
+  // Secrets (wrangler secret put): VAPID_PRIVATE_JWK, DISPATCH_TOKEN, GITHUB_TOKEN, TURNSTILE_SECRET (optional).
+  "observability": { "enabled": true }
 }

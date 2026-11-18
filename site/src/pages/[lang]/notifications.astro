@@ -1,0 +1,76 @@
+---
+import Base from '../../layouts/Base.astro';
+import { productsWithEvents } from '../../lib/events';
+import { LANGS, UI, t, type Lang } from '../../i18n/ui';
+
+export const getStaticPaths = () => LANGS.map((lang) => ({ params: { lang } }));
+const lang = Astro.params.lang as Lang;
+const products = await productsWithEvents(lang);
+const priorities = ['critical', 'high', 'medium', 'low', 'info'] as const;
+const categories = ['vulnerability', 'attack', 'update-issue'] as const;
+const messages = Object.fromEntries(Object.entries(UI[lang]).filter(([k]) => k.startsWith('push.')));
+---
+
+<Base lang={lang} title={t(lang, 'push.title')}>
+  <div class="wrap page narrow">
+    <h1>{t(lang, 'push.title')}</h1>
+    <p>{t(lang, 'push.intro')}</p>
+
+    <p class="callout small js-only" id="push-env" hidden></p>
+
+    <form class="sform js-only" id="push-form" data-lang={lang} data-messages={JSON.stringify(messages)}>
+      <fieldset>
+        <legend>{t(lang, 'push.minPriority')}</legend>
+        <div class="choice-row">
+          {
+            priorities.map((p) => (
+              <label class="choice">
+                <input type="radio" name="minPriority" value={p} checked={p === 'high'} />
+                <span class={`flag flag-${p}`}>{t(lang, `prio.${p}`)}</span>
+              </label>
+            ))
+          }
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>{t(lang, 'push.categories')}</legend>
+        <div class="choice-row">
+          {
+            categories.map((c) => (
+              <label class="choice">
+                <input type="checkbox" name="categories" value={c} checked />
+                <span>{t(lang, `cat.${c}`)}</span>
+              </label>
+            ))
+          }
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>{t(lang, 'push.products')}</legend>
+        <p class="small muted">{t(lang, 'push.productsAll')}</p>
+        <div class="choice-grid">
+          {
+            products.map((p) => (
+              <label class="choice">
+                <input type="checkbox" name="products" value={p.id} />
+                <span>{p.name}</span>
+              </label>
+            ))
+          }
+        </div>
+      </fieldset>
+      <div class="sform-actions">
+        <button type="submit" class="btn" id="push-enable">{t(lang, 'push.enable')}</button>
+        <button type="button" class="btn btn-ghost" id="push-disable" hidden>{t(lang, 'push.disable')}</button>
+      </div>
+      <p class="sform-status" id="push-status" role="status" aria-live="polite" tabindex="-1"></p>
+    </form>
+
+    <p class="small muted">{t(lang, 'push.privacy')}</p>
+    <p class="small muted">{t(lang, 'push.ios')}</p>
+  </div>
+</Base>
+
+<script>
+  import '../../scripts/push';
+</script>

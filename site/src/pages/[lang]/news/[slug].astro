@@ -39,7 +39,7 @@ const jsonLd = {
 };
 ---
 
-<Base lang={lang} title={tr.title} description={tr.summary} alternates={alt} ogType="article">
+<Base lang={lang} title={tr.title} description={tr.summary} alternates={alt} ogType="article" eventId={e.id}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
   <article class="wrap article">
     <p class="crumbs"><a href={`/${lang}/`}>{t(lang, 'art.back')}</a> <span class="mono muted">/ {e.id}</span></p>
@@ -67,6 +67,7 @@ const jsonLd = {
         <div><dt>{t(lang, 'art.published')}</dt><dd class="mono"><time datetime={e.dates.published}>{fmtDateTime(e.dates.published)} UTC</time></dd></div>
         <div><dt>{t(lang, 'art.updated')}</dt><dd class="mono"><time datetime={e.dates.updated}>{fmtDateTime(e.dates.updated)} UTC</time></dd></div>
         {ids.length > 0 && <div><dt>{t(lang, 'art.ids')}</dt><dd class="mono ids">{ids.join(', ')}</dd></div>}
+        <div id="event-views" hidden><dt>{t(lang, 'art.views')}</dt><dd class="mono"></dd></div>
         {
           e.cvss && (
             <div>

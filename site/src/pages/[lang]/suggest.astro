@@ -1,22 +1,86 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { SITE } from '../../config';
-import { LANGS, t, type Lang } from '../../i18n/ui';
+import { LANGS, UI, t, type Lang } from '../../i18n/ui';
 
 export const getStaticPaths = () => LANGS.map((lang) => ({ params: { lang } }));
 const lang = Astro.params.lang as Lang;
+const kinds = ['vendor', 'cert', 'database', 'research', 'media', 'community'] as const;
+const formats = ['rss', 'api', 'file', 'html', 'unknown'] as const;
+// Messages for the client script (errors, success).
+const messages = Object.fromEntries(Object.entries(UI[lang]).filter(([k]) => k.startsWith('sf.')));
 ---
 
 <Base lang={lang} title={t(lang, 'suggest.title')}>
   <div class="wrap page narrow">
     <h1>{t(lang, 'suggest.title')}</h1>
     <p>{t(lang, 'suggest.intro')}</p>
-    <p>{t(lang, 'suggest.fields')}</p>
     <div class="callout callout-amber" role="note">
       <p><strong><span aria-hidden="true">⚠</span> {t(lang, 'suggest.public')}</strong></p>
       <p>{t(lang, 'suggest.review')}</p>
     </div>
-    <p><a class="btn" href={SITE.suggestUrl} rel="noopener">{t(lang, 'suggest.cta')} ↗</a></p>
-    <p class="small muted">{t(lang, 'suggest.account')}</p>
+
+    <form class="sform js-only" id="suggest-form" novalidate data-messages={JSON.stringify(messages)} data-turnstile={SITE.turnstileSiteKey}>
+      <div class="sform-grid">
+        <label class="span-2">
+          <span>{t(lang, 'sf.name')} <abbr title="required" aria-hidden="true">*</abbr></span>
+          <input name="name" required minlength="2" maxlength="120" autocomplete="off" />
+        </label>
+        <label class="span-2">
+          <span>{t(lang, 'sf.url')} <abbr title="required" aria-hidden="true">*</abbr></span>
+          <input name="url" type="url" required maxlength="500" placeholder="https://" inputmode="url" autocomplete="off" spellcheck="false" />
+        </label>
+        <label>
+          <span>{t(lang, 'sf.kind')} <abbr title="required" aria-hidden="true">*</abbr></span>
+          <select name="kind" required>
+            {kinds.map((k) => <option value={k}>{t(lang, `sf.kind.${k}`)}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>{t(lang, 'sf.format')} <abbr title="required" aria-hidden="true">*</abbr></span>
+          <select name="format" required>
+            {formats.map((f) => <option value={f}>{t(lang, `sf.format.${f}`)}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>{t(lang, 'sf.language')} <abbr title="required" aria-hidden="true">*</abbr></span>
+          <input name="language" required minlength="2" maxlength="40" placeholder="en / de / ru …" autocomplete="off" />
+        </label>
+        <label>
+          <span>{t(lang, 'sf.products')} <small>({t(lang, 'sf.optional')})</small></span>
+          <input name="products" maxlength="300" autocomplete="off" />
+        </label>
+        <label class="span-2">
+          <span>{t(lang, 'sf.docs')} <small>({t(lang, 'sf.optional')})</small></span>
+          <input name="docs" type="url" maxlength="500" placeholder="https://" inputmode="url" autocomplete="off" spellcheck="false" />
+        </label>
+        <label class="span-2">
+          <span>{t(lang, 'sf.rationale')} <small>({t(lang, 'sf.optional')})</small></span>
+          <textarea name="rationale" rows="4" maxlength="2000"></textarea>
+        </label>
+        <!-- Honeypot: hidden from people and assistive tech. -->
+        <label class="hp" aria-hidden="true">
+          <span>{t(lang, 'sf.honeypot')}</span>
+          <input name="website" tabindex="-1" autocomplete="off" />
+        </label>
+        <label class="span-2 check">
+          <input type="checkbox" name="ack" required />
+          <span>{t(lang, 'sf.ack')}</span>
+        </label>
+      </div>
+      {SITE.turnstileSiteKey && <div class="cf-turnstile" data-sitekey={SITE.turnstileSiteKey} data-language={lang}></div>}
+      <div class="sform-actions">
+        <button type="submit" class="btn">{t(lang, 'sf.submit')}</button>
+      </div>
+      <p class="sform-status" id="suggest-status" role="status" aria-live="polite" tabindex="-1"></p>
+    </form>
+
+    <p class="small muted">{t(lang, 'sf.alt')}</p>
+    <p><a class="btn btn-ghost" href={SITE.suggestUrl} rel="noopener">{t(lang, 'suggest.cta')} ↗</a></p>
   </div>
 </Base>
+
+{SITE.turnstileSiteKey && <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>}
+<script>
+  import '../../scripts/suggest';
+</script>

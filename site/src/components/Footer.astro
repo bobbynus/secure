@@ -6,6 +6,7 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const follow = [
   { href: `/${lang}/rss.xml`, label: 'RSS' },
+  { href: `/${lang}/notifications/`, label: t(lang, 'nav.push') },
   SITE.telegram[lang] ? { href: SITE.telegram[lang], label: 'Telegram' } : null,
   SITE.repoUrl ? { href: SITE.repoUrl, label: 'GitHub' } : null,
   SITE.kofiUrl ? { href: SITE.kofiUrl, label: 'Ko-fi' } : null,

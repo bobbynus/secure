@@ -16,7 +16,7 @@ const title = t(lang, `${page}.title`);
     <h1>{title}</h1>
     {
       PAGES[page][lang].map((s) => (
-        <section>
+        <section id={s.id}>
           {s.h && <h2>{s.h}</h2>}
           {s.p.map((p) => <p set:html={inline(p)} />)}
         </section>

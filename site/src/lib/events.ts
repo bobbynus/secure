@@ -87,7 +87,13 @@ export function toFeedItem(e: SecEvent, lang: Lang, products: Map<string, Produc
     sources: e.sources.length,
     published: e.dates.published,
     updated: e.dates.updated,
+    rev: latestRevision(e),
   };
+}
+
+function latestRevision(e: SecEvent): { date: string; kind: string } | undefined {
+  const r = [...e.revisions].sort((a, b) => b.date.localeCompare(a.date))[0];
+  return r && { date: r.date, kind: r.kind };
 }
 
 export function cardLabels(lang: Lang): CardLabels {

@@ -14,4 +14,6 @@ export const SITE = {
   kofiUrl: 'https://ko-fi.com/',
   telegram: { ru: '', de: '', en: '' } as Record<string, string>,
   contactEmail: '',
+  /** Cloudflare Turnstile site key for the suggestion form; empty = disabled (honeypot + rate limit only). */
+  turnstileSiteKey: '',
 } as const;

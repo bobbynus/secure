@@ -106,6 +106,15 @@ const pageHref = (n: number) => (n === 1 ? `${base}/` : `${base}/page/${n}/`);
 
 {interactive && <div id="feed-config" hidden data-page-size={Astro.props.pageSize} data-offset={(page - 1) * (Astro.props.pageSize ?? 10)}></div>}
 
+<dialog class="quick" id="quick" aria-labelledby="quick-title" data-error={t(lang, 'quick.error')}>
+  <div class="quick-bar">
+    <a class="btn quick-full" href="#">{t(lang, 'quick.full')} →</a>
+    <button type="button" class="btn btn-ghost quick-close">{t(lang, 'quick.close')} ✕</button>
+  </div>
+  <div class="quick-body article"></div>
+</dialog>
+
 <script>
   import '../scripts/feed';
+  import '../scripts/quick';
 </script>
