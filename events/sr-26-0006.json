@@ -1,0 +1,77 @@
+{
+ "id": "sr-26-0006",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "official",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Cisco",
+ "products": [],
+ "product_names": [
+  "BroadWorks"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-20320"
+  ],
+  "advisory": [
+   "cisco-sa-bworks-xxe-uwUd7CEt"
+  ],
+  "kb": []
+ },
+ "severity": "high",
+ "cvss": {
+  "score": 7.5,
+  "version": "3.1",
+  "source": "NVD",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+ },
+ "exploited": true,
+ "kev": true,
+ "kev_added": "2026-11-10",
+ "ransomware": false,
+ "title_hint": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+ "summary_hint": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+ "created_at": "2026-11-18T10:10:19Z",
+ "updated_at": "2026-11-18T10:10:19Z",
+ "event_date": "2026-11-10T00:00:00Z",
+ "sources": [
+  {
+   "source_id": "cisa-kev",
+   "item_key": "CVE-2026-20320",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-20320",
+   "title": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+   "publisher": "CISA Known Exploited Vulnerabilities",
+   "kind": "kev",
+   "date": "2026-11-10"
+  },
+  {
+   "source_id": "cisco-psirt",
+   "item_key": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-bworks-xxe-uwUd7CEt",
+   "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-bworks-xxe-uwUd7CEt?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20BroadWorks%20Out-of-Band%20Blind%20XML%20External%20Entity%20Injection%20Vulnerability%26vs_k=1",
+   "title": "Cisco BroadWorks Out-of-Band Blind XML External Entity Injection Vulnerability",
+   "publisher": "Cisco Security Advisories",
+   "kind": "vendor",
+   "date": "2026-11-13"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-18T10:10:19Z",
+   "kind": "created",
+   "facts": {
+    "reason": "added to CISA KEV"
+   },
+   "source": "cisa-kev:CVE-2026-20320"
+  },
+  {
+   "date": "2026-11-18T10:10:19Z",
+   "kind": "source",
+   "facts": {},
+   "source": "cisco-psirt:https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-bworks-xxe-uwUd7CEt"
+  }
+ ],
+ "related": [],
+ "reason": "added to CISA KEV",
+ "publish_state": "pending"
+}

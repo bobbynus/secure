@@ -1,0 +1,61 @@
+{
+ "id": "sr-26-0020",
+ "category": "vulnerability",
+ "priority": "critical",
+ "confirmation": "vendor",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Cisco",
+ "products": [],
+ "product_names": [],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-76463",
+   "CVE-2026-76464",
+   "CVE-2026-76467",
+   "CVE-2026-76468",
+   "CVE-2026-76469",
+   "CVE-2026-76470",
+   "CVE-2026-76472"
+  ],
+  "advisory": [
+   "cisco-sa-hardening-meraki-os-drbEX9GH"
+  ],
+  "kb": []
+ },
+ "severity": "critical",
+ "cvss": null,
+ "exploited": true,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Cisco Meraki Security Hardening Release: October 2026",
+ "summary_hint": "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\nThese vulnerabilities were found during internal testing and are not known to be actively exploited. To assist customers in patching and streamline the disclosure process, Cisco has grouped these issues by their underlying vulnerability class — Common Weakness Enumeration (CWE) — and assigned a single Common Vulnerabilities and Exposures identifier (CVE ID) to each CWE grouping.\nCisco has released software updates that address these vulnerabilities. There are no workarounds that address these vulnerabilities.\nThis advisory is available at the following link:\nhttps://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-meraki-os-drbEX9GH\nSecurity Impact Rating: Critical\nCVE: CVE-2026-76463,CVE-2026-76464,CVE-2026-76467,CVE-2026-76468,CVE-2026-76469,CVE-2026-76470,CVE-2026-76472",
+ "created_at": "2026-11-18T10:10:19Z",
+ "updated_at": "2026-11-18T10:10:19Z",
+ "event_date": "2026-11-09T17:55:54Z",
+ "sources": [
+  {
+   "source_id": "cisco-psirt",
+   "item_key": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-meraki-os-drbEX9GH",
+   "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-meraki-os-drbEX9GH?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Meraki%20Security%20Hardening%20Release:%20October%202026%26vs_k=1",
+   "title": "Cisco Meraki Security Hardening Release: October 2026",
+   "publisher": "Cisco Security Advisories",
+   "kind": "vendor",
+   "date": "2026-11-09"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-18T10:10:19Z",
+   "kind": "created",
+   "facts": {
+    "reason": "vendor reports exploitation"
+   },
+   "source": "cisco-psirt:https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-meraki-os-drbEX9GH"
+  }
+ ],
+ "related": [],
+ "reason": "vendor reports exploitation",
+ "publish_state": "pending"
+}

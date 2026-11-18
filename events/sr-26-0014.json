@@ -1,0 +1,55 @@
+{
+ "id": "sr-26-0014",
+ "category": "vulnerability",
+ "priority": "critical",
+ "confirmation": "official",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "SonicWall",
+ "products": [],
+ "product_names": [
+  "SonicOS SSLVPN"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-19868"
+  ],
+  "advisory": [],
+  "kb": []
+ },
+ "severity": null,
+ "cvss": null,
+ "exploited": true,
+ "kev": true,
+ "kev_added": "2026-11-06",
+ "ransomware": false,
+ "title_hint": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+ "summary_hint": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+ "created_at": "2026-11-18T10:10:19Z",
+ "updated_at": "2026-11-18T10:10:19Z",
+ "event_date": "2026-11-06T00:00:00Z",
+ "sources": [
+  {
+   "source_id": "cisa-kev",
+   "item_key": "CVE-2026-19868",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-19868",
+   "title": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+   "publisher": "CISA Known Exploited Vulnerabilities",
+   "kind": "kev",
+   "date": "2026-11-06"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-18T10:10:19Z",
+   "kind": "created",
+   "facts": {
+    "reason": "added to CISA KEV"
+   },
+   "source": "cisa-kev:CVE-2026-19868"
+  }
+ ],
+ "related": [],
+ "reason": "added to CISA KEV",
+ "publish_state": "pending"
+}

@@ -1,0 +1,60 @@
+{
+ "id": "sr-26-0017",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Fortinet",
+ "products": [
+  "fortios"
+ ],
+ "product_names": [],
+ "identifiers": {
+  "cve": [],
+  "advisory": [
+   "FG-IR-26-267"
+  ],
+  "kb": []
+ },
+ "severity": "critical",
+ "cvss": {
+  "score": 9.3,
+  "version": "3.x",
+  "source": "FortiGuard PSIRT advisories",
+  "vector": null
+ },
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Authentication bypass by primary weakness",
+ "summary_hint": "CVSSv3 Score:\n9.3\nAn Authentication Bypass by Primary Weakness vulnerability [cwe-305] in FortiOS and FortiSASE ospf daemon may allow an unauthenticated attacker to broadcast LSA via specially crafted request\nRevised on 2026-11-10 00:00:00",
+ "created_at": "2026-11-18T10:10:19Z",
+ "updated_at": "2026-11-18T10:10:19Z",
+ "event_date": "2026-11-10T08:00:00Z",
+ "sources": [
+  {
+   "source_id": "fortiguard-psirt",
+   "item_key": "https://fortiguard.fortinet.com/psirt/FG-IR-26-267",
+   "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-267",
+   "title": "Authentication bypass by primary weakness",
+   "publisher": "FortiGuard PSIRT advisories",
+   "kind": "vendor",
+   "date": "2026-11-10"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-18T10:10:19Z",
+   "kind": "created",
+   "facts": {
+    "reason": "critical severity in infrastructure product"
+   },
+   "source": "fortiguard-psirt:https://fortiguard.fortinet.com/psirt/FG-IR-26-267"
+  }
+ ],
+ "related": [],
+ "reason": "critical severity in infrastructure product",
+ "publish_state": "pending"
+}

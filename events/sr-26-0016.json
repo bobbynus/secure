@@ -1,0 +1,60 @@
+{
+ "id": "sr-26-0016",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Fortinet",
+ "products": [
+  "fortios"
+ ],
+ "product_names": [],
+ "identifiers": {
+  "cve": [],
+  "advisory": [
+   "FG-IR-26-268"
+  ],
+  "kb": []
+ },
+ "severity": "critical",
+ "cvss": {
+  "score": 9.6,
+  "version": "3.x",
+  "source": "FortiGuard PSIRT advisories",
+  "vector": null
+ },
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Numeric truncation error",
+ "summary_hint": "CVSSv3 Score:\n9.6\nA Numeric Truncation Error vulnerability [cwe-197] in FortiOS and FortiSASE bgp daemon may allow a configured ibgp neighbor to send malicious/malformed attributes to all connected routers via a specially crafted request\nRevised on 2026-11-13 00:00:00",
+ "created_at": "2026-11-18T10:10:19Z",
+ "updated_at": "2026-11-18T10:10:19Z",
+ "event_date": "2026-11-10T08:00:00Z",
+ "sources": [
+  {
+   "source_id": "fortiguard-psirt",
+   "item_key": "https://fortiguard.fortinet.com/psirt/FG-IR-26-268",
+   "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-268",
+   "title": "Numeric truncation error",
+   "publisher": "FortiGuard PSIRT advisories",
+   "kind": "vendor",
+   "date": "2026-11-10"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-18T10:10:19Z",
+   "kind": "created",
+   "facts": {
+    "reason": "critical severity in infrastructure product"
+   },
+   "source": "fortiguard-psirt:https://fortiguard.fortinet.com/psirt/FG-IR-26-268"
+  }
+ ],
+ "related": [],
+ "reason": "critical severity in infrastructure product",
+ "publish_state": "pending"
+}
