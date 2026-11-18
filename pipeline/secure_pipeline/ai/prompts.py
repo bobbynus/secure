@@ -6,7 +6,7 @@ the free-tier quota is counted in requests per day, so one call instead of two h
 
 from __future__ import annotations
 
-PROMPT_VERSION = "p2"
+PROMPT_VERSION = "p3"
 
 _S = {"type": "string"}
 _NS = {"type": ["string", "null"]}
@@ -84,8 +84,9 @@ At most 110 characters.
 - en.impact: consequences and preconditions (authentication, network position, configuration) from the sources.
 - en.fix: fixed versions / updates / vendor guidance from the sources, or that the sources list none.
 - en.workaround: mitigation or workaround described in the sources, else null.
-- en.checks: 2-4 concrete checks: which systems and versions to inventory, which exposure conditions from the \
-sources to verify, which fix or mitigation to apply.
+- en.checks: 1-4 concrete checks: which systems and versions to inventory, which exposure conditions from the \
+sources to verify, which fix or mitigation to apply. When the sources give little detail, write fewer checks: \
+one specific check is better than several vague ones ("check systems for exposure" is not acceptable).
 - en.regression: only when FACTS.category is "update-issue" (a problematic update), else null.
 - ru, de: translations of `en` into Russian and German with the same fields and the same number of checks.
 
@@ -95,7 +96,8 @@ Translation rules:
 (keep the decimal point: 9.8 stays 9.8), and everything inside backticks (keep the backticks).
 - Established professional terminology. Russian: уязвимость, эксплуатация, исправление, обновление, обходное \
 решение, администратор, межсетевой экран. German: Schwachstelle, Ausnutzung, Update, Fix, Workaround, \
-Administrator, Firewall.
+Administrator, Firewall; "fixed version" is "korrigierte Version" or "Version mit Fix", never "fixierte Version". \
+Russian "fixed version" is "исправленная версия".
 - Natural, concise style of a technical news service, not word-for-word."""
 
 

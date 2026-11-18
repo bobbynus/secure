@@ -98,7 +98,7 @@ def main(argv=None) -> int:
                                                  **{k: v for k, v in st.items() if k != "results"}})
         print(f"ai: generated {st['generated']}, failed {st['failed']}, quarantined {st['quarantined']}, "
               f"published {st['published']}, queue {st['queued']}, calls {st['calls']}, "
-              f"budget used today {provider.budget.used()}/{provider.budget.max}"
+              f"budget used today {provider.budget.used()}/{provider.budget.max}, rejected responses {provider.statuses or 0}"
               + (", stopped by quota" if st["quota_stop"] else ""))
         return 0
 

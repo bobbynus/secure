@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 from typing import Callable, Optional
 
 from .ai.prompts import PROMPT_VERSION
-from .ai.provider import ProviderError, QuotaExhausted
+from .ai.provider import Overloaded, ProviderError, QuotaExhausted
 from .ai.writer import Cache, ValidationFailed, generate, input_hash
 from .cluster import ORDER, Catalog
 from .details import fetch_details
@@ -79,9 +79,9 @@ def process(store: Store, catalog: Catalog, provider, fetch: Fetcher, now: datet
         try:
             details = fetch_details(e, catalog, fetch, store.root / "details", now, log)
             g = generate(e, catalog, details, provider, cache, log)
-        except QuotaExhausted as ex:
+        except (QuotaExhausted, Overloaded) as ex:
             stats["quota_stop"] = True
-            log(f"      quota: {ex}; the queue waits for the next run")
+            log(f"      stop: {ex}; the queue waits for the next run")
             break
         except (ValidationFailed, ProviderError) as ex:
             _fail(e, h, ex, now)

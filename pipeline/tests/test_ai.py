@@ -61,8 +61,8 @@ DE = article(title="FortiOS: Befehlsausführung ohne Authentifizierung über HA-
              checks=["Inventarisieren Sie FortiGate-Geräte mit 7.6.0–7.6.7 und 7.4.0–7.4.12.", "Prüfen Sie, ob das HA-Segment vertrauenswürdig ist."])
 
 BASE = {"affected": [
-    {"product": "FortiOS 7.6", "versions": "7.6.0–7.6.7", "fixed": "7.6.8", "evidence": "FortiOS 7.6 7.6.0 through 7.6.7"},
-    {"product": "FortiOS 7.4", "versions": "7.4.0–7.4.12", "fixed": "7.4.13", "evidence": "FortiOS 7.4 7.4.0 through 7.4.12"},
+    {"product": "FortiOS 7.6", "versions": "7.6.0–7.6.7", "fixed": "7.6.8", "evidence": "FortiOS 7.6 7.6.0 through 7.6.7 Upgrade to 7.6.8"},
+    {"product": "FortiOS 7.4", "versions": "7.4.0–7.4.12", "fixed": "7.4.13", "evidence": "FortiOS 7.4 7.4.0 through 7.4.12 Upgrade to 7.4.13"},
     {"product": "FortiOS 7.2", "versions": "7.2.0–7.2.13", "fixed": "7.2.14", "evidence": "FortiOS 7.2 7.2.0 through 7.2.13"},
 ], "en": article(), "ru": RU, "de": DE}
 
@@ -316,3 +316,9 @@ def test_daily_budget_is_shared_and_resets_on_the_quota_day(tmp_path):
     with pytest.raises(QuotaExhausted):
         g.complete_json("s", "p", {})
     assert len(sent) == 1  # the over-budget request is never sent
+
+
+def test_affected_rows_need_versions_and_all_listed_products_in_the_quote():
+    assert guard.names_product("9.16 and earlier 9.16.4.104", "Cisco Secure Firewall ASA Software 9.16 and earlier", "Cisco")
+    assert not guard.names_product("watchOS 10.5 and later", "Apple iOS, iPadOS, macOS and watchOS", "Apple")
+    assert guard.names_product("iOS 17.5 and iPadOS 17.5", "iOS and iPadOS", "Apple")

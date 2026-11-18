@@ -12,6 +12,8 @@ export interface Env {
 
   /** Fine-grained PAT: Issues read/write on GITHUB_REPO only. Optional: without it the form reports "not configured". */
   GITHUB_TOKEN?: string;
+  /** Fine-grained PAT: Actions read/write on GITHUB_REPO only. Optional: starts collect.yml when GitHub's cron lags. */
+  COLLECT_TOKEN?: string;
   /** Cloudflare Turnstile secret. Optional: without it only honeypot + rate limit protect the form. */
   TURNSTILE_SECRET?: string;
   /** JSON Web Key (ECDSA P-256 private) for VAPID. */

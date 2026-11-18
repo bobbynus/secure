@@ -64,7 +64,8 @@ jobs:
           done
           # Every language's newest article must be reachable.
           for l in ru de en; do
-            url=$(curl -fsS "$SITE/$l/index.json" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).items[0].url))')
+            url=$(curl -fsS "$SITE/$l/index.json" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).items[0]?.url ?? ""))')
+            if [ -z "$url" ]; then echo "no articles in $l yet"; continue; fi
             curl -fsS -o /dev/null --retry 5 --retry-delay 5 --retry-all-errors "$SITE$url"
             echo "ok $url"
           done

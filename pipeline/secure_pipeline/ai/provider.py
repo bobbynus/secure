@@ -74,6 +74,10 @@ class QuotaExhausted(ProviderError):
     pass
 
 
+class Overloaded(ProviderError):
+    """Model busy (503) or rate-limited twice in a row: stop this run, retry next run; not the event's fault."""
+
+
 @dataclass
 class Completion:
     data: dict
@@ -116,6 +120,7 @@ class Gemini:
         self._compat: set[str] = set()  # models that rejected optional config fields
         self.calls = 0
         self.budget = budget
+        self.statuses: dict[int, int] = {}  # non-200 responses, for run logs
 
     def close(self):
         self.client.close()
@@ -178,12 +183,16 @@ class Gemini:
             if r.status_code == 429:
                 if err["daily"]:
                     raise QuotaExhausted(f"{model}: {err['message'][:160]}")
-                if attempt >= 3:
-                    raise ProviderError(f"{model}: rate limited")
-                self.sleep(min(err["retry"] or 20 * (attempt + 1), 65))
+                self.statuses[429] = self.statuses.get(429, 0) + 1
+                if attempt >= 1:
+                    raise Overloaded(f"{model}: rate limited twice (shared quota busy)")
+                self.sleep(min(err["retry"] or 30, 65))
                 continue
-            if r.status_code in (500, 502, 503, 504) and attempt < 3:
-                self.sleep(min(err["retry"] or 10 * 2 ** attempt, 60))
+            if r.status_code in (500, 502, 503, 504):
+                self.statuses[r.status_code] = self.statuses.get(r.status_code, 0) + 1
+                if attempt >= 1:
+                    raise Overloaded(f"{model}: HTTP {r.status_code} {err['message'][:120]}")
+                self.sleep(min(err["retry"] or 20, 60))
                 continue
             if r.status_code == 400 and model not in self._compat and re.search(
                     r"responseJsonSchema|thinking|Unknown name|schema", err["message"], re.I):

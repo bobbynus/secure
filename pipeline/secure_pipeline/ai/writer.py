@@ -130,7 +130,8 @@ def generate(e: Event, catalog: Catalog, details: dict[str, str], provider: Prov
     f = facts(e, catalog)
     srcs = source_texts(e, details)
     corpus = "\n".join(t for _, _, t in srcs) + "\n" + "\n".join(s.title for s in e.sources)
-    fact_ids, fact_nums = _fact_ids(e), _fact_numbers(e)
+    # Identifiers named in the sources (e.g. a related CVE) are grounded too.
+    fact_ids, fact_nums = _fact_ids(e) | guard.ids_in(corpus), _fact_numbers(e)
     exploited = e.exploited or e.kev
 
     def check(d: dict) -> list[str]:
@@ -160,8 +161,9 @@ def generate(e: Event, catalog: Catalog, details: dict[str, str], provider: Prov
         if not isinstance(r, dict):
             continue
         vals = [str(r.get("versions") or ""), str(r.get("fixed") or "")]
-        if (r.get("product") and r.get("versions") and guard.grounded_evidence(str(r.get("evidence") or ""), corpus)
-                and guard.versions_grounded(vals, corpus)):
+        ev = str(r.get("evidence") or "")
+        if (r.get("product") and r.get("versions") and guard.grounded_evidence(ev, corpus)
+                and guard.versions_grounded(vals, ev) and guard.names_product(ev, str(r["product"]), e.vendor)):
             prod = str(r["product"]).strip()[:80]
             ids = catalog.match_products(prod)
             rows.append({"product": ids[0] if len(ids) == 1 and _is_whole_product(prod, ids[0], catalog) else prod,

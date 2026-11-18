@@ -3,6 +3,7 @@ import { errorResponse, HttpError, json } from './http';
 import { cleanupSessions, heartbeat, hit, stats } from './stats';
 import { suggest } from './suggest';
 import { getCollector, putCollector } from './collector';
+import { kickCollector } from './scheduler';
 import { dispatch, getPrefs, pause, processOutbox, subscribe, unsubscribe, vapidPublic } from './push/routes';
 
 /**
@@ -45,7 +46,7 @@ export default {
 
   async scheduled(_event, env, ctx): Promise<void> {
     ctx.waitUntil(
-      Promise.allSettled([cleanupSessions(env), processOutbox(env)]).then((r) =>
+      Promise.allSettled([cleanupSessions(env), processOutbox(env), kickCollector(env)]).then((r) =>
         r.forEach((x) => x.status === 'rejected' && console.error('cron', x.reason)),
       ),
     );

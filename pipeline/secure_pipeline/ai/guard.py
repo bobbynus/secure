@@ -129,3 +129,21 @@ def grounded_evidence(evidence: str, corpus: str) -> bool:
 def versions_grounded(values: Iterable[str], corpus: str) -> bool:
     src = versions_in(corpus)
     return all(versions_in(v) <= src for v in values if v)
+
+
+_STOP = {"and", "or", "earlier", "later", "all", "versions", "version", "software", "products", "product", "multiple",
+         "the", "for", "und", "before", "prior", "to", "through"}
+
+
+def names_product(evidence: str, product: str, vendor: str = "") -> bool:
+    """A row naming several products ("iOS, iPadOS and watchOS") must quote each of them; a single product
+    may be implied by a version table (its heading is often outside the quoted cell)."""
+    ev, vend = norm(evidence), set(norm(vendor).split())
+    named = []
+    for part in re.split(r",|\band\b|/", product.lower()):
+        words = [w for w in re.findall(r"[a-z][a-z0-9+-]*", part) if w not in _STOP and w not in vend]
+        if words:
+            named.append(words)
+    if len(named) < 2:  # "ASA Software 9.16 and earlier" is one product
+        return True
+    return all(any(w in ev for w in words) for words in named)
