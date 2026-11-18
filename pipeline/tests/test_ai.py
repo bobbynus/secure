@@ -329,3 +329,23 @@ def test_version_rows_without_a_version_number_are_dropped(tmp_path):
     ans = dict(BASE, affected=[{"product": "FortiOS", "versions": "all", "fixed": None, "evidence": "FortiOS 7.6"}])
     g = generate(e, cat, {"fortiguard-psirt:FG-IR-26-273": DETAIL}, Fake(ans), Cache(tmp_path / "c"), log=lambda s: None)
     assert g.affected == [] and g.dropped_affected == 1
+
+
+def test_overload_pauses_the_ai_step_with_growing_backoff(tmp_path):
+    from secure_pipeline.ai.provider import Overloaded
+    store, cat, e = make_event(tmp_path)
+    st = process(store, cat, Fake(Overloaded("503")), detail_fetcher(), NOW, log=lambda s: None)
+    assert st["quota_stop"] and st["calls"] == 1
+    # Within the pause: nothing is sent.
+    fake = Fake()
+    assert process(store, cat, fake, detail_fetcher(), NOW + timedelta(minutes=20), log=lambda s: None)["quota_stop"]
+    assert fake.calls == 0
+    # After it: one try; a second overload doubles the pause.
+    process(store, cat, Fake(Overloaded("503")), detail_fetcher(), NOW + timedelta(minutes=31), log=lambda s: None)
+    fake = Fake()
+    process(store, cat, fake, detail_fetcher(), NOW + timedelta(minutes=31 + 50), log=lambda s: None)
+    assert fake.calls == 0
+    # Success clears the pause.
+    t = NOW + timedelta(minutes=31 + 61)
+    assert process(store, cat, Fake(BASE), detail_fetcher(), t, log=lambda s: None)["generated"] == 1
+    assert not (store.root / "ai" / "pause.json").exists()

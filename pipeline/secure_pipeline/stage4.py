@@ -9,8 +9,10 @@
 
 from __future__ import annotations
 
+import json
 import time
 from datetime import datetime, timedelta
+from pathlib import Path
 from typing import Callable, Optional
 
 from .ai.prompts import PROMPT_VERSION
@@ -39,11 +41,38 @@ def mark_published(e: Event, now: datetime):
     e.ai.published_at = e.ai.published_at or now
 
 
+PAUSE_STEPS = [timedelta(minutes=30), timedelta(hours=1), timedelta(hours=2), timedelta(hours=4)]
+
+
+def _pause_file(store: Store) -> Path:
+    return store.root / "ai" / "pause.json"
+
+
+def paused_until(store: Store) -> tuple[Optional[datetime], int]:
+    f = _pause_file(store)
+    if not f.exists():
+        return None, 0
+    d = json.loads(f.read_text(encoding="utf-8"))
+    return datetime.fromisoformat(d["until"]), int(d.get("strikes", 0))
+
+
+def _set_pause(store: Store, now: datetime, reason: str) -> datetime:
+    """Overloaded model or spent quota: no requests for a growing interval (saves the shared quota)."""
+    _, strikes = paused_until(store)
+    until = now + PAUSE_STEPS[min(strikes, len(PAUSE_STEPS) - 1)]
+    f = _pause_file(store)
+    f.parent.mkdir(parents=True, exist_ok=True)
+    f.write_text(json.dumps({"until": until.isoformat(), "strikes": strikes + 1, "reason": reason[:200]}), encoding="utf-8")
+    return until
+
+
 def process(store: Store, catalog: Catalog, provider, fetch: Fetcher, now: datetime, *, limit: int = 6,
             publish: bool = False, only: Optional[set[str]] = None, log: Callable[[str], None] = print) -> dict:
     cache = Cache(store.root / "ai" / "cache")
     stats = {"generated": 0, "failed": 0, "quarantined": 0, "published": 0, "queued": 0, "calls": 0,
              "quota_stop": False, "results": []}
+    until, _ = paused_until(store)
+    paused = bool(until and until > now)
     queue: list[tuple[Event, str]] = []
     for e in store.events.values():
         if only and e.id not in only:
@@ -71,6 +100,10 @@ def process(store: Store, catalog: Catalog, provider, fetch: Fetcher, now: datet
     queue.sort(key=lambda x: (x[0].publish_state == "published", -ORDER.index(x[0].priority),
                               -x[0].created_at.timestamp()))
     stats["queued"] = len(queue)
+    if paused and queue:
+        stats["quota_stop"] = True
+        log(f"ai    paused until {until.isoformat()} (model overloaded or quota spent); queue {len(queue)}")
+        queue = []
 
     for e, h in queue[:limit]:
         before = _calls(provider)
@@ -81,7 +114,7 @@ def process(store: Store, catalog: Catalog, provider, fetch: Fetcher, now: datet
             g = generate(e, catalog, details, provider, cache, log)
         except (QuotaExhausted, Overloaded) as ex:
             stats["quota_stop"] = True
-            log(f"      stop: {ex}; the queue waits for the next run")
+            log(f"      stop: {ex}; no requests until {_set_pause(store, now, str(ex)).isoformat()}")
             break
         except (ValidationFailed, ProviderError) as ex:
             _fail(e, h, ex, now)
@@ -107,6 +140,7 @@ def process(store: Store, catalog: Catalog, provider, fetch: Fetcher, now: datet
             stats["published"] += 1
         store.put_event(e)
         stats["generated"] += 1
+        _pause_file(store).unlink(missing_ok=True)  # the model answers again: reset the backoff
         stats["results"].append({"id": e.id, "ok": True, "calls": g.calls, "repairs": g.repairs, "model": g.model,
                                  "usage": g.usage, "seconds": round(time.monotonic() - started, 1),
                                  "affected": len(g.affected), "affected_dropped": g.dropped_affected,
