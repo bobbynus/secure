@@ -11,7 +11,8 @@ export const SITE = {
   repoUrl: 'https://github.com/bobbynus/secure',
   /** GitHub Issue Form used by "+ Source" until the on-site form (stage 6). */
   suggestUrl: 'https://github.com/bobbynus/secure/issues/new?template=source-suggestion.yml',
-  kofiUrl: 'https://ko-fi.com/',
+  /** Ko-fi page; empty = Ko-fi links hidden. */
+  kofiUrl: 'https://ko-fi.com/borisabramov',
   telegram: { ru: '', de: '', en: '' } as Record<string, string>,
   contactEmail: '',
   /** Cloudflare Turnstile site key for the suggestion form; empty = disabled (honeypot + rate limit only). */

@@ -17,7 +17,7 @@ const ICON = { ok: '●', error: '✕', planned: '○', paused: '‖' } as const
     <h1>{t(lang, 'srcs.title')}</h1>
     <p>{t(lang, 'srcs.intro')}</p>
     <div class="table-scroll">
-      <table class="table sources-table">
+      <table class="table sources-table" id="sources-table" data-label-ok={t(lang, 'state.ok')} data-label-error={t(lang, 'state.error')}>
         <thead>
           <tr>
             <th scope="col">{t(lang, 'srcs.name')}</th>
@@ -36,8 +36,8 @@ const ICON = { ok: '●', error: '✕', planned: '○', paused: '‖' } as const
                 <td>{t(lang, `src.${s.kind}`)}</td>
                 <td class="mono">{s.format.toUpperCase()}</td>
                 <td class="mono">{s.interval}</td>
-                <td><span class={`state state-${s.state}`}><span aria-hidden="true">{ICON[s.state]}</span> {t(lang, `state.${s.state}`)}</span></td>
-                <td class="mono">{s.lastSuccess ? `${fmtDateTime(s.lastSuccess)} UTC` : '—'}</td>
+                <td data-src-state={s.id}><span class={`state state-${s.state}`}><span aria-hidden="true">{ICON[s.state]}</span> {t(lang, `state.${s.state}`)}</span></td>
+                <td class="mono" data-src-last={s.id}>{s.lastSuccess ? `${fmtDateTime(s.lastSuccess)} UTC` : '—'}</td>
               </tr>
             ))
           }

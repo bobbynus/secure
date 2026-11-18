@@ -74,4 +74,56 @@ if (!automated) {
 void refreshStats();
 setInterval(refreshStats, STATS_MS);
 
+/** Live collection status (pushed by the collector after every run). */
+interface CollectorStatus {
+  lastSuccess: string | null;
+  run: { ok: number; error: number };
+  sources: { id: string; state: string; lastSuccess?: string | null; lastError?: string | null }[];
+}
+
+const pad = (n: number) => String(n).padStart(2, '0');
+const utc = (iso: string) => {
+  const d = new Date(iso);
+  return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())} UTC`;
+};
+
+async function refreshCollector() {
+  try {
+    const r = await fetch('/api/collector');
+    if (!r.ok) return;
+    const { status } = (await r.json()) as { status: CollectorStatus | null };
+    if (!status) return;
+    const at = document.getElementById('collected-at');
+    if (at && status.lastSuccess) {
+      at.textContent = utc(status.lastSuccess);
+      at.setAttribute('datetime', status.lastSuccess);
+    }
+    const ok = document.getElementById('src-ok');
+    const err = document.getElementById('src-err');
+    if (ok) ok.textContent = String(status.run.ok);
+    if (err) {
+      err.textContent = String(status.run.error);
+      document.getElementById('src-err-wrap')!.hidden = status.run.error === 0;
+    }
+    const table = document.getElementById('sources-table');
+    if (table) {
+      for (const s of status.sources) {
+        const cell = table.querySelector<HTMLElement>(`[data-src-state="${CSS.escape(s.id)}"]`);
+        const last = table.querySelector<HTMLElement>(`[data-src-last="${CSS.escape(s.id)}"]`);
+        if (cell && (s.state === 'ok' || s.state === 'error')) {
+          const span = document.createElement('span');
+          span.className = `state state-${s.state}`;
+          span.textContent = `${s.state === 'ok' ? '●' : '✕'} ${table.dataset[s.state === 'ok' ? 'labelOk' : 'labelError'] ?? s.state}`;
+          if (s.lastError) span.title = s.lastError;
+          cell.replaceChildren(span);
+        }
+        if (last && s.lastSuccess) last.textContent = utc(s.lastSuccess);
+      }
+    }
+  } catch {
+    /* keep the static values */
+  }
+}
+void refreshCollector();
+
 export {};

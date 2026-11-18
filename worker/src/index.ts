@@ -2,6 +2,7 @@ import type { Env } from './env';
 import { errorResponse, HttpError, json } from './http';
 import { cleanupSessions, heartbeat, hit, stats } from './stats';
 import { suggest } from './suggest';
+import { getCollector, putCollector } from './collector';
 import { dispatch, getPrefs, pause, processOutbox, subscribe, unsubscribe, vapidPublic } from './push/routes';
 
 /**
@@ -23,6 +24,7 @@ const routes: Record<string, Partial<Record<'GET' | 'POST', Handler>>> = {
   '/api/push/prefs': { POST: getPrefs },
   '/api/push/dispatch': { POST: dispatch },
   '/api/push/pause': { POST: pause },
+  '/api/collector': { GET: (_r, env) => getCollector(env), POST: putCollector },
   '/api/health': { GET: () => json({ ok: true }) },
 };
 

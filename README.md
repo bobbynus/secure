@@ -12,6 +12,7 @@ Project plan: [`secure-abramov-project-plan.md`](secure-abramov-project-plan.md)
 | `data/products.json`, `data/sources.json` | Product catalog and source coverage catalog |
 | `.github/ISSUE_TEMPLATE/source-suggestion.yml` | "+ Source" form (MVP) |
 | `.github/workflows/deploy.yml` | Build + deploy to Cloudflare Workers static assets |
+| `pipeline/` | Collector (stage 3, Python): adapters → items → dedup → events with revisions |
 | `worker/` | Cloudflare Worker for `/api/*`: stats, source suggestions → GitHub issues, Web Push (D1 `secure-db`) |
 | `worker/migrations/` | D1 schema migrations |
 | `wrangler.jsonc` | Cloudflare config: assets, Worker, D1, rate limits, cron, `secure.abramov.vip` |
@@ -30,6 +31,25 @@ Content is validated against the schema in `site/src/content.config.ts` at build
 Only translations with `"status": "ready"` are published.
 
 `SITE.demo` in `site/src/config.ts` keeps the site in demo mode (banner, `noindex`, `Disallow: /`).
+
+## Collector (stage 3)
+
+```sh
+cd pipeline
+python -m venv .venv && .venv/Scripts/pip install -r requirements-dev.txt   # (bin/ on Linux)
+.venv/Scripts/python -m pytest -q
+.venv/Scripts/python -m secure_pipeline collect [--only cisa-kev,msrc] [--force]
+.venv/Scripts/python -m secure_pipeline report      # internal events
+.venv/Scripts/python -m secure_pipeline health --max-age 2h
+```
+
+- Sources and feeds: `data/sources.json` (`adapter`, `feed`); product matching: `data/products.json` (`match`).
+- Adapters: `cisa_kev`, `rss` (RSS/Atom/RDF), `jsonfeed` (Kubernetes), `redhat`, `msrc` (CVRF); NVD is enrichment only.
+- Newsworthy = KEV listing, vendor-reported exploitation, regressions, or critical (CVSS ≥ 9) issues in catalog/perimeter products.
+  Distro notices only add fix information to existing events. Not a full CVE catalog by design.
+- State: `pipeline/.state` locally; in CI the orphan branch `pipeline-state` (git history = backup).
+- CI: `collect.yml` every 30 min → state commit → `POST /api/collector`; `freshness.yml` fails if the last success is > 3 h old.
+- Internal events are not published until stage 4 (texts + translations) writes `data/events/*.json`.
 
 ## Worker / API (variant B)
 

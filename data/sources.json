@@ -1,19 +1,228 @@
 [
-  { "id": "cisa-kev", "name": "CISA Known Exploited Vulnerabilities", "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog", "kind": "kev", "format": "json", "interval": "30m", "state": "ok", "lastSuccess": "2025-03-25T14:35:00Z", "terms": "Public domain (U.S. Government work)" },
-  { "id": "nvd", "name": "NVD CVE API 2.0", "url": "https://nvd.nist.gov/developers/vulnerabilities", "kind": "nvd", "format": "api", "interval": "30m", "state": "ok", "lastSuccess": "2025-03-25T14:33:00Z", "terms": "API key recommended; rate limits apply" },
-  { "id": "ms-release-health", "name": "Windows Release Health", "url": "https://learn.microsoft.com/en-us/windows/release-health/", "kind": "vendor", "format": "html", "vendors": ["Microsoft"], "interval": "60m", "state": "ok", "lastSuccess": "2025-03-25T14:10:00Z" },
-  { "id": "msrc", "name": "Microsoft Security Response Center (CVRF API)", "url": "https://api.msrc.microsoft.com/cvrf/v3.0/updates", "kind": "vendor", "format": "api", "vendors": ["Microsoft"], "interval": "60m", "state": "ok", "lastSuccess": "2025-03-25T14:12:00Z" },
-  { "id": "fortiguard-psirt", "name": "FortiGuard PSIRT advisories", "url": "https://www.fortiguard.com/psirt", "kind": "vendor", "format": "rss", "vendors": ["Fortinet"], "interval": "30m", "state": "ok", "lastSuccess": "2025-03-25T14:31:00Z" },
-  { "id": "paloalto-psirt", "name": "Palo Alto Networks Security Advisories", "url": "https://security.paloaltonetworks.com/", "kind": "vendor", "format": "rss", "vendors": ["Palo Alto Networks"], "interval": "30m", "state": "ok", "lastSuccess": "2025-03-25T14:30:00Z" },
-  { "id": "ivanti-advisories", "name": "Ivanti security advisories", "url": "https://www.ivanti.com/blog/topics/security-advisory", "kind": "vendor", "format": "html", "vendors": ["Ivanti"], "interval": "60m", "state": "error", "lastSuccess": "2025-03-24T22:05:00Z" },
-  { "id": "broadcom-vmsa", "name": "Broadcom VMware Security Advisories", "url": "https://support.broadcom.com/web/ecx/security-advisory", "kind": "vendor", "format": "html", "vendors": ["Broadcom VMware"], "interval": "60m", "state": "ok", "lastSuccess": "2025-03-25T14:02:00Z" },
-  { "id": "cisco-openvuln", "name": "Cisco PSIRT openVuln API", "url": "https://developer.cisco.com/docs/psirt/", "kind": "vendor", "format": "api", "vendors": ["Cisco"], "interval": "60m", "state": "planned", "terms": "Requires API credentials" },
-  { "id": "citrix-bulletins", "name": "Citrix / NetScaler security bulletins", "url": "https://support.citrix.com/securitybulletins", "kind": "vendor", "format": "html", "vendors": ["Citrix"], "interval": "60m", "state": "ok", "lastSuccess": "2025-03-25T13:58:00Z" },
-  { "id": "ubuntu-usn", "name": "Ubuntu Security Notices", "url": "https://ubuntu.com/security/notices", "kind": "vendor", "format": "rss", "vendors": ["Canonical"], "interval": "30m", "state": "ok", "lastSuccess": "2025-03-25T14:29:00Z" },
-  { "id": "debian-dsa", "name": "Debian Security Advisories", "url": "https://www.debian.org/security/", "kind": "vendor", "format": "rss", "vendors": ["Debian"], "interval": "30m", "state": "ok", "lastSuccess": "2025-03-25T14:28:00Z" },
-  { "id": "redhat-secdata", "name": "Red Hat Security Data API", "url": "https://access.redhat.com/security/data", "kind": "vendor", "format": "api", "vendors": ["Red Hat"], "interval": "60m", "state": "ok", "lastSuccess": "2025-03-25T14:05:00Z" },
-  { "id": "k8s-cve-feed", "name": "Kubernetes official CVE feed", "url": "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/", "kind": "vendor", "format": "json", "vendors": ["Kubernetes"], "interval": "60m", "state": "ok", "lastSuccess": "2025-03-25T14:01:00Z" },
-  { "id": "docker-engine-notes", "name": "Docker Engine release notes", "url": "https://docs.docker.com/engine/release-notes/", "kind": "vendor", "format": "html", "vendors": ["Docker"], "interval": "6h", "state": "planned" },
-  { "id": "proxmox-announcements", "name": "Proxmox announcements", "url": "https://forum.proxmox.com/", "kind": "vendor", "format": "rss", "vendors": ["Proxmox"], "interval": "6h", "state": "planned" },
-  { "id": "opnsense-releases", "name": "OPNsense release announcements", "url": "https://opnsense.org/", "kind": "vendor", "format": "rss", "vendors": ["Deciso"], "interval": "6h", "state": "planned" }
+  {
+    "id": "cisa-kev",
+    "name": "CISA Known Exploited Vulnerabilities",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "kind": "kev",
+    "format": "json",
+    "interval": "30m",
+    "state": "ok",
+    "terms": "Public domain (U.S. Government work)",
+    "adapter": "cisa_kev",
+    "feed": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+  },
+  {
+    "id": "nvd",
+    "name": "NVD CVE API 2.0",
+    "url": "https://nvd.nist.gov/developers/vulnerabilities",
+    "kind": "nvd",
+    "format": "api",
+    "interval": "30m",
+    "state": "ok",
+    "terms": "Enrichment only (CVSS, descriptions); not an event source"
+  },
+  {
+    "id": "ms-release-health",
+    "name": "Windows Release Health",
+    "url": "https://learn.microsoft.com/en-us/windows/release-health/",
+    "kind": "vendor",
+    "format": "html",
+    "vendors": [
+      "Microsoft"
+    ],
+    "interval": "60m",
+    "state": "planned",
+    "terms": "HTML; adapter pending (known issues)"
+  },
+  {
+    "id": "msrc",
+    "name": "Microsoft Security Response Center (CVRF API)",
+    "url": "https://api.msrc.microsoft.com/cvrf/v3.0/updates",
+    "kind": "vendor",
+    "format": "api",
+    "vendors": [
+      "Microsoft"
+    ],
+    "interval": "60m",
+    "state": "ok",
+    "adapter": "msrc",
+    "feed": "https://api.msrc.microsoft.com/cvrf/v3.0/updates"
+  },
+  {
+    "id": "fortiguard-psirt",
+    "name": "FortiGuard PSIRT advisories",
+    "url": "https://www.fortiguard.com/psirt",
+    "kind": "vendor",
+    "format": "rss",
+    "vendors": [
+      "Fortinet"
+    ],
+    "interval": "30m",
+    "state": "ok",
+    "adapter": "rss",
+    "feed": "https://filestore.fortinet.com/fortiguard/rss/ir.xml"
+  },
+  {
+    "id": "paloalto-psirt",
+    "name": "Palo Alto Networks Security Advisories",
+    "url": "https://security.paloaltonetworks.com/",
+    "kind": "vendor",
+    "format": "rss",
+    "vendors": [
+      "Palo Alto Networks"
+    ],
+    "interval": "30m",
+    "state": "ok",
+    "adapter": "rss",
+    "feed": "https://security.paloaltonetworks.com/rss.xml"
+  },
+  {
+    "id": "ivanti-advisories",
+    "name": "Ivanti security advisories",
+    "url": "https://www.ivanti.com/blog/topics/security-advisory",
+    "kind": "vendor",
+    "format": "html",
+    "vendors": [
+      "Ivanti"
+    ],
+    "interval": "60m",
+    "state": "planned",
+    "terms": "HTML portal; adapter pending"
+  },
+  {
+    "id": "broadcom-vmsa",
+    "name": "Broadcom VMware Security Advisories",
+    "url": "https://support.broadcom.com/web/ecx/security-advisory",
+    "kind": "vendor",
+    "format": "html",
+    "vendors": [
+      "Broadcom VMware"
+    ],
+    "interval": "60m",
+    "state": "planned",
+    "terms": "HTML portal; adapter pending"
+  },
+  {
+    "id": "cisco-psirt",
+    "name": "Cisco Security Advisories",
+    "url": "https://sec.cloudapps.cisco.com/security/center/publicationListing.x",
+    "kind": "vendor",
+    "format": "rss",
+    "vendors": [
+      "Cisco"
+    ],
+    "interval": "60m",
+    "state": "ok",
+    "adapter": "rss",
+    "feed": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml"
+  },
+  {
+    "id": "citrix-bulletins",
+    "name": "Citrix / NetScaler security bulletins",
+    "url": "https://support.citrix.com/securitybulletins",
+    "kind": "vendor",
+    "format": "html",
+    "vendors": [
+      "Citrix"
+    ],
+    "interval": "60m",
+    "state": "planned",
+    "terms": "No machine-readable feed found; needs an HTML/JS adapter"
+  },
+  {
+    "id": "ubuntu-usn",
+    "name": "Ubuntu Security Notices",
+    "url": "https://ubuntu.com/security/notices",
+    "kind": "vendor",
+    "format": "rss",
+    "vendors": [
+      "Canonical"
+    ],
+    "interval": "30m",
+    "state": "ok",
+    "adapter": "rss",
+    "feed": "https://ubuntu.com/security/notices/rss.xml"
+  },
+  {
+    "id": "debian-dsa",
+    "name": "Debian Security Advisories",
+    "url": "https://www.debian.org/security/",
+    "kind": "vendor",
+    "format": "rss",
+    "vendors": [
+      "Debian"
+    ],
+    "interval": "30m",
+    "state": "ok",
+    "adapter": "rss",
+    "feed": "https://www.debian.org/security/dsa"
+  },
+  {
+    "id": "redhat-secdata",
+    "name": "Red Hat Security Data API",
+    "url": "https://access.redhat.com/security/data",
+    "kind": "vendor",
+    "format": "api",
+    "vendors": [
+      "Red Hat"
+    ],
+    "interval": "60m",
+    "state": "ok",
+    "adapter": "redhat",
+    "feed": "https://access.redhat.com/hydra/rest/securitydata/cve.json"
+  },
+  {
+    "id": "k8s-cve-feed",
+    "name": "Kubernetes official CVE feed",
+    "url": "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/",
+    "kind": "vendor",
+    "format": "json",
+    "vendors": [
+      "Kubernetes"
+    ],
+    "interval": "60m",
+    "state": "ok",
+    "adapter": "jsonfeed",
+    "feed": "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/index.json"
+  },
+  {
+    "id": "docker-engine-notes",
+    "name": "Docker Engine release notes",
+    "url": "https://docs.docker.com/engine/release-notes/",
+    "kind": "vendor",
+    "format": "html",
+    "vendors": [
+      "Docker"
+    ],
+    "interval": "6h",
+    "state": "planned"
+  },
+  {
+    "id": "proxmox-announcements",
+    "name": "Proxmox announcements",
+    "url": "https://forum.proxmox.com/",
+    "kind": "vendor",
+    "format": "rss",
+    "vendors": [
+      "Proxmox"
+    ],
+    "interval": "6h",
+    "state": "ok",
+    "adapter": "rss",
+    "feed": "https://forum.proxmox.com/forums/announcements.7/index.rss"
+  },
+  {
+    "id": "opnsense-releases",
+    "name": "OPNsense release announcements",
+    "url": "https://opnsense.org/",
+    "kind": "vendor",
+    "format": "rss",
+    "vendors": [
+      "Deciso"
+    ],
+    "interval": "6h",
+    "state": "ok",
+    "adapter": "rss",
+    "feed": "https://opnsense.org/feed/"
+  }
 ]

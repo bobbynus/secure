@@ -1,23 +1,282 @@
 [
-  { "id": "panos", "name": "PAN-OS", "vendor": "Palo Alto Networks" },
-  { "id": "fortios", "name": "FortiOS", "vendor": "Fortinet" },
-  { "id": "fortiproxy", "name": "FortiProxy", "vendor": "Fortinet" },
-  { "id": "ivanti-connect-secure", "name": "Ivanti Connect Secure", "vendor": "Ivanti" },
-  { "id": "ivanti-policy-secure", "name": "Ivanti Policy Secure", "vendor": "Ivanti" },
-  { "id": "cisco-asa", "name": "Cisco ASA", "vendor": "Cisco" },
-  { "id": "cisco-ftd", "name": "Cisco Firepower Threat Defense", "vendor": "Cisco" },
-  { "id": "netscaler-adc", "name": "NetScaler ADC", "vendor": "Citrix" },
-  { "id": "netscaler-gateway", "name": "NetScaler Gateway", "vendor": "Citrix" },
-  { "id": "esxi", "name": "ESXi", "vendor": "Broadcom VMware" },
-  { "id": "windows-10", "name": "Windows 10", "vendor": "Microsoft" },
-  { "id": "windows-server", "name": "Windows Server", "vendor": "Microsoft" },
-  { "id": "crowdstrike-falcon", "name": "Falcon Sensor for Windows", "vendor": "CrowdStrike" },
-  { "id": "openssh", "name": "OpenSSH", "vendor": "OpenSSH" },
-  { "id": "xz-utils", "name": "XZ Utils", "vendor": "Tukaani" },
-  { "id": "debian", "name": "Debian", "vendor": "Debian" },
-  { "id": "ubuntu", "name": "Ubuntu", "vendor": "Canonical" },
-  { "id": "fedora", "name": "Fedora", "vendor": "Fedora Project" },
-  { "id": "runc", "name": "runc", "vendor": "Open Container Initiative" },
-  { "id": "docker-engine", "name": "Docker Engine", "vendor": "Docker" },
-  { "id": "ingress-nginx", "name": "ingress-nginx", "vendor": "Kubernetes" }
+  {
+    "id": "panos",
+    "name": "PAN-OS",
+    "vendor": "Palo Alto Networks",
+    "match": [
+      "pan-os",
+      "globalprotect"
+    ]
+  },
+  {
+    "id": "fortios",
+    "name": "FortiOS",
+    "vendor": "Fortinet",
+    "match": [
+      "fortios",
+      "fortigate"
+    ]
+  },
+  {
+    "id": "fortiproxy",
+    "name": "FortiProxy",
+    "vendor": "Fortinet",
+    "match": [
+      "fortiproxy"
+    ]
+  },
+  {
+    "id": "ivanti-connect-secure",
+    "name": "Ivanti Connect Secure",
+    "vendor": "Ivanti",
+    "match": [
+      "connect secure",
+      "pulse connect secure"
+    ]
+  },
+  {
+    "id": "ivanti-policy-secure",
+    "name": "Ivanti Policy Secure",
+    "vendor": "Ivanti",
+    "match": [
+      "policy secure"
+    ]
+  },
+  {
+    "id": "cisco-asa",
+    "name": "Cisco ASA",
+    "vendor": "Cisco",
+    "match": [
+      "adaptive security appliance",
+      "cisco asa",
+      "asa"
+    ]
+  },
+  {
+    "id": "cisco-ftd",
+    "name": "Cisco Firepower Threat Defense",
+    "vendor": "Cisco",
+    "match": [
+      "firepower threat defense",
+      "ftd"
+    ]
+  },
+  {
+    "id": "netscaler-adc",
+    "name": "NetScaler ADC",
+    "vendor": "Citrix",
+    "match": [
+      "netscaler adc",
+      "citrix adc"
+    ]
+  },
+  {
+    "id": "netscaler-gateway",
+    "name": "NetScaler Gateway",
+    "vendor": "Citrix",
+    "match": [
+      "netscaler gateway",
+      "citrix gateway"
+    ]
+  },
+  {
+    "id": "esxi",
+    "name": "ESXi",
+    "vendor": "Broadcom VMware",
+    "match": [
+      "esxi"
+    ]
+  },
+  {
+    "id": "windows-10",
+    "name": "Windows 10",
+    "vendor": "Microsoft",
+    "match": [
+      "windows 10"
+    ]
+  },
+  {
+    "id": "windows-server",
+    "name": "Windows Server",
+    "vendor": "Microsoft",
+    "match": [
+      "windows server"
+    ]
+  },
+  {
+    "id": "crowdstrike-falcon",
+    "name": "Falcon Sensor for Windows",
+    "vendor": "CrowdStrike",
+    "match": [
+      "falcon sensor"
+    ]
+  },
+  {
+    "id": "openssh",
+    "name": "OpenSSH",
+    "vendor": "OpenSSH",
+    "match": [
+      "openssh"
+    ]
+  },
+  {
+    "id": "xz-utils",
+    "name": "XZ Utils",
+    "vendor": "Tukaani",
+    "match": [
+      "xz utils",
+      "xz-utils",
+      "liblzma"
+    ]
+  },
+  {
+    "id": "debian",
+    "name": "Debian",
+    "vendor": "Debian",
+    "match": [
+      "debian"
+    ]
+  },
+  {
+    "id": "ubuntu",
+    "name": "Ubuntu",
+    "vendor": "Canonical",
+    "match": [
+      "ubuntu"
+    ]
+  },
+  {
+    "id": "fedora",
+    "name": "Fedora",
+    "vendor": "Fedora Project",
+    "match": [
+      "fedora"
+    ]
+  },
+  {
+    "id": "runc",
+    "name": "runc",
+    "vendor": "Open Container Initiative",
+    "match": [
+      "runc"
+    ]
+  },
+  {
+    "id": "docker-engine",
+    "name": "Docker Engine",
+    "vendor": "Docker",
+    "match": [
+      "docker engine",
+      "moby"
+    ]
+  },
+  {
+    "id": "ingress-nginx",
+    "name": "ingress-nginx",
+    "vendor": "Kubernetes",
+    "match": [
+      "ingress-nginx",
+      "ingress nginx"
+    ]
+  },
+  {
+    "id": "exchange-server",
+    "name": "Exchange Server",
+    "vendor": "Microsoft",
+    "match": [
+      "exchange server"
+    ]
+  },
+  {
+    "id": "sharepoint-server",
+    "name": "SharePoint Server",
+    "vendor": "Microsoft",
+    "match": [
+      "sharepoint"
+    ]
+  },
+  {
+    "id": "windows-11",
+    "name": "Windows 11",
+    "vendor": "Microsoft",
+    "match": [
+      "windows 11"
+    ]
+  },
+  {
+    "id": "vcenter-server",
+    "name": "vCenter Server",
+    "vendor": "Broadcom VMware",
+    "match": [
+      "vcenter"
+    ]
+  },
+  {
+    "id": "cisco-ios-xe",
+    "name": "Cisco IOS XE",
+    "vendor": "Cisco",
+    "match": [
+      "ios xe"
+    ]
+  },
+  {
+    "id": "fortimanager",
+    "name": "FortiManager",
+    "vendor": "Fortinet",
+    "match": [
+      "fortimanager"
+    ]
+  },
+  {
+    "id": "fortiweb",
+    "name": "FortiWeb",
+    "vendor": "Fortinet",
+    "match": [
+      "fortiweb"
+    ]
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "vendor": "Kubernetes",
+    "match": [
+      "kubernetes",
+      "kubelet",
+      "kube-apiserver"
+    ]
+  },
+  {
+    "id": "rhel",
+    "name": "Red Hat Enterprise Linux",
+    "vendor": "Red Hat",
+    "match": [
+      "red hat enterprise linux",
+      "rhel"
+    ]
+  },
+  {
+    "id": "proxmox-ve",
+    "name": "Proxmox VE",
+    "vendor": "Proxmox",
+    "match": [
+      "proxmox ve",
+      "proxmox virtual environment"
+    ]
+  },
+  {
+    "id": "opnsense",
+    "name": "OPNsense",
+    "vendor": "Deciso",
+    "match": [
+      "opnsense"
+    ]
+  },
+  {
+    "id": "linux-kernel",
+    "name": "Linux kernel",
+    "vendor": "Linux",
+    "match": [
+      "linux kernel"
+    ]
+  }
 ]
