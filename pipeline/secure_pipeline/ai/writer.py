@@ -163,7 +163,7 @@ def generate(e: Event, catalog: Catalog, details: dict[str, str], provider: Prov
         vals = [str(r.get("versions") or ""), str(r.get("fixed") or "")]
         ev = str(r.get("evidence") or "")
         if (r.get("product") and r.get("versions") and guard.grounded_evidence(ev, corpus)
-                and guard.versions_grounded(vals, ev) and guard.names_product(ev, str(r["product"]), e.vendor)):
+                and guard.versions_in(" ".join(vals)) and guard.versions_grounded(vals, ev) and guard.names_product(ev, str(r["product"]), e.vendor)):
             prod = str(r["product"]).strip()[:80]
             ids = catalog.match_products(prod)
             rows.append({"product": ids[0] if len(ids) == 1 and _is_whole_product(prod, ids[0], catalog) else prod,

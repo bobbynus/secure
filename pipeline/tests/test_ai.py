@@ -322,3 +322,10 @@ def test_affected_rows_need_versions_and_all_listed_products_in_the_quote():
     assert guard.names_product("9.16 and earlier 9.16.4.104", "Cisco Secure Firewall ASA Software 9.16 and earlier", "Cisco")
     assert not guard.names_product("watchOS 10.5 and later", "Apple iOS, iPadOS, macOS and watchOS", "Apple")
     assert guard.names_product("iOS 17.5 and iPadOS 17.5", "iOS and iPadOS", "Apple")
+
+
+def test_version_rows_without_a_version_number_are_dropped(tmp_path):
+    store, cat, e = make_event(tmp_path)
+    ans = dict(BASE, affected=[{"product": "FortiOS", "versions": "all", "fixed": None, "evidence": "FortiOS 7.6"}])
+    g = generate(e, cat, {"fortiguard-psirt:FG-IR-26-273": DETAIL}, Fake(ans), Cache(tmp_path / "c"), log=lambda s: None)
+    assert g.affected == [] and g.dropped_affected == 1
