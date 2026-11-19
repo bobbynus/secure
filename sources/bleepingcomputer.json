@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "204cb9cef984280dcd91d6c21f1e2b63",
- "last_modified": "Thu, 19 Nov 2026 14:42:28 GMT",
- "checksum": "6b536588c080bf5aace5eb161a30f0f9899fc1925932fefca07e34f0e29ab12a",
+ "etag": "1dbd1bda73efe0569c88905aeac4f0fb",
+ "last_modified": "Thu, 19 Nov 2026 15:17:24 GMT",
+ "checksum": "11258539df9f21302bb498675a0017a011ccf9eebc5174d94d7c739d027786f8",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -23,12 +23,14 @@
   "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/": "27ca1a2e6d09985d30c79528",
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/": "d7b8f7f6ff71baab4a753318",
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/": "d9987e48a0f75f524620ff81",
-  "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/": "d26e547af176cf59693c8ff0"
+  "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/": "d26e547af176cf59693c8ff0",
+  "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/": "3046fd84b163e523ae9bfbeb",
+  "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/": "27892cd941182f0059e6a512"
  },
- "last_attempt": "2026-11-19T14:50:44Z",
- "last_success": "2026-11-19T14:50:44Z",
+ "last_attempt": "2026-11-19T15:20:42Z",
+ "last_success": "2026-11-19T15:20:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 19
+ "items_total": 21
 }
