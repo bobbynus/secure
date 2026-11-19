@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "6025038431a682494dde0ea32660ad1c",
- "last_modified": "Thu, 19 Nov 2026 19:40:04 GMT",
- "checksum": "6c4fee970b38e33ab03067abee10c0a8964553365230864f9f639c2112746d39",
+ "etag": "34a12f1c85393e3f7ed87a5786792146",
+ "last_modified": "Thu, 19 Nov 2026 20:10:05 GMT",
+ "checksum": "de20d53adfa47ccd9f0c02ee84468524b092591816c751ed3da12ea28fec5943",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -29,8 +29,8 @@
   "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/": "0bafc862ddfb05eacc611e38",
   "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/": "4137a3ec7e284444fb7d3c9e"
  },
- "last_attempt": "2026-11-19T19:40:43Z",
- "last_success": "2026-11-19T19:40:43Z",
+ "last_attempt": "2026-11-19T20:10:42Z",
+ "last_success": "2026-11-19T20:10:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
