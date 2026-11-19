@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Oct security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Oct security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: CVE-2026-110161 Use After Free Vulnerability",
+  "summary": "Microsoft Edge (Chromium-based) is affected by a use-after-free vulnerability tracked as CVE-2026-110161 with a CVSS score of 9.6.",
+  "impact": "The vulnerability allows attackers to cause unspecified impacts via a use-after-free defect in Microsoft Edge (Chromium-based).",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Edge (Chromium-based) installations.",
+   "Check systems for the presence of the Microsoft 2026-Oct security update."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: уязвимость use-after-free CVE-2026-110161",
+  "summary": "В Microsoft Edge (Chromium-based) обнаружена уязвимость типа use-after-free, получившая идентификатор CVE-2026-110161 и оценку CVSS 9.6.",
+  "impact": "Уязвимость может привести к различным последствиям из-за ошибки use-after-free в Microsoft Edge (Chromium-based).",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установленных экземпляров Microsoft Edge (Chromium-based).",
+   "Проверьте системы на наличие обновления безопасности Microsoft 2026-Oct."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: Use-After-Free-Schwachstelle CVE-2026-110161",
+  "summary": "Microsoft Edge (Chromium-based) ist von einer Use-After-Free-Schwachstelle betroffen, die als CVE-2026-110161 mit einem CVSS-Wert von 9.6 geführt wird.",
+  "impact": "Die Schwachstelle kann durch einen Use-After-Free-Fehler in Microsoft Edge (Chromium-based) ausgenutzt werden.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Erfassen Sie alle Installationen von Microsoft Edge (Chromium-based).",
+   "Überprüfen Sie Systeme auf das Vorhandensein des Microsoft 2026-Oct Security Updates."
+  ],
+  "regression": null
+ }
+}

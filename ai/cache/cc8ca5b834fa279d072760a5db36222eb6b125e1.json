@@ -1,0 +1,43 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Oct security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Oct security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge (Chromium-based): CVE-2026-106358 Use-After-Free Vulnerability",
+  "summary": "Microsoft Edge (Chromium-based) is affected by a critical use-after-free vulnerability tracked as CVE-2026-106358.",
+  "impact": "The sources state no specific impact details other than a use-after-free vulnerability.",
+  "fix": "The sources do not list fixed versions or updates.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Edge (Chromium-based) installations for vulnerability status."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge (Chromium-based): уязвимость Use-After-Free в CVE-2026-106358",
+  "summary": "В Microsoft Edge (Chromium-based) обнаружена критическая уязвимость типа use-after-free, получившая идентификатор CVE-2026-106358.",
+  "impact": "В источниках не приводятся конкретные детали последствий, кроме наличия уязвимости use-after-free.",
+  "fix": "В источниках не указаны исправленные версии или обновления.",
+  "workaround": null,
+  "checks": [
+   "Проверьте установки Microsoft Edge (Chromium-based) на наличие данной уязвимости."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge (Chromium-based): CVE-2026-106358 Use-After-Free-Schwachstelle",
+  "summary": "Microsoft Edge (Chromium-based) ist von einer kritischen Use-After-Free-Schwachstelle betroffen, die als CVE-2026-106358 geführt wird.",
+  "impact": "Die Quellen nennen keine spezifischen Auswirkungen außer einer Use-After-Free-Schwachstelle.",
+  "fix": "In den Quellen sind keine korrigierten Versionen oder Updates angegeben.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft Edge (Chromium-based)-Installationen auf den Schwachstellenstatus."
+  ],
+  "regression": null
+ }
+}

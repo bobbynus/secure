@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-110165": "Chromium CVE-2026-110165: Use after free\nMicrosoft Edge (Chromium-based). Microsoft 2026-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "02a13fdfbea7edc25d39ad68",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: CVE-2026-110165 Use after free vulnerability",
+    "summary": "A use-after-free vulnerability exists in Microsoft Edge (Chromium-based), identified as CVE-2026-110165.",
+    "impact": "The sources do not specify the exact impact or preconditions.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft Edge (Chromium-based) installations.",
+     "Check systems for CVE-2026-110165 exposure."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: уязвимость использования после освобождения CVE-2026-110165",
+    "summary": "В Microsoft Edge (на базе Chromium) обнаружена уязвимость использования памяти после ее освобождения (use-after-free), зарегистрированная под CVE-2026-110165.",
+    "impact": "В источниках не указаны конкретные последствия или предварительные условия.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проинвентаризируйте установленные экземпляры Microsoft Edge (на базе Chromium).",
+     "Проверьте системы на предмет уязвимости CVE-2026-110165."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: CVE-2026-110165 Use-After-Free-Schwachstelle",
+    "summary": "In Microsoft Edge (Chromium-basiert) existiert eine Use-After-Free-Schwachstelle, die als CVE-2026-110165 bezeichnet wird.",
+    "impact": "Die Quellen nennen keine genauen Auswirkungen oder Vorbedingungen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Erfassen Sie alle Installationen von Microsoft Edge (Chromium-basiert).",
+     "Überprüfen Sie Systeme auf Betroffenheit durch CVE-2026-110165."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T16:20:56Z",
+  "slugs": {
+   "ru": "microsoft-edge-uyazvimost-ispolzovaniya-posle-osvobozhdeniya",
+   "de": "microsoft-edge-cve-2026-110165-use-after-free-schwachstelle",
+   "en": "microsoft-edge-cve-2026-110165-use-after-free-vulnerability"
+  },
+  "published_at": "2026-11-19T16:20:56Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
