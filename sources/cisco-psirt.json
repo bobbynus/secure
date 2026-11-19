@@ -58,8 +58,8 @@
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-multi-e93M3vdA": "0ddd6eedf526a5f4ca8dd9d0",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z": "dd95f63f7f1d196589db4351"
  },
- "last_attempt": "2026-11-19T02:40:46Z",
- "last_success": "2026-11-19T02:40:46Z",
+ "last_attempt": "2026-11-19T03:40:43Z",
+ "last_success": "2026-11-19T03:40:43Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
