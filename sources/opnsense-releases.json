@@ -5,10 +5,10 @@
  "checksum": "bc4b8d24b4c43c5e78fa02f7fc88a3427cb4675f281d1afbffa91887d01e2a8b",
  "cursor": {},
  "seen": {},
- "last_attempt": "2026-11-19T16:50:42Z",
+ "last_attempt": "2026-11-19T23:10:39Z",
  "last_success": "2026-11-19T16:50:42Z",
- "last_error": null,
- "consecutive_failures": 0,
+ "last_error": "https://opnsense.org/feed/: ConnectError",
+ "consecutive_failures": 1,
  "bootstrapped": true,
  "items_total": 0
 }
