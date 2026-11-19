@@ -317,8 +317,8 @@
   "CVE-2026-132858": "ebd612331a9f49c7f80f9fb4",
   "CVE-2026-117678": "f3952da2e59f01ca0c47ac76"
  },
- "last_attempt": "2026-11-19T14:50:44Z",
- "last_success": "2026-11-19T14:50:44Z",
+ "last_attempt": "2026-11-19T15:50:43Z",
+ "last_success": "2026-11-19T15:50:43Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

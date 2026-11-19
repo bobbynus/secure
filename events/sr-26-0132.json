@@ -1,0 +1,81 @@
+{
+ "id": "sr-26-0132",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "preliminary",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Linux",
+ "products": [
+  "linux-kernel"
+ ],
+ "product_names": [],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-99388"
+  ],
+  "advisory": [
+   "ZDI-26-998"
+  ],
+  "kb": []
+ },
+ "severity": "critical",
+ "cvss": {
+  "score": 9.0,
+  "version": "3.x",
+  "source": "Zero Day Initiative published advisories",
+  "vector": null
+ },
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "ZDI-26-998: Linux Kernel KSMBD SMB Direct Integer Underflow Remote Code Execution Vulnerability",
+ "summary_hint": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Linux Kernel KSMBD. Authentication may or may not be required to exploit this vulnerability, depending upon configuration. Only systems with SMB Direct enabled are vulnerable. The ZDI has assigned a CVSS rating of 9.0. The following CVEs are assigned: CVE-2026-99388.",
+ "created_at": "2026-11-19T15:50:43Z",
+ "updated_at": "2026-11-19T15:50:43Z",
+ "event_date": "2026-11-13T06:00:00Z",
+ "sources": [
+  {
+   "source_id": "zdi-advisories",
+   "item_key": "ZDI-CAN-33549",
+   "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-998/",
+   "title": "ZDI-26-998: Linux Kernel KSMBD SMB Direct Integer Underflow Remote Code Execution Vulnerability",
+   "publisher": "Zero Day Initiative published advisories",
+   "kind": "research",
+   "date": "2026-11-13"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-19T15:50:43Z",
+   "kind": "created",
+   "facts": {
+    "reason": "critical severity in infrastructure product"
+   },
+   "source": "zdi-advisories:ZDI-CAN-33549"
+  }
+ ],
+ "related": [],
+ "reason": "critical severity in infrastructure product",
+ "texts": {
+  "zdi-advisories:ZDI-CAN-33549": "ZDI-26-998: Linux Kernel KSMBD SMB Direct Integer Underflow Remote Code Execution Vulnerability\nThis vulnerability allows remote attackers to execute arbitrary code on affected installations of Linux Kernel KSMBD. Authentication may or may not be required to exploit this vulnerability, depending upon configuration. Only systems with SMB Direct enabled are vulnerable. The ZDI has assigned a CVSS rating of 9.0. The following CVEs are assigned: CVE-2026-99388."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}
