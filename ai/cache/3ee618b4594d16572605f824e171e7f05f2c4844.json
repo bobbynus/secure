@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Remote Code Execution Vulnerability in Message Queuing",
+  "summary": "Microsoft Windows contains a critical remote code execution vulnerability in the Windows Message Queuing Queue Manager.",
+  "impact": "An attacker can achieve remote code execution. The sources do not specify further preconditions.",
+  "fix": "Microsoft released security updates in October 2026.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows systems running the Windows Message Queuing service.",
+   "Verify whether the October 2026 security update from Microsoft has been applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в Message Queuing",
+  "summary": "В Microsoft Windows обнаружена критическая уязвимость удаленного выполнения кода в компоненте Windows Message Queuing Queue Manager.",
+  "impact": "Злоумышленник может осуществить удаленное выполнение кода. Источники не приводят дополнительных предварительных условий.",
+  "fix": "Компания Microsoft выпустила обновления безопасности в октябре 2026 года.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows, использующих службу Windows Message Queuing.",
+   "Проверьте, установлено ли обновление безопасности Microsoft за октябрь 2026 года."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in Message Queuing",
+  "summary": "Microsoft Windows enthält eine kritische Schwachstelle zur Remotecodeausführung im Windows Message Queuing Queue Manager.",
+  "impact": "Ein Angreifer kann Remotecode ausführen. Die Quellen nennen keine weiteren Voraussetzungen.",
+  "fix": "Microsoft hat im Oktober 2026 Sicherheitsupdates bereitgestellt.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows-Systeme, auf denen der Windows Message Queuing-Dienst ausgeführt wird.",
+   "Überprüfen Sie, ob das Sicherheitsupdate von Microsoft vom Oktober 2026 eingespielt wurde."
+  ],
+  "regression": null
+ }
+}

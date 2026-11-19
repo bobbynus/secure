@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Defender Antimalware Platform: CVE-2026-45498 Denial of Service Vulnerability",
+  "summary": "A denial of service vulnerability exists in Microsoft Defender Antimalware Platform, tracked as CVE-2026-45498. The issue was publicly disclosed and is reported by the vendor.",
+  "impact": "An attacker can cause a denial of service condition in Microsoft Defender.",
+  "fix": "The sources do not state fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check systems running Microsoft Defender Antimalware Platform for the vulnerability."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Defender Antimalware Platform: уязвимость CVE-2026-45498 типа отказ в обслуживании",
+  "summary": "В Microsoft Defender Antimalware Platform обнаружена уязвимость типа отказ в обслуживании, получившая идентификатор CVE-2026-45498. Проблема была публично раскрыта и упоминается в отчетах производителя.",
+  "impact": "Злоумышленник может вызвать отказ в обслуживании в Microsoft Defender.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы, использующие Microsoft Defender Antimalware Platform, на наличие уязвимости."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Defender Antimalware Platform: CVE-2026-45498 Denial-of-Service-Schwachstelle",
+  "summary": "In der Microsoft Defender Antimalware Platform existiert eine Denial-of-Service-Schwachstelle, geführt als CVE-2026-45498. Das Problem wurde öffentlich bekannt gegeben und vom Hersteller gemeldet.",
+  "impact": "Ein Angreifer kann einen Denial-of-Service-Zustand in Microsoft Defender verursachen.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme mit der Microsoft Defender Antimalware Platform auf die Schwachstelle."
+  ],
+  "regression": null
+ }
+}

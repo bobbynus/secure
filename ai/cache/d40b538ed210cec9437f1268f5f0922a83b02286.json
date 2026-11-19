@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft QUIC: Remote Code Execution Vulnerability (CVE-2026-100219)",
+  "summary": "A critical remote code execution vulnerability affects Microsoft QUIC in multiple versions of Windows and Windows Server.",
+  "impact": "An attacker could achieve remote code execution. Specific preconditions or authentication requirements are not detailed in the sources.",
+  "fix": "The sources list updates including `KB5126646`, `KB5126653`, `KB5126655`, `KB5127646`, and `KB5127648`.",
+  "workaround": null,
+  "checks": [
+   "Check systems for Windows 11 and Windows Server installations.",
+   "Verify whether updates `KB5126646`, `KB5126653`, `KB5126655`, `KB5127646`, or `KB5127648` are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft QUIC: уязвимость удаленного выполнения кода (CVE-2026-100219)",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает Microsoft QUIC в различных версиях Windows и Windows Server.",
+  "impact": "Злоумышленник может выполнить удаленный код. Конкретные предварительные условия или требования к аутентификации в источниках не указаны.",
+  "fix": "В источниках указаны обновления `KB5126646`, `KB5126653`, `KB5126655`, `KB5127646` и `KB5127648`.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие установленных Windows 11 и Windows Server.",
+   "Убедитесь, установлены ли обновления `KB5126646`, `KB5126653`, `KB5126655`, `KB5127646` или `KB5127648`."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft QUIC: Schwachstelle zur Remote-Code-Ausführung (CVE-2026-100219)",
+  "summary": "Eine kritische Schwachstelle zur Remote-Code-Ausführung betrifft Microsoft QUIC in mehreren Windows- und Windows-Server-Versionen.",
+  "impact": "Ein Angreifer kann möglicherweise Remote-Code ausführen. Genaue Vorbedingungen oder Authentifizierungsanforderungen werden in den Quellen nicht genannt.",
+  "fix": "Die Quellen nennen Updates wie `KB5126646`, `KB5126653`, `KB5126655`, `KB5127646` und `KB5127648`.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf Windows-11- und Windows-Server-Installationen.",
+   "Prüfen Sie, ob die Updates `KB5126646`, `KB5126653`, `KB5126655`, `KB5127646` oder `KB5127648` eingespielt wurden."
+  ],
+  "regression": null
+ }
+}

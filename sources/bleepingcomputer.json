@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "1aea1b491f353fd71f5d28736183a17d",
- "last_modified": "Thu, 19 Nov 2026 12:43:27 GMT",
- "checksum": "00cdfd0baca6947a1e6f356af1098150a2953bf6c8c30d1213fc559fe6892496",
+ "etag": "e3ebb5094dc3b9ca58f388a370f4f0b1",
+ "last_modified": "Thu, 19 Nov 2026 13:12:25 GMT",
+ "checksum": "5ba2ecd49244ef017385468072f9fa6d0518b9e61337d5a539afddca59c31bf0",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -22,12 +22,13 @@
   "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/": "5a98da7f4d2e630df8706cbb",
   "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/": "27ca1a2e6d09985d30c79528",
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/": "d7b8f7f6ff71baab4a753318",
-  "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/": "d9987e48a0f75f524620ff81"
+  "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/": "d9987e48a0f75f524620ff81",
+  "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/": "d26e547af176cf59693c8ff0"
  },
- "last_attempt": "2026-11-19T12:50:42Z",
- "last_success": "2026-11-19T12:50:42Z",
+ "last_attempt": "2026-11-19T13:20:53Z",
+ "last_success": "2026-11-19T13:20:53Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 18
+ "items_total": 19
 }

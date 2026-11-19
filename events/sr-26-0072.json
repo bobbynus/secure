@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-41091": "Microsoft Defender Elevation of Privilege Vulnerability\nMicrosoft Defender. Publicly disclosed. Microsoft 2026-May security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "1ab8443549a8e1f6c1d62c18",
+  "texts": {
+   "en": {
+    "title": "Microsoft Defender: Elevation of Privilege Vulnerability (CVE-2026-41091)",
+    "summary": "An elevation of privilege vulnerability in Microsoft Defender (CVE-2026-41091) has been publicly disclosed and is reported as exploited.",
+    "impact": "The vulnerability allows attackers to elevate privileges. Microsoft reports that the issue is exploited.",
+    "fix": "The sources do not specify fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Verify Microsoft Defender installations for CVE-2026-41091 exposure.",
+     "Review system logs and security updates for the Microsoft 2026-May security update mentioned in disclosures."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Defender: уязвимость повышения привилегий (CVE-2026-41091)",
+    "summary": "Обнаружена уязвимость повышения привилегий в Microsoft Defender (CVE-2026-41091), которая была публично раскрыта, и сообщается о ее эксплуатации.",
+    "impact": "Уязвимость позволяет злоумышленникам повысить привилегии. Microsoft сообщает об эксплуатации проблемы.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте установки Microsoft Defender на предмет подверженности CVE-2026-41091.",
+     "Проверьте системные журналы и статус обновлений безопасности Microsoft за май 2026 года."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Defender: Schwachstelle zur Privilegienerweiterung (CVE-2026-41091)",
+    "summary": "Eine Schwachstelle zur Privilegienerweiterung in Microsoft Defender (CVE-2026-41091) wurde öffentlich bekannt gegeben und wird Berichten zufolge ausgenutzt.",
+    "impact": "Die Schwachstelle ermöglicht Angreifern die Erteilung von Privilegien. Microsoft meldet eine Ausnutzung des Problems.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft Defender-Installationen auf Anfälligkeit für CVE-2026-41091.",
+     "Überprüfen Sie Systemprotokolle und den Status des Microsoft-Sicherheitsupdates vom Mai 2026."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T13:20:55Z",
+  "slugs": {
+   "ru": "microsoft-defender-uyazvimost-povysheniya-privilegiy-cve-2026",
+   "de": "microsoft-defender-schwachstelle-zur-privilegienerweiterung-cve",
+   "en": "microsoft-defender-elevation-of-privilege-vulnerability-cve"
+  },
+  "published_at": "2026-11-19T13:20:55Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
