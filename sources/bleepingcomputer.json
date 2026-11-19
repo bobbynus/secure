@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "b0aa75e51e42c681d0be3ce02f7e79f3",
- "last_modified": "Thu, 19 Nov 2026 17:18:25 GMT",
- "checksum": "d5797492518997a24427720fcb34013f49de5a87fd42ea5936c01a3df22bc17f",
+ "etag": "0b49e22664ef4f274a72bf6e7dfeea65",
+ "last_modified": "Thu, 19 Nov 2026 17:48:26 GMT",
+ "checksum": "0125d664c1ce116f78cbea3b30cb99ad0357b383e3342756a523248d5167dea2",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -28,8 +28,8 @@
   "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/": "27892cd941182f0059e6a512",
   "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/": "0bafc862ddfb05eacc611e38"
  },
- "last_attempt": "2026-11-19T17:20:51Z",
- "last_success": "2026-11-19T17:20:51Z",
+ "last_attempt": "2026-11-19T17:50:39Z",
+ "last_success": "2026-11-19T17:50:39Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
