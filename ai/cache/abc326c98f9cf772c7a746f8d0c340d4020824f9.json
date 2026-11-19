@@ -1,0 +1,43 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Aug security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Aug security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: CVE-2026-79121 Improper input validation in Chromecast",
+  "summary": "Microsoft Edge (Chromium-based) is affected by an improper input validation vulnerability in Chromecast tracked as CVE-2026-79121.",
+  "impact": "The sources do not specify the exact impact or preconditions.",
+  "fix": "The sources list no fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Edge (Chromium-based) installations for the affected version context mentioned in the advisory."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: CVE-2026-79121 Некорректная проверка ввода в Chromecast",
+  "summary": "Microsoft Edge (Chromium-based) подвержен уязвимости некорректной проверки ввода в Chromecast, которой присвоен идентификатор CVE-2026-79121.",
+  "impact": "Источники не уточняют конкретные последствия или предварительные условия.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте установки Microsoft Edge (Chromium-based) на предмет контекста версий, упомянутого в бюллетене."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: CVE-2026-79121 Ungültige Eingabevalidierung in Chromecast",
+  "summary": "Microsoft Edge (Chromium-based) ist von einer Schwachstelle durch ungültige Eingabevalidierung in Chromecast betroffen, die als CVE-2026-79121 geführt wird.",
+  "impact": "Die Quellen nennen keine genauen Auswirkungen oder Vorbedingungen.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft Edge (Chromium-based)-Installationen auf den im Advisory genannten Versionskontext."
+  ],
+  "regression": null
+ }
+}

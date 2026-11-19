@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Aug security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Aug security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: CVE-2026-79150 Use after free in Views",
+  "summary": "Microsoft Edge (Chromium-based) is affected by a use-after-free vulnerability in Views tracked as CVE-2026-79150.",
+  "impact": "The vulnerability allows attackers to cause potential security impacts via a use-after-free condition in Views.",
+  "fix": "The sources do not specify fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Edge (Chromium-based) installations.",
+   "Check systems for the Microsoft 2026-Aug security update status."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: CVE-2026-79150 Use after free в Views",
+  "summary": "Microsoft Edge (Chromium-based) подвержен уязвимости типа use-after-free в Views, зарегистрированной под идентификатором CVE-2026-79150.",
+  "impact": "Уязвимость может привести к различным последствиям для безопасности из-за состояния use-after-free в Views.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установок Microsoft Edge (Chromium-based).",
+   "Проверьте системы на предмет применения августовского обновления безопасности Microsoft за 2026 год."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: CVE-2026-79150 Use-after-free in Views",
+  "summary": "Microsoft Edge (Chromium-based) ist von einer Use-after-Free-Schwachstelle in Views betroffen, die als CVE-2026-79150 geführt wird.",
+  "impact": "Die Schwachstelle kann Angreifern ermöglichen, Sicherheitsauswirkungen über eine Use-after-Free-Bedingung in Views zu verursachen.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Microsoft Edge (Chromium-based) Installationen.",
+   "Überprüfen Sie Systeme auf den Status des Microsoft Sicherheitsupdates vom August 2026."
+  ],
+  "regression": null
+ }
+}

@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-79200": "Chromium: CVE-2026-79200 Use after free in Aura\nMicrosoft Edge (Chromium-based). Microsoft 2026-Aug security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "8388fb1470b18f0735a06021",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: CVE-2026-79200 Use-after-free vulnerability in Aura",
+    "summary": "Microsoft Edge (Chromium-based) contains a use-after-free vulnerability in Aura tracked as CVE-2026-79200 with a CVSS score of 9.6.",
+    "impact": "The sources do not provide detailed impact or precondition information.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft Edge (Chromium-based) installations.",
+     "Check systems for the Microsoft 2026-Aug security update context mentioned in the source."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: уязвимость типа use-after-free в Aura (CVE-2026-79200)",
+    "summary": "Microsoft Edge (на базе Chromium) содержит уязвимость типа use-after-free в Aura, зарегистрированную как CVE-2026-79200 с оценкой CVSS 9.6.",
+    "impact": "Источники не содержат подробной информации о последствиях или предварительных условиях.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Инвентаризируйте установленные экземпляры Microsoft Edge (на базе Chromium).",
+     "Проверьте системы на предмет контекста обновления безопасности Microsoft 2026-Aug, упомянутого в источнике."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: Use-After-Free-Schwachstelle in Aura (CVE-2026-79200)",
+    "summary": "Microsoft Edge (Chromium-basiert) enthält eine Use-After-Free-Schwachstelle in Aura, erfasst als CVE-2026-79200 mit einem CVSS-Score von 9.6.",
+    "impact": "Die Quellen nennen keine detaillierten Auswirkungen oder Voraussetzungen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Erfassen Sie Installationen von Microsoft Edge (Chromium-basiert).",
+     "Überprüfen Sie Systeme auf den in der Quelle genannten Kontext des Microsoft 2026-Aug-Sicherheitsupdates."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T09:50:54Z",
+  "slugs": {
+   "ru": "microsoft-edge-uyazvimost-tipa-use-after-free-v-aura-cve-2026",
+   "de": "microsoft-edge-use-after-free-schwachstelle-in-aura-cve-2026",
+   "en": "microsoft-edge-cve-2026-79200-use-after-free-vulnerability-in"
+  },
+  "published_at": "2026-11-19T09:50:54Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

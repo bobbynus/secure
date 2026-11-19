@@ -70,10 +70,10 @@
   "generated_at": null,
   "slugs": {},
   "published_at": null,
-  "attempts": 1,
+  "attempts": 2,
   "failed_hash": null,
   "last_error": "article: ru: the text is not in Russian",
-  "next_try": "2026-11-19T09:50:43Z",
-  "calls": 2
+  "next_try": "2026-11-19T10:50:54Z",
+  "calls": 4
  }
 }

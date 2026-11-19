@@ -27,7 +27,9 @@
   "cve": [
    "CVE-2026-105016"
   ],
-  "advisory": [],
+  "advisory": [
+   "WID-SEC-2026-3893"
+  ],
   "kb": [
    "KB5126646",
    "KB5126653",
@@ -52,7 +54,7 @@
  "title_hint": "Microsoft QUIC Remote Code Execution Vulnerability",
  "summary_hint": "Microsoft QUIC. Microsoft 2026-Oct security update.",
  "created_at": "2026-11-19T08:40:42Z",
- "updated_at": "2026-11-19T08:40:42Z",
+ "updated_at": "2026-11-19T09:50:40Z",
  "event_date": "2026-11-19T08:40:42Z",
  "sources": [
   {
@@ -63,6 +65,15 @@
    "publisher": "Microsoft Security Response Center (CVRF API)",
    "kind": "vendor",
    "date": "2026-11-19"
+  },
+  {
+   "source_id": "cert-bund-wid",
+   "item_key": "WID-SEC-W-2026-3893",
+   "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3893",
+   "title": "Microsoft Entwicklerwerkzeuge: Mehrere Schwachstellen",
+   "publisher": "CERT-Bund (BSI) WID security advisories",
+   "kind": "cert",
+   "date": "2026-10-13"
   }
  ],
  "revisions": [
@@ -73,6 +84,12 @@
     "reason": "critical severity in infrastructure product"
    },
    "source": "msrc:CVE-2026-105016"
+  },
+  {
+   "date": "2026-11-19T09:50:40Z",
+   "kind": "source",
+   "facts": {},
+   "source": "cert-bund-wid:WID-SEC-W-2026-3893"
   }
  ],
  "related": [
