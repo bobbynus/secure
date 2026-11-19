@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows",
+   "versions": "multiple",
+   "fixed": null,
+   "evidence": "Windows VMSwitch. Microsoft 2026-Jul security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: Elevation of Privilege Vulnerability in VMSwitch (CVE-2026-57092)",
+  "summary": "A critical elevation of privilege vulnerability (CVE-2026-57092) affects Microsoft Windows VMSwitch with a CVSS score of 9.9. Updates are available.",
+  "impact": "An attacker can exploit this vulnerability to achieve elevation of privilege on vulnerable systems.",
+  "fix": "Apply the corresponding security updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows systems running affected versions",
+   "Verify the application of Microsoft security updates"
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость повышения привилегий в VMSwitch (CVE-2026-57092)",
+  "summary": "Критическая уязвимость повышения привилегий (CVE-2026-57092) затрагивает Microsoft Windows VMSwitch, оценка CVSS составляет 9.9. Доступны обновления.",
+  "impact": "Злоумышленник может использовать эту уязвимость для повышения привилегий в уязвимых системах.",
+  "fix": "Установите соответствующие обновления безопасности, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows под управлением затронутых версий",
+   "Проверьте установку обновлений безопасности Microsoft"
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Schwachstelle zur Privilegienerweiterung in VMSwitch (CVE-2026-57092)",
+  "summary": "Eine kritische Schwachstelle zur Privilegienerweiterung (CVE-2026-57092) betrifft Microsoft Windows VMSwitch mit einem CVSS-Wert von 9.9. Updates sind verfügbar.",
+  "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien auf anfälligen Systemen zu erweitern.",
+  "fix": "Wenden Sie die entsprechenden von Microsoft bereitgestellten Sicherheitsupdates an.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows-Systeme mit betroffenen Versionen",
+   "Überprüfen Sie die Anwendung der Microsoft-Sicherheitsupdates"
+  ],
+  "regression": null
+ }
+}

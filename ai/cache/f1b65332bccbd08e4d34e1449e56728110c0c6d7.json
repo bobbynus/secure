@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft SharePoint Server: Elevation of Privilege Vulnerability (CVE-2026-56164)",
+  "summary": "An elevation of privilege vulnerability in Microsoft SharePoint Server allows attackers to escalate privileges. Microsoft reports exploitation.",
+  "impact": "Attackers can achieve elevation of privilege. The vulnerability is reported as exploited.",
+  "fix": "Apply updates as provided by Microsoft (including KB5002882, KB5002883, KB5002891).",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft SharePoint Server installations for vulnerability CVE-2026-56164.",
+   "Verify the application of updates KB5002882, KB5002883, and KB5002891."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft SharePoint Server: уязвимость повышения привилегий (CVE-2026-56164)",
+  "summary": "Уязвимость повышения привилегий в Microsoft SharePoint Server позволяет злоумышленникам повысить привилегии. Microsoft сообщает об эксплуатации.",
+  "impact": "Злоумышленники могут повысить привилегии. Уязвимость эксплуатируется.",
+  "fix": "Установите обновления, предоставленные Microsoft (включая KB5002882, KB5002883, KB5002891).",
+  "workaround": null,
+  "checks": [
+   "Проверьте установки Microsoft SharePoint Server на наличие уязвимости CVE-2026-56164.",
+   "Убедитесь в применении обновлений KB5002882, KB5002883 и KB5002891."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft SharePoint Server: Privilegienerweiterung (CVE-2026-56164)",
+  "summary": "Eine Schwachstelle zur Privilegienerweiterung in Microsoft SharePoint Server ermöglicht Angreifern die Erhöhung von Rechten. Microsoft meldet eine Ausnutzung.",
+  "impact": "Angreifer können Privilegien erweitern. Die Schwachstelle wird laut Microsoft ausgenutzt.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5002882, KB5002883, KB5002891).",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft SharePoint Server-Installationen auf die Schwachstelle CVE-2026-56164.",
+   "Überprüfen Sie die Anwendung der Updates KB5002882, KB5002883 und KB5002891."
+  ],
+  "regression": null
+ }
+}

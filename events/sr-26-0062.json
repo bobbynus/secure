@@ -70,21 +70,62 @@
  "texts": {
   "msrc:CVE-2026-56164": "Microsoft SharePoint Server Elevation of Privilege Vulnerability\nMicrosoft Office SharePoint. Microsoft 2026-Jul security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "e2daebfab738ca5b01f4aebd",
+  "texts": {
+   "en": {
+    "title": "Microsoft SharePoint Server: Elevation of Privilege Vulnerability (CVE-2026-56164)",
+    "summary": "An elevation of privilege vulnerability in Microsoft SharePoint Server allows attackers to escalate privileges. Microsoft reports exploitation.",
+    "impact": "Attackers can achieve elevation of privilege. The vulnerability is reported as exploited.",
+    "fix": "Apply updates as provided by Microsoft (including KB5002882, KB5002883, KB5002891).",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft SharePoint Server installations for vulnerability CVE-2026-56164.",
+     "Verify the application of updates KB5002882, KB5002883, and KB5002891."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft SharePoint Server: уязвимость повышения привилегий (CVE-2026-56164)",
+    "summary": "Уязвимость повышения привилегий в Microsoft SharePoint Server позволяет злоумышленникам повысить привилегии. Microsoft сообщает об эксплуатации.",
+    "impact": "Злоумышленники могут повысить привилегии. Уязвимость эксплуатируется.",
+    "fix": "Установите обновления, предоставленные Microsoft (включая KB5002882, KB5002883, KB5002891).",
+    "workaround": null,
+    "checks": [
+     "Проверьте установки Microsoft SharePoint Server на наличие уязвимости CVE-2026-56164.",
+     "Убедитесь в применении обновлений KB5002882, KB5002883 и KB5002891."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft SharePoint Server: Privilegienerweiterung (CVE-2026-56164)",
+    "summary": "Eine Schwachstelle zur Privilegienerweiterung in Microsoft SharePoint Server ermöglicht Angreifern die Erhöhung von Rechten. Microsoft meldet eine Ausnutzung.",
+    "impact": "Angreifer können Privilegien erweitern. Die Schwachstelle wird laut Microsoft ausgenutzt.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5002882, KB5002883, KB5002891).",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft SharePoint Server-Installationen auf die Schwachstelle CVE-2026-56164.",
+     "Überprüfen Sie die Anwendung der Updates KB5002882, KB5002883 und KB5002891."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T11:51:12Z",
+  "slugs": {
+   "ru": "microsoft-sharepoint-server-uyazvimost-povysheniya-privilegiy",
+   "de": "microsoft-sharepoint-server-privilegienerweiterung-cve-2026",
+   "en": "microsoft-sharepoint-server-elevation-of-privilege"
+  },
+  "published_at": "2026-11-19T11:51:12Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

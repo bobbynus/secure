@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Remote Code Execution Vulnerability in Windows Server Network driver",
+  "summary": "A critical remote code execution vulnerability (CVE-2026-56188) affects the Windows Server Network driver in Microsoft Windows.",
+  "impact": "An attacker can achieve remote code execution. The sources do not specify exact preconditions.",
+  "fix": "Updates are available via KB5099444, KB5099445, KB5099535, KB5099536, KB5099538, KB5099539, KB5099540, KB5101649, and KB5101650.",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for vulnerability CVE-2026-56188",
+   "Verify the installation of updates corresponding to KB5099444, KB5099445, KB5099535, KB5099536, KB5099538, KB5099539, KB5099540, KB5101649, or KB5101650"
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в драйвере сети",
+  "summary": "Критическая уязвимость удаленного выполнения кода (CVE-2026-56188) затрагивает сетевой драйвер Windows Server в Microsoft Windows.",
+  "impact": "Злоумышленник может выполнить удаленный код. Источники не приводят точных предварительных условий.",
+  "fix": "Доступны обновления через KB5099444, KB5099445, KB5099535, KB5099536, KB5099538, KB5099539, KB5099540, KB5101649 и KB5101650.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на наличие уязвимости CVE-2026-56188",
+   "Проверьте установку обновлений, соответствующих KB5099444, KB5099445, KB5099535, KB5099536, KB5099538, KB5099539, KB5099540, KB5101649 или KB5101650"
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungsschwachstelle im Windows Server-Netzwerktreiber",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung (CVE-2026-56188) betrifft den Windows Server-Netzwerktreiber in Microsoft Windows.",
+  "impact": "Ein Angreifer kann Remotecode ausführen. Die Quellen nennen keine genauen Vorbedingungen.",
+  "fix": "Updates sind über KB5099444, KB5099445, KB5099535, KB5099536, KB5099538, KB5099539, KB5099540, KB5101649 und KB5101650 verfügbar.",
+  "workaround": null,
+  "checks": [
+   "Prüfen Sie Windows-Systeme auf die Schwachstelle CVE-2026-56188",
+   "Überprüfen Sie die Installation von Updates entsprechend KB5099444, KB5099445, KB5099535, KB5099536, KB5099538, KB5099539, KB5099540, KB5101649 oder KB5101650"
+  ],
+  "regression": null
+ }
+}

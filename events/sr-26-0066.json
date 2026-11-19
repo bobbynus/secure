@@ -72,21 +72,59 @@
  "texts": {
   "msrc:CVE-2025-10263": "ARM: CVE-2025-10263 Completion of affected memory accesses might not be guaranteed by completion of a TLBI [kernel]\nWindows Kernel. Microsoft 2026-Jun security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "e30d94b44d7e80993193959f",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows Kernel: CVE-2025-10263 memory access vulnerability",
+    "summary": "A critical vulnerability (CVE-2025-10263) in the Microsoft Windows Kernel affects memory access completion after TLBI.",
+    "impact": "Completion of affected memory accesses might not be guaranteed by completion of a TLBI in the kernel.",
+    "fix": "The sources list no fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check systems running Windows 10 and Windows 11 for vulnerability status regarding CVE-2025-10263."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Ядро Microsoft Windows: уязвимость доступа к памяти CVE-2025-10263",
+    "summary": "Критическая уязвимость (CVE-2025-10263) в ядре Microsoft Windows затрагивает завершение доступа к памяти после TLBI.",
+    "impact": "Завершение затронутых обращений к памяти может не гарантироваться завершением TLBI в ядре.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы под управлением Windows 10 и Windows 11 на уязвимость CVE-2025-10263."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows Kernel: Speicherzugriffsschwachstelle CVE-2025-10263",
+    "summary": "Eine kritische Schwachstelle (CVE-2025-10263) im Microsoft Windows Kernel betrifft den Abschluss von Speicherzugriffen nach TLBI.",
+    "impact": "Der Abschluss betroffener Speicherzugriffe ist möglicherweise nicht durch den Abschluss eines TLBI im Kernel garantiert.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme unter Windows 10 und Windows 11 auf die Schwachstelle CVE-2025-10263."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T11:51:12Z",
+  "slugs": {
+   "ru": "yadro-microsoft-windows-uyazvimost-dostupa-k-pamyati-cve-2025",
+   "de": "microsoft-windows-kernel-speicherzugriffsschwachstelle-cve-2025",
+   "en": "microsoft-windows-kernel-cve-2025-10263-memory-access"
+  },
+  "published_at": "2026-11-19T11:51:12Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

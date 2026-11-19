@@ -14,7 +14,9 @@
   "cve": [
    "CVE-2026-40217"
   ],
-  "advisory": [],
+  "advisory": [
+   "WID-SEC-2026-1408"
+  ],
   "kb": []
  },
  "severity": null,
@@ -31,7 +33,7 @@
  "title_hint": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
  "summary_hint": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
  "created_at": "2026-11-18T20:00:42Z",
- "updated_at": "2026-11-18T20:00:42Z",
+ "updated_at": "2026-11-19T11:50:52Z",
  "event_date": "2026-11-18T00:00:00Z",
  "sources": [
   {
@@ -42,6 +44,15 @@
    "publisher": "CISA Known Exploited Vulnerabilities",
    "kind": "kev",
    "date": "2026-11-18"
+  },
+  {
+   "source_id": "cert-bund-wid",
+   "item_key": "WID-SEC-W-2026-1408",
+   "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1408",
+   "title": "LiteLLM: Schwachstelle ermöglicht Ausführen von beliebigem Programmcode mit Administratorrechten",
+   "publisher": "CERT-Bund (BSI) WID security advisories",
+   "kind": "cert",
+   "date": "2026-05-06"
   }
  ],
  "revisions": [
@@ -52,12 +63,19 @@
     "reason": "added to CISA KEV"
    },
    "source": "cisa-kev:CVE-2026-40217"
+  },
+  {
+   "date": "2026-11-19T11:50:52Z",
+   "kind": "source",
+   "facts": {},
+   "source": "cert-bund-wid:WID-SEC-W-2026-1408"
   }
  ],
  "related": [],
  "reason": "added to CISA KEV",
  "texts": {
-  "cisa-kev:CVE-2026-40217": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability\nBerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+  "cisa-kev:CVE-2026-40217": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability\nBerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+  "cert-bund-wid:WID-SEC-W-2026-1408": "LiteLLM: Schwachstelle ermöglicht Ausführen von beliebigem Programmcode mit Administratorrechten\nEin entfernter, authentisierter Angreifer kann eine Schwachstelle in LiteLLM ausnutzen, um beliebigen Programmcode mit Administratorrechten auszuführen.\nLiteLLM ist ein Gateway, das eine einheitliche Schnittstelle für verschiedene Large Language Models (LLMs) bietet.\nRevision: Aktive Ausnutzung gemeldet"
  },
  "publish_state": "published",
  "ai": {

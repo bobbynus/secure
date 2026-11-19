@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows Kernel: Remote Code Execution (CVE-2026-45657)",
+  "summary": "A critical remote code execution vulnerability exists in the Windows Kernel affecting multiple Windows and Windows Server versions.",
+  "impact": "An attacker could execute arbitrary code remotely.",
+  "fix": "Apply the updates associated with KB5093998, KB5094125, KB5094126, KB5094128, or KB5095051 as provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Inventory systems running Windows 11 and Windows Server.",
+   "Verify if updates KB5093998, KB5094125, KB5094126, KB5094128, or KB5095051 are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Ядро Microsoft Windows: удаленное выполнение кода (CVE-2026-45657)",
+  "summary": "В ядре Windows обнаружена критическая уязвимость удаленного выполнения кода, затрагивающая различные версии Windows и Windows Server.",
+  "impact": "Злоумышленник может удаленно выполнить произвольный код.",
+  "fix": "Установите обновления KB5093998, KB5094125, KB5094126, KB5094128 или KB5095051, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем под управлением Windows 11 и Windows Server.",
+   "Проверьте наличие установленных обновлений KB5093998, KB5094125, KB5094126, KB5094128 или KB5095051."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows Kernel: Remotecodeausführung (CVE-2026-45657)",
+  "summary": "Im Windows Kernel existiert eine kritische Schwachstelle zur Remotecodeausführung, die mehrere Windows- und Windows Server-Versionen betrifft.",
+  "impact": "Ein Angreifer kann beliebigen Code aus der Ferne ausführen.",
+  "fix": "Installieren Sie die von Microsoft bereitgestellten Updates KB5093998, KB5094125, KB5094126, KB5094128 oder KB5095051.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Systeme mit Windows 11 und Windows Server.",
+   "Überprüfen Sie, ob die Updates KB5093998, KB5094125, KB5094126, KB5094128 oder KB5095051 installiert sind."
+  ],
+  "regression": null
+ }
+}
