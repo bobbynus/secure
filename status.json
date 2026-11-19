@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-11-19T06:40:42Z",
- "lastSuccess": "2026-11-19T06:40:42Z",
+ "generatedAt": "2026-11-19T07:10:42Z",
+ "lastSuccess": "2026-11-19T07:10:42Z",
  "run": {
   "ok": 12,
   "error": 0
  },
  "totals": {
-  "items_new": 0,
+  "items_new": 1,
   "events_created": 0,
   "events_updated": 0,
   "notifiable": 0
@@ -21,7 +21,7 @@
   {
    "id": "cisa-kev",
    "state": "ok",
-   "lastSuccess": "2026-11-19T06:40:42Z",
+   "lastSuccess": "2026-11-19T07:10:42Z",
    "lastError": null,
    "failures": 0
   },
@@ -43,14 +43,14 @@
   {
    "id": "fortiguard-psirt",
    "state": "ok",
-   "lastSuccess": "2026-11-19T06:40:42Z",
+   "lastSuccess": "2026-11-19T07:10:42Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "paloalto-psirt",
    "state": "ok",
-   "lastSuccess": "2026-11-19T06:40:42Z",
+   "lastSuccess": "2026-11-19T07:10:42Z",
    "lastError": null,
    "failures": 0
   },
@@ -76,14 +76,14 @@
   {
    "id": "ubuntu-usn",
    "state": "ok",
-   "lastSuccess": "2026-11-19T06:40:42Z",
+   "lastSuccess": "2026-11-19T07:10:42Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "debian-dsa",
    "state": "ok",
-   "lastSuccess": "2026-11-19T06:40:42Z",
+   "lastSuccess": "2026-11-19T07:10:42Z",
    "lastError": null,
    "failures": 0
   },
