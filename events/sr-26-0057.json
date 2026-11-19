@@ -69,21 +69,62 @@
  "texts": {
   "msrc:CVE-2026-55008": "Microsoft Exchange Server Spoofing Vulnerability\nMicrosoft Exchange Server. Microsoft 2026-Jul security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "9178f157cb765f7c5dd99137",
+  "texts": {
+   "en": {
+    "title": "Microsoft Exchange Server: Spoofing Vulnerability (CVE-2026-55008)",
+    "summary": "A critical spoofing vulnerability (CVE-2026-55008) affects Microsoft Exchange Server. Updates are available.",
+    "impact": "The vulnerability allows spoofing in Microsoft Exchange Server with a CVSS score of 9.6.",
+    "fix": "Apply the updates referenced by KB5103212, KB5103213, KB5103214, and KB5103215.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft Exchange Server installations for vulnerability CVE-2026-55008.",
+     "Verify whether updates KB5103212, KB5103213, KB5103214, or KB5103215 are installed."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Exchange Server: уязвимость спуфинга (CVE-2026-55008)",
+    "summary": "Критическая уязвимость спуфинга (CVE-2026-55008) затрагивает Microsoft Exchange Server. Доступны обновления.",
+    "impact": "Уязвимость позволяет осуществлять спуфинг в Microsoft Exchange Server, оценка CVSS составляет 9.6.",
+    "fix": "Установите обновления, указанные в KB5103212, KB5103213, KB5103214 и KB5103215.",
+    "workaround": null,
+    "checks": [
+     "Проверьте инсталляции Microsoft Exchange Server на наличие уязвимости CVE-2026-55008.",
+     "Убедитесь, установлены ли обновления KB5103212, KB5103213, KB5103214 или KB5103215."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Exchange Server: Spoofing-Schwachstelle (CVE-2026-55008)",
+    "summary": "Eine kritische Spoofing-Schwachstelle (CVE-2026-55008) betrifft den Microsoft Exchange Server. Updates sind verfügbar.",
+    "impact": "Die Schwachstelle ermöglicht Spoofing in Microsoft Exchange Server mit einem CVSS-Score von 9.6.",
+    "fix": "Wenden Sie die Updates an, die in KB5103212, KB5103213, KB5103214 und KB5103215 referenziert sind.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft Exchange Server-Installationen auf die Schwachstelle CVE-2026-55008.",
+     "Überprüfen Sie, ob die Updates KB5103212, KB5103213, KB5103214 oder KB5103215 installiert sind."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T11:20:41Z",
+  "slugs": {
+   "ru": "microsoft-exchange-server-uyazvimost-spufinga-cve-2026-55008",
+   "de": "microsoft-exchange-server-spoofing-schwachstelle-cve-2026-55008",
+   "en": "microsoft-exchange-server-spoofing-vulnerability-cve-2026-55008"
+  },
+  "published_at": "2026-11-19T11:20:41Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

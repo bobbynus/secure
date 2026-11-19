@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Active Directory Federation Services: Elevation of Privilege Vulnerability",
+  "summary": "An elevation of privilege vulnerability in Microsoft Active Directory Federation Services allows attackers to escalate privileges. Microsoft reports exploitation.",
+  "impact": "Attackers can achieve elevation of privileges. Exploitation is reported by the vendor.",
+  "fix": "Apply the security updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check systems running Active Directory Federation Services for missing security updates.",
+   "Review systems for KB5099444, KB5099445, KB5099535, KB5099536, KB5099538, or KB5099540 deployment."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Active Directory Federation Services: уязвимость повышения привилегий",
+  "summary": "Уязвимость повышения привилегий в Microsoft Active Directory Federation Services позволяет злоумышленникам повысить привилегии. Вендор сообщает об эксплуатации.",
+  "impact": "Злоумышленники могут повысить привилегии. Вендор сообщает об эксплуатации уязвимости.",
+  "fix": "Установите обновления безопасности, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы под управлением Active Directory Federation Services на наличие неустановленных обновлений безопасности.",
+   "Проверьте системы на предмет установки обновлений KB5099444, KB5099445, KB5099535, KB5099536, KB5099538 или KB5099540."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Active Directory Federation Services: Schwachstelle zur Privilegienerweiterung",
+  "summary": "Eine Schwachstelle zur Privilegienerweiterung in Microsoft Active Directory Federation Services ermöglicht Angreifern die Erhöhung von Rechten. Der Hersteller meldet eine Ausnutzung.",
+  "impact": "Angreifer können Privilegien erlangen. Eine Ausnutzung wird vom Hersteller gemeldet.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme mit Active Directory Federation Services auf fehlende Sicherheitsupdates.",
+   "Überprüfen Sie Systeme auf die Installation von KB5099444, KB5099445, KB5099535, KB5099536, KB5099538 oder KB5099540."
+  ],
+  "regression": null
+ }
+}

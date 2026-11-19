@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Exchange Server: Spoofing Vulnerability (CVE-2026-55008)",
+  "summary": "A critical spoofing vulnerability (CVE-2026-55008) affects Microsoft Exchange Server. Updates are available.",
+  "impact": "The vulnerability allows spoofing in Microsoft Exchange Server with a CVSS score of 9.6.",
+  "fix": "Apply the updates referenced by KB5103212, KB5103213, KB5103214, and KB5103215.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Exchange Server installations for vulnerability CVE-2026-55008.",
+   "Verify whether updates KB5103212, KB5103213, KB5103214, or KB5103215 are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Exchange Server: уязвимость спуфинга (CVE-2026-55008)",
+  "summary": "Критическая уязвимость спуфинга (CVE-2026-55008) затрагивает Microsoft Exchange Server. Доступны обновления.",
+  "impact": "Уязвимость позволяет осуществлять спуфинг в Microsoft Exchange Server, оценка CVSS составляет 9.6.",
+  "fix": "Установите обновления, указанные в KB5103212, KB5103213, KB5103214 и KB5103215.",
+  "workaround": null,
+  "checks": [
+   "Проверьте инсталляции Microsoft Exchange Server на наличие уязвимости CVE-2026-55008.",
+   "Убедитесь, установлены ли обновления KB5103212, KB5103213, KB5103214 или KB5103215."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Exchange Server: Spoofing-Schwachstelle (CVE-2026-55008)",
+  "summary": "Eine kritische Spoofing-Schwachstelle (CVE-2026-55008) betrifft den Microsoft Exchange Server. Updates sind verfügbar.",
+  "impact": "Die Schwachstelle ermöglicht Spoofing in Microsoft Exchange Server mit einem CVSS-Score von 9.6.",
+  "fix": "Wenden Sie die Updates an, die in KB5103212, KB5103213, KB5103214 und KB5103215 referenziert sind.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft Exchange Server-Installationen auf die Schwachstelle CVE-2026-55008.",
+   "Überprüfen Sie, ob die Updates KB5103212, KB5103213, KB5103214 oder KB5103215 installiert sind."
+  ],
+  "regression": null
+ }
+}

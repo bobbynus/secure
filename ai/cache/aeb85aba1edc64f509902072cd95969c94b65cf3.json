@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows DHCP Server",
+   "versions": "unspecified",
+   "fixed": null,
+   "evidence": "DHCP Server Service Remote Code Execution Vulnerability\nWindows DHCP Server."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows DHCP Server: Remote Code Execution Vulnerability",
+  "summary": "A critical remote code execution vulnerability exists in the Microsoft Windows DHCP Server service.",
+  "impact": "An attacker can achieve remote code execution on vulnerable systems.",
+  "fix": "Apply the updates provided by Microsoft (including `KB5099444`, `KB5099445`, `KB5099535`, `KB5099536`, `KB5099538`, `KB5099540`).",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows Server systems running the DHCP Server service.",
+   "Verify whether updates `KB5099444`, `KB5099445`, `KB5099535`, `KB5099536`, `KB5099538`, or `KB5099540` are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows DHCP Server: уязвимость удаленного выполнения кода",
+  "summary": "В службе DHCP Server в Microsoft Windows обнаружена критическая уязвимость удаленного выполнения кода.",
+  "impact": "Злоумышленник может выполнить произвольный код на уязвимых системах.",
+  "fix": "Установите обновления, предоставленные Microsoft (включая `KB5099444`, `KB5099445`, `KB5099535`, `KB5099536`, `KB5099538`, `KB5099540`).",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows Server, запущенных со службой DHCP Server.",
+   "Проверьте, установлены ли обновления `KB5099444`, `KB5099445`, `KB5099535`, `KB5099536`, `KB5099538` или `KB5099540`."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows DHCP Server: Schwachstelle ermöglicht Remotecodeausführung",
+  "summary": "Im Microsoft Windows DHCP Server-Dienst existiert eine kritische Schwachstelle zur Remotecodeausführung.",
+  "impact": "Ein Angreifer kann auf anfälligen Systemen Remotecode ausführen.",
+  "fix": "Installieren Sie die von Microsoft bereitgestellten Updates (einschließlich `KB5099444`, `KB5099445`, `KB5099535`, `KB5099536`, `KB5099538`, `KB5099540`).",
+  "workaround": null,
+  "checks": [
+   "Erfassen Sie alle Windows Server-Systeme, auf denen der DHCP Server-Dienst ausgeführt wird.",
+   "Überprüfen Sie, ob die Updates `KB5099444`, `KB5099445`, `KB5099535`, `KB5099536`, `KB5099538` oder `KB5099540` installiert sind."
+  ],
+  "regression": null
+ }
+}

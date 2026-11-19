@@ -69,21 +69,62 @@
  "texts": {
   "msrc:CVE-2026-55040": "Microsoft SharePoint Server Security Feature Bypass Vulnerability\nMicrosoft Office SharePoint. Microsoft 2026-Jul security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "40da7e0ea10efded46ebe748",
+  "texts": {
+   "en": {
+    "title": "Microsoft SharePoint Server: Security Feature Bypass Vulnerability (CVE-2026-55040)",
+    "summary": "A security feature bypass vulnerability affects Microsoft SharePoint Server, carrying a CVSS score of 9.1.",
+    "impact": "An attacker can bypass security features in Microsoft SharePoint Server.",
+    "fix": "Refer to vendor advisories and updates including KB5002882, KB5002883, and KB5002891.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft SharePoint Server installations for vulnerability CVE-2026-55040 exposure.",
+     "Verify the installation status of updates KB5002882, KB5002883, and KB5002891."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft SharePoint Server: уязвимость обхода функции безопасности (CVE-2026-55040)",
+    "summary": "Уязвимость обхода функции безопасности затрагивает Microsoft SharePoint Server, оценка CVSS составляет 9.1.",
+    "impact": "Злоумышленник может обойти функции безопасности в Microsoft SharePoint Server.",
+    "fix": "См. рекомендации производителя и обновления, включая KB5002882, KB5002883 и KB5002891.",
+    "workaround": null,
+    "checks": [
+     "Проверьте установки Microsoft SharePoint Server на уязвимость CVE-2026-55040.",
+     "Проверьте статус установки обновлений KB5002882, KB5002883 и KB5002891."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft SharePoint Server: Sicherheitsfunktions-Bypass-Schwachstelle (CVE-2026-55040)",
+    "summary": "Eine Sicherheitsfunktions-Bypass-Schwachstelle betrifft Microsoft SharePoint Server mit einem CVSS-Score von 9.1.",
+    "impact": "Ein Angreifer kann Sicherheitsfunktionen in Microsoft SharePoint Server umgehen.",
+    "fix": "Siehe Herstellerhinweise und Updates einschließlich KB5002882, KB5002883 und KB5002891.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft SharePoint Server-Installationen auf Anfälligkeit für CVE-2026-55040.",
+     "Überprüfen Sie den Installationsstatus der Updates KB5002882, KB5002883 und KB5002891."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T11:20:41Z",
+  "slugs": {
+   "ru": "microsoft-sharepoint-server-uyazvimost-obkhoda-funktsii",
+   "de": "microsoft-sharepoint-server-sicherheitsfunktions-bypass",
+   "en": "microsoft-sharepoint-server-security-feature-bypass"
+  },
+  "published_at": "2026-11-19T11:20:41Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

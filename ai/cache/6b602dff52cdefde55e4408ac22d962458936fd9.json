@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft SharePoint",
+   "versions": "Microsoft 2026-Jul security update",
+   "fixed": null,
+   "evidence": "Microsoft Office SharePoint. Microsoft 2026-Jul security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft SharePoint: Remote Code Execution Vulnerability (CVE-2026-50522)",
+  "summary": "A critical remote code execution vulnerability affects Microsoft SharePoint Server. An attacker can exploit this flaw to execute arbitrary code.",
+  "impact": "Remote code execution on vulnerable SharePoint installations.",
+  "fix": "Apply available updates referenced by KB5002882, KB5002883, and KB5002891.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft SharePoint Server installations.",
+   "Verify the application of KB5002882, KB5002883, and KB5002891."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода (CVE-2026-50522)",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает Microsoft SharePoint Server. Злоумышленник может использовать ее для выполнения произвольного кода.",
+  "impact": "Удаленное выполнение кода на уязвимых серверах SharePoint.",
+  "fix": "Установите доступные обновления, указанные в KB5002882, KB5002883 и KB5002891.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию серверов Microsoft SharePoint Server.",
+   "Проверьте установку обновлений KB5002882, KB5002883 и KB5002891."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft SharePoint: Schwachstelle zur RCE (CVE-2026-50522)",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft Microsoft SharePoint Server. Ein Angreifer kann diesen Fehler ausnutzen, um beliebigen Code auszuführen.",
+  "impact": "Remotecodeausführung auf anfälligen SharePoint-Servern.",
+  "fix": "Wenden Sie die verfügbaren Updates an, auf die in KB5002882, KB5002883 und KB5002891 verwiesen wird.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Microsoft SharePoint Server-Installationen.",
+   "Überprüfen Sie die Anwendung von KB5002882, KB5002883 und KB5002891."
+  ],
+  "regression": null
+ }
+}

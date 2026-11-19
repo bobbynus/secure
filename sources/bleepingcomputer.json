@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "1eeb769d0de5ee77276829c71d82db5c",
- "last_modified": "Thu, 19 Nov 2026 10:43:24 GMT",
- "checksum": "c19c432be844012c798a1e73bbfbd8d9f20b8f077d24a3c063f2c5a2c3a80df0",
+ "etag": "68c4015bdebdf99be1e3db3cd4e4d609",
+ "last_modified": "Thu, 19 Nov 2026 11:13:25 GMT",
+ "checksum": "91af9580347540674ee1ca0e004697b18a6d3e7abc15d3f4e36c8d72ebb9b67b",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -23,8 +23,8 @@
   "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/": "27ca1a2e6d09985d30c79528",
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/": "d7b8f7f6ff71baab4a753318"
  },
- "last_attempt": "2026-11-19T10:50:41Z",
- "last_success": "2026-11-19T10:50:41Z",
+ "last_attempt": "2026-11-19T11:20:39Z",
+ "last_success": "2026-11-19T11:20:39Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
