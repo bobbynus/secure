@@ -1794,8 +1794,8 @@
   "CVE-2026-90817": "65a3ff0821c757e8f6b3f1f5",
   "CVE-2026-90436": "65a3ff0821c757e8f6b3f1f5"
  },
- "last_attempt": "2026-11-19T23:10:39Z",
- "last_success": "2026-11-19T23:10:39Z",
+ "last_attempt": "2026-11-19T23:40:42Z",
+ "last_success": "2026-11-19T23:40:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
