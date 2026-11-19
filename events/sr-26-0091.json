@@ -1,0 +1,74 @@
+{
+ "id": "sr-26-0091",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Microsoft",
+ "products": [],
+ "product_names": [
+  "Microsoft Edge (Chromium-based)"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-118331"
+  ],
+  "advisory": [],
+  "kb": []
+ },
+ "severity": "critical",
+ "cvss": null,
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Chromium: CVE-2026-118331 Improper input validation in FileAPI",
+ "summary_hint": "Microsoft Edge (Chromium-based). Microsoft 2026-Oct security update.",
+ "created_at": "2026-11-19T08:40:42Z",
+ "updated_at": "2026-11-19T08:40:42Z",
+ "event_date": "2026-11-19T08:40:42Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2026-118331",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118331",
+   "title": "Chromium: CVE-2026-118331 Improper input validation in FileAPI",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-19"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-19T08:40:42Z",
+   "kind": "created",
+   "facts": {
+    "reason": "critical severity in infrastructure product"
+   },
+   "source": "msrc:CVE-2026-118331"
+  }
+ ],
+ "related": [],
+ "reason": "critical severity in infrastructure product",
+ "texts": {
+  "msrc:CVE-2026-118331": "Chromium: CVE-2026-118331 Improper input validation in FileAPI\nMicrosoft Edge (Chromium-based). Microsoft 2026-Oct security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

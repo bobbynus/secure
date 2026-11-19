@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Windows Shell Spoofing Vulnerability (CVE-2026-32202)",
+  "summary": "A spoofing vulnerability exists in the Windows Shell. Microsoft reports exploitation in the wild.",
+  "impact": "An attacker can exploit this vulnerability to conduct spoofing attacks. Details on preconditions and specific network access requirements are not provided in the sources.",
+  "fix": "Microsoft has released updates addressing the vulnerability. Refer to KBs `KB5099414`, `KB5099444`, `KB5099445`, `KB5099535`, `KB5099536`, `KB5099538`, `KB5099539`, `KB5099540`, `KB5101649`, and `KB5101650`.",
+  "workaround": null,
+  "checks": [
+   "Inventory systems running Windows 10 and Windows 11 across all affected versions.",
+   "Verify the application of Microsoft security updates including `KB5099414`, `KB5099444`, `KB5099445`, `KB5099535`, `KB5099536`, `KB5099538`, `KB5099539`, `KB5099540`, `KB5101649`, and `KB5101650`."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: Уязвимость подделки в Windows Shell (CVE-2026-32202)",
+  "summary": "В Windows Shell обнаружена уязвимость подделки (spoofing). Microsoft сообщает об эксплуатации уязвимости.",
+  "impact": "Злоумышленник может использовать эту уязвимость для проведения атак с подделкой данных. Подробные сведения о предварительных условиях и требованиях к сетевому доступу в источниках не приводятся.",
+  "fix": "Microsoft выпустила обновления, устраняющие уязвимость. См. базы знаний `KB5099414`, `KB5099444`, `KB5099445`, `KB5099535`, `KB5099536`, `KB5099538`, `KB5099539`, `KB5099540`, `KB5101649` и `KB5101650`.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем под управлением Windows 10 и Windows 11 всех затронутых версий.",
+   "Проверьте установку обновлений безопасности Microsoft, включая `KB5099414`, `KB5099444`, `KB5099445`, `KB5099535`, `KB5099536`, `KB5099538`, `KB5099539`, `KB5099540`, `KB5101649` и `KB5101650`."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Windows Shell Spoofing-Schwachstelle (CVE-2026-32202)",
+  "summary": "Im Windows Shell existiert eine Spoofing-Schwachstelle. Microsoft berichtet über eine Ausnutzung.",
+  "impact": "Ein Angreifer kann diese Schwachstelle für Spoofing-Angriffe ausnutzen. Details zu den Voraussetzungen und Netzwerkzugriffsanforderungen werden in den Quellen nicht genannt.",
+  "fix": "Microsoft hat Updates zur Behebung der Schwachstelle bereitgestellt. Siehe KBs `KB5099414`, `KB5099444`, `KB5099445`, `KB5099535`, `KB5099536`, `KB5099538`, `KB5099539`, `KB5099540`, `KB5101649` und `KB5101650`.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Systeme mit Windows 10 und Windows 11 in allen betroffenen Versionen.",
+   "Überprüfen Sie die Installation der Microsoft-Sicherheitsupdates, einschließlich `KB5099414`, `KB5099444`, `KB5099445`, `KB5099535`, `KB5099536`, `KB5099538`, `KB5099539`, `KB5099540`, `KB5101649` und `KB5101650`."
+  ],
+  "regression": null
+ }
+}

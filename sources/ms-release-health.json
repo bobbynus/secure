@@ -1,0 +1,19 @@
+{
+ "id": "ms-release-health",
+ "etag": null,
+ "last_modified": null,
+ "checksum": null,
+ "cursor": {},
+ "seen": {
+  "wrh-4984": "62f90a56b59da99cccc364f0",
+  "wrh-3721": "cfffa83df47af9e11ceed1d1",
+  "wrh-5031": "be45546006c23547887a311d",
+  "wrh-5047": "ad4fe474aecaf3af07b21503"
+ },
+ "last_attempt": "2026-11-19T08:40:42Z",
+ "last_success": "2026-11-19T08:40:42Z",
+ "last_error": null,
+ "consecutive_failures": 0,
+ "bootstrapped": true,
+ "items_total": 4
+}

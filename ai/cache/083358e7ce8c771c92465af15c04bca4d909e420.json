@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: CVE-2026-21525 Denial of Service",
+  "summary": "Microsoft Windows Remote Access Connection Manager contains a denial of service vulnerability tracked as CVE-2026-21525 with a CVSS score of 6.2.",
+  "impact": "An attacker can cause a denial of service condition in the Remote Access Connection Manager. Vendor reports exploitation.",
+  "fix": "Apply updates referenced by KB5075897, KB5075899, KB5075904, KB5075906, KB5075912, KB5075941, KB5075942, KB5075943, KB5075970, KB5075971, KB5075999, KB5077179, KB5077181, or KB5077212.",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for vulnerability CVE-2026-21525",
+   "Verify the installation of updates corresponding to the provided KB articles"
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость типа «отказ в обслуживании» CVE-2026-21525",
+  "summary": "Диспетчер подключений удаленного доступа Microsoft Windows содержит уязвимость типа «отказ в обслуживании» CVE-2026-21525 с оценкой CVSS 6.2.",
+  "impact": "Злоумышленник может вызвать отказ в обслуживании в Диспетчере подключений удаленного доступа. Производитель сообщает об эксплуатации.",
+  "fix": "Установите обновления, указанные в KB5075897, KB5075899, KB5075904, KB5075906, KB5075912, KB5075941, KB5075942, KB5075943, KB5075970, KB5075971, KB5075999, KB5077179, KB5077181 или KB5077212.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на уязвимость CVE-2026-21525",
+   "Убедитесь в установке обновлений, соответствующих указанным номерам KB"
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Denial-of-Service-Schwachstelle CVE-2026-21525",
+  "summary": "Der Windows Remote Access Connection Manager enthält eine Denial-of-Service-Schwachstelle (CVE-2026-21525) mit einem CVSS-Score von 6.2.",
+  "impact": "Ein Angreifer kann einen Denial-of-Service-Zustand im Remote Access Connection Manager verursachen. Der Hersteller meldet eine Ausnutzung.",
+  "fix": "Installieren Sie die Updates aus KB5075897, KB5075899, KB5075904, KB5075906, KB5075912, KB5075941, KB5075942, KB5075943, KB5075970, KB5075971, KB5075999, KB5077179, KB5077181 oder KB5077212.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Systeme auf die Schwachstelle CVE-2026-21525",
+   "Überprüfen Sie die Installation der Updates entsprechend den angegebenen KB-Artikeln"
+  ],
+  "regression": null
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "id": "sr-26-0070",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Microsoft",
+ "products": [],
+ "product_names": [
+  "Azure Virtual Network Gateway"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-40411"
+  ],
+  "advisory": [],
+  "kb": []
+ },
+ "severity": "critical",
+ "cvss": {
+  "score": 9.9,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Azure Virtual Network Gateway Remote Code Execution Vulnerability",
+ "summary_hint": "Azure Virtual Network Gateway. Microsoft 2026-May security update.",
+ "created_at": "2026-11-19T08:40:42Z",
+ "updated_at": "2026-11-19T08:40:42Z",
+ "event_date": "2026-11-19T08:40:42Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2026-40411",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40411",
+   "title": "Azure Virtual Network Gateway Remote Code Execution Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-19"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-19T08:40:42Z",
+   "kind": "created",
+   "facts": {
+    "reason": "critical severity in infrastructure product"
+   },
+   "source": "msrc:CVE-2026-40411"
+  }
+ ],
+ "related": [],
+ "reason": "critical severity in infrastructure product",
+ "texts": {
+  "msrc:CVE-2026-40411": "Azure Virtual Network Gateway Remote Code Execution Vulnerability\nAzure Virtual Network Gateway. Microsoft 2026-May security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "id": "sr-26-0028",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "sharepoint-server"
+ ],
+ "product_names": [
+  "Microsoft SharePoint Enterprise Server 2016",
+  "Microsoft SharePoint Server 2019",
+  "Microsoft SharePoint Server Subscription Edition"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-32201"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5002853",
+   "KB5002854",
+   "KB5002861"
+  ]
+ },
+ "severity": "high",
+ "cvss": {
+  "score": 6.5,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": true,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Microsoft SharePoint Server Spoofing Vulnerability",
+ "summary_hint": "Microsoft Office SharePoint. Microsoft 2026-Apr security update.",
+ "created_at": "2026-11-19T08:40:42Z",
+ "updated_at": "2026-11-19T08:40:42Z",
+ "event_date": "2026-11-19T08:40:42Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2026-32201",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32201",
+   "title": "Microsoft SharePoint Server Spoofing Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-19"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-19T08:40:42Z",
+   "kind": "created",
+   "facts": {
+    "reason": "vendor reports exploitation"
+   },
+   "source": "msrc:CVE-2026-32201"
+  }
+ ],
+ "related": [],
+ "reason": "vendor reports exploitation",
+ "texts": {
+  "msrc:CVE-2026-32201": "Microsoft SharePoint Server Spoofing Vulnerability\nMicrosoft Office SharePoint. Microsoft 2026-Apr security update."
+ },
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "d5fd50e34207a956df2a0c27",
+  "texts": {
+   "en": {
+    "title": "Microsoft SharePoint Server: CVE-2026-32201 Spoofing Vulnerability",
+    "summary": "Microsoft SharePoint Server suffers from a spoofing vulnerability tracked as CVE-2026-32201 with a CVSS score of 6.5. Exploitation has been reported.",
+    "impact": "The vulnerability allows spoofing. Exploitation has been reported by the vendor.",
+    "fix": "Updates are available via KB5002853, KB5002854, and KB5002861.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft SharePoint Server installations for CVE-2026-32201 exposure.",
+     "Verify the application of updates KB5002853, KB5002854, and KB5002861."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft SharePoint Server: уязвимость спуфинга CVE-2026-32201",
+    "summary": "В Microsoft SharePoint Server обнаружена уязвимость спуфинга CVE-2026-32201 с оценкой CVSS 6.5. Сообщается об эксплуатации.",
+    "impact": "Уязвимость позволяет осуществлять спуфинг. Вендор сообщил об эксплуатации.",
+    "fix": "Доступны обновления через KB5002853, KB5002854 и KB5002861.",
+    "workaround": null,
+    "checks": [
+     "Проверьте установки Microsoft SharePoint Server на предмет подверженности CVE-2026-32201.",
+     "Убедитесь в применении обновлений KB5002853, KB5002854 и KB5002861."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft SharePoint Server: Spoofing-Schwachstelle CVE-2026-32201",
+    "summary": "Microsoft SharePoint Server weist eine Spoofing-Schwachstelle (CVE-2026-32201) mit einem CVSS-Score von 6.5 auf. Eine Ausnutzung wurde gemeldet.",
+    "impact": "Die Schwachstelle ermöglicht Spoofing. Eine Ausnutzung wurde vom Hersteller gemeldet.",
+    "fix": "Updates sind über KB5002853, KB5002854 und KB5002861 verfügbar.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft SharePoint Server-Installationen auf Betroffenheit von CVE-2026-32201.",
+     "Überprüfen Sie die Anwendung der Updates KB5002853, KB5002854 und KB5002861."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T08:41:34Z",
+  "slugs": {
+   "ru": "microsoft-sharepoint-server-uyazvimost-spufinga-cve-2026-32201",
+   "de": "microsoft-sharepoint-server-spoofing-schwachstelle-cve-2026",
+   "en": "microsoft-sharepoint-server-cve-2026-32201-spoofing"
+  },
+  "published_at": "2026-11-19T08:41:34Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 1
+ }
+}

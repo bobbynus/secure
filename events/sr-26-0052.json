@@ -1,0 +1,154 @@
+{
+ "id": "sr-26-0052",
+ "category": "vulnerability",
+ "priority": "critical",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "windows-10",
+  "windows-11"
+ ],
+ "product_names": [
+  "Windows 10 Version 1607 for 32-bit Systems",
+  "Windows 10 Version 1607 for x64-based Systems",
+  "Windows 10 Version 1809 for 32-bit Systems",
+  "Windows 10 Version 1809 for x64-based Systems",
+  "Windows 10 Version 21H2 for 32-bit Systems",
+  "Windows 10 Version 21H2 for ARM64-based Systems",
+  "Windows 10 Version 21H2 for x64-based Systems",
+  "Windows 10 Version 22H2 for 32-bit Systems",
+  "Windows 10 Version 22H2 for ARM64-based Systems",
+  "Windows 10 Version 22H2 for x64-based Systems",
+  "Windows 11 Version 23H2 for ARM64-based Systems",
+  "Windows 11 Version 23H2 for x64-based Systems"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-21525"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5075897",
+   "KB5075899",
+   "KB5075904",
+   "KB5075906",
+   "KB5075912",
+   "KB5075941",
+   "KB5075942",
+   "KB5075943",
+   "KB5075970",
+   "KB5075971",
+   "KB5075999",
+   "KB5077179",
+   "KB5077181",
+   "KB5077212"
+  ]
+ },
+ "severity": "medium",
+ "cvss": {
+  "score": 6.2,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": true,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Windows Remote Access Connection Manager Denial of Service Vulnerability",
+ "summary_hint": "Windows Remote Access Connection Manager. Microsoft 2026-Feb security update.",
+ "created_at": "2026-11-19T08:40:42Z",
+ "updated_at": "2026-11-19T08:40:42Z",
+ "event_date": "2026-11-19T08:40:42Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2026-21525",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21525",
+   "title": "Windows Remote Access Connection Manager Denial of Service Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-19"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-19T08:40:42Z",
+   "kind": "created",
+   "facts": {
+    "reason": "vendor reports exploitation"
+   },
+   "source": "msrc:CVE-2026-21525"
+  }
+ ],
+ "related": [
+  "sr-26-0047",
+  "sr-26-0048",
+  "sr-26-0049",
+  "sr-26-0050"
+ ],
+ "reason": "vendor reports exploitation",
+ "texts": {
+  "msrc:CVE-2026-21525": "Windows Remote Access Connection Manager Denial of Service Vulnerability\nWindows Remote Access Connection Manager. Microsoft 2026-Feb security update."
+ },
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "fcd3b82a4d6df4a40ed17000",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: CVE-2026-21525 Denial of Service",
+    "summary": "Microsoft Windows Remote Access Connection Manager contains a denial of service vulnerability tracked as CVE-2026-21525 with a CVSS score of 6.2.",
+    "impact": "An attacker can cause a denial of service condition in the Remote Access Connection Manager. Vendor reports exploitation.",
+    "fix": "Apply updates referenced by KB5075897, KB5075899, KB5075904, KB5075906, KB5075912, KB5075941, KB5075942, KB5075943, KB5075970, KB5075971, KB5075999, KB5077179, KB5077181, or KB5077212.",
+    "workaround": null,
+    "checks": [
+     "Check Windows systems for vulnerability CVE-2026-21525",
+     "Verify the installation of updates corresponding to the provided KB articles"
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость типа «отказ в обслуживании» CVE-2026-21525",
+    "summary": "Диспетчер подключений удаленного доступа Microsoft Windows содержит уязвимость типа «отказ в обслуживании» CVE-2026-21525 с оценкой CVSS 6.2.",
+    "impact": "Злоумышленник может вызвать отказ в обслуживании в Диспетчере подключений удаленного доступа. Производитель сообщает об эксплуатации.",
+    "fix": "Установите обновления, указанные в KB5075897, KB5075899, KB5075904, KB5075906, KB5075912, KB5075941, KB5075942, KB5075943, KB5075970, KB5075971, KB5075999, KB5077179, KB5077181 или KB5077212.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на уязвимость CVE-2026-21525",
+     "Убедитесь в установке обновлений, соответствующих указанным номерам KB"
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Denial-of-Service-Schwachstelle CVE-2026-21525",
+    "summary": "Der Windows Remote Access Connection Manager enthält eine Denial-of-Service-Schwachstelle (CVE-2026-21525) mit einem CVSS-Score von 6.2.",
+    "impact": "Ein Angreifer kann einen Denial-of-Service-Zustand im Remote Access Connection Manager verursachen. Der Hersteller meldet eine Ausnutzung.",
+    "fix": "Installieren Sie die Updates aus KB5075897, KB5075899, KB5075904, KB5075906, KB5075912, KB5075941, KB5075942, KB5075943, KB5075970, KB5075971, KB5075999, KB5077179, KB5077181 oder KB5077212.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows-Systeme auf die Schwachstelle CVE-2026-21525",
+     "Überprüfen Sie die Installation der Updates entsprechend den angegebenen KB-Artikeln"
+    ],
+    "regression": null
+   }
+  },
+  "affected": [],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T08:41:34Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-tipa-otkaz-v-obsluzhivanii-cve",
+   "de": "microsoft-windows-denial-of-service-schwachstelle-cve-2026-21525",
+   "en": "microsoft-windows-cve-2026-21525-denial-of-service"
+  },
+  "published_at": "2026-11-19T08:41:34Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 1
+ }
+}

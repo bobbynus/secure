@@ -1,0 +1,81 @@
+{
+ "id": "sr-26-0027",
+ "category": "update-issue",
+ "priority": "medium",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "exchange-server",
+  "windows-server"
+ ],
+ "product_names": [
+  "Windows Server 2025",
+  "Windows Server 2022",
+  "Windows Server 2019",
+  "Windows Server 2016"
+ ],
+ "identifiers": {
+  "cve": [],
+  "advisory": [],
+  "kb": [
+   "KB5126655",
+   "KB5131090"
+  ]
+ },
+ "severity": null,
+ "cvss": null,
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Users might be unable to sign in to OWA or send emails on Exchange Server",
+ "summary_hint": "Status: Resolved KB5131090. Originating update: OS Build 20348.5761 KB5126655 2026-10-13.\nAfter installing the October 2026 Windows security update (KB5126655), some on-premises Exchange servers might experience issues accessing or sending email. Users might be unable to sign in to Outlook on the web (OWA), or email messages sent from Outlook might remain in the Outbox and not be delivered. Additionally, Exchange might experience issues accessing mailboxes during mailbox replication.\nIn some affected configurations, Exchange Server OWA might fail with an error MapiExceptionMdbOffline: Unable to make connection to the server. (hr=0x80004005, ec=1142) with Event ID 1006 logged in the application log. Another reported symptom is growing email queues. Installing the October 2026 Exchange server security updates isn’t required for these issues to occur.\nResolution: This issue was resolved by Windows updates released November 10, 2026 (KB5131090), and updates released after that date. We recommend you install the latest update for your device as it contains important improvements and issue resolutions, including this one.\nIf you install an update released November 10, 2026 (KB5131090) or later, you do not need to use a workaround for this issue. If you are using an update released before November 10, and have this issue, you have the option to apply the following workaround.\nWorkaround: This issue can be temporarily mitigated by modifying the registry key as described in Exchange s",
+ "created_at": "2026-11-19T08:40:42Z",
+ "updated_at": "2026-11-19T08:40:42Z",
+ "event_date": "2026-11-09T19:07:00-08:00",
+ "sources": [
+  {
+   "source_id": "ms-release-health",
+   "item_key": "wrh-5047",
+   "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2022#5047msgdesc",
+   "title": "Users might be unable to sign in to OWA or send emails on Exchange Server",
+   "publisher": "Windows Release Health",
+   "kind": "vendor",
+   "date": "2026-11-09"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-19T08:40:42Z",
+   "kind": "created",
+   "facts": {
+    "reason": "update regression"
+   },
+   "source": "ms-release-health:wrh-5047"
+  }
+ ],
+ "related": [],
+ "reason": "update regression",
+ "texts": {
+  "ms-release-health:wrh-5047": "Users might be unable to sign in to OWA or send emails on Exchange Server\nStatus: Resolved KB5131090. Originating update: OS Build 20348.5761 KB5126655 2026-10-13.\nAfter installing the October 2026 Windows security update (KB5126655), some on-premises Exchange servers might experience issues accessing or sending email. Users might be unable to sign in to Outlook on the web (OWA), or email messages sent from Outlook might remain in the Outbox and not be delivered. Additionally, Exchange might experience issues accessing mailboxes during mailbox replication.\nIn some affected configurations, Exchange Server OWA might fail with an error MapiExceptionMdbOffline: Unable to make connection to the server. (hr=0x80004005, ec=1142) with Event ID 1006 logged in the application log. Another reported symptom is growing email queues. Installing the October 2026 Exchange server security updates isn’t required for these issues to occur.\nResolution: This issue was resolved by Windows updates released November 10, 2026 (KB5131090), and updates released after that date. We recommend you install the latest update for your device as it contains important improvements and issue resolutions, including this one.\nIf you install an update released November 10, 2026 (KB5131090) or later, you do not need to use a workaround for this issue. If you are using an update released before November 10, and have this issue, you have the option to apply the following workaround.\nWorkaround: This issue can be temporarily mitigated by modifying the registry key as described in Exchange servers may become unstable after installation of October 2026 Windows updates.\nThe October 2026 update introduced a default limit on the amount of memory used by Endpoint Mapper when handling Endpoint Lookup calls. For workloads such as Exchange Server, the default limit of 512 simultaneous Endpoint Lookup calls might not be sufficient under heavy load. Administrators can use this registry setting to increase the maximum number of simultaneous Endpoint Lookup calls, which increases the amount of memory that Endpoint Mapper can use.\nAffected platforms:\n​Client: None\n​Server: Windows Server 2025; Windows Server 2022; Windows Server 2019; Windows Server 2016"
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

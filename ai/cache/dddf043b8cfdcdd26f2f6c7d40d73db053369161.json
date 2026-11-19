@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft SharePoint: CVE-2026-58644 Remote Code Execution Vulnerability",
+  "summary": "Microsoft SharePoint Server contains a critical remote code execution vulnerability rated CVSS 9.8, with vendor-reported exploitation.",
+  "impact": "An attacker can achieve remote code execution. The vendor reports exploitation.",
+  "fix": "Apply the updates provided by Microsoft (including KB5002873, KB5002874, KB5002880).",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft SharePoint Server instances for vulnerability status.",
+   "Verify if updates KB5002873, KB5002874, or KB5002880 are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода CVE-2026-58644",
+  "summary": "Microsoft SharePoint Server содержит критическую уязвимость удаленного выполнения кода с оценкой CVSS 9.8, эксплуатация которой подтверждена вендором.",
+  "impact": "Злоумышленник может выполнить удаленный код. Вендор сообщает об эксплуатации.",
+  "fix": "Установите обновления, предоставленные Microsoft (включая KB5002873, KB5002874, KB5002880).",
+  "workaround": null,
+  "checks": [
+   "Проверьте инсталляции Microsoft SharePoint Server на наличие уязвимости.",
+   "Убедитесь в установке обновлений KB5002873, KB5002874 или KB5002880."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft SharePoint: Remotecodeausführung CVE-2026-58644",
+  "summary": "Microsoft SharePoint Server enthält eine kritische Schwachstelle zur Remotecodeausführung mit einem CVSS-Wert von 9.8, deren Ausnutzung vom Hersteller gemeldet wurde.",
+  "impact": "Ein Angreifer kann Remotecode ausführen. Der Hersteller meldet eine Ausnutzung.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5002873, KB5002874, KB5002880).",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft SharePoint Server-Instanzen auf den Schwachstellenstatus.",
+   "Prüfen Sie, ob die Updates KB5002873, KB5002874 oder KB5002880 installiert sind."
+  ],
+  "regression": null
+ }
+}

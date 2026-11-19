@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "SharePoint Server",
+   "versions": "Microsoft 2026-Apr security update",
+   "fixed": null,
+   "evidence": "Microsoft Office SharePoint. Microsoft 2026-Apr security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft SharePoint Server: CVE-2026-32201 Spoofing Vulnerability",
+  "summary": "Microsoft SharePoint Server suffers from a spoofing vulnerability tracked as CVE-2026-32201 with a CVSS score of 6.5. Exploitation has been reported.",
+  "impact": "The vulnerability allows spoofing. Exploitation has been reported by the vendor.",
+  "fix": "Updates are available via KB5002853, KB5002854, and KB5002861.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft SharePoint Server installations for CVE-2026-32201 exposure.",
+   "Verify the application of updates KB5002853, KB5002854, and KB5002861."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft SharePoint Server: уязвимость спуфинга CVE-2026-32201",
+  "summary": "В Microsoft SharePoint Server обнаружена уязвимость спуфинга CVE-2026-32201 с оценкой CVSS 6.5. Сообщается об эксплуатации.",
+  "impact": "Уязвимость позволяет осуществлять спуфинг. Вендор сообщил об эксплуатации.",
+  "fix": "Доступны обновления через KB5002853, KB5002854 и KB5002861.",
+  "workaround": null,
+  "checks": [
+   "Проверьте установки Microsoft SharePoint Server на предмет подверженности CVE-2026-32201.",
+   "Убедитесь в применении обновлений KB5002853, KB5002854 и KB5002861."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft SharePoint Server: Spoofing-Schwachstelle CVE-2026-32201",
+  "summary": "Microsoft SharePoint Server weist eine Spoofing-Schwachstelle (CVE-2026-32201) mit einem CVSS-Score von 6.5 auf. Eine Ausnutzung wurde gemeldet.",
+  "impact": "Die Schwachstelle ermöglicht Spoofing. Eine Ausnutzung wurde vom Hersteller gemeldet.",
+  "fix": "Updates sind über KB5002853, KB5002854 und KB5002861 verfügbar.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft SharePoint Server-Installationen auf Betroffenheit von CVE-2026-32201.",
+   "Überprüfen Sie die Anwendung der Updates KB5002853, KB5002854 und KB5002861."
+  ],
+  "regression": null
+ }
+}

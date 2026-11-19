@@ -1,0 +1,150 @@
+{
+ "id": "sr-26-0100",
+ "category": "vulnerability",
+ "priority": "critical",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "windows-10"
+ ],
+ "product_names": [
+  "Microsoft Edge (Chromium-based)",
+  "Outlook.com",
+  "Windows 10 Version 1607 for 32-bit Systems",
+  "Windows 10 Version 1607 for x64-based Systems",
+  "Windows 10 Version 1809 for 32-bit Systems",
+  "Windows 10 Version 1809 for x64-based Systems",
+  "Windows 10 Version 21H2 for 32-bit Systems",
+  "Windows 10 Version 21H2 for ARM64-based Systems",
+  "Windows 10 Version 21H2 for x64-based Systems",
+  "Windows 10 Version 22H2 for 32-bit Systems",
+  "Windows 10 Version 22H2 for ARM64-based Systems",
+  "Windows 10 Version 22H2 for x64-based Systems"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-96951"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5126646",
+   "KB5126651",
+   "KB5126653",
+   "KB5126655",
+   "KB5126657",
+   "KB5126836",
+   "KB5126868",
+   "KB5127646",
+   "KB5127648"
+  ]
+ },
+ "severity": "high",
+ "cvss": {
+  "score": 8.8,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": true,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Windows Shell Security Feature Bypass Vulnerability",
+ "summary_hint": "Windows Shell. Microsoft 2026-Oct security update.",
+ "created_at": "2026-11-19T08:40:42Z",
+ "updated_at": "2026-11-19T08:40:42Z",
+ "event_date": "2026-11-19T08:40:42Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2026-96951",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96951",
+   "title": "Windows Shell Security Feature Bypass Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-19"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-19T08:40:42Z",
+   "kind": "created",
+   "facts": {
+    "reason": "vendor reports exploitation"
+   },
+   "source": "msrc:CVE-2026-96951"
+  }
+ ],
+ "related": [
+  "sr-26-0076",
+  "sr-26-0077",
+  "sr-26-0079",
+  "sr-26-0096",
+  "sr-26-0097",
+  "sr-26-0099"
+ ],
+ "reason": "vendor reports exploitation",
+ "texts": {
+  "msrc:CVE-2026-96951": "Windows Shell Security Feature Bypass Vulnerability\nWindows Shell. Microsoft 2026-Oct security update."
+ },
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "7b2c3e10ac2649dc4a1bcdf0",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows Shell: CVE-2026-96951 Security Feature Bypass",
+    "summary": "Microsoft released updates addressing a security feature bypass vulnerability in Windows Shell (CVE-2026-96951), with exploitation reported.",
+    "impact": "An attacker can bypass security features in Windows Shell. The vendor reports exploitation.",
+    "fix": "Apply the updates referenced by KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126836, KB5126868, KB5127646, or KB5127648.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows 10 and related systems for missing security updates.",
+     "Verify installation of the corresponding KB updates for CVE-2026-96951."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows Shell: обход функции безопасности CVE-2026-96951",
+    "summary": "Microsoft выпустила обновления, устраняющие уязвимость обхода функции безопасности в Windows Shell (CVE-2026-96951), зафиксирована эксплуатация.",
+    "impact": "Злоумышленник может обойти функции безопасности в Windows Shell. По данным вендора, зафиксирована эксплуатация.",
+    "fix": "Установите обновления, указанные в KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126836, KB5126868, KB5127646 или KB5127648.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows 10 и связанные продукты на отсутствие обновлений безопасности.",
+     "Убедитесь в установке соответствующих обновлений KB для CVE-2026-96951."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows Shell: Sicherheitsfunktionen-Bypass CVE-2026-96951",
+    "summary": "Microsoft hat Updates zur Behebung eines Sicherheitsfunktionen-Bypass in Windows Shell (CVE-2026-96951) veröffentlicht, Ausnutzung ist bekannt.",
+    "impact": "Ein Angreifer kann Sicherheitsfunktionen in Windows Shell umgehen. Der Hersteller meldet Ausnutzung.",
+    "fix": "Installieren Sie die in KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126836, KB5126868, KB5127646 oder KB5127648 genannten Updates.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows 10 und betroffene Systeme hinsichtlich fehlender Sicherheitsupdates.",
+     "Überprüfen Sie die Installation der entsprechenden KB-Updates für CVE-2026-96951."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T08:41:34Z",
+  "slugs": {
+   "ru": "microsoft-windows-shell-obkhod-funktsii-bezopasnosti-cve-2026",
+   "de": "microsoft-windows-shell-sicherheitsfunktionen-bypass-cve-2026",
+   "en": "microsoft-windows-shell-cve-2026-96951-security-feature-bypass"
+  },
+  "published_at": "2026-11-19T08:41:34Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 1
+ }
+}

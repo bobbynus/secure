@@ -1,0 +1,89 @@
+{
+ "id": "sr-26-0026",
+ "category": "update-issue",
+ "priority": "medium",
+ "confirmation": "vendor",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Microsoft",
+ "products": [
+  "windows-10",
+  "windows-11",
+  "windows-server"
+ ],
+ "product_names": [
+  "Windows 11, version 26H1",
+  "Windows 11, version 25H2",
+  "Windows 11, version 24H2",
+  "Windows 11, version 23H2",
+  "Windows 10, version 1809",
+  "Windows 10 Enterprise LTSC 2019",
+  "Windows Server 2025",
+  "Windows Server 2022",
+  "Windows Server, version 1809",
+  "Windows Server 2016",
+  "Windows Server 2012 R2",
+  "Windows Server 2012"
+ ],
+ "identifiers": {
+  "cve": [],
+  "advisory": [],
+  "kb": [
+   "KB5127648"
+  ]
+ },
+ "severity": null,
+ "cvss": null,
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "SQL Server linked server connections might remain open",
+ "summary_hint": "Status: Confirmed. Originating update: OS Build 26200.9711 KB5127648 2026-10-13.\nAfter Windows updates released October 13, 2026 (KB5127648), and later are installed on server devices, connections created by SQL Server linked server queries might remain open after the queries complete. As additional queries are performed, connections to external databases can accumulate instead of closing as expected. This can slow or degrade server performance after prolonged run time.\nThis issue affects SQL Server linked server queries that use OLE DB providers to connect to external databases. Oracle and PostgreSQL connections are among those known to be affected. In affected environments, administrators might observe an increasing number of open connections to external databases, even when the associated SQL Server linked server queries are no longer running.\nIf idle connections can be identified, it is possible to manually close them in order to temporarily relieve server load. It is also possible to temporarily restore system stability by restarting the SQL service. However, these steps can also interrupt active queries or transactions, and the problem can resurface again after sufficient operation time.\nWorkaround: A mitigation is available for affected enterprise devices. To apply this mitigation in your organization, contact Microsoft Support for business.\nNext steps: We will address this issue with an out-of-band update that will be released in the next few days. We will update this",
+ "created_at": "2026-11-19T08:40:42Z",
+ "updated_at": "2026-11-19T08:40:42Z",
+ "event_date": "2026-11-11T15:11:00-08:00",
+ "sources": [
+  {
+   "source_id": "ms-release-health",
+   "item_key": "wrh-3721",
+   "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-25H2#3721msgdesc",
+   "title": "SQL Server linked server connections might remain open",
+   "publisher": "Windows Release Health",
+   "kind": "vendor",
+   "date": "2026-11-11"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-19T08:40:42Z",
+   "kind": "created",
+   "facts": {
+    "reason": "update regression"
+   },
+   "source": "ms-release-health:wrh-3721"
+  }
+ ],
+ "related": [],
+ "reason": "update regression",
+ "texts": {
+  "ms-release-health:wrh-3721": "SQL Server linked server connections might remain open\nStatus: Confirmed. Originating update: OS Build 26200.9711 KB5127648 2026-10-13.\nAfter Windows updates released October 13, 2026 (KB5127648), and later are installed on server devices, connections created by SQL Server linked server queries might remain open after the queries complete. As additional queries are performed, connections to external databases can accumulate instead of closing as expected. This can slow or degrade server performance after prolonged run time.\nThis issue affects SQL Server linked server queries that use OLE DB providers to connect to external databases. Oracle and PostgreSQL connections are among those known to be affected. In affected environments, administrators might observe an increasing number of open connections to external databases, even when the associated SQL Server linked server queries are no longer running.\nIf idle connections can be identified, it is possible to manually close them in order to temporarily relieve server load. It is also possible to temporarily restore system stability by restarting the SQL service. However, these steps can also interrupt active queries or transactions, and the problem can resurface again after sufficient operation time.\nWorkaround: A mitigation is available for affected enterprise devices. To apply this mitigation in your organization, contact Microsoft Support for business.\nNext steps: We will address this issue with an out-of-band update that will be released in the next few days. We will update this documentation once the update is released.\nAffected platforms:\n​Client: Windows 11, version 26H1; Windows 11, version 25H2; Windows 11, version 24H2; Windows 11, version 23H2; Windows 10, version 1809; Windows 10 Enterprise LTSC 2019\n​Server: Windows Server 2025; Windows Server 2022; Windows Server, version 1809; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012"
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

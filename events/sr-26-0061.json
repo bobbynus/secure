@@ -1,0 +1,81 @@
+{
+ "id": "sr-26-0061",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Microsoft",
+ "products": [
+  "kubernetes"
+ ],
+ "product_names": [
+  "Azure Kubernetes Service"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-56163"
+  ],
+  "advisory": [],
+  "kb": []
+ },
+ "severity": "critical",
+ "cvss": {
+  "score": 10.0,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Microsoft Azure Kubernetes Service Elevation of Privilege Vulnerability",
+ "summary_hint": "Microsoft Azure Kubernetes Service. Microsoft 2026-Jul security update.",
+ "created_at": "2026-11-19T08:40:42Z",
+ "updated_at": "2026-11-19T08:40:42Z",
+ "event_date": "2026-11-19T08:40:42Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2026-56163",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56163",
+   "title": "Microsoft Azure Kubernetes Service Elevation of Privilege Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-19"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-19T08:40:42Z",
+   "kind": "created",
+   "facts": {
+    "reason": "critical severity in infrastructure product"
+   },
+   "source": "msrc:CVE-2026-56163"
+  }
+ ],
+ "related": [],
+ "reason": "critical severity in infrastructure product",
+ "texts": {
+  "msrc:CVE-2026-56163": "Microsoft Azure Kubernetes Service Elevation of Privilege Vulnerability\nMicrosoft Azure Kubernetes Service. Microsoft 2026-Jul security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

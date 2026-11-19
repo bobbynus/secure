@@ -1,0 +1,92 @@
+{
+ "id": "sr-26-0066",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "windows-10",
+  "windows-11"
+ ],
+ "product_names": [
+  "Windows 10 Version 21H2 for ARM64-based Systems",
+  "Windows 10 Version 22H2 for ARM64-based Systems",
+  "Windows 11 Version 23H2 for ARM64-based Systems",
+  "Windows 11 Version 24H2 for ARM64-based Systems",
+  "Windows 11 Version 25H2 for ARM64-based Systems",
+  "Windows 11 Version 26H1 for ARM64-based Systems"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2025-10263"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5093998",
+   "KB5094126",
+   "KB5094127",
+   "KB5095051"
+  ]
+ },
+ "severity": "critical",
+ "cvss": {
+  "score": 9.3,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "ARM: CVE-2025-10263 Completion of affected memory accesses might not be guaranteed by completion of a TLBI [kernel]",
+ "summary_hint": "Windows Kernel. Microsoft 2026-Jun security update.",
+ "created_at": "2026-11-19T08:40:42Z",
+ "updated_at": "2026-11-19T08:40:42Z",
+ "event_date": "2026-11-19T08:40:42Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2025-10263",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-10263",
+   "title": "ARM: CVE-2025-10263 Completion of affected memory accesses might not be guaranteed by completion of a TLBI [kernel]",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-19"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-19T08:40:42Z",
+   "kind": "created",
+   "facts": {
+    "reason": "critical severity in infrastructure product"
+   },
+   "source": "msrc:CVE-2025-10263"
+  }
+ ],
+ "related": [],
+ "reason": "critical severity in infrastructure product",
+ "texts": {
+  "msrc:CVE-2025-10263": "ARM: CVE-2025-10263 Completion of affected memory accesses might not be guaranteed by completion of a TLBI [kernel]\nWindows Kernel. Microsoft 2026-Jun security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}
