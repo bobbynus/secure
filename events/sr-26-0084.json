@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-110149": "Chromium CVE-2026-110149: Use after free\nMicrosoft Edge (Chromium-based). Microsoft 2026-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "3ba5d3a44281ab89f1d5c051",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: CVE-2026-110149 Use-After-Free Vulnerability",
+    "summary": "Microsoft Edge (Chromium-based) is affected by a use-after-free vulnerability tracked as CVE-2026-110149 with a critical CVSS score of 9.6.",
+    "impact": "The vulnerability allows potential attackers to cause unspecified impacts related to a use-after-free defect in Microsoft Edge (Chromium-based).",
+    "fix": "The sources do not state fixed versions or available updates.",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft Edge (Chromium-based) installations.",
+     "Check systems for exposure to CVE-2026-110149."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: уязвимость использования после освобождения CVE-2026-110149",
+    "summary": "В Microsoft Edge (Chromium-based) обнаружена уязвимость типа use-after-free, получившая идентификатор CVE-2026-110149 и критическую оценку CVSS 9.6.",
+    "impact": "Уязвимость потенциально позволяет злоумышленникам вызвать нежелательные последствия из-за дефекта использования после освобождения памяти в Microsoft Edge (Chromium-based).",
+    "fix": "В источниках не указаны исправленные версии или доступные обновления.",
+    "workaround": null,
+    "checks": [
+     "Проинвентаризируйте установленные экземпляры Microsoft Edge (Chromium-based).",
+     "Проверьте системы на подверженность уязвимости CVE-2026-110149."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: Use-After-Free-Schwachstelle CVE-2026-110149",
+    "summary": "Microsoft Edge (Chromium-based) ist von einer Use-After-Free-Schwachstelle betroffen, die als CVE-2026-110149 mit einem kritischen CVSS-Score von 9.6 geführt wird.",
+    "impact": "Die Schwachstelle ermöglicht potenziellen Angreifern Auswirkungen aufgrund eines Use-After-Free-Defekts in Microsoft Edge (Chromium-based).",
+    "fix": "Die Quellen nennen keine korrigierten Versionen oder Updates.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Microsoft Edge (Chromium-based)-Installationen.",
+     "Überprüfen Sie Systeme auf Betroffenheit durch CVE-2026-110149."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T13:51:07Z",
+  "slugs": {
+   "ru": "microsoft-edge-uyazvimost-ispolzovaniya-posle-osvobozhdeniya",
+   "de": "microsoft-edge-use-after-free-schwachstelle-cve-2026-110149",
+   "en": "microsoft-edge-cve-2026-110149-use-after-free-vulnerability"
+  },
+  "published_at": "2026-11-19T13:51:07Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

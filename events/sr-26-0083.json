@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-110136": "Chromium CVE-2026-110136: Use after free\nMicrosoft Edge (Chromium-based). Microsoft 2026-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "8874695fedd8eab829e9daa6",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge (Chromium-based): Vulnerability in CVE-2026-110136",
+    "summary": "Microsoft Edge (Chromium-based) is affected by a vulnerability involving a use after free flaw tracked as CVE-2026-110136.",
+    "impact": "The sources do not provide detailed impact information beyond the use after free vulnerability.",
+    "fix": "The sources do not state fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check systems for Microsoft Edge (Chromium-based) installations.",
+     "Verify the application version against the Microsoft 2026-Oct security update."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge (Chromium-based): уязвимость CVE-2026-110136",
+    "summary": "Microsoft Edge (Chromium-based) подвержен уязвимости типа use after free, отслеживаемой как CVE-2026-110136.",
+    "impact": "Источники не предоставляют подробной информации о последствиях, кроме наличия уязвимости use after free.",
+    "fix": "Источники не приводят исправленных версий.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленного Microsoft Edge (Chromium-based).",
+     "Сверьте версию приложения с обновлением безопасности Microsoft 2026-Oct."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge (Chromium-based): Schwachstelle CVE-2026-110136",
+    "summary": "Microsoft Edge (Chromium-based) ist von einer als Use-After-Free bekannten Schwachstelle mit der Kennung CVE-2026-110136 betroffen.",
+    "impact": "Die Quellen nennen keine detaillierten Auswirkungen außer der Use-After-Free-Schwachstelle.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf Installationen von Microsoft Edge (Chromium-based).",
+     "Überprüfen Sie die Anwendungsversion anhand des Microsoft 2026-Oct Security Updates."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T13:51:07Z",
+  "slugs": {
+   "ru": "microsoft-edge-chromium-based-uyazvimost-cve-2026-110136",
+   "de": "microsoft-edge-chromium-based-schwachstelle-cve-2026-110136",
+   "en": "microsoft-edge-chromium-based-vulnerability-in-cve-2026-110136"
+  },
+  "published_at": "2026-11-19T13:51:07Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

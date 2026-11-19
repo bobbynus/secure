@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Oct security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Oct security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: CVE-2026-106382 use-after-free vulnerability",
+  "summary": "Microsoft Edge (Chromium-based) is affected by a use-after-free vulnerability tracked as CVE-2026-106382.",
+  "impact": "The impact is not detailed in the sources beyond the use-after-free weakness.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Edge (Chromium-based) installations.",
+   "Check systems for the Microsoft 2026-Oct security update context mentioned in the advisory."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: уязвимость use-after-free CVE-2026-106382",
+  "summary": "Microsoft Edge (Chromium-based) подвержен уязвимости use-after-free, отслеживаемой под идентификатором CVE-2026-106382.",
+  "impact": "Последствия не детализированы в источниках, помимо уязвимости use-after-free.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установленных экземпляров Microsoft Edge (Chromium-based).",
+   "Проверьте системы на предмет контекста обновления безопасности Microsoft 2026-Oct, упомянутого в бюллетене."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: Use-After-Free-Schwachstelle CVE-2026-106382",
+  "summary": "Microsoft Edge (Chromium-based) ist von einer Use-After-Free-Schwachstelle betroffen, die als CVE-2026-106382 geführt wird.",
+  "impact": "Die Auswirkungen werden in den Quellen über die Use-After-Free-Schwachstelle hinaus nicht beschrieben.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Microsoft Edge (Chromium-based) Installationen.",
+   "Überprüfen Sie Systeme auf den im Advisory genannten Kontext des Microsoft 2026-Oct Sicherheitsupdates."
+  ],
+  "regression": null
+ }
+}

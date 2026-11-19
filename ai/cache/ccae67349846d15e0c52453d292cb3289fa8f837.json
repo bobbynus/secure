@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Oct security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Oct security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge (Chromium-based): Vulnerability in CVE-2026-110136",
+  "summary": "Microsoft Edge (Chromium-based) is affected by a vulnerability involving a use after free flaw tracked as CVE-2026-110136.",
+  "impact": "The sources do not provide detailed impact information beyond the use after free vulnerability.",
+  "fix": "The sources do not state fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check systems for Microsoft Edge (Chromium-based) installations.",
+   "Verify the application version against the Microsoft 2026-Oct security update."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge (Chromium-based): уязвимость CVE-2026-110136",
+  "summary": "Microsoft Edge (Chromium-based) подвержен уязвимости типа use after free, отслеживаемой как CVE-2026-110136.",
+  "impact": "Источники не предоставляют подробной информации о последствиях, кроме наличия уязвимости use after free.",
+  "fix": "Источники не приводят исправленных версий.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие установленного Microsoft Edge (Chromium-based).",
+   "Сверьте версию приложения с обновлением безопасности Microsoft 2026-Oct."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge (Chromium-based): Schwachstelle CVE-2026-110136",
+  "summary": "Microsoft Edge (Chromium-based) ist von einer als Use-After-Free bekannten Schwachstelle mit der Kennung CVE-2026-110136 betroffen.",
+  "impact": "Die Quellen nennen keine detaillierten Auswirkungen außer der Use-After-Free-Schwachstelle.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf Installationen von Microsoft Edge (Chromium-based).",
+   "Überprüfen Sie die Anwendungsversion anhand des Microsoft 2026-Oct Security Updates."
+  ],
+  "regression": null
+ }
+}
