@@ -85,21 +85,62 @@
  "texts": {
   "msrc:CVE-2026-50380": "Windows GDI+ Remote Code Execution Vulnerability\nWindows GDI+. Microsoft 2026-Jul security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "a83497e3bc660d1a3e0f111f",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Remote Code Execution Vulnerability in GDI+",
+    "summary": "A critical remote code execution vulnerability affects Microsoft Windows GDI+. Microsoft released security updates addressing the issue.",
+    "impact": "An attacker can achieve remote code execution on vulnerable systems.",
+    "fix": "Apply the updates provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Check Windows systems for GDI+ exposure and missing updates",
+     "Verify installation of security updates"
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в GDI+",
+    "summary": "Критическая уязвимость удаленного выполнения кода затрагивает Microsoft Windows GDI+. Microsoft выпустила обновления безопасности для устранения проблемы.",
+    "impact": "Злоумышленник может добиться удаленного выполнения кода на уязвимых системах.",
+    "fix": "Установите обновления, предоставленные Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на уязвимость в GDI+ и отсутствие обновлений",
+     "Убедитесь в установке обновлений безопасности"
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Schwachstelle zur RCE in GDI+",
+    "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft Microsoft Windows GDI+. Microsoft hat Sicherheitsupdates zur Behebung veröffentlicht.",
+    "impact": "Ein Angreifer kann auf anfälligen Systemen Remotecode ausführen.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows-Systeme auf GDI+-Betroffenheit und fehlende Updates",
+     "Überprüfen Sie die Installation der Sicherheitsupdates"
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T10:51:01Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-gdi",
+   "de": "microsoft-windows-schwachstelle-zur-rce-in-gdi",
+   "en": "microsoft-windows-remote-code-execution-vulnerability-in-gdi"
+  },
+  "published_at": "2026-11-19T10:51:01Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

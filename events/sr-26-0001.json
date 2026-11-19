@@ -1,7 +1,7 @@
 {
  "id": "sr-26-0001",
  "category": "vulnerability",
- "priority": "high",
+ "priority": "critical",
  "confirmation": "official",
  "lifecycle": "confirmed",
  "fix": "unknown",
@@ -14,7 +14,9 @@
   "cve": [
    "CVE-2026-115731"
   ],
-  "advisory": [],
+  "advisory": [
+   "WID-SEC-2026-4641"
+  ],
   "kb": []
  },
  "severity": null,
@@ -31,7 +33,7 @@
  "title_hint": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
  "summary_hint": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet’s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by submitting a report containing a crafted rich-data type through a PUT request. If the certificate authority automatically signs requests without strong verification, an unauthenticated network attacker can obtain a valid certificate and exploit the vulnerability.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
  "created_at": "2026-11-18T10:10:19Z",
- "updated_at": "2026-11-18T10:10:19Z",
+ "updated_at": "2026-11-19T10:50:41Z",
  "event_date": "2026-11-17T00:00:00Z",
  "sources": [
   {
@@ -41,6 +43,15 @@
    "title": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
    "publisher": "CISA Known Exploited Vulnerabilities",
    "kind": "kev",
+   "date": "2026-11-17"
+  },
+  {
+   "source_id": "cert-bund-wid",
+   "item_key": "WID-SEC-W-2026-4641",
+   "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4641",
+   "title": "Puppet: Schwachstelle ermöglicht Ausführen von beliebigem Programmcode mit den Rechten des Dienstes",
+   "publisher": "CERT-Bund (BSI) WID security advisories",
+   "kind": "cert",
    "date": "2026-11-17"
   }
  ],
@@ -52,11 +63,22 @@
     "reason": "added to CISA KEV"
    },
    "source": "cisa-kev:CVE-2026-115731"
+  },
+  {
+   "date": "2026-11-19T10:50:41Z",
+   "kind": "status",
+   "facts": {
+    "priority": "critical",
+    "confirmation": "official"
+   },
+   "source": "cert-bund-wid:WID-SEC-W-2026-4641"
   }
  ],
  "related": [],
  "reason": "added to CISA KEV",
- "texts": {},
+ "texts": {
+  "cert-bund-wid:WID-SEC-W-2026-4641": "Puppet: Schwachstelle ermöglicht Ausführen von beliebigem Programmcode mit den Rechten des Dienstes\nEin entfernter, authentisierter Angreifer kann eine Schwachstelle in Puppet ausnutzen, um beliebigen Programmcode mit den Rechten des Dienstes auszuführen.\nPuppet ist ein Werkzeug für das System-Management - es soll das Configuration Management zentralisieren und automatisieren."
+ },
  "publish_state": "published",
  "ai": {
   "input_hash": "fb8a90cb68623bbdedf15e06",

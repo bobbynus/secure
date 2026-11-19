@@ -60,21 +60,59 @@
  "texts": {
   "msrc:CVE-2026-48561": "Microsoft Edge Copilot Remote Code Execution Vulnerability\nCopilot Chat (Microsoft Edge). Microsoft 2026-Jul security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "a1e1130664a8fd6a7c87a28f",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge Copilot: Remote Code Execution Vulnerability",
+    "summary": "A remote code execution vulnerability exists in Microsoft Edge Copilot for Android and iOS (CVE-2026-48561).",
+    "impact": "The vulnerability allows for remote code execution.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft Edge Copilot installations on Android and iOS for the reported vulnerability."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge Copilot: уязвимость удаленного выполнения кода",
+    "summary": "В Microsoft Edge Copilot для Android и iOS обнаружена уязвимость удаленного выполнения кода (CVE-2026-48561).",
+    "impact": "Уязвимость позволяет выполнить удаленный код.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте установленные экземпляры Microsoft Edge Copilot на Android и iOS на наличие данной уязвимости."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge Copilot: Remotecodeausführung",
+    "summary": "In Microsoft Edge Copilot für Android und iOS existiert eine Schwachstelle zur Remotecodeausführung (CVE-2026-48561).",
+    "impact": "Die Schwachstelle ermöglicht die Remotecodeausführung.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft Edge Copilot-Installation auf Android und iOS auf die genannte Schwachstelle."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T10:51:01Z",
+  "slugs": {
+   "ru": "microsoft-edge-copilot-uyazvimost-udalennogo-vypolneniya-koda",
+   "de": "microsoft-edge-copilot-remotecodeausfuehrung",
+   "en": "microsoft-edge-copilot-remote-code-execution-vulnerability"
+  },
+  "published_at": "2026-11-19T10:51:01Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

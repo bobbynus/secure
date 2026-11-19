@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows DHCP Server: Remote Code Execution Vulnerability",
+  "summary": "A critical remote code execution vulnerability exists in Microsoft Windows DHCP Server.",
+  "impact": "An attacker can execute arbitrary code on the affected Windows DHCP Server.",
+  "fix": "Apply the updates provided by Microsoft (including KB5099444, KB5099445, KB5099535, KB5099536, KB5099538, KB5099540).",
+  "workaround": null,
+  "checks": [
+   "Inventory systems running Microsoft Windows DHCP Server.",
+   "Verify if security updates KB5099444, KB5099445, KB5099535, KB5099536, KB5099538, or KB5099540 are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows DHCP Server: уязвимость удаленного выполнения кода",
+  "summary": "В Microsoft Windows DHCP Server обнаружена критическая уязвимость удаленного выполнения кода.",
+  "impact": "Злоумышленник может выполнить произвольный код на затронутом сервере Windows DHCP Server.",
+  "fix": "Установите обновления, предоставленные Microsoft (включая KB5099444, KB5099445, KB5099535, KB5099536, KB5099538, KB5099540).",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем под управлением Microsoft Windows DHCP Server.",
+   "Проверьте наличие установленных обновлений безопасности KB5099444, KB5099445, KB5099535, KB5099536, KB5099538 или KB5099540."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows DHCP Server: Schwachstelle zur RCE",
+  "summary": "Im Microsoft Windows DHCP Server existiert eine kritische Schwachstelle zur Remote-Code-Ausführung.",
+  "impact": "Ein Angreifer kann beliebigen Code auf dem betroffenen Windows DHCP Server ausführen.",
+  "fix": "Installieren Sie die von Microsoft bereitgestellten Updates (einschließlich KB5099444, KB5099445, KB5099535, KB5099536, KB5099538, KB5099540).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Systeme, auf denen Microsoft Windows DHCP Server ausgeführt wird.",
+   "Überprüfen Sie, ob die Sicherheitsupdates KB5099444, KB5099445, KB5099535, KB5099536, KB5099538 oder KB5099540 installiert sind."
+  ],
+  "regression": null
+ }
+}

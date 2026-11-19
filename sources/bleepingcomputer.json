@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "4d0b7ddc5ddafe8ce77e4fc32b2de90f",
- "last_modified": "Thu, 19 Nov 2026 10:13:24 GMT",
- "checksum": "fc0485c4393645482577c92e8d8ccc4fc103a8a7e4e353a5635fd5ef4af3ad64",
+ "etag": "1eeb769d0de5ee77276829c71d82db5c",
+ "last_modified": "Thu, 19 Nov 2026 10:43:24 GMT",
+ "checksum": "c19c432be844012c798a1e73bbfbd8d9f20b8f077d24a3c063f2c5a2c3a80df0",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -20,12 +20,13 @@
   "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/": "ad4b2acf96e508b515bd72a4",
   "https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/": "496ffe069518d560c9b1a29b",
   "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/": "5a98da7f4d2e630df8706cbb",
-  "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/": "27ca1a2e6d09985d30c79528"
+  "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/": "27ca1a2e6d09985d30c79528",
+  "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/": "d7b8f7f6ff71baab4a753318"
  },
- "last_attempt": "2026-11-19T10:20:50Z",
- "last_success": "2026-11-19T10:20:50Z",
+ "last_attempt": "2026-11-19T10:50:41Z",
+ "last_success": "2026-11-19T10:50:41Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 16
+ "items_total": 17
 }

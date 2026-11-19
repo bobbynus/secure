@@ -1,0 +1,43 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Aug security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Aug security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: Use after free in Chromecast via CVE-2026-79224",
+  "summary": "Microsoft Edge (Chromium-based) is affected by a use-after-free vulnerability in Chromecast, tracked as CVE-2026-79224.",
+  "impact": "The sources do not specify the exact impact or preconditions.",
+  "fix": "The sources list no fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Edge (Chromium-based) installations for the affected versions."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: уязвимость use-after-free в Chromecast (CVE-2026-79224)",
+  "summary": "В Microsoft Edge (Chromium-based) обнаружена уязвимость типа use-after-free в Chromecast, которой присвоен идентификатор CVE-2026-79224.",
+  "impact": "Источники не содержат сведений о точных последствиях или предварительных условиях.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте установленные версии Microsoft Edge (Chromium-based) на предмет уязвимости."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: Use-After-Free in Chromecast via CVE-2026-79224",
+  "summary": "Microsoft Edge (Chromium-based) ist von einer Use-After-Free-Schwachstelle in Chromecast betroffen, die als CVE-2026-79224 geführt wird.",
+  "impact": "Die Quellen nennen keine genauen Auswirkungen oder Vorbedingungen.",
+  "fix": "In den Quellen sind keine korrigierten Versionen genannt.",
+  "workaround": null,
+  "checks": [
+   "Prüfen Sie Microsoft Edge (Chromium-based)-Installationen auf betroffene Versionen."
+  ],
+  "regression": null
+ }
+}
