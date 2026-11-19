@@ -1,0 +1,101 @@
+{
+  "id": "sr-26-0082",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-106382"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.6,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T13:51:07Z",
+    "updated": "2026-11-19T13:51:07Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Chromium CVE-2026-106382: Use after free",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106382",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T13:51:07Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T13:51:07Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-edge-uyazvimost-use-after-free-cve-2026-106382",
+      "title": "Microsoft Edge: уязвимость use-after-free CVE-2026-106382",
+      "summary": "Microsoft Edge (Chromium-based) подвержен уязвимости use-after-free, отслеживаемой под идентификатором CVE-2026-106382.",
+      "impact": "Последствия не детализированы в источниках, помимо уязвимости use-after-free.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проведите инвентаризацию установленных экземпляров Microsoft Edge (Chromium-based).",
+        "Проверьте системы на предмет контекста обновления безопасности Microsoft 2026-Oct, упомянутого в бюллетене."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-edge-use-after-free-schwachstelle-cve-2026-106382",
+      "title": "Microsoft Edge: Use-After-Free-Schwachstelle CVE-2026-106382",
+      "summary": "Microsoft Edge (Chromium-based) ist von einer Use-After-Free-Schwachstelle betroffen, die als CVE-2026-106382 geführt wird.",
+      "impact": "Die Auswirkungen werden in den Quellen über die Use-After-Free-Schwachstelle hinaus nicht beschrieben.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Inventarisieren Sie Microsoft Edge (Chromium-based) Installationen.",
+        "Überprüfen Sie Systeme auf den im Advisory genannten Kontext des Microsoft 2026-Oct Sicherheitsupdates."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-edge-cve-2026-106382-use-after-free-vulnerability",
+      "title": "Microsoft Edge: CVE-2026-106382 use-after-free vulnerability",
+      "summary": "Microsoft Edge (Chromium-based) is affected by a use-after-free vulnerability tracked as CVE-2026-106382.",
+      "impact": "The impact is not detailed in the sources beyond the use-after-free weakness.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources do not list fixed versions.",
+      "checks": [
+        "Inventory Microsoft Edge (Chromium-based) installations.",
+        "Check systems for the Microsoft 2026-Oct security update context mentioned in the advisory."
+      ]
+    }
+  }
+}

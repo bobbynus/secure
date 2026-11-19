@@ -1,0 +1,101 @@
+{
+  "id": "sr-26-0084",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-110149"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.6,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T13:51:07Z",
+    "updated": "2026-11-19T13:51:07Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Chromium CVE-2026-110149: Use after free",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110149",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T13:51:07Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T13:51:07Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-edge-uyazvimost-ispolzovaniya-posle-osvobozhdeniya",
+      "title": "Microsoft Edge: уязвимость использования после освобождения CVE-2026-110149",
+      "summary": "В Microsoft Edge (Chromium-based) обнаружена уязвимость типа use-after-free, получившая идентификатор CVE-2026-110149 и критическую оценку CVSS 9.6.",
+      "impact": "Уязвимость потенциально позволяет злоумышленникам вызвать нежелательные последствия из-за дефекта использования после освобождения памяти в Microsoft Edge (Chromium-based).",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии или доступные обновления.",
+      "checks": [
+        "Проинвентаризируйте установленные экземпляры Microsoft Edge (Chromium-based).",
+        "Проверьте системы на подверженность уязвимости CVE-2026-110149."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-edge-use-after-free-schwachstelle-cve-2026-110149",
+      "title": "Microsoft Edge: Use-After-Free-Schwachstelle CVE-2026-110149",
+      "summary": "Microsoft Edge (Chromium-based) ist von einer Use-After-Free-Schwachstelle betroffen, die als CVE-2026-110149 mit einem kritischen CVSS-Score von 9.6 geführt wird.",
+      "impact": "Die Schwachstelle ermöglicht potenziellen Angreifern Auswirkungen aufgrund eines Use-After-Free-Defekts in Microsoft Edge (Chromium-based).",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen oder Updates.",
+      "checks": [
+        "Inventarisieren Sie Microsoft Edge (Chromium-based)-Installationen.",
+        "Überprüfen Sie Systeme auf Betroffenheit durch CVE-2026-110149."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-edge-cve-2026-110149-use-after-free-vulnerability",
+      "title": "Microsoft Edge: CVE-2026-110149 Use-After-Free Vulnerability",
+      "summary": "Microsoft Edge (Chromium-based) is affected by a use-after-free vulnerability tracked as CVE-2026-110149 with a critical CVSS score of 9.6.",
+      "impact": "The vulnerability allows potential attackers to cause unspecified impacts related to a use-after-free defect in Microsoft Edge (Chromium-based).",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources do not state fixed versions or available updates.",
+      "checks": [
+        "Inventory Microsoft Edge (Chromium-based) installations.",
+        "Check systems for exposure to CVE-2026-110149."
+      ]
+    }
+  }
+}

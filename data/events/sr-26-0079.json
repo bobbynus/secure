@@ -1,0 +1,121 @@
+{
+  "id": "sr-26-0079",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-11"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-105016"
+    ],
+    "advisory": [
+      "WID-SEC-2026-3893"
+    ],
+    "kb": [
+      "KB5126646",
+      "KB5126653",
+      "KB5126655",
+      "KB5127646",
+      "KB5127648",
+      "KB5130034",
+      "KB5130035"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T13:51:07Z",
+    "updated": "2026-11-19T13:51:07Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft QUIC Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105016",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    },
+    {
+      "id": "s2",
+      "title": "Microsoft Entwicklerwerkzeuge: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3893",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
+      "date": "2026-10-13"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T13:51:07Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T13:51:07Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "uyazvimost-udalennogo-vypolneniya-koda-v-microsoft-quic",
+      "title": "Уязвимость удаленного выполнения кода в Microsoft QUIC",
+      "summary": "В Microsoft QUIC обнаружена уязвимость удаленного выполнения кода, затрагивающая Windows и средства разработки.",
+      "impact": "Злоумышленник может выполнить удаленный код.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите доступные обновления, указанные в KB5126646, KB5126653, KB5126655, KB5127646, KB5127648, KB5130034 или KB5130035.",
+      "checks": [
+        "Проведите инвентаризацию систем под управлением Windows 11, Visual Studio 2022, Visual Studio 2026 и затронутых сред выполнения .NET.",
+        "Проверьте установку обновлений безопасности Microsoft, указанных в KB5126646, KB5126653, KB5126655, KB5127646, KB5127648, KB5130034 и KB5130035."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-quic-schwachstelle-zur-remote-code-ausfuehrung",
+      "title": "Microsoft QUIC: Schwachstelle zur Remote-Code-Ausführung",
+      "summary": "In Microsoft QUIC existiert eine Schwachstelle zur Remote-Code-Ausführung, die Windows und Entwicklerwerkzeuge betrifft.",
+      "impact": "Ein Angreifer kann Remote-Code-Ausführung erreichen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Wenden Sie die verfügbaren Updates gemäß KB5126646, KB5126653, KB5126655, KB5127646, KB5127648, KB5130034 oder KB5130035 an.",
+      "checks": [
+        "Inventarisieren Sie Systeme mit Windows 11, Visual Studio 2022, Visual Studio 2026 und betroffenen .NET Runtimes.",
+        "Überprüfen Sie die Anwendung der Microsoft-Sicherheitsupdates gemäß KB5126646, KB5126653, KB5126655, KB5127646, KB5127648, KB5130034 und KB5130035."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-quic-remote-code-execution-vulnerability",
+      "title": "Microsoft QUIC Remote Code Execution Vulnerability",
+      "summary": "A remote code execution vulnerability exists in Microsoft QUIC affecting Windows and developer tools.",
+      "impact": "An attacker can achieve remote code execution.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply available updates referenced by KB5126646, KB5126653, KB5126655, KB5127646, KB5127648, KB5130034, or KB5130035.",
+      "checks": [
+        "Inventory systems running Windows 11, Visual Studio 2022, Visual Studio 2026, and affected .NET runtimes.",
+        "Verify the application of Microsoft security updates referenced by KB5126646, KB5126653, KB5126655, KB5127646, KB5127648, KB5130034, and KB5130035."
+      ]
+    }
+  }
+}
