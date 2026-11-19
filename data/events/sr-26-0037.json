@@ -1,0 +1,120 @@
+{
+  "id": "sr-26-0037",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-11"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-68820"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5120228",
+      "KB5120229",
+      "KB5120233",
+      "KB5120238",
+      "KB5120240",
+      "KB5120242",
+      "KB5120249",
+      "KB5120385",
+      "KB5120386",
+      "KB5120418",
+      "KB5120994",
+      "KB5121000",
+      "KB5121003"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.0,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T09:20:43Z",
+    "updated": "2026-11-19T09:20:43Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68820",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T09:20:43Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T09:20:43Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2026-68820-povyshenie-privilegiy-v",
+      "title": "Microsoft Windows: CVE-2026-68820 повышение привилегий в Ancillary Function Driver",
+      "summary": "В драйвере Windows Ancillary Function Driver for WinSock обнаружена уязвимость повышения привилегий (CVE-2026-68820). Microsoft сообщает об активной эксплуатации.",
+      "impact": "Злоумышленник может использовать эту уязвимость для повышения привилегий.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft (включая KB5120228, KB5120229, KB5120233, KB5120238, KB5120240, KB5120242, KB5120249, KB5120385, KB5120386, KB5120418, KB5120994, KB5121000 и KB5121003).",
+      "checks": [
+        "Проведите инвентаризацию систем Windows 10, Windows 11 и указанных версий.",
+        "Проверьте, установлены ли обновления, связанные с CVE-2026-68820."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2026-68820-privilegienerhoehung-im",
+      "title": "Microsoft Windows: CVE-2026-68820 Privilegienerhöhung im Ancillary Function Driver",
+      "summary": "Im Windows Ancillary Function Driver for WinSock besteht eine Schwachstelle zur Privilegienerhöhung (CVE-2026-68820). Microsoft meldet eine aktive Ausnutzung.",
+      "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien zu erhöhen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5120228, KB5120229, KB5120233, KB5120238, KB5120240, KB5120242, KB5120249, KB5120385, KB5120386, KB5120418, KB5120994, KB5121000 und KB5121003).",
+      "checks": [
+        "Inventarisieren Sie Windows-Systeme mit Windows 10, Windows 11 und den aufgeführten Versionen.",
+        "Überprüfen Sie, ob die Updates für CVE-2026-68820 eingespielt wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2026-68820-elevation-of-privilege-in",
+      "title": "Microsoft Windows: CVE-2026-68820 elevation of privilege in Ancillary Function Driver",
+      "summary": "An elevation of privilege vulnerability exists in the Windows Ancillary Function Driver for WinSock (CVE-2026-68820). Microsoft reports active exploitation.",
+      "impact": "An attacker can exploit this vulnerability to elevate privileges.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft (including KB5120228, KB5120229, KB5120233, KB5120238, KB5120240, KB5120242, KB5120249, KB5120385, KB5120386, KB5120418, KB5120994, KB5121000, and KB5121003).",
+      "checks": [
+        "Inventory Windows systems running Windows 10, Windows 11, and listed versions.",
+        "Verify whether the updates associated with CVE-2026-68820 have been applied."
+      ]
+    }
+  }
+}
