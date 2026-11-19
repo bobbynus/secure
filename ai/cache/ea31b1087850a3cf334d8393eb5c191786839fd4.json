@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows Deployment Services TFTP Server RCE Vulnerability",
+  "summary": "A critical remote code execution vulnerability affects the Windows Deployment Services TFTP Server in Microsoft Windows Server.",
+  "impact": "Allows remote code execution with a CVSS score of 9.8.",
+  "fix": "Apply the updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check Windows Server systems for the presence of Windows Deployment Services TFTP Server.",
+   "Verify the application of Microsoft security updates including `KB5120228`, `KB5120229`, `KB5120233`, `KB5120238`, `KB5120242`, `KB5120385`, `KB5120386`, and `KB5120418`."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Уязвимость удаленного выполнения кода в TFTP-сервере Windows Deployment Services",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает TFTP-сервер Windows Deployment Services в Microsoft Windows Server.",
+  "impact": "Позволяет удаленно выполнять код, оценка CVSS составляет 9.8.",
+  "fix": "Установите обновления, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows Server на наличие запущенного TFTP-сервера Windows Deployment Services.",
+   "Убедитесь в применении обновлений безопасности Microsoft, включая `KB5120228`, `KB5120229`, `KB5120233`, `KB5120238`, `KB5120242`, `KB5120385`, `KB5120386` и `KB5120418`."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Schwachstelle für Remotecodeausführung im Windows Deployment Services TFTP Server",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft den Windows Deployment Services TFTP Server in Microsoft Windows Server.",
+  "impact": "Ermöglicht die Remotecodeausführung mit einem CVSS-Score von 9.8.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+  "workaround": null,
+  "checks": [
+   "Prüfen Sie Windows Server-Systeme auf das Vorhandensein des Windows Deployment Services TFTP Servers.",
+   "Überprüfen Sie die Installation der Microsoft-Sicherheitsupdates einschließlich `KB5120228`, `KB5120229`, `KB5120233`, `KB5120238`, `KB5120242`, `KB5120385`, `KB5120386` und `KB5120418`."
+  ],
+  "regression": null
+ }
+}

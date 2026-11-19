@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Azure Kubernetes Service: Elevation of Privilege (CVE-2026-50516)",
+  "summary": "An elevation of privilege vulnerability (CVE-2026-50516) affects Microsoft Azure Kubernetes Service with a CVSS score of 9.4.",
+  "impact": "The vulnerability allows an attacker to elevate privileges in Microsoft Azure Kubernetes Service.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check systems running Microsoft Azure Kubernetes Service for vulnerability CVE-2026-50516."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Azure Kubernetes Service: повышение привилегий (CVE-2026-50516)",
+  "summary": "Уязвимость повышения привилегий (CVE-2026-50516) затрагивает Microsoft Azure Kubernetes Service, оценка CVSS составляет 9.4.",
+  "impact": "Уязвимость позволяет злоумышленнику повысить привилегии в Microsoft Azure Kubernetes Service.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы, использующие Microsoft Azure Kubernetes Service, на наличие уязвимости CVE-2026-50516."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Azure Kubernetes Service: Privilegienerweiterung (CVE-2026-50516)",
+  "summary": "Eine Schwachstelle zur Privilegienerweiterung (CVE-2026-50516) betrifft den Microsoft Azure Kubernetes Service mit einem CVSS-Score von 9.4.",
+  "impact": "Die Schwachstelle ermöglicht es einem Angreifer, Privilegien im Microsoft Azure Kubernetes Service zu erweitern.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme mit Microsoft Azure Kubernetes Service auf die Schwachstelle CVE-2026-50516."
+  ],
+  "regression": null
+ }
+}

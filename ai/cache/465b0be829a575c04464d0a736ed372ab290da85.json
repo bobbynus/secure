@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft QUIC: Remote Code Execution Vulnerability (CVE-2026-62815)",
+  "summary": "A critical remote code execution vulnerability exists in Microsoft QUIC, tracked as CVE-2026-62815 with a CVSS score of 9.8.",
+  "impact": "An attacker can exploit the vulnerability to execute remote code. Specific preconditions are not detailed in the source texts.",
+  "fix": "Updates are available via Microsoft KB articles including KB5120228, KB5120229, KB5120233, KB5120240, KB5120242, KB5120994, KB5121000, and KB5121003.",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems and Windows Server instances for CVE-2026-62815 exposure.",
+   "Verify the application of Microsoft updates associated with KB5120228, KB5120229, KB5120233, KB5120240, KB5120242, KB5120994, KB5121000, or KB5121003."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft QUIC: уязвимость удаленного выполнения кода (CVE-2026-62815)",
+  "summary": "В Microsoft QUIC обнаружена критическая уязвимость удаленного выполнения кода, получившая идентификатор CVE-2026-62815 и оценку CVSS 9.8.",
+  "impact": "Злоумышленник может использовать уязвимость для удаленного выполнения кода. Конкретные предварительные условия в исходных текстах не указаны.",
+  "fix": "Обновления доступны через статьи Microsoft KB, включая KB5120228, KB5120229, KB5120233, KB5120240, KB5120242, KB5120994, KB5121000 и KB5121003.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows и экземпляры Windows Server на предмет уязвимости CVE-2026-62815.",
+   "Убедитесь в установке обновлений Microsoft, связанных с KB5120228, KB5120229, KB5120233, KB5120240, KB5120242, KB5120994, KB5121000 или KB5121003."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft QUIC: Schwachstelle zur Remote-Code-Ausführung (CVE-2026-62815)",
+  "summary": "In Microsoft QUIC existiert eine kritische Schwachstelle zur Remote-Code-Ausführung mit der Kennung CVE-2026-62815 und einem CVSS-Score von 9.8.",
+  "impact": "Ein Angreifer kann die Schwachstelle ausnutzen, um Remotecode auszuführen. Genaue Vorbedingungen werden in den Quelltexten nicht genannt.",
+  "fix": "Updates sind über Microsoft KB-Artikel verfügbar, darunter KB5120228, KB5120229, KB5120233, KB5120240, KB5120242, KB5120994, KB5121000 und KB5121003.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Systeme und Windows-Server-Instanzen auf Anfälligkeit für CVE-2026-62815.",
+   "Verifizieren Sie die Anwendung der Microsoft-Updates im Zusammenhang mit KB5120228, KB5120229, KB5120233, KB5120240, KB5120242, KB5120994, KB5121000 oder KB5121003."
+  ],
+  "regression": null
+ }
+}

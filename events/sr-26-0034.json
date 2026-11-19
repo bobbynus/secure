@@ -83,21 +83,62 @@
  "texts": {
   "msrc:CVE-2026-62878": "Windows DNS Server Remote Code Execution Vulnerability\nWindows DNS. Microsoft 2026-Aug security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "6a55f938fdb441d9596d8f79",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows DNS Server: Remote Code Execution Vulnerability",
+    "summary": "A critical remote code execution vulnerability exists in Microsoft Windows DNS Server (CVE-2026-62878).",
+    "impact": "An attacker can achieve remote code execution on vulnerable Windows DNS Server installations.",
+    "fix": "Apply the updates provided by Microsoft (such as `KB5120228`, `KB5120229`, `KB5120233`, `KB5120238`, `KB5120242`, `KB5120385`, `KB5120386`, `KB5120418`).",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows Server systems running the DNS Server role.",
+     "Verify whether the applicable security updates are installed."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows DNS Server: уязвимость удаленного выполнения кода",
+    "summary": "В Microsoft Windows DNS Server обнаружена критическая уязвимость удаленного выполнения кода (CVE-2026-62878).",
+    "impact": "Злоумышленник может добиться удаленного выполнения кода на уязвимых серверах Windows DNS Server.",
+    "fix": "Установите обновления, предоставленные Microsoft (такие как `KB5120228`, `KB5120229`, `KB5120233`, `KB5120238`, `KB5120242`, `KB5120385`, `KB5120386`, `KB5120418`).",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows Server с запущенной ролью DNS Server.",
+     "Проверьте, установлены ли применимые обновления безопасности."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows DNS Server: Schwachstelle zur RCE",
+    "summary": "Im Microsoft Windows DNS Server existiert eine kritische Schwachstelle zur Remotecodeausführung (CVE-2026-62878).",
+    "impact": "Ein Angreifer kann auf anfälligen Windows DNS Server-Installationen Remotecode ausführen.",
+    "fix": "Installieren Sie die von Microsoft bereitgestellten Updates (wie `KB5120228`, `KB5120229`, `KB5120233`, `KB5120238`, `KB5120242`, `KB5120385`, `KB5120386`, `KB5120418`).",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows Server-Systeme mit aktivierter DNS Server-Rolle.",
+     "Überprüfen Sie, ob die entsprechenden Sicherheitsupdates installiert sind."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T08:43:14Z",
+  "slugs": {
+   "ru": "microsoft-windows-dns-server-uyazvimost-udalennogo-vypolneniya",
+   "de": "microsoft-windows-dns-server-schwachstelle-zur-rce",
+   "en": "microsoft-windows-dns-server-remote-code-execution-vulnerability"
+  },
+  "published_at": "2026-11-19T08:43:14Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

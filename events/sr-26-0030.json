@@ -61,21 +61,62 @@
  "texts": {
   "msrc:CVE-2026-33105": "Microsoft Azure Kubernetes Service Elevation of Privilege Vulnerability\nMicrosoft Azure Kubernetes Service. Microsoft 2026-Apr security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "d5221cc8d98cd0f81132b7d7",
+  "texts": {
+   "en": {
+    "title": "Microsoft Azure Kubernetes Service: CVE-2026-33105 Elevation of Privilege Vulnerability",
+    "summary": "An elevation of privilege vulnerability (CVE-2026-33105) affects Microsoft Azure Kubernetes Service with a CVSS score of 10.0.",
+    "impact": "An attacker can achieve elevation of privilege in Microsoft Azure Kubernetes Service.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft Azure Kubernetes Service deployments.",
+     "Check systems for the Microsoft 2026-Apr security update status."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Azure Kubernetes Service: уязвимость повышения привилегий CVE-2026-33105",
+    "summary": "Уязвимость повышения привилегий (CVE-2026-33105) затрагивает Microsoft Azure Kubernetes Service, оценка CVSS составляет 10.0.",
+    "impact": "Злоумышленник может повысить привилегии в Microsoft Azure Kubernetes Service.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проинвентаризируйте развертывания Microsoft Azure Kubernetes Service.",
+     "Проверьте системы на предмет статуса обновления безопасности Microsoft 2026-Apr."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Azure Kubernetes Service: Schwachstelle zur Privilegienerweiterung CVE-2026-33105",
+    "summary": "Eine Schwachstelle zur Privilegienerweiterung (CVE-2026-33105) betrifft den Microsoft Azure Kubernetes Service mit einem CVSS-Score von 10.0.",
+    "impact": "Ein Angreifer kann in Microsoft Azure Kubernetes Service die Privilegien erweitern.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Microsoft Azure Kubernetes Service-Bereitstellungen.",
+     "Überprüfen Sie Systeme auf den Status des Microsoft 2026-Apr Sicherheitsupdates."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T08:43:14Z",
+  "slugs": {
+   "ru": "microsoft-azure-kubernetes-service-uyazvimost-povysheniya",
+   "de": "microsoft-azure-kubernetes-service-schwachstelle-zur",
+   "en": "microsoft-azure-kubernetes-service-cve-2026-33105-elevation-of"
+  },
+  "published_at": "2026-11-19T08:43:14Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

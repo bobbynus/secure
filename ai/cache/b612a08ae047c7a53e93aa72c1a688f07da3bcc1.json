@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Azure Kubernetes Service",
+   "versions": "Microsoft 2026-Apr security update",
+   "fixed": null,
+   "evidence": "Microsoft Azure Kubernetes Service. Microsoft 2026-Apr security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Azure Kubernetes Service: CVE-2026-33105 Elevation of Privilege Vulnerability",
+  "summary": "An elevation of privilege vulnerability (CVE-2026-33105) affects Microsoft Azure Kubernetes Service with a CVSS score of 10.0.",
+  "impact": "An attacker can achieve elevation of privilege in Microsoft Azure Kubernetes Service.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Azure Kubernetes Service deployments.",
+   "Check systems for the Microsoft 2026-Apr security update status."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Azure Kubernetes Service: уязвимость повышения привилегий CVE-2026-33105",
+  "summary": "Уязвимость повышения привилегий (CVE-2026-33105) затрагивает Microsoft Azure Kubernetes Service, оценка CVSS составляет 10.0.",
+  "impact": "Злоумышленник может повысить привилегии в Microsoft Azure Kubernetes Service.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проинвентаризируйте развертывания Microsoft Azure Kubernetes Service.",
+   "Проверьте системы на предмет статуса обновления безопасности Microsoft 2026-Apr."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Azure Kubernetes Service: Schwachstelle zur Privilegienerweiterung CVE-2026-33105",
+  "summary": "Eine Schwachstelle zur Privilegienerweiterung (CVE-2026-33105) betrifft den Microsoft Azure Kubernetes Service mit einem CVSS-Score von 10.0.",
+  "impact": "Ein Angreifer kann in Microsoft Azure Kubernetes Service die Privilegien erweitern.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Microsoft Azure Kubernetes Service-Bereitstellungen.",
+   "Überprüfen Sie Systeme auf den Status des Microsoft 2026-Apr Sicherheitsupdates."
+  ],
+  "regression": null
+ }
+}
