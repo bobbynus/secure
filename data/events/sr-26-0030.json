@@ -1,0 +1,103 @@
+{
+  "id": "sr-26-0030",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "kubernetes"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-33105"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 10.0,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T08:43:14Z",
+    "updated": "2026-11-19T08:43:14Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Azure Kubernetes Service Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33105",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T08:43:14Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T08:43:14Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-azure-kubernetes-service-uyazvimost-povysheniya",
+      "title": "Microsoft Azure Kubernetes Service: уязвимость повышения привилегий CVE-2026-33105",
+      "summary": "Уязвимость повышения привилегий (CVE-2026-33105) затрагивает Microsoft Azure Kubernetes Service, оценка CVSS составляет 10.0.",
+      "impact": "Злоумышленник может повысить привилегии в Microsoft Azure Kubernetes Service.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проинвентаризируйте развертывания Microsoft Azure Kubernetes Service.",
+        "Проверьте системы на предмет статуса обновления безопасности Microsoft 2026-Apr."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-azure-kubernetes-service-schwachstelle-zur",
+      "title": "Microsoft Azure Kubernetes Service: Schwachstelle zur Privilegienerweiterung CVE-2026-33105",
+      "summary": "Eine Schwachstelle zur Privilegienerweiterung (CVE-2026-33105) betrifft den Microsoft Azure Kubernetes Service mit einem CVSS-Score von 10.0.",
+      "impact": "Ein Angreifer kann in Microsoft Azure Kubernetes Service die Privilegien erweitern.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Inventarisieren Sie Microsoft Azure Kubernetes Service-Bereitstellungen.",
+        "Überprüfen Sie Systeme auf den Status des Microsoft 2026-Apr Sicherheitsupdates."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-azure-kubernetes-service-cve-2026-33105-elevation-of",
+      "title": "Microsoft Azure Kubernetes Service: CVE-2026-33105 Elevation of Privilege Vulnerability",
+      "summary": "An elevation of privilege vulnerability (CVE-2026-33105) affects Microsoft Azure Kubernetes Service with a CVSS score of 10.0.",
+      "impact": "An attacker can achieve elevation of privilege in Microsoft Azure Kubernetes Service.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources do not list fixed versions.",
+      "checks": [
+        "Inventory Microsoft Azure Kubernetes Service deployments.",
+        "Check systems for the Microsoft 2026-Apr security update status."
+      ]
+    }
+  }
+}

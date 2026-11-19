@@ -1,0 +1,112 @@
+{
+  "id": "sr-26-0035",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-62893"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5120228",
+      "KB5120229",
+      "KB5120233",
+      "KB5120238",
+      "KB5120242",
+      "KB5120385",
+      "KB5120386",
+      "KB5120418"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T08:43:14Z",
+    "updated": "2026-11-19T08:43:14Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Deployment Services TFTP Server Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62893",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T08:43:14Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T08:43:14Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "uyazvimost-udalennogo-vypolneniya-koda-v-tftp-servere-windows",
+      "title": "Уязвимость удаленного выполнения кода в TFTP-сервере Windows Deployment Services",
+      "summary": "Критическая уязвимость удаленного выполнения кода затрагивает TFTP-сервер Windows Deployment Services в Microsoft Windows Server.",
+      "impact": "Позволяет удаленно выполнять код, оценка CVSS составляет 9.8.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft.",
+      "checks": [
+        "Проверьте системы Windows Server на наличие запущенного TFTP-сервера Windows Deployment Services.",
+        "Убедитесь в применении обновлений безопасности Microsoft, включая `KB5120228`, `KB5120229`, `KB5120233`, `KB5120238`, `KB5120242`, `KB5120385`, `KB5120386` и `KB5120418`."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "schwachstelle-fuer-remotecodeausfuehrung-im-windows-deployment",
+      "title": "Schwachstelle für Remotecodeausführung im Windows Deployment Services TFTP Server",
+      "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft den Windows Deployment Services TFTP Server in Microsoft Windows Server.",
+      "impact": "Ermöglicht die Remotecodeausführung mit einem CVSS-Score von 9.8.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+      "checks": [
+        "Prüfen Sie Windows Server-Systeme auf das Vorhandensein des Windows Deployment Services TFTP Servers.",
+        "Überprüfen Sie die Installation der Microsoft-Sicherheitsupdates einschließlich `KB5120228`, `KB5120229`, `KB5120233`, `KB5120238`, `KB5120242`, `KB5120385`, `KB5120386` und `KB5120418`."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-deployment-services-tftp-server-rce",
+      "title": "Microsoft Windows Deployment Services TFTP Server RCE Vulnerability",
+      "summary": "A critical remote code execution vulnerability affects the Windows Deployment Services TFTP Server in Microsoft Windows Server.",
+      "impact": "Allows remote code execution with a CVSS score of 9.8.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply the updates provided by Microsoft.",
+      "checks": [
+        "Check Windows Server systems for the presence of Windows Deployment Services TFTP Server.",
+        "Verify the application of Microsoft security updates including `KB5120228`, `KB5120229`, `KB5120233`, `KB5120238`, `KB5120242`, `KB5120385`, `KB5120386`, and `KB5120418`."
+      ]
+    }
+  }
+}
