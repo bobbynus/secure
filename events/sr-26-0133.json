@@ -104,21 +104,76 @@
   "ubuntu-usn:https://ubuntu.com/security/notices/USN-9171-2": "USN-9171-2: Linux kernel (Oracle) vulnerabilities\nSeveral security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n- IPv4 networking;\n- Ethernet bridge;\n- Netfilter;\n- XFRM subsystem;\n(CVE-2026-98432, CVE-2026-99999)",
   "ubuntu-usn:https://ubuntu.com/security/notices/USN-9170-2": "USN-9170-2: Linux kernel (AWS FIPS) vulnerabilities\nSeveral security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n- IPv4 networking;\n- Ethernet bridge;\n- Netfilter;\n- SCTP protocol;\n- XFRM subsystem;\n(CVE-2026-64564, CVE-2026-98432, CVE-2026-99999)"
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
-  "affected": [],
+  "input_hash": "f390e2f43efe86ec141f2761",
+  "texts": {
+   "en": {
+    "title": "Linux kernel: use-after-free in IPv4 networking (CVE-2026-98432)",
+    "summary": "A use-after-free vulnerability in the Linux kernel IPv4 networking subsystem allows unauthenticated attackers to execute unauthorized code or commands.",
+    "impact": "An attacker can execute unauthorized code or commands due to a use-after-free flaw in tcp_v4_syn_recv_sock() and request socket migration handling during concurrent IPv4 SYN processing.",
+    "fix": "Update the Linux kernel packages to version `4.15.0-1162.173~16.04.1` for Oracle systems and `5.4.0-1169.180+fips1` for AWS FIPS systems, or apply vendor updates.",
+    "workaround": null,
+    "checks": [
+     "Inventory Linux kernel versions across Oracle and AWS FIPS systems.",
+     "Verify if running vulnerable kernel package versions prior to the updates.",
+     "Apply the corresponding kernel updates and reboot the system."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Ядро Linux: use-after-free в сетевой подсистеме IPv4 (CVE-2026-98432)",
+    "summary": "Уязвимость типа use-after-free в подсистеме IPv4 ядра Linux позволяет неаутентифицированным злоумышленникам выполнять неавторизованный код или команды.",
+    "impact": "Злоумышленник может выполнить неавторизованный код или команды из-за ошибки use-after-free в функциях tcp_v4_syn_recv_sock() и при миграции сокетов запросов во время параллельной обработки IPv4 SYN.",
+    "fix": "Обновите пакеты ядра Linux до версии `4.15.0-1162.173~16.04.1` для систем Oracle и `5.4.0-1169.180+fips1` для систем AWS FIPS, либо примените обновления от производителя.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию версий ядра Linux в системах Oracle и AWS FIPS.",
+     "Проверьте, используются ли уязвимые версии пакетов ядра до обновлений.",
+     "Установите соответствующие обновления ядра и перезагрузите систему."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Linux-Kernel: Use-After-Free in IPv4-Netzwerksubsystem (CVE-2026-98432)",
+    "summary": "Eine Use-After-Free-Schwachstelle im IPv4-Netzwerksubsequent des Linux-Kernels ermöglicht unauthentifizierten Angreifern die Ausführung von unautorisiertem Code oder Befehlen.",
+    "impact": "Ein Angreifer kann unautorisierten Code oder Befehle ausführen aufgrund eines Use-After-Free-Fehlers in tcp_v4_syn_recv_sock() und der Anforderungs-Socket-Migration bei der gleichzeitigen IPv4-SYN-Verarbeitung.",
+    "fix": "Aktualisieren Sie die Linux-Kernel-Pakete auf Version `4.15.0-1162.173~16.04.1` für Oracle-Systeme und `5.4.0-1169.180+fips1` für AWS-FIPS-Systeme oder wenden Sie die Herstellerupdates an.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Linux-Kernel-Versionen auf Oracle- und AWS-FIPS-Systemen.",
+     "Überprüfen Sie, ob anfällige Kernel-Paketversionen vor den Updates verwendet werden.",
+     "Wenden Sie die entsprechenden Kernel-Updates an und starten Sie das System neu."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [
+   {
+    "product": "Linux kernel (Oracle)",
+    "versions": "< 4.15.0-1162.173~16.04.1",
+    "fixed": "4.15.0-1162.173~16.04.1"
+   },
+   {
+    "product": "Linux kernel (AWS FIPS)",
+    "versions": "< 5.4.0-1169.180+fips1",
+    "fixed": "5.4.0-1169.180+fips1"
+   }
+  ],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T17:20:53Z",
+  "slugs": {
+   "ru": "yadro-linux-use-after-free-v-setevoy-podsisteme-ipv4-cve-2026",
+   "de": "linux-kernel-use-after-free-in-ipv4-netzwerksubsystem-cve-2026",
+   "en": "linux-kernel-use-after-free-in-ipv4-networking-cve-2026-98432"
+  },
+  "published_at": "2026-11-19T17:20:53Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
