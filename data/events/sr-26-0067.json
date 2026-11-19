@@ -1,0 +1,110 @@
+{
+  "id": "sr-26-0067",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-11",
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-45657"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5093998",
+      "KB5094125",
+      "KB5094126",
+      "KB5094128",
+      "KB5095051"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T11:51:12Z",
+    "updated": "2026-11-19T11:51:12Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Kernel Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45657",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T11:51:12Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T11:51:12Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "yadro-microsoft-windows-udalennoe-vypolnenie-koda-cve-2026-45657",
+      "title": "Ядро Microsoft Windows: удаленное выполнение кода (CVE-2026-45657)",
+      "summary": "В ядре Windows обнаружена критическая уязвимость удаленного выполнения кода, затрагивающая различные версии Windows и Windows Server.",
+      "impact": "Злоумышленник может удаленно выполнить произвольный код.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновления KB5093998, KB5094125, KB5094126, KB5094128 или KB5095051, предоставленные Microsoft.",
+      "checks": [
+        "Проведите инвентаризацию систем под управлением Windows 11 и Windows Server.",
+        "Проверьте наличие установленных обновлений KB5093998, KB5094125, KB5094126, KB5094128 или KB5095051."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-kernel-remotecodeausfuehrung-cve-2026-45657",
+      "title": "Microsoft Windows Kernel: Remotecodeausführung (CVE-2026-45657)",
+      "summary": "Im Windows Kernel existiert eine kritische Schwachstelle zur Remotecodeausführung, die mehrere Windows- und Windows Server-Versionen betrifft.",
+      "impact": "Ein Angreifer kann beliebigen Code aus der Ferne ausführen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Installieren Sie die von Microsoft bereitgestellten Updates KB5093998, KB5094125, KB5094126, KB5094128 oder KB5095051.",
+      "checks": [
+        "Inventarisieren Sie Systeme mit Windows 11 und Windows Server.",
+        "Überprüfen Sie, ob die Updates KB5093998, KB5094125, KB5094126, KB5094128 oder KB5095051 installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-kernel-remote-code-execution-cve-2026-45657",
+      "title": "Microsoft Windows Kernel: Remote Code Execution (CVE-2026-45657)",
+      "summary": "A critical remote code execution vulnerability exists in the Windows Kernel affecting multiple Windows and Windows Server versions.",
+      "impact": "An attacker could execute arbitrary code remotely.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply the updates associated with KB5093998, KB5094125, KB5094126, KB5094128, or KB5095051 as provided by Microsoft.",
+      "checks": [
+        "Inventory systems running Windows 11 and Windows Server.",
+        "Verify if updates KB5093998, KB5094125, KB5094126, KB5094128, or KB5095051 are installed."
+      ]
+    }
+  }
+}

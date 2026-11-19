@@ -1,0 +1,109 @@
+{
+  "id": "sr-26-0062",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "sharepoint-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-56164"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5002882",
+      "KB5002883",
+      "KB5002891"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 5.3,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T11:51:12Z",
+    "updated": "2026-11-19T11:51:12Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft SharePoint Server Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56164",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T11:51:12Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T11:51:12Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-sharepoint-server-uyazvimost-povysheniya-privilegiy",
+      "title": "Microsoft SharePoint Server: уязвимость повышения привилегий (CVE-2026-56164)",
+      "summary": "Уязвимость повышения привилегий в Microsoft SharePoint Server позволяет злоумышленникам повысить привилегии. Microsoft сообщает об эксплуатации.",
+      "impact": "Злоумышленники могут повысить привилегии. Уязвимость эксплуатируется.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft (включая KB5002882, KB5002883, KB5002891).",
+      "checks": [
+        "Проверьте установки Microsoft SharePoint Server на наличие уязвимости CVE-2026-56164.",
+        "Убедитесь в применении обновлений KB5002882, KB5002883 и KB5002891."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-sharepoint-server-privilegienerweiterung-cve-2026",
+      "title": "Microsoft SharePoint Server: Privilegienerweiterung (CVE-2026-56164)",
+      "summary": "Eine Schwachstelle zur Privilegienerweiterung in Microsoft SharePoint Server ermöglicht Angreifern die Erhöhung von Rechten. Microsoft meldet eine Ausnutzung.",
+      "impact": "Angreifer können Privilegien erweitern. Die Schwachstelle wird laut Microsoft ausgenutzt.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5002882, KB5002883, KB5002891).",
+      "checks": [
+        "Überprüfen Sie Microsoft SharePoint Server-Installationen auf die Schwachstelle CVE-2026-56164.",
+        "Überprüfen Sie die Anwendung der Updates KB5002882, KB5002883 und KB5002891."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-sharepoint-server-elevation-of-privilege",
+      "title": "Microsoft SharePoint Server: Elevation of Privilege Vulnerability (CVE-2026-56164)",
+      "summary": "An elevation of privilege vulnerability in Microsoft SharePoint Server allows attackers to escalate privileges. Microsoft reports exploitation.",
+      "impact": "Attackers can achieve elevation of privilege. The vulnerability is reported as exploited.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply updates as provided by Microsoft (including KB5002882, KB5002883, KB5002891).",
+      "checks": [
+        "Check Microsoft SharePoint Server installations for vulnerability CVE-2026-56164.",
+        "Verify the application of updates KB5002882, KB5002883, and KB5002891."
+      ]
+    }
+  }
+}

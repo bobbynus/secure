@@ -20,7 +20,9 @@
     "cve": [
       "CVE-2026-40217"
     ],
-    "advisory": [],
+    "advisory": [
+      "WID-SEC-2026-1408"
+    ],
     "kb": []
   },
   "affected": [],
@@ -42,6 +44,14 @@
       "publisher": "CISA Known Exploited Vulnerabilities",
       "kind": "kev",
       "date": "2026-11-18"
+    },
+    {
+      "id": "s2",
+      "title": "LiteLLM: Schwachstelle ermöglicht Ausführen von beliebigem Programmcode mit Administratorrechten",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1408",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
+      "date": "2026-05-06"
     }
   ],
   "revisions": [
