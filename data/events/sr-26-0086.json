@@ -1,0 +1,101 @@
+{
+  "id": "sr-26-0086",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-110161"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.6,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T16:20:56Z",
+    "updated": "2026-11-19T16:20:56Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Chromium CVE-2026-110161: Use after free",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110161",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T16:20:56Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T16:20:56Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-edge-uyazvimost-use-after-free-cve-2026-110161",
+      "title": "Microsoft Edge: уязвимость use-after-free CVE-2026-110161",
+      "summary": "В Microsoft Edge (Chromium-based) обнаружена уязвимость типа use-after-free, получившая идентификатор CVE-2026-110161 и оценку CVSS 9.6.",
+      "impact": "Уязвимость может привести к различным последствиям из-за ошибки use-after-free в Microsoft Edge (Chromium-based).",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проведите инвентаризацию установленных экземпляров Microsoft Edge (Chromium-based).",
+        "Проверьте системы на наличие обновления безопасности Microsoft 2026-Oct."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-edge-use-after-free-schwachstelle-cve-2026-110161",
+      "title": "Microsoft Edge: Use-After-Free-Schwachstelle CVE-2026-110161",
+      "summary": "Microsoft Edge (Chromium-based) ist von einer Use-After-Free-Schwachstelle betroffen, die als CVE-2026-110161 mit einem CVSS-Wert von 9.6 geführt wird.",
+      "impact": "Die Schwachstelle kann durch einen Use-After-Free-Fehler in Microsoft Edge (Chromium-based) ausgenutzt werden.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Erfassen Sie alle Installationen von Microsoft Edge (Chromium-based).",
+        "Überprüfen Sie Systeme auf das Vorhandensein des Microsoft 2026-Oct Security Updates."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-edge-cve-2026-110161-use-after-free-vulnerability",
+      "title": "Microsoft Edge: CVE-2026-110161 Use After Free Vulnerability",
+      "summary": "Microsoft Edge (Chromium-based) is affected by a use-after-free vulnerability tracked as CVE-2026-110161 with a CVSS score of 9.6.",
+      "impact": "The vulnerability allows attackers to cause unspecified impacts via a use-after-free defect in Microsoft Edge (Chromium-based).",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources do not list fixed versions.",
+      "checks": [
+        "Inventory Microsoft Edge (Chromium-based) installations.",
+        "Check systems for the presence of the Microsoft 2026-Oct security update."
+      ]
+    }
+  }
+}
