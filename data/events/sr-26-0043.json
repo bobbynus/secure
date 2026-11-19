@@ -1,0 +1,101 @@
+{
+  "id": "sr-26-0043",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-79150"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.6,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T09:50:54Z",
+    "updated": "2026-11-19T09:50:54Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Chromium: CVE-2026-79150 Use after free in Views",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79150",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T09:50:54Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T09:50:54Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-edge-cve-2026-79150-use-after-free-v-views",
+      "title": "Microsoft Edge: CVE-2026-79150 Use after free в Views",
+      "summary": "Microsoft Edge (Chromium-based) подвержен уязвимости типа use-after-free в Views, зарегистрированной под идентификатором CVE-2026-79150.",
+      "impact": "Уязвимость может привести к различным последствиям для безопасности из-за состояния use-after-free в Views.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проведите инвентаризацию установок Microsoft Edge (Chromium-based).",
+        "Проверьте системы на предмет применения августовского обновления безопасности Microsoft за 2026 год."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-edge-cve-2026-79150-use-after-free-in-views",
+      "title": "Microsoft Edge: CVE-2026-79150 Use-after-free in Views",
+      "summary": "Microsoft Edge (Chromium-based) ist von einer Use-after-Free-Schwachstelle in Views betroffen, die als CVE-2026-79150 geführt wird.",
+      "impact": "Die Schwachstelle kann Angreifern ermöglichen, Sicherheitsauswirkungen über eine Use-after-Free-Bedingung in Views zu verursachen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Inventarisieren Sie Microsoft Edge (Chromium-based) Installationen.",
+        "Überprüfen Sie Systeme auf den Status des Microsoft Sicherheitsupdates vom August 2026."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-edge-cve-2026-79150-use-after-free-in-views",
+      "title": "Microsoft Edge: CVE-2026-79150 Use after free in Views",
+      "summary": "Microsoft Edge (Chromium-based) is affected by a use-after-free vulnerability in Views tracked as CVE-2026-79150.",
+      "impact": "The vulnerability allows attackers to cause potential security impacts via a use-after-free condition in Views.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources do not specify fixed versions.",
+      "checks": [
+        "Inventory Microsoft Edge (Chromium-based) installations.",
+        "Check systems for the Microsoft 2026-Aug security update status."
+      ]
+    }
+  }
+}
