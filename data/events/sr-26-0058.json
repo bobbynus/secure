@@ -1,0 +1,107 @@
+{
+  "id": "sr-26-0058",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "sharepoint-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-55040"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5002882",
+      "KB5002883",
+      "KB5002891"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.1,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T11:20:41Z",
+    "updated": "2026-11-19T11:20:41Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft SharePoint Server Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55040",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T11:20:41Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T11:20:41Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-sharepoint-server-uyazvimost-obkhoda-funktsii",
+      "title": "Microsoft SharePoint Server: уязвимость обхода функции безопасности (CVE-2026-55040)",
+      "summary": "Уязвимость обхода функции безопасности затрагивает Microsoft SharePoint Server, оценка CVSS составляет 9.1.",
+      "impact": "Злоумышленник может обойти функции безопасности в Microsoft SharePoint Server.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "См. рекомендации производителя и обновления, включая KB5002882, KB5002883 и KB5002891.",
+      "checks": [
+        "Проверьте установки Microsoft SharePoint Server на уязвимость CVE-2026-55040.",
+        "Проверьте статус установки обновлений KB5002882, KB5002883 и KB5002891."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-sharepoint-server-sicherheitsfunktions-bypass",
+      "title": "Microsoft SharePoint Server: Sicherheitsfunktions-Bypass-Schwachstelle (CVE-2026-55040)",
+      "summary": "Eine Sicherheitsfunktions-Bypass-Schwachstelle betrifft Microsoft SharePoint Server mit einem CVSS-Score von 9.1.",
+      "impact": "Ein Angreifer kann Sicherheitsfunktionen in Microsoft SharePoint Server umgehen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Siehe Herstellerhinweise und Updates einschließlich KB5002882, KB5002883 und KB5002891.",
+      "checks": [
+        "Überprüfen Sie Microsoft SharePoint Server-Installationen auf Anfälligkeit für CVE-2026-55040.",
+        "Überprüfen Sie den Installationsstatus der Updates KB5002882, KB5002883 und KB5002891."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-sharepoint-server-security-feature-bypass",
+      "title": "Microsoft SharePoint Server: Security Feature Bypass Vulnerability (CVE-2026-55040)",
+      "summary": "A security feature bypass vulnerability affects Microsoft SharePoint Server, carrying a CVSS score of 9.1.",
+      "impact": "An attacker can bypass security features in Microsoft SharePoint Server.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Refer to vendor advisories and updates including KB5002882, KB5002883, and KB5002891.",
+      "checks": [
+        "Check Microsoft SharePoint Server installations for vulnerability CVE-2026-55040 exposure.",
+        "Verify the installation status of updates KB5002882, KB5002883, and KB5002891."
+      ]
+    }
+  }
+}
