@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "0b49e22664ef4f274a72bf6e7dfeea65",
- "last_modified": "Thu, 19 Nov 2026 17:48:26 GMT",
- "checksum": "0125d664c1ce116f78cbea3b30cb99ad0357b383e3342756a523248d5167dea2",
+ "etag": "5dc5be9b3eeb9f526f7d83bedd916c51",
+ "last_modified": "Thu, 19 Nov 2026 18:40:03 GMT",
+ "checksum": "63dc9e6d77c712cf3e4caacd37956d21016a355f8c1903323f3e25be2d42b867",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -26,12 +26,13 @@
   "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/": "d26e547af176cf59693c8ff0",
   "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/": "3046fd84b163e523ae9bfbeb",
   "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/": "27892cd941182f0059e6a512",
-  "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/": "0bafc862ddfb05eacc611e38"
+  "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/": "0bafc862ddfb05eacc611e38",
+  "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/": "4137a3ec7e284444fb7d3c9e"
  },
- "last_attempt": "2026-11-19T17:50:39Z",
- "last_success": "2026-11-19T17:50:39Z",
+ "last_attempt": "2026-11-19T18:40:38Z",
+ "last_success": "2026-11-19T18:40:38Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 22
+ "items_total": 23
 }
