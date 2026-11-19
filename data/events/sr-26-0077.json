@@ -1,0 +1,110 @@
+{
+  "id": "sr-26-0077",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-11",
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-100219"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5126646",
+      "KB5126653",
+      "KB5126655",
+      "KB5127646",
+      "KB5127648"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T13:20:55Z",
+    "updated": "2026-11-19T13:20:55Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft QUIC Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100219",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T13:20:55Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T13:20:55Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-quic-uyazvimost-udalennogo-vypolneniya-koda-cve-2026",
+      "title": "Microsoft QUIC: уязвимость удаленного выполнения кода (CVE-2026-100219)",
+      "summary": "Критическая уязвимость удаленного выполнения кода затрагивает Microsoft QUIC в различных версиях Windows и Windows Server.",
+      "impact": "Злоумышленник может выполнить удаленный код. Конкретные предварительные условия или требования к аутентификации в источниках не указаны.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках указаны обновления `KB5126646`, `KB5126653`, `KB5126655`, `KB5127646` и `KB5127648`.",
+      "checks": [
+        "Проверьте системы на наличие установленных Windows 11 и Windows Server.",
+        "Убедитесь, установлены ли обновления `KB5126646`, `KB5126653`, `KB5126655`, `KB5127646` или `KB5127648`."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-quic-schwachstelle-zur-remote-code-ausfuehrung-cve",
+      "title": "Microsoft QUIC: Schwachstelle zur Remote-Code-Ausführung (CVE-2026-100219)",
+      "summary": "Eine kritische Schwachstelle zur Remote-Code-Ausführung betrifft Microsoft QUIC in mehreren Windows- und Windows-Server-Versionen.",
+      "impact": "Ein Angreifer kann möglicherweise Remote-Code ausführen. Genaue Vorbedingungen oder Authentifizierungsanforderungen werden in den Quellen nicht genannt.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Die Quellen nennen Updates wie `KB5126646`, `KB5126653`, `KB5126655`, `KB5127646` und `KB5127648`.",
+      "checks": [
+        "Überprüfen Sie Systeme auf Windows-11- und Windows-Server-Installationen.",
+        "Prüfen Sie, ob die Updates `KB5126646`, `KB5126653`, `KB5126655`, `KB5127646` oder `KB5127648` eingespielt wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-quic-remote-code-execution-vulnerability-cve-2026",
+      "title": "Microsoft QUIC: Remote Code Execution Vulnerability (CVE-2026-100219)",
+      "summary": "A critical remote code execution vulnerability affects Microsoft QUIC in multiple versions of Windows and Windows Server.",
+      "impact": "An attacker could achieve remote code execution. Specific preconditions or authentication requirements are not detailed in the sources.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources list updates including `KB5126646`, `KB5126653`, `KB5126655`, `KB5127646`, and `KB5127648`.",
+      "checks": [
+        "Check systems for Windows 11 and Windows Server installations.",
+        "Verify whether updates `KB5126646`, `KB5126653`, `KB5126655`, `KB5127646`, or `KB5127648` are applied."
+      ]
+    }
+  }
+}

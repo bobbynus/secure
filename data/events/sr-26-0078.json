@@ -1,0 +1,98 @@
+{
+  "id": "sr-26-0078",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-102331"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.6,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T13:20:55Z",
+    "updated": "2026-11-19T13:20:55Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Chromium CVE-2026-102331: Buffer overflow",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102331",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T13:20:55Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T13:20:55Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-edge-perepolnenie-bufera-cve-2026-102331",
+      "title": "Microsoft Edge: переполнение буфера CVE-2026-102331",
+      "summary": "Критическая уязвимость переполнения буфера (CVE-2026-102331) затрагивает Microsoft Edge (Chromium-based).",
+      "impact": "Уязвимость связана с переполнением буфера в Microsoft Edge (Chromium-based).",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проведите инвентаризацию установленных экземпляров Microsoft Edge (Chromium-based)."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-edge-pufferueberlauf-cve-2026-102331",
+      "title": "Microsoft Edge: Pufferüberlauf CVE-2026-102331",
+      "summary": "Eine kritische Pufferüberlauf-Schwachstelle (CVE-2026-102331) betrifft Microsoft Edge (Chromium-based).",
+      "impact": "Die Schwachstelle betrifft einen Pufferüberlauf in Microsoft Edge (Chromium-based).",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Inventarisieren Sie Microsoft Edge (Chromium-based)-Installationen."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-edge-cve-2026-102331-buffer-overflow",
+      "title": "Microsoft Edge: CVE-2026-102331 buffer overflow",
+      "summary": "A critical buffer overflow vulnerability (CVE-2026-102331) affects Microsoft Edge (Chromium-based).",
+      "impact": "The vulnerability involves a buffer overflow in Microsoft Edge (Chromium-based).",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources do not list fixed versions.",
+      "checks": [
+        "Inventory Microsoft Edge (Chromium-based) installations."
+      ]
+    }
+  }
+}
