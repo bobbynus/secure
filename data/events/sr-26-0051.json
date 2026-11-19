@@ -1,0 +1,103 @@
+{
+  "id": "sr-26-0051",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-21514"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T10:20:52Z",
+    "updated": "2026-11-19T10:20:52Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Word Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21514",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T10:20:52Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T10:20:52Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-word-uyazvimost-obkhoda-funktsii-bezopasnosti-cve",
+      "title": "Microsoft Word: уязвимость обхода функции безопасности (CVE-2026-21514)",
+      "summary": "В Microsoft Word обнаружена уязвимость обхода функции безопасности, зарегистрированная как CVE-2026-21514, с эксплуатацией, подтвержденной производителем.",
+      "impact": "Злоумышленник может обойти функции безопасности в Microsoft Word. Эксплуатация подтверждена производителем.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Обратитесь к бюллетеням производителя для получения информации об обновлениях и исправлениях.",
+      "checks": [
+        "Проведите инвентаризацию систем с установленными Microsoft 365 Apps и Office LTSC.",
+        "Проверьте статус установки февральского обновления безопасности Microsoft 2026 года."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-word-umgehung-von-sicherheitsfunktionen-cve-2026-21514",
+      "title": "Microsoft Word: Umgehung von Sicherheitsfunktionen (CVE-2026-21514)",
+      "summary": "In Microsoft Word existiert eine Schwachstelle zur Umgehung von Sicherheitsfunktionen, geführt als CVE-2026-21514, deren Ausnutzung vom Hersteller gemeldet wurde.",
+      "impact": "Ein Angreifer kann Sicherheitsfunktionen in Microsoft Word umgehen. Die Ausnutzung wird vom Hersteller gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Informationen zu Updates und Korrekturen finden Sie in den Herstellerhinweisen.",
+      "checks": [
+        "Inventarisieren Sie Systeme, auf denen Microsoft 365 Apps und Office LTSC-Editionen ausgeführt werden.",
+        "Überprüfen Sie den Status des Microsoft-Sicherheitsupdates vom Februar 2026."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-word-security-feature-bypass-vulnerability-cve-2026",
+      "title": "Microsoft Word: Security Feature Bypass Vulnerability (CVE-2026-21514)",
+      "summary": "A security feature bypass vulnerability exists in Microsoft Word, tracked as CVE-2026-21514, with vendor-reported exploitation.",
+      "impact": "An attacker can bypass security features in Microsoft Word. Exploitation is reported by the vendor.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Refer to vendor advisories for update and fix details.",
+      "checks": [
+        "Inventory systems running Microsoft 365 Apps and Office LTSC editions.",
+        "Check for the Microsoft 2026-Feb security update status."
+      ]
+    }
+  }
+}

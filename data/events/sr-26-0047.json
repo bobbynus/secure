@@ -1,0 +1,119 @@
+{
+  "id": "sr-26-0047",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-11"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-21519"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5075897",
+      "KB5075899",
+      "KB5075904",
+      "KB5075906",
+      "KB5075912",
+      "KB5075941",
+      "KB5075942",
+      "KB5075943",
+      "KB5075999",
+      "KB5077179",
+      "KB5077181",
+      "KB5077212"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T10:20:52Z",
+    "updated": "2026-11-19T10:20:52Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Desktop Window Manager Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21519",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T10:20:52Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T10:20:52Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-povyshenie-privilegiy-v-desktop-window",
+      "title": "Microsoft Windows: повышение привилегий в Desktop Window Manager (CVE-2026-21519)",
+      "summary": "В Desktop Window Manager в Microsoft Windows обнаружена уязвимость повышения привилегий, которая эксплуатируется.",
+      "impact": "Злоумышленник может использовать уязвимость для получения повышенных привилегий.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft.",
+      "checks": [
+        "Проведите инвентаризацию систем Microsoft Windows на предмет уязвимости.",
+        "Установите обновления безопасности, соответствующие CVE-2026-21519."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2026-21519-privilegieneskalation-im",
+      "title": "Microsoft Windows: CVE-2026-21519 Privilegieneskalation im Desktop Window Manager",
+      "summary": "Im Desktop Window Manager von Microsoft Windows existiert eine Schwachstelle zur Privilegieneskalation, deren Ausnutzung berichtet wurde.",
+      "impact": "Ein Angreifer kann die Schwachstelle ausnutzen, um höhere Privilegien zu erlangen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+      "checks": [
+        "Erfassen Sie Microsoft Windows-Systeme im Inventar, um die Anfälligkeit zu prüfen.",
+        "Wenden Sie die Sicherheitsupdates für CVE-2026-21519 an."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2026-21519-desktop-window-manager",
+      "title": "Microsoft Windows: CVE-2026-21519 Desktop Window Manager Elevation of Privilege",
+      "summary": "An elevation of privilege vulnerability exists in Desktop Window Manager in Microsoft Windows, which is reported as exploited.",
+      "impact": "An attacker can exploit the vulnerability to gain higher privileges.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft.",
+      "checks": [
+        "Inventory Microsoft Windows systems for vulnerability exposure.",
+        "Apply security updates corresponding to CVE-2026-21519."
+      ]
+    }
+  }
+}

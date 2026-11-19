@@ -1,0 +1,121 @@
+{
+  "id": "sr-26-0049",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-11"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-21513"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5075897",
+      "KB5075899",
+      "KB5075904",
+      "KB5075906",
+      "KB5075912",
+      "KB5075941",
+      "KB5075942",
+      "KB5075943",
+      "KB5075970",
+      "KB5075971",
+      "KB5075999",
+      "KB5077179",
+      "KB5077181",
+      "KB5077212"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T10:20:52Z",
+    "updated": "2026-11-19T10:20:52Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "MSHTML Framework Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21513",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T10:20:52Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T10:20:52Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-obkhod-funktsii-bezopasnosti-cve-2026-21513-v",
+      "title": "Microsoft Windows: обход функции безопасности CVE-2026-21513 в MSHTML Framework",
+      "summary": "Уязвимость обхода функции безопасности в MSHTML Framework затрагивает различные версии Microsoft Windows. Проблема публично раскрыта и сообщается об ее эксплуатации.",
+      "impact": "Злоумышленник может обойти функции безопасности в MSHTML Framework.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления от Microsoft (включая KB5075897, KB5075899, KB5075904, KB5075906, KB5075912, KB5075941, KB5075942, KB5075943, KB5075970, KB5075971, KB5075999, KB5077179, KB5077181, KB5077212).",
+      "checks": [
+        "Проведите инвентаризацию систем Windows 10 и Windows 11 в инфраструктуре.",
+        "Проверьте, установлены ли последние обновления безопасности Microsoft."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-sicherheitsfeature-bypass-cve-2026-21513-im",
+      "title": "Microsoft Windows: Sicherheitsfeature-Bypass CVE-2026-21513 im MSHTML Framework",
+      "summary": "Eine Sicherheitsfeature-Bypass-Schwachstelle im MSHTML Framework betrifft mehrere Versionen von Microsoft Windows. Das Problem ist öffentlich bekannt und wird ausgenutzt.",
+      "impact": "Ein Angreifer kann Sicherheitsfunktionen im MSHTML Framework umgehen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5075897, KB5075899, KB5075904, KB5075906, KB5075912, KB5075941, KB5075942, KB5075943, KB5075970, KB5075971, KB5075999, KB5077179, KB5077181, KB5077212).",
+      "checks": [
+        "Inventarisieren Sie Windows 10- und Windows 11-Systeme in der Infrastruktur.",
+        "Überprüfen Sie, ob die neuesten Microsoft-Sicherheitsupdates installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2026-21513-security-feature-bypass-in",
+      "title": "Microsoft Windows: CVE-2026-21513 security feature bypass in MSHTML Framework",
+      "summary": "A security feature bypass vulnerability in the MSHTML Framework affects multiple versions of Microsoft Windows. The issue is publicly disclosed and actively reported.",
+      "impact": "An attacker can bypass security features in the MSHTML Framework.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft (including KB5075897, KB5075899, KB5075904, KB5075906, KB5075912, KB5075941, KB5075942, KB5075943, KB5075970, KB5075971, KB5075999, KB5077179, KB5077181, KB5077212).",
+      "checks": [
+        "Inventory Windows 10 and Windows 11 systems across the infrastructure.",
+        "Verify if the latest Microsoft security updates are installed."
+      ]
+    }
+  }
+}
