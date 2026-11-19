@@ -1,0 +1,115 @@
+{
+  "id": "sr-26-0100",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-96951"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5126646",
+      "KB5126651",
+      "KB5126653",
+      "KB5126655",
+      "KB5126657",
+      "KB5126836",
+      "KB5126868",
+      "KB5127646",
+      "KB5127648"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T08:41:34Z",
+    "updated": "2026-11-19T08:41:34Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Shell Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96951",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T08:41:34Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T08:41:34Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-shell-obkhod-funktsii-bezopasnosti-cve-2026",
+      "title": "Microsoft Windows Shell: обход функции безопасности CVE-2026-96951",
+      "summary": "Microsoft выпустила обновления, устраняющие уязвимость обхода функции безопасности в Windows Shell (CVE-2026-96951), зафиксирована эксплуатация.",
+      "impact": "Злоумышленник может обойти функции безопасности в Windows Shell. По данным вендора, зафиксирована эксплуатация.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, указанные в KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126836, KB5126868, KB5127646 или KB5127648.",
+      "checks": [
+        "Проверьте системы Windows 10 и связанные продукты на отсутствие обновлений безопасности.",
+        "Убедитесь в установке соответствующих обновлений KB для CVE-2026-96951."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-shell-sicherheitsfunktionen-bypass-cve-2026",
+      "title": "Microsoft Windows Shell: Sicherheitsfunktionen-Bypass CVE-2026-96951",
+      "summary": "Microsoft hat Updates zur Behebung eines Sicherheitsfunktionen-Bypass in Windows Shell (CVE-2026-96951) veröffentlicht, Ausnutzung ist bekannt.",
+      "impact": "Ein Angreifer kann Sicherheitsfunktionen in Windows Shell umgehen. Der Hersteller meldet Ausnutzung.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Installieren Sie die in KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126836, KB5126868, KB5127646 oder KB5127648 genannten Updates.",
+      "checks": [
+        "Inventarisieren Sie Windows 10 und betroffene Systeme hinsichtlich fehlender Sicherheitsupdates.",
+        "Überprüfen Sie die Installation der entsprechenden KB-Updates für CVE-2026-96951."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-shell-cve-2026-96951-security-feature-bypass",
+      "title": "Microsoft Windows Shell: CVE-2026-96951 Security Feature Bypass",
+      "summary": "Microsoft released updates addressing a security feature bypass vulnerability in Windows Shell (CVE-2026-96951), with exploitation reported.",
+      "impact": "An attacker can bypass security features in Windows Shell. The vendor reports exploitation.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates referenced by KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126836, KB5126868, KB5127646, or KB5127648.",
+      "checks": [
+        "Inventory Windows 10 and related systems for missing security updates.",
+        "Verify installation of the corresponding KB updates for CVE-2026-96951."
+      ]
+    }
+  }
+}

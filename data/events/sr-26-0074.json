@@ -1,0 +1,110 @@
+{
+  "id": "sr-26-0074",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "exchange-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-42897"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5094139",
+      "KB5094140",
+      "KB5094142",
+      "KB5094144"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.1,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T08:41:34Z",
+    "updated": "2026-11-19T08:41:34Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Exchange Server Spoofing Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42897",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T08:41:34Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T08:41:34Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-uyazvimost-spufinga-cve-2026-42897",
+      "title": "Microsoft Exchange Server: уязвимость спуфинга (CVE-2026-42897)",
+      "summary": "Microsoft Exchange Server подвержен уязвимости спуфинга (CVE-2026-42897) с оценкой CVSS 8.1. Сообщается об эксплуатации уязвимости.",
+      "impact": "Злоумышленник может проэксплуатировать данную уязвимость спуфинга.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, указанные в KB5094139, KB5094140, KB5094142 или KB5094144.",
+      "checks": [
+        "Проверьте экземпляры Microsoft Exchange Server на наличие уязвимости CVE-2026-42897.",
+        "Убедитесь в применении обновлений KB KB5094139, KB5094140, KB5094142 и KB5094144."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-spoofing-schwachstelle-cve-2026-42897",
+      "title": "Microsoft Exchange Server: Spoofing-Schwachstelle (CVE-2026-42897)",
+      "summary": "Microsoft Exchange Server ist von einer Spoofing-Schwachstelle (CVE-2026-42897) mit einem CVSS-Score von 8.1 betroffen. Die Ausnutzung wird vom Hersteller gemeldet.",
+      "impact": "Ein Angreifer kann diese Spoofing-Schwachstelle ausnutzen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die in KB5094139, KB5094140, KB5094142 oder KB5094144 genannten Updates an.",
+      "checks": [
+        "Überprüfen Sie Microsoft Exchange Server-Instanzen auf Anfälligkeit für CVE-2026-42897.",
+        "Überprüfen Sie die Anwendung der KB-Updates KB5094139, KB5094140, KB5094142 und KB5094144."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-spoofing-vulnerability-cve-2026-42897",
+      "title": "Microsoft Exchange Server: Spoofing Vulnerability (CVE-2026-42897)",
+      "summary": "Microsoft Exchange Server is affected by a spoofing vulnerability (CVE-2026-42897) with a CVSS score of 8.1. Vendor exploitation is reported.",
+      "impact": "An attacker can exploit this spoofing vulnerability.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply updates referenced by KB5094139, KB5094140, KB5094142, or KB5094144.",
+      "checks": [
+        "Check Microsoft Exchange Server instances for vulnerability status against CVE-2026-42897.",
+        "Verify the application of KB updates KB5094139, KB5094140, KB5094142, and KB5094144."
+      ]
+    }
+  }
+}

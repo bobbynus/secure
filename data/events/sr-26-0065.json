@@ -1,0 +1,109 @@
+{
+  "id": "sr-26-0065",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "sharepoint-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-58644"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5002873",
+      "KB5002874",
+      "KB5002880"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T08:41:34Z",
+    "updated": "2026-11-19T08:41:34Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft SharePoint Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58644",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T08:41:34Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T08:41:34Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-sharepoint-uyazvimost-udalennogo-vypolneniya-koda-cve",
+      "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода CVE-2026-58644",
+      "summary": "Microsoft SharePoint Server содержит критическую уязвимость удаленного выполнения кода с оценкой CVSS 9.8, эксплуатация которой подтверждена вендором.",
+      "impact": "Злоумышленник может выполнить удаленный код. Вендор сообщает об эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft (включая KB5002873, KB5002874, KB5002880).",
+      "checks": [
+        "Проверьте инсталляции Microsoft SharePoint Server на наличие уязвимости.",
+        "Убедитесь в установке обновлений KB5002873, KB5002874 или KB5002880."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-sharepoint-remotecodeausfuehrung-cve-2026-58644",
+      "title": "Microsoft SharePoint: Remotecodeausführung CVE-2026-58644",
+      "summary": "Microsoft SharePoint Server enthält eine kritische Schwachstelle zur Remotecodeausführung mit einem CVSS-Wert von 9.8, deren Ausnutzung vom Hersteller gemeldet wurde.",
+      "impact": "Ein Angreifer kann Remotecode ausführen. Der Hersteller meldet eine Ausnutzung.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5002873, KB5002874, KB5002880).",
+      "checks": [
+        "Überprüfen Sie Microsoft SharePoint Server-Instanzen auf den Schwachstellenstatus.",
+        "Prüfen Sie, ob die Updates KB5002873, KB5002874 oder KB5002880 installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-sharepoint-cve-2026-58644-remote-code-execution",
+      "title": "Microsoft SharePoint: CVE-2026-58644 Remote Code Execution Vulnerability",
+      "summary": "Microsoft SharePoint Server contains a critical remote code execution vulnerability rated CVSS 9.8, with vendor-reported exploitation.",
+      "impact": "An attacker can achieve remote code execution. The vendor reports exploitation.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft (including KB5002873, KB5002874, KB5002880).",
+      "checks": [
+        "Check Microsoft SharePoint Server instances for vulnerability status.",
+        "Verify if updates KB5002873, KB5002874, or KB5002880 are installed."
+      ]
+    }
+  }
+}
