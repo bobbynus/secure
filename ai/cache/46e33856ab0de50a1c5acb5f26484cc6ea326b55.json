@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: iSCSI Target Service Remote Code Execution Vulnerability",
+  "summary": "A critical remote code execution vulnerability exists in the Windows iSCSI Target Service (CVE-2026-65791).",
+  "impact": "Allows remote code execution. The sources do not specify further preconditions.",
+  "fix": "Apply updates referenced by KB5120228, KB5120229, KB5120233, KB5120238, KB5120242, KB5120385, KB5120386, or KB5120418.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows systems running the iSCSI Target Service.",
+   "Verify whether updates KB5120228, KB5120229, KB5120233, KB5120238, KB5120242, KB5120385, KB5120386, or KB5120418 are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в iSCSI Target Service",
+  "summary": "В Windows iSCSI Target Service обнаружена критическая уязвимость удаленного выполнения кода (CVE-2026-65791).",
+  "impact": "Позволяет удаленно выполнять код. Источники не приводят дополнительных предварительных условий.",
+  "fix": "Установите обновления, упомянутые в KB5120228, KB5120229, KB5120233, KB5120238, KB5120242, KB5120385, KB5120386 или KB5120418.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows, использующих iSCSI Target Service.",
+   "Проверьте наличие установленных обновлений KB5120228, KB5120229, KB5120233, KB5120238, KB5120242, KB5120385, KB5120386 или KB5120418."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungsschwachstelle im iSCSI Target Service",
+  "summary": "Im Windows iSCSI Target Service existiert eine kritische Schwachstelle zur Remotecodeausführung (CVE-2026-65791).",
+  "impact": "Ermöglicht die Remotecodeausführung. Die Quellen nennen keine weiteren Vorbedingungen.",
+  "fix": "Installieren Sie die in KB5120228, KB5120229, KB5120233, KB5120238, KB5120242, KB5120385, KB5120386 oder KB5120418 referenzierten Updates.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows-Systeme, die den iSCSI Target Service ausführen.",
+   "Überprüfen Sie, ob die Updates KB5120228, KB5120229, KB5120233, KB5120238, KB5120242, KB5120385, KB5120386 oder KB5120418 installiert sind."
+  ],
+  "regression": null
+ }
+}

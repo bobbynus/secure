@@ -61,21 +61,59 @@
  "texts": {
   "msrc:CVE-2026-70332": "Microsoft Office SharePoint Spoofing Vulnerability\nMicrosoft Office SharePoint. Microsoft 2026-Aug security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "4cfd2baffcd4b3ed72b37b37",
+  "texts": {
+   "en": {
+    "title": "Microsoft SharePoint: CVE-2026-70332 spoofing vulnerability",
+    "summary": "Microsoft SharePoint Server and Microsoft SharePoint Online are affected by a spoofing vulnerability tracked as CVE-2026-70332 with a CVSS score of 9.6.",
+    "impact": "The vulnerability allows spoofing attacks against Microsoft Office SharePoint.",
+    "fix": "The sources do not list fixed versions or updates.",
+    "workaround": null,
+    "checks": [
+     "Check inventory for Microsoft SharePoint Server and Microsoft SharePoint Online deployments."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft SharePoint: уязвимость спуфинга CVE-2026-70332",
+    "summary": "Microsoft SharePoint Server и Microsoft SharePoint Online подвержены уязвимости спуфинга CVE-2026-70332 с оценкой CVSS 9.6.",
+    "impact": "Уязвимость позволяет проводить атаки спуфинга против Microsoft Office SharePoint.",
+    "fix": "В источниках не указаны исправленные версии или обновления.",
+    "workaround": null,
+    "checks": [
+     "Проверьте инвентарь на наличие развертываний Microsoft SharePoint Server и Microsoft SharePoint Online."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft SharePoint: CVE-2026-70332 Spoofing-Schwachstelle",
+    "summary": "Microsoft SharePoint Server und Microsoft SharePoint Online sind von einer Spoofing-Schwachstelle mit der Kennung CVE-2026-70332 und einem CVSS-Score von 9.6 betroffen.",
+    "impact": "Die Schwachstelle ermöglicht Spoofing-Angriffe gegen Microsoft Office SharePoint.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen oder Updates.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie den Bestand auf Microsoft SharePoint Server und Microsoft SharePoint Online."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T09:20:43Z",
+  "slugs": {
+   "ru": "microsoft-sharepoint-uyazvimost-spufinga-cve-2026-70332",
+   "de": "microsoft-sharepoint-cve-2026-70332-spoofing-schwachstelle",
+   "en": "microsoft-sharepoint-cve-2026-70332-spoofing-vulnerability"
+  },
+  "published_at": "2026-11-19T09:20:43Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

@@ -1,0 +1,43 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Aug security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Aug security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: CVE-2026-79052 Use-after-free vulnerability in Aura",
+  "summary": "A critical use-after-free vulnerability in Aura affects Microsoft Edge (Chromium-based).",
+  "impact": "The vulnerability involves a use-after-free issue in Aura within Microsoft Edge (Chromium-based).",
+  "fix": "The sources do not state fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Edge (Chromium-based) installations for the affected versions."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: Уязвимость использования памяти после освобождения CVE-2026-79052 в Aura",
+  "summary": "Критическая уязвимость использования памяти после освобождения в Aura затрагивает Microsoft Edge (на базе Chromium).",
+  "impact": "Уязвимость связана с проблемой использования памяти после освобождения в Aura в Microsoft Edge (на базе Chromium).",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте установленные экземпляры Microsoft Edge (на базе Chromium) на предмет уязвимых версий."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: Use-After-Free-Schwachstelle CVE-2026-79052 in Aura",
+  "summary": "Eine kritische Use-After-Free-Schwachstelle in Aura betrifft Microsoft Edge (Chromium-basiert).",
+  "impact": "Die Schwachstelle betrifft ein Use-After-Free-Problem in Aura innerhalb von Microsoft Edge (Chromium-basiert).",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft Edge (Chromium-basiert) Installationen auf die betroffenen Versionen."
+  ],
+  "regression": null
+ }
+}

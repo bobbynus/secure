@@ -59,21 +59,59 @@
  "texts": {
   "msrc:CVE-2026-79052": "Chromium: CVE-2026-79052 Use after free in Aura\nMicrosoft Edge (Chromium-based). Microsoft 2026-Aug security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "c92579d007435db720ac35ec",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: CVE-2026-79052 Use-after-free vulnerability in Aura",
+    "summary": "A critical use-after-free vulnerability in Aura affects Microsoft Edge (Chromium-based).",
+    "impact": "The vulnerability involves a use-after-free issue in Aura within Microsoft Edge (Chromium-based).",
+    "fix": "The sources do not state fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft Edge (Chromium-based) installations for the affected versions."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: Уязвимость использования памяти после освобождения CVE-2026-79052 в Aura",
+    "summary": "Критическая уязвимость использования памяти после освобождения в Aura затрагивает Microsoft Edge (на базе Chromium).",
+    "impact": "Уязвимость связана с проблемой использования памяти после освобождения в Aura в Microsoft Edge (на базе Chromium).",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте установленные экземпляры Microsoft Edge (на базе Chromium) на предмет уязвимых версий."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: Use-After-Free-Schwachstelle CVE-2026-79052 in Aura",
+    "summary": "Eine kritische Use-After-Free-Schwachstelle in Aura betrifft Microsoft Edge (Chromium-basiert).",
+    "impact": "Die Schwachstelle betrifft ein Use-After-Free-Problem in Aura innerhalb von Microsoft Edge (Chromium-basiert).",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft Edge (Chromium-basiert) Installationen auf die betroffenen Versionen."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T09:20:43Z",
+  "slugs": {
+   "ru": "microsoft-edge-uyazvimost-ispolzovaniya-pamyati-posle",
+   "de": "microsoft-edge-use-after-free-schwachstelle-cve-2026-79052-in",
+   "en": "microsoft-edge-cve-2026-79052-use-after-free-vulnerability-in"
+  },
+  "published_at": "2026-11-19T09:20:43Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
