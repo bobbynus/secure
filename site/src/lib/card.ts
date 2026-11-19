@@ -35,6 +35,12 @@ const PRIO_ICON: Record<FeedItem['priority'], string> = {
   info: 'i',
 };
 
+// Icons only (the label is in aria-label/title); currentColor follows the theme.
+const COPY_ICON =
+  '<svg class="i-copy" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 3.5v-.5A1.5 1.5 0 0 0 9 1.5H4A1.5 1.5 0 0 0 2.5 3v5A1.5 1.5 0 0 0 4 9.5h.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>';
+const DONE_ICON =
+  '<svg class="i-done" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
 export function renderCard(it: FeedItem, L: CardLabels, base = ''): string {
   const tags: string[] = [];
   for (const p of it.products) {
@@ -60,7 +66,10 @@ export function renderCard(it: FeedItem, L: CardLabels, base = ''): string {
   ${ids ? `<p class="card-ids">${ids}${more}</p>` : ''}
   <p class="card-summary">${esc(it.summary)}</p>
   <ul class="card-tags">${tags.join('')}</ul>
-  <button type="button" class="quick-btn" data-quick="${esc(it.url)}" aria-haspopup="dialog">${esc(L['quick.open'] ?? 'Quick view')}</button>
+  <div class="card-actions">
+    <button type="button" class="quick-btn" data-quick="${esc(it.url)}" aria-haspopup="dialog">${esc(L['quick.open'] ?? 'Quick view')}</button>
+    <button type="button" class="copy-btn" data-copy="${esc(it.url)}" data-done="${esc(L['copy.done'] ?? 'Copied')}" aria-label="${esc(L['copy.link'] ?? 'Copy link')}" title="${esc(L['copy.link'] ?? 'Copy link')}">${COPY_ICON}${DONE_ICON}</button>
+  </div>
 </article>`;
 }
 
@@ -75,5 +84,5 @@ export const CARD_LABEL_KEYS = [
   'fix.available', 'fix.partial', 'fix.none', 'fix.n/a', 'fix.unknown',
   'conf.vendor', 'conf.official', 'conf.preliminary',
   'exp.confirmed', 'exp.reported', 'sources.n',
-  'feed.empty', 'feed.new', 'feed.count', 'quick.open',
+  'feed.empty', 'feed.new', 'feed.count', 'quick.open', 'copy.link', 'copy.done',
 ] as const;

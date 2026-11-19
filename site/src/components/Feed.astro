@@ -114,7 +114,10 @@ const pageHref = (n: number) => (n === 1 ? `${base}/` : `${base}/page/${n}/`);
   <div class="quick-body article"></div>
 </dialog>
 
+<p class="visually-hidden" id="copy-status" aria-live="polite"></p>
+
 <script>
   import '../scripts/feed';
   import '../scripts/quick';
+  import '../scripts/copy';
 </script>
