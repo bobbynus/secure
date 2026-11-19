@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "860be430eb6faf03a230bc94d0c1e011",
- "last_modified": "Thu, 19 Nov 2026 16:17:26 GMT",
- "checksum": "767b0d22ce8d1e84a9ccf6693d20d7554ff8cf56013cb00a67df6743d9064385",
+ "etag": "13388f1cc36468e6eeb1740784d6dc5c",
+ "last_modified": "Thu, 19 Nov 2026 16:48:25 GMT",
+ "checksum": "0819950b917d05b95773ce5e0dff037c47f64afe1bad8b162b1d8805c8fa5b81",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -25,12 +25,13 @@
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/": "d9987e48a0f75f524620ff81",
   "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/": "d26e547af176cf59693c8ff0",
   "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/": "3046fd84b163e523ae9bfbeb",
-  "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/": "27892cd941182f0059e6a512"
+  "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/": "27892cd941182f0059e6a512",
+  "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/": "0bafc862ddfb05eacc611e38"
  },
- "last_attempt": "2026-11-19T16:20:44Z",
- "last_success": "2026-11-19T16:20:44Z",
+ "last_attempt": "2026-11-19T16:50:42Z",
+ "last_success": "2026-11-19T16:50:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 21
+ "items_total": 22
 }

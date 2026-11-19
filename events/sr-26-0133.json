@@ -1,0 +1,124 @@
+{
+ "id": "sr-26-0133",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Fortinet",
+ "products": [
+  "linux-kernel"
+ ],
+ "product_names": [],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-64564",
+   "CVE-2026-98432",
+   "CVE-2026-99999"
+  ],
+  "advisory": [
+   "FG-IR-26-188",
+   "USN-9170-2",
+   "USN-9171-2"
+  ],
+  "kb": []
+ },
+ "severity": "critical",
+ "cvss": {
+  "score": 9.8,
+  "version": "3.x",
+  "source": "FortiGuard PSIRT advisories",
+  "vector": null
+ },
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Linux kernel RCE CVE-2026-98432",
+ "summary_hint": "CVSSv3 Score:\n9.8\nCVE-2026-98432:ipv4: free inet_opt and ireq_opt after an RCU grace period tcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the child socket (newinet->inet_opt) without copying it. Another cpu can concurrently process a retransmitted SYN for the same request socket, and send a SYNACK from tcp_check_req(). tcp_v4_send_synack() and inet_csk_route_req() read ireq->ireq_opt under rcu_read_lock() only, and ip_build_and_send_pkt() and ip_options_build() then read opt->optlen twice. Note that the SYNACK timer itself is not an issue: it holds a reference on its request socket, and inet_csk_reqsk_queue_drop() calls timer_delete_sync() before the child can be freed. Since commit 079096f103fa (\"tcp/dccp: install syn_recv requests into ehash table\"), request sockets are processed without holding the listener lock, so nothing prevents the child socket from being freed while the SYNACK is still being built. TCP child sockets do not have SOCK_RCU_FREE, and inet_sock_destruct() frees inet_opt with a plain kfree(), leading to a use-after-free in ip_options_build(). A similar issue exists with request socket migration (net.ipv4.tcp_migrate_req=1, or a BPF_SK_REUSEPORT_SELECT_OR_MIGRATE program). reqsk_timer_handler() clones the request socket with inet_reqsk_clone(), so that the old request socket and its clone share the same ireq_opt, then reqsk_migrate_reset() clears the pointer in the old one. Another cpu holding a reference on the old request socket can stil",
+ "created_at": "2026-11-19T16:50:42Z",
+ "updated_at": "2026-11-19T16:50:42Z",
+ "event_date": "2026-11-02T08:00:00Z",
+ "sources": [
+  {
+   "source_id": "fortiguard-psirt",
+   "item_key": "https://fortiguard.fortinet.com/psirt/FG-IR-26-188",
+   "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-188",
+   "title": "Linux kernel RCE CVE-2026-98432",
+   "publisher": "FortiGuard PSIRT advisories",
+   "kind": "vendor",
+   "date": "2026-11-02"
+  },
+  {
+   "source_id": "ubuntu-usn",
+   "item_key": "https://ubuntu.com/security/notices/USN-9171-2",
+   "url": "https://ubuntu.com/security/notices/USN-9171-2",
+   "title": "USN-9171-2: Linux kernel (Oracle) vulnerabilities",
+   "publisher": "Ubuntu Security Notices",
+   "kind": "vendor",
+   "date": "2026-11-19"
+  },
+  {
+   "source_id": "ubuntu-usn",
+   "item_key": "https://ubuntu.com/security/notices/USN-9170-2",
+   "url": "https://ubuntu.com/security/notices/USN-9170-2",
+   "title": "USN-9170-2: Linux kernel (AWS FIPS) vulnerabilities",
+   "publisher": "Ubuntu Security Notices",
+   "kind": "vendor",
+   "date": "2026-11-19"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-19T16:50:42Z",
+   "kind": "created",
+   "facts": {
+    "reason": "critical severity in infrastructure product"
+   },
+   "source": "fortiguard-psirt:https://fortiguard.fortinet.com/psirt/FG-IR-26-188"
+  },
+  {
+   "date": "2026-11-19T16:50:42Z",
+   "kind": "fix",
+   "facts": {
+    "kb": [],
+    "advisories": [
+     "FG-IR-26-188",
+     "USN-9170-2",
+     "USN-9171-2"
+    ]
+   },
+   "source": "ubuntu-usn:https://ubuntu.com/security/notices/USN-9171-2"
+  },
+  {
+   "date": "2026-11-19T16:50:42Z",
+   "kind": "source",
+   "facts": {},
+   "source": "ubuntu-usn:https://ubuntu.com/security/notices/USN-9170-2"
+  }
+ ],
+ "related": [],
+ "reason": "critical severity in infrastructure product",
+ "texts": {
+  "fortiguard-psirt:https://fortiguard.fortinet.com/psirt/FG-IR-26-188": "Linux kernel RCE CVE-2026-98432\nCVSSv3 Score:\n9.8\nCVE-2026-98432:ipv4: free inet_opt and ireq_opt after an RCU grace period tcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the child socket (newinet->inet_opt) without copying it. Another cpu can concurrently process a retransmitted SYN for the same request socket, and send a SYNACK from tcp_check_req(). tcp_v4_send_synack() and inet_csk_route_req() read ireq->ireq_opt under rcu_read_lock() only, and ip_build_and_send_pkt() and ip_options_build() then read opt->optlen twice. Note that the SYNACK timer itself is not an issue: it holds a reference on its request socket, and inet_csk_reqsk_queue_drop() calls timer_delete_sync() before the child can be freed. Since commit 079096f103fa (\"tcp/dccp: install syn_recv requests into ehash table\"), request sockets are processed without holding the listener lock, so nothing prevents the child socket from being freed while the SYNACK is still being built. TCP child sockets do not have SOCK_RCU_FREE, and inet_sock_destruct() frees inet_opt with a plain kfree(), leading to a use-after-free in ip_options_build(). A similar issue exists with request socket migration (net.ipv4.tcp_migrate_req=1, or a BPF_SK_REUSEPORT_SELECT_OR_MIGRATE program). reqsk_timer_handler() clones the request socket with inet_reqsk_clone(), so that the old request socket and its clone share the same ireq_opt, then reqsk_migrate_reset() clears the pointer in the old one. Another cpu holding a reference on the old request socket can still be using these options (sending a SYNACK, or creating a child in tcp_v4_syn_recv_sock()) when the clone is freed, and tcp_v4_reqsk_destructor() also uses a plain kfree(). Readers already use RCU, and other paths replacing inet_opt (do_ip_setsockopt(), cipso_v4_sock_setattr()...) already use kfree_rcu(). Use kfree_rcu() in inet_sock_destruct() and tcp_v4_reqsk_destructor() as well. IPv6 is not affected by the first issue, because tcp_v6_syn_recv_sock() duplicates the options. tcp_v6_reqsk_destructor() has the same migration issue with ipv6_opt, which is only set by CALIPSO. This will be addressed in a separate patch.\nRevised on 2026-11-19 00:00:00",
+  "ubuntu-usn:https://ubuntu.com/security/notices/USN-9171-2": "USN-9171-2: Linux kernel (Oracle) vulnerabilities\nSeveral security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n- IPv4 networking;\n- Ethernet bridge;\n- Netfilter;\n- XFRM subsystem;\n(CVE-2026-98432, CVE-2026-99999)",
+  "ubuntu-usn:https://ubuntu.com/security/notices/USN-9170-2": "USN-9170-2: Linux kernel (AWS FIPS) vulnerabilities\nSeveral security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n- IPv4 networking;\n- Ethernet bridge;\n- Netfilter;\n- SCTP protocol;\n- XFRM subsystem;\n(CVE-2026-64564, CVE-2026-98432, CVE-2026-99999)"
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}
