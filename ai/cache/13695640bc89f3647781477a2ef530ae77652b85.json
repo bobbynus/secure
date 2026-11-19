@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows",
+   "versions": "multiple",
+   "fixed": null,
+   "evidence": "Windows Remote Desktop Services Elevation of Privilege Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: Remote Desktop Services Elevation of Privilege Vulnerability",
+  "summary": "An elevation of privilege vulnerability in Microsoft Windows Remote Desktop Services allows attackers to escalate privileges. Exploitation is reported by the vendor.",
+  "impact": "An attacker can achieve elevation of privileges. Preconditions and specific network positions are not detailed in the sources.",
+  "fix": "Microsoft released security updates addressing the vulnerability, referenced by multiple KBs including `KB5075897`, `KB5075899`, `KB5075904`, `KB5075906`, `KB5075912`, `KB5075941`, `KB5075942`, `KB5075943`, `KB5075970`, `KB5075971`, `KB5075999`, `KB5077179`, `KB5077181`, and `KB5077212`.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows systems running affected versions of Windows 10 and Windows 11.",
+   "Verify the application of Microsoft security updates containing the relevant KB identifiers."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость повышения привилегий в Remote Desktop Services",
+  "summary": "Уязвимость повышения привилегий в Microsoft Windows Remote Desktop Services позволяет злоумышленникам повысить привилегии. Вендор сообщает об эксплуатации.",
+  "impact": "Злоумышленник может добиться повышения привилегий. Предварительные условия и сетевое расположение в источниках не детализированы.",
+  "fix": "Microsoft выпустила обновления безопасности, устраняющие уязвимость, на которые ссылаются KB: `KB5075897`, `KB5075899`, `KB5075904`, `KB5075906`, `KB5075912`, `KB5075941`, `KB5075942`, `KB5075943`, `KB5075970`, `KB5075971`, `KB5075999`, `KB5077179`, `KB5077181` и `KB5077212`.",
+  "workaround": null,
+  "checks": [
+   "Провести инвентаризацию систем Windows 10 и Windows 11.",
+   "Проверить установку обновлений безопасности Microsoft с соответствующими идентификаторами KB."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Schwachstelle zur Privilegienerweiterung in Remote Desktop Services",
+  "summary": "Eine Schwachstelle zur Privilegienerweiterung in Microsoft Windows Remote Desktop Services ermöglicht Angreifern die Erhöhung von Rechten. Der Hersteller meldet eine Ausnutzung.",
+  "impact": "Ein Angreifer kann eine Privilegienerweiterung erreichen. Voraussetzungen und Netzwerkpositionen sind in den Quellen nicht näher beschrieben.",
+  "fix": "Microsoft hat Sicherheitsupdates zur Behebung der Schwachstelle veröffentlicht, referenziert durch zahlreiche KBs wie `KB5075897`, `KB5075899`, `KB5075904`, `KB5075906`, `KB5075912`, `KB5075941`, `KB5075942`, `KB5075943`, `KB5075970`, `KB5075971`, `KB5075999`, `KB5077179`, `KB5077181` und `KB5077212`.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows-10- und Windows-11-Systeme.",
+   "Überprüfen Sie die Installation der Microsoft-Sicherheitsupdates mit den entsprechenden KB-Nummern."
+  ],
+  "regression": null
+ }
+}

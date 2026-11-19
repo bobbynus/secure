@@ -92,21 +92,62 @@
  "texts": {
   "msrc:CVE-2026-21510": "Windows Shell Security Feature Bypass Vulnerability\nWindows Shell. Publicly disclosed. Microsoft 2026-Feb security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "c83f69bd255426c29f7d433d",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows Shell: CVE-2026-21510 security feature bypass vulnerability",
+    "summary": "A security feature bypass vulnerability in Microsoft Windows Shell allows attackers to bypass security features. Microsoft reports the vulnerability as publicly disclosed and exploited.",
+    "impact": "An attacker can bypass security features in Windows Shell. The source texts do not detail specific preconditions.",
+    "fix": "Apply the corresponding security updates provided by Microsoft (such as `KB5075897`, `KB5075899`, `KB5075904`, `KB5075906`, `KB5075912`, `KB5075941`, `KB5075942`, `KB5075943`, `KB5075970`, `KB5075971`, `KB5075999`, `KB5077179`, `KB5077181`, `KB5077212`).",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows 10 and Windows 11 systems to check their update status.",
+     "Verify whether the security updates corresponding to CVE-2026-21510 have been applied."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows Shell: уязвимость обхода функции безопасности CVE-2026-21510",
+    "summary": "Уязвимость обхода функции безопасности в Microsoft Windows Shell позволяет злоумышленникам обходить механизмы защиты. Microsoft сообщает о публичном раскрытии и эксплуатации уязвимости.",
+    "impact": "Злоумышленник может обойти функции безопасности в Windows Shell. В исходных текстах нет подробностей о конкретных предварительных условиях.",
+    "fix": "Установите соответствующие обновления безопасности, предоставленные Microsoft (такие как `KB5075897`, `KB5075899`, `KB5075904`, `KB5075906`, `KB5075912`, `KB5075941`, `KB5075942`, `KB5075943`, `KB5075970`, `KB5075971`, `KB5075999`, `KB5077179`, `KB5077181`, `KB5077212`).",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows 10 и Windows 11 для проверки их статуса обновления.",
+     "Убедитесь, что обновления безопасности, соответствующие CVE-2026-21510, были применены."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows Shell: Sicherheitsfeature-Bypass-Schwachstelle CVE-2026-21510",
+    "summary": "Eine Sicherheitsfeature-Bypass-Schwachstelle in Microsoft Windows Shell ermöglicht Angreifern das Umgehen von Sicherheitsfunktionen. Microsoft meldet die Schwachstelle als öffentlich bekannt und ausgenutzt.",
+    "impact": "Ein Angreifer kann Sicherheitsfunktionen in Windows Shell umgehen. Die Quellen nennen keine spezifischen Vorbedingungen.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten entsprechenden Sicherheitsupdates an (wie `KB5075897`, `KB5075899`, `KB5075904`, `KB5075906`, `KB5075912`, `KB5075941`, `KB5075942`, `KB5075943`, `KB5075970`, `KB5075971`, `KB5075999`, `KB5077179`, `KB5077181`, `KB5077212`).",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows 10- und Windows 11-Systeme, um deren Update-Status zu überprüfen.",
+     "Überprüfen Sie, ob die zu CVE-2026-21510 gehörenden Sicherheitsupdates eingespielt wurden."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T10:20:52Z",
+  "slugs": {
+   "ru": "microsoft-windows-shell-uyazvimost-obkhoda-funktsii",
+   "de": "microsoft-windows-shell-sicherheitsfeature-bypass-schwachstelle",
+   "en": "microsoft-windows-shell-cve-2026-21510-security-feature-bypass"
+  },
+  "published_at": "2026-11-19T10:20:52Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

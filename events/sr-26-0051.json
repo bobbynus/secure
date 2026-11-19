@@ -66,21 +66,62 @@
  "texts": {
   "msrc:CVE-2026-21514": "Microsoft Word Security Feature Bypass Vulnerability\nMicrosoft Office Word. Publicly disclosed. Microsoft 2026-Feb security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "972a74cbcae31dadf05aa2b6",
+  "texts": {
+   "en": {
+    "title": "Microsoft Word: Security Feature Bypass Vulnerability (CVE-2026-21514)",
+    "summary": "A security feature bypass vulnerability exists in Microsoft Word, tracked as CVE-2026-21514, with vendor-reported exploitation.",
+    "impact": "An attacker can bypass security features in Microsoft Word. Exploitation is reported by the vendor.",
+    "fix": "Refer to vendor advisories for update and fix details.",
+    "workaround": null,
+    "checks": [
+     "Inventory systems running Microsoft 365 Apps and Office LTSC editions.",
+     "Check for the Microsoft 2026-Feb security update status."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Word: уязвимость обхода функции безопасности (CVE-2026-21514)",
+    "summary": "В Microsoft Word обнаружена уязвимость обхода функции безопасности, зарегистрированная как CVE-2026-21514, с эксплуатацией, подтвержденной производителем.",
+    "impact": "Злоумышленник может обойти функции безопасности в Microsoft Word. Эксплуатация подтверждена производителем.",
+    "fix": "Обратитесь к бюллетеням производителя для получения информации об обновлениях и исправлениях.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем с установленными Microsoft 365 Apps и Office LTSC.",
+     "Проверьте статус установки февральского обновления безопасности Microsoft 2026 года."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Word: Umgehung von Sicherheitsfunktionen (CVE-2026-21514)",
+    "summary": "In Microsoft Word existiert eine Schwachstelle zur Umgehung von Sicherheitsfunktionen, geführt als CVE-2026-21514, deren Ausnutzung vom Hersteller gemeldet wurde.",
+    "impact": "Ein Angreifer kann Sicherheitsfunktionen in Microsoft Word umgehen. Die Ausnutzung wird vom Hersteller gemeldet.",
+    "fix": "Informationen zu Updates und Korrekturen finden Sie in den Herstellerhinweisen.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Systeme, auf denen Microsoft 365 Apps und Office LTSC-Editionen ausgeführt werden.",
+     "Überprüfen Sie den Status des Microsoft-Sicherheitsupdates vom Februar 2026."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T10:20:52Z",
+  "slugs": {
+   "ru": "microsoft-word-uyazvimost-obkhoda-funktsii-bezopasnosti-cve",
+   "de": "microsoft-word-umgehung-von-sicherheitsfunktionen-cve-2026-21514",
+   "en": "microsoft-word-security-feature-bypass-vulnerability-cve-2026"
+  },
+  "published_at": "2026-11-19T10:20:52Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

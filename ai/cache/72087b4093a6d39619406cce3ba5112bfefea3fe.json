@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Aug security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Aug security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: CVE-2026-79290 Use after free in Aura",
+  "summary": "Microsoft Edge (Chromium-based) contains a use-after-free vulnerability in Aura tracked as CVE-2026-79290.",
+  "impact": "The vulnerability involves a use-after-free in Aura, affecting Microsoft Edge (Chromium-based).",
+  "fix": "The sources do not state fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory systems running Microsoft Edge (Chromium-based).",
+   "Check systems for CVE-2026-79290."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: CVE-2026-79290 Use after free в Aura",
+  "summary": "Microsoft Edge (Chromium-based) содержит уязвимость типа use-after-free в Aura, которой присвоен идентификатор CVE-2026-79290.",
+  "impact": "Уязвимость связана с использованием памяти после освобождения (use-after-free) в Aura и затрагивает Microsoft Edge (Chromium-based).",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Инвентаризируйте системы, использующие Microsoft Edge (Chromium-based).",
+   "Проверьте системы на наличие CVE-2026-79290."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: CVE-2026-79290 Use-after-Free in Aura",
+  "summary": "Microsoft Edge (Chromium-based) enthält eine Use-after-Free-Schwachstelle in Aura, die als CVE-2026-79290 geführt wird.",
+  "impact": "Die Schwachstelle betrifft Microsoft Edge (Chromium-based) durch einen Use-after-Free in Aura.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Systeme mit Microsoft Edge (Chromium-based).",
+   "Überprüfen Sie Systeme auf CVE-2026-79290."
+  ],
+  "regression": null
+ }
+}
