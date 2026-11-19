@@ -23,6 +23,11 @@ from typing import Iterable, Optional
 from .models import Event, SourceItem, SourceState
 
 
+def ref_key(source_id: str, item_key: str) -> str:
+    """Index key of one source message (never collides with CVE / KB / advisory identifiers)."""
+    return f"ref:{source_id}:{item_key}"
+
+
 def _write(path: Path, text: str):
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
@@ -66,6 +71,9 @@ class Store:
     def _reindex(self, e: Event):
         for k in e.identifiers.keys():
             self._index[k].add(e.id)
+        # A later revision of the same source message belongs to the same event, whatever its identifiers.
+        for s in e.sources:
+            self._index[ref_key(s.source_id, s.item_key)].add(e.id)
 
     def events_for_keys(self, keys: Iterable[str]) -> list[Event]:
         ids = set().union(*(self._index.get(k, set()) for k in keys)) if keys else set()

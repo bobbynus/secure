@@ -31,8 +31,10 @@
       "Microsoft"
     ],
     "interval": "60m",
-    "state": "planned",
-    "terms": "HTML; adapter pending (known issues)"
+    "state": "ok",
+    "adapter": "ms_release_health",
+    "feed": "https://learn.microsoft.com/en-us/windows/release-health/",
+    "terms": "Known issues from the per-version status pages (HTML)"
   },
   {
     "id": "msrc",
@@ -87,13 +89,15 @@
     "name": "Ivanti security advisories",
     "url": "https://www.ivanti.com/blog/topics/security-advisory",
     "kind": "vendor",
-    "format": "html",
+    "format": "rss",
     "vendors": [
       "Ivanti"
     ],
     "interval": "60m",
-    "state": "planned",
-    "terms": "HTML portal; adapter pending"
+    "state": "ok",
+    "adapter": "rss",
+    "feed": "https://www.ivanti.com/blog/topics/security-advisory/rss",
+    "terms": "Security advisory blog; advisory links name the CVEs"
   },
   {
     "id": "broadcom-vmsa",
@@ -106,7 +110,7 @@
     ],
     "interval": "60m",
     "state": "planned",
-    "terms": "HTML portal; adapter pending"
+    "terms": "JS portal without a public feed; VMware advisories arrive via CERT-Bund and CISA KEV meanwhile"
   },
   {
     "id": "cisco-psirt",
@@ -136,7 +140,7 @@
     ],
     "interval": "60m",
     "state": "planned",
-    "terms": "No machine-readable feed found; needs an HTML/JS adapter"
+    "terms": "JS portal without a public feed; NetScaler advisories arrive via CERT-Bund and CISA KEV meanwhile"
   },
   {
     "id": "ubuntu-usn",
@@ -210,7 +214,10 @@
       "Docker"
     ],
     "interval": "6h",
-    "state": "planned"
+    "state": "ok",
+    "adapter": "docker_notes",
+    "feed": "https://docs.docker.com/engine/release-notes/",
+    "terms": "Security sections of the release notes; fix information only"
   },
   {
     "id": "proxmox-announcements",
@@ -239,5 +246,47 @@
     "state": "ok",
     "adapter": "rss",
     "feed": "https://opnsense.org/feed/"
+  },
+  {
+    "id": "cert-bund-wid",
+    "name": "CERT-Bund (BSI) WID security advisories",
+    "url": "https://wid.cert-bund.de/portal/wid/securityadvisory",
+    "kind": "cert",
+    "format": "json",
+    "interval": "60m",
+    "state": "ok",
+    "adapter": "csaf",
+    "feed": "https://wid.cert-bund.de/.well-known/csaf/white/changes.csv",
+    "terms": "BSI CSAF 2.0 documents (TLP:WHITE), German; context and official confirmation"
+  },
+  {
+    "id": "zdi-advisories",
+    "name": "Zero Day Initiative published advisories",
+    "url": "https://www.zerodayinitiative.com/advisories/published/",
+    "kind": "research",
+    "format": "rss",
+    "interval": "60m",
+    "state": "ok",
+    "adapter": "rss",
+    "feed": "https://www.zerodayinitiative.com/rss/published/",
+    "detail": [
+      "www.zerodayinitiative.com"
+    ],
+    "terms": "Trend Micro ZDI; summaries with link and attribution"
+  },
+  {
+    "id": "bleepingcomputer",
+    "name": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/",
+    "kind": "media",
+    "format": "rss",
+    "interval": "30m",
+    "state": "ok",
+    "adapter": "rss",
+    "feed": "https://www.bleepingcomputer.com/feed/",
+    "detail": [
+      "www.bleepingcomputer.com"
+    ],
+    "terms": "Media: discovery and context, never confirmation; summaries with link"
   }
 ]

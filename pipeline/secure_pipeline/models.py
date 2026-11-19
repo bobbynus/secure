@@ -18,7 +18,7 @@ from pydantic import BaseModel, Field
 
 Category = Literal["vulnerability", "attack", "update-issue"]
 Severity = Literal["critical", "high", "medium", "low", "info"]
-ItemKind = Literal["advisory", "kev", "notice", "regression", "announcement"]
+ItemKind = Literal["advisory", "kev", "notice", "regression", "announcement", "article"]
 SourceKind = Literal["vendor", "kev", "nvd", "cert", "research", "media", "community"]
 
 

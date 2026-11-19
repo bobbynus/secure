@@ -24,6 +24,8 @@ ADVISORY_RES = [
     re.compile(r"\bGHSA-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}\b"),  # GitHub
     re.compile(r"\bCTX\d{6}\b"),  # Citrix
     re.compile(r"\bPAN-SA-\d{4}-\d{4}\b"),  # Palo Alto
+    re.compile(r"\bZDI-\d{2}-\d{3,5}\b"),  # Zero Day Initiative
+    re.compile(r"\bWID-SEC-\d{4}-\d{4,}\b"),  # CERT-Bund (BSI WID)
 ]
 MAX_TEXT = 4000
 
@@ -91,9 +93,9 @@ def severity_word(s: Optional[str]) -> Optional[Severity]:
     s = s.strip().lower()
     return {
         "critical": "critical", "kritisch": "critical",
-        "high": "high", "important": "high",
-        "medium": "medium", "moderate": "medium",
-        "low": "low", "informational": "info", "info": "info", "none": "info",
+        "high": "high", "important": "high", "hoch": "high",
+        "medium": "medium", "moderate": "medium", "mittel": "medium",
+        "low": "low", "niedrig": "low", "informational": "info", "info": "info", "none": "info",
     }.get(s)
 
 
