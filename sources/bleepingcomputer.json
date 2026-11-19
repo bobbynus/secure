@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "2d82686fb2ac1b7b61d26ba6a9ed384f",
- "last_modified": "Thu, 19 Nov 2026 12:13:27 GMT",
- "checksum": "483446fc840bf27b55a3c90d6becc7397556f50f66e26d468f97f911cb541cae",
+ "etag": "1aea1b491f353fd71f5d28736183a17d",
+ "last_modified": "Thu, 19 Nov 2026 12:43:27 GMT",
+ "checksum": "00cdfd0baca6947a1e6f356af1098150a2953bf6c8c30d1213fc559fe6892496",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -24,8 +24,8 @@
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/": "d7b8f7f6ff71baab4a753318",
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/": "d9987e48a0f75f524620ff81"
  },
- "last_attempt": "2026-11-19T12:20:41Z",
- "last_success": "2026-11-19T12:20:41Z",
+ "last_attempt": "2026-11-19T12:50:42Z",
+ "last_success": "2026-11-19T12:50:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

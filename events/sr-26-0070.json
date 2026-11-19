@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-40411": "Azure Virtual Network Gateway Remote Code Execution Vulnerability\nAzure Virtual Network Gateway. Microsoft 2026-May security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "cc907217f362a1ad61de8702",
+  "texts": {
+   "en": {
+    "title": "Microsoft Azure Virtual Network Gateway: Remote Code Execution",
+    "summary": "Microsoft Azure Virtual Network Gateway contains a remote code execution vulnerability with a CVSS score of 9.9.",
+    "impact": "An attacker can achieve remote code execution. Preconditions and specific attack mechanisms are not detailed in the sources.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Inventory systems running Azure Virtual Network Gateway",
+     "Check Microsoft security advisories for updates regarding CVE-2026-40411"
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Azure Virtual Network Gateway: удаленное выполнение кода",
+    "summary": "Microsoft Azure Virtual Network Gateway содержит уязвимость удаленного выполнения кода с оценкой CVSS 9.9.",
+    "impact": "Злоумышленник может выполнить удаленный код. Предварительные условия и конкретные механизмы атак в источниках не детализированы.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Провести инвентаризацию систем, использующих Azure Virtual Network Gateway",
+     "Проверить бюллетени безопасности Microsoft на наличие обновлений для CVE-2026-40411"
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Azure Virtual Network Gateway: Remotecodeausführung",
+    "summary": "Microsoft Azure Virtual Network Gateway enthält eine Schwachstelle zur Remotecodeausführung mit einem CVSS-Score von 9.9.",
+    "impact": "Ein Angreifer kann Remotecode ausführen. Voraussetzungen und spezifische Angriffsmechanismen werden in den Quellen nicht genannt.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Systeme mit Azure Virtual Network Gateway inventarisieren",
+     "Microsoft-Sicherheitshinweise auf Updates zu CVE-2026-40411 prüfen"
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T12:51:04Z",
+  "slugs": {
+   "ru": "microsoft-azure-virtual-network-gateway-udalennoe-vypolnenie",
+   "de": "microsoft-azure-virtual-network-gateway-remotecodeausfuehrung",
+   "en": "microsoft-azure-virtual-network-gateway-remote-code-execution"
+  },
+  "published_at": "2026-11-19T12:51:04Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

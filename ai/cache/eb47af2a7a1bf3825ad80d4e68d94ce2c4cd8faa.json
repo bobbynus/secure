@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows Server",
+   "versions": "all",
+   "fixed": null,
+   "evidence": "Windows Netlogon Remote Code Execution Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows Netlogon Remote Code Execution Vulnerability",
+  "summary": "A critical remote code execution vulnerability exists in Microsoft Windows Netlogon with a CVSS score of 9.8.",
+  "impact": "Allows remote code execution.",
+  "fix": "Updates are available via KB5087423, KB5087424, KB5087470, KB5087471, KB5087537, KB5087538, KB5087539, KB5087541, and KB5087545.",
+  "workaround": null,
+  "checks": [
+   "Check Windows Server systems for Netlogon exposure",
+   "Apply the appropriate security updates"
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Уязвимость удаленного выполнения кода в Microsoft Windows Netlogon",
+  "summary": "Критическая уязвимость удаленного выполнения кода обнаружена в Microsoft Windows Netlogon с оценкой CVSS 9.8.",
+  "impact": "Позволяет удаленное выполнение кода.",
+  "fix": "Обновления доступны через KB5087423, KB5087424, KB5087470, KB5087471, KB5087537, KB5087538, KB5087539, KB5087541 и KB5087545.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows Server на уязвимость Netlogon",
+   "Установите соответствующие обновления безопасности"
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows Netlogon: Schwachstelle zur Remote-Code-Ausführung",
+  "summary": "Eine kritische Schwachstelle zur Remote-Code-Ausführung existiert in Microsoft Windows Netlogon mit einem CVSS-Score von 9.8.",
+  "impact": "Ermöglicht die Remote-Code-Ausführung.",
+  "fix": "Updates sind über KB5087423, KB5087424, KB5087470, KB5087471, KB5087537, KB5087538, KB5087539, KB5087541 und KB5087545 verfügbar.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows Server-Systeme auf Netlogon-Exposition",
+   "Wenden Sie die entsprechenden Sicherheitsupdates an"
+  ],
+  "regression": null
+ }
+}

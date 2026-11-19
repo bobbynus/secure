@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft HTTP.sys: Remote Code Execution Vulnerability (CVE-2026-47291)",
+  "summary": "A critical remote code execution vulnerability exists in Microsoft HTTP.sys, tracked as CVE-2026-47291 with a CVSS score of 9.8.",
+  "impact": "The vulnerability allows for remote code execution with a CVSS base score of 9.8. Specific preconditions and architectural details are not provided in the sources.",
+  "fix": "Microsoft has released updates addressing the vulnerability, associated with KB articles KB5093998, KB5094041, KB5094042, KB5094122, KB5094123, KB5094125, KB5094126, KB5094127, KB5094128, and KB5095051.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows systems running affected versions of Windows 10 and Windows 11.",
+   "Verify the application of updates associated with KB5093998, KB5094041, KB5094042, KB5094122, KB5094123, KB5094125, KB5094126, KB5094127, KB5094128, and KB5095051."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft HTTP.sys: уязвимость удаленного выполнения кода (CVE-2026-47291)",
+  "summary": "В компоненте Microsoft HTTP.sys обнаружена критическая уязвимость удаленного выполнения кода, получившая идентификатор CVE-2026-47291 и оценку CVSS 9.8.",
+  "impact": "Уязвимость позволяет осуществлять удаленное выполнение кода с базовой оценкой CVSS 9.8. Конкретные предварительные условия и архитектурные детали в источниках не приводятся.",
+  "fix": "Microsoft выпустила обновления, устраняющие уязвимость, связанные с базами знаний KB5093998, KB5094041, KB5094042, KB5094122, KB5094123, KB5094125, KB5094126, KB5094127, KB5094128 и KB5095051.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows под управлением затронутых версий Windows 10 и Windows 11.",
+   "Проверьте установку обновлений, связанных с KB5093998, KB5094041, KB5094042, KB5094122, KB5094123, KB5094125, KB5094126, KB5094127, KB5094128 и KB5095051."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft HTTP.sys: Schwachstelle für Remotecodeausführung (CVE-2026-47291)",
+  "summary": "In Microsoft HTTP.sys existiert eine kritische Schwachstelle zur Remotecodeausführung, geführt als CVE-2026-47291 mit einem CVSS-Score von 9.8.",
+  "impact": "Die Schwachstelle ermöglicht die Remotecodeausführung mit einem CVSS-Basiswert von 9.8. Spezifische Vorbedingungen und technische Details werden in den Quellen nicht genannt.",
+  "fix": "Microsoft hat Updates zur Behebung der Schwachstelle veröffentlicht, die mit den KB-Artikeln KB5093998, KB5094041, KB5094042, KB5094122, KB5094123, KB5094125, KB5094126, KB5094127, KB5094128 und KB5095051 assoziiert sind.",
+  "workaround": null,
+  "checks": [
+   "Erfassen Sie Windows-Systeme mit betroffenen Versionen von Windows 10 und Windows 11 im Inventar.",
+   "Überprüfen Sie die Anwendung der Updates, die mit KB5093998, KB5094041, KB5094042, KB5094122, KB5094123, KB5094125, KB5094126, KB5094127, KB5094128 und KB5095051 verknüpft sind."
+  ],
+  "regression": null
+ }
+}
