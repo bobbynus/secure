@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-110152": "Chromium CVE-2026-110152: Buffer overflow\nMicrosoft Edge (Chromium-based). Microsoft 2026-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "9f51cd1eac679e44aa91f6c4",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: Buffer overflow in Chromium-based versions",
+    "summary": "A buffer overflow vulnerability (CVE-2026-110152) exists in Microsoft Edge (Chromium-based) with a CVSS score of 9.6.",
+    "impact": "The vulnerability can lead to severe impacts as indicated by the critical severity and a CVSS score of 9.6.",
+    "fix": "The sources do not state fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft Edge (Chromium-based) installations.",
+     "Check systems for CVE-2026-110152 exposure."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: переполнение буфера в версиях на базе Chromium",
+    "summary": "В Microsoft Edge (на базе Chromium) обнаружена уязвимость переполнения буфера (CVE-2026-110152) с оценкой CVSS 9.6.",
+    "impact": "Уязвимость может привести к серьезным последствиям, о чем свидетельствует критическая степень опасности и оценка CVSS 9.6.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проинвентаризируйте установленные экземпляры Microsoft Edge (на базе Chromium).",
+     "Проверьте системы на подверженность CVE-2026-110152."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: Pufferüberlauf in Chromium-basierten Versionen",
+    "summary": "In Microsoft Edge (Chromium-basiert) existiert eine Pufferüberlauf-Schwachstelle (CVE-2026-110152) mit einem CVSS-Score von 9.6.",
+    "impact": "Die Schwachstelle kann schwerwiegende Auswirkungen haben, worauf die kritische Schwere und ein CVSS-Score von 9.6 hindeuten.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Microsoft Edge (Chromium-basiert) Installationen.",
+     "Überprüfen Sie Systeme auf Betroffenheit von CVE-2026-110152."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-19T14:20:44Z",
+  "slugs": {
+   "ru": "microsoft-edge-perepolnenie-bufera-v-versiyakh-na-baze-chromium",
+   "de": "microsoft-edge-pufferueberlauf-in-chromium-basierten-versionen",
+   "en": "microsoft-edge-buffer-overflow-in-chromium-based-versions"
+  },
+  "published_at": "2026-11-19T14:20:44Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

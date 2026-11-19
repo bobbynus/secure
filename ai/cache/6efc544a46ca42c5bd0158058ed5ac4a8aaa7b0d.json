@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Oct security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Oct security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: Buffer overflow in Chromium-based versions",
+  "summary": "A buffer overflow vulnerability (CVE-2026-110152) exists in Microsoft Edge (Chromium-based) with a CVSS score of 9.6.",
+  "impact": "The vulnerability can lead to severe impacts as indicated by the critical severity and a CVSS score of 9.6.",
+  "fix": "The sources do not state fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Edge (Chromium-based) installations.",
+   "Check systems for CVE-2026-110152 exposure."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: переполнение буфера в версиях на базе Chromium",
+  "summary": "В Microsoft Edge (на базе Chromium) обнаружена уязвимость переполнения буфера (CVE-2026-110152) с оценкой CVSS 9.6.",
+  "impact": "Уязвимость может привести к серьезным последствиям, о чем свидетельствует критическая степень опасности и оценка CVSS 9.6.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проинвентаризируйте установленные экземпляры Microsoft Edge (на базе Chromium).",
+   "Проверьте системы на подверженность CVE-2026-110152."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: Pufferüberlauf in Chromium-basierten Versionen",
+  "summary": "In Microsoft Edge (Chromium-basiert) existiert eine Pufferüberlauf-Schwachstelle (CVE-2026-110152) mit einem CVSS-Score von 9.6.",
+  "impact": "Die Schwachstelle kann schwerwiegende Auswirkungen haben, worauf die kritische Schwere und ein CVSS-Score von 9.6 hindeuten.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Microsoft Edge (Chromium-basiert) Installationen.",
+   "Überprüfen Sie Systeme auf Betroffenheit von CVE-2026-110152."
+  ],
+  "regression": null
+ }
+}

@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "c690b2e129f572052a9a2f2b4e19e80a",
- "last_modified": "Thu, 19 Nov 2026 13:42:26 GMT",
- "checksum": "528ebbc3fffab2f4ba5143b76a04ce5df2efedc7ef80c0fb9a77096eafcf851a",
+ "etag": "f20c6ebbdc4d181fd807a21070ade499",
+ "last_modified": "Thu, 19 Nov 2026 14:12:27 GMT",
+ "checksum": "42daab7c9cae9583a3b2e952bf83241a229332824cdff9225e449401c7633bea",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -25,8 +25,8 @@
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/": "d9987e48a0f75f524620ff81",
   "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/": "d26e547af176cf59693c8ff0"
  },
- "last_attempt": "2026-11-19T13:50:42Z",
- "last_success": "2026-11-19T13:50:42Z",
+ "last_attempt": "2026-11-19T14:20:42Z",
+ "last_success": "2026-11-19T14:20:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
