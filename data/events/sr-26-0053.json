@@ -1,0 +1,98 @@
+{
+  "id": "sr-26-0053",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-48561"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.6,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T10:51:01Z",
+    "updated": "2026-11-19T10:51:01Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Edge Copilot Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48561",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T10:51:01Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T10:51:01Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-edge-copilot-uyazvimost-udalennogo-vypolneniya-koda",
+      "title": "Microsoft Edge Copilot: уязвимость удаленного выполнения кода",
+      "summary": "В Microsoft Edge Copilot для Android и iOS обнаружена уязвимость удаленного выполнения кода (CVE-2026-48561).",
+      "impact": "Уязвимость позволяет выполнить удаленный код.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проверьте установленные экземпляры Microsoft Edge Copilot на Android и iOS на наличие данной уязвимости."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-edge-copilot-remotecodeausfuehrung",
+      "title": "Microsoft Edge Copilot: Remotecodeausführung",
+      "summary": "In Microsoft Edge Copilot für Android und iOS existiert eine Schwachstelle zur Remotecodeausführung (CVE-2026-48561).",
+      "impact": "Die Schwachstelle ermöglicht die Remotecodeausführung.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Überprüfen Sie Microsoft Edge Copilot-Installation auf Android und iOS auf die genannte Schwachstelle."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-edge-copilot-remote-code-execution-vulnerability",
+      "title": "Microsoft Edge Copilot: Remote Code Execution Vulnerability",
+      "summary": "A remote code execution vulnerability exists in Microsoft Edge Copilot for Android and iOS (CVE-2026-48561).",
+      "impact": "The vulnerability allows for remote code execution.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources do not list fixed versions.",
+      "checks": [
+        "Check Microsoft Edge Copilot installations on Android and iOS for the reported vulnerability."
+      ]
+    }
+  }
+}

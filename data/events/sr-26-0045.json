@@ -1,0 +1,98 @@
+{
+  "id": "sr-26-0045",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-79224"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.3,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-19T10:51:01Z",
+    "updated": "2026-11-19T10:51:01Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Chromium: CVE-2026-79224 Use after free in Chromecast",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-79224",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-19T10:51:01Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-19T10:51:01Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-edge-uyazvimost-use-after-free-v-chromecast-cve-2026",
+      "title": "Microsoft Edge: уязвимость use-after-free в Chromecast (CVE-2026-79224)",
+      "summary": "В Microsoft Edge (Chromium-based) обнаружена уязвимость типа use-after-free в Chromecast, которой присвоен идентификатор CVE-2026-79224.",
+      "impact": "Источники не содержат сведений о точных последствиях или предварительных условиях.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проверьте установленные версии Microsoft Edge (Chromium-based) на предмет уязвимости."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-edge-use-after-free-in-chromecast-via-cve-2026-79224",
+      "title": "Microsoft Edge: Use-After-Free in Chromecast via CVE-2026-79224",
+      "summary": "Microsoft Edge (Chromium-based) ist von einer Use-After-Free-Schwachstelle in Chromecast betroffen, die als CVE-2026-79224 geführt wird.",
+      "impact": "Die Quellen nennen keine genauen Auswirkungen oder Vorbedingungen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "In den Quellen sind keine korrigierten Versionen genannt.",
+      "checks": [
+        "Prüfen Sie Microsoft Edge (Chromium-based)-Installationen auf betroffene Versionen."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-edge-use-after-free-in-chromecast-via-cve-2026-79224",
+      "title": "Microsoft Edge: Use after free in Chromecast via CVE-2026-79224",
+      "summary": "Microsoft Edge (Chromium-based) is affected by a use-after-free vulnerability in Chromecast, tracked as CVE-2026-79224.",
+      "impact": "The sources do not specify the exact impact or preconditions.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources list no fixed versions.",
+      "checks": [
+        "Check Microsoft Edge (Chromium-based) installations for the affected versions."
+      ]
+    }
+  }
+}

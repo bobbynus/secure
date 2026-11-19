@@ -1,7 +1,7 @@
 {
   "id": "sr-26-0024",
   "category": "vulnerability",
-  "priority": "high",
+  "priority": "critical",
   "confirmation": "official",
   "lifecycle": "confirmed",
   "fix": "unknown",
@@ -20,7 +20,9 @@
     "cve": [
       "CVE-2026-90436"
     ],
-    "advisory": [],
+    "advisory": [
+      "WID-SEC-2026-4634"
+    ],
     "kb": []
   },
   "affected": [],
@@ -32,7 +34,7 @@
   "dates": {
     "event": "2026-11-18T00:00:00Z",
     "published": "2026-11-18T20:01:29Z",
-    "updated": "2026-11-18T20:01:29Z"
+    "updated": "2026-11-19T10:50:41Z"
   },
   "sources": [
     {
@@ -42,6 +44,14 @@
       "publisher": "CISA Known Exploited Vulnerabilities",
       "kind": "kev",
       "date": "2026-11-18"
+    },
+    {
+      "id": "s2",
+      "title": "Atlassian Produkte (Bamboo, Bitbucket, Confluence, Crucible, Fisheye und Jira): Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4634",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
+      "date": "2026-11-17"
     }
   ],
   "revisions": [
@@ -52,6 +62,15 @@
         "ru": "Первая публикация.",
         "de": "Erstveröffentlichung.",
         "en": "First published."
+      }
+    },
+    {
+      "date": "2026-11-19T10:50:41Z",
+      "kind": "status",
+      "note": {
+        "ru": "Обновлены приоритет или статус подтверждения.",
+        "de": "Priorität oder Bestätigungsstatus aktualisiert.",
+        "en": "Priority or confirmation status updated."
       }
     }
   ],
