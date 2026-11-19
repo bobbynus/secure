@@ -1,8 +1,8 @@
 {
  "id": "paloalto-psirt",
- "etag": "W/\"2088-uD2DHj8swdP9kswdeXpM2TTyakM\"",
+ "etag": "W/\"2088-J6lI4aBePUGyRnxPdPIK1hkbt3o\"",
  "last_modified": null,
- "checksum": "deb4a3f04079ad31306af3f24cc135700a18aaa378f5fa6986c7641082d820cb",
+ "checksum": "89ad2aede78308f1024a8780738d67fbf2fbbced04329e569919d9bebaad9549",
  "cursor": {},
  "seen": {
   "https://security.paloaltonetworks.com/CVE-2026-0329": "6190a2101d284a59ebfa62c3",
@@ -32,8 +32,8 @@
   "https://security.paloaltonetworks.com/PAN-SA-2026-0013": "1361ca7becf4504106f83134",
   "https://security.paloaltonetworks.com/CVE-2026-0319": "d001779b77d3b41c5641cc5c"
  },
- "last_attempt": "2026-11-19T01:00:46Z",
- "last_success": "2026-11-19T01:00:46Z",
+ "last_attempt": "2026-11-19T01:40:49Z",
+ "last_success": "2026-11-19T01:40:49Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
