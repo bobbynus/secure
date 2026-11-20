@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows MSHTML Platform: CVE-2024-43573",
+  "summary": "A spoofing vulnerability exists in the Microsoft Windows MSHTML Platform, tracked as CVE-2024-43573. Microsoft reports exploitation.",
+  "impact": "An attacker can exploit the spoofing vulnerability in the MSHTML Platform. Exploitation is reported.",
+  "fix": "Apply the updates provided by Microsoft (such as KB5044273, KB5044277, KB5044280, KB5044281, KB5044284, KB5044285, KB5044286, KB5044288, KB5044293, KB5044343).",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows systems for MSHTML Platform components.",
+   "Verify if Microsoft security updates including KB5044273, KB5044277, KB5044280, KB5044281, KB5044284, KB5044285, KB5044286, KB5044288, KB5044293, and KB5044343 are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows MSHTML Platform: CVE-2024-43573",
+  "summary": "В платформе Microsoft Windows MSHTML обнаружена уязвимость спуфинга, получившая идентификатор CVE-2024-43573. Microsoft сообщает об эксплуатации.",
+  "impact": "Злоумышленник может проэксплуатировать уязвимость спуфинга в платформе MSHTML. Сообщается об эксплуатации.",
+  "fix": "Установите обновления, предоставленные Microsoft (такие как KB5044273, KB5044277, KB5044280, KB5044281, KB5044284, KB5044285, KB5044286, KB5044288, KB5044293, KB5044343).",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на наличие компонентов платформы MSHTML.",
+   "Убедитесь, что установлены обновления безопасности Microsoft, включая KB5044273, KB5044277, KB5044280, KB5044281, KB5044284, KB5044285, KB5044286, KB5044288, KB5044293 и KB5044343."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows MSHTML Platform: CVE-2024-43573",
+  "summary": "In der Microsoft Windows MSHTML Platform existiert eine Spoofing-Schwachstelle mit der Kennung CVE-2024-43573. Microsoft meldet eine Ausnutzung.",
+  "impact": "Ein Angreifer kann die Spoofing-Schwachstelle in der MSHTML Platform ausnutzen. Eine Ausnutzung ist bekannt.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (wie KB5044273, KB5044277, KB5044280, KB5044281, KB5044284, KB5044285, KB5044286, KB5044288, KB5044293, KB5044343).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows-Systeme auf MSHTML Platform-Komponenten.",
+   "Überprüfen Sie, ob die Sicherheitsupdates von Microsoft einschließlich KB5044273, KB5044277, KB5044280, KB5044281, KB5044284, KB5044285, KB5044286, KB5044288, KB5044293 und KB5044343 eingespielt wurden."
+  ],
+  "regression": null
+ }
+}

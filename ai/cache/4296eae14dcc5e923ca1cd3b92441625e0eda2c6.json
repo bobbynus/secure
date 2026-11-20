@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Project: Remote Code Execution Vulnerability (CVE-2024-38189)",
+  "summary": "Microsoft Project is affected by a remote code execution vulnerability designated as CVE-2024-38189, with exploitation reported by the vendor.",
+  "impact": "An attacker can achieve remote code execution. Exploitation has been reported.",
+  "fix": "Apply Microsoft 2024-Aug security update or KB5002561.",
+  "workaround": null,
+  "checks": [
+   "Check systems for Microsoft Project and Microsoft Office installations.",
+   "Verify whether the Microsoft 2024-Aug security update or KB5002561 is applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Project: уязвимость удаленного выполнения кода (CVE-2024-38189)",
+  "summary": "В Microsoft Project обнаружена уязвимость удаленного выполнения кода CVE-2024-38189, эксплуатация которой подтверждена производителем.",
+  "impact": "Злоумышленник может выполнить удаленный код. Зафиксирована эксплуатация уязвимости.",
+  "fix": "Установите обновление безопасности Microsoft за август 2024 года или KB5002561.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие установленных Microsoft Project и Microsoft Office.",
+   "Убедитесь, что применено обновление безопасности Microsoft за август 2024 года или KB5002561."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Project: Schwachstelle zur RCE (CVE-2024-38189)",
+  "summary": "Microsoft Project ist von einer Schwachstelle zur Remotecodeausführung (CVE-2024-38189) betroffen, wobei der Hersteller eine Ausnutzung meldet.",
+  "impact": "Ein Angreifer kann Remotecode ausführen. Eine Ausnutzung wurde gemeldet.",
+  "fix": "Installieren Sie das Microsoft-Sicherheitsupdate für August 2024 oder KB5002561.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf Installationen von Microsoft Project und Microsoft Office.",
+   "Überprüfen Sie, ob das Microsoft-Sicherheitsupdate für August 2024 oder KB5002561 angewendet wurde."
+  ],
+  "regression": null
+ }
+}

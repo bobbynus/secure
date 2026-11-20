@@ -96,21 +96,62 @@
  "texts": {
   "msrc:CVE-2024-38140": "Windows Reliable Multicast Transport Driver (RMCAST) Remote Code Execution Vulnerability\nReliable Multicast Transport Driver (RMCAST). Microsoft 2024-Aug security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "3505ead6b056b554a68f625c",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Remote Code Execution vulnerability in RMCAST",
+    "summary": "A critical remote code execution vulnerability exists in the Windows Reliable Multicast Transport Driver (RMCAST).",
+    "impact": "An attacker can execute arbitrary code remotely.",
+    "fix": "Apply the updates provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows systems to identify vulnerable versions.",
+     "Verify that the August 2024 security updates are applied."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в RMCAST",
+    "summary": "В драйвере Reliable Multicast Transport Driver (RMCAST) для Windows обнаружена критическая уязвимость удаленного выполнения кода.",
+    "impact": "Злоумышленник может удаленно выполнить произвольный код.",
+    "fix": "Установите обновления, предоставленные Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows для выявления уязвимых версий.",
+     "Убедитесь, что установлены обновления безопасности за август 2024 года."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in RMCAST",
+    "summary": "Im Windows Reliable Multicast Transport Driver (RMCAST) existiert eine kritische Schwachstelle zur Remotecodeausführung.",
+    "impact": "Ein Angreifer kann beliebigen Code aus der Ferne ausführen.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows-Systeme, um anfällige Versionen zu identifizieren.",
+     "Überprüfen Sie, ob die Sicherheitsupdates vom August 2024 eingespielt wurden."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T12:31:00Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v",
+   "de": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in-rmcast",
+   "en": "microsoft-windows-remote-code-execution-vulnerability-in-rmcast"
+  },
+  "published_at": "2026-11-20T12:31:00Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
