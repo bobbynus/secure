@@ -1,0 +1,122 @@
+{
+  "id": "sr-26-0172",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-26633"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5053594",
+      "KB5053596",
+      "KB5053598",
+      "KB5053599",
+      "KB5053602",
+      "KB5053603",
+      "KB5053606",
+      "KB5053618",
+      "KB5053620",
+      "KB5053627",
+      "KB5053636",
+      "KB5053638",
+      "KB5053886",
+      "KB5053887",
+      "KB5053888",
+      "KB5053995"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.0,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T15:00:47Z",
+    "updated": "2026-11-20T15:00:47Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Management Console Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-26633",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T15:00:47Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T15:00:47Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-obkhod-funktsii-bezopasnosti-cve-2025-26633-v",
+      "title": "Microsoft: обход функции безопасности CVE-2025-26633 в Microsoft Management Console",
+      "summary": "Microsoft сообщает об уязвимости обхода функции безопасности в Microsoft Management Console, отслеживаемой под идентификатором CVE-2025-26633 с оценкой CVSS 7.0.",
+      "impact": "Уязвимость позволяет обойти функцию безопасности в Microsoft Management Console. Производитель сообщает об эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft (такие как KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888 и KB5053995).",
+      "checks": [
+        "Проверьте системы Windows 10 на наличие установленных обновлений безопасности для CVE-2025-26633.",
+        "Проверьте инвентаризацию систем на наличие затронутых версий Windows 10."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-sicherheitsfunktion-bypass-cve-2025-26633-in",
+      "title": "Microsoft: Sicherheitsfunktion-Bypass CVE-2025-26633 in Microsoft Management Console",
+      "summary": "Microsoft meldet eine Schwachstelle zum Umgehen von Sicherheitsfunktionen in der Microsoft Management Console, geführt als CVE-2025-26633 mit einem CVSS-Score von 7.0.",
+      "impact": "Die Schwachstelle ermöglicht das Umgehen einer Sicherheitsfunktion in der Microsoft Management Console. Eine Ausnutzung wird vom Hersteller gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Installieren Sie die von Microsoft bereitgestellten Updates (wie KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888 und KB5053995).",
+      "checks": [
+        "Überprüfen Sie Windows-10-Systeme auf die Installation der Sicherheitsupdates für CVE-2025-26633.",
+        "Überprüfen Sie die Systeminventare auf betroffene Windows-10-Versionen."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-cve-2025-26633-security-feature-bypass-in-microsoft",
+      "title": "Microsoft: CVE-2025-26633 security feature bypass in Microsoft Management Console",
+      "summary": "Microsoft reports a security feature bypass vulnerability in Microsoft Management Console, tracked as CVE-2025-26633 with a CVSS score of 7.0.",
+      "impact": "The vulnerability allows a security feature bypass in Microsoft Management Console. Exploitation is reported by the vendor.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Install the updates provided by Microsoft (such as KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888, and KB5053995).",
+      "checks": [
+        "Check Windows 10 systems for the installation of the security updates addressing CVE-2025-26633.",
+        "Verify system inventories for affected Windows 10 versions."
+      ]
+    }
+  }
+}
