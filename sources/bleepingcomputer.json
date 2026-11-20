@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "59aff92a80f75fca5d3e93a96aac2f6c",
- "last_modified": "Fri, 20 Nov 2026 10:20:54 GMT",
- "checksum": "5bced2319bee89b6e490b91c32839e71a05e3b7c74764e079353cbf1f56334a2",
+ "etag": "d123641514dc5e22432bf7da88298f96",
+ "last_modified": "Fri, 20 Nov 2026 10:59:01 GMT",
+ "checksum": "7a0a97957ed1d87dd3e94a775551235ef17f0caaf2584ca710d1f6ed9a4bb10b",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -31,12 +31,13 @@
   "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/": "fba0d1ef8b0e55d84a2f3ef1",
   "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/": "050b6b8156fb888debd33e52",
   "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/": "65bb84d9906219aaa4fb983f",
-  "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/": "f2fc6c5acf5bc5d7e2325fbf"
+  "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/": "f2fc6c5acf5bc5d7e2325fbf",
+  "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/": "70cd164c9d0d9400fda032be"
  },
- "last_attempt": "2026-11-20T10:30:38Z",
- "last_success": "2026-11-20T10:30:38Z",
+ "last_attempt": "2026-11-20T11:00:44Z",
+ "last_success": "2026-11-20T11:00:44Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 27
+ "items_total": 28
 }

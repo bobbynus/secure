@@ -9317,8 +9317,8 @@
   "CVE-2026-97843": "fe4cf3a97b5475547f7d3d3c",
   "CVE-2026-97844": "fe4cf3a97b5475547f7d3d3c"
  },
- "last_attempt": "2026-11-20T10:00:39Z",
- "last_success": "2026-11-20T10:00:39Z",
+ "last_attempt": "2026-11-20T11:00:44Z",
+ "last_success": "2026-11-20T11:00:44Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
