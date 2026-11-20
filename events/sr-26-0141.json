@@ -2,7 +2,7 @@
  "id": "sr-26-0141",
  "category": "vulnerability",
  "priority": "critical",
- "confirmation": "preliminary",
+ "confirmation": "official",
  "lifecycle": "confirmed",
  "fix": "unknown",
  "vendor": "Broadcom VMware",
@@ -14,7 +14,9 @@
   "cve": [
    "CVE-2026-123890"
   ],
-  "advisory": [],
+  "advisory": [
+   "WID-SEC-2026-4717"
+  ],
   "kb": []
  },
  "severity": null,
@@ -31,7 +33,7 @@
  "title_hint": "VMware patches vCenter zero-day exploited in attacks since September",
  "summary_hint": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]",
  "created_at": "2026-11-20T00:40:50Z",
- "updated_at": "2026-11-20T00:40:50Z",
+ "updated_at": "2026-11-20T14:00:43Z",
  "event_date": "2026-11-20T00:26:25Z",
  "sources": [
   {
@@ -42,6 +44,15 @@
    "publisher": "BleepingComputer",
    "kind": "media",
    "date": "2026-11-20"
+  },
+  {
+   "source_id": "cert-bund-wid",
+   "item_key": "WID-SEC-W-2026-4717",
+   "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4717",
+   "title": "VMware vCenter, Tools, und SDDC Manager: Mehrere Schwachstellen",
+   "publisher": "CERT-Bund (BSI) WID security advisories",
+   "kind": "cert",
+   "date": "2026-11-19"
   }
  ],
  "revisions": [
@@ -52,6 +63,15 @@
     "reason": "media report exploitation"
    },
    "source": "bleepingcomputer:https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/"
+  },
+  {
+   "date": "2026-11-20T14:00:43Z",
+   "kind": "status",
+   "facts": {
+    "priority": "critical",
+    "confirmation": "official"
+   },
+   "source": "cert-bund-wid:WID-SEC-W-2026-4717"
   }
  ],
  "related": [],

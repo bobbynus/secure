@@ -1,8 +1,8 @@
 {
  "id": "cert-bund-wid",
- "etag": "\"6b004452-d65e1\"",
- "last_modified": "Fri, 20 Nov 2026 13:00:02 GMT",
- "checksum": "fab91ebd8bf69ebc5d67aab2c7dc92a3ffa81200e36b3f50b89864b375dc069f",
+ "etag": "\"6b005262-d661c\"",
+ "last_modified": "Fri, 20 Nov 2026 14:00:02 GMT",
+ "checksum": "4b3127860a487ddddd46cf6a2098145000da09a4f7387f190c5c06724bed359b",
  "cursor": {
   "doc:2026/wid-sec-w-2026-0086.json": "2026-11-19T23:00:00+0000",
   "since": "2026-11-19T23:00:00",
@@ -287,7 +287,22 @@
   "doc:2026/wid-sec-w-2026-4703.json": "2026-11-19T23:00:00+0000",
   "doc:2026/wid-sec-w-2026-4704.json": "2026-11-19T23:00:00+0000",
   "doc:2026/wid-sec-w-2026-4705.json": "2026-11-19T23:00:00+0000",
-  "backlog": "1"
+  "doc:2026/wid-sec-w-2026-4706.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4707.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4708.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4709.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4710.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4711.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4712.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4713.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4714.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4715.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4716.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4717.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4718.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4719.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4720.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4721.json": "2026-11-19T23:00:00+0000"
  },
  "seen": {
   "WID-SEC-W-2026-4626": "07b27c77b69a928fd8da6bc9",
@@ -791,12 +806,28 @@
   "WID-SEC-W-2026-4702": "4c2b22cf13ef13fb9b434ead",
   "WID-SEC-W-2026-4703": "264efdff88e44014d0cc7896",
   "WID-SEC-W-2026-4704": "bb07051f3050ab0f601da411",
-  "WID-SEC-W-2026-4705": "67ef7ac247f15ab6ee74b187"
+  "WID-SEC-W-2026-4705": "67ef7ac247f15ab6ee74b187",
+  "WID-SEC-W-2026-4706": "b39742a0b3a203afdd031c50",
+  "WID-SEC-W-2026-4707": "e5ea185aa4892d71591cbfb8",
+  "WID-SEC-W-2026-4708": "c7f52273d2cf9afad3c61de9",
+  "WID-SEC-W-2026-4709": "9f8f9de6b46d5e6b5592ffc7",
+  "WID-SEC-W-2026-4710": "a6adb22e81700aa35594eb5b",
+  "WID-SEC-W-2026-4711": "8da88ab3d98013feac0fee4b",
+  "WID-SEC-W-2026-4712": "a10a30feafb9aeda5122f4f0",
+  "WID-SEC-W-2026-4713": "1edd19bab12cdd34b6cea611",
+  "WID-SEC-W-2026-4714": "996d15252a96b001fc6287ac",
+  "WID-SEC-W-2026-4715": "bdec4b59eb341749a5e587c6",
+  "WID-SEC-W-2026-4716": "09dd11d86450dc21f3d965ab",
+  "WID-SEC-W-2026-4717": "641306be5dd2f3ea39566e93",
+  "WID-SEC-W-2026-4718": "8520534d32f1c6e4265e8534",
+  "WID-SEC-W-2026-4719": "25f65dfd3d42af61a486c1b5",
+  "WID-SEC-W-2026-4720": "e0874bbe21629d135949825e",
+  "WID-SEC-W-2026-4721": "9c7dafe27aa79d8ab3661a00"
  },
- "last_attempt": "2026-11-20T13:00:42Z",
- "last_success": "2026-11-20T13:00:42Z",
+ "last_attempt": "2026-11-20T14:00:43Z",
+ "last_success": "2026-11-20T14:00:43Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 653
+ "items_total": 669
 }

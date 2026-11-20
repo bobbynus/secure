@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows NTFS: CVE-2025-24993 Remote Code Execution Vulnerability",
+  "summary": "An exploited remote code execution vulnerability exists in Microsoft Windows NTFS. Microsoft released security updates addressing the issue.",
+  "impact": "An attacker can achieve remote code execution in Windows NTFS under unspecified conditions. Microsoft reports that the vulnerability is exploited.",
+  "fix": "Apply the corresponding security updates provided by Microsoft, including KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888, and KB5053995.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows 10 systems to check for the presence of the security update.",
+   "Verify if updates corresponding to CVE-2025-24993 are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows NTFS: уязвимость удаленного выполнения кода CVE-2025-24993",
+  "summary": "В Microsoft Windows NTFS обнаружена уязвимость удаленного выполнения кода, для которой зафиксирована эксплуатация. Microsoft выпустила обновления безопасности.",
+  "impact": "Злоумышленник может осуществить удаленное выполнение кода в Windows NTFS при неуказанных условиях. Microsoft сообщает об эксплуатации уязвимости.",
+  "fix": "Установите соответствующие обновления безопасности, предоставленные Microsoft, включая KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888 и KB5053995.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows 10 на наличие установленных обновлений безопасности.",
+   "Проверьте, установлены ли обновления, соответствующие CVE-2025-24993."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows NTFS: Remotecodeausführungsschwachstelle CVE-2025-24993",
+  "summary": "In Microsoft Windows NTFS existiert eine Remotecodeausführungsschwachstelle, die ausgenutzt wird. Microsoft hat Sicherheitsupdates bereitgestellt.",
+  "impact": "Ein Angreifer kann unter nicht spezifizierten Bedingungen Remotecode in Windows NTFS ausführen. Microsoft meldet, dass die Schwachstelle ausgenutzt wird.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an, einschließlich KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888 und KB5053995.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows 10-Systeme, um zu überprüfen, ob das Sicherheitsupdate vorhanden ist.",
+   "Überprüfen Sie, ob die zu CVE-2025-24993 gehörenden Updates installiert sind."
+  ],
+  "regression": null
+ }
+}
