@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "c5ef8e8cda869d328c209da9b83be634",
- "last_modified": "Fri, 20 Nov 2026 02:56:31 GMT",
- "checksum": "f26d53de6d8e42bddb39b1297cf7572f6240a87598826950cb6305305b300c1b",
+ "etag": "b130ac1f478fdb6c7cb0e13f6aa532b6",
+ "last_modified": "Fri, 20 Nov 2026 03:26:32 GMT",
+ "checksum": "e50ae02aba7756393b7c14a482e3766d713143ca13fa668472264a9882911f63",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -32,8 +32,8 @@
   "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/": "050b6b8156fb888debd33e52",
   "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/": "65bb84d9906219aaa4fb983f"
  },
- "last_attempt": "2026-11-20T03:00:44Z",
- "last_success": "2026-11-20T03:00:44Z",
+ "last_attempt": "2026-11-20T03:30:43Z",
+ "last_success": "2026-11-20T03:30:43Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
