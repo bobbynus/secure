@@ -20,6 +20,7 @@
       "CVE-2026-99388"
     ],
     "advisory": [
+      "WID-SEC-2026-4695",
       "ZDI-26-998"
     ],
     "kb": []
@@ -50,6 +51,14 @@
       "url": "https://access.redhat.com/security/cve/cve-2026-99388",
       "publisher": "Red Hat Security Data API",
       "kind": "vendor",
+      "date": "2026-11-19"
+    },
+    {
+      "id": "s3",
+      "title": "Linux Kernel: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4695",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
       "date": "2026-11-19"
     }
   ],

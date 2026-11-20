@@ -1,0 +1,119 @@
+{
+  "id": "sr-26-0170",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-24991"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5053594",
+      "KB5053596",
+      "KB5053598",
+      "KB5053599",
+      "KB5053602",
+      "KB5053603",
+      "KB5053606",
+      "KB5053618",
+      "KB5053620",
+      "KB5053627",
+      "KB5053636",
+      "KB5053638",
+      "KB5053886",
+      "KB5053887",
+      "KB5053888",
+      "KB5053995"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 5.5,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T13:01:08Z",
+    "updated": "2026-11-20T13:01:08Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows NTFS Information Disclosure Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24991",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T13:01:08Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T13:01:08Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-ntfs-uyazvimost-raskrytiya-informatsii-cve",
+      "title": "Microsoft Windows NTFS: уязвимость раскрытия информации (CVE-2025-24991)",
+      "summary": "В Microsoft Windows NTFS обнаружена уязвимость раскрытия информации. Microsoft сообщает об эксплуатации уязвимости.",
+      "impact": "Злоумышленник может использовать уязвимость для получения доступа к конфиденциальной информации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления безопасности, указанные в KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888 или KB5053995.",
+      "checks": [
+        "Проверьте системы Windows 10 на наличие установленных обновлений безопасности."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-ntfs-schwachstelle-bezueglich",
+      "title": "Microsoft Windows NTFS: Schwachstelle bezüglich Informationsoffenlegung (CVE-2025-24991)",
+      "summary": "In Microsoft Windows NTFS existiert eine Schwachstelle zur Informationsoffenlegung. Microsoft berichtet über eine Ausnutzung.",
+      "impact": "Ein Angreifer kann die Schwachstelle ausnutzen, um sensible Informationen offenzulegen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die Sicherheitsupdates an, die in KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888 oder KB5053995 referenziert sind.",
+      "checks": [
+        "Überprüfen Sie Windows 10-Systeme auf die Installation der Sicherheitsupdates."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-ntfs-information-disclosure-vulnerability-cve",
+      "title": "Microsoft Windows NTFS: Information Disclosure Vulnerability (CVE-2025-24991)",
+      "summary": "An information disclosure vulnerability exists in Microsoft Windows NTFS. Microsoft reports exploitation in the wild.",
+      "impact": "An attacker can exploit the vulnerability to disclose sensitive information.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the security updates referenced by KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888, or KB5053995.",
+      "checks": [
+        "Check Windows 10 systems for the installation of the security updates."
+      ]
+    }
+  }
+}

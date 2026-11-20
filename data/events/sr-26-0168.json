@@ -1,0 +1,115 @@
+{
+  "id": "sr-26-0168",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-24984"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5053594",
+      "KB5053596",
+      "KB5053598",
+      "KB5053599",
+      "KB5053602",
+      "KB5053603",
+      "KB5053606",
+      "KB5053618",
+      "KB5053636",
+      "KB5053638",
+      "KB5053886",
+      "KB5053887"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 4.6,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T13:01:08Z",
+    "updated": "2026-11-20T13:01:08Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows NTFS Information Disclosure Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24984",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T13:01:08Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T13:01:08Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-ntfs-uyazvimost-cve-2025-24984-raskrytiya",
+      "title": "Microsoft Windows NTFS: уязвимость CVE-2025-24984 раскрытия информации",
+      "summary": "В Microsoft Windows NTFS обнаружена уязвимость раскрытия информации. Microsoft сообщает об ее эксплуатации.",
+      "impact": "Злоумышленник может использовать уязвимость раскрытия информации в Microsoft Windows NTFS.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, указанные в KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053636, KB5053638, KB5053886 или KB5053887.",
+      "checks": [
+        "Проверьте системы Windows 10 на наличие установленных обновлений безопасности, связанных с CVE-2025-24984."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-ntfs-cve-2025-24984-informationsoffenlegung",
+      "title": "Microsoft Windows NTFS: CVE-2025-24984 Informationsoffenlegung",
+      "summary": "In Microsoft Windows NTFS existiert eine Schwachstelle zur Informationsoffenlegung. Microsoft berichtet über eine Ausnutzung.",
+      "impact": "Ein Angreifer kann die Schwachstelle zur Informationsoffenlegung in Microsoft Windows NTFS ausnutzen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die Updates an, die in KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053636, KB5053638, KB5053886 oder KB5053887 referenziert werden.",
+      "checks": [
+        "Überprüfen Sie Windows-10-Systeme auf die Installation der Sicherheitsupdates im Zusammenhang mit CVE-2025-24984."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-ntfs-cve-2025-24984-information-disclosure",
+      "title": "Microsoft Windows NTFS: CVE-2025-24984 Information Disclosure",
+      "summary": "An information disclosure vulnerability exists in Microsoft Windows NTFS. Microsoft reports exploitation in the wild.",
+      "impact": "An attacker can exploit the information disclosure vulnerability in Microsoft Windows NTFS.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates referenced by KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053636, KB5053638, KB5053886, or KB5053887.",
+      "checks": [
+        "Check Windows 10 systems for the installation of the security updates associated with CVE-2025-24984."
+      ]
+    }
+  }
+}

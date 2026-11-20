@@ -1,0 +1,122 @@
+{
+  "id": "sr-26-0169",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-24985"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5053594",
+      "KB5053596",
+      "KB5053598",
+      "KB5053599",
+      "KB5053602",
+      "KB5053603",
+      "KB5053606",
+      "KB5053618",
+      "KB5053620",
+      "KB5053627",
+      "KB5053636",
+      "KB5053638",
+      "KB5053886",
+      "KB5053887",
+      "KB5053888",
+      "KB5053995"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T13:01:08Z",
+    "updated": "2026-11-20T13:01:08Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Fast FAT File System Driver Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24985",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T13:01:08Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T13:01:08Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v",
+      "title": "Microsoft Windows: уязвимость удаленного выполнения кода в драйвере Fast FAT (CVE-2025-24985)",
+      "summary": "В драйвере файловой системы Windows Fast FAT обнаружена уязвимость удаленного выполнения кода, которой присвоен идентификатор CVE-2025-24985 и оценка CVSS 7.8.",
+      "impact": "Злоумышленник может использовать данную уязвимость для удаленного выполнения кода. Производитель сообщает об эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления от Microsoft из мартовского пакета безопасности 2025 года, включая `KB5053594`, `KB5053596`, `KB5053598`, `KB5053599`, `KB5053602`, `KB5053603`, `KB5053606`, `KB5053618`, `KB5053620`, `KB5053627`, `KB5053636`, `KB5053638`, `KB5053886`, `KB5053887`, `KB5053888` и `KB5053995`.",
+      "checks": [
+        "Проверьте системы Windows 10 на наличие установленного мартовского обновления безопасности 2025 года.",
+        "Убедитесь, что применены соответствующие обновления базы знаний (KB), устраняющие CVE-2025-24985."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-remotecodeausfuehrung-im-fast-fat",
+      "title": "Microsoft Windows: Remotecodeausführung im Fast-FAT-Dateisystemtreiber (CVE-2025-24985)",
+      "summary": "Im Windows Fast FAT File System Driver existiert eine Schwachstelle zur Remotecodeausführung, geführt als CVE-2025-24985 mit einem CVSS-Score von 7.8.",
+      "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Remotecode auszuführen. Der Hersteller meldet eine Ausnutzung.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft im Sicherheitsupdate vom März 2025 bereitgestellten Updates an, einschließlich `KB5053594`, `KB5053596`, `KB5053598`, `KB5053599`, `KB5053602`, `KB5053603`, `KB5053606`, `KB5053618`, `KB5053620`, `KB5053627`, `KB5053636`, `KB5053638`, `KB5053886`, `KB5053887`, `KB5053888` und `KB5053995`.",
+      "checks": [
+        "Überprüfen Sie Windows 10-Systeme auf die Installation des Sicherheitsupdates vom März 2025.",
+        "Stellen Sie sicher, dass die entsprechenden Knowledge-Base-Updates zur Behebung von CVE-2025-24985 angewendet wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-remote-code-execution-in-fast-fat-file-system",
+      "title": "Microsoft Windows: Remote Code Execution in Fast FAT File System Driver (CVE-2025-24985)",
+      "summary": "A remote code execution vulnerability exists in the Windows Fast FAT File System Driver, tracked as CVE-2025-24985 with a CVSS score of 7.8.",
+      "impact": "An attacker can exploit this vulnerability to execute remote code. Vendor reports exploitation.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft in the March 2025 security update, including `KB5053594`, `KB5053596`, `KB5053598`, `KB5053599`, `KB5053602`, `KB5053603`, `KB5053606`, `KB5053618`, `KB5053620`, `KB5053627`, `KB5053636`, `KB5053638`, `KB5053886`, `KB5053887`, `KB5053888`, and `KB5053995`.",
+      "checks": [
+        "Check Windows 10 systems for the installation of the March 2025 security update.",
+        "Verify that the relevant Knowledge Base updates addressing CVE-2025-24985 are applied."
+      ]
+    }
+  }
+}

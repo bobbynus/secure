@@ -1,0 +1,116 @@
+{
+  "id": "sr-26-0164",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-21391"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5051974",
+      "KB5051979",
+      "KB5051980",
+      "KB5051987",
+      "KB5051989",
+      "KB5052000",
+      "KB5052006",
+      "KB5052040",
+      "KB5052105",
+      "KB5052106"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.1,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T13:01:08Z",
+    "updated": "2026-11-20T13:01:08Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Storage Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21391",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T13:01:08Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T13:01:08Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-storage-uyazvimost-povysheniya-privilegiy-cve",
+      "title": "Microsoft Windows Storage: уязвимость повышения привилегий (CVE-2025-21391)",
+      "summary": "В Microsoft Windows Storage обнаружена уязвимость повышения привилегий, эксплуатация которой подтверждена Microsoft.",
+      "impact": "Злоумышленник может использовать данную уязвимость для повышения привилегий.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновление безопасности от Microsoft (включая KB5051974, KB5051979, KB5051980, KB5051987, KB5051989, KB5052000, KB5052006, KB5052040, KB5052105 или KB5052106 в зависимости от версии Windows 10).",
+      "checks": [
+        "Проверьте системы Windows 10 на наличие установленных обновлений безопасности за февраль 2025 года или соответствующих KB.",
+        "Сверьте версии систем с затронутыми выпусками Windows 10."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-storage-schwachstelle-zur",
+      "title": "Microsoft Windows Storage: Schwachstelle zur Privilegieneskalation (CVE-2025-21391)",
+      "summary": "In Microsoft Windows Storage existiert eine Schwachstelle zur Privilegieneskalation, deren Ausnutzung von Microsoft gemeldet wurde.",
+      "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien zu eskalieren.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie das von Microsoft bereitgestellte Sicherheitsupdate an (einschließlich KB5051974, KB5051979, KB5051980, KB5051987, KB5051989, KB5052000, KB5052006, KB5052040, KB5052105 oder KB5052106 je nach Windows 10-Version).",
+      "checks": [
+        "Überprüfen Sie Windows 10-Systeme auf die Installation der Sicherheitsupdates vom Februar 2025 oder entsprechender KBs.",
+        "Gleichen Sie Systemversionen mit den betroffenen Windows 10-Releases ab."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-storage-elevation-of-privilege-vulnerability",
+      "title": "Microsoft Windows Storage: Elevation of Privilege Vulnerability (CVE-2025-21391)",
+      "summary": "An elevation of privilege vulnerability exists in Microsoft Windows Storage, reported as exploited by Microsoft.",
+      "impact": "An attacker can exploit this vulnerability to achieve elevation of privilege.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the security update provided by Microsoft (including KB5051974, KB5051979, KB5051980, KB5051987, KB5051989, KB5052000, KB5052006, KB5052040, KB5052105, or KB5052106 depending on the Windows 10 version).",
+      "checks": [
+        "Check Windows 10 systems for the installation of the February 2025 security updates or corresponding KBs.",
+        "Verify system versions against affected Windows 10 releases."
+      ]
+    }
+  }
+}
