@@ -1,0 +1,113 @@
+{
+  "id": "sr-26-0146",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2023-24880"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5023696",
+      "KB5023697",
+      "KB5023698",
+      "KB5023702",
+      "KB5023705",
+      "KB5023706",
+      "KB5023786"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 4.4,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T10:30:40Z",
+    "updated": "2026-11-20T10:30:40Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows SmartScreen Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24880",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T10:30:40Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T10:30:40Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-obkhod-zashchity-windows-smartscreen-v-cve",
+      "title": "Microsoft Windows: обход защиты Windows SmartScreen в CVE-2023-24880",
+      "summary": "В Windows SmartScreen обнаружена уязвимость обхода функции безопасности (CVE-2023-24880). Microsoft сообщает об эксплуатации уязвимости.",
+      "impact": "Злоумышленник может обойти средства защиты Windows SmartScreen.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, указанные в KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706 или KB5023786.",
+      "checks": [
+        "Проверьте системы Windows 10 на наличие мартовских обновлений безопасности 2023 года.",
+        "Сверьте версии систем с уязвимыми выпусками Windows 10."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2023-24880-windows-smartscreen-security",
+      "title": "Microsoft Windows: CVE-2023-24880 Windows SmartScreen Security Feature Bypass",
+      "summary": "In Windows SmartScreen existiert eine Sicherheitsfunktionsumgehung (CVE-2023-24880). Microsoft berichtet über eine Ausnutzung.",
+      "impact": "Ein Angreifer kann Sicherheitsfunktionen von Windows SmartScreen umgehen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die Updates an, die in KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706 oder KB5023786 referenziert werden.",
+      "checks": [
+        "Überprüfen Sie Windows 10-Systeme auf die Installation der Sicherheitsupdates vom März 2023.",
+        "Gleichen Sie die Systemversionen mit den betroffenen Windows 10-Editionen ab."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2023-24880-windows-smartscreen-bypass",
+      "title": "Microsoft Windows: CVE-2023-24880 Windows SmartScreen Bypass",
+      "summary": "A security feature bypass vulnerability exists in Windows SmartScreen (CVE-2023-24880). Microsoft reports exploitation in the wild.",
+      "impact": "An attacker can bypass Windows SmartScreen security features.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates referenced by KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706, or KB5023786.",
+      "checks": [
+        "Check Windows 10 systems for the installation of March 2023 security updates.",
+        "Verify system versions against affected Windows 10 editions."
+      ]
+    }
+  }
+}

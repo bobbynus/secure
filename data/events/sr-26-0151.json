@@ -1,0 +1,106 @@
+{
+  "id": "sr-26-0151",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2024-38159"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5041773"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.1,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T10:30:40Z",
+    "updated": "2026-11-20T10:30:40Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Network Virtualization Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38159",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T10:30:40Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T10:30:40Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "uyazvimost-udalennogo-vypolneniya-koda-v-windows-network",
+      "title": "Уязвимость удаленного выполнения кода в Windows Network Virtualization (CVE-2024-38159)",
+      "summary": "Критическая уязвимость удаленного выполнения кода в Windows Network Virtualization (CVE-2024-38159), исправленная Microsoft в августе 2024 года.",
+      "impact": "Позволяет удаленное выполнение кода. Предварительные условия и векторы атак в исходных текстах не указаны.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновление KB5041773.",
+      "checks": [
+        "Проверьте системы на наличие компонентов Windows Network Virtualization.",
+        "Убедитесь, что установлено обновление KB5041773."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "schwachstelle-fuer-remotecodeausfuehrung-in-windows-network",
+      "title": "Schwachstelle für Remotecodeausführung in Windows Network Virtualization (CVE-2024-38159)",
+      "summary": "Eine kritische Schwachstelle zur Remotecodeausführung in Windows Network Virtualization (CVE-2024-38159) wurde von Microsoft im August 2024 behoben.",
+      "impact": "Ermöglicht die Remotecodeausführung. Vorbedingungen und Angriffsvektoren werden in den Quelltexten nicht genannt.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Installieren Sie das Update KB5041773.",
+      "checks": [
+        "Überprüfen Sie Systeme auf Windows Network Virtualization-Komponenten.",
+        "Überprüfen Sie, ob das Update KB5041773 installiert ist."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-network-virtualization-rce-cve-2024-38159",
+      "title": "Microsoft Windows Network Virtualization RCE (CVE-2024-38159)",
+      "summary": "A critical remote code execution vulnerability exists in Windows Network Virtualization (CVE-2024-38159), addressed by Microsoft in August 2024.",
+      "impact": "Allows remote code execution. Preconditions and specific attack vectors are not detailed in the source texts.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply update KB5041773.",
+      "checks": [
+        "Check systems for Windows Network Virtualization components.",
+        "Verify if update KB5041773 is installed."
+      ]
+    }
+  }
+}

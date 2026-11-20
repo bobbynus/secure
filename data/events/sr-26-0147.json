@@ -1,0 +1,121 @@
+{
+  "id": "sr-26-0147",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2023-36036"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5032189",
+      "KB5032190",
+      "KB5032192",
+      "KB5032196",
+      "KB5032197",
+      "KB5032198",
+      "KB5032199",
+      "KB5032202",
+      "KB5032247",
+      "KB5032248",
+      "KB5032249",
+      "KB5032250",
+      "KB5032252",
+      "KB5032254",
+      "KB5032304"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T10:30:40Z",
+    "updated": "2026-11-20T10:30:40Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36036",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T10:30:40Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T10:30:40Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-povysheniya-privilegiy-v-cloud",
+      "title": "Microsoft Windows: уязвимость повышения привилегий в Cloud Files Mini Filter Driver",
+      "summary": "Уязвимость повышения привилегий в Windows Cloud Files Mini Filter Driver позволяет злоумышленникам повысить привилегии. Эксплуатация подтверждена Microsoft.",
+      "impact": "Злоумышленник может получить повышенные привилегии. Сообщается об эксплуатации уязвимости.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления от Microsoft, включая KB5032189, KB5032190, KB5032192, KB5032196, KB5032197, KB5032198, KB5032199, KB5032202, KB5032247, KB5032248, KB5032249, KB5032250, KB5032252, KB5032254 и KB5032304.",
+      "checks": [
+        "Проведите инвентаризацию систем Windows для проверки статуса уязвимости.",
+        "Проверьте установку соответствующих обновлений безопасности от Microsoft."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-schwachstelle-zur-privilegienerweiterung-im",
+      "title": "Microsoft Windows: Schwachstelle zur Privilegienerweiterung im Cloud Files Mini Filter Driver",
+      "summary": "Eine Schwachstelle zur Privilegienerweiterung im Windows Cloud Files Mini Filter Driver ermöglicht Angreifern die Erhöhung von Rechten. Die Ausnutzung wird von Microsoft gemeldet.",
+      "impact": "Ein Angreifer kann Privilegien erweitern. Die Ausnutzung wurde gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an, einschließlich KB5032189, KB5032190, KB5032192, KB5032196, KB5032197, KB5032198, KB5032199, KB5032202, KB5032247, KB5032248, KB5032249, KB5032250, KB5032252, KB5032254 und KB5032304.",
+      "checks": [
+        "Inventarisieren Sie Windows-Systeme, um den Status der Schwachstelle zu überprüfen.",
+        "Überprüfen Sie die Installation der entsprechenden Microsoft-Sicherheitsupdates."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-elevation-of-privilege-vulnerability-in-cloud",
+      "title": "Microsoft Windows: Elevation of Privilege Vulnerability in Cloud Files Mini Filter Driver",
+      "summary": "An elevation of privilege vulnerability in the Windows Cloud Files Mini Filter Driver allows attackers to escalate privileges. Exploitation is reported by Microsoft.",
+      "impact": "An attacker can achieve elevation of privileges. Exploitation has been reported.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft, including KB5032189, KB5032190, KB5032192, KB5032196, KB5032197, KB5032198, KB5032199, KB5032202, KB5032247, KB5032248, KB5032249, KB5032250, KB5032252, KB5032254, and KB5032304.",
+      "checks": [
+        "Inventory Windows systems to verify vulnerability status.",
+        "Check for the installation of the corresponding Microsoft security updates."
+      ]
+    }
+  }
+}
