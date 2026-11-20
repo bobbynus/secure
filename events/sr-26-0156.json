@@ -93,21 +93,62 @@
  "texts": {
   "msrc:CVE-2024-38063": "Windows TCP/IP Remote Code Execution Vulnerability\nWindows TCP/IP. Microsoft 2024-Aug security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "3822067d7ef00419fb21ed8b",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: TCP/IP Remote Code Execution Vulnerability",
+    "summary": "Microsoft Windows contains a remote code execution vulnerability in TCP/IP with a critical CVSS score of 9.8. Updates are available.",
+    "impact": "An attacker can execute remote code, but the sources provide no specific preconditions.",
+    "fix": "Apply the updates provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows systems to identify affected versions.",
+     "Verify if security updates including KB5041571, KB5041573, KB5041580, KB5041585, KB5041773, KB5041782, KB5041823, KB5041828, KB5041838, KB5041847, KB5041850, KB5041851, KB5042881, KB5043050, or KB5043067 are applied."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в TCP/IP",
+    "summary": "Microsoft Windows содержит уязвимость удаленного выполнения кода в TCP/IP с критической оценкой CVSS 9.8. Доступны обновления.",
+    "impact": "Злоумышленник может выполнить удаленный код, однако источники не приводят конкретных предварительных условий.",
+    "fix": "Установите обновления, предоставленные Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows для выявления затронутых версий.",
+     "Проверьте, установлены ли обновления безопасности, включая KB5041571, KB5041573, KB5041580, KB5041585, KB5041773, KB5041782, KB5041823, KB5041828, KB5041838, KB5041847, KB5041850, KB5041851, KB5042881, KB5043050 или KB5043067."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Remotecodeausführungsanfälligkeit in TCP/IP",
+    "summary": "Microsoft Windows enthält eine Remotecodeausführungsanfälligkeit in TCP/IP mit einem kritischen CVSS-Score von 9.8. Updates sind verfügbar.",
+    "impact": "Ein Angreifer kann Remotecode ausführen; Quellen nennen keine spezifischen Vorbedingungen.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows-Systeme, um betroffene Versionen zu identifizieren.",
+     "Überprüfen Sie, ob Sicherheitsupdates wie KB5041571, KB5041573, KB5041580, KB5041585, KB5041773, KB5041782, KB5041823, KB5041828, KB5041838, KB5041847, KB5041850, KB5041851, KB5042881, KB5043050 oder KB5043067 eingespielt wurden."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T12:00:57Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-tcp",
+   "de": "microsoft-windows-remotecodeausfuehrungsanfaelligkeit-in-tcp-ip",
+   "en": "microsoft-windows-tcp-ip-remote-code-execution-vulnerability"
+  },
+  "published_at": "2026-11-20T12:00:57Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

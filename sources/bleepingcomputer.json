@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "86f3773f71105116541ae458f1fc7471",
- "last_modified": "Fri, 20 Nov 2026 11:25:08 GMT",
- "checksum": "c54a25952d2b4368235bb360cf0f54842abf7c0b2e79f640d8e624ac750af7cc",
+ "etag": "8c6b9ef305c2a45f5df6689d2a2d62d5",
+ "last_modified": "Fri, 20 Nov 2026 11:55:09 GMT",
+ "checksum": "d563de58082fe6e6251213381ced993038380b3a6d05c5228425215062faf9e6",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -34,8 +34,8 @@
   "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/": "f2fc6c5acf5bc5d7e2325fbf",
   "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/": "70cd164c9d0d9400fda032be"
  },
- "last_attempt": "2026-11-20T11:30:40Z",
- "last_success": "2026-11-20T11:30:40Z",
+ "last_attempt": "2026-11-20T12:00:44Z",
+ "last_success": "2026-11-20T12:00:44Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

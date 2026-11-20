@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows Kernel: CVE-2024-38106 Elevation of Privilege",
+  "summary": "An elevation of privilege vulnerability exists in the Windows Kernel. Microsoft reports that the vulnerability is exploited.",
+  "impact": "An attacker can exploit this vulnerability to elevate privileges. The sources do not specify further preconditions.",
+  "fix": "Updates are available via KB5041160, KB5041571, KB5041573, KB5041578, KB5041580, KB5041585, KB5041592, KB5041773, and KB5041782.",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for the presence of CVE-2024-38106.",
+   "Verify the installation of updates KB5041160, KB5041571, KB5041573, KB5041578, KB5041580, KB5041585, KB5041592, KB5041773, or KB5041782."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows Kernel: повышение привилегий по CVE-2024-38106",
+  "summary": "В ядре Windows обнаружена уязвимость повышения привилегий. Microsoft сообщает об эксплуатации уязвимости.",
+  "impact": "Злоумышленник может использовать эту уязвимость для повышения привилегий. Источники не приводят дополнительных предварительных условий.",
+  "fix": "Доступны обновления через KB5041160, KB5041571, KB5041573, KB5041578, KB5041580, KB5041585, KB5041592, KB5041773 и KB5041782.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на наличие уязвимости CVE-2024-38106.",
+   "Убедитесь в установке обновлений KB5041160, KB5041571, KB5041573, KB5041578, KB5041580, KB5041585, KB5041592, KB5041773 или KB5041782."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows Kernel: CVE-2024-38106 Privilegieneskalation",
+  "summary": "Im Windows Kernel existiert eine Schwachstelle zur Privilegieneskalation. Microsoft berichtet über die Ausnutzung der Schwachstelle.",
+  "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien zu eskalieren. Die Quellen nennen keine weiteren Vorbedingungen.",
+  "fix": "Updates sind über KB5041160, KB5041571, KB5041573, KB5041578, KB5041580, KB5041585, KB5041592, KB5041773 und KB5041782 verfügbar.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Systeme auf das Vorhandensein von CVE-2024-38106.",
+   "Überprüfen Sie die Installation der Updates KB5041160, KB5041571, KB5041573, KB5041578, KB5041580, KB5041585, KB5041592, KB5041773 oder KB5041782."
+  ],
+  "regression": null
+ }
+}

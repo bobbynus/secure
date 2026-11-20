@@ -1,8 +1,8 @@
 {
  "id": "cert-bund-wid",
- "etag": "\"6b002832-d5e81\"",
- "last_modified": "Fri, 20 Nov 2026 11:00:02 GMT",
- "checksum": "fa3597925e95d354f7ddbe4b6533ec0553874f6251802a2998520c5c8da779e0",
+ "etag": "\"6b003642-d5e81\"",
+ "last_modified": "Fri, 20 Nov 2026 12:00:02 GMT",
+ "checksum": "f9dbd2725b1232b9f81e49550f51de38a3d048e125ed43402fd5f789a46f741c",
  "cursor": {
   "doc:2026/wid-sec-w-2026-0086.json": "2026-11-19T23:00:00+0000",
   "since": "2026-11-19T23:00:00",
@@ -225,7 +225,8 @@
   "doc:2026/wid-sec-w-2026-4673.json": "2026-11-19T23:00:00+0000",
   "doc:2026/wid-sec-w-2026-4674.json": "2026-11-19T23:00:00+0000",
   "doc:2026/wid-sec-w-2026-4686.json": "2026-11-19T23:00:00+0000",
-  "doc:2026/wid-sec-w-2026-4688.json": "2026-11-19T23:00:00+0000"
+  "doc:2026/wid-sec-w-2026-4688.json": "2026-11-19T23:00:00+0000",
+  "doc:2026/wid-sec-w-2026-4684.json": "2026-11-19T23:00:00+0000"
  },
  "seen": {
   "WID-SEC-W-2026-4626": "07b27c77b69a928fd8da6bc9",
@@ -578,7 +579,7 @@
   "WID-SEC-W-2026-4681": "c55e0eeebb2ffd89847ee5c3",
   "WID-SEC-W-2026-4682": "cebaaadaf8a17e45672ea690",
   "WID-SEC-W-2026-4683": "914219430e0295d0eccb2568",
-  "WID-SEC-W-2026-4684": "906751fd0153bce41a29b689",
+  "WID-SEC-W-2026-4684": "4e719b6f64ecd0da14c61b7e",
   "WID-SEC-W-2026-4685": "56989253b542b7362b642ac0",
   "WID-SEC-W-2026-4686": "dd6f72808b3798d151638da7",
   "WID-SEC-W-2026-4687": "810bd0db3d1ddc7aa00dbe6f",
@@ -684,10 +685,10 @@
   "WID-SEC-W-2026-4421": "13b5b40472b1a255e1245413",
   "WID-SEC-W-2026-4688": "b7fc05271f6a9f9d3554c985"
  },
- "last_attempt": "2026-11-20T11:00:44Z",
- "last_success": "2026-11-20T11:00:44Z",
+ "last_attempt": "2026-11-20T12:00:44Z",
+ "last_success": "2026-11-20T12:00:44Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 592
+ "items_total": 593
 }

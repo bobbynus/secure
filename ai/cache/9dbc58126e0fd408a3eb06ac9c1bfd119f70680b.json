@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows 10",
+   "versions": "all",
+   "fixed": null,
+   "evidence": "Windows Scripting. Microsoft 2024-Aug security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: CVE-2024-38178 Scripting Engine Memory Corruption",
+  "summary": "A memory corruption vulnerability exists in the scripting engine of Microsoft Windows, tracked as CVE-2024-38178.",
+  "impact": "An attacker can exploit this vulnerability to cause memory corruption in the scripting engine.",
+  "fix": "The sources list no specific fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check systems for Windows 10 installations",
+   "Verify status of Microsoft security updates"
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость повреждения памяти в Scripting Engine (CVE-2024-38178)",
+  "summary": "В подсистеме Scripting Engine в Microsoft Windows обнаружена уязвимость повреждения памяти, получившая идентификатор CVE-2024-38178.",
+  "impact": "Злоумышленник может использовать данную уязвимость для повреждения памяти в скриптовом движке.",
+  "fix": "В источниках не указаны конкретные исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверить системы на наличие установленной ОС Windows 10",
+   "Проверить статус установки обновлений безопасности Microsoft"
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Speicherbeschädigung in Scripting Engine (CVE-2024-38178)",
+  "summary": "In der Scripting Engine von Microsoft Windows existiert eine Schwachstelle zur Speicherbeschädigung, erfasst als CVE-2024-38178.",
+  "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um eine Speicherbeschädigung in der Scripting Engine zu verursachen.",
+  "fix": "Die Quellen nennen keine spezifischen korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Systeme auf Windows 10-Installationen prüfen",
+   "Status von Microsoft-Sicherheitsupdates überprüfen"
+  ],
+  "regression": null
+ }
+}

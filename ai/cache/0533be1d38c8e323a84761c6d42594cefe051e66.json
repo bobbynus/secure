@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows Network Virtualization",
+   "versions": "Windows 10, Windows Server, Windows Server 2016",
+   "fixed": null,
+   "evidence": "Windows Network Virtualization Remote Code Execution Vulnerability\nWindows Network Virtualization. Microsoft 2024-Aug security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: RCE vulnerability in Windows Network Virtualization",
+  "summary": "A critical remote code execution vulnerability (CVE-2024-38160) exists in Windows Network Virtualization.",
+  "impact": "An attacker can achieve remote code execution. Preconditions and attack vectors are not specified in the sources.",
+  "fix": "Apply update `KB5041773` as referenced by the vendor.",
+  "workaround": null,
+  "checks": [
+   "Check systems running Windows 10 and Windows Server for vulnerability exposure.",
+   "Verify the application of security update `KB5041773`."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость RCE в Windows Network Virtualization",
+  "summary": "В Windows Network Virtualization обнаружена критическая уязвимость удаленного выполнения кода (CVE-2024-38160).",
+  "impact": "Злоумышленник может выполнить удаленный код. Предварительные условия и векторы атак в источниках не указаны.",
+  "fix": "Установите обновление `KB5041773`, рекомендованное производителем.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы под управлением Windows 10 и Windows Server на уязвимость.",
+   "Убедитесь в установке обновления безопасности `KB5041773`."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: RCE-Schwachstelle in Windows Network Virtualization",
+  "summary": "In Windows Network Virtualization existiert eine kritische Schwachstelle zur Remote-Code-Ausführung (CVE-2024-38160).",
+  "impact": "Ein Angreifer kann Remote-Code-Ausführung erreichen. Vorbedingungen und Vektoren sind in den Quellen nicht genannt.",
+  "fix": "Installieren Sie das Update `KB5041773` gemäß den Herstellerangaben.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme mit Windows 10 und Windows Server auf Betroffenheit.",
+   "Verifizieren Sie die Installation des Sicherheitsupdates `KB5041773`."
+  ],
+  "regression": null
+ }
+}
