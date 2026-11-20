@@ -83,21 +83,62 @@
  "texts": {
   "msrc:CVE-2025-21391": "Windows Storage Elevation of Privilege Vulnerability\nWindows Storage. Microsoft 2025-Feb security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "dd0dbff8e668e7596702a396",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows Storage: Elevation of Privilege Vulnerability (CVE-2025-21391)",
+    "summary": "An elevation of privilege vulnerability exists in Microsoft Windows Storage, reported as exploited by Microsoft.",
+    "impact": "An attacker can exploit this vulnerability to achieve elevation of privilege.",
+    "fix": "Apply the security update provided by Microsoft (including KB5051974, KB5051979, KB5051980, KB5051987, KB5051989, KB5052000, KB5052006, KB5052040, KB5052105, or KB5052106 depending on the Windows 10 version).",
+    "workaround": null,
+    "checks": [
+     "Check Windows 10 systems for the installation of the February 2025 security updates or corresponding KBs.",
+     "Verify system versions against affected Windows 10 releases."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows Storage: уязвимость повышения привилегий (CVE-2025-21391)",
+    "summary": "В Microsoft Windows Storage обнаружена уязвимость повышения привилегий, эксплуатация которой подтверждена Microsoft.",
+    "impact": "Злоумышленник может использовать данную уязвимость для повышения привилегий.",
+    "fix": "Установите обновление безопасности от Microsoft (включая KB5051974, KB5051979, KB5051980, KB5051987, KB5051989, KB5052000, KB5052006, KB5052040, KB5052105 или KB5052106 в зависимости от версии Windows 10).",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows 10 на наличие установленных обновлений безопасности за февраль 2025 года или соответствующих KB.",
+     "Сверьте версии систем с затронутыми выпусками Windows 10."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows Storage: Schwachstelle zur Privilegieneskalation (CVE-2025-21391)",
+    "summary": "In Microsoft Windows Storage existiert eine Schwachstelle zur Privilegieneskalation, deren Ausnutzung von Microsoft gemeldet wurde.",
+    "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien zu eskalieren.",
+    "fix": "Wenden Sie das von Microsoft bereitgestellte Sicherheitsupdate an (einschließlich KB5051974, KB5051979, KB5051980, KB5051987, KB5051989, KB5052000, KB5052006, KB5052040, KB5052105 oder KB5052106 je nach Windows 10-Version).",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows 10-Systeme auf die Installation der Sicherheitsupdates vom Februar 2025 oder entsprechender KBs.",
+     "Gleichen Sie Systemversionen mit den betroffenen Windows 10-Releases ab."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T13:01:08Z",
+  "slugs": {
+   "ru": "microsoft-windows-storage-uyazvimost-povysheniya-privilegiy-cve",
+   "de": "microsoft-windows-storage-schwachstelle-zur",
+   "en": "microsoft-windows-storage-elevation-of-privilege-vulnerability"
+  },
+  "published_at": "2026-11-20T13:01:08Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

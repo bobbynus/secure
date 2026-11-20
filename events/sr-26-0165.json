@@ -91,21 +91,62 @@
  "texts": {
   "msrc:CVE-2025-21418": "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability\nWindows Ancillary Function Driver for WinSock. Microsoft 2025-Feb security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "b357325ad712ed76452e3fe6",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: CVE-2025-21418 Elevation of Privilege Vulnerability",
+    "summary": "Microsoft released security updates addressing an elevation of privilege vulnerability in the Windows Ancillary Function Driver for WinSock.",
+    "impact": "An attacker can exploit this vulnerability to achieve elevation of privilege. Exploitation is reported by the vendor.",
+    "fix": "Apply the updates provided by Microsoft (including KB5051974, KB5051979, KB5051980, KB5051987, KB5051989, KB5052000, KB5052006, KB5052016, KB5052020, KB5052032, KB5052038, KB5052040, KB5052042, KB5052072, KB5052105, and KB5052106).",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows 10 systems for missing updates",
+     "Verify installation of KB updates provided for CVE-2025-21418"
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость повышения привилегий CVE-2025-21418",
+    "summary": "Microsoft выпустила обновления безопасности, устраняющие уязвимость повышения привилегий в драйвере Windows Ancillary Function Driver for WinSock.",
+    "impact": "Злоумышленник может использовать данную уязвимость для повышения привилегий. Вендор сообщает об эксплуатации.",
+    "fix": "Установите обновления, предоставленные Microsoft (включая KB5051974, KB5051979, KB5051980, KB5051987, KB5051989, KB5052000, KB5052006, KB5052016, KB5052020, KB5052032, KB5052038, KB5052040, KB5052042, KB5052072, KB5052105 и KB5052106).",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows 10 на наличие недостающих обновлений",
+     "Убедитесь в установке обновлений KB, выпущенных для CVE-2025-21418"
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Privilegienerweiterungsschwachstelle CVE-2025-21418",
+    "summary": "Microsoft hat Sicherheitsupdates veröffentlicht, die eine Schwachstelle zur Privilegienerweiterung im Windows Ancillary Function Driver for WinSock beheben.",
+    "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien zu erweiteren. Der Hersteller meldet eine Ausnutzung.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5051974, KB5051979, KB5051980, KB5051987, KB5051989, KB5052000, KB5052006, KB5052016, KB5052020, KB5052032, KB5052038, KB5052040, KB5052042, KB5052072, KB5052105 und KB5052106).",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows 10-Systeme auf fehlende Updates",
+     "Überprüfen Sie die Installation der für CVE-2025-21418 bereitgestellten KB-Updates"
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T13:01:08Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-povysheniya-privilegiy-cve-2025",
+   "de": "microsoft-windows-privilegienerweiterungsschwachstelle-cve-2025",
+   "en": "microsoft-windows-cve-2025-21418-elevation-of-privilege"
+  },
+  "published_at": "2026-11-20T13:01:08Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

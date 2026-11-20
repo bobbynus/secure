@@ -15,6 +15,7 @@
    "CVE-2026-99388"
   ],
   "advisory": [
+   "WID-SEC-2026-4695",
    "ZDI-26-998"
   ],
   "kb": []
@@ -33,7 +34,7 @@
  "title_hint": "ZDI-26-998: Linux Kernel KSMBD SMB Direct Integer Underflow Remote Code Execution Vulnerability",
  "summary_hint": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Linux Kernel KSMBD. Authentication may or may not be required to exploit this vulnerability, depending upon configuration. Only systems with SMB Direct enabled are vulnerable. The ZDI has assigned a CVSS rating of 9.0. The following CVEs are assigned: CVE-2026-99388.",
  "created_at": "2026-11-19T15:50:43Z",
- "updated_at": "2026-11-20T00:10:42Z",
+ "updated_at": "2026-11-20T13:00:42Z",
  "event_date": "2026-11-13T06:00:00Z",
  "sources": [
   {
@@ -52,6 +53,15 @@
    "title": "kernel: kernel: out-of-bounds memory write in SMB Direct via buffer length underflow",
    "publisher": "Red Hat Security Data API",
    "kind": "vendor",
+   "date": "2026-11-19"
+  },
+  {
+   "source_id": "cert-bund-wid",
+   "item_key": "WID-SEC-W-2026-4695",
+   "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4695",
+   "title": "Linux Kernel: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
+   "publisher": "CERT-Bund (BSI) WID security advisories",
+   "kind": "cert",
    "date": "2026-11-19"
   }
  ],
@@ -72,6 +82,12 @@
     "confirmation": "vendor"
    },
    "source": "redhat-secdata:CVE-2026-99388"
+  },
+  {
+   "date": "2026-11-20T13:00:42Z",
+   "kind": "source",
+   "facts": {},
+   "source": "cert-bund-wid:WID-SEC-W-2026-4695"
   }
  ],
  "related": [],

@@ -93,21 +93,59 @@
  "texts": {
   "msrc:CVE-2025-24991": "Windows NTFS Information Disclosure Vulnerability\nWindows NTFS. Microsoft 2025-Mar security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "84db034cf275c1923b708f4c",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows NTFS: Information Disclosure Vulnerability (CVE-2025-24991)",
+    "summary": "An information disclosure vulnerability exists in Microsoft Windows NTFS. Microsoft reports exploitation in the wild.",
+    "impact": "An attacker can exploit the vulnerability to disclose sensitive information.",
+    "fix": "Apply the security updates referenced by KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888, or KB5053995.",
+    "workaround": null,
+    "checks": [
+     "Check Windows 10 systems for the installation of the security updates."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows NTFS: уязвимость раскрытия информации (CVE-2025-24991)",
+    "summary": "В Microsoft Windows NTFS обнаружена уязвимость раскрытия информации. Microsoft сообщает об эксплуатации уязвимости.",
+    "impact": "Злоумышленник может использовать уязвимость для получения доступа к конфиденциальной информации.",
+    "fix": "Установите обновления безопасности, указанные в KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888 или KB5053995.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows 10 на наличие установленных обновлений безопасности."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows NTFS: Schwachstelle bezüglich Informationsoffenlegung (CVE-2025-24991)",
+    "summary": "In Microsoft Windows NTFS existiert eine Schwachstelle zur Informationsoffenlegung. Microsoft berichtet über eine Ausnutzung.",
+    "impact": "Ein Angreifer kann die Schwachstelle ausnutzen, um sensible Informationen offenzulegen.",
+    "fix": "Wenden Sie die Sicherheitsupdates an, die in KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888 oder KB5053995 referenziert sind.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows 10-Systeme auf die Installation der Sicherheitsupdates."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T13:01:08Z",
+  "slugs": {
+   "ru": "microsoft-windows-ntfs-uyazvimost-raskrytiya-informatsii-cve",
+   "de": "microsoft-windows-ntfs-schwachstelle-bezueglich",
+   "en": "microsoft-windows-ntfs-information-disclosure-vulnerability-cve"
+  },
+  "published_at": "2026-11-20T13:01:08Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

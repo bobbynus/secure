@@ -87,21 +87,59 @@
  "texts": {
   "msrc:CVE-2025-24984": "Windows NTFS Information Disclosure Vulnerability\nWindows NTFS. Microsoft 2025-Mar security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "eccc9f572448e6a3b4040970",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows NTFS: CVE-2025-24984 Information Disclosure",
+    "summary": "An information disclosure vulnerability exists in Microsoft Windows NTFS. Microsoft reports exploitation in the wild.",
+    "impact": "An attacker can exploit the information disclosure vulnerability in Microsoft Windows NTFS.",
+    "fix": "Apply the updates referenced by KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053636, KB5053638, KB5053886, or KB5053887.",
+    "workaround": null,
+    "checks": [
+     "Check Windows 10 systems for the installation of the security updates associated with CVE-2025-24984."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows NTFS: уязвимость CVE-2025-24984 раскрытия информации",
+    "summary": "В Microsoft Windows NTFS обнаружена уязвимость раскрытия информации. Microsoft сообщает об ее эксплуатации.",
+    "impact": "Злоумышленник может использовать уязвимость раскрытия информации в Microsoft Windows NTFS.",
+    "fix": "Установите обновления, указанные в KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053636, KB5053638, KB5053886 или KB5053887.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows 10 на наличие установленных обновлений безопасности, связанных с CVE-2025-24984."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows NTFS: CVE-2025-24984 Informationsoffenlegung",
+    "summary": "In Microsoft Windows NTFS existiert eine Schwachstelle zur Informationsoffenlegung. Microsoft berichtet über eine Ausnutzung.",
+    "impact": "Ein Angreifer kann die Schwachstelle zur Informationsoffenlegung in Microsoft Windows NTFS ausnutzen.",
+    "fix": "Wenden Sie die Updates an, die in KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053636, KB5053638, KB5053886 oder KB5053887 referenziert werden.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows-10-Systeme auf die Installation der Sicherheitsupdates im Zusammenhang mit CVE-2025-24984."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T13:01:08Z",
+  "slugs": {
+   "ru": "microsoft-windows-ntfs-uyazvimost-cve-2025-24984-raskrytiya",
+   "de": "microsoft-windows-ntfs-cve-2025-24984-informationsoffenlegung",
+   "en": "microsoft-windows-ntfs-cve-2025-24984-information-disclosure"
+  },
+  "published_at": "2026-11-20T13:01:08Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

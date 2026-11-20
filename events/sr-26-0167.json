@@ -82,21 +82,62 @@
  "texts": {
   "msrc:CVE-2025-24983": "Windows Win32 Kernel Subsystem Elevation of Privilege Vulnerability\nWindows Win32 Kernel Subsystem. Microsoft 2025-Mar security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "92ded86918b2450cc06854c3",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Elevation of privilege in Win32 Kernel Subsystem",
+    "summary": "An elevation of privilege vulnerability exists in the Windows Win32 Kernel Subsystem, tracked as CVE-2025-24983. Microsoft reports that the vulnerability is exploited.",
+    "impact": "An attacker can achieve elevation of privilege. Exploitation is reported by the vendor.",
+    "fix": "Apply the updates provided by Microsoft (including KB5053594, KB5053618, KB5053620, KB5053627, KB5053886, KB5053887, KB5053888, KB5053995).",
+    "workaround": null,
+    "checks": [
+     "Check Windows systems for vulnerability status regarding CVE-2025-24983.",
+     "Verify installation of updates associated with KB5053594, KB5053618, KB5053620, KB5053627, KB5053886, KB5053887, KB5053888, and KB5053995."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: повышение привилегий в подсистеме ядра Win32",
+    "summary": "В подсистеме ядра Windows Win32 обнаружена уязвимость повышения привилегий, получившая идентификатор CVE-2025-24983. Microsoft сообщает об эксплуатации уязвимости.",
+    "impact": "Злоумышленник может добиться повышения привилегий. Производитель сообщает об эксплуатации.",
+    "fix": "Установите обновления, предоставленные Microsoft (включая KB5053594, KB5053618, KB5053620, KB5053627, KB5053886, KB5053887, KB5053888, KB5053995).",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на уязвимость CVE-2025-24983.",
+     "Убедитесь в установке обновлений, связанных с KB5053594, KB5053618, KB5053620, KB5053627, KB5053886, KB5053887, KB5053888 и KB5053995."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Privilegienerhöhung im Win32-Kernelsubsystem",
+    "summary": "Im Windows Win32-Kernelsubsystem existiert eine Schwachstelle zur Privilegienerhöhung mit der Kennung CVE-2025-24983. Microsoft meldet eine Ausnutzung.",
+    "impact": "Ein Angreifer kann eine Privilegienerhöhung erreichen. Der Hersteller meldet eine aktive Ausnutzung.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5053594, KB5053618, KB5053620, KB5053627, KB5053886, KB5053887, KB5053888, KB5053995).",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows-Systeme auf den Status der Schwachstelle CVE-2025-24983.",
+     "Überprüfen Sie die Installation der Updates für KB5053594, KB5053618, KB5053620, KB5053627, KB5053886, KB5053887, KB5053888 und KB5053995."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T13:01:08Z",
+  "slugs": {
+   "ru": "microsoft-windows-povyshenie-privilegiy-v-podsisteme-yadra-win32",
+   "de": "microsoft-windows-privilegienerhoehung-im-win32-kernelsubsystem",
+   "en": "microsoft-windows-elevation-of-privilege-in-win32-kernel"
+  },
+  "published_at": "2026-11-20T13:01:08Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
