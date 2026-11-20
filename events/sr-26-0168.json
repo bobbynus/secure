@@ -1,0 +1,107 @@
+{
+ "id": "sr-26-0168",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "windows-10"
+ ],
+ "product_names": [
+  "Windows 10 Version 1607 for 32-bit Systems",
+  "Windows 10 Version 1607 for x64-based Systems",
+  "Windows 10 Version 1809 for 32-bit Systems",
+  "Windows 10 Version 1809 for x64-based Systems",
+  "Windows 10 Version 21H2 for 32-bit Systems",
+  "Windows 10 Version 21H2 for ARM64-based Systems",
+  "Windows 10 Version 21H2 for x64-based Systems",
+  "Windows 10 Version 22H2 for 32-bit Systems",
+  "Windows 10 Version 22H2 for ARM64-based Systems",
+  "Windows 10 Version 22H2 for x64-based Systems",
+  "Windows 10 for 32-bit Systems",
+  "Windows 10 for x64-based Systems"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2025-24984"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5053594",
+   "KB5053596",
+   "KB5053598",
+   "KB5053599",
+   "KB5053602",
+   "KB5053603",
+   "KB5053606",
+   "KB5053618",
+   "KB5053636",
+   "KB5053638",
+   "KB5053886",
+   "KB5053887"
+  ]
+ },
+ "severity": "high",
+ "cvss": {
+  "score": 4.6,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": true,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Windows NTFS Information Disclosure Vulnerability",
+ "summary_hint": "Windows NTFS. Microsoft 2025-Mar security update.",
+ "created_at": "2026-11-20T09:00:44Z",
+ "updated_at": "2026-11-20T09:00:44Z",
+ "event_date": "2026-11-20T09:00:44Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2025-24984",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24984",
+   "title": "Windows NTFS Information Disclosure Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-20"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-20T09:00:44Z",
+   "kind": "created",
+   "facts": {
+    "reason": "vendor reports exploitation"
+   },
+   "source": "msrc:CVE-2025-24984"
+  }
+ ],
+ "related": [
+  "sr-26-0167"
+ ],
+ "reason": "vendor reports exploitation",
+ "texts": {
+  "msrc:CVE-2025-24984": "Windows NTFS Information Disclosure Vulnerability\nWindows NTFS. Microsoft 2025-Mar security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

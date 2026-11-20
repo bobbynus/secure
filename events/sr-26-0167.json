@@ -1,0 +1,102 @@
+{
+ "id": "sr-26-0167",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "windows-10",
+  "windows-server"
+ ],
+ "product_names": [
+  "Windows 10 Version 1607 for 32-bit Systems",
+  "Windows 10 Version 1607 for x64-based Systems",
+  "Windows 10 for 32-bit Systems",
+  "Windows 10 for x64-based Systems",
+  "Windows Server 2008 R2 for x64-based Systems Service Pack 1",
+  "Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)",
+  "Windows Server 2008 for 32-bit Systems Service Pack 2",
+  "Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)",
+  "Windows Server 2008 for x64-based Systems Service Pack 2",
+  "Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)",
+  "Windows Server 2012",
+  "Windows Server 2012 (Server Core installation)"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2025-24983"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5053594",
+   "KB5053618",
+   "KB5053620",
+   "KB5053627",
+   "KB5053886",
+   "KB5053887",
+   "KB5053888",
+   "KB5053995"
+  ]
+ },
+ "severity": "high",
+ "cvss": {
+  "score": 7.0,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": true,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Windows Win32 Kernel Subsystem Elevation of Privilege Vulnerability",
+ "summary_hint": "Windows Win32 Kernel Subsystem. Microsoft 2025-Mar security update.",
+ "created_at": "2026-11-20T09:00:44Z",
+ "updated_at": "2026-11-20T09:00:44Z",
+ "event_date": "2026-11-20T09:00:44Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2025-24983",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24983",
+   "title": "Windows Win32 Kernel Subsystem Elevation of Privilege Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-20"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-20T09:00:44Z",
+   "kind": "created",
+   "facts": {
+    "reason": "vendor reports exploitation"
+   },
+   "source": "msrc:CVE-2025-24983"
+  }
+ ],
+ "related": [],
+ "reason": "vendor reports exploitation",
+ "texts": {
+  "msrc:CVE-2025-24983": "Windows Win32 Kernel Subsystem Elevation of Privilege Vulnerability\nWindows Win32 Kernel Subsystem. Microsoft 2025-Mar security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}
