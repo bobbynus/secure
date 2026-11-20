@@ -80,21 +80,62 @@
  "texts": {
   "msrc:CVE-2026-112967": "Windows Xbox Live Networking Service Remote Code Execution Vulnerability\nWindows Xbox Live Networking Service. Microsoft 2026-Nov security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "ebf50193f290fd0689a6c5e4",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Xbox Live Networking Service RCE Vulnerability (CVE-2026-112967)",
+    "summary": "A critical remote code execution vulnerability affects the Windows Xbox Live Networking Service in Microsoft Windows.",
+    "impact": "An attacker can achieve remote code execution in the Windows Xbox Live Networking Service.",
+    "fix": "Apply the updates provided by Microsoft (including KB5131085, KB5131087, KB5131096, KB5132043, KB5132059, KB5132061).",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft Windows systems for Xbox Live Networking Service exposure",
+     "Verify whether updates KB5131085, KB5131087, KB5131096, KB5132043, KB5132059, or KB5132061 are installed"
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость RCE в службе Xbox Live Networking Service (CVE-2026-112967)",
+    "summary": "Критическая уязвимость удаленного выполнения кода затрагивает службу Windows Xbox Live Networking Service в Microsoft Windows.",
+    "impact": "Злоумышленник может выполнить удаленный код в службе Windows Xbox Live Networking Service.",
+    "fix": "Установите обновления, предоставленные Microsoft (включая KB5131085, KB5131087, KB5131096, KB5132043, KB5132059, KB5132061).",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Microsoft Windows на предмет использования службы Xbox Live Networking Service",
+     "Проверьте наличие установленных обновлений KB5131085, KB5131087, KB5131096, KB5132043, KB5132059 или KB5132061"
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: RCE-Schwachstelle im Xbox Live Networking Service (CVE-2026-112967)",
+    "summary": "Eine kritische Schwachstelle zur Remote-Code-Ausführung betrifft den Windows Xbox Live Networking Service in Microsoft Windows.",
+    "impact": "Ein Angreifer kann Remote-Code-Ausführung im Windows Xbox Live Networking Service erreichen.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5131085, KB5131087, KB5131096, KB5132043, KB5132059, KB5132061).",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Microsoft Windows-Systeme hinsichtlich des Xbox Live Networking Service",
+     "Überprüfen Sie, ob die Updates KB5131085, KB5131087, KB5131096, KB5132043, KB5132059 oder KB5132061 installiert sind"
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T16:30:55Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-rce-v-sluzhbe-xbox-live-networking",
+   "de": "microsoft-windows-rce-schwachstelle-im-xbox-live-networking",
+   "en": "microsoft-windows-xbox-live-networking-service-rce"
+  },
+  "published_at": "2026-11-20T16:30:55Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
