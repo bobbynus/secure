@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "all",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Nov security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge (Chromium-based): CVE-2026-121156 buffer overflow vulnerability",
+  "summary": "A buffer overflow vulnerability exists in Microsoft Edge (Chromium-based) with a critical CVSS score of 9.6.",
+  "impact": "The vulnerability allows attackers to cause a buffer overflow in Microsoft Edge (Chromium-based).",
+  "fix": "The sources do not list a fixed version.",
+  "workaround": null,
+  "checks": [
+   "Inventory systems running Microsoft Edge (Chromium-based).",
+   "Verify the application versions against potential updates from Microsoft."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge (Chromium-based): уязвимость переполнения буфера CVE-2026-121156",
+  "summary": "В Microsoft Edge (Chromium-based) обнаружена уязвимость переполнения буфера с критической оценкой CVSS 9.6.",
+  "impact": "Уязвимость позволяет злоумышленникам вызвать переполнение буфера в Microsoft Edge (Chromium-based).",
+  "fix": "В источниках не указана исправленная версия.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем под управлением Microsoft Edge (Chromium-based).",
+   "Проверьте версии приложений на наличие обновлений от Microsoft."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge (Chromium-based): Pufferüberlauf-Schwachstelle CVE-2026-121156",
+  "summary": "In Microsoft Edge (Chromium-based) existiert eine Pufferüberlauf-Schwachstelle mit einem kritischen CVSS-Score von 9.6.",
+  "impact": "Die Schwachstelle ermöglicht es Angreifern, einen Pufferüberlauf in Microsoft Edge (Chromium-based) herbeizuführen.",
+  "fix": "Die Quellen nennen keine korrigierte Version.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Systeme mit Microsoft Edge (Chromium-based).",
+   "Überprüfen Sie die Anwendungsversionen auf Updates von Microsoft."
+  ],
+  "regression": null
+ }
+}

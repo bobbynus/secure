@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Edge (Chromium-based): Use-after-free vulnerability CVE-2026-121035",
+  "summary": "Microsoft Edge (Chromium-based) is affected by a use-after-free vulnerability tracked as CVE-2026-121035.",
+  "impact": "The sources do not specify the exact impact or preconditions.",
+  "fix": "The sources do not list fixed versions or update details.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Edge (Chromium-based) installations."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge (Chromium-based): уязвимость use-after-free CVE-2026-121035",
+  "summary": "В Microsoft Edge (Chromium-based) обнаружена уязвимость use-after-free, отслеживаемая под идентификатором CVE-2026-121035.",
+  "impact": "Источники не уточняют точные последствия или предварительные условия.",
+  "fix": "Источники не содержат информации об исправленных версиях или деталях обновлений.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установленных экземпляров Microsoft Edge (Chromium-based)."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge (Chromium-based): Use-After-Free-Schwachstelle CVE-2026-121035",
+  "summary": "Microsoft Edge (Chromium-based) ist von einer Use-After-Free-Schwachstelle betroffen, die als CVE-2026-121035 geführt wird.",
+  "impact": "Die Quellen nennen keine genauen Auswirkungen oder Voraussetzungen.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen oder Update-Details.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie die Installationen von Microsoft Edge (Chromium-based)."
+  ],
+  "regression": null
+ }
+}

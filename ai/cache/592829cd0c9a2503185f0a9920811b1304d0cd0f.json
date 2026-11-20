@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Windows Search Remote Code Execution Vulnerability (CVE-2026-116928)",
+  "summary": "A critical remote code execution vulnerability affects Windows Search in Microsoft Windows.",
+  "impact": "An attacker can achieve remote code execution.",
+  "fix": "Apply the updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check systems for installed Microsoft updates associated with CVE-2026-116928."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в Windows Search (CVE-2026-116928)",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает компонент Windows Search в Microsoft Windows.",
+  "impact": "Злоумышленник может осуществить удаленное выполнение кода.",
+  "fix": "Установите обновления, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие установленных обновлений Microsoft, связанных с CVE-2026-116928."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungs-Schwachstelle in Windows Search (CVE-2026-116928)",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft Windows Search in Microsoft Windows.",
+  "impact": "Ein Angreifer kann die Remotecodeausführung erreichen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf installierte Microsoft-Updates im Zusammenhang mit CVE-2026-116928."
+  ],
+  "regression": null
+ }
+}

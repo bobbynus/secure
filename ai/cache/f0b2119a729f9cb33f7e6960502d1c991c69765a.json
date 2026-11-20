@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows LDAP: Remote Code Execution Vulnerability (CVE-2026-119958)",
+  "summary": "A critical remote code execution vulnerability exists in Microsoft Windows LDAP (Lightweight Directory Access Protocol), addressed by the Microsoft November 2026 security update.",
+  "impact": "An attacker can achieve remote code execution in Windows LDAP. Specific preconditions are not detailed in the source texts.",
+  "fix": "Apply the updates associated with KBs `KB5131077`, `KB5131080`, `KB5131085`, `KB5131087`, `KB5131090`, `KB5131096`, `KB5131291`, `KB5132043`, `KB5132059`, and `KB5132061`.",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for the installation of the November 2026 security update.",
+   "Verify system inventories for affected Windows 10 and Windows 11 versions."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows LDAP: уязвимость удаленного выполнения кода (CVE-2026-119958)",
+  "summary": "В Microsoft Windows LDAP (Lightweight Directory Access Protocol) обнаружена критическая уязвимость удаленного выполнения кода, исправленная в обновлении безопасности Microsoft за ноябрь 2026 года.",
+  "impact": "Злоумышленник может осуществить удаленное выполнение кода в Windows LDAP. Конкретные предварительные условия в источниках не указаны.",
+  "fix": "Установите обновления, связанные с KB `KB5131077`, `KB5131080`, `KB5131085`, `KB5131087`, `KB5131090`, `KB5131096`, `KB5131291`, `KB5132043`, `KB5132059` и `KB5132061`.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на предмет установки ноябрьского обновления безопасности 2026 года.",
+   "Проверьте инвентаризацию систем на наличие затронутых версий Windows 10 и Windows 11."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows LDAP: Schwachstelle zur RCE (CVE-2026-119958)",
+  "summary": "In Microsoft Windows LDAP (Lightweight Directory Access Protocol) existiert eine kritische Schwachstelle zur Remotecodeausführung, die durch das Microsoft-Sicherheitsupdate vom November 2026 behoben wird.",
+  "impact": "Ein Angreifer kann in Windows LDAP eine Remotecodeausführung erreichen. Genaue Vorbedingungen werden in den Quellen nicht genannt.",
+  "fix": "Wenden Sie die Updates an, die mit den KBs `KB5131077`, `KB5131080`, `KB5131085`, `KB5131087`, `KB5131090`, `KB5131096`, `KB5131291`, `KB5132043`, `KB5132059` und `KB5132061` verbunden sind.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Systeme auf die Installation des Sicherheitsupdates vom November 2026.",
+   "Überprüfen Sie die Systeminventare auf betroffene Windows-10- und Windows-11-Versionen."
+  ],
+  "regression": null
+ }
+}
