@@ -27,13 +27,13 @@
   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
  },
  "exploited": true,
- "kev": false,
- "kev_added": null,
+ "kev": true,
+ "kev_added": "2026-11-20",
  "ransomware": false,
  "title_hint": "VMware patches vCenter zero-day exploited in attacks since September",
  "summary_hint": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]",
  "created_at": "2026-11-20T00:40:50Z",
- "updated_at": "2026-11-20T14:00:43Z",
+ "updated_at": "2026-11-20T18:40:39Z",
  "event_date": "2026-11-20T00:26:25Z",
  "sources": [
   {
@@ -53,6 +53,15 @@
    "publisher": "CERT-Bund (BSI) WID security advisories",
    "kind": "cert",
    "date": "2026-11-19"
+  },
+  {
+   "source_id": "cisa-kev",
+   "item_key": "CVE-2026-123890",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123890",
+   "title": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+   "publisher": "CISA Known Exploited Vulnerabilities",
+   "kind": "kev",
+   "date": "2026-11-20"
   }
  ],
  "revisions": [
@@ -72,12 +81,22 @@
     "confirmation": "official"
    },
    "source": "cert-bund-wid:WID-SEC-W-2026-4717"
+  },
+  {
+   "date": "2026-11-20T18:40:39Z",
+   "kind": "exploitation",
+   "facts": {
+    "kev": "2026-11-20",
+    "ransomware": false
+   },
+   "source": "cisa-kev:CVE-2026-123890"
   }
  ],
  "related": [],
  "reason": "media report exploitation",
  "texts": {
-  "bleepingcomputer:https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/": "VMware patches vCenter zero-day exploited in attacks since September\nBroadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]"
+  "bleepingcomputer:https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/": "VMware patches vCenter zero-day exploited in attacks since September\nBroadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]",
+  "cisa-kev:CVE-2026-123890": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability\nBroadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines"
  },
  "publish_state": "published",
  "ai": {

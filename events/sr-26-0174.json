@@ -1,0 +1,120 @@
+{
+ "id": "sr-26-0174",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "official",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Apache",
+ "products": [],
+ "product_names": [
+  "Roller"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-129448"
+  ],
+  "advisory": [],
+  "kb": []
+ },
+ "severity": null,
+ "cvss": {
+  "score": 9.8,
+  "version": "3.1",
+  "source": "NVD",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+ },
+ "exploited": true,
+ "kev": true,
+ "kev_added": "2026-11-20",
+ "ransomware": false,
+ "title_hint": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+ "summary_hint": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability as CVE-2026-82384 but applies to a broader range of affected versions.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+ "created_at": "2026-11-20T18:40:39Z",
+ "updated_at": "2026-11-20T18:40:39Z",
+ "event_date": "2026-11-20T00:00:00Z",
+ "sources": [
+  {
+   "source_id": "cisa-kev",
+   "item_key": "CVE-2026-129448",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-129448",
+   "title": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+   "publisher": "CISA Known Exploited Vulnerabilities",
+   "kind": "kev",
+   "date": "2026-11-20"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-20T18:40:39Z",
+   "kind": "created",
+   "facts": {
+    "reason": "added to CISA KEV"
+   },
+   "source": "cisa-kev:CVE-2026-129448"
+  }
+ ],
+ "related": [],
+ "reason": "added to CISA KEV",
+ "texts": {
+  "cisa-kev:CVE-2026-129448": "Apache Roller Deserialization of Untrusted Data Vulnerability\nApache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability as CVE-2026-82384 but applies to a broader range of affected versions.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+ },
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "034e81e114d78a4345bbccae",
+  "texts": {
+   "en": {
+    "title": "Apache Roller: arbitrary code execution via XML-RPC endpoint",
+    "summary": "Apache Roller contains a deserialization of untrusted data vulnerability in the XML-RPC endpoint that allows unauthenticated remote attackers to execute arbitrary code.",
+    "impact": "An unauthenticated remote attacker can execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication.",
+    "fix": "The sources list no specific fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check Apache Roller installations for exposure of the XML-RPC endpoint.",
+     "Apply mitigations in accordance with vendor instructions."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Apache Roller: выполнение произвольного кода через конечную точку XML-RPC",
+    "summary": "Apache Roller содержит уязвимость десериализации недоверенных данных в конечной точке XML-RPC, позволяющую неаутентифицированным удаленным злоумышленникам выполнять произвольный код.",
+    "impact": "Неаутентифицированный удаленный злоумышленник может выполнить произвольный код через конечную точку XML-RPC, которая принимает и десериализует типы расширений поставщика до аутентификации.",
+    "fix": "В источниках не указаны конкретные исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте установки Apache Roller на предмет доступности конечной точки XML-RPC.",
+     "Примените средства защиты в соответствии с инструкциями производителя."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Apache Roller: Ausführung von beliebigen Code über XML-RPC-Endpunkt",
+    "summary": "Apache Roller enthält eine Schwachstelle durch Deserialisierung untrusted Data im XML-RPC-Endpunkt, die es unauthentifizierten Angreifern ermöglicht, beliebigen Code auszuführen.",
+    "impact": "Ein unauthentifizierter Remote-Angreifer kann über den XML-RPC-Endpunkt, der Herstellerspezifische Erweiterungstypen vor der Authentifizierung akzeptiert und deserialisiert, beliebigen Code ausführen.",
+    "fix": "Die Quellen nennen keine spezifischen korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Prüfen Sie Apache Roller-Installationen auf die Exposition des XML-RPC-Endpunkts.",
+     "Wenden Sie Minderungsmaßnahmen gemäß den Anweisungen des Herstellers an."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T18:40:42Z",
+  "slugs": {
+   "ru": "apache-roller-vypolnenie-proizvolnogo-koda-cherez-konechnuyu",
+   "de": "apache-roller-ausfuehrung-von-beliebigen-code-ueber-xml-rpc",
+   "en": "apache-roller-arbitrary-code-execution-via-xml-rpc-endpoint"
+  },
+  "published_at": "2026-11-20T18:40:42Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 1
+ }
+}

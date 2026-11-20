@@ -1,0 +1,42 @@
+{
+ "affected": [],
+ "en": {
+  "title": "SAP NetWeaver: Improper neutralization vulnerability in data query logic",
+  "summary": "SAP NetWeaver Enterprise Portal contains a vulnerability allowing unauthenticated attackers to disclose or modify server information via JNDI injection.",
+  "impact": "An unauthenticated attacker can disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
+  "fix": "The sources do not list fixed versions; apply mitigations in accordance with vendor instructions.",
+  "workaround": null,
+  "checks": [
+   "Inventory SAP NetWeaver Enterprise Portal installations.",
+   "Check systems for exposure to JNDI injection vectors.",
+   "Apply vendor-provided mitigations."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "SAP NetWeaver: уязвимость нейтрализации в логике запросов данных",
+  "summary": "SAP NetWeaver Enterprise Portal содержит уязвимость, позволяющую неаутентифицированным злоумышленникам раскрывать или изменять информацию о сервере через JNDI-инъекцию.",
+  "impact": "Неаутентифицированный злоумышленник может раскрыть или изменить информацию о сервере с помощью внедренных свойств среды JNDI или URL, используемого при операциях поиска JNDI.",
+  "fix": "В источниках не указаны исправленные версии; примените меры защиты в соответствии с инструкциями производителя.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установок SAP NetWeaver Enterprise Portal.",
+   "Проверьте системы на подверженность векторам JNDI-инъекций.",
+   "Примените защитные меры от производителя."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "SAP NetWeaver: Unzulängliche Neutralisierung in Datenabfragelogik",
+  "summary": "SAP NetWeaver Enterprise Portal enthält eine Schwachstelle, die es unauthentifizierten Angreifern ermöglicht, Serverinformationen über JNDI-Injektion offenzulegen oder zu modifizieren.",
+  "impact": "Ein unauthentifizierter Angreifer kann Serverinformationen über injizierte JNDI-Umgebungseigenschaften oder eine bei JNDI-Suchvorgängen verwendete URL offenlegen oder verändern.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen; wenden Sie Abhilfemaßnahmen gemäß den Herstelleranweisungen an.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie SAP NetWeaver Enterprise Portal-Installationen.",
+   "Überprüfen Sie Systeme auf Anfälligkeit für JNDI-Injektionsvektoren.",
+   "Wenden Sie vom Hersteller bereitgestellte Abhilfemaßnahmen an."
+  ],
+  "regression": null
+ }
+}

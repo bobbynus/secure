@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Oct security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Oct security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: CVE-2026-110922 use-after-free vulnerability",
+  "summary": "Microsoft Edge (Chromium-based) contains a use-after-free vulnerability in Prerender tracked as CVE-2026-110922.",
+  "impact": "The vulnerability involves a use-after-free condition in Prerender.",
+  "fix": "The sources do not state fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Edge (Chromium-based) installations.",
+   "Check systems for the Microsoft 2026-Oct security update context regarding CVE-2026-110922."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: уязвимость use-after-free CVE-2026-110922",
+  "summary": "Microsoft Edge (на базе Chromium) содержит уязвимость типа use-after-free в Prerender, которой присвоен номер CVE-2026-110922.",
+  "impact": "Уязвимость связана с ошибкой освобождения памяти (use-after-free) в Prerender.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установленных экземпляров Microsoft Edge (на базе Chromium).",
+   "Проверьте системы на наличие контекста обновления безопасности Microsoft 2026-Oct в отношении CVE-2026-110922."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: CVE-2026-110922 Use-After-Free-Schwachstelle",
+  "summary": "Microsoft Edge (Chromium-basiert) enthält eine Use-After-Free-Schwachstelle in Prerender, die als CVE-2026-110922 geführt wird.",
+  "impact": "Die Schwachstelle betrifft eine Use-After-Free-Bedingung in Prerender.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Erfassen Sie alle Installationen von Microsoft Edge (Chromium-basiert).",
+   "Überprüfen Sie Systeme auf den Kontext des Microsoft 2026-Oct Sicherheitsupdates in Bezug auf CVE-2026-110922."
+  ],
+  "regression": null
+ }
+}

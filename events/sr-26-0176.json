@@ -1,0 +1,120 @@
+{
+ "id": "sr-26-0176",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "official",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Cisco",
+ "products": [],
+ "product_names": [
+  "Expressway Series"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-76466"
+  ],
+  "advisory": [],
+  "kb": []
+ },
+ "severity": null,
+ "cvss": {
+  "score": 9.8,
+  "version": "3.1",
+  "source": "NVD",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+ },
+ "exploited": true,
+ "kev": true,
+ "kev_added": "2026-11-20",
+ "ransomware": false,
+ "title_hint": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+ "summary_hint": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+ "created_at": "2026-11-20T18:40:39Z",
+ "updated_at": "2026-11-20T18:40:39Z",
+ "event_date": "2026-11-20T00:00:00Z",
+ "sources": [
+  {
+   "source_id": "cisa-kev",
+   "item_key": "CVE-2026-76466",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76466",
+   "title": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+   "publisher": "CISA Known Exploited Vulnerabilities",
+   "kind": "kev",
+   "date": "2026-11-20"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-20T18:40:39Z",
+   "kind": "created",
+   "facts": {
+    "reason": "added to CISA KEV"
+   },
+   "source": "cisa-kev:CVE-2026-76466"
+  }
+ ],
+ "related": [],
+ "reason": "added to CISA KEV",
+ "texts": {
+  "cisa-kev:CVE-2026-76466": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability\nCisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+ },
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "8c7c04c435783ae7a9764e5b",
+  "texts": {
+   "en": {
+    "title": "Cisco Expressway Series: Hard-coded credentials vulnerability",
+    "summary": "Cisco Expressway Series contains a hard-coded credentials vulnerability allowing unauthenticated remote attackers to execute commands as root via the database service. This vulnerability is actively exploited.",
+    "impact": "An unauthenticated, remote attacker with persistent cookies and network access can execute commands as root on a clustered device via the database service.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check Cisco Expressway Series deployments for internet exposure.",
+     "Verify system status regarding vendor-provided updates or mitigations."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Cisco Expressway Series: уязвимость жестко закодированных учетных данных",
+    "summary": "Cisco Expressway Series содержит уязвимость жестко закодированных учетных данных, позволяющую неаутентифицированным удаленным злоумышленникам выполнять команды с правами root через службу базы данных. Уязвимость эксплуатируется.",
+    "impact": "Неаутентифицированный удаленный злоумышленник с постоянными файлами cookie и сетевым доступом может выполнять команды с правами root на кластеризованном устройстве через службу базы данных.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте развертывания Cisco Expressway Series на предмет доступности из интернета.",
+     "Проверьте состояние систем на наличие обновлений или средств защиты от производителя."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Cisco Expressway Series: Schwachstelle durch hartcodierte Anmeldeinformationen",
+    "summary": "Cisco Expressway Series enthält eine Schwachstelle durch hartcodierte Anmeldeinformationen, die es unauthentifizierten Remotegegnern ermöglicht, Befehle als root über den Baudatenbankdienst auszuführen. Die Schwachstelle wird ausgenutzt.",
+    "impact": "Ein unauthentifizierter Remotegegner mit persistenten Cookies und Netzwerkzugriff kann Befehle als root auf einem geclusterten Gerät über den Datenbankdienst ausführen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Cisco Expressway Series-Installationen auf Exposition im Internet.",
+     "Überprüfen Sie den Systemstatus hinsichtlich vom Hersteller bereitgestellter Updates oder Workarounds."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T18:40:42Z",
+  "slugs": {
+   "ru": "cisco-expressway-series-uyazvimost-zhestko-zakodirovannykh",
+   "de": "cisco-expressway-series-schwachstelle-durch-hartcodierte",
+   "en": "cisco-expressway-series-hard-coded-credentials-vulnerability"
+  },
+  "published_at": "2026-11-20T18:40:42Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 1
+ }
+}

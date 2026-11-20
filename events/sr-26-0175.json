@@ -1,0 +1,123 @@
+{
+ "id": "sr-26-0175",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "official",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "SAP",
+ "products": [],
+ "product_names": [
+  "NetWeaver"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2025-42884"
+  ],
+  "advisory": [],
+  "kb": []
+ },
+ "severity": null,
+ "cvss": {
+  "score": 6.5,
+  "version": "3.1",
+  "source": "NVD",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+ },
+ "exploited": true,
+ "kev": true,
+ "kev_added": "2026-11-20",
+ "ransomware": false,
+ "title_hint": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+ "summary_hint": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+ "created_at": "2026-11-20T18:40:39Z",
+ "updated_at": "2026-11-20T18:40:39Z",
+ "event_date": "2026-11-20T00:00:00Z",
+ "sources": [
+  {
+   "source_id": "cisa-kev",
+   "item_key": "CVE-2025-42884",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-42884",
+   "title": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+   "publisher": "CISA Known Exploited Vulnerabilities",
+   "kind": "kev",
+   "date": "2026-11-20"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-20T18:40:39Z",
+   "kind": "created",
+   "facts": {
+    "reason": "added to CISA KEV"
+   },
+   "source": "cisa-kev:CVE-2025-42884"
+  }
+ ],
+ "related": [],
+ "reason": "added to CISA KEV",
+ "texts": {
+  "cisa-kev:CVE-2025-42884": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability\nSAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+ },
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "9fb4687fd188d09e24ab1499",
+  "texts": {
+   "en": {
+    "title": "SAP NetWeaver: Improper neutralization vulnerability in data query logic",
+    "summary": "SAP NetWeaver Enterprise Portal contains a vulnerability allowing unauthenticated attackers to disclose or modify server information via JNDI injection.",
+    "impact": "An unauthenticated attacker can disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
+    "fix": "The sources do not list fixed versions; apply mitigations in accordance with vendor instructions.",
+    "workaround": null,
+    "checks": [
+     "Inventory SAP NetWeaver Enterprise Portal installations.",
+     "Check systems for exposure to JNDI injection vectors.",
+     "Apply vendor-provided mitigations."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "SAP NetWeaver: уязвимость нейтрализации в логике запросов данных",
+    "summary": "SAP NetWeaver Enterprise Portal содержит уязвимость, позволяющую неаутентифицированным злоумышленникам раскрывать или изменять информацию о сервере через JNDI-инъекцию.",
+    "impact": "Неаутентифицированный злоумышленник может раскрыть или изменить информацию о сервере с помощью внедренных свойств среды JNDI или URL, используемого при операциях поиска JNDI.",
+    "fix": "В источниках не указаны исправленные версии; примените меры защиты в соответствии с инструкциями производителя.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию установок SAP NetWeaver Enterprise Portal.",
+     "Проверьте системы на подверженность векторам JNDI-инъекций.",
+     "Примените защитные меры от производителя."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "SAP NetWeaver: Unzulängliche Neutralisierung in Datenabfragelogik",
+    "summary": "SAP NetWeaver Enterprise Portal enthält eine Schwachstelle, die es unauthentifizierten Angreifern ermöglicht, Serverinformationen über JNDI-Injektion offenzulegen oder zu modifizieren.",
+    "impact": "Ein unauthentifizierter Angreifer kann Serverinformationen über injizierte JNDI-Umgebungseigenschaften oder eine bei JNDI-Suchvorgängen verwendete URL offenlegen oder verändern.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen; wenden Sie Abhilfemaßnahmen gemäß den Herstelleranweisungen an.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie SAP NetWeaver Enterprise Portal-Installationen.",
+     "Überprüfen Sie Systeme auf Anfälligkeit für JNDI-Injektionsvektoren.",
+     "Wenden Sie vom Hersteller bereitgestellte Abhilfemaßnahmen an."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T18:40:42Z",
+  "slugs": {
+   "ru": "sap-netweaver-uyazvimost-neytralizatsii-v-logike-zaprosov",
+   "de": "sap-netweaver-unzulaengliche-neutralisierung-in",
+   "en": "sap-netweaver-improper-neutralization-vulnerability-in-data"
+  },
+  "published_at": "2026-11-20T18:40:42Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 1
+ }
+}

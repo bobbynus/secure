@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-110922": "Chromium CVE-2026-110922: Use after free in Prerender\nMicrosoft Edge (Chromium-based). Microsoft 2026-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "9280867ed56574e8e51cbf56",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: CVE-2026-110922 use-after-free vulnerability",
+    "summary": "Microsoft Edge (Chromium-based) contains a use-after-free vulnerability in Prerender tracked as CVE-2026-110922.",
+    "impact": "The vulnerability involves a use-after-free condition in Prerender.",
+    "fix": "The sources do not state fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft Edge (Chromium-based) installations.",
+     "Check systems for the Microsoft 2026-Oct security update context regarding CVE-2026-110922."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: уязвимость use-after-free CVE-2026-110922",
+    "summary": "Microsoft Edge (на базе Chromium) содержит уязвимость типа use-after-free в Prerender, которой присвоен номер CVE-2026-110922.",
+    "impact": "Уязвимость связана с ошибкой освобождения памяти (use-after-free) в Prerender.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию установленных экземпляров Microsoft Edge (на базе Chromium).",
+     "Проверьте системы на наличие контекста обновления безопасности Microsoft 2026-Oct в отношении CVE-2026-110922."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: CVE-2026-110922 Use-After-Free-Schwachstelle",
+    "summary": "Microsoft Edge (Chromium-basiert) enthält eine Use-After-Free-Schwachstelle in Prerender, die als CVE-2026-110922 geführt wird.",
+    "impact": "Die Schwachstelle betrifft eine Use-After-Free-Bedingung in Prerender.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Erfassen Sie alle Installationen von Microsoft Edge (Chromium-basiert).",
+     "Überprüfen Sie Systeme auf den Kontext des Microsoft 2026-Oct Sicherheitsupdates in Bezug auf CVE-2026-110922."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T18:40:42Z",
+  "slugs": {
+   "ru": "microsoft-edge-uyazvimost-use-after-free-cve-2026-110922",
+   "de": "microsoft-edge-cve-2026-110922-use-after-free-schwachstelle",
+   "en": "microsoft-edge-cve-2026-110922-use-after-free-vulnerability"
+  },
+  "published_at": "2026-11-20T18:40:42Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

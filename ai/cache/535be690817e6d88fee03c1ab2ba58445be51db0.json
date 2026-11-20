@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Cisco Expressway Series: Hard-coded credentials vulnerability",
+  "summary": "Cisco Expressway Series contains a hard-coded credentials vulnerability allowing unauthenticated remote attackers to execute commands as root via the database service. This vulnerability is actively exploited.",
+  "impact": "An unauthenticated, remote attacker with persistent cookies and network access can execute commands as root on a clustered device via the database service.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check Cisco Expressway Series deployments for internet exposure.",
+   "Verify system status regarding vendor-provided updates or mitigations."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Cisco Expressway Series: уязвимость жестко закодированных учетных данных",
+  "summary": "Cisco Expressway Series содержит уязвимость жестко закодированных учетных данных, позволяющую неаутентифицированным удаленным злоумышленникам выполнять команды с правами root через службу базы данных. Уязвимость эксплуатируется.",
+  "impact": "Неаутентифицированный удаленный злоумышленник с постоянными файлами cookie и сетевым доступом может выполнять команды с правами root на кластеризованном устройстве через службу базы данных.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте развертывания Cisco Expressway Series на предмет доступности из интернета.",
+   "Проверьте состояние систем на наличие обновлений или средств защиты от производителя."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Cisco Expressway Series: Schwachstelle durch hartcodierte Anmeldeinformationen",
+  "summary": "Cisco Expressway Series enthält eine Schwachstelle durch hartcodierte Anmeldeinformationen, die es unauthentifizierten Remotegegnern ermöglicht, Befehle als root über den Baudatenbankdienst auszuführen. Die Schwachstelle wird ausgenutzt.",
+  "impact": "Ein unauthentifizierter Remotegegner mit persistenten Cookies und Netzwerkzugriff kann Befehle als root auf einem geclusterten Gerät über den Datenbankdienst ausführen.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Cisco Expressway Series-Installationen auf Exposition im Internet.",
+   "Überprüfen Sie den Systemstatus hinsichtlich vom Hersteller bereitgestellter Updates oder Workarounds."
+  ],
+  "regression": null
+ }
+}
