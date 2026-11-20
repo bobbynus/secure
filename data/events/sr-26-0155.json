@@ -1,0 +1,117 @@
+{
+  "id": "sr-26-0155",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2024-38213"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5039211",
+      "KB5039212",
+      "KB5039213",
+      "KB5039214",
+      "KB5039217",
+      "KB5039225",
+      "KB5039227",
+      "KB5039236",
+      "KB5039260",
+      "KB5039294",
+      "KB5039330"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 6.5,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T12:00:57Z",
+    "updated": "2026-11-20T12:00:57Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Mark of the Web Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38213",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T12:00:57Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T12:00:57Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-obkhoda-funktsii-bezopasnosti-mark",
+      "title": "Microsoft Windows: уязвимость обхода функции безопасности Mark of the Web (CVE-2024-38213)",
+      "summary": "В Microsoft Windows Mark of the Web (MOTW) обнаружена уязвимость обхода функции безопасности. Microsoft сообщает об эксплуатации уязвимости.",
+      "impact": "Злоумышленник может обойти функции безопасности Mark of the Web.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Обновления доступны через статьи KB: KB5039211, KB5039212, KB5039213, KB5039214, KB5039217, KB5039225, KB5039227, KB5039236, KB5039260, KB5039294 и KB5039330.",
+      "checks": [
+        "Проведите инвентаризацию систем Windows 10 для проверки установленных обновлений",
+        "Примените обновления, связанные с KB5039211, KB5039212, KB5039213, KB5039214, KB5039217, KB5039225, KB5039227, KB5039236, KB5039260, KB5039294 или KB5039330"
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-schwachstelle-in-mark-of-the-web-ermoeglicht",
+      "title": "Microsoft Windows: Schwachstelle in Mark of the Web ermöglicht Sicherheitsumgebung (CVE-2024-38213)",
+      "summary": "In Microsoft Windows Mark of the Web (MOTW) existiert eine Schwachstelle zur Umgehung von Sicherheitsfunktionen. Microsoft meldet eine Ausnutzung.",
+      "impact": "Ein Angreifer kann Sicherheitsfunktionen von Mark of the Web umgehen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Updates sind über die KB-Artikel KB5039211, KB5039212, KB5039213, KB5039214, KB5039217, KB5039225, KB5039227, KB5039236, KB5039260, KB5039294 und KB5039330 verfügbar.",
+      "checks": [
+        "Inventarisieren Sie Windows 10-Systeme, um installierte Updates zu überprüfen",
+        "Wenden Sie die Updates an, die mit KB5039211, KB5039212, KB5039213, KB5039214, KB5039217, KB5039225, KB5039227, KB5039236, KB5039260, KB5039294 oder KB5039330 verknüpft sind"
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-mark-of-the-web-security-feature-bypass",
+      "title": "Microsoft Windows: Mark of the Web Security Feature Bypass Vulnerability (CVE-2024-38213)",
+      "summary": "A security feature bypass vulnerability exists in Microsoft Windows Mark of the Web (MOTW). Microsoft reports exploitation in the wild.",
+      "impact": "An attacker can bypass Mark of the Web security features.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Updates are available via KB articles KB5039211, KB5039212, KB5039213, KB5039214, KB5039217, KB5039225, KB5039227, KB5039236, KB5039260, KB5039294, and KB5039330.",
+      "checks": [
+        "Inventory Windows 10 systems to check for installed updates",
+        "Apply the updates associated with KB5039211, KB5039212, KB5039213, KB5039214, KB5039217, KB5039225, KB5039227, KB5039236, KB5039260, KB5039294, or KB5039330"
+      ]
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "sr-26-0153",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2024-38178"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5041160",
+      "KB5041571",
+      "KB5041573",
+      "KB5041578",
+      "KB5041580",
+      "KB5041585",
+      "KB5041592",
+      "KB5041770",
+      "KB5041773",
+      "KB5041782",
+      "KB5041828"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.5,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T12:00:57Z",
+    "updated": "2026-11-20T12:00:57Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Scripting Engine Memory Corruption Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38178",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T12:00:57Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T12:00:57Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-povrezhdeniya-pamyati-v-scripting",
+      "title": "Microsoft Windows: уязвимость повреждения памяти в Scripting Engine (CVE-2024-38178)",
+      "summary": "В подсистеме Scripting Engine в Microsoft Windows обнаружена уязвимость повреждения памяти, получившая идентификатор CVE-2024-38178.",
+      "impact": "Злоумышленник может использовать данную уязвимость для повреждения памяти в скриптовом движке.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "В источниках не указаны конкретные исправленные версии.",
+      "checks": [
+        "Проверить системы на наличие установленной ОС Windows 10",
+        "Проверить статус установки обновлений безопасности Microsoft"
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-speicherbeschaedigung-in-scripting-engine-cve",
+      "title": "Microsoft Windows: Speicherbeschädigung in Scripting Engine (CVE-2024-38178)",
+      "summary": "In der Scripting Engine von Microsoft Windows existiert eine Schwachstelle zur Speicherbeschädigung, erfasst als CVE-2024-38178.",
+      "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um eine Speicherbeschädigung in der Scripting Engine zu verursachen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Die Quellen nennen keine spezifischen korrigierten Versionen.",
+      "checks": [
+        "Systeme auf Windows 10-Installationen prüfen",
+        "Status von Microsoft-Sicherheitsupdates überprüfen"
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2024-38178-scripting-engine-memory",
+      "title": "Microsoft Windows: CVE-2024-38178 Scripting Engine Memory Corruption",
+      "summary": "A memory corruption vulnerability exists in the scripting engine of Microsoft Windows, tracked as CVE-2024-38178.",
+      "impact": "An attacker can exploit this vulnerability to cause memory corruption in the scripting engine.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "The sources list no specific fixed versions.",
+      "checks": [
+        "Check systems for Windows 10 installations",
+        "Verify status of Microsoft security updates"
+      ]
+    }
+  }
+}

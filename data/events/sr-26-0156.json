@@ -1,0 +1,119 @@
+{
+  "id": "sr-26-0156",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2024-38063"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5041571",
+      "KB5041573",
+      "KB5041580",
+      "KB5041585",
+      "KB5041773",
+      "KB5041782",
+      "KB5041823",
+      "KB5041828",
+      "KB5041838",
+      "KB5041847",
+      "KB5041850",
+      "KB5041851",
+      "KB5042881",
+      "KB5043050",
+      "KB5043067"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T12:00:57Z",
+    "updated": "2026-11-20T12:00:57Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows TCP/IP Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38063",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T12:00:57Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T12:00:57Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-tcp",
+      "title": "Microsoft Windows: уязвимость удаленного выполнения кода в TCP/IP",
+      "summary": "Microsoft Windows содержит уязвимость удаленного выполнения кода в TCP/IP с критической оценкой CVSS 9.8. Доступны обновления.",
+      "impact": "Злоумышленник может выполнить удаленный код, однако источники не приводят конкретных предварительных условий.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft.",
+      "checks": [
+        "Проведите инвентаризацию систем Windows для выявления затронутых версий.",
+        "Проверьте, установлены ли обновления безопасности, включая KB5041571, KB5041573, KB5041580, KB5041585, KB5041773, KB5041782, KB5041823, KB5041828, KB5041838, KB5041847, KB5041850, KB5041851, KB5042881, KB5043050 или KB5043067."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-remotecodeausfuehrungsanfaelligkeit-in-tcp-ip",
+      "title": "Microsoft Windows: Remotecodeausführungsanfälligkeit in TCP/IP",
+      "summary": "Microsoft Windows enthält eine Remotecodeausführungsanfälligkeit in TCP/IP mit einem kritischen CVSS-Score von 9.8. Updates sind verfügbar.",
+      "impact": "Ein Angreifer kann Remotecode ausführen; Quellen nennen keine spezifischen Vorbedingungen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+      "checks": [
+        "Inventarisieren Sie Windows-Systeme, um betroffene Versionen zu identifizieren.",
+        "Überprüfen Sie, ob Sicherheitsupdates wie KB5041571, KB5041573, KB5041580, KB5041585, KB5041773, KB5041782, KB5041823, KB5041828, KB5041838, KB5041847, KB5041850, KB5041851, KB5042881, KB5043050 oder KB5043067 eingespielt wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-tcp-ip-remote-code-execution-vulnerability",
+      "title": "Microsoft Windows: TCP/IP Remote Code Execution Vulnerability",
+      "summary": "Microsoft Windows contains a remote code execution vulnerability in TCP/IP with a critical CVSS score of 9.8. Updates are available.",
+      "impact": "An attacker can execute remote code, but the sources provide no specific preconditions.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply the updates provided by Microsoft.",
+      "checks": [
+        "Inventory Windows systems to identify affected versions.",
+        "Verify if security updates including KB5041571, KB5041573, KB5041580, KB5041585, KB5041773, KB5041782, KB5041823, KB5041828, KB5041838, KB5041847, KB5041850, KB5041851, KB5042881, KB5043050, or KB5043067 are applied."
+      ]
+    }
+  }
+}
