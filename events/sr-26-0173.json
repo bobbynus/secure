@@ -61,21 +61,62 @@
  "texts": {
   "msrc:CVE-2026-70193": "Microsoft Office SharePoint Remote Code Execution Vulnerability\nMicrosoft Office SharePoint. Microsoft 2026-Nov security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "29244cb6f45753058fc9bc67",
+  "texts": {
+   "en": {
+    "title": "Microsoft SharePoint: Remote Code Execution Vulnerability (CVE-2026-70193)",
+    "summary": "A critical remote code execution vulnerability affects Microsoft SharePoint Server and Microsoft SharePoint Online.",
+    "impact": "An attacker can achieve remote code execution on vulnerable SharePoint installations.",
+    "fix": "The sources do not list specific fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft SharePoint Server and Microsoft SharePoint Online instances.",
+     "Check systems for the presence of the Microsoft 2026-Nov security update."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода (CVE-2026-70193)",
+    "summary": "Критическая уязвимость удаленного выполнения кода затрагивает Microsoft SharePoint Server и Microsoft SharePoint Online.",
+    "impact": "Злоумышленник может выполнить удаленный код на уязвимых серверах SharePoint.",
+    "fix": "В источниках не указаны конкретные исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию экземпляров Microsoft SharePoint Server и Microsoft SharePoint Online.",
+     "Проверьте системы на наличие ноябрьского обновления безопасности Microsoft 2026 года."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft SharePoint: Schwachstelle zur Remote-Code-Ausführung (CVE-2026-70193)",
+    "summary": "Eine kritische Schwachstelle zur Remote-Code-Ausführung betrifft Microsoft SharePoint Server und Microsoft SharePoint Online.",
+    "impact": "Ein Angreifer kann Remote-Code-Ausführung auf anfälligen SharePoint-Installationen erreichen.",
+    "fix": "Die Quellen nennen keine konkreten korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Microsoft SharePoint Server- und Microsoft SharePoint Online-Instanzen.",
+     "Überprüfen Sie Systeme auf das Vorhandensein des Microsoft-Sicherheitsupdates vom November 2026."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T15:00:47Z",
+  "slugs": {
+   "ru": "microsoft-sharepoint-uyazvimost-udalennogo-vypolneniya-koda-cve",
+   "de": "microsoft-sharepoint-schwachstelle-zur-remote-code-ausfuehrung",
+   "en": "microsoft-sharepoint-remote-code-execution-vulnerability-cve"
+  },
+  "published_at": "2026-11-20T15:00:47Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
