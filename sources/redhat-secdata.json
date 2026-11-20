@@ -358,8 +358,8 @@
   "CVE-2026-109908": "a2a8df4746dfc7c02f3c833a",
   "CVE-2026-61715": "4d53081ee2a282fd26267444"
  },
- "last_attempt": "2026-11-20T06:30:41Z",
- "last_success": "2026-11-20T06:30:41Z",
+ "last_attempt": "2026-11-20T07:30:43Z",
+ "last_success": "2026-11-20T07:30:43Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
