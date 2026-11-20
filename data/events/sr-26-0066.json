@@ -20,7 +20,9 @@
     "cve": [
       "CVE-2025-10263"
     ],
-    "advisory": [],
+    "advisory": [
+      "WID-SEC-2026-2175"
+    ],
     "kb": [
       "KB5093998",
       "KB5094126",
@@ -47,6 +49,14 @@
       "publisher": "Microsoft Security Response Center (CVRF API)",
       "kind": "vendor",
       "date": "2026-11-19"
+    },
+    {
+      "id": "s2",
+      "title": "Linux Kernel: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2175",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
+      "date": "2026-07-01"
     }
   ],
   "revisions": [
