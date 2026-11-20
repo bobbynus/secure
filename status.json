@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-20T02:30:42Z",
- "lastSuccess": "2026-11-20T02:30:42Z",
+ "generatedAt": "2026-11-20T03:00:44Z",
+ "lastSuccess": "2026-11-20T03:00:44Z",
  "run": {
   "ok": 17,
   "error": 1
@@ -21,7 +21,7 @@
   {
    "id": "cisa-kev",
    "state": "ok",
-   "lastSuccess": "2026-11-20T02:30:42Z",
+   "lastSuccess": "2026-11-20T03:00:44Z",
    "lastError": null,
    "failures": 0
   },
@@ -46,14 +46,14 @@
   {
    "id": "fortiguard-psirt",
    "state": "ok",
-   "lastSuccess": "2026-11-20T02:30:42Z",
+   "lastSuccess": "2026-11-20T03:00:44Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "paloalto-psirt",
    "state": "ok",
-   "lastSuccess": "2026-11-20T02:30:42Z",
+   "lastSuccess": "2026-11-20T03:00:44Z",
    "lastError": null,
    "failures": 0
   },
@@ -82,14 +82,14 @@
   {
    "id": "ubuntu-usn",
    "state": "ok",
-   "lastSuccess": "2026-11-20T02:30:42Z",
+   "lastSuccess": "2026-11-20T03:00:44Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "debian-dsa",
    "state": "ok",
-   "lastSuccess": "2026-11-20T02:30:42Z",
+   "lastSuccess": "2026-11-20T03:00:44Z",
    "lastError": null,
    "failures": 0
   },
@@ -145,7 +145,7 @@
   {
    "id": "bleepingcomputer",
    "state": "ok",
-   "lastSuccess": "2026-11-20T02:30:42Z",
+   "lastSuccess": "2026-11-20T03:00:44Z",
    "lastError": null,
    "failures": 0
   }
