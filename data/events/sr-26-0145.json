@@ -1,0 +1,117 @@
+{
+  "id": "sr-26-0145",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2023-23415"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5023696",
+      "KB5023697",
+      "KB5023698",
+      "KB5023702",
+      "KB5023705",
+      "KB5023706",
+      "KB5023713",
+      "KB5023752",
+      "KB5023754",
+      "KB5023755",
+      "KB5023756",
+      "KB5023759",
+      "KB5023764",
+      "KB5023765",
+      "KB5023769",
+      "KB5023786"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T10:00:56Z",
+    "updated": "2026-11-20T10:00:56Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Internet Control Message Protocol (ICMP) Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-23415",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T10:00:56Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T10:00:56Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-icmp",
+      "title": "Microsoft Windows: уязвимость удаленного выполнения кода в ICMP (CVE-2023-23415)",
+      "summary": "Критическая уязвимость удаленного выполнения кода затрагивает протокол Internet Control Message Protocol (ICMP) в Microsoft Windows 10.",
+      "impact": "Злоумышленник может осуществить удаленное выполнение кода в уязвимых системах Windows через ICMP.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Доступны обновления через статьи Microsoft KB, такие как KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706, KB5023713, KB5023752, KB5023754, KB5023755, KB5023756, KB5023759, KB5023764, KB5023765, KB5023769 и KB5023786.",
+      "checks": [
+        "Проверьте системы Windows 10 на наличие установленных обновлений безопасности, включая KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706, KB5023713, KB5023752, KB5023754, KB5023755, KB5023756, KB5023759, KB5023764, KB5023765, KB5023769 и KB5023786."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in-icmp",
+      "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in ICMP (CVE-2023-23415)",
+      "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft das Internet Control Message Protocol (ICMP) in Microsoft Windows 10.",
+      "impact": "Ein Angreifer kann über ICMP eine Remotecodeausführung auf anfälligen Windows-Systemen erreichen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Updates sind über Microsoft KB-Artikel wie KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706, KB5023713, KB5023752, KB5023754, KB5023755, KB5023756, KB5023759, KB5023764, KB5023765, KB5023769 und KB5023786 verfügbar.",
+      "checks": [
+        "Überprüfen Sie Windows 10-Systeme auf installierte Sicherheitsupdates wie KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706, KB5023713, KB5023752, KB5023754, KB5023755, KB5023756, KB5023759, KB5023764, KB5023765, KB5023769 und KB5023786."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-icmp-remote-code-execution-vulnerability-cve",
+      "title": "Microsoft Windows: ICMP Remote Code Execution Vulnerability (CVE-2023-23415)",
+      "summary": "A critical remote code execution vulnerability affects the Internet Control Message Protocol (ICMP) in Microsoft Windows 10.",
+      "impact": "An attacker can achieve remote code execution on vulnerable Windows systems via ICMP.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Updates are available via Microsoft KB articles such as KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706, KB5023713, KB5023752, KB5023754, KB5023755, KB5023756, KB5023759, KB5023764, KB5023765, KB5023769, and KB5023786.",
+      "checks": [
+        "Check Windows 10 systems for installed security updates including KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706, KB5023713, KB5023752, KB5023754, KB5023755, KB5023756, KB5023759, KB5023764, KB5023765, KB5023769, and KB5023786."
+      ]
+    }
+  }
+}

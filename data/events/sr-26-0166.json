@@ -1,0 +1,103 @@
+{
+  "id": "sr-26-0166",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-24989"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.2,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T10:00:56Z",
+    "updated": "2026-11-20T10:00:56Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Power Pages Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24989",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T10:00:56Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T10:00:56Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-power-pages-uyazvimost-povysheniya-privilegiy-cve",
+      "title": "Microsoft Power Pages: уязвимость повышения привилегий CVE-2025-24989",
+      "summary": "В Microsoft Power Pages обнаружена уязвимость повышения привилегий с оценкой CVSS 8.2, эксплуатация которой зафиксирована.",
+      "impact": "Злоумышленник может использовать эту уязвимость для повышения привилегий.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проведите инвентаризацию развертываний Microsoft Power Pages.",
+        "Проверьте рекомендации вендора на наличие информации об обновлениях и устранении уязвимости CVE-2025-24989."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-power-pages-elevation-of-privilege-schwachstelle-cve",
+      "title": "Microsoft Power Pages: Elevation-of-Privilege-Schwachstelle CVE-2025-24989",
+      "summary": "Microsoft Power Pages ist von einer Schwachstelle zur Privilegienerweiterung mit einem CVSS-Score von 8.2 betroffen, deren Ausnutzung gemeldet wurde.",
+      "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien zu erweiteren.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Inventarisieren Sie Microsoft Power Pages-Bereitstellungen.",
+        "Prüfen Sie die Herstellerhinweise auf Updates und Details zur Behebung von CVE-2025-24989."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-power-pages-cve-2025-24989-elevation-of-privilege",
+      "title": "Microsoft Power Pages: CVE-2025-24989 Elevation of Privilege Vulnerability",
+      "summary": "Microsoft Power Pages is affected by an elevation of privilege vulnerability with a CVSS score of 8.2, which is reported to be exploited.",
+      "impact": "An attacker can exploit this vulnerability to achieve elevation of privilege.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "The sources do not list fixed versions.",
+      "checks": [
+        "Inventory Microsoft Power Pages deployments.",
+        "Check vendor advisories for update and mitigation details regarding CVE-2025-24989."
+      ]
+    }
+  }
+}

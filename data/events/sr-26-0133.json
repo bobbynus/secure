@@ -25,7 +25,8 @@
       "FG-IR-26-188",
       "USN-9170-2",
       "USN-9171-2",
-      "WID-SEC-2026-2640"
+      "WID-SEC-2026-2640",
+      "WID-SEC-2026-4008"
     ],
     "kb": []
   },
@@ -83,6 +84,14 @@
       "publisher": "CERT-Bund (BSI) WID security advisories",
       "kind": "cert",
       "date": "2026-08-03"
+    },
+    {
+      "id": "s5",
+      "title": "Linux Kernel: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4008",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
+      "date": "2026-10-15"
     }
   ],
   "revisions": [
