@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: RRAS Remote Code Execution Vulnerability (CVE-2026-69590)",
+  "summary": "A critical remote code execution vulnerability exists in the Windows Routing and Remote Access Service (RRAS).",
+  "impact": "An attacker can achieve remote code execution in Windows Routing and Remote Access Service (RRAS).",
+  "fix": "Updates are available via Microsoft security updates.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows systems running Routing and Remote Access Service (RRAS).",
+   "Apply the applicable security updates containing KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008, or KB5124012."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в RRAS (CVE-2026-69590)",
+  "summary": "В службе маршрутизации и удаленного доступа Windows (RRAS) обнаружена критическая уязвимость удаленного выполнения кода.",
+  "impact": "Злоумышленник может выполнить удаленный код в службе маршрутизации и удаленного доступа Windows (RRAS).",
+  "fix": "Обновления доступны через механизмы безопасности Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows, использующих службу маршрутизации и удаленного доступа (RRAS).",
+   "Установите применимые обновления безопасности, содержащие KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 или KB5124012."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: RRAS-Schwachstelle zur Remote-Code-Ausführung (CVE-2026-69590)",
+  "summary": "Im Windows Routing and Remote Access Service (RRAS) existiert eine kritische Schwachstelle zur Remote-Code-Ausführung.",
+  "impact": "Ein Angreifer kann im Windows Routing and Remote Access Service (RRAS) Remotecode ausführen.",
+  "fix": "Updates sind über Microsoft-Sicherheitsupdates verfügbar.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows-Systeme mit aktiviertem Routing and Remote Access Service (RRAS).",
+   "Wenden Sie die entsprechenden Sicherheitsupdates mit KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 oder KB5124012 an."
+  ],
+  "regression": null
+ }
+}

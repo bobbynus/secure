@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows Shell: CVE-2026-69829 Critical RCE Vulnerability",
+  "summary": "A critical remote code execution vulnerability exists in the Microsoft Windows Shell (CVE-2026-69829) with a CVSS score of 9.8. Microsoft has released security updates to address the issue.",
+  "impact": "An attacker can exploit this vulnerability to execute arbitrary code remotely on affected Windows systems.",
+  "fix": "Apply the updates provided by Microsoft (including KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008, KB5124012).",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows 10 and Windows 11 systems for vulnerability exposure.",
+   "Verify the application of Microsoft security updates containing the relevant KB numbers."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows Shell: критическая уязвимость RCE CVE-2026-69829",
+  "summary": "В Microsoft Windows Shell обнаружена критическая уязвимость удаленного выполнения кода (CVE-2026-69829) с оценкой CVSS 9.8. Microsoft выпустила исправления.",
+  "impact": "Злоумышленник может использовать эту уязвимость для удаленного выполнения произвольного кода на уязвимых системах Windows.",
+  "fix": "Установите обновления, предоставленные Microsoft (включая KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008, KB5124012).",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows 10 и Windows 11 на предмет уязвимости.",
+   "Убедитесь в применении обновлений безопасности Microsoft с соответствующими номерами KB."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows Shell: Kritische RCE-Schwachstelle CVE-2026-69829",
+  "summary": "Im Microsoft Windows Shell existiert eine kritische Remotecodeausführungs-Schwachstelle (CVE-2026-69829) mit einem CVSS-Score von 9.8. Microsoft hat Sicherheitsupdates bereitgestellt.",
+  "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Remotecode auf betroffenen Windows-Systemen auszuführen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008, KB5124012).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows 10- und Windows 11-Systeme hinsichtlich der Schwachstelle.",
+   "Überprüfen Sie die Anwendung der Microsoft-Sicherheitsupdates mit den entsprechenden KB-Nummern."
+  ],
+  "regression": null
+ }
+}

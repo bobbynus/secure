@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Windows Message Queuing RCE Vulnerability (CVE-2026-69579)",
+  "summary": "Microsoft Windows contains a critical remote code execution vulnerability in Windows Message Queuing tracked as CVE-2026-69579.",
+  "impact": "An attacker can exploit this vulnerability to execute remote code on affected systems.",
+  "fix": "Apply the updates provided by Microsoft (including KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008, KB5124012).",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for the presence of Windows Message Queuing.",
+   "Verify that the latest security updates including KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008, and KB5124012 are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: Уязвимость RCE в Windows Message Queuing (CVE-2026-69579)",
+  "summary": "Microsoft Windows содержит критическую уязвимость удаленного выполнения кода в Windows Message Queuing, получившую идентификатор CVE-2026-69579.",
+  "impact": "Злоумышленник может использовать эту уязвимость для выполнения удаленного кода на уязвимых системах.",
+  "fix": "Установите обновления, предоставленные Microsoft (включая KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008, KB5124012).",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на наличие службы Windows Message Queuing.",
+   "Убедитесь, что установлены последние обновления безопасности, включая KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 и KB5124012."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: RCE-Schwachstelle in Windows Message Queuing (CVE-2026-69579)",
+  "summary": "Microsoft Windows enthält eine kritische Schwachstelle zur Remote-Codeausführung in Windows Message Queuing mit der Kennung CVE-2026-69579.",
+  "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Remote-Code auf betroffenen Systemen auszuführen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008, KB5124012).",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Systeme auf das Vorhandensein von Windows Message Queuing.",
+   "Stellen Sie sicher, dass die neuesten Sicherheitsupdates einschließlich KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 und KB5124012 installiert sind."
+  ],
+  "regression": null
+ }
+}

@@ -89,21 +89,62 @@
  "texts": {
   "msrc:CVE-2026-69769": "Windows HTTP Print Provider Remote Code Execution Vulnerability\nWindows HTTP Print Provider. Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "083f8b20e46a5e998913cd60",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: HTTP Print Provider Remote Code Execution Vulnerability (CVE-2026-69769)",
+    "summary": "A critical remote code execution vulnerability exists in Microsoft Windows HTTP Print Provider, tracked as CVE-2026-69769 with a CVSS score of 9.8. Updates are available.",
+    "impact": "The vulnerability allows for remote code execution. No specific preconditions or authentication details are provided in the sources.",
+    "fix": "Microsoft released security updates addressing the vulnerability, including KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008, and KB5124012.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows systems for vulnerable versions of Windows 10 and Windows 11.",
+     "Verify the installation of update KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008, or KB5124012 as applicable."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в HTTP Print Provider (CVE-2026-69769)",
+    "summary": "В Microsoft Windows HTTP Print Provider обнаружена критическая уязвимость удаленного выполнения кода, получившая идентификатор CVE-2026-69769 и оценку CVSS 9.8. Доступны обновления.",
+    "impact": "Уязвимость позволяет выполнять удаленный код. Конкретные предварительные условия или требования к аутентификации в источниках не указаны.",
+    "fix": "Microsoft выпустила обновления безопасности, устраняющие уязвимость, включая KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 и KB5124012.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows 10 и Windows 11 на предмет уязвимых версий.",
+     "Проверьте установку соответствующих обновлений KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 или KB5124012."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Remotecodeausführungsschwachstelle im HTTP Print Provider (CVE-2026-69769)",
+    "summary": "Im Microsoft Windows HTTP Print Provider existiert eine kritische Schwachstelle zur Remotecodeausführung, geführt als CVE-2026-69769 mit einem CVSS-Score von 9.8. Updates sind verfügbar.",
+    "impact": "Die Schwachstelle ermöglicht die Remotecodeausführung. In den Quellen werden keine spezifischen Vorbedingungen oder Authentifizierungsdetails genannt.",
+    "fix": "Microsoft hat Sicherheitsupdates zur Behebung der Schwachstelle veröffentlicht, darunter KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 und KB5124012.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows-Systeme (Windows 10 und Windows 11) auf betroffene Versionen.",
+     "Überprüfen Sie die Installation der entsprechenden Updates KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 oder KB5124012."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T20:11:05Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-http",
+   "de": "microsoft-windows-remotecodeausfuehrungsschwachstelle-im-http",
+   "en": "microsoft-windows-http-print-provider-remote-code-execution"
+  },
+  "published_at": "2026-11-20T20:11:05Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

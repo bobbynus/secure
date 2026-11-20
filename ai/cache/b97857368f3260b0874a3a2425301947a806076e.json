@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows DNS Server: Remote Code Execution Vulnerability (CVE-2026-69730)",
+  "summary": "A critical remote code execution vulnerability affects Microsoft Windows DNS Server.",
+  "impact": "The sources do not provide detailed impact or preconditions beyond the vulnerability type.",
+  "fix": "The sources list updates including `KB5122871`, `KB5122876`, `KB5122882`, `KB5123065`, `KB5123066`, and `KB5123099`, but do not specify exact fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check systems running Windows DNS Server for applicable updates such as `KB5122871`, `KB5122876`, `KB5122882`, `KB5123065`, `KB5123066`, and `KB5123099`."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows DNS Server: уязвимость удаленного выполнения кода (CVE-2026-69730)",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает Microsoft Windows DNS Server.",
+  "impact": "Источники не приводят подробных сведений о последствиях или предварительных условиях, кроме типа уязвимости.",
+  "fix": "Источники упоминают обновления `KB5122871`, `KB5122876`, `KB5122882`, `KB5123065`, `KB5123066` и `KB5123099`, но не указывают точных исправленных версий.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы под управлением Windows DNS Server на наличие применимых обновлений, таких как `KB5122871`, `KB5122876`, `KB5122882`, `KB5123065`, `KB5123066` и `KB5123099`."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows DNS Server: Schwachstelle zur RCE (CVE-2026-69730)",
+  "summary": "Eine kritische Schwachstelle zur Remote-Code-Ausführung betrifft den Microsoft Windows DNS Server.",
+  "impact": "Die Quellen nennen keine detaillierten Auswirkungen oder Voraussetzungen außer dem Schwachstellentyp.",
+  "fix": "Die Quellen führen Updates wie `KB5122871`, `KB5122876`, `KB5122882`, `KB5123065`, `KB5123066` und `KB5123099` auf, nennen jedoch keine konkreten korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme mit Windows DNS Server auf anwendbare Updates wie `KB5122871`, `KB5122876`, `KB5122882`, `KB5123065`, `KB5123066` und `KB5123099`."
+  ],
+  "regression": null
+ }
+}

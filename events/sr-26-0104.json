@@ -82,21 +82,62 @@
  "texts": {
   "msrc:CVE-2026-69595": "Windows Services for NFS ONCRPC XDR Driver Remote Code Execution Vulnerability\nWindows Services for NFS ONCRPC XDR Driver. Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "b10d58c6a7a4a79aa3b34556",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows Services for NFS: RCE Vulnerability (CVE-2026-69595)",
+    "summary": "A critical remote code execution vulnerability exists in the Windows Services for NFS ONCRPC XDR Driver.",
+    "impact": "An attacker can achieve remote code execution on vulnerable Windows Server systems.",
+    "fix": "Apply the updates referenced by KB5122871, KB5122876, KB5122882, KB5123065, KB5123066, or KB5123099.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows Server installations running Windows Services for NFS.",
+     "Verify if updates KB5122871, KB5122876, KB5122882, KB5123065, KB5123066, or KB5123099 are applied."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows Services for NFS: уязвимость RCE (CVE-2026-69595)",
+    "summary": "В драйвере Windows Services for NFS ONCRPC XDR обнаружена критическая уязвимость удаленного выполнения кода.",
+    "impact": "Злоумышленник может выполнить удаленный код в уязвимых системах Windows Server.",
+    "fix": "Установите обновления, указанные в KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 или KB5123099.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию серверов Windows Server с запущенной службой Windows Services for NFS.",
+     "Проверьте наличие установленных обновлений KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 или KB5123099."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows Services for NFS: RCE-Schwachstelle (CVE-2026-69595)",
+    "summary": "Im Windows Services for NFS ONCRPC XDR Driver existiert eine kritische Schwachstelle zur Remote-Code-Ausführung.",
+    "impact": "Ein Angreifer kann auf anfälligen Windows Server-Systemen Remotecode ausführen.",
+    "fix": "Wenden Sie die Updates an, die in KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 oder KB5123099 referenziert werden.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows Server-Installationen mit Windows Services for NFS.",
+     "Überprüfen Sie, ob die Updates KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 oder KB5123099 eingespielt wurden."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T20:11:05Z",
+  "slugs": {
+   "ru": "microsoft-windows-services-for-nfs-uyazvimost-rce-cve-2026-69595",
+   "de": "microsoft-windows-services-for-nfs-rce-schwachstelle-cve-2026",
+   "en": "microsoft-windows-services-for-nfs-rce-vulnerability-cve-2026"
+  },
+  "published_at": "2026-11-20T20:11:05Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }
