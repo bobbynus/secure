@@ -1,0 +1,103 @@
+{
+  "id": "sr-26-0098",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "kubernetes"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-83938"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 10.0,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-20T19:40:55Z",
+    "updated": "2026-11-20T19:40:55Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T19:40:55Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T19:40:55Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "azure-kubernetes-configuration-service-uyazvimost-povysheniya",
+      "title": "Azure Kubernetes Configuration Service: уязвимость повышения привилегий",
+      "summary": "Microsoft сообщает об уязвимости повышения привилегий в Azure Kubernetes Configuration Service (CVE-2026-83938) с оценкой CVSS 10.0.",
+      "impact": "Уязвимость позволяет злоумышленнику повысить привилегии. Источники не приводят дополнительных предварительных условий или технических деталей.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии или сведения об обновлениях.",
+      "checks": [
+        "Проведите инвентаризацию систем, использующих Azure Kubernetes Configuration Service.",
+        "Проверьте бюллетени безопасности Microsoft на наличие обновлений, связанных с CVE-2026-83938."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "azure-kubernetes-configuration-service-schwachstelle-zur",
+      "title": "Azure Kubernetes Configuration Service: Schwachstelle zur Privilegienerweiterung",
+      "summary": "Microsoft meldet eine Schwachstelle zur Privilegienerweiterung im Azure Kubernetes Configuration Service (CVE-2026-83938) mit einem CVSS-Score von 10.0.",
+      "impact": "Die Schwachstelle ermöglicht es einem Angreifer, Privilegien zu erweitern. Die Quellen nennen keine weiteren Voraussetzungen oder technischen Details.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "In den Quellen sind keine korrigierten Versionen oder Update-Details angegeben.",
+      "checks": [
+        "Inventarisieren Sie Systeme, die Azure Kubernetes Configuration Service ausführen.",
+        "Überprüfen Sie Microsoft-Sicherheitshinweise auf Updates zu CVE-2026-83938."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "azure-kubernetes-configuration-service-elevation-of-privilege",
+      "title": "Azure Kubernetes Configuration Service: Elevation of Privilege Vulnerability",
+      "summary": "Microsoft reports an elevation of privilege vulnerability in Azure Kubernetes Configuration Service (CVE-2026-83938) with a CVSS score of 10.0.",
+      "impact": "The vulnerability allows an attacker to elevate privileges. The sources do not specify further preconditions or technical details.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources do not list fixed versions or update details.",
+      "checks": [
+        "Inventory systems running Azure Kubernetes Configuration Service.",
+        "Check Microsoft security advisories for updates regarding CVE-2026-83938."
+      ]
+    }
+  }
+}
