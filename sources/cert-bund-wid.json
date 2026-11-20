@@ -1,7 +1,7 @@
 {
  "id": "cert-bund-wid",
- "etag": "\"6aff7f72-d5e46\"",
- "last_modified": "Thu, 19 Nov 2026 23:00:02 GMT",
+ "etag": "\"6aff8d82-d5e46\"",
+ "last_modified": "Fri, 20 Nov 2026 00:00:02 GMT",
  "checksum": "d6fdbcb67b7e286859866a23f5388a38470e2b2b1e840369508162d86a02eaef",
  "cursor": {
   "doc:2026/wid-sec-w-2026-0086.json": "2026-11-18T23:00:00+0000",
@@ -569,8 +569,8 @@
   "WID-SEC-W-2026-4686": "f4903ddf0cd8e5c5a7419ac6",
   "WID-SEC-W-2026-4687": "810bd0db3d1ddc7aa00dbe6f"
  },
- "last_attempt": "2026-11-19T23:10:39Z",
- "last_success": "2026-11-19T23:10:39Z",
+ "last_attempt": "2026-11-20T00:10:42Z",
+ "last_success": "2026-11-20T00:10:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
