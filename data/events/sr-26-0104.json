@@ -1,0 +1,110 @@
+{
+  "id": "sr-26-0104",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-69595"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5122871",
+      "KB5122876",
+      "KB5122882",
+      "KB5123065",
+      "KB5123066",
+      "KB5123099"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-20T20:11:05Z",
+    "updated": "2026-11-20T20:11:05Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Services for NFS ONCRPC XDR Driver Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69595",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T20:11:05Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T20:11:05Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-services-for-nfs-uyazvimost-rce-cve-2026-69595",
+      "title": "Microsoft Windows Services for NFS: уязвимость RCE (CVE-2026-69595)",
+      "summary": "В драйвере Windows Services for NFS ONCRPC XDR обнаружена критическая уязвимость удаленного выполнения кода.",
+      "impact": "Злоумышленник может выполнить удаленный код в уязвимых системах Windows Server.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновления, указанные в KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 или KB5123099.",
+      "checks": [
+        "Проведите инвентаризацию серверов Windows Server с запущенной службой Windows Services for NFS.",
+        "Проверьте наличие установленных обновлений KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 или KB5123099."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-services-for-nfs-rce-schwachstelle-cve-2026",
+      "title": "Microsoft Windows Services for NFS: RCE-Schwachstelle (CVE-2026-69595)",
+      "summary": "Im Windows Services for NFS ONCRPC XDR Driver existiert eine kritische Schwachstelle zur Remote-Code-Ausführung.",
+      "impact": "Ein Angreifer kann auf anfälligen Windows Server-Systemen Remotecode ausführen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Wenden Sie die Updates an, die in KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 oder KB5123099 referenziert werden.",
+      "checks": [
+        "Inventarisieren Sie Windows Server-Installationen mit Windows Services for NFS.",
+        "Überprüfen Sie, ob die Updates KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 oder KB5123099 eingespielt wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-services-for-nfs-rce-vulnerability-cve-2026",
+      "title": "Microsoft Windows Services for NFS: RCE Vulnerability (CVE-2026-69595)",
+      "summary": "A critical remote code execution vulnerability exists in the Windows Services for NFS ONCRPC XDR Driver.",
+      "impact": "An attacker can achieve remote code execution on vulnerable Windows Server systems.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply the updates referenced by KB5122871, KB5122876, KB5122882, KB5123065, KB5123066, or KB5123099.",
+      "checks": [
+        "Inventory Windows Server installations running Windows Services for NFS.",
+        "Verify if updates KB5122871, KB5122876, KB5122882, KB5123065, KB5123066, or KB5123099 are applied."
+      ]
+    }
+  }
+}

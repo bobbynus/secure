@@ -1,0 +1,115 @@
+{
+  "id": "sr-26-0106",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-11"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-69769"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5122871",
+      "KB5122876",
+      "KB5122878",
+      "KB5122880",
+      "KB5122882",
+      "KB5123065",
+      "KB5123066",
+      "KB5123099",
+      "KB5124008",
+      "KB5124012"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-20T20:11:05Z",
+    "updated": "2026-11-20T20:11:05Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows HTTP Print Provider Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69769",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T20:11:05Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T20:11:05Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-http",
+      "title": "Microsoft Windows: уязвимость удаленного выполнения кода в HTTP Print Provider (CVE-2026-69769)",
+      "summary": "В Microsoft Windows HTTP Print Provider обнаружена критическая уязвимость удаленного выполнения кода, получившая идентификатор CVE-2026-69769 и оценку CVSS 9.8. Доступны обновления.",
+      "impact": "Уязвимость позволяет выполнять удаленный код. Конкретные предварительные условия или требования к аутентификации в источниках не указаны.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Microsoft выпустила обновления безопасности, устраняющие уязвимость, включая KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 и KB5124012.",
+      "checks": [
+        "Проведите инвентаризацию систем Windows 10 и Windows 11 на предмет уязвимых версий.",
+        "Проверьте установку соответствующих обновлений KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 или KB5124012."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-remotecodeausfuehrungsschwachstelle-im-http",
+      "title": "Microsoft Windows: Remotecodeausführungsschwachstelle im HTTP Print Provider (CVE-2026-69769)",
+      "summary": "Im Microsoft Windows HTTP Print Provider existiert eine kritische Schwachstelle zur Remotecodeausführung, geführt als CVE-2026-69769 mit einem CVSS-Score von 9.8. Updates sind verfügbar.",
+      "impact": "Die Schwachstelle ermöglicht die Remotecodeausführung. In den Quellen werden keine spezifischen Vorbedingungen oder Authentifizierungsdetails genannt.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Microsoft hat Sicherheitsupdates zur Behebung der Schwachstelle veröffentlicht, darunter KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 und KB5124012.",
+      "checks": [
+        "Inventarisieren Sie Windows-Systeme (Windows 10 und Windows 11) auf betroffene Versionen.",
+        "Überprüfen Sie die Installation der entsprechenden Updates KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 oder KB5124012."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-http-print-provider-remote-code-execution",
+      "title": "Microsoft Windows: HTTP Print Provider Remote Code Execution Vulnerability (CVE-2026-69769)",
+      "summary": "A critical remote code execution vulnerability exists in Microsoft Windows HTTP Print Provider, tracked as CVE-2026-69769 with a CVSS score of 9.8. Updates are available.",
+      "impact": "The vulnerability allows for remote code execution. No specific preconditions or authentication details are provided in the sources.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Microsoft released security updates addressing the vulnerability, including KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008, and KB5124012.",
+      "checks": [
+        "Inventory Windows systems for vulnerable versions of Windows 10 and Windows 11.",
+        "Verify the installation of update KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008, or KB5124012 as applicable."
+      ]
+    }
+  }
+}
