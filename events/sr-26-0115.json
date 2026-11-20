@@ -98,21 +98,62 @@
  "texts": {
   "msrc:CVE-2026-77493": "Windows Graphics Component Remote Code Execution Vulnerability\nMicrosoft Graphics Component. Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "afa611351f6e81562fec6f06",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: CVE-2026-77493 critical vulnerability in Graphics Component",
+    "summary": "A critical remote code execution vulnerability (CVE-2026-77493) affects the Microsoft Windows Graphics Component.",
+    "impact": "The vulnerability allows remote code execution in the Windows Graphics Component with a CVSS score of 9.8.",
+    "fix": "Microsoft provides updates addressing the vulnerability under KBs `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008`, and `KB5124012`.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows 10 and Windows 11 systems for vulnerability exposure.",
+     "Verify the installation of security updates referenced by KBs `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008`, and `KB5124012`."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: критическая уязвимость CVE-2026-77493 в Graphics Component",
+    "summary": "Критическая уязвимость удаленного выполнения кода (CVE-2026-77493) затрагивает компонент Microsoft Windows Graphics Component.",
+    "impact": "Уязвимость позволяет выполнять удаленный код в компоненте Windows Graphics Component, оценка CVSS составляет 9.8.",
+    "fix": "Microsoft выпускает обновления, устраняющие уязвимость, с номерами KB `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008` и `KB5124012`.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows 10 и Windows 11 на предмет уязвимости.",
+     "Проверьте установку обновлений безопасности, указанных в KB `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008` и `KB5124012`."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Kritische Schwachstelle CVE-2026-77493 in Graphics Component",
+    "summary": "Eine kritische Schwachstelle zur Remote-Code-Ausführung (CVE-2026-77493) betrifft die Microsoft Windows Graphics Component.",
+    "impact": "Die Schwachstelle ermöglicht die Remotecodeausführung in der Windows Graphics Component mit einem CVSS-Score von 9.8.",
+    "fix": "Microsoft stellt Updates zur Behebung der Schwachstelle bereit unter den KB-Nummern `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008` und `KB5124012`.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows 10- und Windows 11-Systeme hinsichtlich der Verwundbarkeit.",
+     "Überprüfen Sie die Installation der Sicherheitsupdates mit den KB-Nummern `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008` und `KB5124012`."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T21:10:54Z",
+  "slugs": {
+   "ru": "microsoft-windows-kriticheskaya-uyazvimost-cve-2026-77493-v",
+   "de": "microsoft-windows-kritische-schwachstelle-cve-2026-77493-in",
+   "en": "microsoft-windows-cve-2026-77493-critical-vulnerability-in"
+  },
+  "published_at": "2026-11-20T21:10:54Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

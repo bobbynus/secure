@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Failover Cluster: RCE vulnerability (CVE-2026-73010)",
+  "summary": "A critical remote code execution vulnerability exists in Microsoft Failover Cluster, affecting Windows and Windows Server versions.",
+  "impact": "Allows remote code execution with a CVSS score of 9.8.",
+  "fix": "Apply updates referenced by KB5122871, KB5122876, or KB5122882.",
+  "workaround": null,
+  "checks": [
+   "Check Windows and Windows Server systems for Windows Failover Cluster components.",
+   "Verify if updates KB5122871, KB5122876, or KB5122882 are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Failover Cluster: уязвимость RCE (CVE-2026-73010)",
+  "summary": "В Microsoft Failover Cluster обнаружена критическая уязвимость удаленного выполнения кода, затрагивающая версии Windows и Windows Server.",
+  "impact": "Позволяет выполнить удаленный код с оценкой CVSS 9.8.",
+  "fix": "Установите обновления, указанные в KB5122871, KB5122876 или KB5122882.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows и Windows Server на наличие компонентов Windows Failover Cluster.",
+   "Убедитесь, что установлены обновления KB5122871, KB5122876 или KB5122882."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Failover Cluster: RCE-Schwachstelle (CVE-2026-73010)",
+  "summary": "In Microsoft Failover Cluster existiert eine kritische Schwachstelle zur Remote-Code-Ausführung, die Windows- und Windows-Server-Versionen betrifft.",
+  "impact": "Ermöglicht die Remotecodeausführung mit einem CVSS-Score von 9.8.",
+  "fix": "Wenden Sie die in KB5122871, KB5122876 oder KB5122882 referenzierten Updates an.",
+  "workaround": null,
+  "checks": [
+   "Prüfen Sie Windows- und Windows-Server-Systeme auf Windows Failover Cluster-Komponenten.",
+   "Überprüfen Sie, ob die Updates KB5122871, KB5122876 oder KB5122882 eingespielt wurden."
+  ],
+  "regression": null
+ }
+}
