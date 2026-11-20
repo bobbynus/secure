@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-118348": "Chromium: CVE-2026-118348 Improper input validation in Skia\nMicrosoft Edge (Chromium-based). Microsoft 2026-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "1586ab75f38b572180ffdb25",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: CVE-2026-118348 Improper input validation in Skia",
+    "summary": "Microsoft Edge (Chromium-based) is affected by an improper input validation vulnerability in Skia tracked as CVE-2026-118348.",
+    "impact": "The vulnerability involves improper input validation in Skia, potentially leading to security impacts.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft Edge (Chromium-based) installations.",
+     "Check systems for the Microsoft 2026-Oct security update context mentioned in the source."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: CVE-2026-118348 Некорректная проверка ввода в Skia",
+    "summary": "Microsoft Edge (Chromium-based) подвержен уязвимости некорректной проверки ввода в Skia, зарегистрированной под идентификатором CVE-2026-118348.",
+    "impact": "Уязвимость связана с некорректной проверкой ввода в Skia и может привести к нарушениям безопасности.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию установок Microsoft Edge (Chromium-based).",
+     "Проверьте системы на наличие контекста обновления безопасности Microsoft 2026-Oct, упомянутого в источнике."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: CVE-2026-118348 Fehlerhafte Eingabevalidierung in Skia",
+    "summary": "Microsoft Edge (Chromium-based) ist von einer Schwachstelle durch fehlerhafte Eingabevalidierung in Skia mit der Kennung CVE-2026-118348 betroffen.",
+    "impact": "Die Schwachstelle betrifft die Eingabevalidierung in Skia und kann zu Sicherheitsbeeinträchtigungen führen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Erfassen Sie alle Installationen von Microsoft Edge (Chromium-based).",
+     "Überprüfen Sie Systeme auf den in der Quelle genannten Kontext des Microsoft 2026-Oct Sicherheitsupdates."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T19:10:56Z",
+  "slugs": {
+   "ru": "microsoft-edge-cve-2026-118348-nekorrektnaya-proverka-vvoda-v",
+   "de": "microsoft-edge-cve-2026-118348-fehlerhafte-eingabevalidierung",
+   "en": "microsoft-edge-cve-2026-118348-improper-input-validation-in-skia"
+  },
+  "published_at": "2026-11-20T19:10:56Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

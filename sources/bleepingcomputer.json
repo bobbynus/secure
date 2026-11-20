@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "b6a2d8d6d4ce28b91cf58a3ee0a03882",
- "last_modified": "Fri, 20 Nov 2026 18:38:19 GMT",
- "checksum": "52f705cda09dbf959a19e0c469905dc5045cab5ae5744636c0dc8ec622a5c3b8",
+ "etag": "b474868fa5b6548c8b13159574182e88",
+ "last_modified": "Fri, 20 Nov 2026 19:01:44 GMT",
+ "checksum": "e9249608ec92e6b454863fcbea5dc8ac18a230a74659f840498e7e4576d8cb87",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -37,12 +37,13 @@
   "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/": "3f3a30634339770776c687b3",
   "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/": "1838c7a41831266b947c05e4",
   "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/": "8e83ec24ff6ca8e7b0ea7865",
-  "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/": "be1675f7b93b070d42e079b7"
+  "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/": "be1675f7b93b070d42e079b7",
+  "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/": "183f0873099bbb36da1933d5"
  },
- "last_attempt": "2026-11-20T18:40:39Z",
- "last_success": "2026-11-20T18:40:39Z",
+ "last_attempt": "2026-11-20T19:10:47Z",
+ "last_success": "2026-11-20T19:10:47Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 33
+ "items_total": 34
 }

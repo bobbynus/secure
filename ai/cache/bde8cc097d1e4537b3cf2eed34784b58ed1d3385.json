@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Oct",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Oct security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge (Chromium-based): CVE-2026-118331 Improper input validation in FileAPI",
+  "summary": "An improper input validation vulnerability exists in Microsoft Edge (Chromium-based) FileAPI, tracked as CVE-2026-118331.",
+  "impact": "The impact details are not fully specified in the sources beyond improper input validation in FileAPI.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check inventory for Microsoft Edge (Chromium-based) installations.",
+   "Verify the application version against Microsoft 2026-Oct security update status."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge (Chromium-based): CVE-2026-118331 Некорректная проверка ввода в FileAPI",
+  "summary": "В Microsoft Edge (Chromium-based) обнаружена уязвимость некорректной проверки ввода в FileAPI, получившая идентификатор CVE-2026-118331.",
+  "impact": "Последствия подробно не описаны в источниках, помимо некорректной проверки ввода в FileAPI.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте инвентаризацию на наличие установок Microsoft Edge (Chromium-based).",
+   "Проверьте версию приложения на предмет применения обновления безопасности Microsoft 2026-Oct."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge (Chromium-based): CVE-2026-118331 Ungültige Eingabevalidierung in FileAPI",
+  "summary": "In Microsoft Edge (Chromium-based) existiert eine Schwachstelle durch mangelhafte Eingabevalidierung in FileAPI, geführt als CVE-2026-118331.",
+  "impact": "Die Auswirkungen sind in den Quellen über die mangelhafte Eingabevalidierung in FileAPI hinaus nicht näher beschrieben.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie den Bestand auf Installationen von Microsoft Edge (Chromium-based).",
+   "Überprüfen Sie die Anwendungsversion hinsichtlich des Microsoft 2026-Oct Sicherheitsupdates."
+  ],
+  "regression": null
+ }
+}

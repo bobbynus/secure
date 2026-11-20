@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Oct security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Oct security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: CVE-2026-118306 Memory corruption in FileSystem",
+  "summary": "Microsoft Edge (Chromium-based) contains a memory corruption vulnerability in FileSystem tracked as CVE-2026-118306.",
+  "impact": "The vulnerability involves memory corruption in FileSystem, potentially leading to critical security impacts.",
+  "fix": "The sources do not state fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Edge (Chromium-based) installations.",
+   "Check systems for the presence of CVE-2026-118306."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: CVE-2026-118306 Повреждение памяти в FileSystem",
+  "summary": "Microsoft Edge (на базе Chromium) содержит уязвимость повреждения памяти в FileSystem, получившую идентификатор CVE-2026-118306.",
+  "impact": "Уязвимость связана с повреждением памяти в FileSystem и потенциально может привести к критическим последствиям.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установок Microsoft Edge (на базе Chromium).",
+   "Проверьте системы на наличие CVE-2026-118306."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: CVE-2026-118306 Speicherbeschädigung in FileSystem",
+  "summary": "Microsoft Edge (Chromium-basiert) enthält eine Speicherbeschädigungsschwachstelle in FileSystem mit der Kennung CVE-2026-118306.",
+  "impact": "Die Schwachstelle betrifft eine Speicherbeschädigung in FileSystem mit potenziell kritischen Auswirkungen.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Microsoft Edge (Chromium-basiert) Installationen.",
+   "Überprüfen Sie Systeme auf CVE-2026-118306."
+  ],
+  "regression": null
+ }
+}

@@ -72,21 +72,62 @@
  "texts": {
   "msrc:CVE-2026-21413": "Raw Image Extension Remote Code Execution Vulnerability\nWindows Raw Image Extension. Microsoft 2026-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "58e2ea6ccb42f1b5bdb9f436",
+  "texts": {
+   "en": {
+    "title": "Raw Image Extension: CVE-2026-21413",
+    "summary": "Microsoft released security updates addressing a remote code execution vulnerability in the Windows Raw Image Extension.",
+    "impact": "An attacker can achieve remote code execution.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check systems for the presence of the Raw Image Extension on Windows 10.",
+     "Review systems for applied Microsoft security updates."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Raw Image Extension: CVE-2026-21413",
+    "summary": "Microsoft выпустила обновления безопасности, устраняющие уязвимость удаленного выполнения кода в Windows Raw Image Extension.",
+    "impact": "Злоумышленник может выполнить удаленный код.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие Raw Image Extension в Windows 10.",
+     "Проверьте системы на предмет установленных обновлений безопасности Microsoft."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Raw Image Extension: CVE-2026-21413",
+    "summary": "Microsoft hat Sicherheitsupdates veröffentlicht, die eine Schwachstelle zur Remote-Code-Ausführung in der Windows Raw Image Extension beheben.",
+    "impact": "Ein Angreifer kann Remote-Code-Ausführung erreichen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf das Vorhandensein der Raw Image Extension unter Windows 10.",
+     "Überprüfen Sie Systeme auf eingespielte Microsoft-Sicherheitsupdates."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T19:10:56Z",
+  "slugs": {
+   "ru": "raw-image-extension-cve-2026-21413",
+   "de": "raw-image-extension-cve-2026-21413",
+   "en": "raw-image-extension-cve-2026-21413"
+  },
+  "published_at": "2026-11-20T19:10:56Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

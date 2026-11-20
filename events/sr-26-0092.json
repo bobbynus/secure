@@ -59,21 +59,59 @@
  "texts": {
   "msrc:CVE-2026-118344": "Chromium: CVE-2026-118344 Use after free in Layout\nMicrosoft Edge (Chromium-based). Microsoft 2026-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "f83ce719573ebd1f603fdab7",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: CVE-2026-118344 Use-after-free vulnerability",
+    "summary": "A use-after-free vulnerability in Layout affects Microsoft Edge (Chromium-based), identified as CVE-2026-118344.",
+    "impact": "The sources do not specify the exact impact or preconditions.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft Edge (Chromium-based) installations for exposure to CVE-2026-118344."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: уязвимость типа use-after-free в CVE-2026-118344",
+    "summary": "Уязвимость use-after-free в компоненте Layout затрагивает Microsoft Edge (Chromium-based) и имеет идентификатор CVE-2026-118344.",
+    "impact": "Источники не содержат сведений о точных последствиях или предварительных условиях.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте установки Microsoft Edge (Chromium-based) на предмет уязвимости CVE-2026-118344."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: Use-after-Free-Schwachstelle CVE-2026-118344",
+    "summary": "Eine Use-after-Free-Schwachstelle in Layout betrifft Microsoft Edge (Chromium-based) und ist als CVE-2026-118344 bekannt.",
+    "impact": "Die Quellen nennen keine genauen Auswirkungen oder Vorbedingungen.",
+    "fix": "In den Quellen sind keine korrigierten Versionen genannt.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft Edge (Chromium-based)-Installationen auf Betroffenheit durch CVE-2026-118344."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T19:10:56Z",
+  "slugs": {
+   "ru": "microsoft-edge-uyazvimost-tipa-use-after-free-v-cve-2026-118344",
+   "de": "microsoft-edge-use-after-free-schwachstelle-cve-2026-118344",
+   "en": "microsoft-edge-cve-2026-118344-use-after-free-vulnerability"
+  },
+  "published_at": "2026-11-20T19:10:56Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

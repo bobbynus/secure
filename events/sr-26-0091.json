@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-118331": "Chromium: CVE-2026-118331 Improper input validation in FileAPI\nMicrosoft Edge (Chromium-based). Microsoft 2026-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "62ec7613d183227d94507062",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge (Chromium-based): CVE-2026-118331 Improper input validation in FileAPI",
+    "summary": "An improper input validation vulnerability exists in Microsoft Edge (Chromium-based) FileAPI, tracked as CVE-2026-118331.",
+    "impact": "The impact details are not fully specified in the sources beyond improper input validation in FileAPI.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check inventory for Microsoft Edge (Chromium-based) installations.",
+     "Verify the application version against Microsoft 2026-Oct security update status."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge (Chromium-based): CVE-2026-118331 Некорректная проверка ввода в FileAPI",
+    "summary": "В Microsoft Edge (Chromium-based) обнаружена уязвимость некорректной проверки ввода в FileAPI, получившая идентификатор CVE-2026-118331.",
+    "impact": "Последствия подробно не описаны в источниках, помимо некорректной проверки ввода в FileAPI.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте инвентаризацию на наличие установок Microsoft Edge (Chromium-based).",
+     "Проверьте версию приложения на предмет применения обновления безопасности Microsoft 2026-Oct."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge (Chromium-based): CVE-2026-118331 Ungültige Eingabevalidierung in FileAPI",
+    "summary": "In Microsoft Edge (Chromium-based) existiert eine Schwachstelle durch mangelhafte Eingabevalidierung in FileAPI, geführt als CVE-2026-118331.",
+    "impact": "Die Auswirkungen sind in den Quellen über die mangelhafte Eingabevalidierung in FileAPI hinaus nicht näher beschrieben.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie den Bestand auf Installationen von Microsoft Edge (Chromium-based).",
+     "Überprüfen Sie die Anwendungsversion hinsichtlich des Microsoft 2026-Oct Sicherheitsupdates."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T19:10:56Z",
+  "slugs": {
+   "ru": "microsoft-edge-chromium-based-cve-2026-118331-nekorrektnaya",
+   "de": "microsoft-edge-chromium-based-cve-2026-118331-ungueltige",
+   "en": "microsoft-edge-chromium-based-cve-2026-118331-improper-input"
+  },
+  "published_at": "2026-11-20T19:10:56Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
