@@ -1,0 +1,104 @@
+{
+  "id": "sr-26-0174",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-20",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Apache",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-129448"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-20T00:00:00Z",
+    "published": "2026-11-20T18:40:42Z",
+    "updated": "2026-11-20T18:40:42Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-129448",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T18:40:42Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T18:40:42Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "apache-roller-vypolnenie-proizvolnogo-koda-cherez-konechnuyu",
+      "title": "Apache Roller: выполнение произвольного кода через конечную точку XML-RPC",
+      "summary": "Apache Roller содержит уязвимость десериализации недоверенных данных в конечной точке XML-RPC, позволяющую неаутентифицированным удаленным злоумышленникам выполнять произвольный код.",
+      "impact": "Неаутентифицированный удаленный злоумышленник может выполнить произвольный код через конечную точку XML-RPC, которая принимает и десериализует типы расширений поставщика до аутентификации.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 20.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "В источниках не указаны конкретные исправленные версии.",
+      "checks": [
+        "Проверьте установки Apache Roller на предмет доступности конечной точки XML-RPC.",
+        "Примените средства защиты в соответствии с инструкциями производителя."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "apache-roller-ausfuehrung-von-beliebigen-code-ueber-xml-rpc",
+      "title": "Apache Roller: Ausführung von beliebigen Code über XML-RPC-Endpunkt",
+      "summary": "Apache Roller enthält eine Schwachstelle durch Deserialisierung untrusted Data im XML-RPC-Endpunkt, die es unauthentifizierten Angreifern ermöglicht, beliebigen Code auszuführen.",
+      "impact": "Ein unauthentifizierter Remote-Angreifer kann über den XML-RPC-Endpunkt, der Herstellerspezifische Erweiterungstypen vor der Authentifizierung akzeptiert und deserialisiert, beliebigen Code ausführen.",
+      "exploitation": "CISA hat die Schwachstelle am 20.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Die Quellen nennen keine spezifischen korrigierten Versionen.",
+      "checks": [
+        "Prüfen Sie Apache Roller-Installationen auf die Exposition des XML-RPC-Endpunkts.",
+        "Wenden Sie Minderungsmaßnahmen gemäß den Anweisungen des Herstellers an."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "apache-roller-arbitrary-code-execution-via-xml-rpc-endpoint",
+      "title": "Apache Roller: arbitrary code execution via XML-RPC endpoint",
+      "summary": "Apache Roller contains a deserialization of untrusted data vulnerability in the XML-RPC endpoint that allows unauthenticated remote attackers to execute arbitrary code.",
+      "impact": "An unauthenticated remote attacker can execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 20, 2026: exploitation in real attacks is confirmed.",
+      "fix": "The sources list no specific fixed versions.",
+      "checks": [
+        "Check Apache Roller installations for exposure of the XML-RPC endpoint.",
+        "Apply mitigations in accordance with vendor instructions."
+      ]
+    }
+  }
+}

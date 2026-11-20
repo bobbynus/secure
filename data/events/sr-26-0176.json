@@ -1,0 +1,104 @@
+{
+  "id": "sr-26-0176",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-20",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Cisco",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-76466"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-20T00:00:00Z",
+    "published": "2026-11-20T18:40:42Z",
+    "updated": "2026-11-20T18:40:42Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76466",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T18:40:42Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T18:40:42Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "cisco-expressway-series-uyazvimost-zhestko-zakodirovannykh",
+      "title": "Cisco Expressway Series: уязвимость жестко закодированных учетных данных",
+      "summary": "Cisco Expressway Series содержит уязвимость жестко закодированных учетных данных, позволяющую неаутентифицированным удаленным злоумышленникам выполнять команды с правами root через службу базы данных. Уязвимость эксплуатируется.",
+      "impact": "Неаутентифицированный удаленный злоумышленник с постоянными файлами cookie и сетевым доступом может выполнять команды с правами root на кластеризованном устройстве через службу базы данных.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 20.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проверьте развертывания Cisco Expressway Series на предмет доступности из интернета.",
+        "Проверьте состояние систем на наличие обновлений или средств защиты от производителя."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "cisco-expressway-series-schwachstelle-durch-hartcodierte",
+      "title": "Cisco Expressway Series: Schwachstelle durch hartcodierte Anmeldeinformationen",
+      "summary": "Cisco Expressway Series enthält eine Schwachstelle durch hartcodierte Anmeldeinformationen, die es unauthentifizierten Remotegegnern ermöglicht, Befehle als root über den Baudatenbankdienst auszuführen. Die Schwachstelle wird ausgenutzt.",
+      "impact": "Ein unauthentifizierter Remotegegner mit persistenten Cookies und Netzwerkzugriff kann Befehle als root auf einem geclusterten Gerät über den Datenbankdienst ausführen.",
+      "exploitation": "CISA hat die Schwachstelle am 20.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Überprüfen Sie Cisco Expressway Series-Installationen auf Exposition im Internet.",
+        "Überprüfen Sie den Systemstatus hinsichtlich vom Hersteller bereitgestellter Updates oder Workarounds."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "cisco-expressway-series-hard-coded-credentials-vulnerability",
+      "title": "Cisco Expressway Series: Hard-coded credentials vulnerability",
+      "summary": "Cisco Expressway Series contains a hard-coded credentials vulnerability allowing unauthenticated remote attackers to execute commands as root via the database service. This vulnerability is actively exploited.",
+      "impact": "An unauthenticated, remote attacker with persistent cookies and network access can execute commands as root on a clustered device via the database service.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 20, 2026: exploitation in real attacks is confirmed.",
+      "fix": "The sources do not list fixed versions.",
+      "checks": [
+        "Check Cisco Expressway Series deployments for internet exposure.",
+        "Verify system status regarding vendor-provided updates or mitigations."
+      ]
+    }
+  }
+}

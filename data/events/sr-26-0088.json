@@ -1,0 +1,101 @@
+{
+  "id": "sr-26-0088",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-110922"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-20T18:40:42Z",
+    "updated": "2026-11-20T18:40:42Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Chromium CVE-2026-110922: Use after free in Prerender",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110922",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T18:40:42Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T18:40:42Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-edge-uyazvimost-use-after-free-cve-2026-110922",
+      "title": "Microsoft Edge: уязвимость use-after-free CVE-2026-110922",
+      "summary": "Microsoft Edge (на базе Chromium) содержит уязвимость типа use-after-free в Prerender, которой присвоен номер CVE-2026-110922.",
+      "impact": "Уязвимость связана с ошибкой освобождения памяти (use-after-free) в Prerender.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проведите инвентаризацию установленных экземпляров Microsoft Edge (на базе Chromium).",
+        "Проверьте системы на наличие контекста обновления безопасности Microsoft 2026-Oct в отношении CVE-2026-110922."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-edge-cve-2026-110922-use-after-free-schwachstelle",
+      "title": "Microsoft Edge: CVE-2026-110922 Use-After-Free-Schwachstelle",
+      "summary": "Microsoft Edge (Chromium-basiert) enthält eine Use-After-Free-Schwachstelle in Prerender, die als CVE-2026-110922 geführt wird.",
+      "impact": "Die Schwachstelle betrifft eine Use-After-Free-Bedingung in Prerender.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Erfassen Sie alle Installationen von Microsoft Edge (Chromium-basiert).",
+        "Überprüfen Sie Systeme auf den Kontext des Microsoft 2026-Oct Sicherheitsupdates in Bezug auf CVE-2026-110922."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-edge-cve-2026-110922-use-after-free-vulnerability",
+      "title": "Microsoft Edge: CVE-2026-110922 use-after-free vulnerability",
+      "summary": "Microsoft Edge (Chromium-based) contains a use-after-free vulnerability in Prerender tracked as CVE-2026-110922.",
+      "impact": "The vulnerability involves a use-after-free condition in Prerender.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources do not state fixed versions.",
+      "checks": [
+        "Inventory Microsoft Edge (Chromium-based) installations.",
+        "Check systems for the Microsoft 2026-Oct security update context regarding CVE-2026-110922."
+      ]
+    }
+  }
+}
