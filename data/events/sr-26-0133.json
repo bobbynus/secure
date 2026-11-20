@@ -17,7 +17,10 @@
   ],
   "identifiers": {
     "cve": [
+      "CVE-2025-21656",
+      "CVE-2026-63940",
       "CVE-2026-64564",
+      "CVE-2026-74350",
       "CVE-2026-98432",
       "CVE-2026-99999"
     ],
@@ -26,6 +29,7 @@
       "USN-9170-2",
       "USN-9170-3",
       "USN-9171-2",
+      "USN-9184-1",
       "WID-SEC-2026-2640",
       "WID-SEC-2026-4008"
     ],
@@ -98,6 +102,14 @@
       "id": "s6",
       "title": "USN-9170-3: Linux kernel (Oracle) vulnerabilities",
       "url": "https://ubuntu.com/security/notices/USN-9170-3",
+      "publisher": "Ubuntu Security Notices",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    },
+    {
+      "id": "s7",
+      "title": "USN-9184-1: Linux kernel (NVIDIA Tegra IGX) vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-9184-1",
       "publisher": "Ubuntu Security Notices",
       "kind": "vendor",
       "date": "2026-11-20"
