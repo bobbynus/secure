@@ -1,0 +1,98 @@
+{
+  "id": "sr-26-0138",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-121126"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.6,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T23:10:39Z",
+    "published": "2026-11-20T18:10:58Z",
+    "updated": "2026-11-20T18:10:58Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Chromium CVE-2026-121126: Use after free",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121126",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T18:10:58Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T18:10:58Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-edge-na-baze-chromium-cve-2026-121126",
+      "title": "Microsoft Edge (на базе Chromium): CVE-2026-121126",
+      "summary": "Уязвимость типа use-after-free затрагивает Microsoft Edge (на базе Chromium) в ноябрьском обновлении безопасности Microsoft 2026 года.",
+      "impact": "В источниках не указаны последствия уязвимости use-after-free.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проверьте установки Microsoft Edge (на базе Chromium) на наличие ноябрьского обновления безопасности Microsoft 2026 года."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-edge-chromium-basiert-cve-2026-121126",
+      "title": "Microsoft Edge (Chromium-basiert): CVE-2026-121126",
+      "summary": "Eine Use-After-Free-Schwachstelle betrifft Microsoft Edge (Chromium-basiert) im Microsoft-Sicherheitsupdate vom November 2026.",
+      "impact": "Die Quellen nennen keine Details zu den Auswirkungen der Use-After-Free-Schwachstelle.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Überprüfen Sie Microsoft Edge (Chromium-basiert) Installationen auf das Microsoft-Sicherheitsupdate vom November 2026."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-edge-chromium-based-cve-2026-121126",
+      "title": "Microsoft Edge (Chromium-based): CVE-2026-121126",
+      "summary": "A use-after-free vulnerability affects Microsoft Edge (Chromium-based) in the Microsoft 2026-Nov security update.",
+      "impact": "The sources do not specify the impact of the use-after-free vulnerability.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources do not list fixed versions.",
+      "checks": [
+        "Check Microsoft Edge (Chromium-based) installations for the Microsoft 2026-Nov security update."
+      ]
+    }
+  }
+}
