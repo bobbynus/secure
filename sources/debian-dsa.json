@@ -1,7 +1,7 @@
 {
  "id": "debian-dsa",
- "etag": "\"400d-660acd0790134;660acd0793fb4",
- "last_modified": "Fri, 20 Nov 2026 03:26:48 GMT",
+ "etag": "\"400d-660b02a369ef2;660b02a36dd73",
+ "last_modified": "Fri, 20 Nov 2026 07:26:38 GMT",
  "checksum": "00ef9add17846d8a9be86f1338d81d0ff2be433a344db0a6c6028c56ca452f53",
  "cursor": {},
  "seen": {
@@ -46,8 +46,8 @@
   "https://lists.debian.org/debian-security-announce/2026/msg00563.html": "49ebc270749a9e73ed70709f",
   "https://lists.debian.org/debian-security-announce/2026/msg00565.html": "e5d86fda4078bdc816decaaf"
  },
- "last_attempt": "2026-11-20T07:30:43Z",
- "last_success": "2026-11-20T07:30:43Z",
+ "last_attempt": "2026-11-20T08:00:42Z",
+ "last_success": "2026-11-20T08:00:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
