@@ -2,7 +2,7 @@
   "id": "sr-26-0132",
   "category": "vulnerability",
   "priority": "high",
-  "confirmation": "preliminary",
+  "confirmation": "vendor",
   "lifecycle": "confirmed",
   "fix": "unknown",
   "workaround": false,
@@ -33,7 +33,7 @@
   "dates": {
     "event": "2026-11-13T06:00:00Z",
     "published": "2026-11-19T16:20:56Z",
-    "updated": "2026-11-19T16:20:56Z"
+    "updated": "2026-11-20T00:10:42Z"
   },
   "sources": [
     {
@@ -43,6 +43,14 @@
       "publisher": "Zero Day Initiative published advisories",
       "kind": "research",
       "date": "2026-11-13"
+    },
+    {
+      "id": "s2",
+      "title": "kernel: kernel: out-of-bounds memory write in SMB Direct via buffer length underflow",
+      "url": "https://access.redhat.com/security/cve/cve-2026-99388",
+      "publisher": "Red Hat Security Data API",
+      "kind": "vendor",
+      "date": "2026-11-19"
     }
   ],
   "revisions": [
@@ -53,6 +61,15 @@
         "ru": "Первая публикация.",
         "de": "Erstveröffentlichung.",
         "en": "First published."
+      }
+    },
+    {
+      "date": "2026-11-20T00:10:42Z",
+      "kind": "status",
+      "note": {
+        "ru": "Обновлены приоритет или статус подтверждения.",
+        "de": "Priorität oder Bestätigungsstatus aktualisiert.",
+        "en": "Priority or confirmation status updated."
       }
     }
   ],
