@@ -1,0 +1,98 @@
+{
+  "id": "sr-26-0092",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-118344"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-20T19:10:56Z",
+    "updated": "2026-11-20T19:10:56Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Chromium: CVE-2026-118344 Use after free in Layout",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118344",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T19:10:56Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T19:10:56Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-edge-uyazvimost-tipa-use-after-free-v-cve-2026-118344",
+      "title": "Microsoft Edge: уязвимость типа use-after-free в CVE-2026-118344",
+      "summary": "Уязвимость use-after-free в компоненте Layout затрагивает Microsoft Edge (Chromium-based) и имеет идентификатор CVE-2026-118344.",
+      "impact": "Источники не содержат сведений о точных последствиях или предварительных условиях.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проверьте установки Microsoft Edge (Chromium-based) на предмет уязвимости CVE-2026-118344."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-edge-use-after-free-schwachstelle-cve-2026-118344",
+      "title": "Microsoft Edge: Use-after-Free-Schwachstelle CVE-2026-118344",
+      "summary": "Eine Use-after-Free-Schwachstelle in Layout betrifft Microsoft Edge (Chromium-based) und ist als CVE-2026-118344 bekannt.",
+      "impact": "Die Quellen nennen keine genauen Auswirkungen oder Vorbedingungen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "In den Quellen sind keine korrigierten Versionen genannt.",
+      "checks": [
+        "Überprüfen Sie Microsoft Edge (Chromium-based)-Installationen auf Betroffenheit durch CVE-2026-118344."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-edge-cve-2026-118344-use-after-free-vulnerability",
+      "title": "Microsoft Edge: CVE-2026-118344 Use-after-free vulnerability",
+      "summary": "A use-after-free vulnerability in Layout affects Microsoft Edge (Chromium-based), identified as CVE-2026-118344.",
+      "impact": "The sources do not specify the exact impact or preconditions.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources do not list fixed versions.",
+      "checks": [
+        "Check Microsoft Edge (Chromium-based) installations for exposure to CVE-2026-118344."
+      ]
+    }
+  }
+}
