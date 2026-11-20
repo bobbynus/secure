@@ -1,0 +1,121 @@
+{
+  "id": "sr-26-0162",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2024-43572"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5044273",
+      "KB5044277",
+      "KB5044280",
+      "KB5044281",
+      "KB5044284",
+      "KB5044285",
+      "KB5044286",
+      "KB5044288",
+      "KB5044293",
+      "KB5044306",
+      "KB5044320",
+      "KB5044321",
+      "KB5044342",
+      "KB5044343",
+      "KB5044356"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T12:31:00Z",
+    "updated": "2026-11-20T12:31:00Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Management Console Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43572",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T12:31:00Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T12:31:00Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-management-console-uyazvimost-udalennogo-vypolneniya",
+      "title": "Microsoft Management Console: уязвимость удаленного выполнения кода (CVE-2024-43572)",
+      "summary": "В Microsoft Management Console обнаружена уязвимость удаленного выполнения кода (CVE-2024-43572) с оценкой CVSS 7.8. Microsoft сообщает об эксплуатации.",
+      "impact": "Злоумышленник может осуществить удаленное выполнение кода. Microsoft сообщает об эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft (KB5044273, KB5044277, KB5044280, KB5044281, KB5044284, KB5044285, KB5044286, KB5044288, KB5044293, KB5044306, KB5044320, KB5044321, KB5044342, KB5044343, KB5044356).",
+      "checks": [
+        "Проверьте системы Windows 10 на наличие уязвимости CVE-2024-43572.",
+        "Проверьте, установлены ли соответствующие обновления KB."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-management-console-schwachstelle-zur-remote-code",
+      "title": "Microsoft Management Console: Schwachstelle zur Remote-Code-Ausführung (CVE-2024-43572)",
+      "summary": "Die Microsoft Management Console weist eine Schwachstelle zur Remote-Code-Ausführung (CVE-2024-43572) mit einem CVSS-Score von 7.8 auf. Microsoft meldet eine Ausnutzung.",
+      "impact": "Ein Angreifer kann Remote-Code-Ausführung erreichen. Microsoft meldet eine Ausnutzung.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (KB5044273, KB5044277, KB5044280, KB5044281, KB5044284, KB5044285, KB5044286, KB5044288, KB5044293, KB5044306, KB5044320, KB5044321, KB5044342, KB5044343, KB5044356).",
+      "checks": [
+        "Inventarisieren Sie Windows-10-Systeme hinsichtlich der Schwachstelle CVE-2024-43572.",
+        "Überprüfen Sie, ob die entsprechenden KB-Updates installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-management-console-remote-code-execution",
+      "title": "Microsoft Management Console: Remote Code Execution Vulnerability (CVE-2024-43572)",
+      "summary": "Microsoft Management Console contains a remote code execution vulnerability (CVE-2024-43572) with a CVSS score of 7.8. Microsoft reports exploitation.",
+      "impact": "An attacker can achieve remote code execution. Microsoft reports exploitation.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft (KB5044273, KB5044277, KB5044280, KB5044281, KB5044284, KB5044285, KB5044286, KB5044288, KB5044293, KB5044306, KB5044320, KB5044321, KB5044342, KB5044343, KB5044356).",
+      "checks": [
+        "Inventory Windows 10 systems for vulnerability CVE-2024-43572.",
+        "Verify whether the applicable KB updates are installed."
+      ]
+    }
+  }
+}

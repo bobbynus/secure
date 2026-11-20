@@ -1,0 +1,105 @@
+{
+  "id": "sr-26-0160",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2024-38189"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5002561"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T12:31:00Z",
+    "updated": "2026-11-20T12:31:00Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Project Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38189",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T12:31:00Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T12:31:00Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-project-uyazvimost-udalennogo-vypolneniya-koda-cve",
+      "title": "Microsoft Project: уязвимость удаленного выполнения кода (CVE-2024-38189)",
+      "summary": "В Microsoft Project обнаружена уязвимость удаленного выполнения кода CVE-2024-38189, эксплуатация которой подтверждена производителем.",
+      "impact": "Злоумышленник может выполнить удаленный код. Зафиксирована эксплуатация уязвимости.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновление безопасности Microsoft за август 2024 года или KB5002561.",
+      "checks": [
+        "Проверьте системы на наличие установленных Microsoft Project и Microsoft Office.",
+        "Убедитесь, что применено обновление безопасности Microsoft за август 2024 года или KB5002561."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-project-schwachstelle-zur-rce-cve-2024-38189",
+      "title": "Microsoft Project: Schwachstelle zur RCE (CVE-2024-38189)",
+      "summary": "Microsoft Project ist von einer Schwachstelle zur Remotecodeausführung (CVE-2024-38189) betroffen, wobei der Hersteller eine Ausnutzung meldet.",
+      "impact": "Ein Angreifer kann Remotecode ausführen. Eine Ausnutzung wurde gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Installieren Sie das Microsoft-Sicherheitsupdate für August 2024 oder KB5002561.",
+      "checks": [
+        "Überprüfen Sie Systeme auf Installationen von Microsoft Project und Microsoft Office.",
+        "Überprüfen Sie, ob das Microsoft-Sicherheitsupdate für August 2024 oder KB5002561 angewendet wurde."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-project-remote-code-execution-vulnerability-cve-2024",
+      "title": "Microsoft Project: Remote Code Execution Vulnerability (CVE-2024-38189)",
+      "summary": "Microsoft Project is affected by a remote code execution vulnerability designated as CVE-2024-38189, with exploitation reported by the vendor.",
+      "impact": "An attacker can achieve remote code execution. Exploitation has been reported.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply Microsoft 2024-Aug security update or KB5002561.",
+      "checks": [
+        "Check systems for Microsoft Project and Microsoft Office installations.",
+        "Verify whether the Microsoft 2024-Aug security update or KB5002561 is applied."
+      ]
+    }
+  }
+}

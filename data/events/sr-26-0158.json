@@ -1,0 +1,117 @@
+{
+  "id": "sr-26-0158",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2024-38107"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5041160",
+      "KB5041571",
+      "KB5041573",
+      "KB5041578",
+      "KB5041580",
+      "KB5041585",
+      "KB5041592",
+      "KB5041773",
+      "KB5041782",
+      "KB5041828",
+      "KB5041851"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T12:31:00Z",
+    "updated": "2026-11-20T12:31:00Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Power Dependency Coordinator Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38107",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T12:31:00Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T12:31:00Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2024-38107-povyshenie-privilegiy",
+      "title": "Microsoft Windows: CVE-2024-38107 Повышение привилегий",
+      "summary": "В Windows Power Dependency Coordinator обнаружена уязвимость повышения привилегий, эксплуатация которой подтверждена.",
+      "impact": "Злоумышленник может повысить свои привилегии. Конкретные предварительные условия в источниках не указаны.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Обновления доступны через бюллетени безопасности Microsoft.",
+      "checks": [
+        "Проверьте системы Windows на наличие установленных обновлений безопасности Microsoft для CVE-2024-38107.",
+        "Убедитесь в актуальности версий систем согласно рекомендациям Microsoft для Windows Power Dependency Coordinator."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2024-38107-privilegienerweiterung",
+      "title": "Microsoft Windows: CVE-2024-38107 Privilegienerweiterung",
+      "summary": "Im Windows Power Dependency Coordinator existiert eine Schwachstelle zur Privilegienerweiterung, deren Ausnutzung gemeldet wurde.",
+      "impact": "Ein Angreifer kann Privilegien erlangen. Genaue Vorbedingungen werden in den Quellen nicht genannt.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Updates sind über Microsoft-Sicherheitsupdates verfügbar.",
+      "checks": [
+        "Überprüfen Sie Windows-Systeme auf die Installation der Microsoft-Sicherheitsupdates für CVE-2024-38107.",
+        "Prüfen Sie die Systemversionen anhand der Microsoft-Hinweise zum Windows Power Dependency Coordinator."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2024-38107-elevation-of-privilege",
+      "title": "Microsoft Windows: CVE-2024-38107 Elevation of Privilege",
+      "summary": "An elevation of privilege vulnerability exists in the Windows Power Dependency Coordinator, reported as exploited.",
+      "impact": "An attacker can achieve elevation of privilege. Specific preconditions and network requirements are not detailed in the sources.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Updates are available via Microsoft security updates.",
+      "checks": [
+        "Check Windows systems for the installation of Microsoft security updates addressing CVE-2024-38107.",
+        "Verify system versions against Microsoft advisory details for Windows Power Dependency Coordinator."
+      ]
+    }
+  }
+}

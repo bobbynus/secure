@@ -1,0 +1,118 @@
+{
+  "id": "sr-26-0163",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-11"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-62221"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5071413",
+      "KB5071417",
+      "KB5071542",
+      "KB5071544",
+      "KB5071546",
+      "KB5071547",
+      "KB5072014",
+      "KB5072033"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T12:31:00Z",
+    "updated": "2026-11-20T12:31:00Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62221",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T12:31:00Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T12:31:00Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-povysheniya-privilegiy-v-cloud",
+      "title": "Microsoft Windows: уязвимость повышения привилегий в Cloud Files Mini Filter Driver",
+      "summary": "В драйвере Windows Cloud Files Mini Filter Driver обнаружена уязвимость повышения привилегий. Microsoft сообщает об эксплуатации.",
+      "impact": "Злоумышленник может повысить свои привилегии. Предварительные условия и детали эксплуатации в источниках не указаны.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии, но упоминается декабрьское обновление безопасности Microsoft 2025 года.",
+      "checks": [
+        "Проведите инвентаризацию систем под управлением Windows 10 и Windows 11.",
+        "Проверьте системы на наличие драйвера Windows Cloud Files Mini Filter Driver.",
+        "Проверьте статус установки декабрьских обновлений безопасности Microsoft 2025 года, связанных с KB KB5071413, KB5071417, KB5071542, KB5071544, KB5071546, KB5071547, KB5072014 и KB5072033."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-privilegienerweiterung-in-cloud-files-mini",
+      "title": "Microsoft Windows: Privilegienerweiterung in Cloud Files Mini Filter Driver",
+      "summary": "Im Windows Cloud Files Mini Filter Driver existiert eine Schwachstelle zur Privilegienerweiterung. Microsoft meldet die Ausnutzung.",
+      "impact": "Ein Angreifer kann eine Privilegienerweiterung erlangen. Voraussetzungen und Details zur Ausnutzung werden in den Quellen nicht genannt.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen, erwähnen jedoch das Microsoft Sicherheitsupdate vom Dezember 2025.",
+      "checks": [
+        "Inventarisieren Sie Systeme mit Windows 10 und Windows 11.",
+        "Überprüfen Sie Systeme auf das Vorhandensein des Windows Cloud Files Mini Filter Driver.",
+        "Überprüfen Sie den Installationsstatus der Microsoft Sicherheitsupdates vom Dezember 2025 in Bezug auf KB KB5071413, KB5071417, KB5071542, KB5071544, KB5071546, KB5071547, KB5072014 und KB5072033."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-elevation-of-privilege-vulnerability-in-cloud",
+      "title": "Microsoft Windows: Elevation of privilege vulnerability in Cloud Files Mini Filter Driver",
+      "summary": "An elevation of privilege vulnerability exists in the Windows Cloud Files Mini Filter Driver. Microsoft reports exploitation.",
+      "impact": "An attacker can achieve elevation of privilege. Preconditions and specific execution details are not provided in the sources.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "The sources list no fixed versions, but mention the Microsoft 2025-Dec security update.",
+      "checks": [
+        "Inventory systems running Windows 10 and Windows 11.",
+        "Check systems for the presence of the Windows Cloud Files Mini Filter Driver.",
+        "Verify the installation status of the Microsoft 2025-Dec security updates associated with KBs KB5071413, KB5071417, KB5071542, KB5071544, KB5071546, KB5071547, KB5072014, and KB5072033."
+      ]
+    }
+  }
+}
