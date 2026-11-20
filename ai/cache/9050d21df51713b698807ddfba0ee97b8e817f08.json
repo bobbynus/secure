@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Linux Kernel: Elevation of Privilege Vulnerability (CVE-2026-62840)",
+  "summary": "An elevation of privilege vulnerability affects the Linux kernel in Microsoft's 2026-Oct security update.",
+  "impact": "The vulnerability allows an attacker to achieve elevation of privilege.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check systems running Linux kernel for exposure to CVE-2026-62840."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Ядро Linux: уязвимость повышения привилегий (CVE-2026-62840)",
+  "summary": "Уязвимость повышения привилегий затрагивает ядро Linux в обновлении безопасности Microsoft за октябрь 2026 года.",
+  "impact": "Уязвимость позволяет злоумышленнику повысить свои привилегии.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы под управлением ядра Linux на наличие уязвимости CVE-2026-62840."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Linux-Kernel: Privilegieneskalation (CVE-2026-62840)",
+  "summary": "Eine Schwachstelle zur Privilegieneskalation betrifft den Linux-Kernel im Microsoft-Sicherheitsupdate vom Oktober 2026.",
+  "impact": "Die Schwachstelle ermöglicht es einem Angreifer, Privilegien zu eskalieren.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme mit Linux-Kernel auf Betroffenheit durch CVE-2026-62840."
+  ],
+  "regression": null
+ }
+}

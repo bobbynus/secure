@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft PostScript Printer Driver",
+   "versions": "Windows 10, Windows 11",
+   "fixed": null,
+   "evidence": "Microsoft PostScript Printer Driver Remote Code Execution Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft PostScript Printer Driver: Remote Code Execution Vulnerability (CVE-2026-70147)",
+  "summary": "A critical remote code execution vulnerability affects the Microsoft PostScript Printer Driver in various Windows 10 and Windows 11 versions.",
+  "impact": "An attacker can achieve remote code execution on vulnerable systems.",
+  "fix": "Refer to vendor advisories and apply available updates (including KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646, KB5127648).",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows 10 and Windows 11 systems running the Microsoft PostScript Printer Driver.",
+   "Verify the application of updates associated with CVE-2026-70147."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft PostScript Printer Driver: уязвимость удаленного выполнения кода (CVE-2026-70147)",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает драйвер принтера Microsoft PostScript Printer Driver в различных версиях Windows 10 и Windows 11.",
+  "impact": "Злоумышленник может выполнить удаленный код в уязвимых системах.",
+  "fix": "Обратитесь к рекомендациям производителя и установите доступные обновления (включая KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646, KB5127648).",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows 10 и Windows 11 с установленным драйвером Microsoft PostScript Printer Driver.",
+   "Проверьте установку обновлений, связанных с CVE-2026-70147."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft PostScript Printer Driver: Schwachstelle zur RCE (CVE-2026-70147)",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft den Microsoft PostScript Printer Driver in verschiedenen Windows 10- und Windows 11-Versionen.",
+  "impact": "Ein Angreifer kann auf anfälligen Systemen Remotecode ausführen.",
+  "fix": "Beachten Sie die Herstellermeldungen und wenden Sie die verfügbaren Updates an (darunter KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646, KB5127648).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows 10- und Windows 11-Systeme, die den Microsoft PostScript Printer Driver verwenden.",
+   "Überprüfen Sie die Installation der Updates für CVE-2026-70147."
+  ],
+  "regression": null
+ }
+}

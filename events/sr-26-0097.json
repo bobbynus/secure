@@ -89,21 +89,62 @@
  "texts": {
   "msrc:CVE-2026-70153": "Microsoft PostScript Printer Driver Remote Code Execution Vulnerability\nMicrosoft PostScript Printer Driver. Microsoft 2026-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "5c31d71b17429ca9107a1821",
+  "texts": {
+   "en": {
+    "title": "Microsoft PostScript Printer Driver: CVE-2026-70153 RCE",
+    "summary": "Microsoft released security updates addressing a critical remote code execution vulnerability in the Microsoft PostScript Printer Driver (CVE-2026-70153).",
+    "impact": "An attacker could achieve remote code execution. Specific preconditions and network requirements are not detailed in the source texts.",
+    "fix": "Apply the updates associated with KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646, or KB5127648 as applicable.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows systems running Windows 10 and Windows 11 across all listed versions.",
+     "Verify whether updates KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646, or KB5127648 are installed."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft PostScript Printer Driver: RCE уязвимость CVE-2026-70153",
+    "summary": "Microsoft выпустила обновления безопасности, устраняющие критическую уязвимость удаленного выполнения кода в драйвере Microsoft PostScript Printer Driver (CVE-2026-70153).",
+    "impact": "Злоумышленник может добиться удаленного выполнения кода. Конкретные предварительные условия и сетевые требования в источниках не указаны.",
+    "fix": "Установите соответствующие обновления, связанные с KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646 или KB5127648.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows 10 и Windows 11 во всех указанных версиях.",
+     "Проверьте установку обновлений KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646 или KB5127648."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft PostScript Printer Driver: CVE-2026-70153 RCE",
+    "summary": "Microsoft hat Sicherheitsupdates veröffentlicht, die eine kritische Schwachstelle zur Remote-Code-Ausführung im Microsoft PostScript Printer Driver beheben (CVE-2026-70153).",
+    "impact": "Ein Angreifer kann möglicherweise Remotecode ausführen. Genaue Vorbedingungen und Netzwerkvoraussetzungen werden in den Quellen nicht genannt.",
+    "fix": "Wenden Sie die entsprechenden Updates an, die mit KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646 oder KB5127648 bereitgestellt werden.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows-Systeme mit Windows 10 und Windows 11 in allen aufgeführten Versionen.",
+     "Überprüfen Sie, ob die Updates KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646 oder KB5127648 installiert sind."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T19:40:55Z",
+  "slugs": {
+   "ru": "microsoft-postscript-printer-driver-rce-uyazvimost-cve-2026",
+   "de": "microsoft-postscript-printer-driver-cve-2026-70153-rce",
+   "en": "microsoft-postscript-printer-driver-cve-2026-70153-rce"
+  },
+  "published_at": "2026-11-20T19:40:55Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

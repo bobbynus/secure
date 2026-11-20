@@ -86,21 +86,62 @@
  "texts": {
   "msrc:CVE-2026-96934": "Windows DHCP Server Remote Code Execution Vulnerability\nWindows DHCP Server. Microsoft 2026-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "c88697251d775b7c4c50b692",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows DHCP Server: Remote Code Execution Vulnerability (CVE-2026-96934)",
+    "summary": "A critical remote code execution vulnerability exists in Microsoft Windows DHCP Server with a CVSS score of 9.8.",
+    "impact": "An attacker can achieve remote code execution on vulnerable systems.",
+    "fix": "Apply the updates associated with KB5126646, KB5126651, KB5126655, KB5126835, KB5126836, or KB5126868.",
+    "workaround": null,
+    "checks": [
+     "Check systems running Windows Server and Windows 10 for DHCP Server role exposure.",
+     "Verify whether updates KB5126646, KB5126651, KB5126655, KB5126835, KB5126836, or KB5126868 are installed."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows DHCP Server: уязвимость удаленного выполнения кода (CVE-2026-96934)",
+    "summary": "В Microsoft Windows DHCP Server обнаружена критическая уязвимость удаленного выполнения кода с оценкой CVSS 9.8.",
+    "impact": "Злоумышленник может выполнить удаленный код на уязвимых системах.",
+    "fix": "Установите обновления, связанные с KB5126646, KB5126651, KB5126655, KB5126835, KB5126836 или KB5126868.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы под управлением Windows Server и Windows 10 на наличие роли DHCP Server.",
+     "Убедитесь, установлены ли обновления KB5126646, KB5126651, KB5126655, KB5126835, KB5126836 или KB5126868."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows DHCP Server: Schwachstelle für Remotecodeausführung (CVE-2026-96934)",
+    "summary": "Im Microsoft Windows DHCP Server existiert eine kritische Schwachstelle zur Remotecodeausführung mit einem CVSS-Score von 9.8.",
+    "impact": "Ein Angreifer kann auf anfälligen Systemen Remotecode ausführen.",
+    "fix": "Installieren Sie die Updates im Zusammenhang mit KB5126646, KB5126651, KB5126655, KB5126835, KB5126836 oder KB5126868.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme unter Windows Server und Windows 10 auf die aktivierte Rolle als DHCP Server.",
+     "Überprüfen Sie, ob die Updates KB5126646, KB5126651, KB5126655, KB5126835, KB5126836 oder KB5126868 installiert sind."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T19:40:55Z",
+  "slugs": {
+   "ru": "microsoft-windows-dhcp-server-uyazvimost-udalennogo-vypolneniya",
+   "de": "microsoft-windows-dhcp-server-schwachstelle-fuer",
+   "en": "microsoft-windows-dhcp-server-remote-code-execution"
+  },
+  "published_at": "2026-11-20T19:40:55Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

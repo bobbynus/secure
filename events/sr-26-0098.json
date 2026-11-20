@@ -61,21 +61,62 @@
  "texts": {
   "msrc:CVE-2026-83938": "Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability\nAzure Kubernetes Configuration Service. Microsoft 2026-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "70b86a57e2b670504c927691",
+  "texts": {
+   "en": {
+    "title": "Azure Kubernetes Configuration Service: Elevation of Privilege Vulnerability",
+    "summary": "Microsoft reports an elevation of privilege vulnerability in Azure Kubernetes Configuration Service (CVE-2026-83938) with a CVSS score of 10.0.",
+    "impact": "The vulnerability allows an attacker to elevate privileges. The sources do not specify further preconditions or technical details.",
+    "fix": "The sources do not list fixed versions or update details.",
+    "workaround": null,
+    "checks": [
+     "Inventory systems running Azure Kubernetes Configuration Service.",
+     "Check Microsoft security advisories for updates regarding CVE-2026-83938."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Azure Kubernetes Configuration Service: уязвимость повышения привилегий",
+    "summary": "Microsoft сообщает об уязвимости повышения привилегий в Azure Kubernetes Configuration Service (CVE-2026-83938) с оценкой CVSS 10.0.",
+    "impact": "Уязвимость позволяет злоумышленнику повысить привилегии. Источники не приводят дополнительных предварительных условий или технических деталей.",
+    "fix": "В источниках не указаны исправленные версии или сведения об обновлениях.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем, использующих Azure Kubernetes Configuration Service.",
+     "Проверьте бюллетени безопасности Microsoft на наличие обновлений, связанных с CVE-2026-83938."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Azure Kubernetes Configuration Service: Schwachstelle zur Privilegienerweiterung",
+    "summary": "Microsoft meldet eine Schwachstelle zur Privilegienerweiterung im Azure Kubernetes Configuration Service (CVE-2026-83938) mit einem CVSS-Score von 10.0.",
+    "impact": "Die Schwachstelle ermöglicht es einem Angreifer, Privilegien zu erweitern. Die Quellen nennen keine weiteren Voraussetzungen oder technischen Details.",
+    "fix": "In den Quellen sind keine korrigierten Versionen oder Update-Details angegeben.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Systeme, die Azure Kubernetes Configuration Service ausführen.",
+     "Überprüfen Sie Microsoft-Sicherheitshinweise auf Updates zu CVE-2026-83938."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T19:40:55Z",
+  "slugs": {
+   "ru": "azure-kubernetes-configuration-service-uyazvimost-povysheniya",
+   "de": "azure-kubernetes-configuration-service-schwachstelle-zur",
+   "en": "azure-kubernetes-configuration-service-elevation-of-privilege"
+  },
+  "published_at": "2026-11-20T19:40:55Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

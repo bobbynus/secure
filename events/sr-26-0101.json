@@ -92,21 +92,62 @@
  "texts": {
   "msrc:CVE-2026-97814": "Windows Text Shaping Remote Code Execution Vulnerability\nWindows Text Shaping. Microsoft 2026-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "6c33989f65c88295fb761ea8",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Text Shaping Remote Code Execution Vulnerability (CVE-2026-97814)",
+    "summary": "A critical remote code execution vulnerability exists in Microsoft Windows Text Shaping affecting multiple versions.",
+    "impact": "An attacker can achieve remote code execution on vulnerable Windows systems.",
+    "fix": "Apply the updates provided by Microsoft (including KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646, KB5127648).",
+    "workaround": null,
+    "checks": [
+     "Verify Windows systems for missing updates KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646, or KB5127648.",
+     "Ensure Windows 10 and Windows 11 instances are updated to address CVE-2026-97814."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в Text Shaping (CVE-2026-97814)",
+    "summary": "В Microsoft Windows обнаружена критическая уязвимость удаленного выполнения кода в компоненте Text Shaping.",
+    "impact": "Злоумышленник может выполнить произвольный код на уязвимых системах Windows.",
+    "fix": "Установите обновления, предоставленные Microsoft (включая KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646, KB5127648).",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на отсутствие обновлений KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646 или KB5127648.",
+     "Убедитесь, что экземпляры Windows 10 и Windows 11 обновлены для устранения CVE-2026-97814."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in Text Shaping (CVE-2026-97814)",
+    "summary": "In Microsoft Windows existiert eine kritische Remotecodeausführungsschwachstelle im Text Shaping.",
+    "impact": "Ein Angreifer kann auf anfälligen Windows-Systemen Remotecode ausführen.",
+    "fix": "Installieren Sie die von Microsoft bereitgestellten Updates (einschließlich KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646, KB5127648).",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows-Systeme auf fehlende Updates KB5126646, KB5126651, KB5126653, KB5126655, KB5126657, KB5126835, KB5126836, KB5126868, KB5127646 oder KB5127648.",
+     "Stellen Sie sicher, dass Windows 10 und Windows 11 Instanzen aktualisiert sind, um CVE-2026-97814 zu beheben."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T19:40:55Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-text",
+   "de": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in-text",
+   "en": "microsoft-windows-text-shaping-remote-code-execution"
+  },
+  "published_at": "2026-11-20T19:40:55Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
