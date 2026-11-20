@@ -2,7 +2,7 @@
   "id": "sr-26-0141",
   "category": "vulnerability",
   "priority": "critical",
-  "confirmation": "preliminary",
+  "confirmation": "official",
   "lifecycle": "confirmed",
   "fix": "unknown",
   "workaround": true,
@@ -19,7 +19,9 @@
     "cve": [
       "CVE-2026-123890"
     ],
-    "advisory": [],
+    "advisory": [
+      "WID-SEC-2026-4717"
+    ],
     "kb": []
   },
   "affected": [],
@@ -31,7 +33,7 @@
   "dates": {
     "event": "2026-11-20T00:26:25Z",
     "published": "2026-11-20T10:00:56Z",
-    "updated": "2026-11-20T10:00:56Z"
+    "updated": "2026-11-20T14:00:43Z"
   },
   "sources": [
     {
@@ -41,6 +43,14 @@
       "publisher": "BleepingComputer",
       "kind": "media",
       "date": "2026-11-20"
+    },
+    {
+      "id": "s2",
+      "title": "VMware vCenter, Tools, und SDDC Manager: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4717",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
+      "date": "2026-11-19"
     }
   ],
   "revisions": [
@@ -51,6 +61,15 @@
         "ru": "Первая публикация.",
         "de": "Erstveröffentlichung.",
         "en": "First published."
+      }
+    },
+    {
+      "date": "2026-11-20T14:00:43Z",
+      "kind": "status",
+      "note": {
+        "ru": "Обновлены приоритет или статус подтверждения.",
+        "de": "Priorität oder Bestätigungsstatus aktualisiert.",
+        "en": "Priority or confirmation status updated."
       }
     }
   ],

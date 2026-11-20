@@ -1,0 +1,122 @@
+{
+  "id": "sr-26-0171",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-24993"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5053594",
+      "KB5053596",
+      "KB5053598",
+      "KB5053599",
+      "KB5053602",
+      "KB5053603",
+      "KB5053606",
+      "KB5053618",
+      "KB5053620",
+      "KB5053627",
+      "KB5053636",
+      "KB5053638",
+      "KB5053886",
+      "KB5053887",
+      "KB5053888",
+      "KB5053995"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-20T09:00:44Z",
+    "published": "2026-11-20T14:00:54Z",
+    "updated": "2026-11-20T14:00:54Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows NTFS Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24993",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-20"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T14:00:54Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T14:00:54Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-ntfs-uyazvimost-udalennogo-vypolneniya-koda",
+      "title": "Microsoft Windows NTFS: уязвимость удаленного выполнения кода CVE-2025-24993",
+      "summary": "В Microsoft Windows NTFS обнаружена уязвимость удаленного выполнения кода, для которой зафиксирована эксплуатация. Microsoft выпустила обновления безопасности.",
+      "impact": "Злоумышленник может осуществить удаленное выполнение кода в Windows NTFS при неуказанных условиях. Microsoft сообщает об эксплуатации уязвимости.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите соответствующие обновления безопасности, предоставленные Microsoft, включая KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888 и KB5053995.",
+      "checks": [
+        "Проведите инвентаризацию систем Windows 10 на наличие установленных обновлений безопасности.",
+        "Проверьте, установлены ли обновления, соответствующие CVE-2025-24993."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-ntfs-remotecodeausfuehrungsschwachstelle-cve",
+      "title": "Microsoft Windows NTFS: Remotecodeausführungsschwachstelle CVE-2025-24993",
+      "summary": "In Microsoft Windows NTFS existiert eine Remotecodeausführungsschwachstelle, die ausgenutzt wird. Microsoft hat Sicherheitsupdates bereitgestellt.",
+      "impact": "Ein Angreifer kann unter nicht spezifizierten Bedingungen Remotecode in Windows NTFS ausführen. Microsoft meldet, dass die Schwachstelle ausgenutzt wird.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an, einschließlich KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888 und KB5053995.",
+      "checks": [
+        "Inventarisieren Sie Windows 10-Systeme, um zu überprüfen, ob das Sicherheitsupdate vorhanden ist.",
+        "Überprüfen Sie, ob die zu CVE-2025-24993 gehörenden Updates installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-ntfs-cve-2025-24993-remote-code-execution",
+      "title": "Microsoft Windows NTFS: CVE-2025-24993 Remote Code Execution Vulnerability",
+      "summary": "An exploited remote code execution vulnerability exists in Microsoft Windows NTFS. Microsoft released security updates addressing the issue.",
+      "impact": "An attacker can achieve remote code execution in Windows NTFS under unspecified conditions. Microsoft reports that the vulnerability is exploited.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the corresponding security updates provided by Microsoft, including KB5053594, KB5053596, KB5053598, KB5053599, KB5053602, KB5053603, KB5053606, KB5053618, KB5053620, KB5053627, KB5053636, KB5053638, KB5053886, KB5053887, KB5053888, and KB5053995.",
+      "checks": [
+        "Inventory Windows 10 systems to check for the presence of the security update.",
+        "Verify if updates corresponding to CVE-2025-24993 are installed."
+      ]
+    }
+  }
+}
