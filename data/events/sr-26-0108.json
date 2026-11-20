@@ -1,0 +1,111 @@
+{
+  "id": "sr-26-0108",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-69845"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5122871",
+      "KB5122876",
+      "KB5122882",
+      "KB5123065",
+      "KB5123066",
+      "KB5123099"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-20T20:40:43Z",
+    "updated": "2026-11-20T20:40:43Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows DHCP Server Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69845",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T20:40:43Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T20:40:43Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-dhcp-server-uyazvimost-udalennogo-vypolneniya",
+      "title": "Microsoft Windows DHCP Server: уязвимость удаленного выполнения кода",
+      "summary": "В Microsoft Windows DHCP Server обнаружена критическая уязвимость удаленного выполнения кода, которой присвоен идентификатор CVE-2026-69845.",
+      "impact": "Злоумышленник может выполнить удаленный код на уязвимых серверах Windows DHCP Server.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновления, указанные в KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 и KB5123099.",
+      "checks": [
+        "Проведите инвентаризацию систем Windows Server с запущенной ролью DHCP Server.",
+        "Проверьте системы на наличие установленных обновлений KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 и KB5123099."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-dhcp-server-schwachstelle-zur-remote-code",
+      "title": "Microsoft Windows DHCP Server: Schwachstelle zur Remote-Code-Ausführung",
+      "summary": "Im Microsoft Windows DHCP Server existiert eine kritische Schwachstelle zur Remote-Code-Ausführung mit der Kennung CVE-2026-69845.",
+      "impact": "Ein Angreifer kann auf anfälligen Windows DHCP Server-Installationen Remote-Code ausführen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Wenden Sie die Updates an, die in KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 und KB5123099 aufgeführt sind.",
+      "checks": [
+        "Inventarisieren Sie Windows Server-Systeme, die die DHCP Server-Rolle ausführen.",
+        "Überprüfen Sie die Systeme auf die Anwendung der Updates KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 und KB5123099."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-dhcp-server-remote-code-execution",
+      "title": "Microsoft Windows DHCP Server: Remote Code Execution Vulnerability",
+      "summary": "A critical remote code execution vulnerability exists in Microsoft Windows DHCP Server, tracked as CVE-2026-69845.",
+      "impact": "An attacker can achieve remote code execution on vulnerable Windows DHCP Server installations.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply the updates referenced by KB5122871, KB5122876, KB5122882, KB5123065, KB5123066, and KB5123099.",
+      "checks": [
+        "Inventory Windows Server systems running the DHCP Server role.",
+        "Check systems for the application of updates KB5122871, KB5122876, KB5122882, KB5123065, KB5123066, and KB5123099."
+      ]
+    }
+  }
+}

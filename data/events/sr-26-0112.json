@@ -1,0 +1,115 @@
+{
+  "id": "sr-26-0112",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-11"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-72983"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5122871",
+      "KB5122876",
+      "KB5122878",
+      "KB5122880",
+      "KB5122882",
+      "KB5123065",
+      "KB5123066",
+      "KB5123099",
+      "KB5124008",
+      "KB5124012"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-20T20:40:43Z",
+    "updated": "2026-11-20T20:40:43Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Internet Connection Sharing (ICS) Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-72983",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-20T20:40:43Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-20T20:40:43Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-ics",
+      "title": "Microsoft Windows: уязвимость удаленного выполнения кода в ICS",
+      "summary": "Критическая уязвимость удаленного выполнения кода затрагивает компонент Internet Connection Sharing (ICS) в Microsoft Windows.",
+      "impact": "Злоумышленник может выполнить произвольный код на уязвимой системе.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Microsoft выпустила исправления в рамках сентябрьского обновления безопасности 2026 года.",
+      "checks": [
+        "Проверьте системы Windows на использование общего доступа к подключению к интернету (ICS).",
+        "Убедитесь в установке сентябрьского обновления безопасности 2026 года."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-remotecodeausfuehrung-in-internet-connection",
+      "title": "Microsoft Windows: Remotecodeausführung in Internet Connection Sharing",
+      "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft Internet Connection Sharing (ICS) in Microsoft Windows.",
+      "impact": "Ein Angreifer kann eine Remotecodeausführung auf dem betroffenen System erreichen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Microsoft hat Updates im Sicherheitsupdate vom September 2026 bereitgestellt.",
+      "checks": [
+        "Überprüfen Sie Windows-Systeme auf die Nutzung der Internetverbindungsfreigabe (ICS).",
+        "Überprüfen Sie die Installation des Sicherheitsupdates vom September 2026."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-internet-connection-sharing-remote-code",
+      "title": "Microsoft Windows: Internet Connection Sharing Remote Code Execution",
+      "summary": "A critical remote code execution vulnerability affects Internet Connection Sharing (ICS) in Microsoft Windows.",
+      "impact": "An attacker can achieve remote code execution in the affected system.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Microsoft released updates in the 2026-Sep security update.",
+      "checks": [
+        "Check Windows systems for Internet Connection Sharing (ICS) usage.",
+        "Verify the installation of the 2026-Sep security update."
+      ]
+    }
+  }
+}
