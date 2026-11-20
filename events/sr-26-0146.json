@@ -84,21 +84,62 @@
  "texts": {
   "msrc:CVE-2023-24880": "Windows SmartScreen Security Feature Bypass Vulnerability\nWindows SmartScreen. Publicly disclosed. Microsoft 2023-Mar security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "055a91042bdc71a62cfa3766",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: CVE-2023-24880 Windows SmartScreen Bypass",
+    "summary": "A security feature bypass vulnerability exists in Windows SmartScreen (CVE-2023-24880). Microsoft reports exploitation in the wild.",
+    "impact": "An attacker can bypass Windows SmartScreen security features.",
+    "fix": "Apply the updates referenced by KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706, or KB5023786.",
+    "workaround": null,
+    "checks": [
+     "Check Windows 10 systems for the installation of March 2023 security updates.",
+     "Verify system versions against affected Windows 10 editions."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: обход защиты Windows SmartScreen в CVE-2023-24880",
+    "summary": "В Windows SmartScreen обнаружена уязвимость обхода функции безопасности (CVE-2023-24880). Microsoft сообщает об эксплуатации уязвимости.",
+    "impact": "Злоумышленник может обойти средства защиты Windows SmartScreen.",
+    "fix": "Установите обновления, указанные в KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706 или KB5023786.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows 10 на наличие мартовских обновлений безопасности 2023 года.",
+     "Сверьте версии систем с уязвимыми выпусками Windows 10."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: CVE-2023-24880 Windows SmartScreen Security Feature Bypass",
+    "summary": "In Windows SmartScreen existiert eine Sicherheitsfunktionsumgehung (CVE-2023-24880). Microsoft berichtet über eine Ausnutzung.",
+    "impact": "Ein Angreifer kann Sicherheitsfunktionen von Windows SmartScreen umgehen.",
+    "fix": "Wenden Sie die Updates an, die in KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706 oder KB5023786 referenziert werden.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows 10-Systeme auf die Installation der Sicherheitsupdates vom März 2023.",
+     "Gleichen Sie die Systemversionen mit den betroffenen Windows 10-Editionen ab."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T10:30:40Z",
+  "slugs": {
+   "ru": "microsoft-windows-obkhod-zashchity-windows-smartscreen-v-cve",
+   "de": "microsoft-windows-cve-2023-24880-windows-smartscreen-security",
+   "en": "microsoft-windows-cve-2023-24880-windows-smartscreen-bypass"
+  },
+  "published_at": "2026-11-20T10:30:40Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

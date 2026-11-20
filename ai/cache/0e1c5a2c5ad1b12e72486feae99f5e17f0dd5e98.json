@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: CVE-2023-36025 SmartScreen Bypass",
+  "summary": "A security feature bypass vulnerability exists in Windows SmartScreen (CVE-2023-36025) with a CVSS score of 8.8. Microsoft reports that the vulnerability is exploited.",
+  "impact": "An attacker can bypass Windows SmartScreen security features. Exploitation is reported by the vendor.",
+  "fix": "Apply the updates provided by Microsoft (such as KB5032189, KB5032190, KB5032192, KB5032196, KB5032197, KB5032198, KB5032199, KB5032202, KB5032247, KB5032248, KB5032249, KB5032250, KB5032252, KB5032254, KB5032304).",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for installed updates associated with CVE-2023-36025.",
+   "Verify application of Microsoft security updates containing KB5032189, KB5032190, KB5032192, KB5032196, KB5032197, KB5032198, KB5032199, KB5032202, KB5032247, KB5032248, KB5032249, KB5032250, KB5032252, KB5032254, or KB5032304."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: обход защиты SmartScreen по CVE-2023-36025",
+  "summary": "В Windows SmartScreen обнаружена уязвимость обхода функции безопасности (CVE-2023-36025) с оценкой CVSS 8.8. Microsoft сообщает об эксплуатации уязвимости.",
+  "impact": "Злоумышленник может обойти средства защиты Windows SmartScreen. Эксплуатация подтверждена производителем.",
+  "fix": "Установите обновления, предоставленные Microsoft (включая KB5032189, KB5032190, KB5032192, KB5032196, KB5032197, KB5032198, KB5032199, KB5032202, KB5032247, KB5032248, KB5032249, KB5032250, KB5032252, KB5032254, KB5032304).",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на наличие установленных обновлений, связанных с CVE-2023-36025.",
+   "Убедитесь в применении обновлений безопасности Microsoft, содержащих KB5032189, KB5032190, KB5032192, KB5032196, KB5032197, KB5032198, KB5032199, KB5032202, KB5032247, KB5032248, KB5032249, KB5032250, KB5032252, KB5032254 или KB5032304."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: CVE-2023-36025 SmartScreen-Bypass",
+  "summary": "In Windows SmartScreen existiert eine Sicherheitsfunktions-Bypass-Schwachstelle (CVE-2023-36025) mit einem CVSS-Score von 8.8. Microsoft meldet eine Ausnutzung.",
+  "impact": "Ein Angreifer kann Sicherheitsfunktionen von Windows SmartScreen umgehen. Die Ausnutzung wird vom Hersteller gemeldet.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (wie KB5032189, KB5032190, KB5032192, KB5032196, KB5032197, KB5032198, KB5032199, KB5032202, KB5032247, KB5032248, KB5032249, KB5032250, KB5032252, KB5032254, KB5032304).",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Systeme auf installierte Updates im Zusammenhang mit CVE-2023-36025.",
+   "Verifizieren Sie die Anwendung von Microsoft-Sicherheitsupdates mit KB5032189, KB5032190, KB5032192, KB5032196, KB5032197, KB5032198, KB5032199, KB5032202, KB5032247, KB5032248, KB5032249, KB5032250, KB5032252, KB5032254 oder KB5032304."
+  ],
+  "regression": null
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: CVE-2023-36033 elevation of privilege in DWM Core Library",
+  "summary": "An elevation of privilege vulnerability exists in the Windows DWM Core Library tracked as CVE-2023-36033. Microsoft reports exploitation in the wild.",
+  "impact": "An attacker can exploit the vulnerability to elevate privileges.",
+  "fix": "Apply the updates provided by Microsoft (KB5032189, KB5032190, KB5032192, KB5032196, KB5032198, KB5032202, KB5032304).",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for the installation of security updates KB5032189, KB5032190, KB5032192, KB5032196, KB5032198, KB5032202, and KB5032304."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: CVE-2023-36033 повышение привилегий в DWM Core Library",
+  "summary": "В библиотеке Windows DWM Core Library обнаружена уязвимость повышения привилегий, получившая обозначение CVE-2023-36033. Microsoft сообщает об эксплуатации уязвимости.",
+  "impact": "Злоумышленник может использовать уязвимость для повышения привилегий.",
+  "fix": "Установите обновления, предоставленные Microsoft (KB5032189, KB5032190, KB5032192, KB5032196, KB5032198, KB5032202, KB5032304).",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на предмет установки обновлений безопасности KB5032189, KB5032190, KB5032192, KB5032196, KB5032198, KB5032202 и KB5032304."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: CVE-2023-36033 Privilegienerweiterung in DWM Core Library",
+  "summary": "In der Windows DWM Core Library existiert eine Schwachstelle zur Privilegienerweiterung mit der Kennung CVE-2023-36033. Microsoft berichtet über eine Ausnutzung.",
+  "impact": "Ein Angreifer kann die Schwachstelle ausnutzen, um Privilegien zu erweitern.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (KB5032189, KB5032190, KB5032192, KB5032196, KB5032198, KB5032202, KB5032304).",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Systeme auf die Installation der Sicherheitsupdates KB5032189, KB5032190, KB5032192, KB5032196, KB5032198, KB5032202 und KB5032304."
+  ],
+  "regression": null
+ }
+}

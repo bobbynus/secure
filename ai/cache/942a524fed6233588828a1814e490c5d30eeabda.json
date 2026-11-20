@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: CVE-2023-24880 Windows SmartScreen Bypass",
+  "summary": "A security feature bypass vulnerability exists in Windows SmartScreen (CVE-2023-24880). Microsoft reports exploitation in the wild.",
+  "impact": "An attacker can bypass Windows SmartScreen security features.",
+  "fix": "Apply the updates referenced by KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706, or KB5023786.",
+  "workaround": null,
+  "checks": [
+   "Check Windows 10 systems for the installation of March 2023 security updates.",
+   "Verify system versions against affected Windows 10 editions."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: обход защиты Windows SmartScreen в CVE-2023-24880",
+  "summary": "В Windows SmartScreen обнаружена уязвимость обхода функции безопасности (CVE-2023-24880). Microsoft сообщает об эксплуатации уязвимости.",
+  "impact": "Злоумышленник может обойти средства защиты Windows SmartScreen.",
+  "fix": "Установите обновления, указанные в KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706 или KB5023786.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows 10 на наличие мартовских обновлений безопасности 2023 года.",
+   "Сверьте версии систем с уязвимыми выпусками Windows 10."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: CVE-2023-24880 Windows SmartScreen Security Feature Bypass",
+  "summary": "In Windows SmartScreen existiert eine Sicherheitsfunktionsumgehung (CVE-2023-24880). Microsoft berichtet über eine Ausnutzung.",
+  "impact": "Ein Angreifer kann Sicherheitsfunktionen von Windows SmartScreen umgehen.",
+  "fix": "Wenden Sie die Updates an, die in KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706 oder KB5023786 referenziert werden.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows 10-Systeme auf die Installation der Sicherheitsupdates vom März 2023.",
+   "Gleichen Sie die Systemversionen mit den betroffenen Windows 10-Editionen ab."
+  ],
+  "regression": null
+ }
+}

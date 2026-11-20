@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: PGM Remote Code Execution Vulnerability (CVE-2023-36397)",
+  "summary": "A critical remote code execution vulnerability affects Windows Pragmatic General Multicast (PGM) via Windows Internet Connection Sharing (ICS).",
+  "impact": "An attacker can achieve remote code execution on vulnerable systems.",
+  "fix": "Apply the updates provided by Microsoft (including KB5032189, KB5032190, KB5032192, KB5032196, KB5032197, KB5032198, KB5032199, KB5032202, KB5032247, KB5032248, KB5032249, KB5032250, KB5032252, KB5032254, KB5032304).",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows 10 systems to identify exposure to CVE-2023-36397.",
+   "Verify the installation of Microsoft security updates corresponding to KB identifiers such as `KB5032189`."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в PGM (CVE-2023-36397)",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает компонент Windows Pragmatic General Multicast (PGM) в Windows Internet Connection Sharing (ICS).",
+  "impact": "Злоумышленник может добиться удаленного выполнения кода на уязвимых системах.",
+  "fix": "Установите обновления, предоставленные Microsoft (включая KB5032189, KB5032190, KB5032192, KB5032196, KB5032197, KB5032198, KB5032199, KB5032202, KB5032247, KB5032248, KB5032249, KB5032250, KB5032252, KB5032254, KB5032304).",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows 10 для выявления уязвимости CVE-2023-36397.",
+   "Проверьте установку обновлений безопасности Microsoft, соответствующих идентификаторам KB, таким как `KB5032189`."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Schwachstelle für Remotecodeausführung in PGM (CVE-2023-36397)",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft Windows Pragmatic General Multicast (PGM) über Windows Internet Connection Sharing (ICS).",
+  "impact": "Ein Angreifer kann auf anfälligen Systemen Remotecode ausführen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5032189, KB5032190, KB5032192, KB5032196, KB5032197, KB5032198, KB5032199, KB5032202, KB5032247, KB5032248, KB5032249, KB5032250, KB5032252, KB5032254, KB5032304).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows 10-Systeme, um die Anfälligkeit für CVE-2023-36397 zu ermitteln.",
+   "Überprüfen Sie die Installation der Microsoft-Sicherheitsupdates mit entsprechenden KB-Kennungen wie `KB5032189`."
+  ],
+  "regression": null
+ }
+}
