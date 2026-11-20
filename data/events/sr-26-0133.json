@@ -24,6 +24,7 @@
     "advisory": [
       "FG-IR-26-188",
       "USN-9170-2",
+      "USN-9170-3",
       "USN-9171-2",
       "WID-SEC-2026-2640",
       "WID-SEC-2026-4008"
@@ -92,6 +93,14 @@
       "publisher": "CERT-Bund (BSI) WID security advisories",
       "kind": "cert",
       "date": "2026-10-15"
+    },
+    {
+      "id": "s6",
+      "title": "USN-9170-3: Linux kernel (Oracle) vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-9170-3",
+      "publisher": "Ubuntu Security Notices",
+      "kind": "vendor",
+      "date": "2026-11-20"
     }
   ],
   "revisions": [
