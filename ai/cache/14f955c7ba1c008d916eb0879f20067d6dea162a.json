@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows",
+   "versions": "Windows 10, Windows 11, Windows Server",
+   "fixed": null,
+   "evidence": "Internet Connection Sharing (ICS) Remote Code Execution Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: Internet Connection Sharing Remote Code Execution",
+  "summary": "A critical remote code execution vulnerability affects Internet Connection Sharing (ICS) in Microsoft Windows.",
+  "impact": "An attacker can achieve remote code execution in the affected system.",
+  "fix": "Microsoft released updates in the 2026-Sep security update.",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for Internet Connection Sharing (ICS) usage.",
+   "Verify the installation of the 2026-Sep security update."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в ICS",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает компонент Internet Connection Sharing (ICS) в Microsoft Windows.",
+  "impact": "Злоумышленник может выполнить произвольный код на уязвимой системе.",
+  "fix": "Microsoft выпустила исправления в рамках сентябрьского обновления безопасности 2026 года.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на использование общего доступа к подключению к интернету (ICS).",
+   "Убедитесь в установке сентябрьского обновления безопасности 2026 года."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführung in Internet Connection Sharing",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft Internet Connection Sharing (ICS) in Microsoft Windows.",
+  "impact": "Ein Angreifer kann eine Remotecodeausführung auf dem betroffenen System erreichen.",
+  "fix": "Microsoft hat Updates im Sicherheitsupdate vom September 2026 bereitgestellt.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Systeme auf die Nutzung der Internetverbindungsfreigabe (ICS).",
+   "Überprüfen Sie die Installation des Sicherheitsupdates vom September 2026."
+  ],
+  "regression": null
+ }
+}

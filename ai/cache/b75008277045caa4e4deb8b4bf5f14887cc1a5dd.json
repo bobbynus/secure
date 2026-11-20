@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: SSTP Remote Code Execution Vulnerability (CVE-2026-73009)",
+  "summary": "A critical remote code execution vulnerability affects the Windows Secure Socket Tunneling Protocol (SSTP).",
+  "impact": "An attacker can achieve remote code execution in Windows systems supporting SSTP. The CVSS score is 9.8.",
+  "fix": "Microsoft provides updates addressing the vulnerability, associated with KBs `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008`, and `KB5124012`.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows systems running Windows 10 and Windows 11 across various versions.",
+   "Verify if updates `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008`, or `KB5124012` are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в SSTP (CVE-2026-73009)",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает Windows Secure Socket Tunneling Protocol (SSTP).",
+  "impact": "Злоумышленник может выполнить удаленный код в системах Windows, поддерживающих SSTP. Оценка CVSS составляет 9.8.",
+  "fix": "Microsoft выпустила обновления, устраняющие уязвимость, связанные с бюллетенями `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008` и `KB5124012`.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows 10 и Windows 11 различных версий.",
+   "Проверьте установку обновлений `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008` или `KB5124012`."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in SSTP (CVE-2026-73009)",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft das Windows Secure Socket Tunneling Protocol (SSTP).",
+  "impact": "Ein Angreifer kann auf Windows-Systemen, die SSTP unterstützen, Remotecode ausführen. Der CVSS-Score liegt bei 9.8.",
+  "fix": "Microsoft stellt Updates zur Behebung der Schwachstelle bereit, die mit den KB-Nummern `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008` und `KB5124012` verknüpft sind.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows-10- und Windows-11-Systeme in verschiedenen Versionen.",
+   "Überprüfen Sie, ob die Updates `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008` oder `KB5124012` installiert sind."
+  ],
+  "regression": null
+ }
+}

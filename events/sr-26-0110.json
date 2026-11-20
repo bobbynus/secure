@@ -89,21 +89,62 @@
  "texts": {
   "msrc:CVE-2026-72979": "Windows DHCP Server Remote Code Execution Vulnerability\nWindows DHCP Server. Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "40cbd0f25f9f90870074b0b6",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows DHCP Server: Remote Code Execution Vulnerability (CVE-2026-72979)",
+    "summary": "A critical remote code execution vulnerability exists in Microsoft Windows DHCP Server with a CVSS score of 9.8.",
+    "impact": "An attacker can execute remote code on the affected Windows DHCP Server. Specific preconditions are not detailed in the sources.",
+    "fix": "Apply the updates referenced by KB5122871, KB5122876, KB5122882, KB5123065, KB5123066, or KB5123099.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows Server systems running the DHCP Server role.",
+     "Check systems for the presence of security updates associated with KB5122871, KB5122876, KB5122882, KB5123065, KB5123066, or KB5123099."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows DHCP Server: уязвимость удаленного выполнения кода (CVE-2026-72979)",
+    "summary": "В Microsoft Windows DHCP Server обнаружена критическая уязвимость удаленного выполнения кода с оценкой CVSS 9.8.",
+    "impact": "Злоумышленник может выполнить удаленный код на уязвимом сервере Windows DHCP Server. Конкретные предварительные условия в источниках не указаны.",
+    "fix": "Установите обновления, указанные в KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 или KB5123099.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию серверов Windows Server с установленной ролью DHCP Server.",
+     "Проверьте системы на наличие обновлений безопасности, связанных с KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 или KB5123099."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows DHCP Server: Remotecodeausführung (CVE-2026-72979)",
+    "summary": "Im Microsoft Windows DHCP Server existiert eine kritische Schwachstelle zur Remotecodeausführung mit einem CVSS-Score von 9.8.",
+    "impact": "Ein Angreifer kann Remote-Code auf dem betroffenen Windows DHCP Server ausführen. Genaue Vorbedingungen werden in den Quellen nicht genannt.",
+    "fix": "Installieren Sie die Updates mit den Kennungen KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 oder KB5123099.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows Server-Systeme mit aktivierter DHCP Server-Rolle.",
+     "Überprüfen Sie Systeme auf die Installation der Sicherheitsupdates KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 oder KB5123099."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T20:40:43Z",
+  "slugs": {
+   "ru": "microsoft-windows-dhcp-server-uyazvimost-udalennogo-vypolneniya",
+   "de": "microsoft-windows-dhcp-server-remotecodeausfuehrung-cve-2026",
+   "en": "microsoft-windows-dhcp-server-remote-code-execution"
+  },
+  "published_at": "2026-11-20T20:40:43Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

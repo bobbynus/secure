@@ -92,21 +92,62 @@
  "texts": {
   "msrc:CVE-2026-70296": "Windows Imaging Component Remote Code Execution Vulnerability\nWindows Imaging Component. Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "ab968b150a66165e20fcec57",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Windows Imaging Component RCE Vulnerability (CVE-2026-70296)",
+    "summary": "A critical remote code execution vulnerability exists in the Windows Imaging Component of Microsoft Windows.",
+    "impact": "An attacker can achieve remote code execution. The sources do not specify further preconditions or requirements.",
+    "fix": "Microsoft provides updates referencing KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008, and KB5124012.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows systems to identify affected versions of Windows 10 and Windows 11.",
+     "Verify the installation status of the updates associated with KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008, and KB5124012."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость RCE в Windows Imaging Component (CVE-2026-70296)",
+    "summary": "Критическая уязвимость удаленного выполнения кода обнаружена в компоненте Windows Imaging Component в Microsoft Windows.",
+    "impact": "Злоумышленник может выполнить удаленный код. Источники не приводят дополнительных предварительных условий.",
+    "fix": "Microsoft выпустила обновления, связанные с KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 и KB5124012.",
+    "workaround": null,
+    "checks": [
+     "Проинвентаризируйте системы Windows для выявления уязвимых версий Windows 10 и Windows 11.",
+     "Проверьте статус установки обновлений, связанных с KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 и KB5124012."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: RCE-Schwachstelle in Windows Imaging Component (CVE-2026-70296)",
+    "summary": "In der Windows Imaging Component von Microsoft Windows existiert eine kritische Schwachstelle zur Remote-Code-Ausführung.",
+    "impact": "Ein Angreifer kann Remote-Code-Ausführung erreichen. Die Quellen nennen keine weiteren Vorbedingungen.",
+    "fix": "Microsoft stellt Updates bereit, die sich auf KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 und KB5124012 beziehen.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows-Systeme, um betroffene Versionen von Windows 10 und Windows 11 zu identifizieren.",
+     "Überprüfen Sie den Installationsstatus der Updates mit Bezug auf KB5122871, KB5122876, KB5122878, KB5122880, KB5122882, KB5123065, KB5123066, KB5123099, KB5124008 und KB5124012."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T20:40:43Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-rce-v-windows-imaging-component",
+   "de": "microsoft-windows-rce-schwachstelle-in-windows-imaging",
+   "en": "microsoft-windows-windows-imaging-component-rce-vulnerability"
+  },
+  "published_at": "2026-11-20T20:40:43Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

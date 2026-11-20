@@ -94,21 +94,62 @@
  "texts": {
   "msrc:CVE-2026-72982": "Windows Netlogon Remote Code Execution Vulnerability\nWindows Netlogon. Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "5c799ed3675cc9cd3d0fb2fe",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows Netlogon Remote Code Execution Vulnerability (CVE-2026-72982)",
+    "summary": "A critical remote code execution vulnerability exists in Microsoft Windows Netlogon (CVE-2026-72982) with a CVSS score of 9.8.",
+    "impact": "The vulnerability allows for remote code execution. No further preconditions are detailed in the sources.",
+    "fix": "Microsoft released security updates addressing the vulnerability, associated with KBs `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008`, and `KB5124012`.",
+    "workaround": null,
+    "checks": [
+     "Check Windows systems for the presence of CVE-2026-72982 updates.",
+     "Verify the application of the relevant KB updates (`KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008`, `KB5124012`)."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Уязвимость удаленного выполнения кода в Microsoft Windows Netlogon (CVE-2026-72982)",
+    "summary": "В Microsoft Windows Netlogon обнаружена критическая уязвимость удаленного выполнения кода (CVE-2026-72982) с оценкой CVSS 9.8.",
+    "impact": "Уязвимость позволяет осуществлять удаленное выполнение кода. Другие предварительные условия в источниках не указаны.",
+    "fix": "Microsoft выпустила обновления безопасности, устраняющие уязвимость, связанные с KB `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008` и `KB5124012`.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на наличие обновлений для CVE-2026-72982.",
+     "Убедитесь в установке соответствующих обновлений KB (`KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008`, `KB5124012`)."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows Netlogon: Schwachstelle ermöglicht Remotecodeausführung (CVE-2026-72982)",
+    "summary": "In Microsoft Windows Netlogon existiert eine kritische Schwachstelle zur Remotecodeausführung (CVE-2026-72982) mit einem CVSS-Score von 9.8.",
+    "impact": "Die Schwachstelle ermöglicht die Remotecodeausführung. Weitere Vorbedingungen werden in den Quellen nicht genannt.",
+    "fix": "Microsoft hat Sicherheitsupdates veröffentlicht, die die Schwachstelle beheben und mit den KBs `KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008` sowie `KB5124012` verknüpft sind.",
+    "workaround": null,
+    "checks": [
+     "Prüfen Sie Windows-Systeme auf das Vorhandensein von Updates für CVE-2026-72982.",
+     "Überprüfen Sie die Anwendung der relevanten KB-Updates (`KB5122871`, `KB5122876`, `KB5122878`, `KB5122880`, `KB5122882`, `KB5123065`, `KB5123066`, `KB5123099`, `KB5124008`, `KB5124012`)."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T20:40:43Z",
+  "slugs": {
+   "ru": "uyazvimost-udalennogo-vypolneniya-koda-v-microsoft-windows",
+   "de": "microsoft-windows-netlogon-schwachstelle-ermoeglicht",
+   "en": "microsoft-windows-netlogon-remote-code-execution-vulnerability"
+  },
+  "published_at": "2026-11-20T20:40:43Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
