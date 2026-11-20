@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Outlook Elevation of Privilege Vulnerability (CVE-2023-23397)",
+  "summary": "Microsoft Outlook is affected by an elevation of privilege vulnerability (CVE-2023-23397) with a CVSS score of 9.8. Exploitation has been reported.",
+  "impact": "An attacker can exploit this vulnerability to achieve elevation of privilege in Microsoft Outlook.",
+  "fix": "Apply updates referenced by KB5002254 and KB5002265.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Outlook installations for missing security updates KB5002254 and KB5002265."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Уязвимость повышения привилегий в Microsoft Outlook (CVE-2023-23397)",
+  "summary": "В Microsoft Outlook обнаружена уязвимость повышения привилегий (CVE-2023-23397) с оценкой CVSS 9.8. Сообщается об эксплуатации.",
+  "impact": "Злоумышленник может использовать данную уязвимость для повышения привилегий в Microsoft Outlook.",
+  "fix": "Установите обновления, указанные в KB5002254 и KB5002265.",
+  "workaround": null,
+  "checks": [
+   "Проверьте установки Microsoft Outlook на предмет отсутствия обновлений безопасности KB5002254 и KB5002265."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Outlook: Schwachstelle zur Privilegienerweiterung (CVE-2023-23397)",
+  "summary": "Microsoft Outlook ist von einer Schwachstelle zur Privilegienerweiterung (CVE-2023-23397) mit einem CVSS-Score von 9.8 betroffen. Ausnutzung wurde gemeldet.",
+  "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien in Microsoft Outlook zu erweitern.",
+  "fix": "Wenden Sie die in KB5002254 und KB5002265 genannten Updates an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft Outlook-Installationen auf fehlende Sicherheitsupdates KB5002254 und KB5002265."
+  ],
+  "regression": null
+ }
+}

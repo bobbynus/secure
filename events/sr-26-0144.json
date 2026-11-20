@@ -91,21 +91,62 @@
  "texts": {
   "msrc:CVE-2023-21708": "Remote Procedure Call Runtime Remote Code Execution Vulnerability\nWindows Remote Procedure Call. Microsoft 2023-Mar security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "b4084cb1a9b212b6ffc3bed5",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Remote Procedure Call Runtime RCE Vulnerability (CVE-2023-21708)",
+    "summary": "A critical remote code execution vulnerability exists in the Windows Remote Procedure Call Runtime. Attackers can exploit this via network connections.",
+    "impact": "Remote code execution with a CVSS score of 9.8.",
+    "fix": "Apply the updates referenced by KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706, KB5023713, KB5023752, KB5023754, KB5023755, KB5023756, KB5023759, KB5023764, KB5023765, KB5023769, or KB5023786.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows 10 and Windows Server systems for missing security updates.",
+     "Apply the corresponding Microsoft security updates to affected systems."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: Уязвимость RCE в среде выполнения RPC (CVE-2023-21708)",
+    "summary": "Критическая уязвимость удаленного выполнения кода существует в среде выполнения Remote Procedure Call в Windows. Злоумышленники могут использовать ее по сети.",
+    "impact": "Удаленное выполнение кода с оценкой CVSS 9.8.",
+    "fix": "Установите обновления, указанные в KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706, KB5023713, KB5023752, KB5023754, KB5023755, KB5023756, KB5023759, KB5023764, KB5023765, KB5023769 или KB5023786.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows 10 на наличие отсутствующих обновлений безопасности.",
+     "Примените соответствующие обновления безопасности Microsoft к уязвимым системам."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: RCE-Schwachstelle in der RPC-Runtime (CVE-2023-21708)",
+    "summary": "In der Windows Remote Procedure Call Runtime existiert eine kritische Schwachstelle zur Remote-Code-Ausführung, die über das Netzwerk ausgenutzt werden kann.",
+    "impact": "Remote-Code-Ausführung mit einem CVSS-Score von 9.8.",
+    "fix": "Installieren Sie die in KB5023696, KB5023697, KB5023698, KB5023702, KB5023705, KB5023706, KB5023713, KB5023752, KB5023754, KB5023755, KB5023756, KB5023759, KB5023764, KB5023765, KB5023769 oder KB5023786 genannten Updates.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows-10-Systeme hinsichtlich fehlender Sicherheitsupdates.",
+     "Wenden Sie die entsprechenden Microsoft-Sicherheitsupdates auf betroffene Systeme an."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T10:00:56Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-rce-v-srede-vypolneniya-rpc-cve",
+   "de": "microsoft-windows-rce-schwachstelle-in-der-rpc-runtime-cve-2023",
+   "en": "microsoft-windows-remote-procedure-call-runtime-rce"
+  },
+  "published_at": "2026-11-20T10:00:56Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

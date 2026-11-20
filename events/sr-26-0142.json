@@ -72,21 +72,62 @@
  "texts": {
   "msrc:CVE-2023-23392": "HTTP Protocol Stack Remote Code Execution Vulnerability\nWindows HTTP Protocol Stack. Microsoft 2023-Mar security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "f4b88ddeb41d6e46569f7a71",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: HTTP Protocol Stack Remote Code Execution Vulnerability (CVE-2023-23392)",
+    "summary": "A critical remote code execution vulnerability exists in the Windows HTTP Protocol Stack (CVE-2023-23392).",
+    "impact": "Allows remote code execution with a CVSS score of 9.8.",
+    "fix": "Apply updates including KB5023698, KB5023705, KB5023706, or KB5023786.",
+    "workaround": null,
+    "checks": [
+     "Check systems for Windows 11 and Windows Server installations.",
+     "Verify if updates KB5023698, KB5023705, KB5023706, or KB5023786 are applied."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в HTTP Protocol Stack (CVE-2023-23392)",
+    "summary": "В стеке протоколов HTTP Windows обнаружена критическая уязвимость удаленного выполнения кода (CVE-2023-23392).",
+    "impact": "Позволяет удаленное выполнение кода с оценкой CVSS 9.8.",
+    "fix": "Установите обновления, включая KB5023698, KB5023705, KB5023706 или KB5023786.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленных Windows 11 и Windows Server.",
+     "Убедитесь, что применены обновления KB5023698, KB5023705, KB5023706 или KB5023786."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Schwachstelle für Remotecodeausführung im HTTP Protocol Stack (CVE-2023-23392)",
+    "summary": "Im Windows HTTP Protocol Stack existiert eine kritische Schwachstelle zur Remotecodeausführung (CVE-2023-23392).",
+    "impact": "Ermöglicht die Remotecodeausführung mit einem CVSS-Score von 9.8.",
+    "fix": "Installieren Sie Updates einschließlich KB5023698, KB5023705, KB5023706 oder KB5023786.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf Windows 11 und Windows Server Installationen.",
+     "Überprüfen Sie, ob die Updates KB5023698, KB5023705, KB5023706 oder KB5023786 angewendet wurden."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T10:00:56Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-http",
+   "de": "microsoft-windows-schwachstelle-fuer-remotecodeausfuehrung-im",
+   "en": "microsoft-windows-http-protocol-stack-remote-code-execution"
+  },
+  "published_at": "2026-11-20T10:00:56Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

@@ -59,21 +59,68 @@
  "texts": {
   "bleepingcomputer:https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/": "VMware patches vCenter zero-day exploited in attacks since September\nBroadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]"
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "8a571520b0a0305b8164dd12",
+  "texts": {
+   "en": {
+    "title": "Broadcom VMware vCenter Server: authentication bypass vulnerability (CVE-2026-123890)",
+    "summary": "An authentication bypass vulnerability in the VMware Directory Service of Broadcom VMware vCenter Server allows unauthenticated attackers with network access to gain unauthorized administrative access. The vulnerability has been exploited in zero-day attacks.",
+    "impact": "An unauthenticated attacker with network access to a vulnerable vCenter Server can bypass authentication and obtain administrative access to vCenter, granting control over managed virtual machines.",
+    "fix": "Broadcom released security updates in VMSA-2026-0009. Specific fixed version numbers are not listed in the text.",
+    "workaround": "No official workarounds are available, but network restrictions and firewall controls can help reduce exposure.",
+    "checks": [
+     "Inventory VMware vCenter Server installations across the environment.",
+     "Verify whether systems are running versions prior to the fixed versions listed in VMSA-2026-0009.",
+     "Apply security updates from Broadcom advisory VMSA-2026-0009.",
+     "Check network restrictions and firewall controls to limit exposure of vCenter Server."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Broadcom VMware vCenter Server: уязвимость обхода аутентификации (CVE-2026-123890)",
+    "summary": "Уязвимость обхода аутентификации в VMware Directory Service в Broadcom VMware vCenter Server позволяет неаутентифицированным злоумышленникам с сетевым доступом получить несанкционированный административный доступ. Уязвимость эксплуатировалась в атаках нулевого дня.",
+    "impact": "Неаутентифицированный злоумышленник с сетевым доступом к уязвимому vCenter Server может обойти аутентификацию и получить административный доступ к vCenter, что дает контроль над управляемыми виртуальными машинами.",
+    "fix": "Broadcom выпустила обновления безопасности в VMSA-2026-0009. Конкретные номера исправленных версий в тексте не указаны.",
+    "workaround": "Официальные обходные решения отсутствуют, но сетевые ограничения и правила межсетевого экрана могут помочь снизить уровень воздействия.",
+    "checks": [
+     "Провести инвентаризацию установок VMware vCenter Server в среде.",
+     "Проверить, работают ли системы на версиях до исправленных версий, указанных в VMSA-2026-0009.",
+     "Применить обновления безопасности из бюллетеня Broadcom VMSA-2026-0009.",
+     "Проверить сетевые ограничения и настройки межсетевого экрана для снижения воздействия vCenter Server."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Broadcom VMware vCenter Server: Authentifizierungsumgehung (CVE-2026-123890)",
+    "summary": "Eine Schwachstelle zur Umgehung der Authentifizierung im VMware Directory Service von Broadcom VMware vCenter Server ermöglicht unauthentifizierten Angreifern mit Netzwerkzugriff einen unbefugten Administratorzugriff. Die Schwachstelle wurde in Zero-Day-Angriffen ausgenutzt.",
+    "impact": "Ein unauthentifizierter Angreifer mit Netzwerkzugriff auf einen anfälligen vCenter Server kann die Authentifizierung umgehen und Administratorzugriff auf vCenter erlangen, wodurch er die Kontrolle über verwaltete virtuelle Maschinen erhält.",
+    "fix": "Broadcom hat Sicherheitsupdates in VMSA-2026-0009 veröffentlicht. Konkrete korrigierte Versionsnummern sind im Text nicht aufgeführt.",
+    "workaround": "Es gibt keine offiziellen Workarounds, jedoch können Netzwerkeinschränkungen und Firewall-Kontrollen dazu beitragen, die Exposition zu verringern.",
+    "checks": [
+     "Inventarisierung von VMware vCenter Server-Installationen in der Umgebung.",
+     "Überprüfen, ob Systeme Versionen vor den in VMSA-2026-0009 aufgeführten korrigierten Versionen ausführen.",
+     "Sicherheitsupdates aus dem Broadcom-Advisory VMSA-2026-0009 einspielen.",
+     "Netzwerkeinschränkungen und Firewall-Kontrollen zur Begrenzung der Exposition von vCenter Server überprüfen."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
-  "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "workaround": true,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-20T10:00:56Z",
+  "slugs": {
+   "ru": "broadcom-vmware-vcenter-server-uyazvimost-obkhoda",
+   "de": "broadcom-vmware-vcenter-server-authentifizierungsumgehung-cve",
+   "en": "broadcom-vmware-vcenter-server-authentication-bypass"
+  },
+  "published_at": "2026-11-20T10:00:56Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
