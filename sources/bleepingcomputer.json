@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "f5a5d7312d668657163c1b4e7f4197f2",
- "last_modified": "Fri, 20 Nov 2026 16:28:07 GMT",
- "checksum": "8e7ef718e8dec60e687acc147320fade7940b6c77abd436c7c2572b5e1a4489e",
+ "etag": "08bc41e0781f747083eab9164d88882a",
+ "last_modified": "Fri, 20 Nov 2026 16:58:08 GMT",
+ "checksum": "905a88a7910e6964c8eab2be3022e0d25e8988bf69d086b8f5cbb195b4ab7a7b",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -38,8 +38,8 @@
   "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/": "1838c7a41831266b947c05e4",
   "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/": "8e83ec24ff6ca8e7b0ea7865"
  },
- "last_attempt": "2026-11-20T16:30:53Z",
- "last_success": "2026-11-20T16:30:53Z",
+ "last_attempt": "2026-11-20T17:00:39Z",
+ "last_success": "2026-11-20T17:00:39Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
