@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "b737de930a19c465e01ddb4e9aab4a86",
- "last_modified": "Sat, 21 Nov 2026 15:29:47 GMT",
- "checksum": "3fc1e0d9e267e4580a0875d424534b153d5b662c4ae226f3d69bdb93212931af",
+ "etag": "452593fea195719e174c902e0884c276",
+ "last_modified": "Sat, 21 Nov 2026 15:59:48 GMT",
+ "checksum": "88e32444a946fe8187e9c181efb1aaf391fe6d4f17d44c09a865ca00f50864ff",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -42,8 +42,8 @@
   "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/": "8b08c912f562969e923720a8",
   "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/": "9e23721857edfedbfcab4498"
  },
- "last_attempt": "2026-11-21T15:30:40Z",
- "last_success": "2026-11-21T15:30:40Z",
+ "last_attempt": "2026-11-21T16:00:43Z",
+ "last_success": "2026-11-21T16:00:43Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
