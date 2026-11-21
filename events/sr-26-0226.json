@@ -76,21 +76,62 @@
  "texts": {
   "msrc:CVE-2021-31955": "Windows Kernel Information Disclosure Vulnerability\nWindows Kernel. Microsoft 2021-Jun security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "157f659fc9d15cc7dd250e38",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: CVE-2021-31955 Windows Kernel Information Disclosure",
+    "summary": "An information disclosure vulnerability exists in the Windows Kernel, actively exploited in the wild according to vendor reports.",
+    "impact": "An attacker can exploit this vulnerability to obtain sensitive information. Vendor reports indicate exploitation.",
+    "fix": "Apply updates KB5003635, KB5003637, or KB5003646.",
+    "workaround": null,
+    "checks": [
+     "Check systems for Windows Kernel information disclosure vulnerability CVE-2021-31955",
+     "Verify installation of updates KB5003635, KB5003637, or KB5003646"
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость CVE-2021-31955 в ядре Windows",
+    "summary": "В ядре Windows обнаружена уязвимость раскрытия информации, которая, по данным производителя, эксплуатируется в реальных условиях.",
+    "impact": "Злоумышленник может использовать эту уязвимость для получения конфиденциальной информации. Производитель сообщает об эксплуатации.",
+    "fix": "Установите обновления KB5003635, KB5003637 или KB5003646.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие уязвимости раскрытия информации в ядре Windows CVE-2021-31955",
+     "Убедитесь в установке обновлений KB5003635, KB5003637 или KB5003646"
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: CVE-2021-31955 Windows Kernel Information Disclosure",
+    "summary": "Im Windows Kernel existiert eine Schwachstelle zur Offenlegung von Informationen, die laut Herstellerangaben aktiv ausgenutzt wird.",
+    "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um vertrauliche Informationen zu erlangen. Der Hersteller meldet eine Ausnutzung.",
+    "fix": "Wenden Sie die Updates KB5003635, KB5003637 oder KB5003646 an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf die Windows Kernel Information Disclosure Schwachstelle CVE-2021-31955",
+     "Überprüfen Sie die Installation der Updates KB5003635, KB5003637 oder KB5003646"
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T19:00:53Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-cve-2021-31955-v-yadre-windows",
+   "de": "microsoft-windows-cve-2021-31955-windows-kernel-information",
+   "en": "microsoft-windows-cve-2021-31955-windows-kernel-information"
+  },
+  "published_at": "2026-11-21T19:00:53Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

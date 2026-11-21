@@ -90,21 +90,59 @@
  "texts": {
   "msrc:CVE-2021-31199": "Microsoft Enhanced Cryptographic Provider Elevation of Privilege Vulnerability\nWindows Cryptographic Services. Microsoft 2021-Jun security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "fdcb124e685b701669770de0",
+  "texts": {
+   "en": {
+    "title": "Microsoft Enhanced Cryptographic Provider Elevation of Privilege Vulnerability",
+    "summary": "An elevation of privilege vulnerability exists in Microsoft Enhanced Cryptographic Provider affecting Windows 10. Vendor reports exploitation.",
+    "impact": "An attacker can achieve elevation of privilege. Preconditions and technical details are not specified in the sources.",
+    "fix": "Apply the updates listed under KB5003635, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003681, KB5003687, KB5003694, KB5003695, KB5003696, or KB5003697 as applicable.",
+    "workaround": null,
+    "checks": [
+     "Check Windows 10 systems for the installation of security updates associated with KB5003635, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003681, KB5003687, KB5003694, KB5003695, KB5003696, or KB5003697."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Уязвимость повышения привилегий в Microsoft Enhanced Cryptographic Provider",
+    "summary": "В Microsoft Enhanced Cryptographic Provider обнаружена уязвимость повышения привилегий, затрагивающая Windows 10. Производитель сообщает об эксплуатации.",
+    "impact": "Злоумышленник может повысить свои привилегии. Предварительные условия и технические детали в источниках не указаны.",
+    "fix": "Установите соответствующие обновления из списка KB5003635, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003681, KB5003687, KB5003694, KB5003695, KB5003696 или KB5003697.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows 10 на наличие установленных обновлений безопасности, связанных с KB5003635, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003681, KB5003687, KB5003694, KB5003695, KB5003696 или KB5003697."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Enhanced Cryptographic Provider: Schwachstelle zur Privilegienerweiterung",
+    "summary": "Im Microsoft Enhanced Cryptographic Provider existiert eine Schwachstelle zur Privilegienerweiterung, die Windows 10 betrifft. Der Hersteller meldet Ausnutzung.",
+    "impact": "Ein Angreifer kann Privilegien erlangen. Vorbedingungen und technische Details werden in den Quellen nicht genannt.",
+    "fix": "Wenden Sie die entsprechenden Updates an (KB5003635, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003681, KB5003687, KB5003694, KB5003695, KB5003696 oder KB5003697).",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows 10-Systeme auf die Installation der Sicherheitsupdates im Zusammenhang mit KB5003635, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003681, KB5003687, KB5003694, KB5003695, KB5003696 oder KB5003697."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T19:00:53Z",
+  "slugs": {
+   "ru": "uyazvimost-povysheniya-privilegiy-v-microsoft-enhanced",
+   "de": "microsoft-enhanced-cryptographic-provider-schwachstelle-zur",
+   "en": "microsoft-enhanced-cryptographic-provider-elevation-of"
+  },
+  "published_at": "2026-11-21T19:00:53Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

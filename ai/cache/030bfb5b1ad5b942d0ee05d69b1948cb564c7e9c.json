@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Exchange Server",
+   "versions": "2013 Cumulative Update 23, 2016 Cumulative Update 18, 2016 Cumulative Update 19, 2019 Cumulative Update 7, 2019 Cumulative Update 8",
+   "fixed": null,
+   "evidence": "Microsoft Exchange Server Remote Code Execution Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Exchange Server: Remote Code Execution Vulnerability (CVE-2021-26412)",
+  "summary": "A critical remote code execution vulnerability affects Microsoft Exchange Server. The issue is addressed with KB5000871.",
+  "impact": "An attacker can achieve remote code execution on vulnerable Microsoft Exchange Server installations.",
+  "fix": "Apply Microsoft 2021-Mar security update (`KB5000871`).",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Exchange Server installations for missing `KB5000871` update.",
+   "Verify system versions against affected Exchange Server configurations."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Exchange Server: уязвимость удаленного выполнения кода (CVE-2021-26412)",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает Microsoft Exchange Server. Проблема устраняется обновлением `KB5000871`.",
+  "impact": "Злоумышленник может выполнить произвольный код удаленно на уязвимых серверах Microsoft Exchange Server.",
+  "fix": "Установите мартовское обновление безопасности Microsoft `KB5000871`.",
+  "workaround": null,
+  "checks": [
+   "Проверьте инсталляции Microsoft Exchange Server на наличие отсутствующего обновления `KB5000871`.",
+   "Проверьте версии систем на соответствие уязвимым конфигурациям Exchange Server."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Exchange Server: Schwachstelle für Remotecodeausführung (CVE-2021-26412)",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft Microsoft Exchange Server. Das Problem wird mit `KB5000871` behoben.",
+  "impact": "Ein Angreifer kann auf anfälligen Microsoft Exchange Server-Installationen Remotecode ausführen.",
+  "fix": "Installieren Sie das Microsoft-Sicherheitsupdate von März 2021 (`KB5000871`).",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft Exchange Server-Installationen auf das fehlende Update `KB5000871`.",
+   "Gleichen Sie die Systemversionen mit den betroffenen Exchange Server-Konfigurationen ab."
+  ],
+  "regression": null
+ }
+}

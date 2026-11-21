@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows 10",
+   "versions": "Windows 10",
+   "fixed": null,
+   "evidence": "Microsoft Enhanced Cryptographic Provider Elevation of Privilege Vulnerability\nWindows Cryptographic Services."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Enhanced Cryptographic Provider Elevation of Privilege Vulnerability",
+  "summary": "An elevation of privilege vulnerability exists in the Microsoft Enhanced Cryptographic Provider affecting Windows 10.",
+  "impact": "Allows an attacker to elevate privileges.",
+  "fix": "Apply the June 2021 security update.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows 10 systems to check for installed June 2021 security updates.",
+   "Verify system exposure to CVE-2021-31201."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Уязвимость повышения привилегий в Microsoft Enhanced Cryptographic Provider",
+  "summary": "В Microsoft Enhanced Cryptographic Provider обнаружена уязвимость повышения привилегий, затрагивающая Windows 10.",
+  "impact": "Позволяет злоумышленнику повысить свои привилегии.",
+  "fix": "Установите обновление безопасности от июня 2021 года.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows 10 на предмет установленных обновлений безопасности за июнь 2021 года.",
+   "Проверьте системы на уязвимость CVE-2021-31201."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Enhanced Cryptographic Provider: Schwachstelle zur Privilegienerweiterung",
+  "summary": "Im Microsoft Enhanced Cryptographic Provider existiert eine Schwachstelle zur Privilegienerweiterung in Windows 10.",
+  "impact": "Ermöglicht einem Angreifer die Erweiterung von Privilegien.",
+  "fix": "Installieren Sie das Sicherheitsupdate vom Juni 2021.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows 10-Systeme auf installierte Sicherheitsupdates vom Juni 2021.",
+   "Überprüfen Sie Systeme auf Betroffenheit durch CVE-2021-31201."
+  ],
+  "regression": null
+ }
+}

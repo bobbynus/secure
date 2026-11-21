@@ -400,8 +400,8 @@
   "CVE-2026-115407": "fe7162ee19277362e45aa351",
   "CVE-2026-101340": "49127ca696ec01cf4a056017"
  },
- "last_attempt": "2026-11-21T18:00:44Z",
- "last_success": "2026-11-21T18:00:44Z",
+ "last_attempt": "2026-11-21T19:00:42Z",
+ "last_success": "2026-11-21T19:00:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

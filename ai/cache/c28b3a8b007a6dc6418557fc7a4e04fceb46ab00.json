@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows NTFS: Elevation of Privilege Vulnerability (CVE-2021-31956)",
+  "summary": "An elevation of privilege vulnerability exists in Microsoft Windows NTFS. Microsoft reports exploitation in the wild.",
+  "impact": "An attacker can achieve elevation of privilege. Exploitation is reported by Microsoft.",
+  "fix": "Apply the updates referenced by KB5003635, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003681, KB5003687, KB5003694, KB5003695, KB5003696, or KB5003697 depending on the Windows version.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows systems for vulnerable NTFS components.",
+   "Verify whether updates KB5003635, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003681, KB5003687, KB5003694, KB5003695, KB5003696, or KB5003697 are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows NTFS: уязвимость повышения привилегий (CVE-2021-31956)",
+  "summary": "В Microsoft Windows NTFS обнаружена уязвимость повышения привилегий. Microsoft сообщает об эксплуатации уязвимости.",
+  "impact": "Злоумышленник может повысить свои привилегии. Эксплуатация подтверждена Microsoft.",
+  "fix": "Установите обновления, указанные в KB5003635, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003681, KB5003687, KB5003694, KB5003695, KB5003696 или KB5003697 в зависимости от версии Windows.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на наличие уязвимых компонентов NTFS.",
+   "Убедитесь, что применены обновления KB5003635, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003681, KB5003687, KB5003694, KB5003695, KB5003696 или KB5003697."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows NTFS: Schwachstelle zur Privilegienerweiterung (CVE-2021-31956)",
+  "summary": "In Microsoft Windows NTFS existiert eine Schwachstelle zur Privilegienerweiterung. Microsoft berichtet über die Ausnutzung.",
+  "impact": "Ein Angreifer kann Privilegien erlangen. Die Ausnutzung wird von Microsoft gemeldet.",
+  "fix": "Wenden Sie die Updates gemäß KB5003635, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003681, KB5003687, KB5003694, KB5003695, KB5003696 oder KB5003697 an.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows-Systeme auf betroffene NTFS-Komponenten.",
+   "Überprüfen Sie, ob die Updates KB5003635, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003681, KB5003687, KB5003694, KB5003695, KB5003696 oder KB5003697 installiert sind."
+  ],
+  "regression": null
+ }
+}
