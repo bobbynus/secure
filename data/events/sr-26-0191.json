@@ -1,0 +1,119 @@
+{
+  "id": "sr-26-0191",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2018-8440"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4457128",
+      "KB4457129",
+      "KB4457131",
+      "KB4457132",
+      "KB4457135",
+      "KB4457138",
+      "KB4457140",
+      "KB4457142",
+      "KB4457143",
+      "KB4457144",
+      "KB4457145",
+      "KB4457984",
+      "KB4458010"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T12:57:26Z",
+    "updated": "2026-11-21T12:57:26Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows ALPC Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2018-8440",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T12:57:26Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T12:57:26Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-povysheniya-privilegiy-cve-2018",
+      "title": "Microsoft Windows: уязвимость повышения привилегий CVE-2018-8440",
+      "summary": "В Microsoft Windows ALPC обнаружена уязвимость повышения привилегий, для которой зафиксирована эксплуатация.",
+      "impact": "Позволяет злоумышленникам повысить привилегии в уязвимых системах Windows. Эксплуатация подтверждена.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, указанные в бюллетенях KB4457128, KB4457129, KB4457131, KB4457132, KB4457135, KB4457138, KB4457140, KB4457142, KB4457143, KB4457144, KB4457145, KB4457984 или KB4458010.",
+      "checks": [
+        "Проведите инвентаризацию систем под управлением Windows 7 и Windows 10 версий с 1607 по 1803.",
+        "Проверьте установку обновлений безопасности, связанных с KB4457128, KB4457129, KB4457131, KB4457132, KB4457135, KB4457138, KB4457140, KB4457142, KB4457143, KB4457144, KB4457145, KB4457984 и KB4458010."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-schwachstelle-cve-2018-8440-zur",
+      "title": "Microsoft Windows: Schwachstelle CVE-2018-8440 zur Privilegienerweiterung",
+      "summary": "In Microsoft Windows ALPC existiert eine Schwachstelle zur Privilegienerweiterung, die laut Berichten ausgenutzt wird.",
+      "impact": "Ermöglicht Angreifern die Erhöhung von Privilegien auf betroffenen Windows-Systemen. Eine Ausnutzung ist bekannt.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die Updates an, die durch KB4457128, KB4457129, KB4457131, KB4457132, KB4457135, KB4457138, KB4457140, KB4457142, KB4457143, KB4457144, KB4457145, KB4457984 oder KB4458010 referenziert werden.",
+      "checks": [
+        "Inventarisieren Sie Systeme mit Windows 7 und Windows 10 in den Versionen 1607 bis 1803.",
+        "Überprüfen Sie, ob die Sicherheitsupdates für KB4457128, KB4457129, KB4457131, KB4457132, KB4457135, KB4457138, KB4457140, KB4457142, KB4457143, KB4457144, KB4457145, KB4457984 und KB4458010 eingespielt wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2018-8440-elevation-of-privilege",
+      "title": "Microsoft Windows: CVE-2018-8440 Elevation of Privilege Vulnerability",
+      "summary": "An elevation of privilege vulnerability exists in Microsoft Windows ALPC, actively reported as exploited.",
+      "impact": "Allows attackers to elevate privileges on affected Windows systems. Exploitation is reported.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates referenced by KB numbers KB4457128, KB4457129, KB4457131, KB4457132, KB4457135, KB4457138, KB4457140, KB4457142, KB4457143, KB4457144, KB4457145, KB4457984, or KB4458010.",
+      "checks": [
+        "Inventory systems running Windows 7 and Windows 10 versions 1607 through 1803.",
+        "Verify if security updates associated with KB4457128, KB4457129, KB4457131, KB4457132, KB4457135, KB4457138, KB4457140, KB4457142, KB4457143, KB4457144, KB4457145, KB4457984, and KB4458010 are applied."
+      ]
+    }
+  }
+}

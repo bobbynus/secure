@@ -1,0 +1,117 @@
+{
+  "id": "sr-26-0194",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2019-0736"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4512476",
+      "KB4512482",
+      "KB4512486",
+      "KB4512488",
+      "KB4512489",
+      "KB4512491",
+      "KB4512497",
+      "KB4512501",
+      "KB4512506",
+      "KB4512507",
+      "KB4512516",
+      "KB4512517",
+      "KB4512518"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T12:57:26Z",
+    "updated": "2026-11-21T12:57:26Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows DHCP Client Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2019-0736",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T12:57:26Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T12:57:26Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-dhcp",
+      "title": "Microsoft Windows: уязвимость удаленного выполнения кода в DHCP Client (CVE-2019-0736)",
+      "summary": "В DHCP Client для Windows обнаружена уязвимость удаленного выполнения кода. Злоумышленник может использовать ее для выполнения произвольного кода.",
+      "impact": "Злоумышленник может добиться удаленного выполнения кода в уязвимых системах Windows через DHCP Client.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Обновления доступны через статьи Microsoft KB4512476, KB4512482, KB4512486, KB4512488, KB4512489, KB4512491, KB4512497, KB4512501, KB4512506, KB4512507, KB4512516, KB4512517, KB4512518.",
+      "checks": [
+        "Проведите инвентаризацию систем Windows 10 на предмет уязвимых версий DHCP Client.",
+        "Убедитесь в установке обновлений безопасности Microsoft для CVE-2019-0736."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-remotecodeausfuehrungsschwachstelle-im-dhcp",
+      "title": "Microsoft Windows: Remotecodeausführungsschwachstelle im DHCP Client (CVE-2019-0736)",
+      "summary": "Im Windows DHCP Client existiert eine Schwachstelle zur Remotecodeausführung. Ein Angreifer kann dies ausnutzen, um beliebigen Code auszuführen.",
+      "impact": "Ein Angreifer kann über den DHCP Client eine Remotecodeausführung auf anfälligen Windows-Systemen erreichen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Updates sind über die Microsoft-KB-Artikel KB4512476, KB4512482, KB4512486, KB4512488, KB4512489, KB4512491, KB4512497, KB4512501, KB4512506, KB4512507, KB4512516, KB4512517, KB4512518 verfügbar.",
+      "checks": [
+        "Inventarisieren Sie Windows-10-Systeme, um nach betroffenen DHCP-Client-Versionen zu suchen.",
+        "Überprüfen Sie die Anwendung der Microsoft-Sicherheitsupdates für CVE-2019-0736."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-dhcp-client-remote-code-execution",
+      "title": "Microsoft Windows: DHCP Client Remote Code Execution Vulnerability (CVE-2019-0736)",
+      "summary": "A remote code execution vulnerability exists in the Windows DHCP Client. An attacker could exploit this to execute arbitrary code.",
+      "impact": "An attacker can achieve remote code execution on vulnerable Windows systems via the DHCP Client.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Updates are available via Microsoft KB articles KB4512476, KB4512482, KB4512486, KB4512488, KB4512489, KB4512491, KB4512497, KB4512501, KB4512506, KB4512507, KB4512516, KB4512517, KB4512518.",
+      "checks": [
+        "Inventory Windows 10 systems to check for affected DHCP Client versions.",
+        "Verify the application of Microsoft security updates corresponding to CVE-2019-0736."
+      ]
+    }
+  }
+}
