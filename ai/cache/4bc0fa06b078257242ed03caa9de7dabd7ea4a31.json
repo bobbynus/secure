@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows Network File System Remote Code Execution Vulnerability",
+  "summary": "A remote code execution vulnerability affects Windows Network File System.",
+  "impact": "An attacker could achieve remote code execution on affected systems.",
+  "fix": "Apply the updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check Windows Server systems for Network File System installation and apply available security updates."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Уязвимость удаленного выполнения кода в Windows Network File System",
+  "summary": "Уязвимость удаленного выполнения кода затрагивает Windows Network File System.",
+  "impact": "Злоумышленник может выполнить удаленный код в уязвимых системах.",
+  "fix": "Установите обновления, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows Server на наличие установленного компонента Network File System и примените доступные обновления безопасности."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows Network File System Remote Code Execution Vulnerability",
+  "summary": "Eine Schwachstelle zur Remote-Code-Ausführung betrifft Windows Network File System.",
+  "impact": "Ein Angreifer kann auf betroffenen Systemen Remotecode ausführen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+  "workaround": null,
+  "checks": [
+   "Prüfen Sie Windows Server-Systeme auf die Installation von Network File System und wenden Sie verfügbare Sicherheitsupdates an."
+  ],
+  "regression": null
+ }
+}

@@ -75,21 +75,59 @@
  "texts": {
   "msrc:CVE-2022-30136": "Windows Network File System Remote Code Execution Vulnerability\nWindows Network File System. Microsoft 2022-Jun security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "379538467a924c615f9ffe1c",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows Network File System Remote Code Execution Vulnerability",
+    "summary": "A remote code execution vulnerability affects Windows Network File System.",
+    "impact": "An attacker could achieve remote code execution on affected systems.",
+    "fix": "Apply the updates provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Check Windows Server systems for Network File System installation and apply available security updates."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Уязвимость удаленного выполнения кода в Windows Network File System",
+    "summary": "Уязвимость удаленного выполнения кода затрагивает Windows Network File System.",
+    "impact": "Злоумышленник может выполнить удаленный код в уязвимых системах.",
+    "fix": "Установите обновления, предоставленные Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows Server на наличие установленного компонента Network File System и примените доступные обновления безопасности."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows Network File System Remote Code Execution Vulnerability",
+    "summary": "Eine Schwachstelle zur Remote-Code-Ausführung betrifft Windows Network File System.",
+    "impact": "Ein Angreifer kann auf betroffenen Systemen Remotecode ausführen.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+    "workaround": null,
+    "checks": [
+     "Prüfen Sie Windows Server-Systeme auf die Installation von Network File System und wenden Sie verfügbare Sicherheitsupdates an."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T20:02:48Z",
+  "slugs": {
+   "ru": "uyazvimost-udalennogo-vypolneniya-koda-v-windows-network-file",
+   "de": "microsoft-windows-network-file-system-remote-code-execution",
+   "en": "microsoft-windows-network-file-system-remote-code-execution"
+  },
+  "published_at": "2026-11-21T20:02:48Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }
