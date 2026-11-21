@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows Server",
+   "versions": "all",
+   "fixed": null,
+   "evidence": "Windows Remote Desktop Gateway (RD Gateway) Remote Code Execution Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows Server: Remote Code Execution in RD Gateway",
+  "summary": "A critical remote code execution vulnerability affects Windows Remote Desktop Gateway (RD Gateway).",
+  "impact": "An attacker can execute arbitrary code remotely.",
+  "fix": "Install the updates provided by Microsoft in the January 2020 security update (including `KB4534271`, `KB4534273`, `KB4534283`, `KB4534288`, `KB4534297`, `KB4534309`).",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows Server systems running Remote Desktop Gateway.",
+   "Verify whether the January 2020 security updates are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows Server: удаленное выполнение кода в RD Gateway",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает Windows Remote Desktop Gateway (RD Gateway).",
+  "impact": "Злоумышленник может удаленно выполнить произвольный код.",
+  "fix": "Установите обновления, выпущенные Microsoft в рамках обновления безопасности за январь 2020 года (включая `KB4534271`, `KB4534273`, `KB4534283`, `KB4534288`, `KB4534297`, `KB4534309`).",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию серверов Windows Server с запущенной службой Remote Desktop Gateway.",
+   "Проверьте, установлены ли обновления безопасности за январь 2020 года."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows Server: Remotecodeausführung in RD Gateway",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft Windows Remote Desktop Gateway (RD Gateway).",
+  "impact": "Ein Angreifer kann beliebigen Code aus der Ferne ausführen.",
+  "fix": "Installieren Sie die von Microsoft im Sicherheitsupdate vom Januar 2020 bereitgestellten Updates (darunter `KB4534271`, `KB4534273`, `KB4534283`, `KB4534288`, `KB4534297`, `KB4534309`).",
+  "workaround": null,
+  "checks": [
+   "Erfassen Sie Windows-Server-Systeme mit aktiviertem Remote Desktop Gateway.",
+   "Überprüfen Sie, ob die Sicherheitsupdates vom Januar 2020 eingespielt wurden."
+  ],
+  "regression": null
+ }
+}

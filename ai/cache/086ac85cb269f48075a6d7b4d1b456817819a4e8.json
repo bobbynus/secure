@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows Server: Remote Code Execution Vulnerability in RD Gateway",
+  "summary": "Microsoft Windows Server contains a critical remote code execution vulnerability in Remote Desktop Gateway (RD Gateway) tracked as CVE-2020-0610.",
+  "impact": "An attacker can execute arbitrary code remotely on vulnerable Windows Server systems via RD Gateway. The CVSS score is 9.8.",
+  "fix": "Apply the updates provided by Microsoft, including KB4534271, KB4534273, KB4534283, KB4534288, KB4534297, and KB4534309.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows Server systems running Remote Desktop Gateway (RD Gateway).",
+   "Verify whether security updates KB4534271, KB4534273, KB4534283, KB4534288, KB4534297, or KB4534309 are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows Server: уязвимость удаленного выполнения кода в RD Gateway",
+  "summary": "Microsoft Windows Server содержит критическую уязвимость удаленного выполнения кода в Remote Desktop Gateway (RD Gateway), которой присвоен идентификатор CVE-2020-0610.",
+  "impact": "Злоумышленник может удаленно выполнить произвольный код на уязвимых системах Windows Server через RD Gateway. Оценка CVSS составляет 9.8.",
+  "fix": "Установите обновления, предоставленные Microsoft, включая KB4534271, KB4534273, KB4534283, KB4534288, KB4534297 и KB4534309.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows Server, на которых запущен Remote Desktop Gateway (RD Gateway).",
+   "Проверьте, установлены ли обновления безопасности KB4534271, KB4534273, KB4534283, KB4534288, KB4534297 или KB4534309."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows Server: Remotecodeausführungsschwachstelle in RD Gateway",
+  "summary": "Microsoft Windows Server enthält eine kritische Schwachstelle zur Remotecodeausführung im Remote Desktop Gateway (RD Gateway) mit der Kennung CVE-2020-0610.",
+  "impact": "Ein Angreifer kann über RD Gateway Remotecode auf anfälligen Windows Server-Systemen ausführen. Der CVSS-Score liegt bei 9.8.",
+  "fix": "Installieren Sie die von Microsoft bereitgestellten Updates, einschließlich KB4534271, KB4534273, KB4534283, KB4534288, KB4534297 und KB4534309.",
+  "workaround": null,
+  "checks": [
+   "Erfassen Sie Windows Server-Systeme, auf denen Remote Desktop Gateway (RD Gateway) ausgeführt wird.",
+   "Überprüfen Sie, ob die Sicherheitsupdates KB4534271, KB4534273, KB4534283, KB4534288, KB4534297 oder KB4534309 installiert sind."
+  ],
+  "regression": null
+ }
+}

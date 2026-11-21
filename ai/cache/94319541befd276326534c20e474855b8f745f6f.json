@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft .NET Framework: Remote Code Execution Vulnerability (CVE-2020-0606)",
+  "summary": "A remote code execution vulnerability exists in Microsoft .NET Framework. An attacker could exploit the vulnerability to execute arbitrary code.",
+  "impact": "An attacker can execute arbitrary code on affected systems.",
+  "fix": "Apply the updates referenced by KB4532933, KB4532935, KB4532936, KB4532938, KB4534271, KB4534276, KB4534293, KB4534306, KB4534976, KB4534977, KB4534978, KB4534979, KB4535101, KB4535102, KB4535103, KB4535104, or KB4535105.",
+  "workaround": null,
+  "checks": [
+   "Check systems for missing security updates associated with CVE-2020-0606.",
+   "Verify installation of applicable KB updates such as KB4532933 or KB4535101."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft .NET Framework: уязвимость удаленного выполнения кода (CVE-2020-0606)",
+  "summary": "В Microsoft .NET Framework обнаружена уязвимость удаленного выполнения кода. Злоумышленник может использовать ее для выполнения произвольного кода.",
+  "impact": "Злоумышленник может выполнить произвольный код в уязвимой системе.",
+  "fix": "Установите обновления, указанные в бюллетенях KB4532933, KB4532935, KB4532936, KB4532938, KB4534271, KB4534276, KB4534293, KB4534306, KB4534976, KB4534977, KB4534978, KB4534979, KB4535101, KB4535102, KB4535103, KB4535104 или KB4535105.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на отсутствие обновлений безопасности для CVE-2020-0606.",
+   "Убедитесь в установке применимых обновлений KB, таких как KB4532933 или KB4535101."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft .NET Framework: Schwachstelle ermöglicht Remotecodeausführung (CVE-2020-0606)",
+  "summary": "Im Microsoft .NET Framework existiert eine Schwachstelle zur Remotecodeausführung. Ein Angreifer kann die Schwachstelle ausnutzen, um beliebigen Code auszuführen.",
+  "impact": "Ein Angreifer kann auf betroffenen Systemen beliebigen Code ausführen.",
+  "fix": "Wenden Sie die Updates an, die in KB4532933, KB4532935, KB4532936, KB4532938, KB4534271, KB4534276, KB4534293, KB4534306, KB4534976, KB4534977, KB4534978, KB4534979, KB4535101, KB4535102, KB4535103, KB4535104 oder KB4535105 genannt werden.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf fehlende Sicherheitsupdates im Zusammenhang mit CVE-2020-0606.",
+   "Überprüfen Sie die Installation der entsprechenden KB-Updates wie KB4532933 oder KB4535101."
+  ],
+  "regression": null
+ }
+}

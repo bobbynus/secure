@@ -71,21 +71,62 @@
  "texts": {
   "msrc:CVE-2020-0796": "Windows SMBv3 Client/Server Remote Code Execution Vulnerability\nWindows SMB. Publicly disclosed. Microsoft 2020-Mar security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "751238646d53d1c3ce5d4bfa",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: SMBv3 Client/Server Remote Code Execution Vulnerability",
+    "summary": "A critical remote code execution vulnerability exists in Microsoft Windows SMBv3 Client/Server.",
+    "impact": "An attacker can execute remote code via SMBv3.",
+    "fix": "Apply update KB4551762.",
+    "workaround": null,
+    "checks": [
+     "Check Windows systems for SMBv3 exposure.",
+     "Verify if update KB4551762 is installed."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в SMBv3",
+    "summary": "Критическая уязвимость удаленного выполнения кода существует в клиенте и сервере Microsoft Windows SMBv3.",
+    "impact": "Злоумышленник может выполнить удаленный код через SMBv3.",
+    "fix": "Установите обновление KB4551762.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на предмет использования SMBv3.",
+     "Убедитесь, что установлено обновление KB4551762."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Remotecodeausführung in SMBv3",
+    "summary": "Eine kritische Schwachstelle zur Remotecodeausführung existiert im Microsoft Windows SMBv3 Client/Server.",
+    "impact": "Ein Angreifer kann Remote-Code über SMBv3 ausführen.",
+    "fix": "Installieren Sie das Update KB4551762.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows-Systeme auf SMBv3-Nutzung.",
+     "Prüfen Sie, ob das Update KB4551762 installiert ist."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T17:30:42Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-smbv3",
+   "de": "microsoft-windows-remotecodeausfuehrung-in-smbv3",
+   "en": "microsoft-windows-smbv3-client-server-remote-code-execution"
+  },
+  "published_at": "2026-11-21T17:30:42Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft .NET Framework: Remote Code Execution Vulnerability (CVE-2020-0605)",
+  "summary": "A remote code execution vulnerability exists in Microsoft .NET Framework. Microsoft released security updates addressing this issue.",
+  "impact": "An attacker could execute arbitrary code.",
+  "fix": "Apply the updates listed in KB4534976, KB4534977, KB4534978, KB4534979, KB4535102, KB4535103, KB4535104, KB4535105, KB4552926, KB4552928, KB4552929, KB4552931, KB4556399, KB4556400, KB4556401, KB4556402, KB4556403, KB4556404, KB4556405, KB4556406, KB4556441, KB4556807, KB4556812, KB4556813, or KB4556826.",
+  "workaround": null,
+  "checks": [
+   "Check systems running Windows 10 and Windows Server for installed .NET Framework versions.",
+   "Verify if updates KB4534976 through KB4556826 are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft .NET Framework: уязвимость удаленного выполнения кода (CVE-2020-0605)",
+  "summary": "В Microsoft .NET Framework обнаружена уязвимость удаленного выполнения кода. Microsoft выпустила обновления безопасности для ее устранения.",
+  "impact": "Злоумышленник может выполнить произвольный код.",
+  "fix": "Установите обновления, указанные в KB4534976, KB4534977, KB4534978, KB4534979, KB4535102, KB4535103, KB4535104, KB4535105, KB4552926, KB4552928, KB4552929, KB4552931, KB4556399, KB4556400, KB4556401, KB4556402, KB4556403, KB4556404, KB4556405, KB4556406, KB4556441, KB4556807, KB4556812, KB4556813 или KB4556826.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на базе Windows 10 и Windows Server на наличие установленных версий .NET Framework.",
+   "Убедитесь, что применены обновления с KB4534976 по KB4556826."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft .NET Framework: Schwachstelle für Remotecodeausführung (CVE-2020-0605)",
+  "summary": "Im Microsoft .NET Framework existiert eine Schwachstelle zur Remotecodeausführung. Microsoft hat Sicherheitsupdates bereitgestellt.",
+  "impact": "Ein Angreifer kann beliebigen Code ausführen.",
+  "fix": "Wenden Sie die Updates an, die in KB4534976, KB4534977, KB4534978, KB4534979, KB4535102, KB4535103, KB4535104, KB4535105, KB4552926, KB4552928, KB4552929, KB4552931, KB4556399, KB4556400, KB4556401, KB4556402, KB4556403, KB4556404, KB4556405, KB4556406, KB4556441, KB4556807, KB4556812, KB4556813 oder KB4556826 aufgeführt sind.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows 10- und Windows Server-Systeme auf installierte .NET Framework-Versionen.",
+   "Prüfen Sie, ob die Updates KB4534976 bis KB4556826 eingespielt wurden."
+  ],
+  "regression": null
+ }
+}

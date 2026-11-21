@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows",
+   "versions": "Windows 10, Windows Server",
+   "fixed": "KB4551762",
+   "evidence": "Windows SMBv3 Client/Server Remote Code Execution Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: SMBv3 Client/Server Remote Code Execution Vulnerability",
+  "summary": "A critical remote code execution vulnerability exists in Microsoft Windows SMBv3 Client/Server.",
+  "impact": "An attacker can execute remote code via SMBv3.",
+  "fix": "Apply update KB4551762.",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for SMBv3 exposure.",
+   "Verify if update KB4551762 is installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в SMBv3",
+  "summary": "Критическая уязвимость удаленного выполнения кода существует в клиенте и сервере Microsoft Windows SMBv3.",
+  "impact": "Злоумышленник может выполнить удаленный код через SMBv3.",
+  "fix": "Установите обновление KB4551762.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на предмет использования SMBv3.",
+   "Убедитесь, что установлено обновление KB4551762."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführung in SMBv3",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung existiert im Microsoft Windows SMBv3 Client/Server.",
+  "impact": "Ein Angreifer kann Remote-Code über SMBv3 ausführen.",
+  "fix": "Installieren Sie das Update KB4551762.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Systeme auf SMBv3-Nutzung.",
+   "Prüfen Sie, ob das Update KB4551762 installiert ist."
+  ],
+  "regression": null
+ }
+}

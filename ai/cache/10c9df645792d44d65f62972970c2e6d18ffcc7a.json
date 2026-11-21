@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft .NET Framework",
+   "versions": "various",
+   "fixed": null,
+   "evidence": ".NET Framework Remote Code Execution Injection Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft .NET Framework: Remote Code Execution Vulnerability",
+  "summary": "A remote code execution vulnerability exists in Microsoft .NET Framework.",
+  "impact": "Attackers can achieve remote code execution.",
+  "fix": "Apply updates referenced by KB4532933, KB4532935, KB4532936, KB4532938, KB4534271, KB4534276, KB4534293, KB4534306, KB4534976, KB4534977, KB4534978, KB4534979, KB4535101, KB4535102, KB4535103, KB4535104, KB4535105.",
+  "workaround": null,
+  "checks": [
+   "Check systems for installed .NET Framework versions",
+   "Verify application of Microsoft security updates"
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft .NET Framework: уязвимость удаленного выполнения кода",
+  "summary": "В Microsoft .NET Framework обнаружена уязвимость удаленного выполнения кода.",
+  "impact": "Злоумышленники могут выполнить произвольный код удаленно.",
+  "fix": "Установите обновления, указанные в KB4532933, KB4532935, KB4532936, KB4532938, KB4534271, KB4534276, KB4534293, KB4534306, KB4534976, KB4534977, KB4534978, KB4534979, KB4535101, KB4535102, KB4535103, KB4535104, KB4535105.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие установленных версий .NET Framework",
+   "Убедитесь в применении обновлений безопасности Microsoft"
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft .NET Framework: Schwachstelle zur Remote-Code-Ausführung",
+  "summary": "Im Microsoft .NET Framework existiert eine Schwachstelle zur Remote-Code-Ausführung.",
+  "impact": "Angreifer können Remote-Code-Ausführung erreichen.",
+  "fix": "Wenden Sie die Updates gemäß KB4532933, KB4532935, KB4532936, KB4532938, KB4534271, KB4534276, KB4534293, KB4534306, KB4534976, KB4534977, KB4534978, KB4534979, KB4535101, KB4535102, KB4535103, KB4535104, KB4535105 an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf installierte .NET Framework-Versionen",
+   "Verifizieren Sie die Installation der Microsoft-Sicherheitsupdates"
+  ],
+  "regression": null
+ }
+}
