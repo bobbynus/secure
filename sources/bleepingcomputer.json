@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "6f15cb446b857b96dc9b14fe52145974",
- "last_modified": "Fri, 20 Nov 2026 23:41:52 GMT",
- "checksum": "7e5b04e7673db2d900f555d551f4bbb698cbc4ad02a770bb23eb0e5a44c0df54",
+ "etag": "6b62ccda7286fdaf0e2d45f4e61a347d",
+ "last_modified": "Sat, 21 Nov 2026 00:11:53 GMT",
+ "checksum": "09fafaf26bf19a9c2d310ac693506f7b559beead9a7e133458c332f7792e22f2",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -40,8 +40,8 @@
   "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/": "be1675f7b93b070d42e079b7",
   "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/": "183f0873099bbb36da1933d5"
  },
- "last_attempt": "2026-11-20T23:50:43Z",
- "last_success": "2026-11-20T23:50:43Z",
+ "last_attempt": "2026-11-21T00:20:51Z",
+ "last_success": "2026-11-21T00:20:51Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
