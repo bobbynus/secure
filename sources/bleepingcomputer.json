@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "26fe6b5f349da654513d0ee6f74a9989",
- "last_modified": "Sat, 21 Nov 2026 13:52:15 GMT",
- "checksum": "2646a1b1adc3df9c8eef329ed6996534c7d75d24ecfbc86ed1e247b099fe6de0",
+ "etag": "989f8f4385acc543aaae0c6cc9978f26",
+ "last_modified": "Sat, 21 Nov 2026 14:26:04 GMT",
+ "checksum": "33653a528ecf393a3d42c26a34ebb420688ed8aafc5d80ace35139eac5e9b2b3",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -38,12 +38,13 @@
   "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/": "1838c7a41831266b947c05e4",
   "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/": "8e83ec24ff6ca8e7b0ea7865",
   "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/": "be1675f7b93b070d42e079b7",
-  "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/": "183f0873099bbb36da1933d5"
+  "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/": "183f0873099bbb36da1933d5",
+  "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/": "8b08c912f562969e923720a8"
  },
- "last_attempt": "2026-11-21T14:00:39Z",
- "last_success": "2026-11-21T14:00:39Z",
+ "last_attempt": "2026-11-21T14:30:42Z",
+ "last_success": "2026-11-21T14:30:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 34
+ "items_total": 35
 }
