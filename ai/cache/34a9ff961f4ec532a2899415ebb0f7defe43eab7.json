@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft App Installer: CVE-2021-43890 spoofing vulnerability",
+  "summary": "Microsoft App Installer contains a spoofing vulnerability that is publicly disclosed and reported as exploited.",
+  "impact": "An attacker can exploit the spoofing vulnerability. The issue was publicly disclosed and exploitation is reported by the vendor.",
+  "fix": "The sources list no fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check systems for the presence of Microsoft App Installer.",
+   "Verify system status regarding CVE-2021-43890."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft App Installer: уязвимость спуфинга CVE-2021-43890",
+  "summary": "Microsoft App Installer содержит уязвимость спуфинга, которая была публично раскрыта и эксплуатируется.",
+  "impact": "Злоумышленник может использовать уязвимость спуфинга. Проблема была публично раскрыта, и вендор сообщает о ее эксплуатации.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие Microsoft App Installer.",
+   "Проверьте статус систем в отношении CVE-2021-43890."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft App Installer: Spoofing-Schwachstelle CVE-2021-43890",
+  "summary": "Microsoft App Installer enthält eine Spoofing-Schwachstelle, die öffentlich bekannt ist und ausgenutzt wird.",
+  "impact": "Ein Angreifer kann die Spoofing-Schwachstelle ausnutzen. Das Problem wurde öffentlich bekannt gegeben, und die Ausnutzung wird vom Hersteller gemeldet.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf das Vorhandensein von Microsoft App Installer.",
+   "Überprüfen Sie den Systemstatus hinsichtlich CVE-2021-43890."
+  ],
+  "regression": null
+ }
+}

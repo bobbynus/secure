@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "41ce5806c92b91a314e3b294b329e952",
- "last_modified": "Sat, 21 Nov 2026 17:58:23 GMT",
- "checksum": "8220b277bff06863be75e48d71b2abf7e11ceffb4c1fdb80644c8ddda7157a16",
+ "etag": "a6b581f63928040da355fd47194d65fe",
+ "last_modified": "Sat, 21 Nov 2026 18:23:42 GMT",
+ "checksum": "244ae6724a323ae5e6e07a5ef8813be98ef1f2eb9f1c026053629b3399452364",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -40,12 +40,13 @@
   "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/": "be1675f7b93b070d42e079b7",
   "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/": "183f0873099bbb36da1933d5",
   "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/": "8b08c912f562969e923720a8",
-  "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/": "5b22f0cdfbc503d4c0ce1428"
+  "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/": "5b22f0cdfbc503d4c0ce1428",
+  "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/": "701b4ac30fc62f2b55a1f276"
  },
- "last_attempt": "2026-11-21T18:00:44Z",
- "last_success": "2026-11-21T18:00:44Z",
+ "last_attempt": "2026-11-21T18:30:40Z",
+ "last_success": "2026-11-21T18:30:40Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 37
+ "items_total": 38
 }

@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows Server: CVE-2021-34458 Windows Kernel RCE",
+  "summary": "A remote code execution vulnerability exists in the Windows Kernel affecting multiple versions of Windows Server. Microsoft released security updates in July 2021 to address the issue.",
+  "impact": "An attacker could exploit this vulnerability to execute remote code on affected systems.",
+  "fix": "Apply the updates KB5004237, KB5004238, or KB5004244.",
+  "workaround": null,
+  "checks": [
+   "Check Windows Server systems for missing updates KB5004237, KB5004238, and KB5004244."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows Server: CVE-2021-34458 уязвимость RCE в ядре Windows",
+  "summary": "В ядре Windows обнаружена уязвимость удаленного выполнения кода, затрагивающая различные версии Windows Server. Microsoft выпустила обновления безопасности в июле 2021 года.",
+  "impact": "Злоумышленник может использовать эту уязвимость для удаленного выполнения кода на уязвимых системах.",
+  "fix": "Установите обновления KB5004237, KB5004238 или KB5004244.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows Server на отсутствие обновлений KB5004237, KB5004238 и KB5004244."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows Server: CVE-2021-34458 RCE-Schwachstelle im Windows-Kernel",
+  "summary": "Im Windows-Kernel existiert eine Schwachstelle zur Remote-Codeausführung, die mehrere Versionen von Windows Server betrifft. Microsoft hat im Juli 2021 Sicherheitsupdates bereitgestellt.",
+  "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Remote-Code auf betroffenen Systemen auszuführen.",
+  "fix": "Installieren Sie die Updates KB5004237, KB5004238 oder KB5004244.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Server-Systeme auf fehlende Updates KB5004237, KB5004238 und KB5004244."
+  ],
+  "regression": null
+ }
+}

@@ -86,21 +86,62 @@
  "texts": {
   "msrc:CVE-2021-43215": "iSNS Server Memory Corruption Vulnerability Can Lead to Remote Code Execution\nInternet Storage Name Service. Microsoft 2021-Dec security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "7c6e8778e7d33e75e314eef6",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: iSNS Server Remote Code Execution Vulnerability (CVE-2021-43215)",
+    "summary": "A critical memory corruption vulnerability in the Internet Storage Name Service (iSNS) Server allows remote code execution.",
+    "impact": "An attacker can achieve remote code execution on vulnerable systems.",
+    "fix": "Apply the December 2021 security update (KB5008206, KB5008207, KB5008212, KB5008218, KB5008230, KB5008244, KB5008255, KB5008263, KB5008271, KB5008274, KB5008277, KB5008282, KB5008285).",
+    "workaround": null,
+    "checks": [
+     "Check Windows 10 systems for the installation of the December 2021 security update.",
+     "Verify if the iSNS Server role is enabled on affected systems."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в iSNS Server (CVE-2021-43215)",
+    "summary": "Критическая уязвимость повреждения памяти в службе Internet Storage Name Service (iSNS) Server позволяет выполнять удаленный код.",
+    "impact": "Злоумышленник может добиться удаленного выполнения кода на уязвимых системах.",
+    "fix": "Установите обновление безопасности за декабрь 2021 года (KB5008206, KB5008207, KB5008212, KB5008218, KB5008230, KB5008244, KB5008255, KB5008263, KB5008271, KB5008274, KB5008277, KB5008282, KB5008285).",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows 10 на наличие декабрьского обновления безопасности 2021 года.",
+     "Убедитесь, включена ли роль iSNS Server на уязвимых системах."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Remotecodeausführungsschwachstelle im iSNS Server (CVE-2021-43215)",
+    "summary": "Eine kritische Speicherbeschädigungsschwachstelle im Internet Storage Name Service (iSNS) Server ermöglicht die Remotecodeausführung.",
+    "impact": "Ein Angreifer kann auf anfälligen Systemen Remotecode ausführen.",
+    "fix": "Installieren Sie das Sicherheitsupdate vom Dezember 2021 (KB5008206, KB5008207, KB5008212, KB5008218, KB5008230, KB5008244, KB5008255, KB5008263, KB5008271, KB5008274, KB5008277, KB5008282, KB5008285).",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows 10-Systeme auf die Installation des Sicherheitsupdates vom Dezember 2021.",
+     "Prüfen Sie, ob die iSNS Server-Rolle auf den betroffenen Systemen aktiviert ist."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T18:30:42Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-isns",
+   "de": "microsoft-windows-remotecodeausfuehrungsschwachstelle-im-isns",
+   "en": "microsoft-windows-isns-server-remote-code-execution"
+  },
+  "published_at": "2026-11-21T18:30:42Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

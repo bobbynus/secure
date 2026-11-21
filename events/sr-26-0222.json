@@ -67,21 +67,62 @@
  "texts": {
   "msrc:CVE-2021-34473": "Microsoft Exchange Server Remote Code Execution Vulnerability\nMicrosoft Exchange Server. Publicly disclosed. Microsoft 2021-Jul security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "a3670dd702df2f5017b98368",
+  "texts": {
+   "en": {
+    "title": "Microsoft Exchange Server: Remote Code Execution Vulnerability (CVE-2021-34473)",
+    "summary": "A critical remote code execution vulnerability affects Microsoft Exchange Server.",
+    "impact": "Allows remote code execution on the affected Microsoft Exchange Server.",
+    "fix": "Apply the update referenced by KB5001779.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft Exchange Server instances for vulnerability against CVE-2021-34473.",
+     "Verify if KB5001779 is applied."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Exchange Server: уязвимость удаленного выполнения кода (CVE-2021-34473)",
+    "summary": "Критическая уязвимость удаленного выполнения кода затрагивает Microsoft Exchange Server.",
+    "impact": "Позволяет выполнить произвольный код удаленно на уязвимом сервере Microsoft Exchange Server.",
+    "fix": "Установите обновление, указанное в KB5001779.",
+    "workaround": null,
+    "checks": [
+     "Проверьте экземпляры Microsoft Exchange Server на уязвимость к CVE-2021-34473.",
+     "Убедитесь, что применено обновление KB5001779."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Exchange Server: Remotenausführung von Code (CVE-2021-34473)",
+    "summary": "Eine kritische Schwachstelle zur Remotenausführung von Code betrifft den Microsoft Exchange Server.",
+    "impact": "Ermöglicht die Remotenausführung von Code auf dem betroffenen Microsoft Exchange Server.",
+    "fix": "Wenden Sie das in KB5001779 genannte Update an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft Exchange Server-Instanzen auf Anfälligkeit für CVE-2021-34473.",
+     "Überprüfen Sie, ob KB5001779 angewendet wurde."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T18:30:42Z",
+  "slugs": {
+   "ru": "microsoft-exchange-server-uyazvimost-udalennogo-vypolneniya",
+   "de": "microsoft-exchange-server-remotenausfuehrung-von-code-cve-2021",
+   "en": "microsoft-exchange-server-remote-code-execution-vulnerability"
+  },
+  "published_at": "2026-11-21T18:30:42Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

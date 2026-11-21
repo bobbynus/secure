@@ -80,21 +80,62 @@
  "texts": {
   "msrc:CVE-2021-33771": "Windows Kernel Elevation of Privilege Vulnerability\nWindows Kernel. Microsoft 2021-Jul security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "593946be8e97a5e1f0fdcfb2",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: CVE-2021-33771 Windows Kernel Elevation of Privilege",
+    "summary": "Microsoft Windows Kernel contains an elevation of privilege vulnerability (CVE-2021-33771) with a CVSS score of 7.8, which is reported as exploited.",
+    "impact": "An attacker can achieve elevation of privilege. Exploitation is reported.",
+    "fix": "Updates are available via KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285, KB5004298.",
+    "workaround": null,
+    "checks": [
+     "Check Windows systems for the presence of CVE-2021-33771.",
+     "Verify if updates KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285, or KB5004298 are installed."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость повышения привилегий в ядре Windows CVE-2021-33771",
+    "summary": "Ядро Microsoft Windows содержит уязвимость повышения привилегий (CVE-2021-33771) с оценкой CVSS 7.8, эксплуатация которой подтверждена.",
+    "impact": "Злоумышленник может повысить привилегии. Сообщается об эксплуатации.",
+    "fix": "Доступны обновления через KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285, KB5004298.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на наличие уязвимости CVE-2021-33771.",
+     "Убедитесь, что установлены обновления KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285 или KB5004298."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: CVE-2021-33771 Windows Kernel Elevation of Privilege",
+    "summary": "Der Microsoft Windows Kernel enthält eine Schwachstelle zur Privilegienerweiterung (CVE-2021-33771) mit einem CVSS-Score von 7.8, die laut Berichten ausgenutzt wird.",
+    "impact": "Ein Angreifer kann Privilegien erlangen. Eine Ausnutzung wird gemeldet.",
+    "fix": "Updates sind über KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285, KB5004298 verfügbar.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows-Systeme auf CVE-2021-33771.",
+     "Überprüfen Sie, ob die Updates KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285 oder KB5004298 installiert sind."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T18:30:42Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-povysheniya-privilegiy-v-yadre",
+   "de": "microsoft-windows-cve-2021-33771-windows-kernel-elevation-of",
+   "en": "microsoft-windows-cve-2021-33771-windows-kernel-elevation-of"
+  },
+  "published_at": "2026-11-21T18:30:42Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: CVE-2021-31979 Windows Kernel Elevation of Privilege",
+  "summary": "Microsoft Windows contains an elevation of privilege vulnerability in the Windows Kernel, which is reported to be exploited.",
+  "impact": "An attacker can achieve elevation of privilege. Exploitation is reported by the vendor.",
+  "fix": "Apply the updates referenced by KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285, KB5004289, KB5004294, KB5004298, KB5004299, KB5004302, KB5004305, or KB5004307.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows 10 systems to check for missing security updates.",
+   "Verify the application of KB updates such as `KB5004237`, `KB5004238`, `KB5004244`, `KB5004245`, `KB5004249`, `KB5004285`, `KB5004289`, `KB5004294`, `KB5004298`, `KB5004299`, `KB5004302`, `KB5004305`, and `KB5004307`."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: CVE-2021-31979 уязвимость повышения привилегий в ядре Windows",
+  "summary": "Microsoft Windows содержит уязвимость повышения привилегий в ядре Windows, эксплуатация которой подтверждена.",
+  "impact": "Злоумышленник может повысить свои привилегии. Эксплуатация подтверждена производителем.",
+  "fix": "Установите обновления, указанные в KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285, KB5004289, KB5004294, KB5004298, KB5004299, KB5004302, KB5004305 или KB5004307.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows 10 на предмет отсутствия обновлений безопасности.",
+   "Проверьте установку обновлений из базы знаний, таких как `KB5004237`, `KB5004238`, `KB5004244`, `KB5004245`, `KB5004249`, `KB5004285`, `KB5004289`, `KB5004294`, `KB5004298`, `KB5004299`, `KB5004302`, `KB5004305` и `KB5004307`."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: CVE-2021-31979 Windows Kernel Elevation of Privilege Vulnerability",
+  "summary": "Microsoft Windows enthält eine Schwachstelle zur Privilegienerweiterung im Windows Kernel, deren Ausnutzung gemeldet wurde.",
+  "impact": "Ein Angreifer kann eine Privilegienerweiterung erreichen. Die Ausnutzung wird vom Hersteller gemeldet.",
+  "fix": "Wenden Sie die Updates aus KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285, KB5004289, KB5004294, KB5004298, KB5004299, KB5004302, KB5004305 oder KB5004307 an.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows 10-Systeme auf fehlende Sicherheitsupdates.",
+   "Überprüfen Sie die Anwendung von KB-Updates wie `KB5004237`, `KB5004238`, `KB5004244`, `KB5004245`, `KB5004249`, `KB5004285`, `KB5004289`, `KB5004294`, `KB5004298`, `KB5004299`, `KB5004302`, `KB5004305` und `KB5004307`."
+  ],
+  "regression": null
+ }
+}
