@@ -2,7 +2,7 @@
  "id": "ubuntu-usn",
  "etag": null,
  "last_modified": null,
- "checksum": "da1be76f24e803cf630637156626016fb75e8a55ce03bd9a2999986c04bd757f",
+ "checksum": "bdfdb0561239c044c43225e963bbac680ab2a3598c9b02de2cdb61d6cd29e152",
  "cursor": {},
  "seen": {
   "https://ubuntu.com/security/notices/USN-9132-1": "a161c32f8fdfc6647a43b257",
@@ -59,8 +59,8 @@
   "https://ubuntu.com/security/notices/USN-9173-2": "8d74d9ff65a1d96f2849ac73",
   "https://ubuntu.com/security/notices/USN-9168-3": "8fad3393237c26f0ebac3448"
  },
- "last_attempt": "2026-11-21T22:10:39Z",
- "last_success": "2026-11-21T22:10:39Z",
+ "last_attempt": "2026-11-21T22:40:40Z",
+ "last_success": "2026-11-21T22:40:40Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "748f45ecb4b524b2c7e1d9502ee875f4",
- "last_modified": "Sat, 21 Nov 2026 22:03:48 GMT",
- "checksum": "dcd61fab7c7deef285c955acc7ad348ccf89d8414ae517e325ded0039e8f383b",
+ "etag": "ab18e3ba158fa528f2550966eae9d272",
+ "last_modified": "Sat, 21 Nov 2026 22:33:49 GMT",
+ "checksum": "60c982eca5fa4cb4dd0add23ea9b58069fbaeab619ab0ab49c9db1e648af1ae0",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -43,8 +43,8 @@
   "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/": "5b22f0cdfbc503d4c0ce1428",
   "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/": "701b4ac30fc62f2b55a1f276"
  },
- "last_attempt": "2026-11-21T22:10:39Z",
- "last_success": "2026-11-21T22:10:39Z",
+ "last_attempt": "2026-11-21T22:40:40Z",
+ "last_success": "2026-11-21T22:40:40Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
