@@ -1,0 +1,43 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Exchange Server",
+   "versions": "2013, 2016",
+   "fixed": "KB5000871",
+   "evidence": "Microsoft Exchange Server Remote Code Execution Vulnerability\nMicrosoft Exchange Server. Microsoft 2021-Mar security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Exchange Server: Remote Code Execution Vulnerability",
+  "summary": "Microsoft Exchange Server contains a remote code execution vulnerability (CVE-2021-26855) that is reported to be exploited.",
+  "impact": "An attacker can achieve remote code execution on the affected Microsoft Exchange Server.",
+  "fix": "Apply the Microsoft 2021-Mar security update (`KB5000871`).",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Exchange Server systems for the installed security update `KB5000871`."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Exchange Server: уязвимость удаленного выполнения кода",
+  "summary": "Microsoft Exchange Server содержит уязвимость удаленного выполнения кода (CVE-2021-26855), эксплуатация которой зафиксирована.",
+  "impact": "Злоумышленник может выполнить удаленный код на уязвимом сервере Microsoft Exchange Server.",
+  "fix": "Установите мартовское обновление безопасности Microsoft 2021-Mar (`KB5000871`).",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Microsoft Exchange Server на наличие установленного обновления безопасности `KB5000871`."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Exchange Server: Remotecodeausführung",
+  "summary": "Microsoft Exchange Server enthält eine Schwachstelle zur Remotecodeausführung (CVE-2021-26855), deren Ausnutzung gemeldet wurde.",
+  "impact": "Ein Angreifer kann Remotecode auf dem betroffenen Microsoft Exchange Server ausführen.",
+  "fix": "Installieren Sie das Microsoft-Sicherheitsupdate vom März 2021 (`KB5000871`).",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft Exchange Server-Systeme auf das installierte Sicherheitsupdate `KB5000871`."
+  ],
+  "regression": null
+ }
+}

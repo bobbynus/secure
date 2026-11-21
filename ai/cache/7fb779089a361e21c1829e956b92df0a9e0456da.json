@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Exchange Server",
+   "versions": "various",
+   "fixed": null,
+   "evidence": "Microsoft Exchange Server Remote Code Execution Vulnerability\nMicrosoft Exchange Server. Microsoft 2021-Mar security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Exchange Server: Remote Code Execution Vulnerability (CVE-2021-26857)",
+  "summary": "A remote code execution vulnerability exists in Microsoft Exchange Server. Vendor reports exploitation.",
+  "impact": "Attackers can achieve remote code execution. Exploitation is reported by the vendor.",
+  "fix": "Apply the Microsoft 2021-Mar security update (KB5000871, KB5000978).",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Exchange Server instances to identify vulnerable versions.",
+   "Verify whether the Microsoft 2021-Mar security update (KB5000871, KB5000978) has been applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Exchange Server: уязвимость удаленного выполнения кода (CVE-2021-26857)",
+  "summary": "В Microsoft Exchange Server обнаружена уязвимость удаленного выполнения кода. Поставщик сообщает об эксплуатации.",
+  "impact": "Злоумышленники могут выполнить произвольный код удаленно. Эксплуатация подтверждена поставщиком.",
+  "fix": "Установите мартовское обновление безопасности Microsoft 2021 г. (KB5000871, KB5000978).",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию серверов Microsoft Exchange Server для определения уязвимых версий.",
+   "Проверьте, установлено ли мартовское обновление безопасности Microsoft 2021 г. (KB5000871, KB5000978)."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Exchange Server: Remotecodeausführung (CVE-2021-26857)",
+  "summary": "In Microsoft Exchange Server existiert eine Schwachstelle zur Remotecodeausführung. Der Hersteller meldet die Ausnutzung.",
+  "impact": "Angreifer können Remotecode ausführen. Die Ausnutzung wurde vom Hersteller gemeldet.",
+  "fix": "Installieren Sie das Microsoft Sicherheitsupdate von März 2021 (KB5000871, KB5000978).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Microsoft Exchange Server-Instanzen, um betroffene Versionen zu identifizieren.",
+   "Überprüfen Sie, ob das Microsoft Sicherheitsupdate von März 2021 (KB5000871, KB5000978) eingespielt wurde."
+  ],
+  "regression": null
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: CVE-2021-33742 MSHTML Platform RCE",
+  "summary": "Microsoft Windows contains a remote code execution vulnerability in the MSHTML Platform, tracked as CVE-2021-33742. Vendor reports exploitation.",
+  "impact": "An attacker can achieve remote code execution. Exploitation is reported by the vendor.",
+  "fix": "Apply the updates provided by Microsoft (including KB5003635, KB5003636, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003687, KB5003697).",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows 10 systems and versions affected by CVE-2021-33742.",
+   "Verify whether security updates including KB5003635, KB5003636, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003687, or KB5003697 are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость RCE в платформе MSHTML (CVE-2021-33742)",
+  "summary": "Microsoft Windows содержит уязвимость удаленного выполнения кода в платформе MSHTML, получившую идентификатор CVE-2021-33742. Производитель сообщает об эксплуатации.",
+  "impact": "Злоумышленник может добиться удаленного выполнения кода. Эксплуатация подтверждена производителем.",
+  "fix": "Установите обновления, предоставленные Microsoft (включая KB5003635, KB5003636, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003687, KB5003697).",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows 10, подверженных CVE-2021-33742.",
+   "Проверьте наличие установленных обновлений безопасности, включая KB5003635, KB5003636, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003687 или KB5003697."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: RCE-Schwachstelle in der MSHTML-Plattform (CVE-2021-33742)",
+  "summary": "Microsoft Windows enthält eine Remotecodeausführungs-Schwachstelle in der MSHTML-Plattform, geführt als CVE-2021-33742. Der Hersteller berichtet über eine Ausnutzung.",
+  "impact": "Ein Angreifer kann Remotecode ausführen. Eine Ausnutzung wird vom Hersteller gemeldet.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5003635, KB5003636, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003687, KB5003697).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows 10-Systeme, die von CVE-2021-33742 betroffen sind.",
+   "Überprüfen Sie, ob Sicherheitsupdates wie KB5003635, KB5003636, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003687 oder KB5003697 eingespielt wurden."
+  ],
+  "regression": null
+ }
+}

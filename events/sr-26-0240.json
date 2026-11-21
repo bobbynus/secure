@@ -87,21 +87,62 @@
  "texts": {
   "msrc:CVE-2021-26411": "Internet Explorer Memory Corruption Vulnerability\nInternet Explorer. Publicly disclosed. Microsoft 2021-Mar security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "105f343b3248bff989aabb61",
+  "texts": {
+   "en": {
+    "title": "Microsoft Internet Explorer: memory corruption vulnerability (CVE-2021-26411)",
+    "summary": "A memory corruption vulnerability exists in Microsoft Internet Explorer, which is actively exploited in the wild.",
+    "impact": "The vulnerability allows attackers to cause memory corruption, potentially leading to arbitrary code execution.",
+    "fix": "Apply the corresponding security updates provided by Microsoft (such as KB5000800, KB5000802, KB5000803, KB5000807, KB5000808, KB5000809, KB5000822, KB5000841, KB5000844, KB5000847, KB5000848).",
+    "workaround": null,
+    "checks": [
+     "Check systems for the installation of affected Windows and Internet Explorer versions.",
+     "Verify that the latest Microsoft security updates have been successfully applied."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Internet Explorer: уязвимость повреждения памяти (CVE-2021-26411)",
+    "summary": "В Microsoft Internet Explorer обнаружена уязвимость повреждения памяти, которая активно эксплуатируется.",
+    "impact": "Уязвимость позволяет злоумышленникам вызвать повреждение памяти, потенциально приводящее к выполнению произвольного кода.",
+    "fix": "Установите соответствующие обновления безопасности, предоставленные Microsoft (такие как KB5000800, KB5000802, KB5000803, KB5000807, KB5000808, KB5000809, KB5000822, KB5000841, KB5000844, KB5000847, KB5000848).",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленных подверженных уязвимости версий Windows и Internet Explorer.",
+     "Убедитесь, что последние обновления безопасности от Microsoft успешно применены."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Internet Explorer: Speicherbeschädigungsschwachstelle (CVE-2021-26411)",
+    "summary": "In Microsoft Internet Explorer existiert eine Speicherbeschädigungsschwachstelle, die aktiv ausgenutzt wird.",
+    "impact": "Die Schwachstelle ermöglicht es Angreifern, eine Speicherbeschädigung zu verursachen, was möglicherweise zur Ausführung von beliebigem Code führt.",
+    "fix": "Wenden Sie die entsprechenden von Microsoft bereitgestellten Sicherheitsupdates an (wie KB5000800, KB5000802, KB5000803, KB5000807, KB5000808, KB5000809, KB5000822, KB5000841, KB5000844, KB5000847, KB5000848).",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf die Installation betroffener Windows- und Internet Explorer-Versionen.",
+     "Verifizieren Sie, dass die neuesten Microsoft-Sicherheitsupdates erfolgreich angewendet wurden."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T11:20:43Z",
+  "slugs": {
+   "ru": "microsoft-internet-explorer-uyazvimost-povrezhdeniya-pamyati",
+   "de": "microsoft-internet-explorer-speicherbeschaedigungsschwachstelle",
+   "en": "microsoft-internet-explorer-memory-corruption-vulnerability-cve"
+  },
+  "published_at": "2026-11-21T11:20:43Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

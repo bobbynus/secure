@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Exchange Server",
+   "versions": "2013, 2016",
+   "fixed": null,
+   "evidence": "Microsoft Exchange Server Remote Code Execution Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Exchange Server: Remote Code Execution Vulnerability (CVE-2021-26858)",
+  "summary": "A remote code execution vulnerability exists in Microsoft Exchange Server. The vendor reports exploitation in the wild.",
+  "impact": "An attacker can achieve remote code execution on the affected server.",
+  "fix": "Apply the security update provided by Microsoft (KB5000871).",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Exchange Server instances to check for vulnerable versions.",
+   "Verify whether the security update KB5000871 has been applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Exchange Server: уязвимость удаленного выполнения кода (CVE-2021-26858)",
+  "summary": "В Microsoft Exchange Server обнаружена уязвимость удаленного выполнения кода. Поставщик сообщает об эксплуатации уязвимости.",
+  "impact": "Злоумышленник может выполнить произвольный код на уязвимом сервере.",
+  "fix": "Установите обновление безопасности, предоставленное Microsoft (KB5000871).",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию серверов Microsoft Exchange Server для выявления уязвимых версий.",
+   "Проверьте, установлено ли обновление безопасности KB5000871."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Exchange Server: Schwachstelle zur Remote-Code-Ausführung (CVE-2021-26858)",
+  "summary": "In Microsoft Exchange Server existiert eine Schwachstelle zur Remotecodeausführung. Der Hersteller meldet eine aktive Ausnutzung.",
+  "impact": "Ein Angreifer kann Remote-Code auf dem betroffenen Server ausführen.",
+  "fix": "Installieren Sie das von Microsoft bereitgestellte Sicherheitsupdate (KB5000871).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Microsoft Exchange Server-Instanzen, um anfällige Versionen zu identifizieren.",
+   "Überprüfen Sie, ob das Sicherheitsupdate KB5000871 eingespielt wurde."
+  ],
+  "regression": null
+ }
+}
