@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Print Spooler Remote Code Execution Vulnerability (CVE-2021-34527)",
+  "summary": "A remote code execution vulnerability exists in the Windows Print Spooler component, tracked as CVE-2021-34527. Vendor reports exploitation.",
+  "impact": "An attacker can achieve remote code execution via the vulnerable Print Spooler service.",
+  "fix": "Apply the updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for Print Spooler service exposure and status.",
+   "Verify installation of Microsoft security updates addressing CVE-2021-34527."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость выполнения удаленного кода в Print Spooler (CVE-2021-34527)",
+  "summary": "В компоненте Windows Print Spooler обнаружена уязвимость удаленного выполнения кода, отслеживаемая как CVE-2021-34527. Вендор сообщает об эксплуатации.",
+  "impact": "Злоумышленник может выполнить удаленный код через уязвимую службу Print Spooler.",
+  "fix": "Установите обновления, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на наличие и статус службы Print Spooler.",
+   "Убедитесь в установке обновлений безопасности Microsoft, устраняющих CVE-2021-34527."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführung in Print Spooler (CVE-2021-34527)",
+  "summary": "Im Windows Print Spooler-Komponente existiert eine Schwachstelle zur Remotecodeausführung unter CVE-2021-34527. Der Hersteller meldet Ausnutzung.",
+  "impact": "Ein Angreifer kann über den anfälligen Print Spooler-Dienst Remotecode ausführen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+  "workaround": null,
+  "checks": [
+   "Prüfen Sie Windows-Systeme auf Exposition und Status des Print Spooler-Dienstes.",
+   "Überprüfen Sie die Installation der Microsoft-Sicherheitsupdates für CVE-2021-34527."
+  ],
+  "regression": null
+ }
+}

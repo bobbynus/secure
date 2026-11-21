@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Scripting Engine: CVE-2019-1367 Memory Corruption Vulnerability",
+  "summary": "A memory corruption vulnerability exists in the Microsoft Scripting Engine, allowing attackers to compromise affected systems.",
+  "impact": "An attacker could exploit the vulnerability by tricking a user into viewing a specially crafted website or file, potentially gaining execution rights or system control.",
+  "fix": "Apply the security updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check systems for installed Microsoft security updates.",
+   "Verify the version of the Microsoft Scripting Engine."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Scripting Engine: уязвимость повреждения памяти CVE-2019-1367",
+  "summary": "В Microsoft Scripting Engine обнаружена уязвимость повреждения памяти, позволяющая злоумышленникам скомпрометировать уязвимые системы.",
+  "impact": "Злоумышленник может проэксплуатировать уязвимость, убедив пользователя открыть специально сформированный веб-сайт или файл.",
+  "fix": "Установите обновления безопасности, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие установленных обновлений безопасности Microsoft.",
+   "Проверьте версию Microsoft Scripting Engine."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Scripting Engine: Speicherbeschädigungsschwachstelle CVE-2019-1367",
+  "summary": "Im Microsoft Scripting Engine existiert eine Schwachstelle durch Speicherbeschädigung, die Angreifern die Kompromittierung von Systemen ermöglicht.",
+  "impact": "Ein Angreifer kann die Schwachstelle ausnutzen, indem er einen Benutzer dazu bringt, eine speziell präparierte Website oder Datei zu öffnen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf installierte Microsoft-Sicherheitsupdates.",
+   "Überprüfen Sie die Version der Microsoft Scripting Engine."
+  ],
+  "regression": null
+ }
+}

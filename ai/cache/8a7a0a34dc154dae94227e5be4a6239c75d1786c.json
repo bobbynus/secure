@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Apache Log4j",
+   "versions": "2",
+   "fixed": null,
+   "evidence": "Apache Log4j2. Publicly disclosed. Microsoft 2021-Dec security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft: Apache Log4j Remote Code Execution Vulnerability",
+  "summary": "Microsoft products are affected by the Apache Log4j remote code execution vulnerability (CVE-2021-44228), which is actively exploited.",
+  "impact": "Remote code execution allowing attackers to compromise affected systems.",
+  "fix": "Apply updates or fixes provided by Microsoft as referenced in their security guidance.",
+  "workaround": null,
+  "checks": [
+   "Inventory systems running Microsoft products utilizing Apache Log4j.",
+   "Check for exposure to CVE-2021-44228."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft: уязвимость удаленного выполнения кода в Apache Log4j",
+  "summary": "Продукты Microsoft подвержены уязвимости удаленного выполнения кода в Apache Log4j (CVE-2021-44228), которая активно эксплуатируется.",
+  "impact": "Удаленное выполнение кода, позволяющее злоумышленникам скомпрометировать уязвимые системы.",
+  "fix": "Примените обновления или исправления, предоставленные Microsoft в их рекомендациях по безопасности.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем под управлением продуктов Microsoft, использующих Apache Log4j.",
+   "Проверьте наличие уязвимости CVE-2021-44228."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft: Remotecodeausführung in Apache Log4j",
+  "summary": "Microsoft-Produkte sind von der Remotecodeausführungsschwachstelle in Apache Log4j (CVE-2021-44228) betroffen, die aktiv ausgenutzt wird.",
+  "impact": "Remotecodeausführung, die es Angreifern ermöglicht, betroffene Systeme zu kompromittieren.",
+  "fix": "Wenden Sie die von Microsoft in ihren Sicherheitshinweisen bereitgestellten Updates oder Fixes an.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Systeme mit Microsoft-Produkten, die Apache Log4j verwenden.",
+   "Prüfen Sie auf Anfälligkeit für CVE-2021-44228."
+  ],
+  "regression": null
+ }
+}

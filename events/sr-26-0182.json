@@ -83,21 +83,59 @@
  "texts": {
   "msrc:CVE-2018-8373": "Scripting Engine Memory Corruption Vulnerability\nMicrosoft Scripting Engine. Publicly disclosed. Microsoft 2018-Aug security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "e5d201b725760416308e1c9c",
+  "texts": {
+   "en": {
+    "title": "Microsoft Scripting Engine: CVE-2018-8373 Memory Corruption Vulnerability",
+    "summary": "A memory corruption vulnerability exists in the Microsoft Scripting Engine, actively exploited in the wild according to Microsoft.",
+    "impact": "An attacker can exploit the vulnerability to execute arbitrary code with the privileges of the current user via a crafted website or application.",
+    "fix": "Apply the security updates provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Check systems for missing Microsoft August 2018 security updates."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Scripting Engine: уязвимость повреждения памяти CVE-2018-8373",
+    "summary": "В Microsoft Scripting Engine обнаружена уязвимость повреждения памяти, которая, по данным Microsoft, активно эксплуатируется.",
+    "impact": "Злоумышленник может использовать уязвимость для выполнения произвольного кода с правами текущего пользователя через специально созданный веб-сайт или приложение.",
+    "fix": "Установите обновления безопасности, предоставленные Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на отсутствие августовских обновлений безопасности Microsoft 2018 года."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Scripting Engine: Speicher corruption Schwachstelle CVE-2018-8373",
+    "summary": "Im Microsoft Scripting Engine existiert eine Speicherbeschädigungsschwachstelle, die laut Microsoft aktiv ausgenutzt wird.",
+    "impact": "Ein Angreifer kann die Schwachstelle über eine präparierte Website oder Anwendung ausnutzen, um beliebigen Code mit den Rechten des aktuellen Benutzers auszuführen.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf fehlende Sicherheitsupdates von Microsoft vom August 2018."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T10:50:47Z",
+  "slugs": {
+   "ru": "microsoft-scripting-engine-uyazvimost-povrezhdeniya-pamyati-cve",
+   "de": "microsoft-scripting-engine-speicher-corruption-schwachstelle",
+   "en": "microsoft-scripting-engine-cve-2018-8373-memory-corruption"
+  },
+  "published_at": "2026-11-21T10:50:47Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

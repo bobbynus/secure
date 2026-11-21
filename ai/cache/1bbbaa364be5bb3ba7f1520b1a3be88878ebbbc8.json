@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Scripting Engine: CVE-2018-8373 Memory Corruption Vulnerability",
+  "summary": "A memory corruption vulnerability exists in the Microsoft Scripting Engine, actively exploited in the wild according to Microsoft.",
+  "impact": "An attacker can exploit the vulnerability to execute arbitrary code with the privileges of the current user via a crafted website or application.",
+  "fix": "Apply the security updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check systems for missing Microsoft August 2018 security updates."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Scripting Engine: уязвимость повреждения памяти CVE-2018-8373",
+  "summary": "В Microsoft Scripting Engine обнаружена уязвимость повреждения памяти, которая, по данным Microsoft, активно эксплуатируется.",
+  "impact": "Злоумышленник может использовать уязвимость для выполнения произвольного кода с правами текущего пользователя через специально созданный веб-сайт или приложение.",
+  "fix": "Установите обновления безопасности, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на отсутствие августовских обновлений безопасности Microsoft 2018 года."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Scripting Engine: Speicher corruption Schwachstelle CVE-2018-8373",
+  "summary": "Im Microsoft Scripting Engine existiert eine Speicherbeschädigungsschwachstelle, die laut Microsoft aktiv ausgenutzt wird.",
+  "impact": "Ein Angreifer kann die Schwachstelle über eine präparierte Website oder Anwendung ausnutzen, um beliebigen Code mit den Rechten des aktuellen Benutzers auszuführen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf fehlende Sicherheitsupdates von Microsoft vom August 2018."
+  ],
+  "regression": null
+ }
+}

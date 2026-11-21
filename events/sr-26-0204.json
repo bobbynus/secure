@@ -86,21 +86,62 @@
  "texts": {
   "msrc:CVE-2019-1367": "Scripting Engine Memory Corruption Vulnerability\nMicrosoft Scripting Engine. Microsoft 2019-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "21115da9929669a3c3936301",
+  "texts": {
+   "en": {
+    "title": "Microsoft Scripting Engine: CVE-2019-1367 Memory Corruption Vulnerability",
+    "summary": "A memory corruption vulnerability exists in the Microsoft Scripting Engine, allowing attackers to compromise affected systems.",
+    "impact": "An attacker could exploit the vulnerability by tricking a user into viewing a specially crafted website or file, potentially gaining execution rights or system control.",
+    "fix": "Apply the security updates provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Check systems for installed Microsoft security updates.",
+     "Verify the version of the Microsoft Scripting Engine."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Scripting Engine: уязвимость повреждения памяти CVE-2019-1367",
+    "summary": "В Microsoft Scripting Engine обнаружена уязвимость повреждения памяти, позволяющая злоумышленникам скомпрометировать уязвимые системы.",
+    "impact": "Злоумышленник может проэксплуатировать уязвимость, убедив пользователя открыть специально сформированный веб-сайт или файл.",
+    "fix": "Установите обновления безопасности, предоставленные Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленных обновлений безопасности Microsoft.",
+     "Проверьте версию Microsoft Scripting Engine."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Scripting Engine: Speicherbeschädigungsschwachstelle CVE-2019-1367",
+    "summary": "Im Microsoft Scripting Engine existiert eine Schwachstelle durch Speicherbeschädigung, die Angreifern die Kompromittierung von Systemen ermöglicht.",
+    "impact": "Ein Angreifer kann die Schwachstelle ausnutzen, indem er einen Benutzer dazu bringt, eine speziell präparierte Website oder Datei zu öffnen.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf installierte Microsoft-Sicherheitsupdates.",
+     "Überprüfen Sie die Version der Microsoft Scripting Engine."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T10:50:47Z",
+  "slugs": {
+   "ru": "microsoft-scripting-engine-uyazvimost-povrezhdeniya-pamyati-cve",
+   "de": "microsoft-scripting-engine-speicherbeschaedigungsschwachstelle",
+   "en": "microsoft-scripting-engine-cve-2019-1367-memory-corruption"
+  },
+  "published_at": "2026-11-21T10:50:47Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
