@@ -40,7 +40,12 @@
   ]
  },
  "severity": "high",
- "cvss": null,
+ "cvss": {
+  "score": 7.5,
+  "version": "3.1",
+  "source": "NVD",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+ },
  "exploited": true,
  "kev": false,
  "kev_added": null,
