@@ -1,0 +1,109 @@
+{
+  "id": "sr-26-0228",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-33739"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5003635",
+      "KB5003637"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.4,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T19:00:53Z",
+    "updated": "2026-11-21T19:00:53Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft DWM Core Library Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-33739",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T19:00:53Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T19:00:53Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-povysheniya-privilegiy-v-dwm-core",
+      "title": "Microsoft Windows: уязвимость повышения привилегий в DWM Core Library (CVE-2021-33739)",
+      "summary": "В библиотеке Microsoft DWM Core Library обнаружена уязвимость повышения привилегий, которая эксплуатируется.",
+      "impact": "Злоумышленник может использовать уязвимость для повышения привилегий.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления безопасности, указанные в KB5003635 и KB5003637.",
+      "checks": [
+        "Проверьте системы на наличие уязвимости CVE-2021-33739.",
+        "Убедитесь в установке обновлений KB5003635 и KB5003637."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-schwachstelle-zur-privilege-escalation-in-dwm",
+      "title": "Microsoft Windows: Schwachstelle zur Privilege Escalation in DWM Core Library (CVE-2021-33739)",
+      "summary": "In der Microsoft DWM Core Library existiert eine Schwachstelle zur Privilegienerweiterung, die ausgenutzt wird.",
+      "impact": "Ein Angreifer kann die Schwachstelle ausnutzen, um Privilegien zu erweitern.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die in KB5003635 und KB5003637 genannten Sicherheitsupdates an.",
+      "checks": [
+        "Überprüfen Sie Systeme auf das Vorhandensein von CVE-2021-33739.",
+        "Überprüfen Sie die Installation der Updates KB5003635 und KB5003637."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-dwm-core-library-elevation-of-privilege",
+      "title": "Microsoft Windows: DWM Core Library Elevation of Privilege Vulnerability (CVE-2021-33739)",
+      "summary": "An elevation of privilege vulnerability exists in the Microsoft DWM Core Library, reported as being exploited.",
+      "impact": "An attacker can exploit the vulnerability to elevate privileges.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the security updates referenced by KB5003635 and KB5003637.",
+      "checks": [
+        "Check systems for the presence of CVE-2021-33739.",
+        "Verify the installation of updates KB5003635 and KB5003637."
+      ]
+    }
+  }
+}

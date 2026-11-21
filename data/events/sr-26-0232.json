@@ -1,0 +1,105 @@
+{
+  "id": "sr-26-0232",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "exchange-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-26412"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5000871"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.1,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T19:00:53Z",
+    "updated": "2026-11-21T19:00:53Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26412",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T19:00:53Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T19:00:53Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-uyazvimost-udalennogo-vypolneniya",
+      "title": "Microsoft Exchange Server: уязвимость удаленного выполнения кода (CVE-2021-26412)",
+      "summary": "Критическая уязвимость удаленного выполнения кода затрагивает Microsoft Exchange Server. Проблема устраняется обновлением `KB5000871`.",
+      "impact": "Злоумышленник может выполнить произвольный код удаленно на уязвимых серверах Microsoft Exchange Server.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите мартовское обновление безопасности Microsoft `KB5000871`.",
+      "checks": [
+        "Проверьте инсталляции Microsoft Exchange Server на наличие отсутствующего обновления `KB5000871`.",
+        "Проверьте версии систем на соответствие уязвимым конфигурациям Exchange Server."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-schwachstelle-fuer",
+      "title": "Microsoft Exchange Server: Schwachstelle für Remotecodeausführung (CVE-2021-26412)",
+      "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft Microsoft Exchange Server. Das Problem wird mit `KB5000871` behoben.",
+      "impact": "Ein Angreifer kann auf anfälligen Microsoft Exchange Server-Installationen Remotecode ausführen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Installieren Sie das Microsoft-Sicherheitsupdate von März 2021 (`KB5000871`).",
+      "checks": [
+        "Überprüfen Sie Microsoft Exchange Server-Installationen auf das fehlende Update `KB5000871`.",
+        "Gleichen Sie die Systemversionen mit den betroffenen Exchange Server-Konfigurationen ab."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-remote-code-execution-vulnerability",
+      "title": "Microsoft Exchange Server: Remote Code Execution Vulnerability (CVE-2021-26412)",
+      "summary": "A critical remote code execution vulnerability affects Microsoft Exchange Server. The issue is addressed with KB5000871.",
+      "impact": "An attacker can achieve remote code execution on vulnerable Microsoft Exchange Server installations.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply Microsoft 2021-Mar security update (`KB5000871`).",
+      "checks": [
+        "Check Microsoft Exchange Server installations for missing `KB5000871` update.",
+        "Verify system versions against affected Exchange Server configurations."
+      ]
+    }
+  }
+}
