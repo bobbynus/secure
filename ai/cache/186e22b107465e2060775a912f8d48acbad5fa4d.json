@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Windows Hyper-V Remote Code Execution Vulnerability",
+  "summary": "A remote code execution vulnerability affects Windows Hyper-V. Microsoft released security updates addressing the issue.",
+  "impact": "An attacker can achieve remote code execution in Windows Hyper-V.",
+  "fix": "Apply the updates referenced by KB5000802 or KB5000808 from the March 2021 security update.",
+  "workaround": null,
+  "checks": [
+   "Check systems running Windows Hyper-V for the installation of March 2021 security updates.",
+   "Verify the presence of KB5000802 or KB5000808."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: Уязвимость удаленного выполнения кода в Windows Hyper-V",
+  "summary": "В Windows Hyper-V обнаружена уязвимость удаленного выполнения кода. Microsoft выпустила обновления безопасности.",
+  "impact": "Злоумышленник может выполнить удаленный код в Windows Hyper-V.",
+  "fix": "Установите обновления безопасности за март 2021 года, на которые ссылаются KB5000802 или KB5000808.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы под управлением Windows Hyper-V на наличие мартовских обновлений безопасности 2021 года.",
+   "Убедитесь в наличии KB5000802 или KB5000808."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in Windows Hyper-V",
+  "summary": "Eine Schwachstelle zur Remotecodeausführung betrifft Windows Hyper-V. Microsoft hat Sicherheitsupdates bereitgestellt.",
+  "impact": "Ein Angreifer kann Remotecode in Windows Hyper-V ausführen.",
+  "fix": "Wenden Sie die Sicherheitsupdates vom März 2021 an, die in KB5000802 oder KB5000808 genannt werden.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme mit Windows Hyper-V auf die Installation der Sicherheitsupdates vom März 2021.",
+   "Überprüfen Sie das Vorhandensein von KB5000802 oder KB5000808."
+  ],
+  "regression": null
+ }
+}

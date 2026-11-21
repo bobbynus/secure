@@ -81,21 +81,62 @@
  "texts": {
   "msrc:CVE-2021-27085": "Internet Explorer Remote Code Execution Vulnerability\nInternet Explorer. Microsoft 2021-Mar security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "e24e841b76b89c687b63e45d",
+  "texts": {
+   "en": {
+    "title": "Microsoft: Internet Explorer remote code execution vulnerability (CVE-2021-27085)",
+    "summary": "A remote code execution vulnerability exists in Internet Explorer. Microsoft reports active exploitation.",
+    "impact": "An attacker could execute arbitrary code. Exploitation is reported by the vendor.",
+    "fix": "Apply updates referenced by KB5000802, KB5000808, KB5000809, and KB5000822.",
+    "workaround": null,
+    "checks": [
+     "Check systems for Windows 10 and Internet Explorer 11 installations.",
+     "Verify if updates KB5000802, KB5000808, KB5000809, or KB5000822 are applied."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft: уязвимость удаленного выполнения кода в Internet Explorer (CVE-2021-27085)",
+    "summary": "В Internet Explorer обнаружена уязвимость удаленного выполнения кода. Microsoft сообщает об активной эксплуатации.",
+    "impact": "Злоумышленник может выполнить произвольный код. Эксплуатация подтверждена производителем.",
+    "fix": "Установите обновления, указанные в KB5000802, KB5000808, KB5000809 и KB5000822.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленных Windows 10 и Internet Explorer 11.",
+     "Убедитесь в применении обновлений KB5000802, KB5000808, KB5000809 или KB5000822."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft: Schwachstelle in Internet Explorer ermöglicht Remotecodeausführung (CVE-2021-27085)",
+    "summary": "In Internet Explorer existiert eine Schwachstelle zur Remotecodeausführung. Microsoft meldet aktive Ausnutzung.",
+    "impact": "Ein Angreifer kann beliebigen Code ausführen. Die Ausnutzung wird vom Hersteller gemeldet.",
+    "fix": "Wenden Sie die Updates an, die in KB5000802, KB5000808, KB5000809 und KB5000822 genannt werden.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf Windows 10 und Internet Explorer 11.",
+     "Überprüfen Sie, ob die Updates KB5000802, KB5000808, KB5000809 oder KB5000822 installiert sind."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T19:30:48Z",
+  "slugs": {
+   "ru": "microsoft-uyazvimost-udalennogo-vypolneniya-koda-v-internet",
+   "de": "microsoft-schwachstelle-in-internet-explorer-ermoeglicht",
+   "en": "microsoft-internet-explorer-remote-code-execution-vulnerability"
+  },
+  "published_at": "2026-11-21T19:30:48Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

@@ -69,21 +69,62 @@
  "texts": {
   "msrc:CVE-2021-27059": "Microsoft Office Remote Code Execution Vulnerability\nMicrosoft Office. Microsoft 2021-Mar security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "94690a2e0f525db7079be845",
+  "texts": {
+   "en": {
+    "title": "Microsoft Office: Remote Code Execution Vulnerability (CVE-2021-27059)",
+    "summary": "Microsoft Office contains a remote code execution vulnerability (CVE-2021-27059) affecting multiple versions, for which exploitation is reported.",
+    "impact": "An attacker can achieve remote code execution. The vendor reports exploitation.",
+    "fix": "Apply updates or fixes provided by the vendor.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft Office installations for vulnerable versions associated with CVE-2021-27059.",
+     "Verify the application of Microsoft security updates such as KB4493225, KB4493228, and KB4504703."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Office: уязвимость удаленного выполнения кода (CVE-2021-27059)",
+    "summary": "Microsoft Office содержит уязвимость удаленного выполнения кода (CVE-2021-27059), затрагивающую несколько версий; сообщается об эксплуатации.",
+    "impact": "Злоумышленник может выполнить удаленный код. Поставщик сообщает об эксплуатации.",
+    "fix": "Установите обновления или исправления, предоставленные поставщиком.",
+    "workaround": null,
+    "checks": [
+     "Проверьте установки Microsoft Office на наличие уязвимых версий, связанных с CVE-2021-27059.",
+     "Убедитесь в применении обновлений безопасности Microsoft, таких как KB4493225, KB4493228 и KB4504703."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Office: Schwachstelle für Remotecodeausführung (CVE-2021-27059)",
+    "summary": "Microsoft Office enthält eine Schwachstelle zur Remotecodeausführung (CVE-2021-27059) in mehreren Versionen; die Ausnutzung wurde gemeldet.",
+    "impact": "Ein Angreifer kann Remotecode ausführen. Der Hersteller meldet eine Ausnutzung.",
+    "fix": "Wenden Sie die vom Hersteller bereitgestellten Updates oder Fixes an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft Office-Installationen auf anfällige Versionen im Zusammenhang mit CVE-2021-27059.",
+     "Überprüfen Sie die Anwendung von Microsoft-Sicherheitsupdates wie KB4493225, KB4493228 und KB4504703."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T19:30:48Z",
+  "slugs": {
+   "ru": "microsoft-office-uyazvimost-udalennogo-vypolneniya-koda-cve",
+   "de": "microsoft-office-schwachstelle-fuer-remotecodeausfuehrung-cve",
+   "en": "microsoft-office-remote-code-execution-vulnerability-cve-2021"
+  },
+  "published_at": "2026-11-21T19:30:48Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
