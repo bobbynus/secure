@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "ab18e3ba158fa528f2550966eae9d272",
- "last_modified": "Sat, 21 Nov 2026 22:33:49 GMT",
- "checksum": "60c982eca5fa4cb4dd0add23ea9b58069fbaeab619ab0ab49c9db1e648af1ae0",
+ "etag": "ee4b1c7f7043e97c2907b09333bf88bc",
+ "last_modified": "Sat, 21 Nov 2026 23:10:00 GMT",
+ "checksum": "49e94be6975e38cfc10184c982fc412f3ebe897c3051ed1606f3cf50a458f69d",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -41,12 +41,13 @@
   "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/": "183f0873099bbb36da1933d5",
   "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/": "8b08c912f562969e923720a8",
   "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/": "5b22f0cdfbc503d4c0ce1428",
-  "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/": "701b4ac30fc62f2b55a1f276"
+  "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/": "701b4ac30fc62f2b55a1f276",
+  "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/": "6078c1e8d84753d16d8635e3"
  },
- "last_attempt": "2026-11-21T22:40:40Z",
- "last_success": "2026-11-21T22:40:40Z",
+ "last_attempt": "2026-11-21T23:10:43Z",
+ "last_success": "2026-11-21T23:10:43Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 38
+ "items_total": 39
 }
