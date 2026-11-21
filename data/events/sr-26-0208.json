@@ -1,0 +1,122 @@
+{
+  "id": "sr-26-0208",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2020-0606"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4532933",
+      "KB4532935",
+      "KB4532936",
+      "KB4532938",
+      "KB4534271",
+      "KB4534276",
+      "KB4534293",
+      "KB4534306",
+      "KB4534976",
+      "KB4534977",
+      "KB4534978",
+      "KB4534979",
+      "KB4535101",
+      "KB4535102",
+      "KB4535103",
+      "KB4535104",
+      "KB4535105"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T17:30:42Z",
+    "updated": "2026-11-21T17:30:42Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": ".NET Framework Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-0606",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T17:30:42Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T17:30:42Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-net-framework-uyazvimost-udalennogo-vypolneniya-koda",
+      "title": "Microsoft .NET Framework: уязвимость удаленного выполнения кода (CVE-2020-0606)",
+      "summary": "В Microsoft .NET Framework обнаружена уязвимость удаленного выполнения кода. Злоумышленник может использовать ее для выполнения произвольного кода.",
+      "impact": "Злоумышленник может выполнить произвольный код в уязвимой системе.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновления, указанные в бюллетенях KB4532933, KB4532935, KB4532936, KB4532938, KB4534271, KB4534276, KB4534293, KB4534306, KB4534976, KB4534977, KB4534978, KB4534979, KB4535101, KB4535102, KB4535103, KB4535104 или KB4535105.",
+      "checks": [
+        "Проверьте системы на отсутствие обновлений безопасности для CVE-2020-0606.",
+        "Убедитесь в установке применимых обновлений KB, таких как KB4532933 или KB4535101."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-net-framework-schwachstelle-ermoeglicht",
+      "title": "Microsoft .NET Framework: Schwachstelle ermöglicht Remotecodeausführung (CVE-2020-0606)",
+      "summary": "Im Microsoft .NET Framework existiert eine Schwachstelle zur Remotecodeausführung. Ein Angreifer kann die Schwachstelle ausnutzen, um beliebigen Code auszuführen.",
+      "impact": "Ein Angreifer kann auf betroffenen Systemen beliebigen Code ausführen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Wenden Sie die Updates an, die in KB4532933, KB4532935, KB4532936, KB4532938, KB4534271, KB4534276, KB4534293, KB4534306, KB4534976, KB4534977, KB4534978, KB4534979, KB4535101, KB4535102, KB4535103, KB4535104 oder KB4535105 genannt werden.",
+      "checks": [
+        "Überprüfen Sie Systeme auf fehlende Sicherheitsupdates im Zusammenhang mit CVE-2020-0606.",
+        "Überprüfen Sie die Installation der entsprechenden KB-Updates wie KB4532933 oder KB4535101."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-net-framework-remote-code-execution-vulnerability-cve",
+      "title": "Microsoft .NET Framework: Remote Code Execution Vulnerability (CVE-2020-0606)",
+      "summary": "A remote code execution vulnerability exists in Microsoft .NET Framework. An attacker could exploit the vulnerability to execute arbitrary code.",
+      "impact": "An attacker can execute arbitrary code on affected systems.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply the updates referenced by KB4532933, KB4532935, KB4532936, KB4532938, KB4534271, KB4534276, KB4534293, KB4534306, KB4534976, KB4534977, KB4534978, KB4534979, KB4535101, KB4535102, KB4535103, KB4535104, or KB4535105.",
+      "checks": [
+        "Check systems for missing security updates associated with CVE-2020-0606.",
+        "Verify installation of applicable KB updates such as KB4532933 or KB4535101."
+      ]
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "sr-26-0209",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2020-0646"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4532933",
+      "KB4532935",
+      "KB4532936",
+      "KB4532938",
+      "KB4534271",
+      "KB4534276",
+      "KB4534293",
+      "KB4534306",
+      "KB4534976",
+      "KB4534977",
+      "KB4534978",
+      "KB4534979",
+      "KB4535101",
+      "KB4535102",
+      "KB4535103",
+      "KB4535104",
+      "KB4535105"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T17:30:42Z",
+    "updated": "2026-11-21T17:30:42Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": ".NET Framework Remote Code Execution Injection Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-0646",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T17:30:42Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T17:30:42Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-net-framework-uyazvimost-udalennogo-vypolneniya-koda",
+      "title": "Microsoft .NET Framework: уязвимость удаленного выполнения кода",
+      "summary": "В Microsoft .NET Framework обнаружена уязвимость удаленного выполнения кода.",
+      "impact": "Злоумышленники могут выполнить произвольный код удаленно.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновления, указанные в KB4532933, KB4532935, KB4532936, KB4532938, KB4534271, KB4534276, KB4534293, KB4534306, KB4534976, KB4534977, KB4534978, KB4534979, KB4535101, KB4535102, KB4535103, KB4535104, KB4535105.",
+      "checks": [
+        "Проверьте системы на наличие установленных версий .NET Framework",
+        "Убедитесь в применении обновлений безопасности Microsoft"
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-net-framework-schwachstelle-zur-remote-code",
+      "title": "Microsoft .NET Framework: Schwachstelle zur Remote-Code-Ausführung",
+      "summary": "Im Microsoft .NET Framework existiert eine Schwachstelle zur Remote-Code-Ausführung.",
+      "impact": "Angreifer können Remote-Code-Ausführung erreichen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Wenden Sie die Updates gemäß KB4532933, KB4532935, KB4532936, KB4532938, KB4534271, KB4534276, KB4534293, KB4534306, KB4534976, KB4534977, KB4534978, KB4534979, KB4535101, KB4535102, KB4535103, KB4535104, KB4535105 an.",
+      "checks": [
+        "Überprüfen Sie Systeme auf installierte .NET Framework-Versionen",
+        "Verifizieren Sie die Installation der Microsoft-Sicherheitsupdates"
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-net-framework-remote-code-execution-vulnerability",
+      "title": "Microsoft .NET Framework: Remote Code Execution Vulnerability",
+      "summary": "A remote code execution vulnerability exists in Microsoft .NET Framework.",
+      "impact": "Attackers can achieve remote code execution.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply updates referenced by KB4532933, KB4532935, KB4532936, KB4532938, KB4534271, KB4534276, KB4534293, KB4534306, KB4534976, KB4534977, KB4534978, KB4534979, KB4535101, KB4535102, KB4535103, KB4535104, KB4535105.",
+      "checks": [
+        "Check systems for installed .NET Framework versions",
+        "Verify application of Microsoft security updates"
+      ]
+    }
+  }
+}
