@@ -1,0 +1,107 @@
+{
+  "id": "sr-26-0211",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "sharepoint-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2020-0852"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4484270",
+      "KB4484271",
+      "KB4484277"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T18:00:52Z",
+    "updated": "2026-11-21T18:00:52Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Word Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-0852",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T18:00:52Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T18:00:52Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-word-uyazvimost-udalennogo-vypolneniya-koda-cve-2020",
+      "title": "Microsoft Word: уязвимость удаленного выполнения кода CVE-2020-0852",
+      "summary": "В Microsoft Word и связанных продуктах Microsoft обнаружена уязвимость удаленного выполнения кода. Производитель выпустил обновления безопасности в марте 2020 года.",
+      "impact": "Злоумышленник может выполнить произвольный код на целевой системе.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Примените обновления, предоставленные Microsoft.",
+      "checks": [
+        "Проверьте системы на наличие уязвимых продуктов Microsoft Office и SharePoint.",
+        "Убедитесь, что обновление безопасности за март 2020 года было применено."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-word-remotecodeausfuehrung-cve-2020-0852",
+      "title": "Microsoft Word: Remotecodeausführung CVE-2020-0852",
+      "summary": "In Microsoft Word und verwandten Microsoft-Produkten existiert eine Schwachstelle zur Remotecodeausführung. Der Hersteller hat im März 2020 Sicherheitsupdates veröffentlicht.",
+      "impact": "Ein Angreifer kann beliebigen Code auf dem Zielsystem ausführen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+      "checks": [
+        "Überprüfen Sie Systeme auf betroffene Microsoft Office- und SharePoint-Produkte.",
+        "Überprüfen Sie, ob das Sicherheitsupdate vom März 2020 eingespielt wurde."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-word-cve-2020-0852-remote-code-execution-vulnerability",
+      "title": "Microsoft Word: CVE-2020-0852 Remote Code Execution Vulnerability",
+      "summary": "A remote code execution vulnerability exists in Microsoft Word and related Microsoft products. The vendor released security updates in March 2020.",
+      "impact": "An attacker could execute arbitrary code on the target system.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply the updates provided by Microsoft.",
+      "checks": [
+        "Check systems for the presence of affected Microsoft Office and SharePoint products.",
+        "Verify whether the March 2020 security update has been applied."
+      ]
+    }
+  }
+}

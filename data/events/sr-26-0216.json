@@ -1,0 +1,116 @@
+{
+  "id": "sr-26-0216",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-26432"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5005030",
+      "KB5005031",
+      "KB5005033",
+      "KB5005040",
+      "KB5005043",
+      "KB5005076",
+      "KB5005094",
+      "KB5005099",
+      "KB5005106"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T18:00:52Z",
+    "updated": "2026-11-21T18:00:52Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Services for NFS ONCRPC XDR Driver Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26432",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T18:00:52Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T18:00:52Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v",
+      "title": "Microsoft Windows: уязвимость удаленного выполнения кода в службах NFS",
+      "summary": "Критическая уязвимость удаленного выполнения кода существует в драйвере ONCRPC XDR для Windows Services for NFS.",
+      "impact": "Злоумышленник может выполнить удаленный код на уязвимых системах.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновления, указанные в KB5005030, KB5005031, KB5005033, KB5005040, KB5005043, KB5005076, KB5005094, KB5005099 или KB5005106.",
+      "checks": [
+        "Проведите инвентаризацию систем Windows, использующих службы NFS.",
+        "Проверьте, установлены ли уязвимые версии Windows 10.",
+        "Убедитесь, что применены обновления безопасности, связанные с KB5005030, KB5005031, KB5005033, KB5005040, KB5005043, KB5005076, KB5005094, KB5005099 или KB5005106."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in",
+      "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in Services für NFS",
+      "summary": "Im Windows Services for NFS ONCRPC XDR Driver existiert eine kritische Schwachstelle zur Remotecodeausführung.",
+      "impact": "Ein Angreifer kann auf anfälligen Systemen Remotecode ausführen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Wenden Sie die Updates an, die in KB5005030, KB5005031, KB5005033, KB5005040, KB5005043, KB5005076, KB5005094, KB5005099 oder KB5005106 aufgeführt sind.",
+      "checks": [
+        "Inventarisieren Sie Windows-Systeme, die Services für NFS ausführen.",
+        "Überprüfen Sie, ob die betroffenen Windows 10-Versionen eingesetzt werden.",
+        "Prüfen Sie, ob die Sicherheitsupdates im Zusammenhang mit KB5005030, KB5005031, KB5005033, KB5005040, KB5005043, KB5005076, KB5005094, KB5005099 oder KB5005106 installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-remote-code-execution-vulnerability-in",
+      "title": "Microsoft Windows: Remote Code Execution Vulnerability in Services for NFS",
+      "summary": "A critical remote code execution vulnerability exists in the Windows Services for NFS ONCRPC XDR Driver.",
+      "impact": "An attacker could achieve remote code execution on vulnerable systems.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply the updates listed in KB5005030, KB5005031, KB5005033, KB5005040, KB5005043, KB5005076, KB5005094, KB5005099, or KB5005106.",
+      "checks": [
+        "Inventory Windows systems running Services for NFS.",
+        "Verify whether the affected Windows 10 versions are deployed.",
+        "Check that the security updates associated with KB5005030, KB5005031, KB5005033, KB5005040, KB5005043, KB5005076, KB5005094, KB5005099, or KB5005106 are installed."
+      ]
+    }
+  }
+}
