@@ -1,0 +1,110 @@
+{
+  "id": "sr-26-0184",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2018-8414"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4343885",
+      "KB4343897",
+      "KB4343909"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 4.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T12:51:04Z",
+    "updated": "2026-11-21T12:51:04Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Shell Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2018-8414",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T12:51:04Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T12:51:04Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-shell-uyazvimost-udalennogo-vypolneniya-koda",
+      "title": "Microsoft Windows Shell: уязвимость удаленного выполнения кода (CVE-2018-8414)",
+      "summary": "В Windows Shell обнаружена уязвимость удаленного выполнения кода, о которой сообщил Microsoft.",
+      "impact": "Злоумышленник может выполнить произвольный код.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления KB4343885, KB4343897 или KB4343909.",
+      "checks": [
+        "Проверьте системы на наличие версий Windows 10 и Windows Server.",
+        "Убедитесь, что установлены обновления KB4343885, KB4343897 или KB4343909."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-shell-schwachstelle-zur-rce-cve-2018-8414",
+      "title": "Microsoft Windows Shell: Schwachstelle zur RCE (CVE-2018-8414)",
+      "summary": "In Windows Shell existiert eine Schwachstelle zur Ausführung von Code, die von Microsoft gemeldet wurde.",
+      "impact": "Ein Angreifer kann beliebigen Code ausführen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Installieren Sie die Updates KB4343885, KB4343897 oder KB4343909.",
+      "checks": [
+        "Überprüfen Sie Systeme auf Windows 10 und Windows Server Versionen.",
+        "Überprüfen Sie, ob die Updates KB4343885, KB4343897 oder KB4343909 installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-shell-remote-code-execution-vulnerability-cve",
+      "title": "Microsoft Windows Shell: Remote Code Execution Vulnerability (CVE-2018-8414)",
+      "summary": "A remote code execution vulnerability exists in Windows Shell, reported by Microsoft with public disclosure.",
+      "impact": "An attacker could execute arbitrary code.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply updates KB4343885, KB4343897, or KB4343909.",
+      "checks": [
+        "Check systems for Windows 10 and Windows Server versions.",
+        "Verify if updates KB4343885, KB4343897, or KB4343909 are installed."
+      ]
+    }
+  }
+}
