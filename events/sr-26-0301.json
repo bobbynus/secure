@@ -91,21 +91,62 @@
  "texts": {
   "msrc:CVE-2025-59230": "Windows Remote Access Connection Manager Elevation of Privilege Vulnerability\nWindows Remote Access Connection Manager. Microsoft 2025-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "082ddb64d66238ed04fc4f6c",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Elevation of privilege in Remote Access Connection Manager",
+    "summary": "An elevation of privilege vulnerability (CVE-2025-59230) affects the Windows Remote Access Connection Manager. Microsoft reports exploitation.",
+    "impact": "An attacker can achieve elevation of privilege. Exploitation is reported by the vendor.",
+    "fix": "Apply the updates provided by Microsoft (including KB5066586, KB5066780, KB5066782, KB5066791, KB5066793, KB5066835, KB5066836, KB5066837, KB5066872, KB5066873, KB5066874, KB5066875, KB5066876, KB5066877).",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows 10 systems for vulnerability CVE-2025-59230.",
+     "Verify whether the applicable security updates are installed."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: повышение привилегий в Remote Access Connection Manager",
+    "summary": "Уязвимость повышения привилегий (CVE-2025-59230) затрагивает Windows Remote Access Connection Manager. Вендор сообщает об эксплуатации.",
+    "impact": "Злоумышленник может повысить привилегии. Эксплуатация подтверждена производителем.",
+    "fix": "Установите обновления, предоставленные Microsoft (включая KB5066586, KB5066780, KB5066782, KB5066791, KB5066793, KB5066835, KB5066836, KB5066837, KB5066872, KB5066873, KB5066874, KB5066875, KB5066876, KB5066877).",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows 10 на уязвимость CVE-2025-59230.",
+     "Убедитесь, что установлены необходимые обновления безопасности."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Rechtenausweitung im Remote Access Connection Manager",
+    "summary": "Eine Schwachstelle zur Rechtenausweitung (CVE-2025-59230) betrifft den Windows Remote Access Connection Manager. Der Hersteller meldet Ausnutzung.",
+    "impact": "Ein Angreifer kann Privilegien erweitern. Die Ausnutzung wird vom Hersteller gemeldet.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5066586, KB5066780, KB5066782, KB5066791, KB5066793, KB5066835, KB5066836, KB5066837, KB5066872, KB5066873, KB5066874, KB5066875, KB5066876, KB5066877).",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows 10-Systeme hinsichtlich der Schwachstelle CVE-2025-59230.",
+     "Überprüfen Sie, ob die entsprechenden Sicherheitsupdates installiert sind."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T11:50:51Z",
+  "slugs": {
+   "ru": "microsoft-windows-povyshenie-privilegiy-v-remote-access",
+   "de": "microsoft-windows-rechtenausweitung-im-remote-access-connection",
+   "en": "microsoft-windows-elevation-of-privilege-in-remote-access"
+  },
+  "published_at": "2026-11-21T11:50:51Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

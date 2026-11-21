@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft SharePoint Server: Remote Code Execution Vulnerability (CVE-2025-53770)",
+  "summary": "Microsoft SharePoint Server suffers from a critical remote code execution vulnerability tracked as CVE-2025-53770, with vendor-reported exploitation.",
+  "impact": "An attacker can achieve remote code execution. Exploitation is reported by the vendor.",
+  "fix": "Apply the updates referenced by KB5002753, KB5002754, KB5002759, KB5002760, and KB5002768.",
+  "workaround": null,
+  "checks": [
+   "Check systems running Microsoft SharePoint Server for vulnerable versions.",
+   "Verify whether updates KB5002753, KB5002754, KB5002759, KB5002760, or KB5002768 are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft SharePoint Server: уязвимость удаленного выполнения кода (CVE-2025-53770)",
+  "summary": "В Microsoft SharePoint Server обнаружена критическая уязвимость удаленного выполнения кода CVE-2025-53770, эксплуатация которой подтверждена производителем.",
+  "impact": "Злоумышленник может выполнить удаленный код. Эксплуатация подтверждена производителем.",
+  "fix": "Установите обновления, указанные в KB5002753, KB5002754, KB5002759, KB5002760 и KB5002768.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы под управлением Microsoft SharePoint Server на наличие уязвимых версий.",
+   "Убедитесь, что применены обновления KB5002753, KB5002754, KB5002759, KB5002760 или KB5002768."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft SharePoint Server: Remotecodeausführungsschwachstelle (CVE-2025-53770)",
+  "summary": "Microsoft SharePoint Server weist eine kritische Schwachstelle zur Remotecodeausführung (CVE-2025-53770) auf, deren Ausnutzung vom Hersteller gemeldet wurde.",
+  "impact": "Ein Angreifer kann Remotecode ausführen. Die Ausnutzung wird vom Hersteller gemeldet.",
+  "fix": "Wenden Sie die Updates aus KB5002753, KB5002754, KB5002759, KB5002760 und KB5002768 an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme mit Microsoft SharePoint Server auf anfällige Versionen.",
+   "Überprüfen Sie, ob die Updates KB5002753, KB5002754, KB5002759, KB5002760 oder KB5002768 eingespielt wurden."
+  ],
+  "regression": null
+ }
+}

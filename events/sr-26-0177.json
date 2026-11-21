@@ -84,21 +84,62 @@
  "texts": {
   "msrc:CVE-2017-8589": "Windows Search Remote Code Execution Vulnerability\nMicrosoft Windows. Microsoft 2017-Jul security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "c6a4665585ae14639903d5d1",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Windows Search Remote Code Execution Vulnerability",
+    "summary": "A critical remote code execution vulnerability exists in Windows Search across various versions of Microsoft Windows.",
+    "impact": "An attacker can exploit this vulnerability to execute arbitrary code remotely.",
+    "fix": "Apply the updates provided by Microsoft in the July 2017 security update.",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft Windows systems for vulnerability assessment.",
+     "Verify if the July 2017 security update containing KB4025331, KB4025333, KB4025336, KB4025337, KB4025338, KB4025339, KB4025341, KB4025342, KB4025343, KB4025344, or KB4032955 is applied."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в Windows Search",
+    "summary": "В Windows Search на различных версиях Microsoft Windows обнаружена критическая уязвимость удаленного выполнения кода.",
+    "impact": "Злоумышленник может использовать данную уязвимость для удаленного выполнения произвольного кода.",
+    "fix": "Установите обновления, выпущенные Microsoft в рамках обновления безопасности за июль 2017 года.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Microsoft Windows для оценки уязвимости.",
+     "Проверьте, установлено ли обновление безопасности за июль 2017 года, включая KB4025331, KB4025333, KB4025336, KB4025337, KB4025338, KB4025339, KB4025341, KB4025342, KB4025343, KB4025344 или KB4032955."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in Windows Search",
+    "summary": "In Windows Search in verschiedenen Versionen von Microsoft Windows existiert eine kritische Remotecodeausführungsschwachstelle.",
+    "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um beliebigen Code aus der Ferne auszuführen.",
+    "fix": "Wenden Sie die von Microsoft im Sicherheitsupdate vom Juli 2017 bereitgestellten Updates an.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Microsoft Windows-Systeme zur Schwachstellenbewertung.",
+     "Überprüfen Sie, ob das Sicherheitsupdate vom Juli 2017 mit KB4025331, KB4025333, KB4025336, KB4025337, KB4025338, KB4025339, KB4025341, KB4025342, KB4025343, KB4025344 oder KB4032955 angewendet wurde."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T11:50:51Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v",
+   "de": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in",
+   "en": "microsoft-windows-windows-search-remote-code-execution"
+  },
+  "published_at": "2026-11-21T11:50:51Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

@@ -1,8 +1,8 @@
 {
  "id": "proxmox-announcements",
  "etag": null,
- "last_modified": "Sat, 21 Nov 2026 05:50:45 GMT",
- "checksum": "dda8b085955aa2a539929cf060ac21c3687cfd803b72897c6d01d08910f0134d",
+ "last_modified": "Sat, 21 Nov 2026 11:50:47 GMT",
+ "checksum": "7cd645e4b0ce567e6154cdbff54c0b7ac8ca5ddb7ac45f6d4aa2f0b9290ae993",
  "cursor": {},
  "seen": {
   "urn:xenforo:thread:186140": "e15656c4f24e1ceba8e142ce",
@@ -26,8 +26,8 @@
   "urn:xenforo:thread:165655": "c3796311d1a7ba9c6d6d4510",
   "urn:xenforo:thread:164868": "f9eb8853d4c612a52c188f74"
  },
- "last_attempt": "2026-11-21T05:50:41Z",
- "last_success": "2026-11-21T05:50:41Z",
+ "last_attempt": "2026-11-21T11:50:42Z",
+ "last_success": "2026-11-21T11:50:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

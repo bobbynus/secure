@@ -73,21 +73,59 @@
  "texts": {
   "msrc:CVE-2018-0986": "Microsoft Malware Protection Engine Remote Code Execution Vulnerability\nMicrosoft Malware Protection Engine. Microsoft 2018-Apr security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "e99b365ec4fa1d7838106fff",
+  "texts": {
+   "en": {
+    "title": "Microsoft Malware Protection Engine: Remote Code Execution (CVE-2018-0986)",
+    "summary": "A remote code execution vulnerability exists in the Microsoft Malware Protection Engine.",
+    "impact": "An attacker could execute arbitrary code.",
+    "fix": "The sources list no fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check systems for the presence of Microsoft Malware Protection Engine and CVE-2018-0986 exposure."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Malware Protection Engine: удаленное выполнение кода (CVE-2018-0986)",
+    "summary": "В Microsoft Malware Protection Engine обнаружена уязвимость удаленного выполнения кода.",
+    "impact": "Злоумышленник может выполнить произвольный код.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие Microsoft Malware Protection Engine и уязвимости CVE-2018-0986."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Malware Protection Engine: Remotecodeausführung (CVE-2018-0986)",
+    "summary": "Im Microsoft Malware Protection Engine existiert eine Schwachstelle zur Remotecodeausführung.",
+    "impact": "Ein Angreifer kann beliebigen Code ausführen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf das Vorhandensein von Microsoft Malware Protection Engine und CVE-2018-0986."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T11:50:51Z",
+  "slugs": {
+   "ru": "microsoft-malware-protection-engine-udalennoe-vypolnenie-koda",
+   "de": "microsoft-malware-protection-engine-remotecodeausfuehrung-cve",
+   "en": "microsoft-malware-protection-engine-remote-code-execution-cve"
+  },
+  "published_at": "2026-11-21T11:50:51Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

@@ -66,21 +66,62 @@
  "texts": {
   "msrc:CVE-2021-42321": "Microsoft Exchange Server Remote Code Execution Vulnerability\nMicrosoft Exchange Server. Microsoft 2021-Nov security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "035970f69411b7c47b629726",
+  "texts": {
+   "en": {
+    "title": "Microsoft Exchange Server: Remote Code Execution Vulnerability (CVE-2021-42321)",
+    "summary": "A remote code execution vulnerability affects Microsoft Exchange Server. Exploitation is reported by the vendor.",
+    "impact": "An attacker can achieve remote code execution. The vulnerability is reported as exploited.",
+    "fix": "Apply KB5007409 or follow Microsoft security update guidance.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft Exchange Server systems for installed updates.",
+     "Verify application of KB5007409."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Exchange Server: уязвимость удаленного выполнения кода (CVE-2021-42321)",
+    "summary": "В Microsoft Exchange Server обнаружена уязвимость удаленного выполнения кода. Производитель сообщает об эксплуатации.",
+    "impact": "Злоумышленник может выполнить удаленный код. Эксплуатация подтверждена производителем.",
+    "fix": "Установите KB5007409 или следуйте рекомендациям Microsoft по обновлениям безопасности.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Microsoft Exchange Server на наличие установленных обновлений.",
+     "Убедитесь в применении KB5007409."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Exchange Server: Schwachstelle zur Remote-Code-Ausführung (CVE-2021-42321)",
+    "summary": "Eine Schwachstelle zur Remote-Code-Ausführung betrifft Microsoft Exchange Server. Der Hersteller meldet eine Ausnutzung.",
+    "impact": "Ein Angreifer kann Remote-Code-Ausführung erreichen. Die Ausnutzung wird vom Hersteller gemeldet.",
+    "fix": "Wenden Sie KB5007409 an oder befolgen Sie die Sicherheitsupdate-Empfehlungen von Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft Exchange Server-Systeme auf installierte Updates.",
+     "Überprüfen Sie die Anwendung von KB5007409."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T11:50:51Z",
+  "slugs": {
+   "ru": "microsoft-exchange-server-uyazvimost-udalennogo-vypolneniya",
+   "de": "microsoft-exchange-server-schwachstelle-zur-remote-code",
+   "en": "microsoft-exchange-server-remote-code-execution-vulnerability"
+  },
+  "published_at": "2026-11-21T11:50:51Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

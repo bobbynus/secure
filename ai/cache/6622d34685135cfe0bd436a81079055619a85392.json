@@ -1,0 +1,43 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Malware Protection Engine",
+   "versions": "unspecified",
+   "fixed": null,
+   "evidence": "Microsoft Malware Protection Engine Remote Code Execution Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Malware Protection Engine: Remote Code Execution Vulnerability",
+  "summary": "A remote code execution vulnerability exists in the Microsoft Malware Protection Engine (CVE-2017-8558).",
+  "impact": "Allows remote code execution.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check systems for the presence of Microsoft Malware Protection Engine and affected Windows versions."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Malware Protection Engine: уязвимость удаленного выполнения кода",
+  "summary": "В Microsoft Malware Protection Engine обнаружена уязвимость удаленного выполнения кода (CVE-2017-8558).",
+  "impact": "Позволяет удаленное выполнение кода.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие Microsoft Malware Protection Engine и затронутых версий Windows."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Malware Protection Engine: Schwachstelle zur Remote-Code-Ausführung",
+  "summary": "Im Microsoft Malware Protection Engine existiert eine Schwachstelle zur Remote-Code-Ausführung (CVE-2017-8558).",
+  "impact": "Ermöglicht die Remote-Code-Ausführung.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf das Vorhandensein von Microsoft Malware Protection Engine und betroffener Windows-Versionen."
+  ],
+  "regression": null
+ }
+}
