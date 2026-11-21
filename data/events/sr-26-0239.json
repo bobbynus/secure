@@ -1,0 +1,104 @@
+{
+  "id": "sr-26-0239",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "exchange-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-27065"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5000871"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T11:20:43Z",
+    "updated": "2026-11-21T11:20:43Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-27065",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T11:20:43Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T11:20:43Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-uyazvimost-udalennogo-vypolneniya",
+      "title": "Microsoft Exchange Server: уязвимость удаленного выполнения кода (CVE-2021-27065)",
+      "summary": "В Microsoft Exchange Server обнаружена уязвимость удаленного выполнения кода CVE-2021-27065, эксплуатация которой подтверждена производителем.",
+      "impact": "Уязвимость позволяет выполнять произвольный код удаленно. Производитель сообщает об эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите мартовское обновление безопасности Microsoft 2021 года (`KB5000871`).",
+      "checks": [
+        "Проверьте системы Microsoft Exchange Server на наличие установленного обновления `KB5000871`."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-schwachstelle-zur-remote-code",
+      "title": "Microsoft Exchange Server: Schwachstelle zur Remote-Code-Ausführung (CVE-2021-27065)",
+      "summary": "In Microsoft Exchange Server existiert eine Schwachstelle zur Remote-Code-Ausführung (CVE-2021-27065), deren Ausnutzung vom Hersteller gemeldet wurde.",
+      "impact": "Die Schwachstelle ermöglicht die Remote-Code-Ausführung. Der Hersteller meldet eine Ausnutzung.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Installieren Sie das Microsoft-Sicherheitsupdate vom März 2021 (`KB5000871`).",
+      "checks": [
+        "Überprüfen Sie Microsoft Exchange Server-Systeme auf den Installationsstatus von `KB5000871`."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-remote-code-execution-vulnerability",
+      "title": "Microsoft Exchange Server: Remote Code Execution Vulnerability (CVE-2021-27065)",
+      "summary": "A remote code execution vulnerability exists in Microsoft Exchange Server tracked as CVE-2021-27065, with exploitation reported by the vendor.",
+      "impact": "The vulnerability allows for remote code execution. Vendor reports exploitation.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the Microsoft 2021-Mar security update (`KB5000871`).",
+      "checks": [
+        "Check Microsoft Exchange Server systems for `KB5000871` installation status."
+      ]
+    }
+  }
+}

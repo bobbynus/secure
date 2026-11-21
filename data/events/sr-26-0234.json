@@ -1,0 +1,108 @@
+{
+  "id": "sr-26-0234",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "exchange-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-26857"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5000871",
+      "KB5000978"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T11:20:43Z",
+    "updated": "2026-11-21T11:20:43Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26857",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T11:20:43Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T11:20:43Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-uyazvimost-udalennogo-vypolneniya",
+      "title": "Microsoft Exchange Server: уязвимость удаленного выполнения кода (CVE-2021-26857)",
+      "summary": "В Microsoft Exchange Server обнаружена уязвимость удаленного выполнения кода. Поставщик сообщает об эксплуатации.",
+      "impact": "Злоумышленники могут выполнить произвольный код удаленно. Эксплуатация подтверждена поставщиком.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите мартовское обновление безопасности Microsoft 2021 г. (KB5000871, KB5000978).",
+      "checks": [
+        "Проведите инвентаризацию серверов Microsoft Exchange Server для определения уязвимых версий.",
+        "Проверьте, установлено ли мартовское обновление безопасности Microsoft 2021 г. (KB5000871, KB5000978)."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-remotecodeausfuehrung-cve-2021-26857",
+      "title": "Microsoft Exchange Server: Remotecodeausführung (CVE-2021-26857)",
+      "summary": "In Microsoft Exchange Server existiert eine Schwachstelle zur Remotecodeausführung. Der Hersteller meldet die Ausnutzung.",
+      "impact": "Angreifer können Remotecode ausführen. Die Ausnutzung wurde vom Hersteller gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Installieren Sie das Microsoft Sicherheitsupdate von März 2021 (KB5000871, KB5000978).",
+      "checks": [
+        "Inventarisieren Sie Microsoft Exchange Server-Instanzen, um betroffene Versionen zu identifizieren.",
+        "Überprüfen Sie, ob das Microsoft Sicherheitsupdate von März 2021 (KB5000871, KB5000978) eingespielt wurde."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-remote-code-execution-vulnerability",
+      "title": "Microsoft Exchange Server: Remote Code Execution Vulnerability (CVE-2021-26857)",
+      "summary": "A remote code execution vulnerability exists in Microsoft Exchange Server. Vendor reports exploitation.",
+      "impact": "Attackers can achieve remote code execution. Exploitation is reported by the vendor.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the Microsoft 2021-Mar security update (KB5000871, KB5000978).",
+      "checks": [
+        "Inventory Microsoft Exchange Server instances to identify vulnerable versions.",
+        "Verify whether the Microsoft 2021-Mar security update (KB5000871, KB5000978) has been applied."
+      ]
+    }
+  }
+}

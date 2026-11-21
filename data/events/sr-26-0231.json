@@ -1,0 +1,116 @@
+{
+  "id": "sr-26-0231",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-33742"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5003635",
+      "KB5003636",
+      "KB5003637",
+      "KB5003638",
+      "KB5003646",
+      "KB5003661",
+      "KB5003667",
+      "KB5003671",
+      "KB5003687",
+      "KB5003697"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.5,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T11:20:43Z",
+    "updated": "2026-11-21T11:20:43Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows MSHTML Platform Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-33742",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T11:20:43Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T11:20:43Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-rce-v-platforme-mshtml-cve-2021",
+      "title": "Microsoft Windows: уязвимость RCE в платформе MSHTML (CVE-2021-33742)",
+      "summary": "Microsoft Windows содержит уязвимость удаленного выполнения кода в платформе MSHTML, получившую идентификатор CVE-2021-33742. Производитель сообщает об эксплуатации.",
+      "impact": "Злоумышленник может добиться удаленного выполнения кода. Эксплуатация подтверждена производителем.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft (включая KB5003635, KB5003636, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003687, KB5003697).",
+      "checks": [
+        "Проведите инвентаризацию систем Windows 10, подверженных CVE-2021-33742.",
+        "Проверьте наличие установленных обновлений безопасности, включая KB5003635, KB5003636, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003687 или KB5003697."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-rce-schwachstelle-in-der-mshtml-plattform-cve",
+      "title": "Microsoft Windows: RCE-Schwachstelle in der MSHTML-Plattform (CVE-2021-33742)",
+      "summary": "Microsoft Windows enthält eine Remotecodeausführungs-Schwachstelle in der MSHTML-Plattform, geführt als CVE-2021-33742. Der Hersteller berichtet über eine Ausnutzung.",
+      "impact": "Ein Angreifer kann Remotecode ausführen. Eine Ausnutzung wird vom Hersteller gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5003635, KB5003636, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003687, KB5003697).",
+      "checks": [
+        "Inventarisieren Sie Windows 10-Systeme, die von CVE-2021-33742 betroffen sind.",
+        "Überprüfen Sie, ob Sicherheitsupdates wie KB5003635, KB5003636, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003687 oder KB5003697 eingespielt wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2021-33742-mshtml-platform-rce",
+      "title": "Microsoft Windows: CVE-2021-33742 MSHTML Platform RCE",
+      "summary": "Microsoft Windows contains a remote code execution vulnerability in the MSHTML Platform, tracked as CVE-2021-33742. Vendor reports exploitation.",
+      "impact": "An attacker can achieve remote code execution. Exploitation is reported by the vendor.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft (including KB5003635, KB5003636, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003687, KB5003697).",
+      "checks": [
+        "Inventory Windows 10 systems and versions affected by CVE-2021-33742.",
+        "Verify whether security updates including KB5003635, KB5003636, KB5003637, KB5003638, KB5003646, KB5003661, KB5003667, KB5003671, KB5003687, or KB5003697 are applied."
+      ]
+    }
+  }
+}

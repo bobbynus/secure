@@ -1,0 +1,117 @@
+{
+  "id": "sr-26-0240",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-26411"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5000800",
+      "KB5000802",
+      "KB5000803",
+      "KB5000807",
+      "KB5000808",
+      "KB5000809",
+      "KB5000822",
+      "KB5000841",
+      "KB5000844",
+      "KB5000847",
+      "KB5000848"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T11:20:43Z",
+    "updated": "2026-11-21T11:20:43Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Internet Explorer Memory Corruption Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26411",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T11:20:43Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T11:20:43Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-internet-explorer-uyazvimost-povrezhdeniya-pamyati",
+      "title": "Microsoft Internet Explorer: уязвимость повреждения памяти (CVE-2021-26411)",
+      "summary": "В Microsoft Internet Explorer обнаружена уязвимость повреждения памяти, которая активно эксплуатируется.",
+      "impact": "Уязвимость позволяет злоумышленникам вызвать повреждение памяти, потенциально приводящее к выполнению произвольного кода.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите соответствующие обновления безопасности, предоставленные Microsoft (такие как KB5000800, KB5000802, KB5000803, KB5000807, KB5000808, KB5000809, KB5000822, KB5000841, KB5000844, KB5000847, KB5000848).",
+      "checks": [
+        "Проверьте системы на наличие установленных подверженных уязвимости версий Windows и Internet Explorer.",
+        "Убедитесь, что последние обновления безопасности от Microsoft успешно применены."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-internet-explorer-speicherbeschaedigungsschwachstelle",
+      "title": "Microsoft Internet Explorer: Speicherbeschädigungsschwachstelle (CVE-2021-26411)",
+      "summary": "In Microsoft Internet Explorer existiert eine Speicherbeschädigungsschwachstelle, die aktiv ausgenutzt wird.",
+      "impact": "Die Schwachstelle ermöglicht es Angreifern, eine Speicherbeschädigung zu verursachen, was möglicherweise zur Ausführung von beliebigem Code führt.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die entsprechenden von Microsoft bereitgestellten Sicherheitsupdates an (wie KB5000800, KB5000802, KB5000803, KB5000807, KB5000808, KB5000809, KB5000822, KB5000841, KB5000844, KB5000847, KB5000848).",
+      "checks": [
+        "Überprüfen Sie Systeme auf die Installation betroffener Windows- und Internet Explorer-Versionen.",
+        "Verifizieren Sie, dass die neuesten Microsoft-Sicherheitsupdates erfolgreich angewendet wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-internet-explorer-memory-corruption-vulnerability-cve",
+      "title": "Microsoft Internet Explorer: memory corruption vulnerability (CVE-2021-26411)",
+      "summary": "A memory corruption vulnerability exists in Microsoft Internet Explorer, which is actively exploited in the wild.",
+      "impact": "The vulnerability allows attackers to cause memory corruption, potentially leading to arbitrary code execution.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the corresponding security updates provided by Microsoft (such as KB5000800, KB5000802, KB5000803, KB5000807, KB5000808, KB5000809, KB5000822, KB5000841, KB5000844, KB5000847, KB5000848).",
+      "checks": [
+        "Check systems for the installation of affected Windows and Internet Explorer versions.",
+        "Verify that the latest Microsoft security updates have been successfully applied."
+      ]
+    }
+  }
+}
