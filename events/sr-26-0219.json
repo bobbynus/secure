@@ -1,0 +1,85 @@
+{
+ "id": "sr-26-0219",
+ "category": "vulnerability",
+ "priority": "critical",
+ "confirmation": "vendor",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Microsoft",
+ "products": [],
+ "product_names": [
+  "Azure Application Insights Java SDK",
+  "Azure Arc-enabled Data Services",
+  "Azure Data Lake Store Java client SDK",
+  "Azure Data Lake Store Java tool",
+  "Azure Databricks",
+  "Azure DevOps",
+  "Azure DevOps Server",
+  "Azure Spring Cloud",
+  "Azure VMware Solution",
+  "Cosmos DB Kafka Connector",
+  "Events Hub Extension",
+  "Microsoft Defender for IoT"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2021-44228"
+  ],
+  "advisory": [],
+  "kb": []
+ },
+ "severity": "critical",
+ "cvss": null,
+ "exploited": true,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Apache Log4j Remote Code Execution Vulnerability",
+ "summary_hint": "Apache Log4j2. Publicly disclosed. Microsoft 2021-Dec security update.",
+ "created_at": "2026-11-21T08:50:41Z",
+ "updated_at": "2026-11-21T08:50:41Z",
+ "event_date": "2026-11-21T08:50:41Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2021-44228",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-44228",
+   "title": "Apache Log4j Remote Code Execution Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-21"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-21T08:50:41Z",
+   "kind": "created",
+   "facts": {
+    "reason": "vendor reports exploitation"
+   },
+   "source": "msrc:CVE-2021-44228"
+  }
+ ],
+ "related": [],
+ "reason": "vendor reports exploitation",
+ "texts": {
+  "msrc:CVE-2021-44228": "Apache Log4j Remote Code Execution Vulnerability\nApache Log4j2. Publicly disclosed. Microsoft 2021-Dec security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

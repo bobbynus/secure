@@ -1,0 +1,111 @@
+{
+ "id": "sr-26-0301",
+ "category": "vulnerability",
+ "priority": "critical",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "windows-10"
+ ],
+ "product_names": [
+  "Windows 10 Version 1607 for 32-bit Systems",
+  "Windows 10 Version 1607 for x64-based Systems",
+  "Windows 10 Version 1809 for 32-bit Systems",
+  "Windows 10 Version 1809 for x64-based Systems",
+  "Windows 10 Version 21H2 for 32-bit Systems",
+  "Windows 10 Version 21H2 for ARM64-based Systems",
+  "Windows 10 Version 21H2 for x64-based Systems",
+  "Windows 10 Version 22H2 for 32-bit Systems",
+  "Windows 10 Version 22H2 for ARM64-based Systems",
+  "Windows 10 Version 22H2 for x64-based Systems",
+  "Windows 10 for 32-bit Systems",
+  "Windows 10 for x64-based Systems"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2025-59230"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5066586",
+   "KB5066780",
+   "KB5066782",
+   "KB5066791",
+   "KB5066793",
+   "KB5066835",
+   "KB5066836",
+   "KB5066837",
+   "KB5066872",
+   "KB5066873",
+   "KB5066874",
+   "KB5066875",
+   "KB5066876",
+   "KB5066877"
+  ]
+ },
+ "severity": "high",
+ "cvss": {
+  "score": 7.8,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": true,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Windows Remote Access Connection Manager Elevation of Privilege Vulnerability",
+ "summary_hint": "Windows Remote Access Connection Manager. Microsoft 2025-Oct security update.",
+ "created_at": "2026-11-21T08:50:41Z",
+ "updated_at": "2026-11-21T08:50:41Z",
+ "event_date": "2026-11-21T08:50:41Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2025-59230",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59230",
+   "title": "Windows Remote Access Connection Manager Elevation of Privilege Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-21"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-21T08:50:41Z",
+   "kind": "created",
+   "facts": {
+    "reason": "vendor reports exploitation"
+   },
+   "source": "msrc:CVE-2025-59230"
+  }
+ ],
+ "related": [
+  "sr-26-0298",
+  "sr-26-0299",
+  "sr-26-0300"
+ ],
+ "reason": "vendor reports exploitation",
+ "texts": {
+  "msrc:CVE-2025-59230": "Windows Remote Access Connection Manager Elevation of Privilege Vulnerability\nWindows Remote Access Connection Manager. Microsoft 2025-Oct security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

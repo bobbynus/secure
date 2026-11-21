@@ -1,0 +1,92 @@
+{
+ "id": "sr-26-0266",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [],
+ "product_names": [
+  "Microsoft 365 Apps for Enterprise for 32-bit Systems",
+  "Microsoft 365 Apps for Enterprise for 64-bit Systems",
+  "Microsoft Office 2019 for 32-bit editions",
+  "Microsoft Office 2019 for 64-bit editions",
+  "Microsoft Office LTSC 2021 for 32-bit editions",
+  "Microsoft Office LTSC 2021 for 64-bit editions",
+  "Microsoft Outlook 2013 (32-bit editions)",
+  "Microsoft Outlook 2013 (64-bit editions)",
+  "Microsoft Outlook 2013 RT Service Pack 1",
+  "Microsoft Outlook 2016 (32-bit edition)",
+  "Microsoft Outlook 2016 (64-bit edition)"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2023-35311"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5002427",
+   "KB5002432"
+  ]
+ },
+ "severity": "high",
+ "cvss": {
+  "score": 8.8,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": true,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Microsoft Outlook Security Feature Bypass Vulnerability",
+ "summary_hint": "Microsoft Office Outlook. Microsoft 2023-Jul security update.",
+ "created_at": "2026-11-21T08:50:41Z",
+ "updated_at": "2026-11-21T08:50:41Z",
+ "event_date": "2026-11-21T08:50:41Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2023-35311",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-35311",
+   "title": "Microsoft Outlook Security Feature Bypass Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-21"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-21T08:50:41Z",
+   "kind": "created",
+   "facts": {
+    "reason": "vendor reports exploitation"
+   },
+   "source": "msrc:CVE-2023-35311"
+  }
+ ],
+ "related": [],
+ "reason": "vendor reports exploitation",
+ "texts": {
+  "msrc:CVE-2023-35311": "Microsoft Outlook Security Feature Bypass Vulnerability\nMicrosoft Office Outlook. Microsoft 2023-Jul security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

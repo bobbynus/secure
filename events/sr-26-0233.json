@@ -1,0 +1,96 @@
+{
+ "id": "sr-26-0233",
+ "category": "vulnerability",
+ "priority": "critical",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "exchange-server"
+ ],
+ "product_names": [
+  "Microsoft Exchange Server 2013 Cumulative Update 21",
+  "Microsoft Exchange Server 2013 Cumulative Update 22",
+  "Microsoft Exchange Server 2013 Cumulative Update 23",
+  "Microsoft Exchange Server 2016 Cumulative Update 10",
+  "Microsoft Exchange Server 2016 Cumulative Update 11",
+  "Microsoft Exchange Server 2016 Cumulative Update 12",
+  "Microsoft Exchange Server 2016 Cumulative Update 13",
+  "Microsoft Exchange Server 2016 Cumulative Update 14",
+  "Microsoft Exchange Server 2016 Cumulative Update 15",
+  "Microsoft Exchange Server 2016 Cumulative Update 16",
+  "Microsoft Exchange Server 2016 Cumulative Update 17",
+  "Microsoft Exchange Server 2016 Cumulative Update 18"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2021-26855"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5000871"
+  ]
+ },
+ "severity": "critical",
+ "cvss": {
+  "score": 9.1,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": true,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+ "summary_hint": "Microsoft Exchange Server. Microsoft 2021-Mar security update.",
+ "created_at": "2026-11-21T08:50:41Z",
+ "updated_at": "2026-11-21T08:50:41Z",
+ "event_date": "2026-11-21T08:50:41Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2021-26855",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26855",
+   "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-21"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-21T08:50:41Z",
+   "kind": "created",
+   "facts": {
+    "reason": "vendor reports exploitation"
+   },
+   "source": "msrc:CVE-2021-26855"
+  }
+ ],
+ "related": [
+  "sr-26-0232"
+ ],
+ "reason": "vendor reports exploitation",
+ "texts": {
+  "msrc:CVE-2021-26855": "Microsoft Exchange Server Remote Code Execution Vulnerability\nMicrosoft Exchange Server. Microsoft 2021-Mar security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

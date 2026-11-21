@@ -1,0 +1,110 @@
+{
+ "id": "sr-26-0208",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "windows-10",
+  "windows-server"
+ ],
+ "product_names": [
+  ".NET Core 3.0",
+  ".NET Core 3.1",
+  "Microsoft .NET Framework 3.0 Service Pack 2 on Windows Server 2008 for 32-bit Systems Service Pack 2",
+  "Microsoft .NET Framework 3.0 Service Pack 2 on Windows Server 2008 for Itanium-Based Systems Service Pack 2",
+  "Microsoft .NET Framework 3.0 Service Pack 2 on Windows Server 2008 for x64-based Systems Service Pack 2",
+  "Microsoft .NET Framework 3.5 AND 4.6.2/4.7/4.7.1/4.7.2 on Windows 10 Version 1607 for 32-bit Systems",
+  "Microsoft .NET Framework 3.5 AND 4.6.2/4.7/4.7.1/4.7.2 on Windows 10 Version 1607 for x64-based Systems",
+  "Microsoft .NET Framework 3.5 AND 4.6.2/4.7/4.7.1/4.7.2 on Windows Server 2016",
+  "Microsoft .NET Framework 3.5 AND 4.6.2/4.7/4.7.1/4.7.2 on Windows Server 2016  (Server Core installation)",
+  "Microsoft .NET Framework 3.5 AND 4.6/4.6.1/4.6.2 on Windows 10 for 32-bit Systems",
+  "Microsoft .NET Framework 3.5 AND 4.6/4.6.1/4.6.2 on Windows 10 for x64-based Systems",
+  "Microsoft .NET Framework 3.5 AND 4.7.1/4.7.2 on Windows 10 Version 1709 for 32-bit Systems"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2020-0606"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB4532933",
+   "KB4532935",
+   "KB4532936",
+   "KB4532938",
+   "KB4534271",
+   "KB4534276",
+   "KB4534293",
+   "KB4534306",
+   "KB4534976",
+   "KB4534977",
+   "KB4534978",
+   "KB4534979",
+   "KB4535101",
+   "KB4535102",
+   "KB4535103",
+   "KB4535104",
+   "KB4535105"
+  ]
+ },
+ "severity": "critical",
+ "cvss": null,
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": ".NET Framework Remote Code Execution Vulnerability",
+ "summary_hint": ".NET Framework. Microsoft 2020-Jan security update.",
+ "created_at": "2026-11-21T08:50:41Z",
+ "updated_at": "2026-11-21T08:50:41Z",
+ "event_date": "2026-11-21T08:50:41Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2020-0606",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-0606",
+   "title": ".NET Framework Remote Code Execution Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-21"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-21T08:50:41Z",
+   "kind": "created",
+   "facts": {
+    "reason": "critical severity in infrastructure product"
+   },
+   "source": "msrc:CVE-2020-0606"
+  }
+ ],
+ "related": [
+  "sr-26-0205",
+  "sr-26-0206",
+  "sr-26-0207"
+ ],
+ "reason": "critical severity in infrastructure product",
+ "texts": {
+  "msrc:CVE-2020-0606": ".NET Framework Remote Code Execution Vulnerability\n.NET Framework. Microsoft 2020-Jan security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

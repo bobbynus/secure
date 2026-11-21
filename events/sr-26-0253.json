@@ -1,0 +1,110 @@
+{
+ "id": "sr-26-0253",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "windows-10"
+ ],
+ "product_names": [
+  "Windows 10 Version 1607 for 32-bit Systems",
+  "Windows 10 Version 1607 for x64-based Systems",
+  "Windows 10 Version 1809 for 32-bit Systems",
+  "Windows 10 Version 1809 for ARM64-based Systems",
+  "Windows 10 Version 1809 for x64-based Systems",
+  "Windows 10 Version 20H2 for 32-bit Systems",
+  "Windows 10 Version 20H2 for ARM64-based Systems",
+  "Windows 10 Version 21H1 for 32-bit Systems",
+  "Windows 10 Version 21H1 for ARM64-based Systems",
+  "Windows 10 Version 21H1 for x64-based Systems",
+  "Windows 10 Version 21H2 for 32-bit Systems",
+  "Windows 10 Version 21H2 for ARM64-based Systems"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2022-41033"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5018410",
+   "KB5018411",
+   "KB5018418",
+   "KB5018419",
+   "KB5018421",
+   "KB5018425",
+   "KB5018427",
+   "KB5018446",
+   "KB5018450",
+   "KB5018454",
+   "KB5018457",
+   "KB5018474",
+   "KB5018476",
+   "KB5018478",
+   "KB5018479"
+  ]
+ },
+ "severity": "high",
+ "cvss": {
+  "score": 7.8,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": true,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Windows COM+ Event System Service Elevation of Privilege Vulnerability",
+ "summary_hint": "Windows COM+ Event System Service. Microsoft 2022-Oct security update.",
+ "created_at": "2026-11-21T08:50:41Z",
+ "updated_at": "2026-11-21T08:50:41Z",
+ "event_date": "2026-11-21T08:50:41Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2022-41033",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-41033",
+   "title": "Windows COM+ Event System Service Elevation of Privilege Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-21"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-21T08:50:41Z",
+   "kind": "created",
+   "facts": {
+    "reason": "vendor reports exploitation"
+   },
+   "source": "msrc:CVE-2022-41033"
+  }
+ ],
+ "related": [
+  "sr-26-0225"
+ ],
+ "reason": "vendor reports exploitation",
+ "texts": {
+  "msrc:CVE-2022-41033": "Windows COM+ Event System Service Elevation of Privilege Vulnerability\nWindows COM+ Event System Service. Microsoft 2022-Oct security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

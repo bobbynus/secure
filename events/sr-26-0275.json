@@ -1,0 +1,112 @@
+{
+ "id": "sr-26-0275",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "windows-10"
+ ],
+ "product_names": [
+  "Windows 10 Version 1607 for 32-bit Systems",
+  "Windows 10 Version 1607 for x64-based Systems",
+  "Windows 10 Version 1809 for 32-bit Systems",
+  "Windows 10 Version 1809 for ARM64-based Systems",
+  "Windows 10 Version 1809 for x64-based Systems",
+  "Windows 10 Version 20H2 for 32-bit Systems",
+  "Windows 10 Version 20H2 for ARM64-based Systems",
+  "Windows 10 Version 21H2 for 32-bit Systems",
+  "Windows 10 Version 21H2 for ARM64-based Systems",
+  "Windows 10 Version 21H2 for x64-based Systems",
+  "Windows 10 Version 22H2 for 32-bit Systems",
+  "Windows 10 Version 22H2 for ARM64-based Systems"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2023-24932"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5026361",
+   "KB5040430",
+   "KB5040431",
+   "KB5062552",
+   "KB5062553",
+   "KB5062554",
+   "KB5062557",
+   "KB5062560",
+   "KB5062561",
+   "KB5062570",
+   "KB5062572",
+   "KB5062592",
+   "KB5062597",
+   "KB5062618",
+   "KB5062619",
+   "KB5062624",
+   "KB5062632"
+  ]
+ },
+ "severity": "high",
+ "cvss": {
+  "score": 6.7,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": true,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Secure Boot Security Feature Bypass Vulnerability",
+ "summary_hint": "Windows Secure Boot. Publicly disclosed. Microsoft 2023-May security update.",
+ "created_at": "2026-11-21T08:50:41Z",
+ "updated_at": "2026-11-21T08:50:41Z",
+ "event_date": "2026-11-21T08:50:41Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2023-24932",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932",
+   "title": "Secure Boot Security Feature Bypass Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-21"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-21T08:50:41Z",
+   "kind": "created",
+   "facts": {
+    "reason": "vendor reports exploitation"
+   },
+   "source": "msrc:CVE-2023-24932"
+  }
+ ],
+ "related": [
+  "sr-26-0273"
+ ],
+ "reason": "vendor reports exploitation",
+ "texts": {
+  "msrc:CVE-2023-24932": "Secure Boot Security Feature Bypass Vulnerability\nWindows Secure Boot. Publicly disclosed. Microsoft 2023-May security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

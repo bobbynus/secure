@@ -1,0 +1,108 @@
+{
+ "id": "sr-26-0276",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "windows-10"
+ ],
+ "product_names": [
+  "Windows 10 Version 1607 for 32-bit Systems",
+  "Windows 10 Version 1607 for x64-based Systems",
+  "Windows 10 Version 1809 for 32-bit Systems",
+  "Windows 10 Version 1809 for ARM64-based Systems",
+  "Windows 10 Version 1809 for x64-based Systems",
+  "Windows 10 Version 21H2 for 32-bit Systems",
+  "Windows 10 Version 21H2 for ARM64-based Systems",
+  "Windows 10 Version 21H2 for x64-based Systems",
+  "Windows 10 Version 22H2 for 32-bit Systems",
+  "Windows 10 Version 22H2 for ARM64-based Systems",
+  "Windows 10 Version 22H2 for x64-based Systems",
+  "Windows 10 for 32-bit Systems"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2023-35349"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5031354",
+   "KB5031356",
+   "KB5031358",
+   "KB5031361",
+   "KB5031362",
+   "KB5031364",
+   "KB5031377",
+   "KB5031407",
+   "KB5031408",
+   "KB5031411",
+   "KB5031416",
+   "KB5031419",
+   "KB5031427",
+   "KB5031441",
+   "KB5031442"
+  ]
+ },
+ "severity": "critical",
+ "cvss": {
+  "score": 9.8,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Microsoft Message Queuing (MSMQ) Remote Code Execution Vulnerability",
+ "summary_hint": "Windows Message Queuing. Microsoft 2023-Oct security update.",
+ "created_at": "2026-11-21T08:50:41Z",
+ "updated_at": "2026-11-21T08:50:41Z",
+ "event_date": "2026-11-21T08:50:41Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2023-35349",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-35349",
+   "title": "Microsoft Message Queuing (MSMQ) Remote Code Execution Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-21"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-21T08:50:41Z",
+   "kind": "created",
+   "facts": {
+    "reason": "critical severity in infrastructure product"
+   },
+   "source": "msrc:CVE-2023-35349"
+  }
+ ],
+ "related": [],
+ "reason": "critical severity in infrastructure product",
+ "texts": {
+  "msrc:CVE-2023-35349": "Microsoft Message Queuing (MSMQ) Remote Code Execution Vulnerability\nWindows Message Queuing. Microsoft 2023-Oct security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "id": "sr-26-0268",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "sharepoint-server"
+ ],
+ "product_names": [
+  "Microsoft SharePoint Server 2019"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2023-29357"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5002402",
+   "KB5002403"
+  ]
+ },
+ "severity": "critical",
+ "cvss": {
+  "score": 9.8,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Microsoft SharePoint Server Elevation of Privilege Vulnerability",
+ "summary_hint": "Microsoft Office SharePoint. Microsoft 2023-Jun security update.",
+ "created_at": "2026-11-21T08:50:41Z",
+ "updated_at": "2026-11-21T08:50:41Z",
+ "event_date": "2026-11-21T08:50:41Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2023-29357",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29357",
+   "title": "Microsoft SharePoint Server Elevation of Privilege Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-21"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-21T08:50:41Z",
+   "kind": "created",
+   "facts": {
+    "reason": "critical severity in infrastructure product"
+   },
+   "source": "msrc:CVE-2023-29357"
+  }
+ ],
+ "related": [],
+ "reason": "critical severity in infrastructure product",
+ "texts": {
+  "msrc:CVE-2023-29357": "Microsoft SharePoint Server Elevation of Privilege Vulnerability\nMicrosoft Office SharePoint. Microsoft 2023-Jun security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

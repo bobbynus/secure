@@ -1,0 +1,99 @@
+{
+ "id": "sr-26-0279",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "windows-10"
+ ],
+ "product_names": [
+  ".NET 6.0",
+  ".NET 7.0",
+  "ASP.NET Core 6.0",
+  "ASP.NET Core 7.0",
+  "Microsoft Visual Studio 2022 version 17.2",
+  "Microsoft Visual Studio 2022 version 17.4",
+  "Microsoft Visual Studio 2022 version 17.6",
+  "Microsoft Visual Studio 2022 version 17.7",
+  "Windows 10 Version 1607 for 32-bit Systems",
+  "Windows 10 Version 1607 for x64-based Systems",
+  "Windows 10 Version 1809 for 32-bit Systems",
+  "Windows 10 Version 1809 for ARM64-based Systems"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2023-44487"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5031354",
+   "KB5031356",
+   "KB5031358",
+   "KB5031361",
+   "KB5031362",
+   "KB5031364",
+   "KB5032874",
+   "KB5032875"
+  ]
+ },
+ "severity": "high",
+ "cvss": null,
+ "exploited": true,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "MITRE: CVE-2023-44487 HTTP/2 Rapid Reset Attack",
+ "summary_hint": "HTTP/2. Microsoft 2023-Oct security update.",
+ "created_at": "2026-11-21T08:50:41Z",
+ "updated_at": "2026-11-21T08:50:41Z",
+ "event_date": "2026-11-21T08:50:41Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2023-44487",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-44487",
+   "title": "MITRE: CVE-2023-44487 HTTP/2 Rapid Reset Attack",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-21"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-21T08:50:41Z",
+   "kind": "created",
+   "facts": {
+    "reason": "vendor reports exploitation"
+   },
+   "source": "msrc:CVE-2023-44487"
+  }
+ ],
+ "related": [
+  "sr-26-0276",
+  "sr-26-0278"
+ ],
+ "reason": "vendor reports exploitation",
+ "texts": {
+  "msrc:CVE-2023-44487": "MITRE: CVE-2023-44487 HTTP/2 Rapid Reset Attack\nHTTP/2. Microsoft 2023-Oct security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}
