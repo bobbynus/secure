@@ -1,0 +1,108 @@
+{
+  "id": "sr-26-0244",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-42292"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4486670",
+      "KB5002035",
+      "KB5002056",
+      "KB5002072"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T19:30:48Z",
+    "updated": "2026-11-21T19:30:48Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Excel Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42292",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T19:30:48Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T19:30:48Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-excel-uyazvimost-obkhoda-funktsii-bezopasnosti-cve",
+      "title": "Microsoft Excel: уязвимость обхода функции безопасности (CVE-2021-42292)",
+      "summary": "В Microsoft Excel обнаружена уязвимость обхода функции безопасности. Производитель сообщает об эксплуатации.",
+      "impact": "Позволяет злоумышленнику обойти функции безопасности. Производитель сообщает об эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, упомянутые в KB4486670, KB5002035, KB5002056 или KB5002072.",
+      "checks": [
+        "Проведите инвентаризацию установок Microsoft Excel и Microsoft Office.",
+        "Проверьте системы на наличие обновлений безопасности, связанных с KB4486670, KB5002035, KB5002056 и KB5002072."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-excel-schwachstelle-durch-umgehen-von",
+      "title": "Microsoft Excel: Schwachstelle durch Umgehen von Sicherheitsfunktionen (CVE-2021-42292)",
+      "summary": "In Microsoft Excel existiert eine Schwachstelle zum Umgehen von Sicherheitsfunktionen. Der Hersteller meldet Ausnutzung.",
+      "impact": "Ermöglicht es einem Angreifer, Sicherheitsfunktionen zu umgehen. Eine Ausnutzung wird vom Hersteller gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die Updates an, auf die in KB4486670, KB5002035, KB5002056 oder KB5002072 verwiesen wird.",
+      "checks": [
+        "Inventarisieren Sie Microsoft Excel- und Microsoft Office-Installationen.",
+        "Überprüfen Sie Systeme auf das Vorhandensein von Sicherheitsupdates im Zusammenhang mit KB4486670, KB5002035, KB5002056 und KB5002072."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-excel-security-feature-bypass-vulnerability-cve-2021",
+      "title": "Microsoft Excel: security feature bypass vulnerability (CVE-2021-42292)",
+      "summary": "A security feature bypass vulnerability exists in Microsoft Excel. Vendor reports exploitation.",
+      "impact": "Allows an attacker to bypass security features. Exploitation is reported by the vendor.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply updates referenced by KB4486670, KB5002035, KB5002056, or KB5002072 as applicable.",
+      "checks": [
+        "Inventory Microsoft Excel and Microsoft Office installations.",
+        "Check systems for the presence of security updates associated with KB4486670, KB5002035, KB5002056, and KB5002072."
+      ]
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "id": "sr-26-0241",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-27085"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5000802",
+      "KB5000808",
+      "KB5000809",
+      "KB5000822"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T19:30:48Z",
+    "updated": "2026-11-21T19:30:48Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Internet Explorer Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-27085",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T19:30:48Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T19:30:48Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-uyazvimost-udalennogo-vypolneniya-koda-v-internet",
+      "title": "Microsoft: уязвимость удаленного выполнения кода в Internet Explorer (CVE-2021-27085)",
+      "summary": "В Internet Explorer обнаружена уязвимость удаленного выполнения кода. Microsoft сообщает об активной эксплуатации.",
+      "impact": "Злоумышленник может выполнить произвольный код. Эксплуатация подтверждена производителем.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, указанные в KB5000802, KB5000808, KB5000809 и KB5000822.",
+      "checks": [
+        "Проверьте системы на наличие установленных Windows 10 и Internet Explorer 11.",
+        "Убедитесь в применении обновлений KB5000802, KB5000808, KB5000809 или KB5000822."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-schwachstelle-in-internet-explorer-ermoeglicht",
+      "title": "Microsoft: Schwachstelle in Internet Explorer ermöglicht Remotecodeausführung (CVE-2021-27085)",
+      "summary": "In Internet Explorer existiert eine Schwachstelle zur Remotecodeausführung. Microsoft meldet aktive Ausnutzung.",
+      "impact": "Ein Angreifer kann beliebigen Code ausführen. Die Ausnutzung wird vom Hersteller gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die Updates an, die in KB5000802, KB5000808, KB5000809 und KB5000822 genannt werden.",
+      "checks": [
+        "Überprüfen Sie Systeme auf Windows 10 und Internet Explorer 11.",
+        "Überprüfen Sie, ob die Updates KB5000802, KB5000808, KB5000809 oder KB5000822 installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-internet-explorer-remote-code-execution-vulnerability",
+      "title": "Microsoft: Internet Explorer remote code execution vulnerability (CVE-2021-27085)",
+      "summary": "A remote code execution vulnerability exists in Internet Explorer. Microsoft reports active exploitation.",
+      "impact": "An attacker could execute arbitrary code. Exploitation is reported by the vendor.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply updates referenced by KB5000802, KB5000808, KB5000809, and KB5000822.",
+      "checks": [
+        "Check systems for Windows 10 and Internet Explorer 11 installations.",
+        "Verify if updates KB5000802, KB5000808, KB5000809, or KB5000822 are applied."
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": "sr-26-0238",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-27059"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4493225",
+      "KB4493228",
+      "KB4504703"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.6,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T19:30:48Z",
+    "updated": "2026-11-21T19:30:48Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Office Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-27059",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T19:30:48Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T19:30:48Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-office-uyazvimost-udalennogo-vypolneniya-koda-cve",
+      "title": "Microsoft Office: уязвимость удаленного выполнения кода (CVE-2021-27059)",
+      "summary": "Microsoft Office содержит уязвимость удаленного выполнения кода (CVE-2021-27059), затрагивающую несколько версий; сообщается об эксплуатации.",
+      "impact": "Злоумышленник может выполнить удаленный код. Поставщик сообщает об эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления или исправления, предоставленные поставщиком.",
+      "checks": [
+        "Проверьте установки Microsoft Office на наличие уязвимых версий, связанных с CVE-2021-27059.",
+        "Убедитесь в применении обновлений безопасности Microsoft, таких как KB4493225, KB4493228 и KB4504703."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-office-schwachstelle-fuer-remotecodeausfuehrung-cve",
+      "title": "Microsoft Office: Schwachstelle für Remotecodeausführung (CVE-2021-27059)",
+      "summary": "Microsoft Office enthält eine Schwachstelle zur Remotecodeausführung (CVE-2021-27059) in mehreren Versionen; die Ausnutzung wurde gemeldet.",
+      "impact": "Ein Angreifer kann Remotecode ausführen. Der Hersteller meldet eine Ausnutzung.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die vom Hersteller bereitgestellten Updates oder Fixes an.",
+      "checks": [
+        "Überprüfen Sie Microsoft Office-Installationen auf anfällige Versionen im Zusammenhang mit CVE-2021-27059.",
+        "Überprüfen Sie die Anwendung von Microsoft-Sicherheitsupdates wie KB4493225, KB4493228 und KB4504703."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-office-remote-code-execution-vulnerability-cve-2021",
+      "title": "Microsoft Office: Remote Code Execution Vulnerability (CVE-2021-27059)",
+      "summary": "Microsoft Office contains a remote code execution vulnerability (CVE-2021-27059) affecting multiple versions, for which exploitation is reported.",
+      "impact": "An attacker can achieve remote code execution. The vendor reports exploitation.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply updates or fixes provided by the vendor.",
+      "checks": [
+        "Check Microsoft Office installations for vulnerable versions associated with CVE-2021-27059.",
+        "Verify the application of Microsoft security updates such as KB4493225, KB4493228, and KB4504703."
+      ]
+    }
+  }
+}
