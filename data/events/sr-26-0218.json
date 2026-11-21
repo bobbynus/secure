@@ -1,0 +1,103 @@
+{
+  "id": "sr-26-0218",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-43890"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.1,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T18:30:42Z",
+    "updated": "2026-11-21T18:30:42Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows AppX Installer Spoofing Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-43890",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T18:30:42Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T18:30:42Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-app-installer-uyazvimost-spufinga-cve-2021-43890",
+      "title": "Microsoft App Installer: уязвимость спуфинга CVE-2021-43890",
+      "summary": "Microsoft App Installer содержит уязвимость спуфинга, которая была публично раскрыта и эксплуатируется.",
+      "impact": "Злоумышленник может использовать уязвимость спуфинга. Проблема была публично раскрыта, и вендор сообщает о ее эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проверьте системы на наличие Microsoft App Installer.",
+        "Проверьте статус систем в отношении CVE-2021-43890."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-app-installer-spoofing-schwachstelle-cve-2021-43890",
+      "title": "Microsoft App Installer: Spoofing-Schwachstelle CVE-2021-43890",
+      "summary": "Microsoft App Installer enthält eine Spoofing-Schwachstelle, die öffentlich bekannt ist und ausgenutzt wird.",
+      "impact": "Ein Angreifer kann die Spoofing-Schwachstelle ausnutzen. Das Problem wurde öffentlich bekannt gegeben, und die Ausnutzung wird vom Hersteller gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Überprüfen Sie Systeme auf das Vorhandensein von Microsoft App Installer.",
+        "Überprüfen Sie den Systemstatus hinsichtlich CVE-2021-43890."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-app-installer-cve-2021-43890-spoofing-vulnerability",
+      "title": "Microsoft App Installer: CVE-2021-43890 spoofing vulnerability",
+      "summary": "Microsoft App Installer contains a spoofing vulnerability that is publicly disclosed and reported as exploited.",
+      "impact": "An attacker can exploit the spoofing vulnerability. The issue was publicly disclosed and exploitation is reported by the vendor.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "The sources list no fixed versions.",
+      "checks": [
+        "Check systems for the presence of Microsoft App Installer.",
+        "Verify system status regarding CVE-2021-43890."
+      ]
+    }
+  }
+}

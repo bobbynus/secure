@@ -1,0 +1,113 @@
+{
+  "id": "sr-26-0220",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-33771"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5004237",
+      "KB5004238",
+      "KB5004244",
+      "KB5004245",
+      "KB5004249",
+      "KB5004285",
+      "KB5004298"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T18:30:42Z",
+    "updated": "2026-11-21T18:30:42Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Kernel Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-33771",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T18:30:42Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T18:30:42Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-povysheniya-privilegiy-v-yadre",
+      "title": "Microsoft Windows: уязвимость повышения привилегий в ядре Windows CVE-2021-33771",
+      "summary": "Ядро Microsoft Windows содержит уязвимость повышения привилегий (CVE-2021-33771) с оценкой CVSS 7.8, эксплуатация которой подтверждена.",
+      "impact": "Злоумышленник может повысить привилегии. Сообщается об эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Доступны обновления через KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285, KB5004298.",
+      "checks": [
+        "Проверьте системы Windows на наличие уязвимости CVE-2021-33771.",
+        "Убедитесь, что установлены обновления KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285 или KB5004298."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2021-33771-windows-kernel-elevation-of",
+      "title": "Microsoft Windows: CVE-2021-33771 Windows Kernel Elevation of Privilege",
+      "summary": "Der Microsoft Windows Kernel enthält eine Schwachstelle zur Privilegienerweiterung (CVE-2021-33771) mit einem CVSS-Score von 7.8, die laut Berichten ausgenutzt wird.",
+      "impact": "Ein Angreifer kann Privilegien erlangen. Eine Ausnutzung wird gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Updates sind über KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285, KB5004298 verfügbar.",
+      "checks": [
+        "Überprüfen Sie Windows-Systeme auf CVE-2021-33771.",
+        "Überprüfen Sie, ob die Updates KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285 oder KB5004298 installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2021-33771-windows-kernel-elevation-of",
+      "title": "Microsoft Windows: CVE-2021-33771 Windows Kernel Elevation of Privilege",
+      "summary": "Microsoft Windows Kernel contains an elevation of privilege vulnerability (CVE-2021-33771) with a CVSS score of 7.8, which is reported as exploited.",
+      "impact": "An attacker can achieve elevation of privilege. Exploitation is reported.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Updates are available via KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285, KB5004298.",
+      "checks": [
+        "Check Windows systems for the presence of CVE-2021-33771.",
+        "Verify if updates KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285, or KB5004298 are installed."
+      ]
+    }
+  }
+}

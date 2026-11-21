@@ -1,0 +1,119 @@
+{
+  "id": "sr-26-0223",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-31979"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5004237",
+      "KB5004238",
+      "KB5004244",
+      "KB5004245",
+      "KB5004249",
+      "KB5004285",
+      "KB5004289",
+      "KB5004294",
+      "KB5004298",
+      "KB5004299",
+      "KB5004302",
+      "KB5004305",
+      "KB5004307"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T18:30:42Z",
+    "updated": "2026-11-21T18:30:42Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Kernel Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-31979",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T18:30:42Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T18:30:42Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2021-31979-uyazvimost-povysheniya",
+      "title": "Microsoft Windows: CVE-2021-31979 уязвимость повышения привилегий в ядре Windows",
+      "summary": "Microsoft Windows содержит уязвимость повышения привилегий в ядре Windows, эксплуатация которой подтверждена.",
+      "impact": "Злоумышленник может повысить свои привилегии. Эксплуатация подтверждена производителем.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, указанные в KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285, KB5004289, KB5004294, KB5004298, KB5004299, KB5004302, KB5004305 или KB5004307.",
+      "checks": [
+        "Проведите инвентаризацию систем Windows 10 на предмет отсутствия обновлений безопасности.",
+        "Проверьте установку обновлений из базы знаний, таких как `KB5004237`, `KB5004238`, `KB5004244`, `KB5004245`, `KB5004249`, `KB5004285`, `KB5004289`, `KB5004294`, `KB5004298`, `KB5004299`, `KB5004302`, `KB5004305` и `KB5004307`."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2021-31979-windows-kernel-elevation-of",
+      "title": "Microsoft Windows: CVE-2021-31979 Windows Kernel Elevation of Privilege Vulnerability",
+      "summary": "Microsoft Windows enthält eine Schwachstelle zur Privilegienerweiterung im Windows Kernel, deren Ausnutzung gemeldet wurde.",
+      "impact": "Ein Angreifer kann eine Privilegienerweiterung erreichen. Die Ausnutzung wird vom Hersteller gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die Updates aus KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285, KB5004289, KB5004294, KB5004298, KB5004299, KB5004302, KB5004305 oder KB5004307 an.",
+      "checks": [
+        "Inventarisieren Sie Windows 10-Systeme auf fehlende Sicherheitsupdates.",
+        "Überprüfen Sie die Anwendung von KB-Updates wie `KB5004237`, `KB5004238`, `KB5004244`, `KB5004245`, `KB5004249`, `KB5004285`, `KB5004289`, `KB5004294`, `KB5004298`, `KB5004299`, `KB5004302`, `KB5004305` und `KB5004307`."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2021-31979-windows-kernel-elevation-of",
+      "title": "Microsoft Windows: CVE-2021-31979 Windows Kernel Elevation of Privilege",
+      "summary": "Microsoft Windows contains an elevation of privilege vulnerability in the Windows Kernel, which is reported to be exploited.",
+      "impact": "An attacker can achieve elevation of privilege. Exploitation is reported by the vendor.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates referenced by KB5004237, KB5004238, KB5004244, KB5004245, KB5004249, KB5004285, KB5004289, KB5004294, KB5004298, KB5004299, KB5004302, KB5004305, or KB5004307.",
+      "checks": [
+        "Inventory Windows 10 systems to check for missing security updates.",
+        "Verify the application of KB updates such as `KB5004237`, `KB5004238`, `KB5004244`, `KB5004245`, `KB5004249`, `KB5004285`, `KB5004289`, `KB5004294`, `KB5004298`, `KB5004299`, `KB5004302`, `KB5004305`, and `KB5004307`."
+      ]
+    }
+  }
+}
