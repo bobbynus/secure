@@ -87,21 +87,62 @@
  "texts": {
   "msrc:CVE-2017-8543": "Windows Search Remote Code Execution Vulnerability\nMicrosoft Windows. Microsoft 2017-Jun security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "202c7bffc27ba9271934eae9",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Windows Search Remote Code Execution Vulnerability (CVE-2017-8543)",
+    "summary": "A remote code execution vulnerability exists in Windows Search in Microsoft Windows. The vendor reports that the issue is exploited.",
+    "impact": "An attacker can execute arbitrary code remotely. Exploitation is reported by the vendor.",
+    "fix": "Apply the updates provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Check systems for installed Microsoft security updates associated with CVE-2017-8543.",
+     "Verify system inventory for affected Microsoft Windows versions."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в Windows Search (CVE-2017-8543)",
+    "summary": "В Windows Search в Microsoft Windows обнаружена уязвимость удаленного выполнения кода. По заявлению производителя, уязвимость эксплуатируется.",
+    "impact": "Злоумышленник может удаленно выполнить произвольный код. Производитель сообщает об эксплуатации уязвимости.",
+    "fix": "Установите обновления, предоставленные Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленных обновлений безопасности Microsoft для CVE-2017-8543.",
+     "Проверьте инвентаризацию систем на наличие затронутых версий Microsoft Windows."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in Windows Search (CVE-2017-8543)",
+    "summary": "In Windows Search unter Microsoft Windows existiert eine Schwachstelle zur Remotecodeausführung. Der Hersteller meldet die Ausnutzung der Schwachstelle.",
+    "impact": "Ein Angreifer kann beliebigen Code aus der Ferne ausführen. Die Ausnutzung wird vom Hersteller gemeldet.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf installierte Sicherheitsupdates von Microsoft für CVE-2017-8543.",
+     "Überprüfen Sie die Systeminventur auf betroffene Microsoft Windows-Versionen."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T09:51:02Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v",
+   "de": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in",
+   "en": "microsoft-windows-windows-search-remote-code-execution"
+  },
+  "published_at": "2026-11-21T09:51:02Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

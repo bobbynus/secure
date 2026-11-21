@@ -84,21 +84,62 @@
  "texts": {
   "msrc:CVE-2017-8464": "LNK Remote Code Execution Vulnerability\nWindows Shell. Microsoft 2017-Jun security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "55ee76c55c14b53c31874ccb",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: CVE-2017-8464 LNK Remote Code Execution Vulnerability",
+    "summary": "A remote code execution vulnerability exists in Windows Shell (CVE-2017-8464) affecting multiple versions of Windows. Microsoft reports that the vulnerability is exploited.",
+    "impact": "An attacker can execute arbitrary code. Vendor reports exploitation.",
+    "fix": "Apply the updates referenced by KB4021903, KB4022714, KB4022715, KB4022717, KB4022718, KB4022719, KB4022722, KB4022724, KB4022725, KB4022726, or KB4022727.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows systems for missing updates associated with CVE-2017-8464.",
+     "Verify installation of KB patches such as KB4021903 and related updates."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в LNK CVE-2017-8464",
+    "summary": "В Windows Shell обнаружена уязвимость удаленного выполнения кода (CVE-2017-8464), затрагивающая различные версии Windows. Microsoft сообщает об эксплуатации уязвимости.",
+    "impact": "Злоумышленник может выполнить произвольный код. Вендор сообщает об эксплуатации.",
+    "fix": "Установите обновления, указанные в KB4021903, KB4022714, KB4022715, KB4022717, KB4022718, KB4022719, KB4022722, KB4022724, KB4022725, KB4022726 или KB4022727.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на отсутствие обновлений, связанных с CVE-2017-8464.",
+     "Убедитесь в установке патчей KB, таких как KB4021903 и сопутствующих обновлений."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: CVE-2017-8464 LNK Remote Code Execution Vulnerability",
+    "summary": "Im Windows Shell existiert eine Schwachstelle zur Remote-Code-Ausführung (CVE-2017-8464) in mehreren Windows-Versionen. Der Hersteller meldet eine Ausnutzung.",
+    "impact": "Ein Angreifer kann Code ausführen. Der Hersteller meldet eine Ausnutzung.",
+    "fix": "Wenden Sie die Updates an, die in KB4021903, KB4022714, KB4022715, KB4022717, KB4022718, KB4022719, KB4022722, KB4022724, KB4022725, KB4022726 oder KB4022727 referenziert sind.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows-Systeme hinsichtlich fehlender Updates für CVE-2017-8464.",
+     "Überprüfen Sie die Installation von KB-Patches wie KB4021903 und zugehörigen Updates."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T09:51:02Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-lnk",
+   "de": "microsoft-windows-cve-2017-8464-lnk-remote-code-execution",
+   "en": "microsoft-windows-cve-2017-8464-lnk-remote-code-execution"
+  },
+  "published_at": "2026-11-21T09:51:02Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }
