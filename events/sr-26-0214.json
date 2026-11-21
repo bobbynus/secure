@@ -86,21 +86,62 @@
  "texts": {
   "msrc:CVE-2021-26424": "Windows TCP/IP Remote Code Execution Vulnerability\nWindows TCP/IP. Microsoft 2021-Aug security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "0bf803019b51e5f4f5b6b135",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows TCP/IP Remote Code Execution Vulnerability",
+    "summary": "A critical remote code execution vulnerability exists in Microsoft Windows TCP/IP.",
+    "impact": "An attacker could achieve remote code execution on vulnerable systems.",
+    "fix": "Apply the updates provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows systems to identify affected versions.",
+     "Verify whether the applicable security updates are installed."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Уязвимость удаленного выполнения кода в Windows TCP/IP от Microsoft",
+    "summary": "В TCP/IP для Microsoft Windows обнаружена критическая уязвимость удаленного выполнения кода.",
+    "impact": "Злоумышленник может добиться удаленного выполнения кода на уязвимых системах.",
+    "fix": "Установите обновления, предоставленные Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows для определения уязвимых версий.",
+     "Проверьте, установлены ли соответствующие обновления безопасности."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows TCP/IP: Schwachstelle ermöglicht Remotecodeausführung",
+    "summary": "In Microsoft Windows TCP/IP existiert eine kritische Schwachstelle zur Remotecodeausführung.",
+    "impact": "Ein Angreifer kann auf anfälligen Systemen Remotecode ausführen.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows-Systeme, um betroffene Versionen zu identifizieren.",
+     "Überprüfen Sie, ob die entsprechenden Sicherheitsupdates installiert sind."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T18:00:52Z",
+  "slugs": {
+   "ru": "uyazvimost-udalennogo-vypolneniya-koda-v-windows-tcp-ip-ot",
+   "de": "microsoft-windows-tcp-ip-schwachstelle-ermoeglicht",
+   "en": "microsoft-windows-tcp-ip-remote-code-execution-vulnerability"
+  },
+  "published_at": "2026-11-21T18:00:52Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

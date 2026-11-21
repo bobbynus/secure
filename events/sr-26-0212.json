@@ -73,21 +73,62 @@
  "texts": {
   "msrc:CVE-2020-1210": "Microsoft SharePoint Remote Code Execution Vulnerability\nMicrosoft Office SharePoint. Microsoft 2020-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "810af61553a58f248312cd36",
+  "texts": {
+   "en": {
+    "title": "Microsoft SharePoint: Remote Code Execution Vulnerability",
+    "summary": "A remote code execution vulnerability exists in Microsoft SharePoint. The sources list no further details on impact, workarounds, or fixed versions.",
+    "impact": "Remote code execution.",
+    "fix": "The sources do not state fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft SharePoint systems for vulnerable versions.",
+     "Review systems for the Microsoft 2020-Sep security update."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода",
+    "summary": "В Microsoft SharePoint обнаружена уязвимость удаленного выполнения кода. Источники не приводят дополнительных деталей о влиянии, обходных решениях или исправленных версиях.",
+    "impact": "Удаленное выполнение кода.",
+    "fix": "Источники не указывают исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Microsoft SharePoint на наличие уязвимых версий.",
+     "Проверьте системы на наличие обновления безопасности Microsoft 2020-Sep."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft SharePoint: Schwachstelle zur Remote-Code-Ausführung",
+    "summary": "In Microsoft SharePoint existiert eine Schwachstelle zur Remote-Code-Ausführung. Die Quellen nennen keine weiteren Details zu Auswirkungen, Workarounds oder korrigierten Versionen.",
+    "impact": "Remote-Code-Ausführung.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Prüfen Sie Microsoft SharePoint-Systeme auf anfällige Versionen.",
+     "Überprüfen Sie Systeme auf das Microsoft 2020-Sep Sicherheitsupdate."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T18:00:52Z",
+  "slugs": {
+   "ru": "microsoft-sharepoint-uyazvimost-udalennogo-vypolneniya-koda",
+   "de": "microsoft-sharepoint-schwachstelle-zur-remote-code-ausfuehrung",
+   "en": "microsoft-sharepoint-remote-code-execution-vulnerability"
+  },
+  "published_at": "2026-11-21T18:00:52Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

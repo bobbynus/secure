@@ -71,21 +71,62 @@
  "texts": {
   "msrc:CVE-2020-1595": "Microsoft SharePoint Remote Code Execution Vulnerability\nMicrosoft Office SharePoint. Microsoft 2020-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "0009783d8ecfd1a371e5d932",
+  "texts": {
+   "en": {
+    "title": "Microsoft SharePoint: Remote Code Execution Vulnerability (CVE-2020-1595)",
+    "summary": "A critical remote code execution vulnerability exists in Microsoft SharePoint. Microsoft released security updates addressing the issue in September 2020.",
+    "impact": "An attacker can achieve remote code execution on vulnerable SharePoint installations.",
+    "fix": "Apply the updates listed in KB4484505, KB4484506, KB4484515, and KB4484525.",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft SharePoint Server installations.",
+     "Verify if the September 2020 security updates associated with KB4484505, KB4484506, KB4484515, and KB4484525 are installed."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода (CVE-2020-1595)",
+    "summary": "В Microsoft SharePoint обнаружена критическая уязвимость удаленного выполнения кода. Microsoft выпустила обновления безопасности в сентябре 2020 года.",
+    "impact": "Злоумышленник может выполнить произвольный код удаленно на уязвимых серверах SharePoint.",
+    "fix": "Установите обновления, указанные в KB4484505, KB4484506, KB4484515 и KB4484525.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию серверов Microsoft SharePoint.",
+     "Проверьте установку обновлений безопасности за сентябрь 2020 года (KB4484505, KB4484506, KB4484515 и KB4484525)."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft SharePoint: Schwachstelle zur Remote-Code-Ausführung (CVE-2020-1595)",
+    "summary": "In Microsoft SharePoint existiert eine kritische Schwachstelle zur Remote-Code-Ausführung. Microsoft hat im September 2020 Sicherheitsupdates veröffentlicht.",
+    "impact": "Ein Angreifer kann auf anfälligen SharePoint-Systemen Remotecode ausführen.",
+    "fix": "Wenden Sie die in KB4484505, KB4484506, KB4484515 und KB4484525 genannten Updates an.",
+    "workaround": null,
+    "checks": [
+     "Erfassen Sie alle Microsoft SharePoint Server-Installationen im Inventar.",
+     "Überprüfen Sie, ob die Sicherheitsupdates vom September 2020 (KB4484505, KB4484506, KB4484515 und KB4484525) eingespielt wurden."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T18:00:52Z",
+  "slugs": {
+   "ru": "microsoft-sharepoint-uyazvimost-udalennogo-vypolneniya-koda-cve",
+   "de": "microsoft-sharepoint-schwachstelle-zur-remote-code-ausfuehrung",
+   "en": "microsoft-sharepoint-remote-code-execution-vulnerability-cve"
+  },
+  "published_at": "2026-11-21T18:00:52Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

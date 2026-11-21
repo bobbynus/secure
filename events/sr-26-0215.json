@@ -78,21 +78,62 @@
  "texts": {
   "msrc:CVE-2021-36948": "Windows Update Medic Service Elevation of Privilege Vulnerability\nWindows Update. Microsoft 2021-Aug security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "da35aad512b7c3c985461cd3",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Elevation of Privilege in Windows Update Medic Service",
+    "summary": "An elevation of privilege vulnerability (CVE-2021-36948) affects the Windows Update Medic Service in Microsoft Windows 10. Exploitation is reported by the vendor.",
+    "impact": "An attacker can achieve elevation of privilege.",
+    "fix": "Refer to the vendor advisory for updates (such as KB5005030, KB5005031, KB5005033).",
+    "workaround": null,
+    "checks": [
+     "Inventory systems running affected Windows 10 versions.",
+     "Verify the installation of security updates associated with KB5005030, KB5005031, or KB5005033."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: повышение привилегий в Windows Update Medic Service",
+    "summary": "Уязвимость повышения привилегий (CVE-2021-36948) затрагивает Windows Update Medic Service в Microsoft Windows 10. Вендор сообщает об эксплуатации.",
+    "impact": "Злоумышленник может повысить свои привилегии.",
+    "fix": "См. рекомендации вендора и обновления (такие как KB5005030, KB5005031, KB5005033).",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем под управлением затронутых версий Windows 10.",
+     "Проверьте установку обновлений безопасности KB5005030, KB5005031 или KB5005033."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Privilegienerweiterung im Windows Update Medic Service",
+    "summary": "Eine Schwachstelle zur Privilegienerweiterung (CVE-2021-36948) betrifft den Windows Update Medic Service in Microsoft Windows 10. Der Hersteller meldet Ausnutzung.",
+    "impact": "Ein Angreifer kann Privilegien erweitern.",
+    "fix": "Siehe Herstellerhinweise für Updates (wie KB5005030, KB5005031, KB5005033).",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Systeme mit betroffenen Windows 10 Versionen.",
+     "Überprüfen Sie die Installation der Sicherheitsupdates KB5005030, KB5005031 oder KB5005033."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T18:00:52Z",
+  "slugs": {
+   "ru": "microsoft-windows-povyshenie-privilegiy-v-windows-update-medic",
+   "de": "microsoft-windows-privilegienerweiterung-im-windows-update",
+   "en": "microsoft-windows-elevation-of-privilege-in-windows-update"
+  },
+  "published_at": "2026-11-21T18:00:52Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
