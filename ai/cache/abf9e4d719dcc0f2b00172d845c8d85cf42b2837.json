@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows Server: Remote Code Execution in DHCP Server",
+  "summary": "A critical remote code execution vulnerability exists in Windows DHCP Server affecting Windows Server 2008. Microsoft released updates addressing the issue under KB4512476 and KB4512491.",
+  "impact": "An attacker could execute arbitrary code remotely on the affected Windows Server systems running the DHCP Server role.",
+  "fix": "Apply updates KB4512476 or KB4512491 as provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check systems running Windows Server for the DHCP Server role.",
+   "Verify if updates KB4512476 or KB4512491 are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows Server: удаленное выполнение кода в DHCP Server",
+  "summary": "В Windows DHCP Server обнаружена критическая уязвимость удаленного выполнения кода, затрагивающая Windows Server 2008. Microsoft выпустила обновления KB4512476 и KB4512491.",
+  "impact": "Злоумышленник может удаленно выполнить произвольный код на затронутых системах Windows Server с установленной ролью DHCP Server.",
+  "fix": "Установите обновления KB4512476 или KB4512491, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы под управлением Windows Server на наличие роли DHCP Server.",
+   "Убедитесь, что установлены обновления KB4512476 или KB4512491."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows Server: Remotecodeausführung im DHCP-Server",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung in Windows DHCP Server betrifft Windows Server 2008. Microsoft hat Updates unter KB4512476 und KB4512491 veröffentlicht.",
+  "impact": "Ein Angreifer kann auf betroffenen Windows Server-Systemen mit aktivierter DHCP-Server-Rolle aus der Ferne beliebigen Code ausführen.",
+  "fix": "Installieren Sie die von Microsoft bereitgestellten Updates KB4512476 oder KB4512491.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows Server-Systeme auf die installierte DHCP-Server-Rolle.",
+   "Überprüfen Sie, ob die Updates KB4512476 oder KB4512491 installiert sind."
+  ],
+  "regression": null
+ }
+}

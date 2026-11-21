@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Remote Desktop Services Remote Code Execution Vulnerability (CVE-2019-1222)",
+  "summary": "A critical remote code execution vulnerability exists in Remote Desktop Services in Microsoft Windows (CVE-2019-1222).",
+  "impact": "An attacker can execute arbitrary code remotely with a CVSS score of 9.8.",
+  "fix": "Apply updates referenced by KB4511553, KB4512501, or KB4512508.",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for missing updates KB4511553, KB4512501, or KB4512508.",
+   "Verify exposure of Remote Desktop Services on vulnerable systems."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в Remote Desktop Services (CVE-2019-1222)",
+  "summary": "В Remote Desktop Services в Microsoft Windows обнаружена критическая уязвимость удаленного выполнения кода (CVE-2019-1222).",
+  "impact": "Злоумышленник может удаленно выполнить произвольный код; оценка CVSS составляет 9.8.",
+  "fix": "Установите обновления, указанные в KB4511553, KB4512501 или KB4512508.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на отсутствие обновлений KB4511553, KB4512501 или KB4512508.",
+   "Проверьте доступность служб удаленного рабочего стола на уязвимых системах."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Schwachstelle für Remotecodeausführung in Remote Desktop Services (CVE-2019-1222)",
+  "summary": "In Remote Desktop Services in Microsoft Windows existiert eine kritische Schwachstelle zur Remotecodeausführung (CVE-2019-1222).",
+  "impact": "Ein Angreifer kann beliebigen Code aus der Ferne ausführen mit einem CVSS-Score von 9.8.",
+  "fix": "Wenden Sie die Updates aus KB4511553, KB4512501 oder KB4512508 an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Systeme auf fehlende Updates KB4511553, KB4512501 oder KB4512508.",
+   "Überprüfen Sie die Erreichbarkeit von Remote Desktop Services auf gefährdeten Systemen."
+  ],
+  "regression": null
+ }
+}

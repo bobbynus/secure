@@ -69,21 +69,62 @@
  "texts": {
   "msrc:CVE-2019-1257": "Microsoft SharePoint Remote Code Execution Vulnerability\nMicrosoft Office SharePoint. Microsoft 2019-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "61af6c3ce4369174e3abb177",
+  "texts": {
+   "en": {
+    "title": "Microsoft SharePoint: Remote Code Execution Vulnerability (CVE-2019-1257)",
+    "summary": "A remote code execution vulnerability exists in Microsoft SharePoint Server. An attacker can exploit this to execute arbitrary code.",
+    "impact": "Remote code execution on the affected SharePoint server.",
+    "fix": "Apply updates as provided by Microsoft (KB4475590, KB4475596, KB4475605, KB4484098).",
+    "workaround": null,
+    "checks": [
+     "Check SharePoint Server installations for presence of CVE-2019-1257.",
+     "Verify application of KB updates KB4475590, KB4475596, KB4475605, and KB4484098."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода (CVE-2019-1257)",
+    "summary": "В Microsoft SharePoint Server обнаружена уязвимость удаленного выполнения кода. Злоумышленник может использовать ее для выполнения произвольного кода.",
+    "impact": "Удаленное выполнение кода на уязвимом сервере SharePoint.",
+    "fix": "Установите обновления, предоставленные Microsoft (KB4475590, KB4475596, KB4475605, KB4484098).",
+    "workaround": null,
+    "checks": [
+     "Проверьте установки SharePoint Server на наличие уязвимости CVE-2019-1257.",
+     "Убедитесь в применении обновлений KB4475590, KB4475596, KB4475605 и KB4484098."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft SharePoint: Schwachstelle für Remotecodeausführung (CVE-2019-1257)",
+    "summary": "In Microsoft SharePoint Server existiert eine Schwachstelle zur Remotecodeausführung. Ein Angreifer kann dies ausnutzen, um beliebigen Code auszuführen.",
+    "impact": "Remotecodeausführung auf dem betroffenen SharePoint-Server.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (KB4475590, KB4475596, KB4475605, KB4484098).",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie SharePoint-Server-Installationen auf CVE-2019-1257.",
+     "Überprüfen Sie die Anwendung der Updates KB4475590, KB4475596, KB4475605 und KB4484098."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T13:30:47Z",
+  "slugs": {
+   "ru": "microsoft-sharepoint-uyazvimost-udalennogo-vypolneniya-koda-cve",
+   "de": "microsoft-sharepoint-schwachstelle-fuer-remotecodeausfuehrung",
+   "en": "microsoft-sharepoint-remote-code-execution-vulnerability-cve"
+  },
+  "published_at": "2026-11-21T13:30:47Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

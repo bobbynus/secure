@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Remote Desktop Services Remote Code Execution Vulnerability (CVE-2019-1226)",
+  "summary": "A critical remote code execution vulnerability exists in Microsoft Windows Remote Desktop Services (CVE-2019-1226) affecting various Windows 10 versions.",
+  "impact": "An attacker could achieve remote code execution on vulnerable systems via Remote Desktop Services.",
+  "fix": "Apply updates KB4511553, KB4512501, or KB4540673.",
+  "workaround": null,
+  "checks": [
+   "Check systems for Windows 10 versions 1803, 1809, 1903, and 1909.",
+   "Verify whether updates KB4511553, KB4512501, or KB4540673 are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: Уязвимость удаленного выполнения кода в Remote Desktop Services (CVE-2019-1226)",
+  "summary": "В службах удаленных рабочих столов Microsoft Windows обнаружена критическая уязвимость удаленного выполнения кода (CVE-2019-1226), затрагивающая различные версии Windows 10.",
+  "impact": "Злоумышленник может выполнить удаленный код в уязвимых системах через службы удаленных рабочих столов.",
+  "fix": "Установите обновления KB4511553, KB4512501 или KB4540673.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие версий Windows 10 1803, 1809, 1903 и 1909.",
+   "Убедитесь, установлены ли обновления KB4511553, KB4512501 или KB4540673."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in Remote Desktop Services (CVE-2019-1226)",
+  "summary": "In den Microsoft Windows Remote Desktop Services existiert eine kritische Schwachstelle zur Remotecodeausführung (CVE-2019-1226), die verschiedene Windows 10 Versionen betrifft.",
+  "impact": "Ein Angreifer kann über Remote Desktop Services Remotecode auf anfälligen Systemen ausführen.",
+  "fix": "Installieren Sie die Updates KB4511553, KB4512501 oder KB4540673.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf Windows 10 Versionen 1803, 1809, 1903 und 1909.",
+   "Prüfen Sie, ob die Updates KB4511553, KB4512501 oder KB4540673 installiert sind."
+  ],
+  "regression": null
+ }
+}
