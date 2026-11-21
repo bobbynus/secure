@@ -89,21 +89,62 @@
  "texts": {
   "msrc:CVE-2021-40444": "Microsoft MSHTML Remote Code Execution Vulnerability\nWindows MSHTML Platform. Publicly disclosed. Microsoft 2021-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "33893e51d1e932e154b45ba3",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: MSHTML Remote Code Execution Vulnerability (CVE-2021-40444)",
+    "summary": "A remote code execution vulnerability exists in the Microsoft MSHTML platform (CVE-2021-40444), which is actively exploited.",
+    "impact": "An attacker can achieve remote code execution. Exploitation is reported.",
+    "fix": "Apply the updates provided by Microsoft (including KB5005563, KB5005565, KB5005566, KB5005568, KB5005569, KB5005573, KB5005575, KB5005606, KB5005613, KB5005623, KB5005627, KB5005633, KB5019958).",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows 10 systems for missing updates.",
+     "Verify installation of security updates addressing CVE-2021-40444."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в MSHTML (CVE-2021-40444)",
+    "summary": "В платформе Microsoft MSHTML обнаружена уязвимость удаленного выполнения кода (CVE-2021-40444), которая активно эксплуатируется.",
+    "impact": "Злоумышленник может выполнить произвольный код удаленно. Сообщается об эксплуатации.",
+    "fix": "Установите обновления, предоставленные Microsoft (включая KB5005563, KB5005565, KB5005566, KB5005568, KB5005569, KB5005573, KB5005575, KB5005606, KB5005613, KB5005623, KB5005627, KB5005633, KB5019958).",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows 10 на предмет отсутствующих обновлений.",
+     "Проверьте установку обновлений безопасности для CVE-2021-40444."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in MSHTML (CVE-2021-40444)",
+    "summary": "In der Microsoft MSHTML-Plattform existiert eine Schwachstelle zur Remotecodeausführung (CVE-2021-40444), die aktiv ausgenutzt wird.",
+    "impact": "Ein Angreifer kann Remotecode ausführen. Eine Ausnutzung wird gemeldet.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5005563, KB5005565, KB5005566, KB5005568, KB5005569, KB5005573, KB5005575, KB5005606, KB5005613, KB5005623, KB5005627, KB5005633, KB5019958).",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows 10-Systeme auf fehlende Updates.",
+     "Überprüfen Sie die Installation der Sicherheitsupdates für CVE-2021-40444."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T20:00:50Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v",
+   "de": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in-mshtml",
+   "en": "microsoft-windows-mshtml-remote-code-execution-vulnerability"
+  },
+  "published_at": "2026-11-21T20:00:50Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

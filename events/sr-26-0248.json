@@ -90,21 +90,59 @@
  "texts": {
   "msrc:CVE-2022-35744": "Windows Point-to-Point Protocol (PPP) Remote Code Execution Vulnerability\nWindows Point-to-Point Tunneling Protocol. Microsoft 2022-Aug security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "70ea188b072c834f96c09270",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: PPP Remote Code Execution Vulnerability (CVE-2022-35744)",
+    "summary": "A critical remote code execution vulnerability exists in Microsoft Windows Point-to-Point Protocol (PPP).",
+    "impact": "An attacker can exploit this vulnerability to execute arbitrary code on affected Windows systems.",
+    "fix": "Apply the August 2022 security updates (including KB5016616, KB5016622, KB5016623, KB5016627, KB5016629, KB5016639, KB5016669, KB5016672, KB5016676, KB5016679, KB5016681, KB5016683, KB5016684, KB5016686).",
+    "workaround": null,
+    "checks": [
+     "Check Windows systems for the installation of August 2022 security updates associated with CVE-2022-35744."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в PPP (CVE-2022-35744)",
+    "summary": "В протоколе Microsoft Windows Point-to-Point Protocol (PPP) обнаружена критическая уязвимость удаленного выполнения кода.",
+    "impact": "Злоумышленник может использовать эту уязвимость для выполнения произвольного кода на уязвимых системах Windows.",
+    "fix": "Установите обновления безопасности за август 2022 года (включая KB5016616, KB5016622, KB5016623, KB5016627, KB5016629, KB5016639, KB5016669, KB5016672, KB5016676, KB5016679, KB5016681, KB5016683, KB5016684, KB5016686).",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на наличие установленных обновлений безопасности за август 2022 года, связанных с CVE-2022-35744."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in PPP (CVE-2022-35744)",
+    "summary": "In Microsoft Windows Point-to-Point Protocol (PPP) existiert eine kritische Schwachstelle zur Remotecodeausführung.",
+    "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um beliebigen Code auf betroffenen Windows-Systemen auszuführen.",
+    "fix": "Installieren Sie die Sicherheitsupdates vom August 2022 (einschließlich KB5016616, KB5016622, KB5016623, KB5016627, KB5016629, KB5016639, KB5016669, KB5016672, KB5016676, KB5016679, KB5016681, KB5016683, KB5016684, KB5016686).",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows-Systeme auf die Installation der Sicherheitsupdates vom August 2022 für CVE-2022-35744."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T20:00:50Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-ppp",
+   "de": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in-ppp",
+   "en": "microsoft-windows-ppp-remote-code-execution-vulnerability-cve"
+  },
+  "published_at": "2026-11-21T20:00:50Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

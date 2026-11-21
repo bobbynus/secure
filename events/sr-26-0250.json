@@ -87,21 +87,62 @@
  "texts": {
   "msrc:CVE-2022-22047": "Windows Client Server Run-time Subsystem (CSRSS) Elevation of Privilege Vulnerability\nWindows Client/Server Runtime Subsystem. Microsoft 2022-Jul security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "70c3b338d96e9107ef1746aa",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Elevation of Privilege in CSRSS (CVE-2022-22047)",
+    "summary": "An elevation of privilege vulnerability exists in the Windows Client Server Run-time Subsystem (CSRSS), allowing an attacker to elevate privileges. Microsoft reports exploitation in the wild.",
+    "impact": "An attacker can achieve elevation of privileges. Exploitation is reported by the vendor.",
+    "fix": "Apply the updates referenced by KB5015807, KB5015808, KB5015811, KB5015814, KB5015827, KB5015832, KB5015861, KB5015862, KB5015863, KB5015866, KB5015870, KB5015874, KB5015875, or KB5015877.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows 10 systems to check for the affected versions.",
+     "Verify if security updates including KB5015807, KB5015808, KB5015811, KB5015814, KB5015827, KB5015832, KB5015861, KB5015862, KB5015863, KB5015866, KB5015870, KB5015874, KB5015875, and KB5015877 are applied."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: повышение привилегий в CSRSS (CVE-2022-22047)",
+    "summary": "В подсистеме Windows Client Server Run-time Subsystem (CSRSS) обнаружена уязвимость повышения привилегий. Microsoft сообщает об эксплуатации уязвимости.",
+    "impact": "Злоумышленник может повысить свои привилегии. Эксплуатация подтверждена производителем.",
+    "fix": "Установите обновления, упомянутые в KB5015807, KB5015808, KB5015811, KB5015814, KB5015827, KB5015832, KB5015861, KB5015862, KB5015863, KB5015866, KB5015870, KB5015874, KB5015875 или KB5015877.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows 10 для проверки уязвимых версий.",
+     "Проверьте установку обновлений безопасности, включая KB5015807, KB5015808, KB5015811, KB5015814, KB5015827, KB5015832, KB5015861, KB5015862, KB5015863, KB5015866, KB5015870, KB5015874, KB5015875 и KB5015877."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Privilegienerweiterung in CSRSS (CVE-2022-22047)",
+    "summary": "Im Windows Client Server Run-time Subsystem (CSRSS) existiert eine Schwachstelle zur Privilegienerweiterung. Microsoft meldet die Ausnutzung.",
+    "impact": "Ein Angreifer kann Privilegien erweitern. Die Ausnutzung wird vom Hersteller gemeldet.",
+    "fix": "Wenden Sie die Updates an, die in KB5015807, KB5015808, KB5015811, KB5015814, KB5015827, KB5015832, KB5015861, KB5015862, KB5015863, KB5015866, KB5015870, KB5015874, KB5015875 oder KB5015877 referenziert sind.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows 10-Systeme, um betroffene Versionen zu identifizieren.",
+     "Überprüfen Sie, ob Sicherheitsupdates wie KB5015807, KB5015808, KB5015811, KB5015814, KB5015827, KB5015832, KB5015861, KB5015862, KB5015863, KB5015866, KB5015870, KB5015874, KB5015875 und KB5015877 eingespielt wurden."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T20:00:50Z",
+  "slugs": {
+   "ru": "microsoft-windows-povyshenie-privilegiy-v-csrss-cve-2022-22047",
+   "de": "microsoft-windows-privilegienerweiterung-in-csrss-cve-2022-22047",
+   "en": "microsoft-windows-elevation-of-privilege-in-csrss-cve-2022-22047"
+  },
+  "published_at": "2026-11-21T20:00:50Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

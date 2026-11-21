@@ -1,0 +1,43 @@
+{
+ "affected": [
+  {
+   "product": "Windows 10",
+   "versions": "all",
+   "fixed": null,
+   "evidence": "Windows Point-to-Point Protocol (PPP) Remote Code Execution Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: Point-to-Point Protocol Remote Code Execution Vulnerability",
+  "summary": "A remote code execution vulnerability exists in the Windows Point-to-Point Protocol (PPP).",
+  "impact": "Allows remote code execution.",
+  "fix": "Apply the updates provided by Microsoft (including KB5016616, KB5016622, KB5016623, KB5016627, KB5016629, KB5016639, KB5016669, KB5016672, KB5016676, KB5016679, KB5016681, KB5016683, KB5016684, KB5016686).",
+  "workaround": null,
+  "checks": [
+   "Check systems for installed Windows updates KB5016616, KB5016622, KB5016623, KB5016627, KB5016629, KB5016639, KB5016669, KB5016672, KB5016676, KB5016679, KB5016681, KB5016683, KB5016684, KB5016686."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в протоколе PPP",
+  "summary": "В протоколе Windows Point-to-Point Protocol (PPP) обнаружена уязвимость удаленного выполнения кода.",
+  "impact": "Позволяет выполнить удаленный код.",
+  "fix": "Установите обновления, предоставленные Microsoft (включая KB5016616, KB5016622, KB5016623, KB5016627, KB5016629, KB5016639, KB5016669, KB5016672, KB5016676, KB5016679, KB5016681, KB5016683, KB5016684, KB5016686).",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие установленных обновлений Windows KB5016616, KB5016622, KB5016623, KB5016627, KB5016629, KB5016639, KB5016669, KB5016672, KB5016676, KB5016679, KB5016681, KB5016683, KB5016684, KB5016686."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungsschwachstelle im Point-to-Point Protocol",
+  "summary": "Im Windows Point-to-Point Protocol (PPP) existiert eine Schwachstelle zur Remotecodeausführung.",
+  "impact": "Ermöglicht die Remotecodeausführung.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5016616, KB5016622, KB5016623, KB5016627, KB5016629, KB5016639, KB5016669, KB5016672, KB5016676, KB5016679, KB5016681, KB5016683, KB5016684, KB5016686).",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf installierte Windows-Updates KB5016616, KB5016622, KB5016623, KB5016627, KB5016629, KB5016639, KB5016669, KB5016672, KB5016676, KB5016679, KB5016681, KB5016683, KB5016684, KB5016686."
+  ],
+  "regression": null
+ }
+}

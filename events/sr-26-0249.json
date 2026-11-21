@@ -78,21 +78,62 @@
  "texts": {
   "msrc:CVE-2022-44698": "Windows SmartScreen Security Feature Bypass Vulnerability\nWindows SmartScreen. Microsoft 2022-Dec security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "d23474b91de03d17bd16c4f1",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: CVE-2022-44698 SmartScreen Security Feature Bypass",
+    "summary": "Microsoft Windows contains a security feature bypass vulnerability in Windows SmartScreen known as CVE-2022-44698, which is reported as exploited.",
+    "impact": "An attacker can bypass the Windows SmartScreen security feature. Exploitation is reported.",
+    "fix": "Apply the December 2022 security update.",
+    "workaround": null,
+    "checks": [
+     "Verify if systems are running affected versions of Windows 10.",
+     "Check that the December 2022 security updates (including KB5021233, KB5021234, KB5021235, KB5021237, KB5021249) are applied."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: обход функции безопасности SmartScreen в CVE-2022-44698",
+    "summary": "В Microsoft Windows обнаружена уязвимость обхода функции безопасности в Windows SmartScreen (CVE-2022-44698), для которой зафиксирована эксплуатация.",
+    "impact": "Злоумышленник может обойти функцию безопасности Windows SmartScreen. Сообщается об эксплуатации уязвимости.",
+    "fix": "Установите декабрьское обновление безопасности 2022 года.",
+    "workaround": null,
+    "checks": [
+     "Проверьте, работают ли системы под управлением затронутых версий Windows 10.",
+     "Убедитесь, что установлены декабрьские обновления безопасности 2022 года (включая KB5021233, KB5021234, KB5021235, KB5021237, KB5021249)."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: CVE-2022-44698 SmartScreen Security Feature Bypass",
+    "summary": "Microsoft Windows weist eine Schwachstelle zur Umgehung der Sicherheitsfunktion in Windows SmartScreen auf (CVE-2022-44698), deren Ausnutzung gemeldet wurde.",
+    "impact": "Ein Angreifer kann die Sicherheitsfunktion von Windows SmartScreen umgehen. Die Ausnutzung ist gemeldet.",
+    "fix": "Installieren Sie das Sicherheitsupdate vom Dezember 2022.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie, ob Systeme betroffene Versionen von Windows 10 ausführen.",
+     "Stellen Sie sicher, dass die Sicherheitsupdates vom Dezember 2022 (einschließlich KB5021233, KB5021234, KB5021235, KB5021237, KB5021249) eingespielt sind."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T20:00:50Z",
+  "slugs": {
+   "ru": "microsoft-windows-obkhod-funktsii-bezopasnosti-smartscreen-v",
+   "de": "microsoft-windows-cve-2022-44698-smartscreen-security-feature",
+   "en": "microsoft-windows-cve-2022-44698-smartscreen-security-feature"
+  },
+  "published_at": "2026-11-21T20:00:50Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

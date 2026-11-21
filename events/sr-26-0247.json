@@ -87,21 +87,62 @@
  "texts": {
   "msrc:CVE-2022-34713": "Microsoft Windows Support Diagnostic Tool (MSDT) Remote Code Execution Vulnerability\nMicrosoft Windows Support Diagnostic Tool (MSDT). Publicly disclosed. Microsoft 2022-Aug security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "23e0d07ea81bfa39cbe7245a",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows Support Diagnostic Tool (MSDT) RCE Vulnerability (CVE-2022-34713)",
+    "summary": "A remote code execution vulnerability exists in the Microsoft Windows Support Diagnostic Tool (MSDT).",
+    "impact": "An attacker can execute arbitrary code.",
+    "fix": "Apply the security update provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Check systems for the Microsoft Windows Support Diagnostic Tool (MSDT) vulnerability CVE-2022-34713.",
+     "Verify the application of the August 2022 Microsoft security updates."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Уязвимость удаленного выполнения кода в MSDT (CVE-2022-34713)",
+    "summary": "В Microsoft Windows Support Diagnostic Tool (MSDT) обнаружена уязвимость удаленного выполнения кода.",
+    "impact": "Злоумышленник может выполнить произвольный код.",
+    "fix": "Установите обновление безопасности, предоставленное Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие уязвимости CVE-2022-34713 в Microsoft Windows Support Diagnostic Tool (MSDT).",
+     "Проверьте установку обновлений безопасности Microsoft за август 2022 года."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Schwachstelle für Remotecodeausführung im MSDT (CVE-2022-34713)",
+    "summary": "Im Microsoft Windows Support Diagnostic Tool (MSDT) existiert eine Schwachstelle für Remotecodeausführung.",
+    "impact": "Ein Angreifer kann beliebigen Code ausführen.",
+    "fix": "Installieren Sie das von Microsoft bereitgestellte Sicherheitsupdate.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf die Microsoft Windows Support Diagnostic Tool (MSDT)-Schwachstelle CVE-2022-34713.",
+     "Überprüfen Sie die Anwendung der Microsoft-Sicherheitsupdates vom August 2022."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T20:00:50Z",
+  "slugs": {
+   "ru": "uyazvimost-udalennogo-vypolneniya-koda-v-msdt-cve-2022-34713",
+   "de": "schwachstelle-fuer-remotecodeausfuehrung-im-msdt-cve-2022-34713",
+   "en": "microsoft-windows-support-diagnostic-tool-msdt-rce"
+  },
+  "published_at": "2026-11-21T20:00:50Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
