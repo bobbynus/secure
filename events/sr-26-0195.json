@@ -84,21 +84,62 @@
  "texts": {
   "msrc:CVE-2019-1201": "Microsoft Word Remote Code Execution Vulnerability\nMicrosoft Office. Microsoft 2019-Aug security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "58786b5c74dc3aaaf5fc99c3",
+  "texts": {
+   "en": {
+    "title": "Microsoft Word: CVE-2019-1201 Remote Code Execution Vulnerability",
+    "summary": "A remote code execution vulnerability exists in Microsoft Word related to Microsoft Office security updates.",
+    "impact": "An attacker could execute arbitrary code on the affected system.",
+    "fix": "The sources do not list specific fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check systems for installed Microsoft Word and Office products.",
+     "Verify application of Microsoft security updates referenced by KB4462137, KB4462216, KB4475528, KB4475530, KB4475531, KB4475533, KB4475534, KB4475540, KB4475547, KB4475549, and KB4475555."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Word: уязвимость удаленного выполнения кода CVE-2019-1201",
+    "summary": "В Microsoft Word обнаружена уязвимость удаленного выполнения кода, связанная с обновлениями безопасности Microsoft Office.",
+    "impact": "Злоумышленник может выполнить произвольный код на уязвимой системе.",
+    "fix": "В источниках не указаны конкретные исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленных продуктов Microsoft Word и Office.",
+     "Проверьте применение обновлений безопасности Microsoft, на которые ссылаются KB4462137, KB4462216, KB4475528, KB4475530, KB4475531, KB4475533, KB4475534, KB4475540, KB4475547, KB4475549 и KB4475555."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Word: Remotecodeausführungsschwachstelle CVE-2019-1201",
+    "summary": "In Microsoft Word existiert eine Schwachstelle zur Remotecodeausführung im Zusammenhang mit Sicherheitsupdates für Microsoft Office.",
+    "impact": "Ein Angreifer kann beliebigen Code auf dem betroffenen System ausführen.",
+    "fix": "Die Quellen nennen keine konkreten korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf installierte Microsoft Word- und Office-Produkte.",
+     "Überprüfen Sie die Anwendung der Microsoft-Sicherheitsupdates mit den Referenzen KB4462137, KB4462216, KB4475528, KB4475530, KB4475531, KB4475533, KB4475534, KB4475540, KB4475547, KB4475549 und KB4475555."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T12:57:26Z",
+  "slugs": {
+   "ru": "microsoft-word-uyazvimost-udalennogo-vypolneniya-koda-cve-2019",
+   "de": "microsoft-word-remotecodeausfuehrungsschwachstelle-cve-2019-1201",
+   "en": "microsoft-word-cve-2019-1201-remote-code-execution-vulnerability"
+  },
+  "published_at": "2026-11-21T12:57:26Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

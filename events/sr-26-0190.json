@@ -99,21 +99,62 @@
  "texts": {
   "msrc:CVE-2018-8421": ".NET Framework Remote Code Execution Vulnerability\n.NET Framework. Microsoft 2018-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "b93e05ecab35d42a8ae4cbbc",
+  "texts": {
+   "en": {
+    "title": "Microsoft .NET Framework: Remote Code Execution Vulnerability (CVE-2018-8421)",
+    "summary": "A critical remote code execution vulnerability exists in Microsoft .NET Framework. Microsoft released security updates addressing the issue.",
+    "impact": "An attacker could execute arbitrary code.",
+    "fix": "Apply the updates referenced by KB4457025, KB4457026, KB4457027, KB4457028, KB4457029, KB4457030, KB4457033, KB4457034, KB4457035, KB4457036, KB4457037, KB4457038, KB4457042, KB4457043, KB4457044, KB4457045, KB4457053, KB4457054, KB4457055, KB4457056, KB4457128, KB4457131, KB4457132, KB4457138, and KB4457142.",
+    "workaround": null,
+    "checks": [
+     "Check systems for installed Microsoft .NET Framework versions.",
+     "Verify the application of the specified KB updates."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft .NET Framework: уязвимость удаленного выполнения кода (CVE-2018-8421)",
+    "summary": "В Microsoft .NET Framework обнаружена критическая уязвимость удаленного выполнения кода. Microsoft выпустила обновления безопасности.",
+    "impact": "Злоумышленник может выполнить произвольный код.",
+    "fix": "Установите обновления, указанные в KB4457025, KB4457026, KB4457027, KB4457028, KB4457029, KB4457030, KB4457033, KB4457034, KB4457035, KB4457036, KB4457037, KB4457038, KB4457042, KB4457043, KB4457044, KB4457045, KB4457053, KB4457054, KB4457055, KB4457056, KB4457128, KB4457131, KB4457132, KB4457138 и KB4457142.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленных версий Microsoft .NET Framework.",
+     "Убедитесь в применении указанных обновлений KB."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft .NET Framework: Schwachstelle zur RCE (CVE-2018-8421)",
+    "summary": "Im Microsoft .NET Framework existiert eine kritische Schwachstelle zur Remotecodeausführung. Microsoft hat Sicherheitsupdates bereitgestellt.",
+    "impact": "Ein Angreifer kann beliebigen Code ausführen.",
+    "fix": "Wenden Sie die Updates an, die in KB4457025, KB4457026, KB4457027, KB4457028, KB4457029, KB4457030, KB4457033, KB4457034, KB4457035, KB4457036, KB4457037, KB4457038, KB4457042, KB4457043, KB4457044, KB4457045, KB4457053, KB4457054, KB4457055, KB4457056, KB4457128, KB4457131, KB4457132, KB4457138 und KB4457142 referenziert sind.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf installierte Microsoft .NET Framework-Versionen.",
+     "Überprüfen Sie die Anwendung der angegebenen KB-Updates."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T12:57:26Z",
+  "slugs": {
+   "ru": "microsoft-net-framework-uyazvimost-udalennogo-vypolneniya-koda",
+   "de": "microsoft-net-framework-schwachstelle-zur-rce-cve-2018-8421",
+   "en": "microsoft-net-framework-remote-code-execution-vulnerability-cve"
+  },
+  "published_at": "2026-11-21T12:57:26Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows 10",
+   "versions": "multiple",
+   "fixed": null,
+   "evidence": "Remote Desktop Services Remote Code Execution Vulnerability\nWindows RDP. Microsoft 2019-Aug security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: Remote Desktop Services Remote Code Execution Vulnerability (CVE-2019-1182)",
+  "summary": "A critical remote code execution vulnerability exists in Microsoft Remote Desktop Services (CVE-2019-1182) affecting Windows 10 and Microsoft Remote Desktop clients.",
+  "impact": "An attacker can execute arbitrary code on the target system via Remote Desktop Services.",
+  "fix": "Apply the security updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check Windows 10 and Remote Desktop client installations for exposure to CVE-2019-1182.",
+   "Verify that the August 2019 security updates or corresponding KBs are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в Remote Desktop Services (CVE-2019-1182)",
+  "summary": "В Microsoft Remote Desktop Services обнаружена критическая уязвимость удаленного выполнения кода (CVE-2019-1182), затрагивающая Windows 10 и клиенты Microsoft Remote Desktop.",
+  "impact": "Злоумышленник может выполнить произвольный код на целевой системе через Remote Desktop Services.",
+  "fix": "Установите обновления безопасности, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте установки Windows 10 и клиентов Remote Desktop на уязвимость CVE-2019-1182.",
+   "Убедитесь, что установлены обновления безопасности за август 2019 года или соответствующие КВ."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Schwachstelle für Remotecodeausführung in Remote Desktop Services (CVE-2019-1182)",
+  "summary": "In Microsoft Remote Desktop Services existiert eine kritische Schwachstelle für Remotecodeausführung (CVE-2019-1182), die Windows 10 und Microsoft Remote Desktop Clients betrifft.",
+  "impact": "Ein Angreifer kann über Remote Desktop Services beliebigen Code auf dem Zielsystem ausführen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows 10- und Remote Desktop-Client-Installationem auf Betroffenheit durch CVE-2019-1182.",
+   "Stellen Sie sicher, dass die Sicherheitsupdates vom August 2019 oder entsprechende KBs angewendet wurden."
+  ],
+  "regression": null
+ }
+}

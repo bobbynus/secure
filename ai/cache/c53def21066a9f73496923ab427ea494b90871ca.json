@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Remote Desktop Services Remote Code Execution Vulnerability (CVE-2019-1181)",
+  "summary": "A remote code execution vulnerability exists in Microsoft Remote Desktop Services (CVE-2019-1181) with a CVSS score of 9.8.",
+  "impact": "An attacker can execute remote code via Remote Desktop Services.",
+  "fix": "Microsoft released security updates in August 2019 (including KB4511553, KB4512482, KB4512488, KB4512489, KB4512497, KB4512501, KB4512507, KB4512508, KB4512516, KB4512517, KB4512518).",
+  "workaround": null,
+  "checks": [
+   "Check systems for the presence of CVE-2019-1181 and verify installation of Microsoft security updates."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в Remote Desktop Services (CVE-2019-1181)",
+  "summary": "В Microsoft Remote Desktop Services обнаружена уязвимость удаленного выполнения кода (CVE-2019-1181) с оценкой CVSS 9.8.",
+  "impact": "Злоумышленник может выполнить удаленный код через службы удаленного рабочего стола.",
+  "fix": "Microsoft выпустила обновления безопасности в августе 2019 года (включая KB4511553, KB4512482, KB4512488, KB4512489, KB4512497, KB4512501, KB4512507, KB4512508, KB4512516, KB4512517, KB4512518).",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие CVE-2019-1181 и убедитесь в установке обновлений безопасности Microsoft."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in Remote Desktop Services (CVE-2019-1181)",
+  "summary": "In Microsoft Remote Desktop Services existiert eine Schwachstelle zur Remotecodeausführung (CVE-2019-1181) mit einem CVSS-Score von 9.8.",
+  "impact": "Ein Angreifer kann über Remote Desktop Services Remotecode ausführen.",
+  "fix": "Microsoft hat im August 2019 Sicherheitsupdates veröffentlicht (darunter KB4511553, KB4512482, KB4512488, KB4512489, KB4512497, KB4512501, KB4512507, KB4512508, KB4512516, KB4512517, KB4512518).",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf CVE-2019-1181 und verifizieren Sie die Installation der Microsoft-Sicherheitsupdates."
+  ],
+  "regression": null
+ }
+}

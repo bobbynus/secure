@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: CVE-2018-8440 Elevation of Privilege Vulnerability",
+  "summary": "An elevation of privilege vulnerability exists in Microsoft Windows ALPC, actively reported as exploited.",
+  "impact": "Allows attackers to elevate privileges on affected Windows systems. Exploitation is reported.",
+  "fix": "Apply the updates referenced by KB numbers KB4457128, KB4457129, KB4457131, KB4457132, KB4457135, KB4457138, KB4457140, KB4457142, KB4457143, KB4457144, KB4457145, KB4457984, or KB4458010.",
+  "workaround": null,
+  "checks": [
+   "Inventory systems running Windows 7 and Windows 10 versions 1607 through 1803.",
+   "Verify if security updates associated with KB4457128, KB4457129, KB4457131, KB4457132, KB4457135, KB4457138, KB4457140, KB4457142, KB4457143, KB4457144, KB4457145, KB4457984, and KB4458010 are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость повышения привилегий CVE-2018-8440",
+  "summary": "В Microsoft Windows ALPC обнаружена уязвимость повышения привилегий, для которой зафиксирована эксплуатация.",
+  "impact": "Позволяет злоумышленникам повысить привилегии в уязвимых системах Windows. Эксплуатация подтверждена.",
+  "fix": "Установите обновления, указанные в бюллетенях KB4457128, KB4457129, KB4457131, KB4457132, KB4457135, KB4457138, KB4457140, KB4457142, KB4457143, KB4457144, KB4457145, KB4457984 или KB4458010.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем под управлением Windows 7 и Windows 10 версий с 1607 по 1803.",
+   "Проверьте установку обновлений безопасности, связанных с KB4457128, KB4457129, KB4457131, KB4457132, KB4457135, KB4457138, KB4457140, KB4457142, KB4457143, KB4457144, KB4457145, KB4457984 и KB4458010."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Schwachstelle CVE-2018-8440 zur Privilegienerweiterung",
+  "summary": "In Microsoft Windows ALPC existiert eine Schwachstelle zur Privilegienerweiterung, die laut Berichten ausgenutzt wird.",
+  "impact": "Ermöglicht Angreifern die Erhöhung von Privilegien auf betroffenen Windows-Systemen. Eine Ausnutzung ist bekannt.",
+  "fix": "Wenden Sie die Updates an, die durch KB4457128, KB4457129, KB4457131, KB4457132, KB4457135, KB4457138, KB4457140, KB4457142, KB4457143, KB4457144, KB4457145, KB4457984 oder KB4458010 referenziert werden.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Systeme mit Windows 7 und Windows 10 in den Versionen 1607 bis 1803.",
+   "Überprüfen Sie, ob die Sicherheitsupdates für KB4457128, KB4457129, KB4457131, KB4457132, KB4457135, KB4457138, KB4457140, KB4457142, KB4457143, KB4457144, KB4457145, KB4457984 und KB4458010 eingespielt wurden."
+  ],
+  "regression": null
+ }
+}
