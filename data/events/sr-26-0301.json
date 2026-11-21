@@ -1,0 +1,120 @@
+{
+  "id": "sr-26-0301",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-59230"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5066586",
+      "KB5066780",
+      "KB5066782",
+      "KB5066791",
+      "KB5066793",
+      "KB5066835",
+      "KB5066836",
+      "KB5066837",
+      "KB5066872",
+      "KB5066873",
+      "KB5066874",
+      "KB5066875",
+      "KB5066876",
+      "KB5066877"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T11:50:51Z",
+    "updated": "2026-11-21T11:50:51Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Remote Access Connection Manager Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59230",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T11:50:51Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T11:50:51Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-povyshenie-privilegiy-v-remote-access",
+      "title": "Microsoft Windows: повышение привилегий в Remote Access Connection Manager",
+      "summary": "Уязвимость повышения привилегий (CVE-2025-59230) затрагивает Windows Remote Access Connection Manager. Вендор сообщает об эксплуатации.",
+      "impact": "Злоумышленник может повысить привилегии. Эксплуатация подтверждена производителем.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft (включая KB5066586, KB5066780, KB5066782, KB5066791, KB5066793, KB5066835, KB5066836, KB5066837, KB5066872, KB5066873, KB5066874, KB5066875, KB5066876, KB5066877).",
+      "checks": [
+        "Проверьте системы Windows 10 на уязвимость CVE-2025-59230.",
+        "Убедитесь, что установлены необходимые обновления безопасности."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-rechtenausweitung-im-remote-access-connection",
+      "title": "Microsoft Windows: Rechtenausweitung im Remote Access Connection Manager",
+      "summary": "Eine Schwachstelle zur Rechtenausweitung (CVE-2025-59230) betrifft den Windows Remote Access Connection Manager. Der Hersteller meldet Ausnutzung.",
+      "impact": "Ein Angreifer kann Privilegien erweitern. Die Ausnutzung wird vom Hersteller gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5066586, KB5066780, KB5066782, KB5066791, KB5066793, KB5066835, KB5066836, KB5066837, KB5066872, KB5066873, KB5066874, KB5066875, KB5066876, KB5066877).",
+      "checks": [
+        "Inventarisieren Sie Windows 10-Systeme hinsichtlich der Schwachstelle CVE-2025-59230.",
+        "Überprüfen Sie, ob die entsprechenden Sicherheitsupdates installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-elevation-of-privilege-in-remote-access",
+      "title": "Microsoft Windows: Elevation of privilege in Remote Access Connection Manager",
+      "summary": "An elevation of privilege vulnerability (CVE-2025-59230) affects the Windows Remote Access Connection Manager. Microsoft reports exploitation.",
+      "impact": "An attacker can achieve elevation of privilege. Exploitation is reported by the vendor.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft (including KB5066586, KB5066780, KB5066782, KB5066791, KB5066793, KB5066835, KB5066836, KB5066837, KB5066872, KB5066873, KB5066874, KB5066875, KB5066876, KB5066877).",
+      "checks": [
+        "Inventory Windows 10 systems for vulnerability CVE-2025-59230.",
+        "Verify whether the applicable security updates are installed."
+      ]
+    }
+  }
+}

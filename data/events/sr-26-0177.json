@@ -1,0 +1,115 @@
+{
+  "id": "sr-26-0177",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2017-8589"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4025331",
+      "KB4025333",
+      "KB4025336",
+      "KB4025337",
+      "KB4025338",
+      "KB4025339",
+      "KB4025341",
+      "KB4025342",
+      "KB4025343",
+      "KB4025344",
+      "KB4032955"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.0",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T11:50:51Z",
+    "updated": "2026-11-21T11:50:51Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Search Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2017-8589",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T11:50:51Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T11:50:51Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v",
+      "title": "Microsoft Windows: уязвимость удаленного выполнения кода в Windows Search",
+      "summary": "В Windows Search на различных версиях Microsoft Windows обнаружена критическая уязвимость удаленного выполнения кода.",
+      "impact": "Злоумышленник может использовать данную уязвимость для удаленного выполнения произвольного кода.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновления, выпущенные Microsoft в рамках обновления безопасности за июль 2017 года.",
+      "checks": [
+        "Проведите инвентаризацию систем Microsoft Windows для оценки уязвимости.",
+        "Проверьте, установлено ли обновление безопасности за июль 2017 года, включая KB4025331, KB4025333, KB4025336, KB4025337, KB4025338, KB4025339, KB4025341, KB4025342, KB4025343, KB4025344 или KB4032955."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in",
+      "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in Windows Search",
+      "summary": "In Windows Search in verschiedenen Versionen von Microsoft Windows existiert eine kritische Remotecodeausführungsschwachstelle.",
+      "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um beliebigen Code aus der Ferne auszuführen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft im Sicherheitsupdate vom Juli 2017 bereitgestellten Updates an.",
+      "checks": [
+        "Inventarisieren Sie Microsoft Windows-Systeme zur Schwachstellenbewertung.",
+        "Überprüfen Sie, ob das Sicherheitsupdate vom Juli 2017 mit KB4025331, KB4025333, KB4025336, KB4025337, KB4025338, KB4025339, KB4025341, KB4025342, KB4025343, KB4025344 oder KB4032955 angewendet wurde."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-windows-search-remote-code-execution",
+      "title": "Microsoft Windows: Windows Search Remote Code Execution Vulnerability",
+      "summary": "A critical remote code execution vulnerability exists in Windows Search across various versions of Microsoft Windows.",
+      "impact": "An attacker can exploit this vulnerability to execute arbitrary code remotely.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply the updates provided by Microsoft in the July 2017 security update.",
+      "checks": [
+        "Inventory Microsoft Windows systems for vulnerability assessment.",
+        "Verify if the July 2017 security update containing KB4025331, KB4025333, KB4025336, KB4025337, KB4025338, KB4025339, KB4025341, KB4025342, KB4025343, KB4025344, or KB4032955 is applied."
+      ]
+    }
+  }
+}

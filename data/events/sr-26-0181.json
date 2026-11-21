@@ -1,0 +1,101 @@
+{
+  "id": "sr-26-0181",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "exchange-server",
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2018-0986"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T11:50:51Z",
+    "updated": "2026-11-21T11:50:51Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Malware Protection Engine Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2018-0986",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T11:50:51Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T11:50:51Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-malware-protection-engine-udalennoe-vypolnenie-koda",
+      "title": "Microsoft Malware Protection Engine: удаленное выполнение кода (CVE-2018-0986)",
+      "summary": "В Microsoft Malware Protection Engine обнаружена уязвимость удаленного выполнения кода.",
+      "impact": "Злоумышленник может выполнить произвольный код.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проверьте системы на наличие Microsoft Malware Protection Engine и уязвимости CVE-2018-0986."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-malware-protection-engine-remotecodeausfuehrung-cve",
+      "title": "Microsoft Malware Protection Engine: Remotecodeausführung (CVE-2018-0986)",
+      "summary": "Im Microsoft Malware Protection Engine existiert eine Schwachstelle zur Remotecodeausführung.",
+      "impact": "Ein Angreifer kann beliebigen Code ausführen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Überprüfen Sie Systeme auf das Vorhandensein von Microsoft Malware Protection Engine und CVE-2018-0986."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-malware-protection-engine-remote-code-execution-cve",
+      "title": "Microsoft Malware Protection Engine: Remote Code Execution (CVE-2018-0986)",
+      "summary": "A remote code execution vulnerability exists in the Microsoft Malware Protection Engine.",
+      "impact": "An attacker could execute arbitrary code.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources list no fixed versions.",
+      "checks": [
+        "Check systems for the presence of Microsoft Malware Protection Engine and CVE-2018-0986 exposure."
+      ]
+    }
+  }
+}
