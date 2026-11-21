@@ -1,0 +1,117 @@
+{
+  "id": "sr-26-0200",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2019-1458"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4530681",
+      "KB4530689",
+      "KB4530691",
+      "KB4530692",
+      "KB4530695",
+      "KB4530698",
+      "KB4530702",
+      "KB4530719",
+      "KB4530730",
+      "KB4530734"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T13:30:47Z",
+    "updated": "2026-11-21T13:30:47Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Win32k Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2019-1458",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T13:30:47Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T13:30:47Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-povysheniya-privilegiy-v-win32k",
+      "title": "Microsoft Windows: уязвимость повышения привилегий в Win32k (CVE-2019-1458)",
+      "summary": "В Win32k в Microsoft Windows обнаружена уязвимость повышения привилегий. Microsoft сообщает об эксплуатации данной уязвимости.",
+      "impact": "Злоумышленник может использовать эту уязвимость для повышения привилегий. По заявлению вендора, уязвимость эксплуатируется.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите соответствующие обновления безопасности, предоставленные Microsoft (включая KB4530681, KB4530689, KB4530691, KB4530692, KB4530695, KB4530698, KB4530702, KB4530719, KB4530730, KB4530734).",
+      "checks": [
+        "Проверьте системы на наличие CVE-2019-1458.",
+        "Убедитесь, что установлены соответствующие обновления безопасности (такие как KB4530681, KB4530689, KB4530691, KB4530692, KB4530695, KB4530698, KB4530702, KB4530719, KB4530730, KB4530734)."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-win32k-schwachstelle-zur",
+      "title": "Microsoft Windows: Win32k-Schwachstelle zur Privilegienerweiterung (CVE-2019-1458)",
+      "summary": "In Win32k in Microsoft Windows existiert eine Schwachstelle zur Privilegienerweiterung. Microsoft berichtet, dass diese Schwachstelle ausgenutzt wird.",
+      "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien zu erweitern. Der Hersteller berichtet von einer Ausnutzung.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Installieren Sie die von Microsoft bereitgestellten entsprechenden Sicherheitsupdates (einschließlich KB4530681, KB4530689, KB4530691, KB4530692, KB4530695, KB4530698, KB4530702, KB4530719, KB4530730, KB4530734).",
+      "checks": [
+        "Überprüfen Sie Systeme auf das Vorhandensein von CVE-2019-1458.",
+        "Überprüfen Sie, ob die entsprechenden Sicherheitsupdates (wie KB4530681, KB4530689, KB4530691, KB4530692, KB4530695, KB4530698, KB4530702, KB4530719, KB4530730, KB4530734) installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-win32k-elevation-of-privilege-vulnerability",
+      "title": "Microsoft Windows: Win32k Elevation of Privilege Vulnerability (CVE-2019-1458)",
+      "summary": "An elevation of privilege vulnerability exists in Win32k in Microsoft Windows. Microsoft reports that this vulnerability is being exploited.",
+      "impact": "An attacker can exploit this vulnerability to elevate privileges. The vendor reports that the vulnerability is exploited.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the corresponding security updates provided by Microsoft (including KB4530681, KB4530689, KB4530691, KB4530692, KB4530695, KB4530698, KB4530702, KB4530719, KB4530730, KB4530734).",
+      "checks": [
+        "Check systems for the presence of CVE-2019-1458.",
+        "Verify that the appropriate security updates (such as KB4530681, KB4530689, KB4530691, KB4530692, KB4530695, KB4530698, KB4530702, KB4530719, KB4530730, KB4530734) are installed."
+      ]
+    }
+  }
+}

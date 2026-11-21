@@ -1,0 +1,106 @@
+{
+  "id": "sr-26-0197",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2019-1213"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4512476",
+      "KB4512491"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T13:30:47Z",
+    "updated": "2026-11-21T13:30:47Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows DHCP Server Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2019-1213",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T13:30:47Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T13:30:47Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-server-udalennoe-vypolnenie-koda-v-dhcp-server",
+      "title": "Microsoft Windows Server: удаленное выполнение кода в DHCP Server",
+      "summary": "В Windows DHCP Server обнаружена критическая уязвимость удаленного выполнения кода, затрагивающая Windows Server 2008. Microsoft выпустила обновления KB4512476 и KB4512491.",
+      "impact": "Злоумышленник может удаленно выполнить произвольный код на затронутых системах Windows Server с установленной ролью DHCP Server.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновления KB4512476 или KB4512491, предоставленные Microsoft.",
+      "checks": [
+        "Проверьте системы под управлением Windows Server на наличие роли DHCP Server.",
+        "Убедитесь, что установлены обновления KB4512476 или KB4512491."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-server-remotecodeausfuehrung-im-dhcp-server",
+      "title": "Microsoft Windows Server: Remotecodeausführung im DHCP-Server",
+      "summary": "Eine kritische Schwachstelle zur Remotecodeausführung in Windows DHCP Server betrifft Windows Server 2008. Microsoft hat Updates unter KB4512476 und KB4512491 veröffentlicht.",
+      "impact": "Ein Angreifer kann auf betroffenen Windows Server-Systemen mit aktivierter DHCP-Server-Rolle aus der Ferne beliebigen Code ausführen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Installieren Sie die von Microsoft bereitgestellten Updates KB4512476 oder KB4512491.",
+      "checks": [
+        "Überprüfen Sie Windows Server-Systeme auf die installierte DHCP-Server-Rolle.",
+        "Überprüfen Sie, ob die Updates KB4512476 oder KB4512491 installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-server-remote-code-execution-in-dhcp-server",
+      "title": "Microsoft Windows Server: Remote Code Execution in DHCP Server",
+      "summary": "A critical remote code execution vulnerability exists in Windows DHCP Server affecting Windows Server 2008. Microsoft released updates addressing the issue under KB4512476 and KB4512491.",
+      "impact": "An attacker could execute arbitrary code remotely on the affected Windows Server systems running the DHCP Server role.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply updates KB4512476 or KB4512491 as provided by Microsoft.",
+      "checks": [
+        "Check systems running Windows Server for the DHCP Server role.",
+        "Verify if updates KB4512476 or KB4512491 are installed."
+      ]
+    }
+  }
+}

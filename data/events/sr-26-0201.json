@@ -1,0 +1,108 @@
+{
+  "id": "sr-26-0201",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "sharepoint-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2019-1257"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4475590",
+      "KB4475596",
+      "KB4475605",
+      "KB4484098"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T13:30:47Z",
+    "updated": "2026-11-21T13:30:47Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft SharePoint Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2019-1257",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T13:30:47Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T13:30:47Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-sharepoint-uyazvimost-udalennogo-vypolneniya-koda-cve",
+      "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода (CVE-2019-1257)",
+      "summary": "В Microsoft SharePoint Server обнаружена уязвимость удаленного выполнения кода. Злоумышленник может использовать ее для выполнения произвольного кода.",
+      "impact": "Удаленное выполнение кода на уязвимом сервере SharePoint.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft (KB4475590, KB4475596, KB4475605, KB4484098).",
+      "checks": [
+        "Проверьте установки SharePoint Server на наличие уязвимости CVE-2019-1257.",
+        "Убедитесь в применении обновлений KB4475590, KB4475596, KB4475605 и KB4484098."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-sharepoint-schwachstelle-fuer-remotecodeausfuehrung",
+      "title": "Microsoft SharePoint: Schwachstelle für Remotecodeausführung (CVE-2019-1257)",
+      "summary": "In Microsoft SharePoint Server existiert eine Schwachstelle zur Remotecodeausführung. Ein Angreifer kann dies ausnutzen, um beliebigen Code auszuführen.",
+      "impact": "Remotecodeausführung auf dem betroffenen SharePoint-Server.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (KB4475590, KB4475596, KB4475605, KB4484098).",
+      "checks": [
+        "Überprüfen Sie SharePoint-Server-Installationen auf CVE-2019-1257.",
+        "Überprüfen Sie die Anwendung der Updates KB4475590, KB4475596, KB4475605 und KB4484098."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-sharepoint-remote-code-execution-vulnerability-cve",
+      "title": "Microsoft SharePoint: Remote Code Execution Vulnerability (CVE-2019-1257)",
+      "summary": "A remote code execution vulnerability exists in Microsoft SharePoint Server. An attacker can exploit this to execute arbitrary code.",
+      "impact": "Remote code execution on the affected SharePoint server.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply updates as provided by Microsoft (KB4475590, KB4475596, KB4475605, KB4484098).",
+      "checks": [
+        "Check SharePoint Server installations for presence of CVE-2019-1257.",
+        "Verify application of KB updates KB4475590, KB4475596, KB4475605, and KB4484098."
+      ]
+    }
+  }
+}

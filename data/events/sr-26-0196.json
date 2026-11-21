@@ -1,0 +1,106 @@
+{
+  "id": "sr-26-0196",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "sharepoint-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2019-1205"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4475528",
+      "KB4475555"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T13:30:47Z",
+    "updated": "2026-11-21T13:30:47Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Word Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2019-1205",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T13:30:47Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T13:30:47Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-word-uyazvimost-udalennogo-vypolneniya-koda-cve-2019",
+      "title": "Microsoft Word: уязвимость удаленного выполнения кода (CVE-2019-1205)",
+      "summary": "В Microsoft Word и SharePoint Server обнаружена критическая уязвимость удаленного выполнения кода, отслеживаемая под идентификатором CVE-2019-1205.",
+      "impact": "Злоумышленник может удаленно выполнить произвольный код.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Доступны обновления, ссылающиеся на KB4475528 и KB4475555.",
+      "checks": [
+        "Проверьте системы на наличие SharePoint Server и затронутых версий Microsoft Office.",
+        "Убедитесь, что установлены обновления KB4475528 и KB4475555."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-word-remotecodeausfuehrung-cve-2019-1205",
+      "title": "Microsoft Word: Remotecodeausführung (CVE-2019-1205)",
+      "summary": "In Microsoft Word und SharePoint Server existiert eine kritische Schwachstelle zur Remotecodeausführung unter CVE-2019-1205.",
+      "impact": "Ein Angreifer kann Remotecode ausführen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Updates mit Bezug auf KB4475528 und KB4475555 sind verfügbar.",
+      "checks": [
+        "Überprüfen Sie Systeme auf das Vorhandensein von SharePoint Server und betroffenen Microsoft Office-Editionen.",
+        "Verifizieren Sie, ob die Updates KB4475528 und KB4475555 eingespielt wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-word-remote-code-execution-vulnerability-cve-2019-1205",
+      "title": "Microsoft Word: Remote Code Execution Vulnerability (CVE-2019-1205)",
+      "summary": "A critical remote code execution vulnerability exists in Microsoft Word and SharePoint Server, tracked as CVE-2019-1205.",
+      "impact": "An attacker could execute arbitrary code remotely.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Updates are available referencing KB4475528 and KB4475555.",
+      "checks": [
+        "Check systems for the presence of SharePoint Server and affected Microsoft Office editions.",
+        "Verify if updates KB4475528 and KB4475555 are applied."
+      ]
+    }
+  }
+}
