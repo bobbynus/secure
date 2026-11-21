@@ -2,7 +2,7 @@
  "id": "zdi-advisories",
  "etag": null,
  "last_modified": null,
- "checksum": "8984d96fe4eef056bfd71608e00f6ec8ca265de5b1d454fa0e0823dcc6048c77",
+ "checksum": "51b87cb738e6f54243d4a1d5b82ca5aacbf671656552cc2dfaf518585bb1451a",
  "cursor": {},
  "seen": {
   "ZDI-CAN-29063": "06abc963f53d199a787f066b",
@@ -208,8 +208,8 @@
   "ZDI-CAN-29487": "237541294d06f742dded589d",
   "ZDI-CAN-32013": "5daa6534f198ffe08bbf533c"
  },
- "last_attempt": "2026-11-21T16:00:43Z",
- "last_success": "2026-11-21T16:00:43Z",
+ "last_attempt": "2026-11-21T17:00:39Z",
+ "last_success": "2026-11-21T17:00:39Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
