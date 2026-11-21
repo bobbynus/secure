@@ -1,0 +1,115 @@
+{
+  "id": "sr-26-0221",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-34448"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5004237",
+      "KB5004238",
+      "KB5004244",
+      "KB5004245",
+      "KB5004249",
+      "KB5004289",
+      "KB5004294",
+      "KB5004298",
+      "KB5005563"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 6.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T10:50:47Z",
+    "updated": "2026-11-21T10:50:47Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Scripting Engine Memory Corruption Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34448",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T10:50:47Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T10:50:47Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-scripting-engine-povrezhdenie-pamyati-cve-2021-34448",
+      "title": "Microsoft Scripting Engine: повреждение памяти CVE-2021-34448",
+      "summary": "В Microsoft Scripting Engine обнаружена уязвимость повреждения памяти, которая активно эксплуатируется.",
+      "impact": "Злоумышленники могут использовать эту уязвимость для повреждения памяти в Microsoft Scripting Engine.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновление безопасности, предоставленное Microsoft.",
+      "checks": [
+        "Проверьте системы на наличие установленных обновлений безопасности Microsoft.",
+        "Проверьте уязвимость систем к CVE-2021-34448."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-scripting-engine-speicherbeschaedigung-cve-2021-34448",
+      "title": "Microsoft Scripting Engine: Speicherbeschädigung CVE-2021-34448",
+      "summary": "Im Microsoft Scripting Engine existiert eine Schwachstelle zur Speicherbeschädigung, die aktiv ausgenutzt wird.",
+      "impact": "Angreifer können diese Schwachstelle ausnutzen, um eine Speicherbeschädigung im Microsoft Scripting Engine zu verursachen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie das von Microsoft bereitgestellte Sicherheitsupdate an.",
+      "checks": [
+        "Überprüfen Sie Systeme auf installierte Sicherheitsupdates von Microsoft.",
+        "Überprüfen Sie die Systemexposition gegenüber CVE-2021-34448."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-scripting-engine-cve-2021-34448-memory-corruption",
+      "title": "Microsoft Scripting Engine: CVE-2021-34448 Memory Corruption",
+      "summary": "A memory corruption vulnerability exists in the Microsoft Scripting Engine, actively exploited in the wild.",
+      "impact": "Attackers can exploit this vulnerability to cause memory corruption in the Microsoft Scripting Engine.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the security update provided by Microsoft.",
+      "checks": [
+        "Check systems for installed Microsoft security updates.",
+        "Verify system exposure to CVE-2021-34448."
+      ]
+    }
+  }
+}

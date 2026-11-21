@@ -1,0 +1,103 @@
+{
+  "id": "sr-26-0219",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-44228"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 10.0,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T10:50:47Z",
+    "updated": "2026-11-21T10:50:47Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Apache Log4j Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-44228",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T10:50:47Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T10:50:47Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-uyazvimost-udalennogo-vypolneniya-koda-v-apache-log4j",
+      "title": "Microsoft: уязвимость удаленного выполнения кода в Apache Log4j",
+      "summary": "Продукты Microsoft подвержены уязвимости удаленного выполнения кода в Apache Log4j (CVE-2021-44228), которая активно эксплуатируется.",
+      "impact": "Удаленное выполнение кода, позволяющее злоумышленникам скомпрометировать уязвимые системы.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Примените обновления или исправления, предоставленные Microsoft в их рекомендациях по безопасности.",
+      "checks": [
+        "Проведите инвентаризацию систем под управлением продуктов Microsoft, использующих Apache Log4j.",
+        "Проверьте наличие уязвимости CVE-2021-44228."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-remotecodeausfuehrung-in-apache-log4j",
+      "title": "Microsoft: Remotecodeausführung in Apache Log4j",
+      "summary": "Microsoft-Produkte sind von der Remotecodeausführungsschwachstelle in Apache Log4j (CVE-2021-44228) betroffen, die aktiv ausgenutzt wird.",
+      "impact": "Remotecodeausführung, die es Angreifern ermöglicht, betroffene Systeme zu kompromittieren.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft in ihren Sicherheitshinweisen bereitgestellten Updates oder Fixes an.",
+      "checks": [
+        "Inventarisieren Sie Systeme mit Microsoft-Produkten, die Apache Log4j verwenden.",
+        "Prüfen Sie auf Anfälligkeit für CVE-2021-44228."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-apache-log4j-remote-code-execution-vulnerability",
+      "title": "Microsoft: Apache Log4j Remote Code Execution Vulnerability",
+      "summary": "Microsoft products are affected by the Apache Log4j remote code execution vulnerability (CVE-2021-44228), which is actively exploited.",
+      "impact": "Remote code execution allowing attackers to compromise affected systems.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply updates or fixes provided by Microsoft as referenced in their security guidance.",
+      "checks": [
+        "Inventory systems running Microsoft products utilizing Apache Log4j.",
+        "Check for exposure to CVE-2021-44228."
+      ]
+    }
+  }
+}

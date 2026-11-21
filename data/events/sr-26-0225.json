@@ -1,0 +1,123 @@
+{
+  "id": "sr-26-0225",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-34527"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5004945",
+      "KB5004947",
+      "KB5004948",
+      "KB5004950",
+      "KB5004951",
+      "KB5004953",
+      "KB5004954",
+      "KB5004955",
+      "KB5004956",
+      "KB5004958",
+      "KB5004959",
+      "KB5004960",
+      "KB5005575",
+      "KB5007215",
+      "KB5008212",
+      "KB5018427",
+      "KB5019959"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T10:50:47Z",
+    "updated": "2026-11-21T10:50:47Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Print Spooler Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T10:50:47Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T10:50:47Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-vypolneniya-udalennogo-koda-v",
+      "title": "Microsoft Windows: уязвимость выполнения удаленного кода в Print Spooler (CVE-2021-34527)",
+      "summary": "В компоненте Windows Print Spooler обнаружена уязвимость удаленного выполнения кода, отслеживаемая как CVE-2021-34527. Вендор сообщает об эксплуатации.",
+      "impact": "Злоумышленник может выполнить удаленный код через уязвимую службу Print Spooler.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft.",
+      "checks": [
+        "Проверьте системы Windows на наличие и статус службы Print Spooler.",
+        "Убедитесь в установке обновлений безопасности Microsoft, устраняющих CVE-2021-34527."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-remotecodeausfuehrung-in-print-spooler-cve",
+      "title": "Microsoft Windows: Remotecodeausführung in Print Spooler (CVE-2021-34527)",
+      "summary": "Im Windows Print Spooler-Komponente existiert eine Schwachstelle zur Remotecodeausführung unter CVE-2021-34527. Der Hersteller meldet Ausnutzung.",
+      "impact": "Ein Angreifer kann über den anfälligen Print Spooler-Dienst Remotecode ausführen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+      "checks": [
+        "Prüfen Sie Windows-Systeme auf Exposition und Status des Print Spooler-Dienstes.",
+        "Überprüfen Sie die Installation der Microsoft-Sicherheitsupdates für CVE-2021-34527."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-print-spooler-remote-code-execution",
+      "title": "Microsoft Windows: Print Spooler Remote Code Execution Vulnerability (CVE-2021-34527)",
+      "summary": "A remote code execution vulnerability exists in the Windows Print Spooler component, tracked as CVE-2021-34527. Vendor reports exploitation.",
+      "impact": "An attacker can achieve remote code execution via the vulnerable Print Spooler service.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft.",
+      "checks": [
+        "Check Windows systems for Print Spooler service exposure and status.",
+        "Verify installation of Microsoft security updates addressing CVE-2021-34527."
+      ]
+    }
+  }
+}

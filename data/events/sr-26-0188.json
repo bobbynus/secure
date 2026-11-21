@@ -1,0 +1,114 @@
+{
+  "id": "sr-26-0188",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2018-8653"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4483187",
+      "KB4483228",
+      "KB4483229",
+      "KB4483230",
+      "KB4483232",
+      "KB4483234",
+      "KB4483235"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.5,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T10:50:47Z",
+    "updated": "2026-11-21T10:50:47Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Scripting Engine Memory Corruption Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2018-8653",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T10:50:47Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T10:50:47Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-internet-explorer-uyazvimost-povrezhdeniya-pamyati-v",
+      "title": "Microsoft Internet Explorer: уязвимость повреждения памяти в Scripting Engine (CVE-2018-8653)",
+      "summary": "В подсистеме скриптов Internet Explorer обнаружена уязвимость повреждения памяти, эксплуатация которой подтверждена Microsoft. Злоумышленники могут использовать ее для компрометации уязвимых систем.",
+      "impact": "Эксплуатация может привести к повреждению памяти и компрометации системы. Производитель сообщает об имеющих место фактах эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft (KB4483187, KB4483228, KB4483229, KB4483230, KB4483232, KB4483234, KB4483235).",
+      "checks": [
+        "Проведите инвентаризацию систем с запущенными Internet Explorer 10 и 11 на поддерживаемых версиях Windows 10 и Windows Server.",
+        "Проверьте, установлены ли декабрьские обновления безопасности Microsoft, включая KB4483187, KB4483228, KB4483229, KB4483230, KB4483232, KB4483234 или KB4483235."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-internet-explorer-speicherinhalts-schwachstelle-in",
+      "title": "Microsoft Internet Explorer: Speicherinhalts-Schwachstelle in Scripting Engine (CVE-2018-8653)",
+      "summary": "Im Scripting Engine von Internet Explorer existiert eine Speicherinhalts-Schwachstelle, deren Ausnutzung laut Microsoft beobachtet wurde. Angreifer können den Fehler zur Kompromittierung ausnutzen.",
+      "impact": "Die Ausnutzung kann zu Speicherbeschädigung und Systemkompromittierung führen. Der Hersteller bestätigt die Ausnutzung der Schwachstelle.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (KB4483187, KB4483228, KB4483229, KB4483230, KB4483232, KB4483234, KB4483235).",
+      "checks": [
+        "Inventarisieren Sie Systeme mit Internet Explorer 10 und 11 auf betroffenen Windows-10- und Windows-Server-Versionen.",
+        "Überprüfen Sie, ob die Microsoft-Sicherheitsupdates vom Dezember 2018 einschließlich KB4483187, KB4483228, KB4483229, KB4483230, KB4483232, KB4483234 oder KB4483235 installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-internet-explorer-scripting-engine-memory-corruption",
+      "title": "Microsoft Internet Explorer: Scripting Engine Memory Corruption Vulnerability (CVE-2018-8653)",
+      "summary": "A memory corruption vulnerability exists in the scripting engine used by Internet Explorer, for which Microsoft reports exploitation. Attackers can leverage the flaw to compromise affected systems.",
+      "impact": "Exploitation can lead to memory corruption and system compromise under certain conditions. The vendor reports that the vulnerability has been exploited.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft (KB4483187, KB4483228, KB4483229, KB4483230, KB4483232, KB4483234, KB4483235).",
+      "checks": [
+        "Inventory systems running Internet Explorer 10 and 11 on affected Windows 10 and Windows Server versions.",
+        "Verify whether the Microsoft December 2018 security updates including KB4483187, KB4483228, KB4483229, KB4483230, KB4483232, KB4483234, or KB4483235 are installed."
+      ]
+    }
+  }
+}
