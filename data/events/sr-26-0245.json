@@ -1,0 +1,119 @@
+{
+  "id": "sr-26-0245",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2021-40444"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5005563",
+      "KB5005565",
+      "KB5005566",
+      "KB5005568",
+      "KB5005569",
+      "KB5005573",
+      "KB5005575",
+      "KB5005606",
+      "KB5005613",
+      "KB5005623",
+      "KB5005627",
+      "KB5005633",
+      "KB5019958"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T20:00:50Z",
+    "updated": "2026-11-21T20:00:50Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft MSHTML Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-40444",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T20:00:50Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T20:00:50Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v",
+      "title": "Microsoft Windows: уязвимость удаленного выполнения кода в MSHTML (CVE-2021-40444)",
+      "summary": "В платформе Microsoft MSHTML обнаружена уязвимость удаленного выполнения кода (CVE-2021-40444), которая активно эксплуатируется.",
+      "impact": "Злоумышленник может выполнить произвольный код удаленно. Сообщается об эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft (включая KB5005563, KB5005565, KB5005566, KB5005568, KB5005569, KB5005573, KB5005575, KB5005606, KB5005613, KB5005623, KB5005627, KB5005633, KB5019958).",
+      "checks": [
+        "Проведите инвентаризацию систем Windows 10 на предмет отсутствующих обновлений.",
+        "Проверьте установку обновлений безопасности для CVE-2021-40444."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in-mshtml",
+      "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in MSHTML (CVE-2021-40444)",
+      "summary": "In der Microsoft MSHTML-Plattform existiert eine Schwachstelle zur Remotecodeausführung (CVE-2021-40444), die aktiv ausgenutzt wird.",
+      "impact": "Ein Angreifer kann Remotecode ausführen. Eine Ausnutzung wird gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5005563, KB5005565, KB5005566, KB5005568, KB5005569, KB5005573, KB5005575, KB5005606, KB5005613, KB5005623, KB5005627, KB5005633, KB5019958).",
+      "checks": [
+        "Inventarisieren Sie Windows 10-Systeme auf fehlende Updates.",
+        "Überprüfen Sie die Installation der Sicherheitsupdates für CVE-2021-40444."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-mshtml-remote-code-execution-vulnerability",
+      "title": "Microsoft Windows: MSHTML Remote Code Execution Vulnerability (CVE-2021-40444)",
+      "summary": "A remote code execution vulnerability exists in the Microsoft MSHTML platform (CVE-2021-40444), which is actively exploited.",
+      "impact": "An attacker can achieve remote code execution. Exploitation is reported.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft (including KB5005563, KB5005565, KB5005566, KB5005568, KB5005569, KB5005573, KB5005575, KB5005606, KB5005613, KB5005623, KB5005627, KB5005633, KB5019958).",
+      "checks": [
+        "Inventory Windows 10 systems for missing updates.",
+        "Verify installation of security updates addressing CVE-2021-40444."
+      ]
+    }
+  }
+}
