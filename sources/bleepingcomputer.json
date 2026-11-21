@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "989f8f4385acc543aaae0c6cc9978f26",
- "last_modified": "Sat, 21 Nov 2026 14:26:04 GMT",
- "checksum": "33653a528ecf393a3d42c26a34ebb420688ed8aafc5d80ace35139eac5e9b2b3",
+ "etag": "b18f2366522df804e9e482304be97e74",
+ "last_modified": "Sat, 21 Nov 2026 14:56:06 GMT",
+ "checksum": "3418c13764ceb7f0ad7759fa1431eb2464f234ec91e64e52602ced96d5dc98c2",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -41,8 +41,8 @@
   "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/": "183f0873099bbb36da1933d5",
   "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/": "8b08c912f562969e923720a8"
  },
- "last_attempt": "2026-11-21T14:30:42Z",
- "last_success": "2026-11-21T14:30:42Z",
+ "last_attempt": "2026-11-21T15:00:39Z",
+ "last_success": "2026-11-21T15:00:39Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

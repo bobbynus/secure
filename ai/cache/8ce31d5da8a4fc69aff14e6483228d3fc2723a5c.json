@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "SharePoint Server",
+   "versions": "Microsoft 2019-Sep",
+   "fixed": null,
+   "evidence": "Microsoft Office SharePoint. Microsoft 2019-Sep security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft SharePoint: Remote Code Execution Vulnerability (CVE-2019-1296)",
+  "summary": "A remote code execution vulnerability exists in Microsoft SharePoint. The sources list no further details on impact or prerequisites.",
+  "impact": "The vulnerability allows remote code execution. Specific preconditions and details are not provided in the sources.",
+  "fix": "Refer to vendor advisories and updates KB4475590, KB4475596, and KB4484098.",
+  "workaround": null,
+  "checks": [
+   "Check systems for installed Microsoft SharePoint versions.",
+   "Verify the application of KB4475590, KB4475596, and KB4484098 updates."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода (CVE-2019-1296)",
+  "summary": "В Microsoft SharePoint обнаружена уязвимость удаленного выполнения кода. Источники не содержат дополнительных деталей о последствиях или предпосылках.",
+  "impact": "Уязвимость позволяет выполнять произвольный код удаленно. Конкретные предпосылки и детали в источниках не указаны.",
+  "fix": "Обратитесь к рекомендациям производителя и обновлениям KB4475590, KB4475596 и KB4484098.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие установленных версий Microsoft SharePoint.",
+   "Убедитесь в применении обновлений KB4475590, KB4475596 и KB4484098."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft SharePoint: Schwachstelle für Remotecodeausführung (CVE-2019-1296)",
+  "summary": "In Microsoft SharePoint existiert eine Schwachstelle zur Remotecodeausführung. Die Quellen nennen keine weiteren Details zu Auswirkungen oder Voraussetzungen.",
+  "impact": "Die Schwachstelle ermöglicht die Remotecodeausführung. Spezifische Voraussetzungen und Details werden in den Quellen nicht genannt.",
+  "fix": "Beachten Sie die Herstellerhinweise und die Updates KB4475590, KB4475596 und KB4484098.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf installierte Microsoft SharePoint-Versionen.",
+   "Überprüfen Sie die Anwendung der Updates KB4475590, KB4475596 und KB4484098."
+  ],
+  "regression": null
+ }
+}

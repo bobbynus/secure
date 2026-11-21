@@ -1,0 +1,43 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft SharePoint",
+   "versions": "Microsoft Office SharePoint. Microsoft 2019-Sep security update.",
+   "fixed": null,
+   "evidence": "Microsoft Office SharePoint. Microsoft 2019-Sep security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft SharePoint: Remote Code Execution Vulnerability",
+  "summary": "A remote code execution vulnerability exists in Microsoft SharePoint (CVE-2019-1295).",
+  "impact": "An attacker can achieve remote code execution.",
+  "fix": "Refer to the vendor advisory for update information.",
+  "workaround": null,
+  "checks": [
+   "Check SharePoint installations for vulnerable versions and applied updates."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода",
+  "summary": "В Microsoft SharePoint обнаружена уязвимость удаленного выполнения кода (CVE-2019-1295).",
+  "impact": "Злоумышленник может выполнить удаленный код.",
+  "fix": "Информацию об обновлениях см. в рекомендациях производителя.",
+  "workaround": null,
+  "checks": [
+   "Проверьте установки SharePoint на наличие уязвимых версий и примененных обновлений."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft SharePoint: Schwachstelle zur Remote-Code-Ausführung",
+  "summary": "In Microsoft SharePoint existiert eine Schwachstelle zur Remote-Code-Ausführung (CVE-2019-1295).",
+  "impact": "Ein Angreifer kann Remote-Code ausführen.",
+  "fix": "Informationen zu Updates finden Sie im Herstellerhinweis.",
+  "workaround": null,
+  "checks": [
+   "Prüfen Sie SharePoint-Installationen auf anfällige Versionen und angewendete Updates."
+  ],
+  "regression": null
+ }
+}

@@ -71,21 +71,59 @@
  "texts": {
   "msrc:CVE-2019-1295": "Microsoft SharePoint Remote Code Execution Vulnerability\nMicrosoft Office SharePoint. Microsoft 2019-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "75ce81904af53d0fe4f076b1",
+  "texts": {
+   "en": {
+    "title": "Microsoft SharePoint: Remote Code Execution Vulnerability",
+    "summary": "A remote code execution vulnerability exists in Microsoft SharePoint (CVE-2019-1295).",
+    "impact": "An attacker can achieve remote code execution.",
+    "fix": "Refer to the vendor advisory for update information.",
+    "workaround": null,
+    "checks": [
+     "Check SharePoint installations for vulnerable versions and applied updates."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода",
+    "summary": "В Microsoft SharePoint обнаружена уязвимость удаленного выполнения кода (CVE-2019-1295).",
+    "impact": "Злоумышленник может выполнить удаленный код.",
+    "fix": "Информацию об обновлениях см. в рекомендациях производителя.",
+    "workaround": null,
+    "checks": [
+     "Проверьте установки SharePoint на наличие уязвимых версий и примененных обновлений."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft SharePoint: Schwachstelle zur Remote-Code-Ausführung",
+    "summary": "In Microsoft SharePoint existiert eine Schwachstelle zur Remote-Code-Ausführung (CVE-2019-1295).",
+    "impact": "Ein Angreifer kann Remote-Code ausführen.",
+    "fix": "Informationen zu Updates finden Sie im Herstellerhinweis.",
+    "workaround": null,
+    "checks": [
+     "Prüfen Sie SharePoint-Installationen auf anfällige Versionen und angewendete Updates."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T15:00:46Z",
+  "slugs": {
+   "ru": "microsoft-sharepoint-uyazvimost-udalennogo-vypolneniya-koda",
+   "de": "microsoft-sharepoint-schwachstelle-zur-remote-code-ausfuehrung",
+   "en": "microsoft-sharepoint-remote-code-execution-vulnerability"
+  },
+  "published_at": "2026-11-21T15:00:46Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
