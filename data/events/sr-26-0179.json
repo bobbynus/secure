@@ -1,0 +1,117 @@
+{
+  "id": "sr-26-0179",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2017-8464"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4021903",
+      "KB4022714",
+      "KB4022715",
+      "KB4022717",
+      "KB4022718",
+      "KB4022719",
+      "KB4022722",
+      "KB4022724",
+      "KB4022725",
+      "KB4022726",
+      "KB4022727"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.5,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T09:51:02Z",
+    "updated": "2026-11-21T09:51:02Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "LNK Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2017-8464",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T09:51:02Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T09:51:02Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-lnk",
+      "title": "Microsoft Windows: уязвимость удаленного выполнения кода в LNK CVE-2017-8464",
+      "summary": "В Windows Shell обнаружена уязвимость удаленного выполнения кода (CVE-2017-8464), затрагивающая различные версии Windows. Microsoft сообщает об эксплуатации уязвимости.",
+      "impact": "Злоумышленник может выполнить произвольный код. Вендор сообщает об эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, указанные в KB4021903, KB4022714, KB4022715, KB4022717, KB4022718, KB4022719, KB4022722, KB4022724, KB4022725, KB4022726 или KB4022727.",
+      "checks": [
+        "Проверьте системы Windows на отсутствие обновлений, связанных с CVE-2017-8464.",
+        "Убедитесь в установке патчей KB, таких как KB4021903 и сопутствующих обновлений."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2017-8464-lnk-remote-code-execution",
+      "title": "Microsoft Windows: CVE-2017-8464 LNK Remote Code Execution Vulnerability",
+      "summary": "Im Windows Shell existiert eine Schwachstelle zur Remote-Code-Ausführung (CVE-2017-8464) in mehreren Windows-Versionen. Der Hersteller meldet eine Ausnutzung.",
+      "impact": "Ein Angreifer kann Code ausführen. Der Hersteller meldet eine Ausnutzung.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die Updates an, die in KB4021903, KB4022714, KB4022715, KB4022717, KB4022718, KB4022719, KB4022722, KB4022724, KB4022725, KB4022726 oder KB4022727 referenziert sind.",
+      "checks": [
+        "Inventarisieren Sie Windows-Systeme hinsichtlich fehlender Updates für CVE-2017-8464.",
+        "Überprüfen Sie die Installation von KB-Patches wie KB4021903 und zugehörigen Updates."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2017-8464-lnk-remote-code-execution",
+      "title": "Microsoft Windows: CVE-2017-8464 LNK Remote Code Execution Vulnerability",
+      "summary": "A remote code execution vulnerability exists in Windows Shell (CVE-2017-8464) affecting multiple versions of Windows. Microsoft reports that the vulnerability is exploited.",
+      "impact": "An attacker can execute arbitrary code. Vendor reports exploitation.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates referenced by KB4021903, KB4022714, KB4022715, KB4022717, KB4022718, KB4022719, KB4022722, KB4022724, KB4022725, KB4022726, or KB4022727.",
+      "checks": [
+        "Inventory Windows systems for missing updates associated with CVE-2017-8464.",
+        "Verify installation of KB patches such as KB4021903 and related updates."
+      ]
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "sr-26-0180",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2017-8543"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB4022714",
+      "KB4022717",
+      "KB4022718",
+      "KB4022719",
+      "KB4022722",
+      "KB4022724",
+      "KB4022726",
+      "KB4022727",
+      "KB4024402",
+      "KB4025339",
+      "KB4025342"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.1,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-21T09:51:02Z",
+    "updated": "2026-11-21T09:51:02Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Search Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2017-8543",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-21T09:51:02Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-21T09:51:02Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v",
+      "title": "Microsoft Windows: уязвимость удаленного выполнения кода в Windows Search (CVE-2017-8543)",
+      "summary": "В Windows Search в Microsoft Windows обнаружена уязвимость удаленного выполнения кода. По заявлению производителя, уязвимость эксплуатируется.",
+      "impact": "Злоумышленник может удаленно выполнить произвольный код. Производитель сообщает об эксплуатации уязвимости.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft.",
+      "checks": [
+        "Проверьте системы на наличие установленных обновлений безопасности Microsoft для CVE-2017-8543.",
+        "Проверьте инвентаризацию систем на наличие затронутых версий Microsoft Windows."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in",
+      "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in Windows Search (CVE-2017-8543)",
+      "summary": "In Windows Search unter Microsoft Windows existiert eine Schwachstelle zur Remotecodeausführung. Der Hersteller meldet die Ausnutzung der Schwachstelle.",
+      "impact": "Ein Angreifer kann beliebigen Code aus der Ferne ausführen. Die Ausnutzung wird vom Hersteller gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+      "checks": [
+        "Überprüfen Sie Systeme auf installierte Sicherheitsupdates von Microsoft für CVE-2017-8543.",
+        "Überprüfen Sie die Systeminventur auf betroffene Microsoft Windows-Versionen."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-windows-search-remote-code-execution",
+      "title": "Microsoft Windows: Windows Search Remote Code Execution Vulnerability (CVE-2017-8543)",
+      "summary": "A remote code execution vulnerability exists in Windows Search in Microsoft Windows. The vendor reports that the issue is exploited.",
+      "impact": "An attacker can execute arbitrary code remotely. Exploitation is reported by the vendor.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft.",
+      "checks": [
+        "Check systems for installed Microsoft security updates associated with CVE-2017-8543.",
+        "Verify system inventory for affected Microsoft Windows versions."
+      ]
+    }
+  }
+}
