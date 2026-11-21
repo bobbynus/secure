@@ -75,21 +75,62 @@
  "texts": {
   "msrc:CVE-2018-8414": "Windows Shell Remote Code Execution Vulnerability\nWindows Shell. Publicly disclosed. Microsoft 2018-Aug security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "0360891e02e6cfe3fa08d89f",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows Shell: Remote Code Execution Vulnerability (CVE-2018-8414)",
+    "summary": "A remote code execution vulnerability exists in Windows Shell, reported by Microsoft with public disclosure.",
+    "impact": "An attacker could execute arbitrary code.",
+    "fix": "Apply updates KB4343885, KB4343897, or KB4343909.",
+    "workaround": null,
+    "checks": [
+     "Check systems for Windows 10 and Windows Server versions.",
+     "Verify if updates KB4343885, KB4343897, or KB4343909 are installed."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows Shell: уязвимость удаленного выполнения кода (CVE-2018-8414)",
+    "summary": "В Windows Shell обнаружена уязвимость удаленного выполнения кода, о которой сообщил Microsoft.",
+    "impact": "Злоумышленник может выполнить произвольный код.",
+    "fix": "Установите обновления KB4343885, KB4343897 или KB4343909.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие версий Windows 10 и Windows Server.",
+     "Убедитесь, что установлены обновления KB4343885, KB4343897 или KB4343909."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows Shell: Schwachstelle zur RCE (CVE-2018-8414)",
+    "summary": "In Windows Shell existiert eine Schwachstelle zur Ausführung von Code, die von Microsoft gemeldet wurde.",
+    "impact": "Ein Angreifer kann beliebigen Code ausführen.",
+    "fix": "Installieren Sie die Updates KB4343885, KB4343897 oder KB4343909.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf Windows 10 und Windows Server Versionen.",
+     "Überprüfen Sie, ob die Updates KB4343885, KB4343897 oder KB4343909 installiert sind."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T12:51:04Z",
+  "slugs": {
+   "ru": "microsoft-windows-shell-uyazvimost-udalennogo-vypolneniya-koda",
+   "de": "microsoft-windows-shell-schwachstelle-zur-rce-cve-2018-8414",
+   "en": "microsoft-windows-shell-remote-code-execution-vulnerability-cve"
+  },
+  "published_at": "2026-11-21T12:51:04Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

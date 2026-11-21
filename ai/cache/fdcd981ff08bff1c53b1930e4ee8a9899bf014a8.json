@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows Kernel Elevation of Privilege Vulnerability (CVE-2018-8611)",
+  "summary": "An elevation of privilege vulnerability exists in the Microsoft Windows Kernel (CVE-2018-8611). Microsoft reports exploitation in the wild.",
+  "impact": "An attacker can exploit this vulnerability to elevate privileges. Microsoft reports that the vulnerability is being exploited.",
+  "fix": "Apply the security updates provided by Microsoft (including KB4471318, KB4471319, KB4471320, KB4471321, KB4471322, KB4471323, KB4471324, KB4471325, KB4471326, KB4471327, KB4471328, KB4471329, KB4471330, and KB4471332).",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows 10 systems to check if the security updates have been applied.",
+   "Verify system exposure for CVE-2018-8611."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Уязвимость повышения привилегий в ядре Microsoft Windows (CVE-2018-8611)",
+  "summary": "В ядре Microsoft Windows обнаружена уязвимость повышения привилегий (CVE-2018-8611). Microsoft сообщает об эксплуатации уязвимости.",
+  "impact": "Злоумышленник может использовать эту уязвимость для повышения привилегий. Microsoft сообщает об активной эксплуатации.",
+  "fix": "Установите обновления безопасности, предоставленные Microsoft (включая KB4471318, KB4471319, KB4471320, KB4471321, KB4471322, KB4471323, KB4471324, KB4471325, KB4471326, KB4471327, KB4471328, KB4471329, KB4471330 и KB4471332).",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows 10 на предмет установки обновлений безопасности.",
+   "Проверьте системы на уязвимость CVE-2018-8611."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows Kernel: Schwachstelle zur Privilegienerweiterung (CVE-2018-8611)",
+  "summary": "Im Microsoft Windows Kernel existiert eine Schwachstelle zur Privilegienerweiterung (CVE-2018-8611). Microsoft meldet eine aktive Ausnutzung.",
+  "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien zu erweitern. Microsoft berichtet, dass die Schwachstelle ausgenutzt wird.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an (einschließlich KB4471318, KB4471319, KB4471320, KB4471321, KB4471322, KB4471323, KB4471324, KB4471325, KB4471326, KB4471327, KB4471328, KB4471329, KB4471330 und KB4471332).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows 10-Systeme, um zu prüfen, ob die Sicherheitsupdates angewendet wurden.",
+   "Überprüfen Sie Systeme auf Betroffenheit durch CVE-2018-8611."
+  ],
+  "regression": null
+ }
+}

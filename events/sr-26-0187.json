@@ -83,21 +83,62 @@
  "texts": {
   "msrc:CVE-2018-8626": "Windows DNS Server Heap Overflow Vulnerability\nMicrosoft Windows DNS. Microsoft 2018-Dec security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "ef7a3ea59cbf09183f17ef21",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows DNS: CVE-2018-8626 heap overflow vulnerability",
+    "summary": "A critical heap overflow vulnerability exists in Microsoft Windows DNS server (CVE-2018-8626). The vulnerability allows remote attackers to compromise affected systems.",
+    "impact": "An attacker can exploit this heap overflow vulnerability to execute arbitrary code or cause a denial of service on the Windows DNS Server.",
+    "fix": "Apply the updates provided by Microsoft in the 2018-Dec security update (refer to KB4471320, KB4471321, KB4471322, KB4471324, KB4471329, KB4471332).",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows Server and Windows 10 systems running the DNS Server role.",
+     "Verify whether the 2018-Dec security update and associated KBs (KB4471320, KB4471321, KB4471322, KB4471324, KB4471329, KB4471332) are installed."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows DNS: уязвимость переполнения кучи CVE-2018-8626",
+    "summary": "В сервере Microsoft Windows DNS обнаружена критическая уязвимость переполнения кучи (CVE-2018-8626). Уязвимость позволяет удаленным злоумышленникам скомпрометировать уязвимые системы.",
+    "impact": "Злоумышленник может использовать эту уязвимость переполнения кучи для выполнения произвольного кода или вызова отказа в обслуживании на Windows DNS Server.",
+    "fix": "Установите обновления, предоставленные Microsoft в рамках декабрьского обновления безопасности 2018 года (см. KB4471320, KB4471321, KB4471322, KB4471324, KB4471329, KB4471332).",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows Server и Windows 10 с запущенной ролью DNS Server.",
+     "Проверьте, установлены ли декабрьские обновления безопасности 2018 года и соответствующие KB (KB4471320, KB4471321, KB4471322, KB4471324, KB4471329, KB4471332)."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows DNS: Heap-Overflow-Schwachstelle CVE-2018-8626",
+    "summary": "Im Microsoft Windows DNS-Server existiert eine kritische Heap-Overflow-Schwachstelle (CVE-2018-8626). Die Schwachstelle ermöglicht es Remotegegnern, betroffene Systeme zu kompromittieren.",
+    "impact": "Ein Angreifer kann diese Heap-Overflow-Schwachstelle ausnutzen, um beliebigen Code auszuführen oder einen Denial-of-Service-Zustand auf dem Windows DNS Server zu verursachen.",
+    "fix": "Wenden Sie die von Microsoft im Sicherheitsupdate vom Dezember 2018 bereitgestellten Updates an (siehe KB4471320, KB4471321, KB4471322, KB4471324, KB4471329, KB4471332).",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows Server- und Windows 10-Systeme, auf denen die DNS Server-Rolle ausgeführt wird.",
+     "Überprüfen Sie, ob das Sicherheitsupdate vom Dezember 2018 und die zugehörigen KBs (KB4471320, KB4471321, KB4471322, KB4471324, KB4471329, KB4471332) installiert sind."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T12:51:04Z",
+  "slugs": {
+   "ru": "microsoft-windows-dns-uyazvimost-perepolneniya-kuchi-cve-2018",
+   "de": "microsoft-windows-dns-heap-overflow-schwachstelle-cve-2018-8626",
+   "en": "microsoft-windows-dns-cve-2018-8626-heap-overflow-vulnerability"
+  },
+  "published_at": "2026-11-21T12:51:04Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

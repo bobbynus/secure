@@ -100,21 +100,59 @@
  "texts": {
   "msrc:CVE-2018-8540": ".NET Framework Remote Code Execution Injection Vulnerability\n.NET Framework. Microsoft 2018-Dec security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "e8100d4ccd18e4f5a6545695",
+  "texts": {
+   "en": {
+    "title": "Microsoft .NET Framework: CVE-2018-8540 remote code execution vulnerability",
+    "summary": "A critical remote code execution vulnerability exists in Microsoft .NET Framework. The sources list no specific fixed versions or details.",
+    "impact": "An attacker can achieve remote code execution. The sources provide no details on preconditions or authentication requirements.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check systems for installed Microsoft .NET Framework and Windows versions referenced by the security updates."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft .NET Framework: уязвимость удаленного выполнения кода CVE-2018-8540",
+    "summary": "В Microsoft .NET Framework обнаружена критическая уязвимость удаленного выполнения кода. Источники не приводят конкретных исправленных версий или деталей.",
+    "impact": "Злоумышленник может выполнить удаленный код. Источники не содержат сведений о предварительных условиях или требованиях к аутентификации.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленных Microsoft .NET Framework и версий Windows, упомянутых в обновлениях безопасности."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft .NET Framework: Remotecodeausführungsschwachstelle CVE-2018-8540",
+    "summary": "Im Microsoft .NET Framework existiert eine kritische Schwachstelle zur Remotecodeausführung. Die Quellen nennen keine spezifischen korrigierten Versionen oder Details.",
+    "impact": "Ein Angreifer kann Remotecode ausführen. Die Quellen nennen keine Details zu Voraussetzungen oder Authentifizierungsanforderungen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf installierte Microsoft .NET Framework- und Windows-Versionen, auf die in den Sicherheitsupdates verwiesen wird."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-21T12:51:04Z",
+  "slugs": {
+   "ru": "microsoft-net-framework-uyazvimost-udalennogo-vypolneniya-koda",
+   "de": "microsoft-net-framework-remotecodeausfuehrungsschwachstelle-cve",
+   "en": "microsoft-net-framework-cve-2018-8540-remote-code-execution"
+  },
+  "published_at": "2026-11-21T12:51:04Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

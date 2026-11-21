@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Win32k Elevation of Privilege Vulnerability (CVE-2018-8453)",
+  "summary": "An elevation of privilege vulnerability in Win32k affects Microsoft Windows, allowing attackers to escalate privileges. Vendor reports exploitation.",
+  "impact": "An attacker can exploit the vulnerability to elevate privileges.",
+  "fix": "Apply updates referenced by KB4462915, KB4462917, KB4462918, KB4462919, KB4462922, KB4462923, KB4462926, KB4462929, KB4462931, KB4462937, KB4462941, KB4463097, KB4463104, or KB4464330.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows systems to identify missing security updates.",
+   "Verify installation of KB4462915, KB4462917, KB4462918, KB4462919, KB4462922, KB4462923, KB4462926, KB4462929, KB4462931, KB4462937, KB4462941, KB4463097, KB4463104, or KB4464330."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость повышения привилегий в Win32k (CVE-2018-8453)",
+  "summary": "Уязвимость повышения привилегий в Win32k затрагивает Microsoft Windows и позволяет злоумышленникам повысить привилегии. Вендор сообщает об эксплуатации.",
+  "impact": "Злоумышленник может использовать уязвимость для повышения привилегий.",
+  "fix": "Установите обновления, указанные в KB4462915, KB4462917, KB4462918, KB4462919, KB4462922, KB4462923, KB4462926, KB4462929, KB4462931, KB4462937, KB4462941, KB4463097, KB4463104 или KB4464330.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows для выявления отсутствующих обновлений безопасности.",
+   "Проверьте установку обновлений KB4462915, KB4462917, KB4462918, KB4462919, KB4462922, KB4462923, KB4462926, KB4462929, KB4462931, KB4462937, KB4462941, KB4463097, KB4463104 или KB4464330."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Win32k-Schwachstelle zur Privilegienerweiterung (CVE-2018-8453)",
+  "summary": "Eine Schwachstelle zur Privilegienerweiterung in Win32k betrifft Microsoft Windows und ermöglicht Angreifern die Rechteausweitung. Der Hersteller meldet Ausnutzung.",
+  "impact": "Ein Angreifer kann die Schwachstelle ausnutzen, um Privilegien zu erweitern.",
+  "fix": "Wenden Sie die Updates an, auf die in KB4462915, KB4462917, KB4462918, KB4462919, KB4462922, KB4462923, KB4462926, KB4462929, KB4462931, KB4462937, KB4462941, KB4463097, KB4463104 oder KB4464330 verwiesen wird.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows-Systeme, um fehlende Sicherheitsupdates zu identifizieren.",
+   "Überprüfen Sie die Installation von KB4462915, KB4462917, KB4462918, KB4462919, KB4462922, KB4462923, KB4462926, KB4462929, KB4462931, KB4462937, KB4462941, KB4463097, KB4463104 oder KB4464330."
+  ],
+  "regression": null
+ }
+}
