@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "69cfbcde694c760c17c510943112615a",
- "last_modified": "Sun, 22 Nov 2026 18:33:11 GMT",
- "checksum": "cb1e306253a2c7991430bd352ddcbec54a24bbda81cd3ce35592b346ca348ea2",
+ "etag": "99a2806d2d940b3fb9010f37f9c94785",
+ "last_modified": "Sun, 22 Nov 2026 19:05:40 GMT",
+ "checksum": "3cb0e8d2dcf2ad4db3bc0553e7efbc20997039ee140ed217b2129432f8e54c47",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -44,12 +44,13 @@
   "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/": "701b4ac30fc62f2b55a1f276",
   "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/": "6078c1e8d84753d16d8635e3",
   "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/": "a316d3e6e3a4fd924adcd441",
-  "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/": "9774bb2156b67e2fd2cb04fc"
+  "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/": "9774bb2156b67e2fd2cb04fc",
+  "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/": "24d089b407de590bf95496bc"
  },
- "last_attempt": "2026-11-22T18:40:39Z",
- "last_success": "2026-11-22T18:40:39Z",
+ "last_attempt": "2026-11-22T19:10:47Z",
+ "last_success": "2026-11-22T19:10:47Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 41
+ "items_total": 42
 }
