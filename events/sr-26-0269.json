@@ -89,21 +89,62 @@
  "texts": {
   "msrc:CVE-2023-29363": "Windows Pragmatic General Multicast (PGM) Remote Code Execution Vulnerability\nWindows PGM. Microsoft 2023-Jun security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "c004a3c44cd9d3b3d0334728",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: PGM Remote Code Execution Vulnerability",
+    "summary": "A remote code execution vulnerability exists in Windows Pragmatic General Multicast (PGM). Microsoft addressed the issue in the 2023-Jun security update.",
+    "impact": "An attacker can execute arbitrary code on vulnerable systems.",
+    "fix": "Apply the updates provided by Microsoft (KB5027215, KB5027219, KB5027222, KB5027223, KB5027225, KB5027230, KB5027231, KB5027256, KB5027271, KB5027275, KB5027277, KB5027279, KB5027281, KB5027282, KB5027283, KB5027319).",
+    "workaround": null,
+    "checks": [
+     "Check Windows systems for vulnerability to CVE-2023-29363",
+     "Verify the installation of the June 2023 security updates"
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в PGM",
+    "summary": "В Windows Pragmatic General Multicast (PGM) обнаружена уязвимость удаленного выполнения кода. Microsoft устранила проблему в обновлении безопасности за июнь 2023 года.",
+    "impact": "Злоумышленник может выполнить произвольный код на уязвимых системах.",
+    "fix": "Установите обновления, предоставленные Microsoft (KB5027215, KB5027219, KB5027222, KB5027223, KB5027225, KB5027230, KB5027231, KB5027256, KB5027271, KB5027275, KB5027277, KB5027279, KB5027281, KB5027282, KB5027283, KB5027319).",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на уязвимость CVE-2023-29363",
+     "Убедитесь в установке обновлений безопасности за июнь 2023 года"
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Schwachstelle für Remotecodeausführung in PGM",
+    "summary": "In Windows Pragmatic General Multicast (PGM) existiert eine Schwachstelle zur Remotecodeausführung. Microsoft hat das Problem im Sicherheitsupdate vom Juni 2023 behoben.",
+    "impact": "Ein Angreifer kann beliebigen Code auf anfälligen Systemen ausführen.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (KB5027215, KB5027219, KB5027222, KB5027223, KB5027225, KB5027230, KB5027231, KB5027256, KB5027271, KB5027275, KB5027277, KB5027279, KB5027281, KB5027282, KB5027283, KB5027319).",
+    "workaround": null,
+    "checks": [
+     "Prüfen Sie Windows-Systeme auf Anfälligkeit für CVE-2023-29363",
+     "Überprüfen Sie die Installation der Sicherheitsupdates vom Juni 2023"
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T10:20:49Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-pgm",
+   "de": "microsoft-windows-schwachstelle-fuer-remotecodeausfuehrung-in",
+   "en": "microsoft-windows-pgm-remote-code-execution-vulnerability"
+  },
+  "published_at": "2026-11-22T10:20:49Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

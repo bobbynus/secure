@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows 10",
+   "versions": "multiple versions",
+   "fixed": null,
+   "evidence": "Windows Pragmatic General Multicast (PGM) Remote Code Execution Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: PGM Remote Code Execution Vulnerability",
+  "summary": "A remote code execution vulnerability exists in Windows Pragmatic General Multicast (PGM). Microsoft addressed the issue in the 2023-Jun security update.",
+  "impact": "An attacker can execute arbitrary code on vulnerable systems.",
+  "fix": "Apply the updates provided by Microsoft (KB5027215, KB5027219, KB5027222, KB5027223, KB5027225, KB5027230, KB5027231, KB5027256, KB5027271, KB5027275, KB5027277, KB5027279, KB5027281, KB5027282, KB5027283, KB5027319).",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for vulnerability to CVE-2023-29363",
+   "Verify the installation of the June 2023 security updates"
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в PGM",
+  "summary": "В Windows Pragmatic General Multicast (PGM) обнаружена уязвимость удаленного выполнения кода. Microsoft устранила проблему в обновлении безопасности за июнь 2023 года.",
+  "impact": "Злоумышленник может выполнить произвольный код на уязвимых системах.",
+  "fix": "Установите обновления, предоставленные Microsoft (KB5027215, KB5027219, KB5027222, KB5027223, KB5027225, KB5027230, KB5027231, KB5027256, KB5027271, KB5027275, KB5027277, KB5027279, KB5027281, KB5027282, KB5027283, KB5027319).",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на уязвимость CVE-2023-29363",
+   "Убедитесь в установке обновлений безопасности за июнь 2023 года"
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Schwachstelle für Remotecodeausführung in PGM",
+  "summary": "In Windows Pragmatic General Multicast (PGM) existiert eine Schwachstelle zur Remotecodeausführung. Microsoft hat das Problem im Sicherheitsupdate vom Juni 2023 behoben.",
+  "impact": "Ein Angreifer kann beliebigen Code auf anfälligen Systemen ausführen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (KB5027215, KB5027219, KB5027222, KB5027223, KB5027225, KB5027230, KB5027231, KB5027256, KB5027271, KB5027275, KB5027277, KB5027279, KB5027281, KB5027282, KB5027283, KB5027319).",
+  "workaround": null,
+  "checks": [
+   "Prüfen Sie Windows-Systeme auf Anfälligkeit für CVE-2023-29363",
+   "Überprüfen Sie die Installation der Sicherheitsupdates vom Juni 2023"
+  ],
+  "regression": null
+ }
+}

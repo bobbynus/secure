@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: CVE-2023-32049 Windows SmartScreen Bypass",
+  "summary": "Microsoft Windows SmartScreen contains a security feature bypass vulnerability with a CVSS score of 8.8, which is reported as exploited.",
+  "impact": "An attacker can bypass the Windows SmartScreen security feature. Exploitation is reported by the vendor.",
+  "fix": "Updates are available from Microsoft under KB identifiers KB5028166, KB5028168, KB5028169, KB5028171, KB5028182, and KB5028185.",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for the installation of security updates associated with KB5028166, KB5028168, KB5028169, KB5028171, KB5028182, or KB5028185."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: обход защиты Windows SmartScreen в CVE-2023-32049",
+  "summary": "В Microsoft Windows SmartScreen обнаружена уязвимость обхода функции безопасности с оценкой CVSS 8.8, эксплуатация которой подтверждена.",
+  "impact": "Злоумышленник может обойти функцию безопасности Windows SmartScreen. Эксплуатация подтверждена производителем.",
+  "fix": "Обновления доступны от Microsoft под идентификаторами KB KB5028166, KB5028168, KB5028169, KB5028171, KB5028182 и KB5028185.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на наличие установленных обновлений безопасности, связанных с KB5028166, KB5028168, KB5028169, KB5028171, KB5028182 или KB5028185."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: CVE-2023-32049 Windows SmartScreen Bypass",
+  "summary": "Microsoft Windows SmartScreen enthält eine Schwachstelle zur Umgehung von Sicherheitsfunktionen mit einem CVSS-Score von 8.8, deren Ausnutzung gemeldet wurde.",
+  "impact": "Ein Angreifer kann die Sicherheitsfunktion Windows SmartScreen umgehen. Die Ausnutzung wird vom Hersteller gemeldet.",
+  "fix": "Updates sind von Microsoft unter den KB-Nummern KB5028166, KB5028168, KB5028169, KB5028171, KB5028182 und KB5028185 verfügbar.",
+  "workaround": null,
+  "checks": [
+   "Prüfen Sie Windows-Systeme auf die Installation von Sicherheitsupdates im Zusammenhang mit KB5028166, KB5028168, KB5028169, KB5028171, KB5028182 oder KB5028185."
+  ],
+  "regression": null
+ }
+}

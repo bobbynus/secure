@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft SharePoint Server: Elevation of Privilege Vulnerability",
+  "summary": "A critical elevation of privilege vulnerability (CVE-2023-29357) affects Microsoft SharePoint Server. Microsoft released security updates for this issue.",
+  "impact": "An attacker can exploit this vulnerability to elevate privileges.",
+  "fix": "Apply updates KB5002402 or KB5002403.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft SharePoint Server installations for vulnerability to CVE-2023-29357.",
+   "Verify whether KB5002402 or KB5002403 is installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft SharePoint Server: уязвимость повышения привилегий",
+  "summary": "Критическая уязвимость повышения привилегий (CVE-2023-29357) затрагивает Microsoft SharePoint Server. Microsoft выпустила обновления безопасности.",
+  "impact": "Злоумышленник может использовать эту уязвимость для повышения привилегий.",
+  "fix": "Установите обновления KB5002402 или KB5002403.",
+  "workaround": null,
+  "checks": [
+   "Проверьте инсталляции Microsoft SharePoint Server на уязвимость к CVE-2023-29357.",
+   "Убедитесь, установлены ли обновления KB5002402 или KB5002403."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft SharePoint Server: Schwachstelle zur Privilegienerweiterung",
+  "summary": "Eine kritische Schwachstelle zur Privilegienerweiterung (CVE-2023-29357) betrifft Microsoft SharePoint Server. Microsoft hat Sicherheitsupdates veröffentlicht.",
+  "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien zu erweitern.",
+  "fix": "Installieren Sie die Updates KB5002402 oder KB5002403.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft SharePoint Server-Installationen auf die Schwachstelle CVE-2023-29357.",
+   "Überprüfen Sie, ob KB5002402 oder KB5002403 installiert ist."
+  ],
+  "regression": null
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: PGM Remote Code Execution Vulnerability (CVE-2023-32014)",
+  "summary": "A critical remote code execution vulnerability affects Microsoft Windows Pragmatic General Multicast (PGM).",
+  "impact": "The sources do not provide detailed impact and precondition information.",
+  "fix": "Microsoft released security updates in June 2023 (including `KB5027215`, `KB5027219`, `KB5027222`, `KB5027223`, `KB5027225`, `KB5027230`, `KB5027231`, `KB5027256`, `KB5027271`, `KB5027275`, `KB5027277`, `KB5027279`, `KB5027281`, `KB5027282`, `KB5027283`, `KB5027319`).",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for installed June 2023 security updates."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в PGM (CVE-2023-32014)",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает компонент Microsoft Windows Pragmatic General Multicast (PGM).",
+  "impact": "Источники не содержат подробной информации о последствиях и предварительных условиях.",
+  "fix": "Компания Microsoft выпустила обновления безопасности в июне 2023 года (включая `KB5027215`, `KB5027219`, `KB5027222`, `KB5027223`, `KB5027225`, `KB5027230`, `KB5027231`, `KB5027256`, `KB5027271`, `KB5027275`, `KB5027277`, `KB5027279`, `KB5027281`, `KB5027282`, `KB5027283`, `KB5027319`).",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на наличие установленных обновлений безопасности за июнь 2023 года."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in PGM (CVE-2023-32014)",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft Microsoft Windows Pragmatic General Multicast (PGM).",
+  "impact": "Die Quellen nennen keine detaillierten Auswirkungen oder Vorbedingungen.",
+  "fix": "Microsoft hat im Juni 2023 Sicherheitsupdates veröffentlicht (darunter `KB5027215`, `KB5027219`, `KB5027222`, `KB5027223`, `KB5027225`, `KB5027230`, `KB5027231`, `KB5027256`, `KB5027271`, `KB5027275`, `KB5027277`, `KB5027279`, `KB5027281`, `KB5027282`, `KB5027283`, `KB5027319`).",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Systeme auf installierte Sicherheitsupdates vom Juni 2023."
+  ],
+  "regression": null
+ }
+}

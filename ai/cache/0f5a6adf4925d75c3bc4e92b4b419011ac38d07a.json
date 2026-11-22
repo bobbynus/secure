@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: PGM Remote Code Execution Vulnerability (CVE-2023-32015)",
+  "summary": "A critical remote code execution vulnerability exists in Microsoft Windows Pragmatic General Multicast (PGM).",
+  "impact": "An attacker can achieve remote code execution on vulnerable Windows systems.",
+  "fix": "Apply the updates provided by Microsoft (including KB5027215, KB5027219, KB5027222, KB5027223, KB5027225, KB5027230, KB5027231, KB5027256, KB5027271, KB5027275, KB5027277, KB5027279, KB5027281, KB5027282, KB5027283, KB5027319).",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for installed updates associated with CVE-2023-32015.",
+   "Verify that the applicable KB updates are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в PGM (CVE-2023-32015)",
+  "summary": "В Microsoft Windows Pragmatic General Multicast (PGM) обнаружена критическая уязвимость удаленного выполнения кода.",
+  "impact": "Злоумышленник может добиться удаленного выполнения кода на уязвимых системах Windows.",
+  "fix": "Установите обновления, предоставленные Microsoft (включая KB5027215, KB5027219, KB5027222, KB5027223, KB5027225, KB5027230, KB5027231, KB5027256, KB5027271, KB5027275, KB5027277, KB5027279, KB5027281, KB5027282, KB5027283, KB5027319).",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на наличие установленных обновлений, связанных с CVE-2023-32015.",
+   "Убедитесь, что применены соответствующие обновления KB."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in PGM (CVE-2023-32015)",
+  "summary": "In Microsoft Windows Pragmatic General Multicast (PGM) existiert eine kritische Schwachstelle zur Remotecodeausführung.",
+  "impact": "Ein Angreifer kann auf anfälligen Windows-Systemen eine Remotecodeausführung erreichen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5027215, KB5027219, KB5027222, KB5027223, KB5027225, KB5027230, KB5027231, KB5027256, KB5027271, KB5027275, KB5027277, KB5027279, KB5027281, KB5027282, KB5027283, KB5027319).",
+  "workaround": null,
+  "checks": [
+   "Prüfen Sie Windows-Systeme auf installierte Updates im Zusammenhang mit CVE-2023-32015.",
+   "Überprüfen Sie, ob die relevanten KB-Updates eingespielt wurden."
+  ],
+  "regression": null
+ }
+}

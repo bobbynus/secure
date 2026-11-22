@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows Network File System Remote Code Execution Vulnerability",
+  "summary": "A critical remote code execution vulnerability affects Windows Network File System. Microsoft addressed this in the May 2023 security update.",
+  "impact": "An attacker can execute arbitrary code on the target system.",
+  "fix": "Install the updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check Windows Server systems for the installation of May 2023 security updates.",
+   "Inventory systems running Windows Network File System."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Уязвимость удаленного выполнения кода в Windows Network File System",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает Windows Network File System. Microsoft устранила ее в обновлении безопасности за май 2023 года.",
+  "impact": "Злоумышленник может выполнить произвольный код на целевой системе.",
+  "fix": "Установите обновления, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows Server на предмет установки обновлений безопасности за май 2023 года.",
+   "Проведите инвентаризацию систем, использующих Windows Network File System."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Schwachstelle in Windows Network File System ermöglicht Remotecodeausführung",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft das Windows Network File System. Microsoft hat diese im Sicherheitsupdate vom Mai 2023 behoben.",
+  "impact": "Ein Angreifer kann beliebigen Code auf dem Zielsystem ausführen.",
+  "fix": "Installieren Sie die von Microsoft bereitgestellten Updates.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows Server-Systeme auf die Installation der Sicherheitsupdates vom Mai 2023.",
+   "Erfassen Sie Systeme, die das Windows Network File System ausführen."
+  ],
+  "regression": null
+ }
+}
