@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: CVE-2023-36874 elevation of privilege",
+  "summary": "An elevation of privilege vulnerability in the Windows Error Reporting Service allows attackers to gain higher privileges. Microsoft reports exploitation in the wild.",
+  "impact": "Attackers can exploit this vulnerability to achieve elevation of privilege on vulnerable Windows systems.",
+  "fix": "Apply the updates provided by Microsoft (including KB5028166, KB5028168, KB5028169, KB5028171, KB5028182, KB5028185, KB5028186, KB5028222, KB5028223, KB5028226, KB5028228, KB5028232, KB5028233, KB5028240).",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows systems running Windows 10 and related versions.",
+   "Verify whether the security updates associated with CVE-2023-36874 have been installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: повышение привилегий в CVE-2023-36874",
+  "summary": "Уязвимость повышения привилегий в службе Windows Error Reporting позволяет злоумышленникам получить расширенные права. Microsoft сообщает об эксплуатации.",
+  "impact": "Злоумышленники могут использовать эту уязвимость для повышения привилегий в уязвимых системах Windows.",
+  "fix": "Установите обновления, предоставленные Microsoft (включая KB5028166, KB5028168, KB5028169, KB5028171, KB5028182, KB5028185, KB5028186, KB5028222, KB5028223, KB5028226, KB5028228, KB5028232, KB5028233, KB5028240).",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем под управлением Windows 10 и связанных версий.",
+   "Проверьте, установлены ли обновления безопасности, связанные с CVE-2023-36874."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: CVE-2023-36874 Privilegienerweiterung",
+  "summary": "Eine Schwachstelle zur Privilegienerweiterung im Windows Error Reporting Service ermöglicht Angreifern das Erlangen höherer Rechte. Microsoft berichtet über die Ausnutzung.",
+  "impact": "Angreifer können diese Schwachstelle ausnutzen, um auf anfälligen Windows-Systemen erweiterte Privilegien zu erlangen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5028166, KB5028168, KB5028169, KB5028171, KB5028182, KB5028185, KB5028186, KB5028222, KB5028223, KB5028226, KB5028228, KB5028232, KB5028233, KB5028240).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows-Systeme mit Windows 10 und verwandten Versionen.",
+   "Überprüfen Sie, ob die Sicherheitsupdates für CVE-2023-36874 installiert wurden."
+  ],
+  "regression": null
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: RRAS Remote Code Execution Vulnerability (CVE-2023-35367)",
+  "summary": "A critical remote code execution vulnerability exists in the Windows Routing and Remote Access Service (RRAS) (CVE-2023-35367).",
+  "impact": "An attacker can execute remote code via the Routing and Remote Access Service (RRAS).",
+  "fix": "Apply the updates referenced by KB5028166, KB5028168, KB5028169, KB5028171, KB5028182, KB5028185, KB5028186, KB5028222, KB5028223, KB5028224, KB5028226, KB5028228, KB5028232, KB5028233, or KB5028240.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows 10 and Windows Server systems running the Routing and Remote Access Service (RRAS).",
+   "Verify that the corresponding security updates (including KB5028166 through KB5028240) are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: Уязвимость удаленного выполнения кода в RRAS (CVE-2023-35367)",
+  "summary": "В службе маршрутизации и удаленного доступа Windows (RRAS) обнаружена критическая уязвимость удаленного выполнения кода (CVE-2023-35367).",
+  "impact": "Злоумышленник может выполнить удаленный код через службу маршрутизации и удаленного доступа (RRAS).",
+  "fix": "Установите обновления, указанные в KB5028166, KB5028168, KB5028169, KB5028171, KB5028182, KB5028185, KB5028186, KB5028222, KB5028223, KB5028224, KB5028226, KB5028228, KB5028232, KB5028233 или KB5028240.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows 10 и Windows Server, на которых запущенна служба маршрутизации и удаленного доступа (RRAS).",
+   "Убедитесь, что установлены соответствующие обновления безопасности (включая KB5028166–KB5028240)."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in RRAS (CVE-2023-35367)",
+  "summary": "Im Windows Routing and Remote Access Service (RRAS) existiert eine kritische Schwachstelle zur Remotecodeausführung (CVE-2023-35367).",
+  "impact": "Ein Angreifer kann über den Routing and Remote Access Service (RRAS) Remotecode ausführen.",
+  "fix": "Wenden Sie die Updates an, auf die in KB5028166, KB5028168, KB5028169, KB5028171, KB5028182, KB5028185, KB5028186, KB5028222, KB5028223, KB5028224, KB5028226, KB5028228, KB5028232, KB5028233 oder KB5028240 verwiesen wird.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows 10- und Windows Server-Systeme, auf denen der Routing and Remote Access Service (RRAS) ausgeführt wird.",
+   "Überprüfen Sie, ob die entsprechenden Sicherheitsupdates (einschließlich KB5028166 bis KB5028240) installiert sind."
+  ],
+  "regression": null
+ }
+}

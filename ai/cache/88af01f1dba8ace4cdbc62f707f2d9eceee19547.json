@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Outlook: CVE-2023-35311 security feature bypass vulnerability",
+  "summary": "A security feature bypass vulnerability exists in Microsoft Outlook. Microsoft reports that the vulnerability is exploited.",
+  "impact": "An attacker can bypass security features in Microsoft Outlook. Exploitation is reported by Microsoft.",
+  "fix": "Refer to vendor updates associated with KB5002427 and KB5002432.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Outlook installations for vulnerable versions.",
+   "Verify if updates KB5002427 or KB5002432 are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Outlook: уязвимость обхода функции безопасности CVE-2023-35311",
+  "summary": "В Microsoft Outlook обнаружена уязвимость обхода функции безопасности. Microsoft сообщает об эксплуатации уязвимости.",
+  "impact": "Злоумышленник может обойти функции безопасности в Microsoft Outlook. Эксплуатация подтверждена Microsoft.",
+  "fix": "Обратитесь к обновлениям производителя, связанным с KB5002427 и KB5002432.",
+  "workaround": null,
+  "checks": [
+   "Проверьте установки Microsoft Outlook на наличие уязвимых версий.",
+   "Убедитесь, применены ли обновления KB5002427 или KB5002432."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Outlook: Schwachstelle in Microsoft Outlook CVE-2023-35311 zum Umgehen von Sicherheitsfunktionen",
+  "summary": "In Microsoft Outlook existiert eine Schwachstelle zum Umgehen einer Sicherheitsfunktion. Microsoft berichtet über die Ausnutzung.",
+  "impact": "Ein Angreifer kann Sicherheitsfunktionen in Microsoft Outlook umgehen. Die Ausnutzung wird von Microsoft gemeldet.",
+  "fix": "Beachten Sie die Herstellerupdates im Zusammenhang mit KB5002427 und KB5002432.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft Outlook-Installationen auf anfällige Versionen.",
+   "Überprüfen Sie, ob die Updates KB5002427 oder KB5002432 angewendet wurden."
+  ],
+  "regression": null
+ }
+}

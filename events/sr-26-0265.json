@@ -94,21 +94,62 @@
  "texts": {
   "msrc:CVE-2023-32057": "Microsoft Message Queuing (MSMQ) Remote Code Execution Vulnerability\nWindows Message Queuing. Microsoft 2023-Jul security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "56079d29a128ec39d406a077",
+  "texts": {
+   "en": {
+    "title": "Microsoft Message Queuing (MSMQ): Remote Code Execution (CVE-2023-32057)",
+    "summary": "A critical remote code execution vulnerability exists in Microsoft Message Queuing (MSMQ) affecting Windows systems.",
+    "impact": "An attacker can achieve remote code execution on vulnerable Windows systems via Microsoft Message Queuing (MSMQ).",
+    "fix": "Apply the security updates provided by Microsoft (including KB5028166, KB5028168, KB5028169, KB5028171, KB5028182, KB5028185, KB5028186, KB5028222, KB5028223, KB5028224, KB5028226, KB5028228, KB5028232, KB5028233, KB5028240).",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows systems running Microsoft Message Queuing (MSMQ).",
+     "Verify whether the applicable security updates are installed."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Message Queuing (MSMQ): удаленное выполнение кода (CVE-2023-32057)",
+    "summary": "В Microsoft Message Queuing (MSMQ) обнаружена критическая уязвимость удаленного выполнения кода, затрагивающая системы Windows.",
+    "impact": "Злоумышленник может выполнить произвольный код удаленно на уязвимых системах Windows через Microsoft Message Queuing (MSMQ).",
+    "fix": "Установите обновления безопасности, предоставленные Microsoft (включая KB5028166, KB5028168, KB5028169, KB5028171, KB5028182, KB5028185, KB5028186, KB5028222, KB5028223, KB5028224, KB5028226, KB5028228, KB5028232, KB5028233, KB5028240).",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows, использующих Microsoft Message Queuing (MSMQ).",
+     "Проверьте, установлены ли соответствующие обновления безопасности."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Message Queuing (MSMQ): Remotecodeausführung (CVE-2023-32057)",
+    "summary": "In Microsoft Message Queuing (MSMQ) existiert eine kritische Schwachstelle zur Remotecodeausführung, die Windows-Systeme betrifft.",
+    "impact": "Ein Angreifer kann über Microsoft Message Queuing (MSMQ) Remotecode auf anfälligen Windows-Systemen ausführen.",
+    "fix": "Installieren Sie die von Microsoft bereitgestellten Sicherheitsupdates (darunter KB5028166, KB5028168, KB5028169, KB5028171, KB5028182, KB5028185, KB5028186, KB5028222, KB5028223, KB5028224, KB5028226, KB5028228, KB5028232, KB5028233, KB5028240).",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows-Systeme, auf denen Microsoft Message Queuing (MSMQ) ausgeführt wird.",
+     "Überprüfen Sie, ob die entsprechenden Sicherheitsupdates installiert sind."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T09:20:57Z",
+  "slugs": {
+   "ru": "microsoft-message-queuing-msmq-udalennoe-vypolnenie-koda-cve",
+   "de": "microsoft-message-queuing-msmq-remotecodeausfuehrung-cve-2023",
+   "en": "microsoft-message-queuing-msmq-remote-code-execution-cve-2023"
+  },
+  "published_at": "2026-11-22T09:20:57Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

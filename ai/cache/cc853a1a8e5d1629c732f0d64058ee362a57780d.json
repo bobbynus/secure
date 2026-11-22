@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Windows Search Remote Code Execution Vulnerability (CVE-2023-36884)",
+  "summary": "Microsoft Windows Search Component contains a remote code execution vulnerability (CVE-2023-36884) with a CVSS score of 7.5. Exploitation is reported by the vendor.",
+  "impact": "An attacker can achieve remote code execution in Microsoft Windows. The vulnerability is publicly disclosed and exploitation is reported by the vendor.",
+  "fix": "Apply the corresponding security updates provided by Microsoft (including KB5029242, KB5029244, KB5029247, KB5029250, KB5029253, KB5029259, KB5029263, KB5029295, KB5029296, KB5029301, KB5029304, KB5029307, KB5029308, KB5029312, KB5029318, KB5029367).",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows systems running affected versions of Windows 10.",
+   "Verify whether security updates including KB5029242 through KB5029367 are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в Windows Search (CVE-2023-36884)",
+  "summary": "Компонент Windows Search в Microsoft Windows содержит уязвимость удаленного выполнения кода (CVE-2023-36884) с оценкой CVSS 7.5. Вендор сообщает об эксплуатации.",
+  "impact": "Злоумышленник может выполнить удаленный код в Microsoft Windows. Уязвимость раскрыта публично, вендор сообщает о ее эксплуатации.",
+  "fix": "Установите соответствующие обновления безопасности, предоставленные Microsoft (включая KB5029242, KB5029244, KB5029247, KB5029250, KB5029253, KB5029259, KB5029263, KB5029295, KB5029296, KB5029301, KB5029304, KB5029307, KB5029308, KB5029312, KB5029318, KB5029367).",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows 10.",
+   "Проверьте установку обновлений безопасности, включая KB5029242 – KB5029367."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in Windows Search (CVE-2023-36884)",
+  "summary": "Die Microsoft Windows Search-Komponente enthält eine Schwachstelle zur Remotecodeausführung (CVE-2023-36884) mit einem CVSS-Score von 7.5. Der Hersteller meldet eine Ausnutzung.",
+  "impact": "Ein Angreifer kann in Microsoft Windows Remotecode ausführen. Die Schwachstelle ist öffentlich bekannt und der Hersteller meldet eine Ausnutzung.",
+  "fix": "Wenden Sie die entsprechenden von Microsoft bereitgestellten Sicherheitsupdates an (einschließlich KB5029242, KB5029244, KB5029247, KB5029250, KB5029253, KB5029259, KB5029263, KB5029295, KB5029296, KB5029301, KB5029304, KB5029307, KB5029308, KB5029312, KB5029318, KB5029367).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows-Systeme mit betroffenen Windows 10-Versionen.",
+   "Überprüfen Sie, ob die Sicherheitsupdates einschließlich KB5029242 bis KB5029367 installiert sind."
+  ],
+  "regression": null
+ }
+}
