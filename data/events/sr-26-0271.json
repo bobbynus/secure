@@ -1,0 +1,120 @@
+{
+  "id": "sr-26-0271",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2023-32015"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5027215",
+      "KB5027219",
+      "KB5027222",
+      "KB5027223",
+      "KB5027225",
+      "KB5027230",
+      "KB5027231",
+      "KB5027256",
+      "KB5027271",
+      "KB5027275",
+      "KB5027277",
+      "KB5027279",
+      "KB5027281",
+      "KB5027282",
+      "KB5027283",
+      "KB5027319"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T10:20:49Z",
+    "updated": "2026-11-22T10:20:49Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Pragmatic General Multicast (PGM) Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-32015",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T10:20:49Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T10:20:49Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-pgm",
+      "title": "Microsoft Windows: уязвимость удаленного выполнения кода в PGM (CVE-2023-32015)",
+      "summary": "В Microsoft Windows Pragmatic General Multicast (PGM) обнаружена критическая уязвимость удаленного выполнения кода.",
+      "impact": "Злоумышленник может добиться удаленного выполнения кода на уязвимых системах Windows.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft (включая KB5027215, KB5027219, KB5027222, KB5027223, KB5027225, KB5027230, KB5027231, KB5027256, KB5027271, KB5027275, KB5027277, KB5027279, KB5027281, KB5027282, KB5027283, KB5027319).",
+      "checks": [
+        "Проверьте системы Windows на наличие установленных обновлений, связанных с CVE-2023-32015.",
+        "Убедитесь, что применены соответствующие обновления KB."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in-pgm",
+      "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in PGM (CVE-2023-32015)",
+      "summary": "In Microsoft Windows Pragmatic General Multicast (PGM) existiert eine kritische Schwachstelle zur Remotecodeausführung.",
+      "impact": "Ein Angreifer kann auf anfälligen Windows-Systemen eine Remotecodeausführung erreichen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5027215, KB5027219, KB5027222, KB5027223, KB5027225, KB5027230, KB5027231, KB5027256, KB5027271, KB5027275, KB5027277, KB5027279, KB5027281, KB5027282, KB5027283, KB5027319).",
+      "checks": [
+        "Prüfen Sie Windows-Systeme auf installierte Updates im Zusammenhang mit CVE-2023-32015.",
+        "Überprüfen Sie, ob die relevanten KB-Updates eingespielt wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-pgm-remote-code-execution-vulnerability-cve",
+      "title": "Microsoft Windows: PGM Remote Code Execution Vulnerability (CVE-2023-32015)",
+      "summary": "A critical remote code execution vulnerability exists in Microsoft Windows Pragmatic General Multicast (PGM).",
+      "impact": "An attacker can achieve remote code execution on vulnerable Windows systems.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply the updates provided by Microsoft (including KB5027215, KB5027219, KB5027222, KB5027223, KB5027225, KB5027230, KB5027231, KB5027256, KB5027271, KB5027275, KB5027277, KB5027279, KB5027281, KB5027282, KB5027283, KB5027319).",
+      "checks": [
+        "Check Windows systems for installed updates associated with CVE-2023-32015.",
+        "Verify that the applicable KB updates are applied."
+      ]
+    }
+  }
+}
