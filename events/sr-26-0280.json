@@ -87,21 +87,59 @@
  "texts": {
   "msrc:CVE-2025-29824": "Windows Common Log File System Driver Elevation of Privilege Vulnerability\nWindows Common Log File System Driver. Microsoft 2025-Apr security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "ccfdd7a69bdbf7abe4fe2aa0",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Elevation of Privilege in Common Log File System Driver",
+    "summary": "An elevation of privilege vulnerability in the Windows Common Log File System Driver allows attackers to escalate privileges. Exploitation is reported by the vendor.",
+    "impact": "An attacker can achieve elevation of privilege.",
+    "fix": "Apply the security updates provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Check Windows 10 systems for missing security updates."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: повышение привилегий в драйвере Common Log File System",
+    "summary": "Уязвимость повышения привилегий в драйвере Windows Common Log File System позволяет злоумышленникам повысить привилегии. Производитель сообщает об эксплуатации.",
+    "impact": "Злоумышленник может повысить свои привилегии в системе.",
+    "fix": "Установите обновления безопасности, предоставленные Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows 10 на наличие неустановленных обновлений безопасности."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Privilegienerweiterung im Common Log File System Driver",
+    "summary": "Eine Schwachstelle zur Privilegienerweiterung im Windows Common Log File System Driver ermöglicht Angreifern die Erhöhung von Rechten. Die Ausnutzung wird vom Hersteller gemeldet.",
+    "impact": "Ein Angreifer kann Privilegien erlangen.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an.",
+    "workaround": null,
+    "checks": [
+     "Prüfen Sie Windows 10-Systeme auf fehlende Sicherheitsupdates."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T11:50:43Z",
+  "slugs": {
+   "ru": "microsoft-windows-povyshenie-privilegiy-v-drayvere-common-log",
+   "de": "microsoft-windows-privilegienerweiterung-im-common-log-file",
+   "en": "microsoft-windows-elevation-of-privilege-in-common-log-file"
+  },
+  "published_at": "2026-11-22T11:50:43Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

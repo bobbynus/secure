@@ -82,21 +82,62 @@
  "texts": {
   "msrc:CVE-2025-30400": "Microsoft DWM Core Library Elevation of Privilege Vulnerability\nWindows DWM. Microsoft 2025-May security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "a967346256e43c37f0b027d6",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: DWM Core Library Elevation of Privilege Vulnerability",
+    "summary": "An elevation of privilege vulnerability exists in the Microsoft DWM Core Library, reported as exploited.",
+    "impact": "An attacker can achieve elevation of privilege. Preconditions and specific attack vectors are not detailed in the source texts.",
+    "fix": "Apply the updates listed in the security advisory.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows systems for vulnerable versions.",
+     "Verify if Microsoft security updates are applied."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость повышения привилегий в DWM Core Library",
+    "summary": "В библиотеке DWM Core Library от Microsoft обнаружена уязвимость повышения привилегий, эксплуатация которой подтверждена.",
+    "impact": "Злоумышленник может повысить свои привилегии. Предварительные условия и векторы атаки в источниках не указаны.",
+    "fix": "Установите обновления безопасности, указанные в бюллетене.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows на предмет уязвимых версий.",
+     "Проверьте, установлены ли обновления безопасности Microsoft."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Schwachstelle in DWM Core Library ermöglicht Privilegienerweiterung",
+    "summary": "In der Microsoft DWM Core Library existiert eine Schwachstelle zur Privilegienerweiterung, die laut Berichten ausgenutzt wird.",
+    "impact": "Ein Angreifer kann eine Privilegienerweiterung erreichen. Voraussetzungen und Angriffsmotive werden in den Quellen nicht näher genannt.",
+    "fix": "Wenden Sie die in den Sicherheitsinformationen genannten Updates an.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows-Systeme auf betroffene Versionen.",
+     "Überprüfen Sie, ob Microsoft-Sicherheitsupdates eingespielt wurden."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T11:50:43Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-povysheniya-privilegiy-v-dwm-core",
+   "de": "microsoft-windows-schwachstelle-in-dwm-core-library-ermoeglicht",
+   "en": "microsoft-windows-dwm-core-library-elevation-of-privilege"
+  },
+  "published_at": "2026-11-22T11:50:43Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

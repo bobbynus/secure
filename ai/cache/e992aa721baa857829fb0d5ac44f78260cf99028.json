@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Internet Shortcut Files Remote Code Execution Vulnerability (CVE-2025-33053)",
+  "summary": "Microsoft Windows contains a remote code execution vulnerability in Internet Shortcut Files tracked as CVE-2025-33053, which is reported as exploited.",
+  "impact": "An attacker can achieve remote code execution. Exploitation is reported by the vendor.",
+  "fix": "Install the updates provided by Microsoft (including KB5060118, KB5060525, KB5060526, KB5060531, KB5060533, KB5060841, KB5060842, KB5060996, KB5060998, KB5060999, KB5061010, KB5061018, KB5061026, KB5061059, KB5061078).",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows 10 systems and versions.",
+   "Verify if the latest Microsoft security updates are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в файлах ярлыков Интернета (CVE-2025-33053)",
+  "summary": "Microsoft Windows содержит уязвимость удаленного выполнения кода в файлах ярлыков Интернета (CVE-2025-33053), для которой зафиксирована эксплуатация.",
+  "impact": "Злоумышленник может выполнить удаленный код. Эксплуатация подтверждена производителем.",
+  "fix": "Установите обновления, предоставленные Microsoft (включая KB5060118, KB5060525, KB5060526, KB5060531, KB5060533, KB5060841, KB5060842, KB5060996, KB5060998, KB5060999, KB5061010, KB5061018, KB5061026, KB5061059, KB5061078).",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем и версий Windows 10.",
+   "Проверьте установку актуальных обновлений безопасности Microsoft."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in Internet-Verknüpfungsdateien (CVE-2025-33053)",
+  "summary": "Microsoft Windows enthält eine Remotecodeausführungsschwachstelle in Internet-Verknüpfungsdateien (CVE-2025-33053), deren Ausnutzung gemeldet wurde.",
+  "impact": "Ein Angreifer kann Remotecode ausführen. Die Ausnutzung wird vom Hersteller gemeldet.",
+  "fix": "Installieren Sie die von Microsoft bereitgestellten Updates (einschließlich KB5060118, KB5060525, KB5060526, KB5060531, KB5060533, KB5060841, KB5060842, KB5060996, KB5060998, KB5060999, KB5061010, KB5061018, KB5061026, KB5061059, KB5061078).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows 10-Systeme und -Versionen.",
+   "Überprüfen Sie, ob die neuesten Microsoft-Sicherheitsupdates installiert sind."
+  ],
+  "regression": null
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "affected": [
+  {
+   "product": "Windows 11",
+   "versions": "all",
+   "fixed": null,
+   "evidence": "Windows Graphics Component Remote Code Execution Vulnerability\nMicrosoft Graphics Component."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows Graphics Component: CVE-2025-50165 RCE Vulnerability",
+  "summary": "A critical remote code execution vulnerability exists in the Microsoft Windows Graphics Component, tracked as CVE-2025-50165 with a CVSS score of 9.8.",
+  "impact": "Allows remote code execution. Specific preconditions and privileges are not detailed in the source texts.",
+  "fix": "Updates are available via KB5063878 and KB5064010.",
+  "workaround": null,
+  "checks": [
+   "Check systems for Windows Graphics Component updates KB5063878 and KB5064010."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows Graphics Component: уязвимость RCE CVE-2025-50165",
+  "summary": "В графическом компоненте Microsoft Windows обнаружена критическая уязвимость удаленного выполнения кода (CVE-2025-50165) с оценкой CVSS 9.8.",
+  "impact": "Позволяет удаленное выполнение кода. Конкретные предварительные условия и привилегии в источниках не указаны.",
+  "fix": "Доступны обновления через KB5063878 и KB5064010.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие обновлений графического компонента Windows KB5063878 и KB5064010."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows Graphics Component: RCE-Schwachstelle CVE-2025-50165",
+  "summary": "Im Microsoft Windows Graphics Component existiert eine kritische Schwachstelle zur Remote-Code-Ausführung (CVE-2025-50165) mit einem CVSS-Score von 9.8.",
+  "impact": "Ermöglicht die Remotecodeausführung. Genaue Vorbedingungen und Privilegien werden in den Quellen nicht genannt.",
+  "fix": "Updates stehen über KB5063878 und KB5064010 zur Verfügung.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf die Windows Graphics Component Updates KB5063878 und KB5064010."
+  ],
+  "regression": null
+ }
+}
