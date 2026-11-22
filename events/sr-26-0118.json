@@ -96,21 +96,62 @@
  "texts": {
   "msrc:CVE-2026-85880": "Windows Advanced Local Procedure Call (ALPC) Elevation of Privilege Vulnerability\nWindows ALPC. Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "a5386c4be8627afa22a16253",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: ALPC Elevation of Privilege Vulnerability (CVE-2026-85880)",
+    "summary": "An elevation of privilege vulnerability exists in Microsoft Windows Advanced Local Procedure Call (ALPC). Microsoft reports exploitation in the wild.",
+    "impact": "An attacker can achieve elevation of privilege. Exploitation is reported by Microsoft.",
+    "fix": "Apply updates referenced by KB5122876, KB5122878, KB5122882, KB5123065, KB5123066, or KB5123099.",
+    "workaround": null,
+    "checks": [
+     "Check systems for Windows 10 and Windows Server installations.",
+     "Verify if updates KB5122876, KB5122878, KB5122882, KB5123065, KB5123066, or KB5123099 are applied."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость повышения привилегий в ALPC (CVE-2026-85880)",
+    "summary": "В подсистеме Windows Advanced Local Procedure Call (ALPC) обнаружена уязвимость повышения привилегий. Microsoft сообщает об эксплуатации уязвимости.",
+    "impact": "Злоумышленник может повысить свои привилегии. Эксплуатация подтверждена Microsoft.",
+    "fix": "Установите обновления, указанные в KB5122876, KB5122878, KB5122882, KB5123065, KB5123066 или KB5123099.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленных Windows 10 и Windows Server.",
+     "Убедитесь, что применены обновления KB5122876, KB5122878, KB5122882, KB5123065, KB5123066 или KB5123099."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Schwachstelle zur Privilegienerweiterung in ALPC (CVE-2026-85880)",
+    "summary": "In Windows Advanced Local Procedure Call (ALPC) existiert eine Schwachstelle zur Privilegienerweiterung. Microsoft meldet die Ausnutzung.",
+    "impact": "Ein Angreifer kann eine Privilegienerweiterung erreichen. Die Ausnutzung wird von Microsoft gemeldet.",
+    "fix": "Wenden Sie die Updates KB5122876, KB5122878, KB5122882, KB5123065, KB5123066 oder KB5123099 an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf Windows 10 und Windows Server Installationen.",
+     "Überprüfen Sie, ob die Updates KB5122876, KB5122878, KB5122882, KB5123065, KB5123066 oder KB5123099 installiert sind."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T15:37:03Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-povysheniya-privilegiy-v-alpc-cve",
+   "de": "microsoft-windows-schwachstelle-zur-privilegienerweiterung-in",
+   "en": "microsoft-windows-alpc-elevation-of-privilege-vulnerability-cve"
+  },
+  "published_at": "2026-11-22T15:37:03Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

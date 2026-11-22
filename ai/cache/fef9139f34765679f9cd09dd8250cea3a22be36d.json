@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows Server",
+   "versions": "all",
+   "fixed": null,
+   "evidence": "Windows Services for NFS ONCRPC XDR Driver Remote Code Execution Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: Remote Code Execution Vulnerability in Services for NFS",
+  "summary": "A critical remote code execution vulnerability exists in the Windows Services for NFS ONCRPC XDR Driver. The vulnerability allows attackers to achieve remote code execution with a CVSS score of 9.8.",
+  "impact": "An attacker can achieve remote code execution on vulnerable Windows Server installations.",
+  "fix": "Updates are available via KB5122871, KB5122876, KB5122882, KB5123065, KB5123066, and KB5123099.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows Server systems running Services for NFS.",
+   "Verify whether updates KB5122871, KB5122876, KB5122882, KB5123065, KB5123066, or KB5123099 are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость удаленного выполнения кода в Services for NFS",
+  "summary": "В драйвере Windows Services for NFS ONCRPC XDR обнаружена критическая уязвимость удаленного выполнения кода с оценкой CVSS 9.8.",
+  "impact": "Злоумышленник может выполнить произвольный код удаленно на уязвимых серверах Windows Server.",
+  "fix": "Доступны обновления через КБ KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 и KB5123099.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows Server, использующих Services for NFS.",
+   "Проверьте установку обновлений KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 и KB5123099."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in Services for NFS",
+  "summary": "Im Windows Services for NFS ONCRPC XDR Driver existiert eine kritische Schwachstelle zur Remotecodeausführung mit einem CVSS-Score von 9.8.",
+  "impact": "Ein Angreifer kann auf anfälligen Windows Server-Systemen Remotecode ausführen.",
+  "fix": "Updates stehen über KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 und KB5123099 zur Verfügung.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows Server-Systeme mit aktivierten Services for NFS.",
+   "Überprüfen Sie, ob die Updates KB5122871, KB5122876, KB5122882, KB5123065, KB5123066 oder KB5123099 installiert sind."
+  ],
+  "regression": null
+ }
+}

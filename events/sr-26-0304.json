@@ -70,21 +70,62 @@
  "texts": {
   "msrc:CVE-2026-21509": "Microsoft Office Security Feature Bypass Vulnerability\nMicrosoft Office. Microsoft 2026-Jan security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "149a7c6ea91ea87fc3e4b95d",
+  "texts": {
+   "en": {
+    "title": "Microsoft Office: CVE-2026-21509 Security Feature Bypass Vulnerability",
+    "summary": "Microsoft Office contains a security feature bypass vulnerability tracked as CVE-2026-21509. Exploitation is reported by the vendor.",
+    "impact": "An attacker can bypass security features in Microsoft Office. The vendor reports exploitation.",
+    "fix": "Apply updates or fixes provided by the vendor, including KB5002713.",
+    "workaround": null,
+    "checks": [
+     "Check systems for installed Microsoft Office and Microsoft 365 Apps versions.",
+     "Verify the application of security updates such as KB5002713."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Office: уязвимость обхода функций безопасности CVE-2026-21509",
+    "summary": "В Microsoft Office обнаружена уязвимость обхода функций безопасности, получившая обозначение CVE-2026-21509. Производитель сообщает об эксплуатации.",
+    "impact": "Злоумышленник может обойти функции безопасности в Microsoft Office. Производитель заявляет об эксплуатации.",
+    "fix": "Установите обновления или исправления, предоставленные производителем, включая KB5002713.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленных версий Microsoft Office и Microsoft 365 Apps.",
+     "Убедитесь в применении обновлений безопасности, таких как KB5002713."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Office: Schwachstelle in Sicherheitsfunktionen CVE-2026-21509",
+    "summary": "Microsoft Office enthält eine Schwachstelle zum Umgehen von Sicherheitsfunktionen mit der Kennung CVE-2026-21509. Der Hersteller meldet eine Ausnutzung.",
+    "impact": "Ein Angreifer kann Sicherheitsfunktionen in Microsoft Office umgehen. Der Hersteller meldet eine Ausnutzung.",
+    "fix": "Wenden Sie vom Hersteller bereitgestellte Updates oder Fixes an, einschließlich KB5002713.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf installierte Versionen von Microsoft Office und Microsoft 365 Apps.",
+     "Überprüfen Sie die Anwendung von Sicherheitsupdates wie KB5002713."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T15:37:03Z",
+  "slugs": {
+   "ru": "microsoft-office-uyazvimost-obkhoda-funktsiy-bezopasnosti-cve",
+   "de": "microsoft-office-schwachstelle-in-sicherheitsfunktionen-cve",
+   "en": "microsoft-office-cve-2026-21509-security-feature-bypass"
+  },
+  "published_at": "2026-11-22T15:37:03Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }
