@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows 10",
+   "versions": "various",
+   "fixed": null,
+   "evidence": "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: Elevation of privilege vulnerability in WinSock AFD",
+  "summary": "An elevation of privilege vulnerability in the Windows Ancillary Function Driver for WinSock (CVE-2025-32709) allows attackers to escalate privileges. Exploitation is reported by Microsoft.",
+  "impact": "An attacker can achieve elevation of privilege. Exploited is reported by the vendor.",
+  "fix": "Apply the updates referenced by KB5058379, KB5058383, KB5058384, KB5058385, KB5058387, KB5058392, KB5058403, KB5058405, KB5058411, KB5058451, KB5058497, KB5058500, KB5061195, KB5061196, KB5061197, or KB5061198.",
+  "workaround": null,
+  "checks": [
+   "Check Windows 10 systems for the installation of security updates associated with CVE-2025-32709.",
+   "Verify system status regarding applicable KB updates such as KB5058379 and related KBs."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость повышения привилегий в WinSock AFD",
+  "summary": "Уязвимость повышения привилегий в драйвере Windows Ancillary Function Driver для WinSock (CVE-2025-32709) позволяет злоумышленникам повысить привилегии. Эксплуатация подтверждена Microsoft.",
+  "impact": "Злоумышленник может получить повышение привилегий. Эксплуатация зафиксирована производителем.",
+  "fix": "Установите обновления, указанные в KB5058379, KB5058383, KB5058384, KB5058385, KB5058387, KB5058392, KB5058403, KB5058405, KB5058411, KB5058451, KB5058497, KB5058500, KB5061195, KB5061196, KB5061197 или KB5061198.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows 10 на наличие установленных обновлений безопасности, связанных с CVE-2025-32709.",
+   "Убедитесь в применении соответствующих обновлений KB, таких как KB5058379 и связанных с ним."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Schwachstelle zur Privilegienerweiterung in WinSock AFD",
+  "summary": "Eine Schwachstelle zur Privilegienerweiterung im Windows Ancillary Function Driver für WinSock (CVE-2025-32709) ermöglicht Angreifern die Erhöhung von Privilegien. Die Ausnutzung wird von Microsoft gemeldet.",
+  "impact": "Ein Angreifer kann eine Privilegienerweiterung erreichen. Die Ausnutzung wurde vom Hersteller gemeldet.",
+  "fix": "Wenden Sie die in KB5058379, KB5058383, KB5058384, KB5058385, KB5058387, KB5058392, KB5058403, KB5058405, KB5058411, KB5058451, KB5058497, KB5058500, KB5061195, KB5061196, KB5061197 oder KB5061198 referenzierten Updates an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-10-Systeme auf die Installation von Sicherheitsupdates im Zusammenhang mit CVE-2025-32709.",
+   "Überprüfen Sie den Status der anwendbaren KB-Updates wie KB5058379 und zugehöriger KBs."
+  ],
+  "regression": null
+ }
+}

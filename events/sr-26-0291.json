@@ -60,21 +60,59 @@
  "texts": {
   "msrc:CVE-2025-12727": "Chromium: CVE-2025-12727 Inappropriate implementation in V8\nMicrosoft Edge (Chromium-based). Microsoft 2025-Nov security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "e4848dce9d308d44a0b0d224",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: CVE-2025-12727 V8 vulnerability",
+    "summary": "Microsoft Edge (Chromium-based) is affected by an inappropriate implementation vulnerability in V8 tracked as CVE-2025-12727 with a CVSS score of 9.8.",
+    "impact": "The sources state a CVSS score of 9.8 but do not provide detailed preconditions or specific impact consequences.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft Edge (Chromium-based) installations for exposure to CVE-2025-12727."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: уязвимость V8 CVE-2025-12727",
+    "summary": "Microsoft Edge (на базе Chromium) подвержен уязвимости некорректной реализации в V8, зарегистрированной как CVE-2025-12727, с оценкой CVSS 9.8.",
+    "impact": "Источники указывают оценку CVSS 9.8, но не приводят подробных предварительных условий или последствий.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте инсталляции Microsoft Edge (на базе Chromium) на уязвимость CVE-2025-12727."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: V8-Schwachstelle CVE-2025-12727",
+    "summary": "Microsoft Edge (Chromium-basiert) ist von einer Schwachstelle durch unangemessene Implementierung in V8 mit der Kennung CVE-2025-12727 und einem CVSS-Score von 9.8 betroffen.",
+    "impact": "Die Quellen nennen einen CVSS-Score von 9.8, nennen jedoch keine detaillierten Vorbedingungen oder Auswirkungen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft Edge (Chromium-basiert) Installationen auf Betroffenheit durch CVE-2025-12727."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T12:20:55Z",
+  "slugs": {
+   "ru": "microsoft-edge-uyazvimost-v8-cve-2025-12727",
+   "de": "microsoft-edge-v8-schwachstelle-cve-2025-12727",
+   "en": "microsoft-edge-cve-2025-12727-v8-vulnerability"
+  },
+  "published_at": "2026-11-22T12:20:55Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

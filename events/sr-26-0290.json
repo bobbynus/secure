@@ -95,21 +95,62 @@
  "texts": {
   "msrc:CVE-2025-30397": "Scripting Engine Memory Corruption Vulnerability\nMicrosoft Scripting Engine. Microsoft 2025-May security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "d64a46854e676d6143a4f02f",
+  "texts": {
+   "en": {
+    "title": "Microsoft Scripting Engine: CVE-2025-30397 Memory Corruption Vulnerability",
+    "summary": "Microsoft Scripting Engine suffers from a memory corruption vulnerability tracked as CVE-2025-30397, which is reported to be exploited.",
+    "impact": "The vulnerability leads to memory corruption in the Microsoft Scripting Engine. Exploitation is reported.",
+    "fix": "Apply the updates provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Check Windows systems for installed updates including KB5058379, KB5058380, KB5058383, KB5058384, KB5058385, KB5058387, KB5058392, KB5058403, KB5058405, KB5058411, KB5058429, KB5058430, KB5058449, KB5058451, KB5058454, KB5058497, and KB5058500.",
+     "Verify that affected Windows 10 versions are updated to address CVE-2025-30397."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Scripting Engine: уязвимость повреждения памяти CVE-2025-30397",
+    "summary": "В Microsoft Scripting Engine обнаружена уязвимость повреждения памяти CVE-2025-30397, для которой сообщается об эксплуатации.",
+    "impact": "Уязвимость приводит к повреждению памяти в Microsoft Scripting Engine. Сообщается об эксплуатации.",
+    "fix": "Установите обновления, предоставленные Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на наличие установленных обновлений, включая KB5058379, KB5058380, KB5058383, KB5058384, KB5058385, KB5058387, KB5058392, KB5058403, KB5058405, KB5058411, KB5058429, KB5058430, KB5058449, KB5058451, KB5058454, KB5058497 и KB5058500.",
+     "Убедитесь, что затронутые версии Windows 10 обновлены для устранения CVE-2025-30397."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Scripting Engine: Speicherbeschädigungsschwachstelle CVE-2025-30397",
+    "summary": "Die Microsoft Scripting Engine weist eine Speicherbeschädigungsschwachstelle auf (CVE-2025-30397), für die eine Ausnutzung gemeldet wurde.",
+    "impact": "Die Schwachstelle führt zu einer Speicherbeschädigung in der Microsoft Scripting Engine. Eine Ausnutzung wurde gemeldet.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows-Systeme auf installierte Updates, einschließlich KB5058379, KB5058380, KB5058383, KB5058384, KB5058385, KB5058387, KB5058392, KB5058403, KB5058405, KB5058411, KB5058429, KB5058430, KB5058449, KB5058451, KB5058454, KB5058497 und KB5058500.",
+     "Stellen Sie sicher, dass betroffene Windows 10-Versionen aktualisiert wurden, um CVE-2025-30397 zu beheben."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T12:20:55Z",
+  "slugs": {
+   "ru": "microsoft-scripting-engine-uyazvimost-povrezhdeniya-pamyati-cve",
+   "de": "microsoft-scripting-engine-speicherbeschaedigungsschwachstelle",
+   "en": "microsoft-scripting-engine-cve-2025-30397-memory-corruption"
+  },
+  "published_at": "2026-11-22T12:20:55Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

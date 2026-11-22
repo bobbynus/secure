@@ -92,21 +92,62 @@
  "texts": {
   "msrc:CVE-2025-32706": "Windows Common Log File System Driver Elevation of Privilege Vulnerability\nWindows Common Log File System Driver. Microsoft 2025-May security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "51c365d29eae0e1adca5a022",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Elevation of Privilege in Common Log File System Driver",
+    "summary": "Microsoft Windows contains an elevation of privilege vulnerability in the Common Log File System Driver tracked as CVE-2025-32706, which is reported as exploited.",
+    "impact": "An attacker can achieve elevation of privilege. Preconditions, attack vectors, or specific authentication requirements are not detailed in the sources.",
+    "fix": "The sources list updates including `KB5058379`, `KB5058383`, `KB5058384`, `KB5058385`, `KB5058387`, `KB5058392`, `KB5058403`, `KB5058405`, `KB5058411`, `KB5058429`, `KB5058430`, `KB5058449`, `KB5058451`, `KB5058454`, `KB5058497`, and `KB5058500` released as part of the Microsoft 2025-May security update.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows 10 systems to check for the presence of CVE-2025-32706.",
+     "Verify the installation of Microsoft security updates including KB5058379, KB5058383, KB5058384, KB5058385, KB5058387, KB5058392, KB5058403, KB5058405, KB5058411, KB5058429, KB5058430, KB5058449, KB5058451, KB5058454, KB5058497, and KB5058500."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: повышение привилегий в драйвере Common Log File System",
+    "summary": "В Microsoft Windows обнаружена уязвимость повышения привилегий в драйвере Common Log File System (CVE-2025-32706), эксплуатация которой подтверждена.",
+    "impact": "Злоумышленник может получить повышение привилегий. Предварительные условия и вектор атаки в источниках не указаны.",
+    "fix": "В источниках указаны обновления, включая `KB5058379`, `KB5058383`, `KB5058384`, `KB5058385`, `KB5058387`, `KB5058392`, `KB5058403`, `KB5058405`, `KB5058411`, `KB5058429`, `KB5058430`, `KB5058449`, `KB5058451`, `KB5058454`, `KB5058497` и `KB5058500`, выпущенные в рамках обновления безопасности Microsoft за май 2025 года.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows 10 на предмет уязвимости CVE-2025-32706.",
+     "Проверьте установку обновлений безопасности Microsoft, включая KB5058379, KB5058383, KB5058384, KB5058385, KB5058387, KB5058392, KB5058403, KB5058405, KB5058411, KB5058429, KB5058430, KB5058449, KB5058451, KB5058454, KB5058497 и KB5058500."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Privilegieneskalation im Common Log File System Driver",
+    "summary": "Microsoft Windows enthält eine Schwachstelle zur Privilegieneskalation im Common Log File System Driver (CVE-2025-32706), deren Ausnutzung berichtet wurde.",
+    "impact": "Ein Angreifer kann eine Privilegieneskalation erreichen. Voraussetzungen oder Angriffsvektoren werden in den Quellen nicht genannt.",
+    "fix": "Die Quellen nennen Updates wie `KB5058379`, `KB5058383`, `KB5058384`, `KB5058385`, `KB5058387`, `KB5058392`, `KB5058403`, `KB5058405`, `KB5058411`, `KB5058429`, `KB5058430`, `KB5058449`, `KB5058451`, `KB5058454`, `KB5058497` und `KB5058500`, die im Rahmen des Microsoft-Sicherheitsupdates vom Mai 2025 veröffentlicht wurden.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows 10-Systeme auf das Vorhandensein von CVE-2025-32706.",
+     "Überprüfen Sie die Installation der Microsoft-Sicherheitsupdates einschließlich KB5058379, KB5058383, KB5058384, KB5058385, KB5058387, KB5058392, KB5058403, KB5058405, KB5058411, KB5058429, KB5058430, KB5058449, KB5058451, KB5058454, KB5058497 und KB5058500."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T12:20:55Z",
+  "slugs": {
+   "ru": "microsoft-windows-povyshenie-privilegiy-v-drayvere-common-log",
+   "de": "microsoft-windows-privilegieneskalation-im-common-log-file",
+   "en": "microsoft-windows-elevation-of-privilege-in-common-log-file"
+  },
+  "published_at": "2026-11-22T12:20:55Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

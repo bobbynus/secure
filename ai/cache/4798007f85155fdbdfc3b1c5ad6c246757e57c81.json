@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft SharePoint Online",
+   "versions": "Microsoft Office SharePoint",
+   "fixed": null,
+   "evidence": "Microsoft Office SharePoint. Microsoft 2025-Nov security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft SharePoint Online: Elevation of Privilege Vulnerability (CVE-2025-59245)",
+  "summary": "An elevation of privilege vulnerability (CVE-2025-59245) affects Microsoft SharePoint Server and Microsoft SharePoint Online with a CVSS score of 9.8.",
+  "impact": "The vulnerability allows for elevation of privilege.",
+  "fix": "The sources list no fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft SharePoint Server and Microsoft SharePoint Online installations.",
+   "Check systems for the Microsoft 2025-Nov security update."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft SharePoint Online: уязвимость повышения привилегий (CVE-2025-59245)",
+  "summary": "Уязвимость повышения привилегий (CVE-2025-59245) затрагивает Microsoft SharePoint Server и Microsoft SharePoint Online, оценка CVSS составляет 9.8.",
+  "impact": "Уязвимость позволяет повысить привилегии.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установок Microsoft SharePoint Server и Microsoft SharePoint Online.",
+   "Проверьте системы на наличие обновления безопасности Microsoft 2025-Nov."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft SharePoint Online: Privilegienausweitung (CVE-2025-59245)",
+  "summary": "Eine Schwachstelle zur Privilegienausweitung (CVE-2025-59245) betrifft Microsoft SharePoint Server und Microsoft SharePoint Online mit einem CVSS-Score von 9.8.",
+  "impact": "Die Schwachstelle ermöglicht eine Privilegienausweitung.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Microsoft SharePoint Server- und Microsoft SharePoint Online-Installationen.",
+   "Überprüfen Sie Systeme auf das Microsoft 2025-Nov Sicherheitsupdate."
+  ],
+  "regression": null
+ }
+}

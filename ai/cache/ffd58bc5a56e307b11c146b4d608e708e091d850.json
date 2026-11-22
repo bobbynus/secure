@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Elevation of Privilege Vulnerability in CLFS Driver",
+  "summary": "An elevation of privilege vulnerability exists in the Windows Common Log File System Driver (CVE-2025-32701). Microsoft reports exploitation in the wild.",
+  "impact": "An attacker can exploit this vulnerability to elevate privileges.",
+  "fix": "Apply the updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for the presence of CVE-2025-32701 updates.",
+   "Verify installation of Microsoft security updates."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость повышения привилегий в драйвере CLFS",
+  "summary": "В драйвере Windows Common Log File System обнаружена уязвимость повышения привилегий (CVE-2025-32701). Microsoft сообщает об эксплуатации уязвимости.",
+  "impact": "Злоумышленник может использовать эту уязвимость для повышения привилегий.",
+  "fix": "Установите обновления, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на наличие обновлений для CVE-2025-32701.",
+   "Убедитесь в установке обновлений безопасности Microsoft."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Schwachstelle zur Privilegienerweiterung im CLFS-Treiber",
+  "summary": "Im Windows Common Log File System Driver besteht eine Schwachstelle zur Privilegienerweiterung (CVE-2025-32701). Microsoft berichtet über eine Ausnutzung.",
+  "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien zu erweitern.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Systeme auf das Vorhandensein von Updates für CVE-2025-32701.",
+   "Überprüfen Sie die Installation der Microsoft-Sicherheitsupdates."
+  ],
+  "regression": null
+ }
+}
