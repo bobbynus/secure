@@ -84,21 +84,59 @@
  "texts": {
   "msrc:CVE-2023-44487": "MITRE: CVE-2023-44487 HTTP/2 Rapid Reset Attack\nHTTP/2. Microsoft 2023-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "278e7241d16c715159c16f75",
+  "texts": {
+   "en": {
+    "title": "Microsoft: CVE-2023-44487 HTTP/2 Rapid Reset Attack",
+    "summary": "Microsoft released security updates for CVE-2023-44487 addressing an HTTP/2 Rapid Reset Attack vulnerability.",
+    "impact": "The sources report exploitation.",
+    "fix": "Apply the 2023-Oct security update.",
+    "workaround": null,
+    "checks": [
+     "Check systems for the 2023-Oct security update."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft: CVE-2023-44487 HTTP/2 Rapid Reset Attack",
+    "summary": "Microsoft выпустила обновления безопасности для уязвимости CVE-2023-44487 типа HTTP/2 Rapid Reset Attack.",
+    "impact": "Источники сообщают об эксплуатации.",
+    "fix": "Установите обновление безопасности за октябрь 2023 года.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие обновления безопасности за октябрь 2023 года."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft: CVE-2023-44487 HTTP/2 Rapid Reset Attack",
+    "summary": "Microsoft hat Sicherheitsupdates für CVE-2023-44487 bezüglich einer HTTP/2 Rapid Reset Attack Schwachstelle veröffentlicht.",
+    "impact": "Die Quellen melden eine Ausnutzung.",
+    "fix": "Wenden Sie das Sicherheitsupdate vom Oktober 2023 an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf das Sicherheitsupdate vom Oktober 2023."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T11:20:57Z",
+  "slugs": {
+   "ru": "microsoft-cve-2023-44487-http-2-rapid-reset-attack",
+   "de": "microsoft-cve-2023-44487-http-2-rapid-reset-attack",
+   "en": "microsoft-cve-2023-44487-http-2-rapid-reset-attack"
+  },
+  "published_at": "2026-11-22T11:20:57Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

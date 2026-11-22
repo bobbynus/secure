@@ -63,21 +63,62 @@
  "texts": {
   "msrc:CVE-2023-41763": "Skype for Business Elevation of Privilege Vulnerability\nSkype for Business. Publicly disclosed. Microsoft 2023-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "ea4b3f9f0353bf61b469cb92",
+  "texts": {
+   "en": {
+    "title": "Microsoft Skype for Business Server: Elevation of Privilege Vulnerability",
+    "summary": "An elevation of privilege vulnerability in Microsoft Skype for Business Server (CVE-2023-41763) allows privilege escalation. The vendor reports exploitation.",
+    "impact": "Allows an attacker to achieve elevation of privilege.",
+    "fix": "The sources do not state fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Inventory Skype for Business Server 2015 CU13 and Skype for Business Server 2019 CU7 systems.",
+     "Check systems for the Microsoft 2023-Oct security update status as reported by the vendor."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Skype for Business Server: уязвимость повышения привилегий",
+    "summary": "Уязвимость повышения привилегий в Microsoft Skype for Business Server (CVE-2023-41763) позволяет повысить привилегии. Поставщик сообщает об эксплуатации.",
+    "impact": "Позволяет злоумышленнику повысить привилегии.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Провести инвентаризацию систем Skype for Business Server 2015 CU13 и Skype for Business Server 2019 CU7.",
+     "Проверить системы на предмет установки октябрьского обновления безопасности Microsoft 2023 года, о котором сообщал поставщик."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Skype for Business Server: Schwachstelle zur Privilegienerweiterung",
+    "summary": "Eine Schwachstelle zur Privilegienerweiterung in Microsoft Skype for Business Server (CVE-2023-41763) ermöglicht die Erhöhung von Privilegien. Der Hersteller meldet eine Ausnutzung.",
+    "impact": "Ermöglicht es einem Angreifer, Privilegien zu erweitern.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Skype for Business Server 2015 CU13 und Skype for Business Server 2019 CU7 Systeme.",
+     "Überprüfen Sie Systeme auf den Status des Microsoft Sicherheitsupdates von Oktober 2023 gemäß den Herstellerangaben."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T11:20:57Z",
+  "slugs": {
+   "ru": "microsoft-skype-for-business-server-uyazvimost-povysheniya",
+   "de": "microsoft-skype-for-business-server-schwachstelle-zur",
+   "en": "microsoft-skype-for-business-server-elevation-of-privilege"
+  },
+  "published_at": "2026-11-22T11:20:57Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

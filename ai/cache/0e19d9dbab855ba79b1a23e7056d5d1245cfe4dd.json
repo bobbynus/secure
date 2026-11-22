@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows 10",
+   "versions": "all",
+   "fixed": null,
+   "evidence": "Secure Boot Security Feature Bypass Vulnerability\nWindows Secure Boot. Publicly disclosed. Microsoft 2023-May security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: Secure Boot security feature bypass vulnerability (CVE-2023-24932)",
+  "summary": "A security feature bypass vulnerability exists in Microsoft Windows Secure Boot, tracked as CVE-2023-24932 with a CVSS score of 6.7.",
+  "impact": "An attacker can bypass the Secure Boot security feature.",
+  "fix": "Apply the updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check Windows 10 systems for missing updates associated with CVE-2023-24932.",
+   "Verify the installation of Microsoft security updates."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость обхода функции безопасности Secure Boot (CVE-2023-24932)",
+  "summary": "В Microsoft Windows Secure Boot обнаружена уязвимость обхода функции безопасности, зарегистрированная как CVE-2023-24932 с оценкой CVSS 6.7.",
+  "impact": "Злоумышленник может обойти функцию безопасности Secure Boot.",
+  "fix": "Установите обновления, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows 10 на отсутствие обновлений, связанных с CVE-2023-24932.",
+   "Проверьте установку обновлений безопасности Microsoft."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Schwachstelle im Secure Boot Sicherheitsfeature (CVE-2023-24932)",
+  "summary": "In Microsoft Windows Secure Boot existiert eine Schwachstelle zum Umgehen des Sicherheitsfeatures, geführt als CVE-2023-24932 mit einem CVSS-Score von 6.7.",
+  "impact": "Ein Angreifer kann das Secure Boot Sicherheitsfeature umgehen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows 10 Systeme auf fehlende Updates im Zusammenhang mit CVE-2023-24932.",
+   "Überprüfen Sie die Installation der Microsoft Sicherheitsupdates."
+  ],
+  "regression": null
+ }
+}

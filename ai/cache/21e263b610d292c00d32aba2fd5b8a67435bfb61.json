@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows",
+   "versions": "multiple",
+   "fixed": null,
+   "evidence": "Windows Win32K. Microsoft 2023-May security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: Win32k Elevation of Privilege Vulnerability (CVE-2023-29336)",
+  "summary": "An elevation of privilege vulnerability exists in Win32k in Microsoft Windows. The vendor reports exploitation in the wild.",
+  "impact": "An attacker can achieve elevation of privilege. Exploitation is reported by the vendor.",
+  "fix": "Apply the updates provided by Microsoft (including KB5026363, KB5026382, KB5026408, KB5026409, KB5026411, KB5026413, KB5026415, KB5026419, KB5026426, KB5026427).",
+  "workaround": null,
+  "checks": [
+   "Check systems for the presence of CVE-2023-29336 and affected Windows versions",
+   "Verify installation of Microsoft security updates including KB5026363, KB5026382, KB5026408, KB5026409, KB5026411, KB5026413, KB5026415, KB5026419, KB5026426, and KB5026427"
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость повышения привилегий в Win32k (CVE-2023-29336)",
+  "summary": "В компоненте Win32k операционной системы Microsoft Windows обнаружена уязвимость повышения привилегий. По данным производителя, уязвимость эксплуатируется.",
+  "impact": "Злоумышленник может повысить свои привилегии. Эксплуатация подтверждена производителем.",
+  "fix": "Установите обновления, предоставленные Microsoft (включая KB5026363, KB5026382, KB5026408, KB5026409, KB5026411, KB5026413, KB5026415, KB5026419, KB5026426, KB5026427).",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие CVE-2023-29336 и затронутых версий Windows",
+   "Убедитесь в установке обновлений безопасности Microsoft, включая KB5026363, KB5026382, KB5026408, KB5026409, KB5026411, KB5026413, KB5026415, KB5026419, KB5026426 и KB5026427"
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Schwachstelle zur Rechteausweitung in Win32k (CVE-2023-29336)",
+  "summary": "In Win32k in Microsoft Windows existiert eine Schwachstelle zur Rechteausweitung. Der Hersteller berichtet über eine aktive Ausnutzung.",
+  "impact": "Ein Angreifer kann eine Rechteausweitung erreichen. Die Ausnutzung wird vom Hersteller gemeldet.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5026363, KB5026382, KB5026408, KB5026409, KB5026411, KB5026413, KB5026415, KB5026419, KB5026426, KB5026427).",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf CVE-2023-29336 und betroffene Windows-Versionen",
+   "Verifizieren Sie die Installation der Microsoft-Sicherheitsupdates einschließlich KB5026363, KB5026382, KB5026408, KB5026409, KB5026411, KB5026413, KB5026415, KB5026419, KB5026426 und KB5026427"
+  ],
+  "regression": null
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft: CVE-2023-44487 HTTP/2 Rapid Reset Attack",
+  "summary": "Microsoft released security updates for CVE-2023-44487 addressing an HTTP/2 Rapid Reset Attack vulnerability.",
+  "impact": "The sources report exploitation.",
+  "fix": "Apply the 2023-Oct security update.",
+  "workaround": null,
+  "checks": [
+   "Check systems for the 2023-Oct security update."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft: CVE-2023-44487 HTTP/2 Rapid Reset Attack",
+  "summary": "Microsoft выпустила обновления безопасности для уязвимости CVE-2023-44487 типа HTTP/2 Rapid Reset Attack.",
+  "impact": "Источники сообщают об эксплуатации.",
+  "fix": "Установите обновление безопасности за октябрь 2023 года.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие обновления безопасности за октябрь 2023 года."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft: CVE-2023-44487 HTTP/2 Rapid Reset Attack",
+  "summary": "Microsoft hat Sicherheitsupdates für CVE-2023-44487 bezüglich einer HTTP/2 Rapid Reset Attack Schwachstelle veröffentlicht.",
+  "impact": "Die Quellen melden eine Ausnutzung.",
+  "fix": "Wenden Sie das Sicherheitsupdate vom Oktober 2023 an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf das Sicherheitsupdate vom Oktober 2023."
+  ],
+  "regression": null
+ }
+}
