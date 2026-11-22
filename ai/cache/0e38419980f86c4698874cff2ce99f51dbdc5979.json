@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Sep security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Sep security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: Buffer overflow in ANGLE (CVE-2026-95281)",
+  "summary": "A buffer overflow vulnerability exists in the ANGLE component of Microsoft Edge (Chromium-based).",
+  "impact": "The vulnerability allows attackers to cause a buffer overflow via ANGLE.",
+  "fix": "The sources do not list specific fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check systems for Microsoft Edge (Chromium-based) installations.",
+   "Verify if Microsoft 2026-Sep security update is applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: переполнение буфера в ANGLE (CVE-2026-95281)",
+  "summary": "В компоненте ANGLE браузера Microsoft Edge (Chromium-based) обнаружена уязвимость переполнения буфера.",
+  "impact": "Уязвимость позволяет злоумышленникам вызвать переполнение буфера через ANGLE.",
+  "fix": "В источниках не указаны конкретные исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие установленного Microsoft Edge (Chromium-based).",
+   "Убедитесь, установлено ли обновление безопасности Microsoft 2026-Sep."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: Pufferüberlauf in ANGLE (CVE-2026-95281)",
+  "summary": "Im ANGLE-Komponenten von Microsoft Edge (Chromium-based) existiert eine Pufferüberlauf-Schwachstelle.",
+  "impact": "Die Schwachstelle ermöglicht es Angreifern, einen Pufferüberlauf über ANGLE herbeizuführen.",
+  "fix": "Die Quellen nennen keine spezifischen korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf Installationen von Microsoft Edge (Chromium-based).",
+   "Überprüfen Sie, ob das Sicherheitsupdate Microsoft 2026-Sep eingespielt wurde."
+  ],
+  "regression": null
+ }
+}

@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-95310": "Chromium CVE-2026-95310: Use after free in AdFilter\nMicrosoft Edge (Chromium-based). Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "17807ea34002efc285d658ba",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: CVE-2026-95310 use after free vulnerability in AdFilter",
+    "summary": "A use after free vulnerability exists in Microsoft Edge (Chromium-based) within AdFilter, tracked as CVE-2026-95310.",
+    "impact": "The vulnerability affects AdFilter in Microsoft Edge (Chromium-based) and is rated with a CVSS score of 9.6.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft Edge (Chromium-based) installations.",
+     "Check systems for exposure to CVE-2026-95310."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: уязвимость use-after-free в AdFilter (CVE-2026-95310)",
+    "summary": "В Microsoft Edge (на базе Chromium) в компоненте AdFilter обнаружена уязвимость типа use-after-free, получившая идентификатор CVE-2026-95310.",
+    "impact": "Уязвимость затрагивает AdFilter в Microsoft Edge (на базе Chromium) и имеет оценку CVSS 9.6.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию установок Microsoft Edge (на базе Chromium).",
+     "Проверьте системы на подверженность уязвимости CVE-2026-95310."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: CVE-2026-95310 Use-After-Free-Schwachstelle in AdFilter",
+    "summary": "In Microsoft Edge (Chromium-basiert) existiert eine Use-After-Free-Schwachstelle in AdFilter, erfasst als CVE-2026-95310.",
+    "impact": "Die Schwachstelle betrifft AdFilter in Microsoft Edge (Chromium-basiert) und ist mit einem CVSS-Score von 9.6 bewertet.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Erfassen Sie alle Installationen von Microsoft Edge (Chromium-basiert).",
+     "Überprüfen Sie Systeme auf Betroffenheit durch CVE-2026-95310."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T16:40:46Z",
+  "slugs": {
+   "ru": "microsoft-edge-uyazvimost-use-after-free-v-adfilter-cve-2026",
+   "de": "microsoft-edge-cve-2026-95310-use-after-free-schwachstelle-in",
+   "en": "microsoft-edge-cve-2026-95310-use-after-free-vulnerability-in"
+  },
+  "published_at": "2026-11-22T16:40:46Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

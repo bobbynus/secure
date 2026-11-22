@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-95284": "Chromium CVE-2026-95284: Buffer overflow in ANGLE\nMicrosoft Edge (Chromium-based). Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "32f32588c16acaaefdde1382",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: Buffer overflow in ANGLE (CVE-2026-95284)",
+    "summary": "A buffer overflow vulnerability exists in the ANGLE component of Microsoft Edge (Chromium-based), tracked as CVE-2026-95284 with a critical CVSS score of 9.6.",
+    "impact": "An attacker can potentially cause a buffer overflow leading to unspecified impacts.",
+    "fix": "The sources do not state fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft Edge (Chromium-based) installations.",
+     "Check systems for the Microsoft 2026-Sep security update context mentioned in sources."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: переполнение буфера в ANGLE (CVE-2026-95284)",
+    "summary": "В компоненте ANGLE браузера Microsoft Edge (Chromium-based) обнаружена уязвимость переполнения буфера, получившая идентификатор CVE-2026-95284 и критическую оценку CVSS 9.6.",
+    "impact": "Злоумышленник может потенциально вызвать переполнение буфера с неуказанными последствиями.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Инвентаризируйте установленные экземпляры Microsoft Edge (Chromium-based).",
+     "Проверьте системы на наличие контекста обновления безопасности Microsoft 2026-Sep, упомянутого в источниках."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: Pufferüberlauf in ANGLE (CVE-2026-95284)",
+    "summary": "Im ANGLE-Komponenten von Microsoft Edge (Chromium-based) existiert eine Pufferüberlauf-Schwachstelle, geführt als CVE-2026-95284 mit einem kritischen CVSS-Score von 9.6.",
+    "impact": "Ein Angreifer kann möglicherweise einen Pufferüberlauf mit unbestimmten Auswirkungen verursachen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Microsoft Edge (Chromium-based)-Installationen.",
+     "Prüfen Sie Systeme auf den in den Quellen erwähnten Kontext des Microsoft 2026-Sep Sicherheitsupdates."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T16:40:46Z",
+  "slugs": {
+   "ru": "microsoft-edge-perepolnenie-bufera-v-angle-cve-2026-95284",
+   "de": "microsoft-edge-pufferueberlauf-in-angle-cve-2026-95284",
+   "en": "microsoft-edge-buffer-overflow-in-angle-cve-2026-95284"
+  },
+  "published_at": "2026-11-22T16:40:46Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

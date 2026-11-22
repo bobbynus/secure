@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-91749": "Chromium CVE-2026-91749: Use after free\nMicrosoft Edge (Chromium-based). Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "708b24c342eeb1d107c6718a",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge (Chromium-based): Use after free vulnerability CVE-2026-91749",
+    "summary": "A use-after-free vulnerability affects Microsoft Edge (Chromium-based) in the Microsoft 2026-Sep security update.",
+    "impact": "The sources do not specify the exact impact of CVE-2026-91749.",
+    "fix": "The sources do not list a fixed version.",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft Edge (Chromium-based) installations.",
+     "Check systems for the Microsoft 2026-Sep security update."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge (Chromium-based): уязвимость использования после освобождения CVE-2026-91749",
+    "summary": "В Microsoft Edge (Chromium-based) в обновлении безопасности Microsoft 2026-Sep обнаружена уязвимость типа use-after-free.",
+    "impact": "Источники не указывают точные последствия CVE-2026-91749.",
+    "fix": "Источники не приводят исправленную версию.",
+    "workaround": null,
+    "checks": [
+     "Проинвентаризируйте установки Microsoft Edge (Chromium-based).",
+     "Проверьте системы на наличие обновления безопасности Microsoft 2026-Sep."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge (Chromium-based): Use-After-Free-Schwachstelle CVE-2026-91749",
+    "summary": "Eine Use-After-Free-Schwachstelle betrifft Microsoft Edge (Chromium-based) im Microsoft 2026-Sep Sicherheitsupdate.",
+    "impact": "Die Quellen nennen keine genauen Auswirkungen von CVE-2026-91749.",
+    "fix": "Die Quellen nennen keine korrigierte Version.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Microsoft Edge (Chromium-based) Installationen.",
+     "Überprüfen Sie Systeme auf das Microsoft 2026-Sep Sicherheitsupdate."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T16:40:46Z",
+  "slugs": {
+   "ru": "microsoft-edge-chromium-based-uyazvimost-ispolzovaniya-posle",
+   "de": "microsoft-edge-chromium-based-use-after-free-schwachstelle-cve",
+   "en": "microsoft-edge-chromium-based-use-after-free-vulnerability-cve"
+  },
+  "published_at": "2026-11-22T16:40:46Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
