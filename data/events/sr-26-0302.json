@@ -1,0 +1,113 @@
+{
+  "id": "sr-26-0302",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-59287"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5070879",
+      "KB5070881",
+      "KB5070882",
+      "KB5070883",
+      "KB5070884",
+      "KB5070886",
+      "KB5070887",
+      "KB5070892",
+      "KB5070893"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T15:20:58Z",
+    "updated": "2026-11-22T15:20:58Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Server Update Service (WSUS) Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59287",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T15:20:58Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T15:20:58Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-server-rce-v-wsus-cve-2025-59287",
+      "title": "Microsoft Windows Server: RCE в WSUS (CVE-2025-59287)",
+      "summary": "Microsoft выпустила обновления, устраняющие критическую уязвимость удаленного выполнения кода в службе Windows Server Update Service (WSUS).",
+      "impact": "Злоумышленник может выполнить произвольный код удаленно в WSUS.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновления, связанные с KB5070879, KB5070881, KB5070882, KB5070883, KB5070884, KB5070886, KB5070887, KB5070892 или KB5070893.",
+      "checks": [
+        "Проверьте системы Windows Server на наличие установленной службы WSUS.",
+        "Убедитесь, что применены обновления KB5070879, KB5070881, KB5070882, KB5070883, KB5070884, KB5070886, KB5070887, KB5070892 или KB5070893."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-server-rce-in-wsus-cve-2025-59287",
+      "title": "Microsoft Windows Server: RCE in WSUS (CVE-2025-59287)",
+      "summary": "Microsoft hat Updates zur Behebung einer kritischen Schwachstelle für Remotecodeausführung im Windows Server Update Service (WSUS) veröffentlicht.",
+      "impact": "Ein Angreifer kann eine Remotecodeausführung in WSUS erreichen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Wenden Sie die Updates zu KB5070879, KB5070881, KB5070882, KB5070883, KB5070884, KB5070886, KB5070887, KB5070892 oder KB5070893 an.",
+      "checks": [
+        "Prüfen Sie Windows Server-Systeme auf eine WSUS-Installation und Exposition.",
+        "Überprüfen Sie, ob die Updates KB5070879, KB5070881, KB5070882, KB5070883, KB5070884, KB5070886, KB5070887, KB5070892 oder KB5070893 eingespielt wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-server-cve-2025-59287-rce-in-wsus",
+      "title": "Microsoft Windows Server: CVE-2025-59287 RCE in WSUS",
+      "summary": "Microsoft has released updates addressing a critical remote code execution vulnerability in Windows Server Update Service (WSUS).",
+      "impact": "An attacker could achieve remote code execution in WSUS.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply the updates associated with KB5070879, KB5070881, KB5070882, KB5070883, KB5070884, KB5070886, KB5070887, KB5070892, or KB5070893.",
+      "checks": [
+        "Check Windows Server systems for WSUS installation and exposure.",
+        "Verify if updates KB5070879, KB5070881, KB5070882, KB5070883, KB5070884, KB5070886, KB5070887, KB5070892, or KB5070893 are applied."
+      ]
+    }
+  }
+}

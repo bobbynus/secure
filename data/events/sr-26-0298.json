@@ -1,0 +1,122 @@
+{
+  "id": "sr-26-0298",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-11",
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-24990"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5066586",
+      "KB5066780",
+      "KB5066782",
+      "KB5066791",
+      "KB5066793",
+      "KB5066835",
+      "KB5066836",
+      "KB5066837",
+      "KB5066872",
+      "KB5066873",
+      "KB5066874",
+      "KB5066875",
+      "KB5066876",
+      "KB5066877"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T15:20:58Z",
+    "updated": "2026-11-22T15:20:58Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Agere Modem Driver Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24990",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T15:20:58Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T15:20:58Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-cve-2025-24990-v-drayvere-modema",
+      "title": "Microsoft Windows: уязвимость CVE-2025-24990 в драйвере модема Agere",
+      "summary": "Уязвимость повышения привилегий (CVE-2025-24990) затрагивает драйвер модема Agere в Microsoft Windows. Microsoft сообщает об эксплуатации этой уязвимости.",
+      "impact": "Злоумышленник может повысить свои привилегии. Эксплуатация подтверждена Microsoft.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft.",
+      "checks": [
+        "Проверьте системы Windows на наличие уязвимых версий драйвера модема Agere.",
+        "Убедитесь в применении обновлений безопасности Microsoft, устраняющих CVE-2025-24990."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2025-24990-agere-modem-driver-elevation",
+      "title": "Microsoft Windows: CVE-2025-24990 Agere Modem Driver Elevation of Privilege",
+      "summary": "Eine Schwachstelle zur Privilegienerweiterung (CVE-2025-24990) betrifft den Agere Windows Modem Driver in Microsoft Windows. Microsoft meldet die Ausnutzung dieser Schwachstelle.",
+      "impact": "Ein Angreifer kann eine Privilegienerweiterung erreichen. Die Ausnutzung wird von Microsoft gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+      "checks": [
+        "Überprüfen Sie Windows-Systeme auf die Installation anfälliger Agere Modem Driver-Versionen.",
+        "Überprüfen Sie die Anwendung der Microsoft-Sicherheitsupdates für CVE-2025-24990."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2025-24990-agere-modem-driver-elevation",
+      "title": "Microsoft Windows: CVE-2025-24990 Agere Modem Driver Elevation of Privilege",
+      "summary": "An elevation of privilege vulnerability (CVE-2025-24990) affects the Agere Windows Modem Driver in Microsoft Windows. Microsoft reports exploitation of this vulnerability.",
+      "impact": "An attacker can achieve elevation of privilege. Exploitation is reported by Microsoft.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft.",
+      "checks": [
+        "Check Windows systems for installation of vulnerable Agere Modem Driver versions.",
+        "Verify the application of Microsoft security updates addressing CVE-2025-24990."
+      ]
+    }
+  }
+}
