@@ -59,21 +59,59 @@
  "texts": {
   "msrc:CVE-2026-87628": "Chromium CVE-2026-87628: Use after free in Cast\nMicrosoft Edge (Chromium-based). Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "fc5aac895a15f7f1e3a0a219",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: CVE-2026-87628 Use after free in Cast",
+    "summary": "Microsoft Edge (Chromium-based) is affected by a use-after-free vulnerability in Cast, tracked as CVE-2026-87628.",
+    "impact": "The vulnerability involves a use after free in Cast. Specific impact and preconditions were not detailed in the source texts.",
+    "fix": "The sources do not state fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft Edge (Chromium-based) installations for CVE-2026-87628."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: CVE-2026-87628 Use after free в Cast",
+    "summary": "Microsoft Edge (Chromium-based) подвержен уязвимости типа use-after-free в Cast, зарегистрированной под идентификатором CVE-2026-87628.",
+    "impact": "Уязвимость связана с использованием памяти после освобождения (use after free) в Cast. Детальные последствия и предварительные условия в источниках не указаны.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте установки Microsoft Edge (Chromium-based) на наличие CVE-2026-87628."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: CVE-2026-87628 Use-after-Free in Cast",
+    "summary": "Microsoft Edge (Chromium-based) ist von einer Use-after-Free-Schwachstelle in Cast betroffen, die als CVE-2026-87628 geführt wird.",
+    "impact": "Die Schwachstelle betrifft einen Use-after-Free in Cast. Genaue Auswirkungen und Vorbedingungen werden in den Quellen nicht genannt.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Prüfen Sie Microsoft Edge (Chromium-based)-Installation auf CVE-2026-87628."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T16:10:43Z",
+  "slugs": {
+   "ru": "microsoft-edge-cve-2026-87628-use-after-free-v-cast",
+   "de": "microsoft-edge-cve-2026-87628-use-after-free-in-cast",
+   "en": "microsoft-edge-cve-2026-87628-use-after-free-in-cast"
+  },
+  "published_at": "2026-11-22T16:10:43Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

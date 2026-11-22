@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-87527": "Chromium CVE-2026-87527: Buffer overflow in WebGL\nMicrosoft Edge (Chromium-based). Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "51b9d8d7108458698b3f2801",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: Buffer overflow in WebGL via CVE-2026-87527",
+    "summary": "A buffer overflow vulnerability exists in WebGL in Microsoft Edge (Chromium-based), tracked as CVE-2026-87527 with a CVSS score of 9.6.",
+    "impact": "The vulnerability allows attackers to cause a buffer overflow via WebGL in Microsoft Edge (Chromium-based).",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check systems running Microsoft Edge (Chromium-based) for exposure to CVE-2026-87527.",
+     "Verify system status regarding the Microsoft 2026-Sep security update."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: переполнение буфера в WebGL через CVE-2026-87527",
+    "summary": "В Microsoft Edge (на базе Chromium) обнаружена уязвимость переполнения буфера в WebGL, получившая идентификатор CVE-2026-87527 и оценку CVSS 9.6.",
+    "impact": "Уязвимость позволяет злоумышленникам вызвать переполнение буфера через WebGL в Microsoft Edge (на базе Chromium).",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы с установленным Microsoft Edge (на базе Chromium) на подверженность CVE-2026-87527.",
+     "Проверьте состояние систем в отношении сентябрьского обновления безопасности Microsoft за 2026 год."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: Pufferüberlauf in WebGL via CVE-2026-87527",
+    "summary": "In Microsoft Edge (Chromium-basiert) existiert eine Pufferüberlauf-Schwachstelle in WebGL, geführt als CVE-2026-87527 mit einem CVSS-Score von 9.6.",
+    "impact": "Die Schwachstelle ermöglicht es Angreifern, einen Pufferüberlauf über WebGL in Microsoft Edge (Chromium-basiert) herbeizuführen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Prüfen Sie Systeme mit Microsoft Edge (Chromium-basiert) auf Betroffenheit von CVE-2026-87527.",
+     "Überprüfen Sie den Status des Microsoft-Sicherheitsupdates von September 2026 auf den Systemen."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T16:10:43Z",
+  "slugs": {
+   "ru": "microsoft-edge-perepolnenie-bufera-v-webgl-cherez-cve-2026-87527",
+   "de": "microsoft-edge-pufferueberlauf-in-webgl-via-cve-2026-87527",
+   "en": "microsoft-edge-buffer-overflow-in-webgl-via-cve-2026-87527"
+  },
+  "published_at": "2026-11-22T16:10:43Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

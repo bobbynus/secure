@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "94c8761da6158b3a392147e80d51b9d4",
- "last_modified": "Sun, 22 Nov 2026 15:20:24 GMT",
- "checksum": "52096f00678f05d6eddb815a76ee98e550321e8d25539f0b6b257dbb6c4611ee",
+ "etag": "e6f80555d14fa125a163bbc708e82054",
+ "last_modified": "Sun, 22 Nov 2026 16:03:07 GMT",
+ "checksum": "f49b98277b145aa4eb330cc80a7f640fbcc518d590ddf27b7710bf015496e274",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -43,12 +43,13 @@
   "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/": "5b22f0cdfbc503d4c0ce1428",
   "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/": "701b4ac30fc62f2b55a1f276",
   "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/": "6078c1e8d84753d16d8635e3",
-  "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/": "a316d3e6e3a4fd924adcd441"
+  "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/": "a316d3e6e3a4fd924adcd441",
+  "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/": "9774bb2156b67e2fd2cb04fc"
  },
- "last_attempt": "2026-11-22T15:20:39Z",
- "last_success": "2026-11-22T15:20:39Z",
+ "last_attempt": "2026-11-22T16:10:40Z",
+ "last_success": "2026-11-22T16:10:40Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 40
+ "items_total": 41
 }
