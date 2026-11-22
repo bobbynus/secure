@@ -3,8 +3,8 @@
   "category": "vulnerability",
   "priority": "high",
   "confirmation": "vendor",
-  "lifecycle": "confirmed",
-  "fix": "unknown",
+  "lifecycle": "fix-available",
+  "fix": "available",
   "workaround": false,
   "exploitation": {
     "status": "none-known",
@@ -20,7 +20,9 @@
       "CVE-2026-70193"
     ],
     "advisory": [],
-    "kb": []
+    "kb": [
+      "KB5002927"
+    ]
   },
   "affected": [],
   "cvss": {
@@ -31,7 +33,7 @@
   "dates": {
     "event": "2026-11-20T09:00:44Z",
     "published": "2026-11-20T15:00:47Z",
-    "updated": "2026-11-20T15:00:47Z"
+    "updated": "2026-11-22T07:20:40Z"
   },
   "sources": [
     {
@@ -51,6 +53,15 @@
         "ru": "Первая публикация.",
         "de": "Erstveröffentlichung.",
         "en": "First published."
+      }
+    },
+    {
+      "date": "2026-11-22T07:20:40Z",
+      "kind": "fix",
+      "note": {
+        "ru": "Появилось исправление.",
+        "de": "Ein Fix ist verfügbar.",
+        "en": "A fix became available."
       }
     }
   ],
