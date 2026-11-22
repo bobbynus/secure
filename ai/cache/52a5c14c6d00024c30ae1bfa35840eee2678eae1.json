@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows Server: CVE-2025-59287 RCE in WSUS",
+  "summary": "Microsoft has released updates addressing a critical remote code execution vulnerability in Windows Server Update Service (WSUS).",
+  "impact": "An attacker could achieve remote code execution in WSUS.",
+  "fix": "Apply the updates associated with KB5070879, KB5070881, KB5070882, KB5070883, KB5070884, KB5070886, KB5070887, KB5070892, or KB5070893.",
+  "workaround": null,
+  "checks": [
+   "Check Windows Server systems for WSUS installation and exposure.",
+   "Verify if updates KB5070879, KB5070881, KB5070882, KB5070883, KB5070884, KB5070886, KB5070887, KB5070892, or KB5070893 are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows Server: RCE в WSUS (CVE-2025-59287)",
+  "summary": "Microsoft выпустила обновления, устраняющие критическую уязвимость удаленного выполнения кода в службе Windows Server Update Service (WSUS).",
+  "impact": "Злоумышленник может выполнить произвольный код удаленно в WSUS.",
+  "fix": "Установите обновления, связанные с KB5070879, KB5070881, KB5070882, KB5070883, KB5070884, KB5070886, KB5070887, KB5070892 или KB5070893.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows Server на наличие установленной службы WSUS.",
+   "Убедитесь, что применены обновления KB5070879, KB5070881, KB5070882, KB5070883, KB5070884, KB5070886, KB5070887, KB5070892 или KB5070893."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows Server: RCE in WSUS (CVE-2025-59287)",
+  "summary": "Microsoft hat Updates zur Behebung einer kritischen Schwachstelle für Remotecodeausführung im Windows Server Update Service (WSUS) veröffentlicht.",
+  "impact": "Ein Angreifer kann eine Remotecodeausführung in WSUS erreichen.",
+  "fix": "Wenden Sie die Updates zu KB5070879, KB5070881, KB5070882, KB5070883, KB5070884, KB5070886, KB5070887, KB5070892 oder KB5070893 an.",
+  "workaround": null,
+  "checks": [
+   "Prüfen Sie Windows Server-Systeme auf eine WSUS-Installation und Exposition.",
+   "Überprüfen Sie, ob die Updates KB5070879, KB5070881, KB5070882, KB5070883, KB5070884, KB5070886, KB5070887, KB5070892 oder KB5070893 eingespielt wurden."
+  ],
+  "regression": null
+ }
+}

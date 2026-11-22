@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: CVE-2025-24990 Agere Modem Driver Elevation of Privilege",
+  "summary": "An elevation of privilege vulnerability (CVE-2025-24990) affects the Agere Windows Modem Driver in Microsoft Windows. Microsoft reports exploitation of this vulnerability.",
+  "impact": "An attacker can achieve elevation of privilege. Exploitation is reported by Microsoft.",
+  "fix": "Apply the updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for installation of vulnerable Agere Modem Driver versions.",
+   "Verify the application of Microsoft security updates addressing CVE-2025-24990."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость CVE-2025-24990 в драйвере модема Agere",
+  "summary": "Уязвимость повышения привилегий (CVE-2025-24990) затрагивает драйвер модема Agere в Microsoft Windows. Microsoft сообщает об эксплуатации этой уязвимости.",
+  "impact": "Злоумышленник может повысить свои привилегии. Эксплуатация подтверждена Microsoft.",
+  "fix": "Установите обновления, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на наличие уязвимых версий драйвера модема Agere.",
+   "Убедитесь в применении обновлений безопасности Microsoft, устраняющих CVE-2025-24990."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: CVE-2025-24990 Agere Modem Driver Elevation of Privilege",
+  "summary": "Eine Schwachstelle zur Privilegienerweiterung (CVE-2025-24990) betrifft den Agere Windows Modem Driver in Microsoft Windows. Microsoft meldet die Ausnutzung dieser Schwachstelle.",
+  "impact": "Ein Angreifer kann eine Privilegienerweiterung erreichen. Die Ausnutzung wird von Microsoft gemeldet.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Systeme auf die Installation anfälliger Agere Modem Driver-Versionen.",
+   "Überprüfen Sie die Anwendung der Microsoft-Sicherheitsupdates für CVE-2025-24990."
+  ],
+  "regression": null
+ }
+}

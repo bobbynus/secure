@@ -85,21 +85,62 @@
  "texts": {
   "msrc:CVE-2025-47827": "MITRE CVE-2025-47827: Secure Boot bypass in IGEL OS before 11\nWindows Secure Boot. Microsoft 2025-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "e49ac99f6951dc8844918f7e",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Secure Boot bypass vulnerability (CVE-2025-47827)",
+    "summary": "A Secure Boot bypass vulnerability exists in Microsoft Windows, tracked as CVE-2025-47827. Vendor reports exploitation.",
+    "impact": "An attacker can bypass Secure Boot. Vendor reports exploitation.",
+    "fix": "Apply the updates provided by Microsoft (including KB5066586, KB5066780, KB5066782, KB5066791, KB5066793, KB5066835, KB5066836, KB5066837, KB5066873, KB5066875).",
+    "workaround": null,
+    "checks": [
+     "Verify Windows systems for CVE-2025-47827 exposure.",
+     "Check if relevant Microsoft security updates are installed."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость обхода Secure Boot (CVE-2025-47827)",
+    "summary": "В Microsoft Windows обнаружена уязвимость обхода Secure Boot, получившая идентификатор CVE-2025-47827. Поставщик сообщает об эксплуатации.",
+    "impact": "Злоумышленник может обойти Secure Boot. Поставщик сообщает об эксплуатации.",
+    "fix": "Установите обновления, предоставленные Microsoft (включая KB5066586, KB5066780, KB5066782, KB5066791, KB5066793, KB5066835, KB5066836, KB5066837, KB5066873, KB5066875).",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на уязвимость CVE-2025-47827.",
+     "Убедитесь, что установлены соответствующие обновления безопасности Microsoft."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Secure-Boot-Bypass-Schwachstelle (CVE-2025-47827)",
+    "summary": "In Microsoft Windows existiert eine Secure-Boot-Bypass-Schwachstelle unter CVE-2025-47827. Der Hersteller meldet eine Ausnutzung.",
+    "impact": "Ein Angreifer kann Secure Boot umgehen. Der Hersteller meldet eine Ausnutzung.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5066586, KB5066780, KB5066782, KB5066791, KB5066793, KB5066835, KB5066836, KB5066837, KB5066873, KB5066875).",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows-Systeme auf Betroffenheit durch CVE-2025-47827.",
+     "Prüfen Sie, ob die entsprechenden Microsoft-Sicherheitsupdates installiert sind."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T15:20:58Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-obkhoda-secure-boot-cve-2025-47827",
+   "de": "microsoft-windows-secure-boot-bypass-schwachstelle-cve-2025",
+   "en": "microsoft-windows-secure-boot-bypass-vulnerability-cve-2025"
+  },
+  "published_at": "2026-11-22T15:20:58Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

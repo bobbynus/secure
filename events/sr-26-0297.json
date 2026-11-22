@@ -60,21 +60,59 @@
  "texts": {
   "msrc:CVE-2025-12428": "Chromium: CVE-2025-12428 Type Confusion in V8\nMicrosoft Edge (Chromium-based). Microsoft 2025-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "fea77791d21af6832368470a",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: CVE-2025-12428 Type Confusion in V8",
+    "summary": "Microsoft Edge (Chromium-based) is affected by a critical vulnerability, CVE-2025-12428, involving type confusion in V8.",
+    "impact": "The vulnerability involves type confusion in V8, carrying a CVSS score of 9.8.",
+    "fix": "The sources do not state fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check systems for Microsoft Edge (Chromium-based) installations."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: CVE-2025-12428 Type Confusion в V8",
+    "summary": "Microsoft Edge (Chromium-based) подвержен критической уязвимости CVE-2025-12428, связанной с путаницей типов в V8.",
+    "impact": "Уязвимость связана с путаницей типов в V8 и имеет оценку CVSS 9.8.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленного Microsoft Edge (Chromium-based)."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: CVE-2025-12428 Typverwechslung in V8",
+    "summary": "Microsoft Edge (Chromium-based) ist von einer kritischen Schwachstelle (CVE-2025-12428) betroffen, die eine Typverwechslung in V8 darstellt.",
+    "impact": "Die Schwachstelle betrifft eine Typverwechslung in V8 mit einem CVSS-Score von 9.8.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf installierten Microsoft Edge (Chromium-based)."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
-  "attempts": 1,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T15:20:58Z",
+  "slugs": {
+   "ru": "microsoft-edge-cve-2025-12428-type-confusion-v-v8",
+   "de": "microsoft-edge-cve-2025-12428-typverwechslung-in-v8",
+   "en": "microsoft-edge-cve-2025-12428-type-confusion-in-v8"
+  },
+  "published_at": "2026-11-22T15:20:58Z",
+  "attempts": 0,
   "failed_hash": null,
-  "last_error": "article: ru: the text is not in Russian",
-  "next_try": "2026-11-22T14:50:49Z",
-  "calls": 2
+  "last_error": null,
+  "next_try": null,
+  "calls": 3
  }
 }

@@ -84,21 +84,59 @@
  "texts": {
   "msrc:CVE-2026-20805": "Desktop Window Manager Information Disclosure Vulnerability\nDesktop Window Manager. Microsoft 2026-Jan security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "d871f3b4e2f233706c010b00",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: CVE-2026-20805 Desktop Window Manager Info Disclosure",
+    "summary": "Microsoft Windows contains an information disclosure vulnerability in Desktop Window Manager (CVE-2026-20805).",
+    "impact": "An attacker can exploit the vulnerability to disclose sensitive information.",
+    "fix": "Apply the updates provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Check systems for installed Microsoft security updates."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость CVE-2026-20805 в Desktop Window Manager",
+    "summary": "В Microsoft Windows обнаружена уязвимость раскрытия информации в Desktop Window Manager (CVE-2026-20805).",
+    "impact": "Злоумышленник может использовать уязвимость для раскрытия конфиденциальной информации.",
+    "fix": "Установите обновления, предоставленные Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленных обновлений безопасности Microsoft."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: CVE-2026-20805 Informations offenlegung im Desktop Window Manager",
+    "summary": "Microsoft Windows enthält eine Schwachstelle zur Offenlegung von Informationen im Desktop Window Manager (CVE-2026-20805).",
+    "impact": "Ein Angreifer kann die Schwachstelle ausnutzen, um vertrauliche Informationen offenzulegen.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf installierte Microsoft-Sicherheitsupdates."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T15:20:58Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-cve-2026-20805-v-desktop-window",
+   "de": "microsoft-windows-cve-2026-20805-informations-offenlegung-im",
+   "en": "microsoft-windows-cve-2026-20805-desktop-window-manager-info"
+  },
+  "published_at": "2026-11-22T15:20:58Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

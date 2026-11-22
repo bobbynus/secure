@@ -83,21 +83,62 @@
  "texts": {
   "msrc:CVE-2025-49708": "Microsoft Graphics Component Elevation of Privilege Vulnerability\nMicrosoft Graphics Component. Microsoft 2025-Oct security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "8f5b960c5da4376fb58febc8",
+  "texts": {
+   "en": {
+    "title": "Microsoft Graphics Component: CVE-2025-49708 Elevation of Privilege Vulnerability",
+    "summary": "A critical elevation of privilege vulnerability exists in the Microsoft Graphics Component. Microsoft has released security updates to address the issue.",
+    "impact": "An attacker can exploit the vulnerability to elevate privileges.",
+    "fix": "Apply the corresponding security updates provided by Microsoft, including `KB5066586`, `KB5066780`, `KB5066782`, `KB5066791`, `KB5066793`, and `KB5066835`.",
+    "workaround": null,
+    "checks": [
+     "Check Windows systems for the presence of the listed KB updates.",
+     "Verify system versions for Windows 10 and Windows 11."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Graphics Component: уязвимость CVE-2025-49708 повышения привилегий",
+    "summary": "В компоненте Microsoft Graphics Component обнаружена критическая уязвимость повышения привилегий. Microsoft выпустила обновления безопасности.",
+    "impact": "Злоумышленник может использовать уязвимость для повышения привилегий.",
+    "fix": "Установите соответствующие обновления безопасности от Microsoft, включая `KB5066586`, `KB5066780`, `KB5066782`, `KB5066791`, `KB5066793` и `KB5066835`.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на наличие указанных обновлений KB.",
+     "Проверьте версии операционных систем Windows 10 и Windows 11."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Graphics Component: Privilegienerweiterung durch CVE-2025-49708",
+    "summary": "Im Microsoft Graphics Component existiert eine kritische Schwachstelle zur Privilegienerweiterung. Microsoft hat Sicherheitsupdates bereitgestellt.",
+    "impact": "Ein Angreifer kann die Schwachstelle ausnutzen, um Privilegien zu erweitern.",
+    "fix": "Wenden Sie die entsprechenden von Microsoft bereitgestellten Sicherheitsupdates an, einschließlich `KB5066586`, `KB5066780`, `KB5066782`, `KB5066791`, `KB5066793` und `KB5066835`.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows-Systeme auf das Vorhandensein der aufgeführten KB-Updates.",
+     "Überprüfen Sie die Systemversionen von Windows 10 und Windows 11."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T15:20:58Z",
+  "slugs": {
+   "ru": "microsoft-graphics-component-uyazvimost-cve-2025-49708",
+   "de": "microsoft-graphics-component-privilegienerweiterung-durch-cve",
+   "en": "microsoft-graphics-component-cve-2025-49708-elevation-of"
+  },
+  "published_at": "2026-11-22T15:20:58Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

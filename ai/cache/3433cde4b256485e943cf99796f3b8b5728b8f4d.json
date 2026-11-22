@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Edge: CVE-2025-12428 Type Confusion in V8",
+  "summary": "Microsoft Edge (Chromium-based) is affected by a critical vulnerability, CVE-2025-12428, involving type confusion in V8.",
+  "impact": "The vulnerability involves type confusion in V8, carrying a CVSS score of 9.8.",
+  "fix": "The sources do not state fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check systems for Microsoft Edge (Chromium-based) installations."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: CVE-2025-12428 Type Confusion в V8",
+  "summary": "Microsoft Edge (Chromium-based) подвержен критической уязвимости CVE-2025-12428, связанной с путаницей типов в V8.",
+  "impact": "Уязвимость связана с путаницей типов в V8 и имеет оценку CVSS 9.8.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие установленного Microsoft Edge (Chromium-based)."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: CVE-2025-12428 Typverwechslung in V8",
+  "summary": "Microsoft Edge (Chromium-based) ist von einer kritischen Schwachstelle (CVE-2025-12428) betroffen, die eine Typverwechslung in V8 darstellt.",
+  "impact": "Die Schwachstelle betrifft eine Typverwechslung in V8 mit einem CVSS-Score von 9.8.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf installierten Microsoft Edge (Chromium-based)."
+  ],
+  "regression": null
+ }
+}
