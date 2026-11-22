@@ -1,8 +1,8 @@
 {
  "id": "debian-dsa",
- "etag": "\"401b-660e275ddf264;660e2c0865ab1",
- "last_modified": "Sun, 22 Nov 2026 19:26:56 GMT",
- "checksum": "f237400cde194d83879b8c4126fcce0c66f561829150a8e407cd7ee0ba0c0f78",
+ "etag": "\"400c-660e5d01a1958;660e61e845f54",
+ "last_modified": "Sun, 22 Nov 2026 23:26:55 GMT",
+ "checksum": "a3c68e4bf95da2b87df18cf390fa1d5b7ee5431f7d67aaabdab893227dec60b5",
  "cursor": {},
  "seen": {
   "https://lists.debian.org/debian-security-announce/2026/msg00555.html": "fa65c3aee2757f425b5d8482",
@@ -49,12 +49,16 @@
   "https://lists.debian.org/debian-security-announce/2026/msg00567.html": "06c19b827f3f15049b0fbc8f",
   "https://lists.debian.org/debian-security-announce/2026/msg00566.html": "22b302727b8e174bd92588e6",
   "https://lists.debian.org/debian-security-announce/2026/msg00569.html": "802828951ecef2a566c062ac",
-  "https://lists.debian.org/debian-security-announce/2026/msg00570.html": "702bd87c6678f299be18b05a"
+  "https://lists.debian.org/debian-security-announce/2026/msg00570.html": "702bd87c6678f299be18b05a",
+  "https://lists.debian.org/debian-security-announce/2026/msg00574.html": "a2a281a91520c7f8fcb0d81b",
+  "https://lists.debian.org/debian-security-announce/2026/msg00573.html": "f3d16b288b4f1009ee02da4e",
+  "https://lists.debian.org/debian-security-announce/2026/msg00572.html": "a4faeef34b44c2357d2bd960",
+  "https://lists.debian.org/debian-security-announce/2026/msg00571.html": "8f82995ccb89a38119be9ca6"
  },
- "last_attempt": "2026-11-22T23:20:49Z",
- "last_success": "2026-11-22T23:20:49Z",
+ "last_attempt": "2026-11-22T23:50:42Z",
+ "last_success": "2026-11-22T23:50:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 45
+ "items_total": 49
 }
