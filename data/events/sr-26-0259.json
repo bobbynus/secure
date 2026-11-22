@@ -1,0 +1,122 @@
+{
+  "id": "sr-26-0259",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2023-32046"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5028166",
+      "KB5028167",
+      "KB5028168",
+      "KB5028169",
+      "KB5028171",
+      "KB5028182",
+      "KB5028185",
+      "KB5028186",
+      "KB5028222",
+      "KB5028223",
+      "KB5028224",
+      "KB5028226",
+      "KB5028228",
+      "KB5028232",
+      "KB5028233",
+      "KB5028240"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T08:50:52Z",
+    "updated": "2026-11-22T08:50:52Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows MSHTML Platform Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-32046",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T08:50:52Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T08:50:52Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-povyshenie-privilegiy-v-mshtml-platform",
+      "title": "Microsoft Windows: повышение привилегий в MSHTML Platform",
+      "summary": "В Microsoft Windows MSHTML Platform обнаружена уязвимость повышения привилегий. Поставщик сообщает об эксплуатации уязвимости.",
+      "impact": "Злоумышленник может получить повышенные привилегии. Эксплуатация подтверждена производителем.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления безопасности, предоставленные Microsoft.",
+      "checks": [
+        "Проверьте системы Windows на наличие компонентов MSHTML Platform.",
+        "Убедитесь в применении обновлений безопасности Microsoft за июль 2023 года."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-privilegieneskalation-in-mshtml-platform",
+      "title": "Microsoft Windows: Privilegieneskalation in MSHTML Platform",
+      "summary": "In der Microsoft Windows MSHTML Platform existiert eine Schwachstelle zur Privilegieneskalation. Der Hersteller meldet die Ausnutzung.",
+      "impact": "Ein Angreifer kann eine Privilegieneskalation erreichen. Die Ausnutzung wird vom Hersteller gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an.",
+      "checks": [
+        "Inventarisieren Sie Windows-Systeme auf MSHTML Platform-Komponenten.",
+        "Überprüfen Sie die Anwendung der Sicherheitsupdates von Microsoft vom Juli 2023."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-elevation-of-privilege-in-mshtml-platform",
+      "title": "Microsoft Windows: Elevation of privilege in MSHTML Platform",
+      "summary": "An elevation of privilege vulnerability exists in the Microsoft Windows MSHTML Platform. The vendor reports exploitation in the wild.",
+      "impact": "An attacker can achieve elevation of privilege. Exploitation is reported by the vendor.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the security updates provided by Microsoft.",
+      "checks": [
+        "Inventory Windows systems for MSHTML Platform components.",
+        "Verify the application of Microsoft 2023-Jul security updates."
+      ]
+    }
+  }
+}

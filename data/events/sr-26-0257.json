@@ -1,0 +1,106 @@
+{
+  "id": "sr-26-0257",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2023-38180"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5029688",
+      "KB5029689"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.5,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T08:50:52Z",
+    "updated": "2026-11-22T08:50:52Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": ".NET and Visual Studio Denial of Service Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-38180",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T08:50:52Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T08:50:52Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-net-i-visual-studio-uyazvimost-otkaza-v-obsluzhivanii",
+      "title": "Microsoft .NET и Visual Studio: уязвимость отказа в обслуживании (CVE-2023-38180)",
+      "summary": "Уязвимость отказа в обслуживания затрагивает Microsoft .NET и Visual Studio. Эксплуатация подтверждена вендором.",
+      "impact": "Злоумышленник может вызвать отказ в обслуживании. Точные предварительные условия и детали воздействия зависят от конкретной конфигурации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновление безопасности, предоставленное Microsoft (KB5029688, KB5029689).",
+      "checks": [
+        "Проверьте системы на базе .NET и Visual Studio на предмет уязвимости.",
+        "Убедитесь в установке обновлений безопасности Microsoft KB5029688 и KB5029689."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-net-und-visual-studio-schwachstelle-bezueglich-denial",
+      "title": "Microsoft .NET und Visual Studio: Schwachstelle bezüglich Denial of Service (CVE-2023-38180)",
+      "summary": "Eine Denial-of-Service-Schwachstelle betrifft Microsoft .NET und Visual Studio. Die Ausnutzung wurde vom Hersteller gemeldet.",
+      "impact": "Ein Angreifer kann einen Denial-of-Service-Zustand herbeiführen. Genaue Vorbedingungen und Auswirkungen hängen von der Umgebung ab.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Installieren Sie das von Microsoft bereitgestellte Sicherheitsupdate (KB5029688, KB5029689).",
+      "checks": [
+        "Überprüfen Sie Systeme mit .NET und Visual Studio auf Betroffenheit.",
+        "Überprüfen Sie die Installation der Microsoft-Sicherheitsupdates KB5029688 und KB5029689."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-net-and-visual-studio-denial-of-service-vulnerability",
+      "title": "Microsoft .NET and Visual Studio: Denial of Service Vulnerability (CVE-2023-38180)",
+      "summary": "A denial of service vulnerability affects Microsoft .NET and Visual Studio, reported as exploited by the vendor.",
+      "impact": "An attacker can cause a denial of service. The exact preconditions and impact details depend on the specific deployment.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the security update provided by Microsoft (KB5029688, KB5029689).",
+      "checks": [
+        "Check systems running .NET and Visual Studio for exposure.",
+        "Verify the installation of Microsoft security updates KB5029688 and KB5029689."
+      ]
+    }
+  }
+}

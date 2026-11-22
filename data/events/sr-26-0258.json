@@ -1,0 +1,115 @@
+{
+  "id": "sr-26-0258",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2023-21674"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5022282",
+      "KB5022286",
+      "KB5022287",
+      "KB5022289",
+      "KB5022291",
+      "KB5022297",
+      "KB5022303",
+      "KB5022346",
+      "KB5022352"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T08:50:52Z",
+    "updated": "2026-11-22T08:50:52Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Advanced Local Procedure Call (ALPC) Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-21674",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T08:50:52Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T08:50:52Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-povysheniya-privilegiy-v-alpc-cve",
+      "title": "Microsoft Windows: уязвимость повышения привилегий в ALPC (CVE-2023-21674)",
+      "summary": "В Microsoft Windows Advanced Local Procedure Call (ALPC) обнаружена уязвимость повышения привилегий, позволяющая злоумышленникам повысить привилегии. Microsoft сообщает об эксплуатации.",
+      "impact": "Злоумышленник может использовать эту уязвимость для повышения привилегий.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления безопасности, предоставленные Microsoft.",
+      "checks": [
+        "Проверьте системы Windows на предмет установки январских обновлений безопасности 2023 года.",
+        "Сверьте версии систем со списком затронутых продуктов Windows."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-alpc-schwachstelle-zur-privilegienerweiterung",
+      "title": "Microsoft Windows: ALPC Schwachstelle zur Privilegienerweiterung (CVE-2023-21674)",
+      "summary": "In Microsoft Windows Advanced Local Procedure Call (ALPC) existiert eine Schwachstelle zur Privilegienerweiterung, die es Angreifern ermöglicht, Privilegien zu erhöhen. Microsoft meldet eine Ausnutzung.",
+      "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien zu erweitern.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an.",
+      "checks": [
+        "Überprüfen Sie Windows-Systeme auf die Installation der Sicherheitsupdates vom Januar 2023.",
+        "Überprüfen Sie die Systemversionen anhand der Liste der betroffenen Windows-Produkte."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-alpc-elevation-of-privilege-vulnerability-cve",
+      "title": "Microsoft Windows: ALPC Elevation of Privilege Vulnerability (CVE-2023-21674)",
+      "summary": "An elevation of privilege vulnerability exists in Microsoft Windows Advanced Local Procedure Call (ALPC), allowing attackers to escalate privileges. Microsoft reports exploitation.",
+      "impact": "An attacker can exploit this vulnerability to elevate privileges.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the security updates provided by Microsoft.",
+      "checks": [
+        "Check Windows systems for the installation of January 2023 security updates.",
+        "Verify system versions against the affected Windows products list."
+      ]
+    }
+  }
+}
