@@ -1,0 +1,115 @@
+{
+  "id": "sr-26-0294",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-11"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-62215"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5068779",
+      "KB5068781",
+      "KB5068787",
+      "KB5068791",
+      "KB5068840",
+      "KB5068861",
+      "KB5068865",
+      "KB5068966"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.0,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T13:20:51Z",
+    "updated": "2026-11-22T13:20:51Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Kernel Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62215",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T13:20:51Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T13:20:51Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "yadro-microsoft-windows-uyazvimost-povysheniya-privilegiy-cve",
+      "title": "Ядро Microsoft Windows: уязвимость повышения привилегий (CVE-2025-62215)",
+      "summary": "Уязвимость повышения привилегий в ядре Windows позволяет злоумышленникам повысить привилегии. Microsoft сообщает об эксплуатации.",
+      "impact": "Злоумышленник может использовать уязвимость для повышения привилегий. Вендор сообщает об эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Доступны обновления, включая KB5068779, KB5068781, KB5068787, KB5068791, KB5068840, KB5068861, KB5068865 и KB5068966.",
+      "checks": [
+        "Проверьте системы Windows на наличие уязвимости CVE-2025-62215.",
+        "Проверьте установку обновлений KB5068779, KB5068781, KB5068787, KB5068791, KB5068840, KB5068861, KB5068865 или KB5068966."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-kernel-schwachstelle-zur",
+      "title": "Microsoft Windows Kernel: Schwachstelle zur Privilegienerweiterung (CVE-2025-62215)",
+      "summary": "Eine Schwachstelle zur Privilegienerweiterung im Windows Kernel ermöglicht Angreifern die Erhöhung von Privilegien. Microsoft meldet eine Ausnutzung.",
+      "impact": "Ein Angreifer kann die Schwachstelle ausnutzen, um Privilegien zu erweitern. Der Hersteller meldet eine Ausnutzung.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Updates sind verfügbar, darunter KB5068779, KB5068781, KB5068787, KB5068791, KB5068840, KB5068861, KB5068865 und KB5068966.",
+      "checks": [
+        "Überprüfen Sie Windows-Systeme auf das Vorhandensein von CVE-2025-62215.",
+        "Überprüfen Sie die Installation der Updates KB5068779, KB5068781, KB5068787, KB5068791, KB5068840, KB5068861, KB5068865 oder KB5068966."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-kernel-elevation-of-privilege-vulnerability",
+      "title": "Microsoft Windows Kernel: Elevation of Privilege Vulnerability (CVE-2025-62215)",
+      "summary": "An elevation of privilege vulnerability in the Windows Kernel allows attackers to escalate privileges. Exploitation is reported by Microsoft.",
+      "impact": "An attacker can exploit the vulnerability to elevate privileges. The vendor reports exploitation.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Updates are available, including KB5068779, KB5068781, KB5068787, KB5068791, KB5068840, KB5068861, KB5068865, and KB5068966.",
+      "checks": [
+        "Check Windows systems for the presence of CVE-2025-62215.",
+        "Verify installation of updates KB5068779, KB5068781, KB5068787, KB5068791, KB5068840, KB5068861, KB5068865, or KB5068966."
+      ]
+    }
+  }
+}
