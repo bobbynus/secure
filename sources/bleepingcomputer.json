@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "dd594e14ea3819b11aa37ef848e01f8b",
- "last_modified": "Sun, 22 Nov 2026 00:10:01 GMT",
- "checksum": "dbad35bd256497a467530652ce0ffbdd04d3d5ffca2c3adbbf03bb0323e60a89",
+ "etag": "588ef2631e0ef53140aa0f119fc40f2a",
+ "last_modified": "Sun, 22 Nov 2026 00:50:02 GMT",
+ "checksum": "d8e09bc8bab1ddcba839e8d42006fec9566e945c93a1129b4e6b4d10af0e2741",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -44,8 +44,8 @@
   "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/": "701b4ac30fc62f2b55a1f276",
   "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/": "6078c1e8d84753d16d8635e3"
  },
- "last_attempt": "2026-11-22T00:10:38Z",
- "last_success": "2026-11-22T00:10:38Z",
+ "last_attempt": "2026-11-22T00:50:39Z",
+ "last_success": "2026-11-22T00:50:39Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
