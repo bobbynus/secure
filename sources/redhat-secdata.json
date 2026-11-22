@@ -401,8 +401,8 @@
   "CVE-2026-101340": "49127ca696ec01cf4a056017",
   "CVE-2026-118028": "56c95803acb2eb2d00a43e9d"
  },
- "last_attempt": "2026-11-22T05:20:39Z",
- "last_success": "2026-11-22T05:20:39Z",
+ "last_attempt": "2026-11-22T06:20:43Z",
+ "last_success": "2026-11-22T06:20:43Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
