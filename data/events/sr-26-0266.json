@@ -1,0 +1,106 @@
+{
+  "id": "sr-26-0266",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2023-35311"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5002427",
+      "KB5002432"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T09:20:57Z",
+    "updated": "2026-11-22T09:20:57Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Outlook Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-35311",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T09:20:57Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T09:20:57Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-outlook-uyazvimost-obkhoda-funktsii-bezopasnosti-cve",
+      "title": "Microsoft Outlook: уязвимость обхода функции безопасности CVE-2023-35311",
+      "summary": "В Microsoft Outlook обнаружена уязвимость обхода функции безопасности. Microsoft сообщает об эксплуатации уязвимости.",
+      "impact": "Злоумышленник может обойти функции безопасности в Microsoft Outlook. Эксплуатация подтверждена Microsoft.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Обратитесь к обновлениям производителя, связанным с KB5002427 и KB5002432.",
+      "checks": [
+        "Проверьте установки Microsoft Outlook на наличие уязвимых версий.",
+        "Убедитесь, применены ли обновления KB5002427 или KB5002432."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-outlook-schwachstelle-in-microsoft-outlook-cve-2023",
+      "title": "Microsoft Outlook: Schwachstelle in Microsoft Outlook CVE-2023-35311 zum Umgehen von Sicherheitsfunktionen",
+      "summary": "In Microsoft Outlook existiert eine Schwachstelle zum Umgehen einer Sicherheitsfunktion. Microsoft berichtet über die Ausnutzung.",
+      "impact": "Ein Angreifer kann Sicherheitsfunktionen in Microsoft Outlook umgehen. Die Ausnutzung wird von Microsoft gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Beachten Sie die Herstellerupdates im Zusammenhang mit KB5002427 und KB5002432.",
+      "checks": [
+        "Überprüfen Sie Microsoft Outlook-Installationen auf anfällige Versionen.",
+        "Überprüfen Sie, ob die Updates KB5002427 oder KB5002432 angewendet wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-outlook-cve-2023-35311-security-feature-bypass",
+      "title": "Microsoft Outlook: CVE-2023-35311 security feature bypass vulnerability",
+      "summary": "A security feature bypass vulnerability exists in Microsoft Outlook. Microsoft reports that the vulnerability is exploited.",
+      "impact": "An attacker can bypass security features in Microsoft Outlook. Exploitation is reported by Microsoft.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Refer to vendor updates associated with KB5002427 and KB5002432.",
+      "checks": [
+        "Check Microsoft Outlook installations for vulnerable versions.",
+        "Verify if updates KB5002427 or KB5002432 are applied."
+      ]
+    }
+  }
+}
