@@ -1,0 +1,113 @@
+{
+  "id": "sr-26-0118",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-85880"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5122876",
+      "KB5122878",
+      "KB5122882",
+      "KB5123065",
+      "KB5123066",
+      "KB5123099"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-22T15:37:03Z",
+    "updated": "2026-11-22T15:37:03Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Advanced Local Procedure Call (ALPC) Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85880",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T15:37:03Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T15:37:03Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-povysheniya-privilegiy-v-alpc-cve",
+      "title": "Microsoft Windows: уязвимость повышения привилегий в ALPC (CVE-2026-85880)",
+      "summary": "В подсистеме Windows Advanced Local Procedure Call (ALPC) обнаружена уязвимость повышения привилегий. Microsoft сообщает об эксплуатации уязвимости.",
+      "impact": "Злоумышленник может повысить свои привилегии. Эксплуатация подтверждена Microsoft.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, указанные в KB5122876, KB5122878, KB5122882, KB5123065, KB5123066 или KB5123099.",
+      "checks": [
+        "Проверьте системы на наличие установленных Windows 10 и Windows Server.",
+        "Убедитесь, что применены обновления KB5122876, KB5122878, KB5122882, KB5123065, KB5123066 или KB5123099."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-schwachstelle-zur-privilegienerweiterung-in",
+      "title": "Microsoft Windows: Schwachstelle zur Privilegienerweiterung in ALPC (CVE-2026-85880)",
+      "summary": "In Windows Advanced Local Procedure Call (ALPC) existiert eine Schwachstelle zur Privilegienerweiterung. Microsoft meldet die Ausnutzung.",
+      "impact": "Ein Angreifer kann eine Privilegienerweiterung erreichen. Die Ausnutzung wird von Microsoft gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die Updates KB5122876, KB5122878, KB5122882, KB5123065, KB5123066 oder KB5123099 an.",
+      "checks": [
+        "Überprüfen Sie Systeme auf Windows 10 und Windows Server Installationen.",
+        "Überprüfen Sie, ob die Updates KB5122876, KB5122878, KB5122882, KB5123065, KB5123066 oder KB5123099 installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-alpc-elevation-of-privilege-vulnerability-cve",
+      "title": "Microsoft Windows: ALPC Elevation of Privilege Vulnerability (CVE-2026-85880)",
+      "summary": "An elevation of privilege vulnerability exists in Microsoft Windows Advanced Local Procedure Call (ALPC). Microsoft reports exploitation in the wild.",
+      "impact": "An attacker can achieve elevation of privilege. Exploitation is reported by Microsoft.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply updates referenced by KB5122876, KB5122878, KB5122882, KB5123065, KB5123066, or KB5123099.",
+      "checks": [
+        "Check systems for Windows 10 and Windows Server installations.",
+        "Verify if updates KB5122876, KB5122878, KB5122882, KB5123065, KB5123066, or KB5123099 are applied."
+      ]
+    }
+  }
+}

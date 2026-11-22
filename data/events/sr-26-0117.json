@@ -1,0 +1,111 @@
+{
+  "id": "sr-26-0117",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-11",
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-81963"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5122871",
+      "KB5122880",
+      "KB5124008",
+      "KB5124012"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-22T15:37:03Z",
+    "updated": "2026-11-22T15:37:03Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Update Stack Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-81963",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T15:37:03Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T15:37:03Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-update-stack-uyazvimost-povysheniya",
+      "title": "Microsoft Windows Update Stack: уязвимость повышения привилегий (CVE-2026-81963)",
+      "summary": "Уязвимость повышения привилегий в Windows Update Stack затрагивает различные версии Windows 11 и Windows Server. Microsoft сообщает об эксплуатации уязвимости.",
+      "impact": "Злоумышленник может использовать данную уязвимость для повышения привилегий. В исходных текстах не указаны точные предварительные условия или требования к аутентификации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, указанные в KB5122871, KB5122880, KB5124008 или KB5124012.",
+      "checks": [
+        "Проведите инвентаризацию систем Windows 11 и Windows Server для проверки установленных обновлений.",
+        "Убедитесь, что применены обновления KB5122871, KB5122880, KB5124008 или KB5124012."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-update-stack-schwachstelle-zur",
+      "title": "Microsoft Windows Update Stack: Schwachstelle zur Privilegienerweiterung (CVE-2026-81963)",
+      "summary": "Eine Schwachstelle zur Privilegienerweiterung im Windows Update Stack betrifft mehrere Versionen von Windows 11 und Windows Server. Microsoft meldet die Ausnutzung.",
+      "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien zu erweitern. Die Quelltexte nennen keine genauen Vorbedingungen oder Authentifizierungsanforderungen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die Updates an, auf die in KB5122871, KB5122880, KB5124008 oder KB5124012 verwiesen wird.",
+      "checks": [
+        "Inventarisieren Sie Windows 11- und Windows Server-Systeme, um installierte Updates zu überprüfen.",
+        "Überprüfen Sie, ob KB5122871, KB5122880, KB5124008 oder KB5124012 angewendet wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-update-stack-elevation-of-privilege",
+      "title": "Microsoft Windows Update Stack: Elevation of Privilege Vulnerability (CVE-2026-81963)",
+      "summary": "An elevation of privilege vulnerability in the Windows Update Stack affects multiple versions of Windows 11 and Windows Server. Microsoft reports exploitation in the wild.",
+      "impact": "An attacker can exploit this vulnerability to elevate privileges. The source texts do not specify exact preconditions or authentication requirements.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates referenced by KB5122871, KB5122880, KB5124008, or KB5124012.",
+      "checks": [
+        "Inventory Windows 11 and Windows Server systems to check for installed updates.",
+        "Verify whether KB5122871, KB5122880, KB5124008, or KB5124012 are applied."
+      ]
+    }
+  }
+}
