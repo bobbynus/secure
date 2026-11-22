@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Edge: CVE-2026-131031 Out of bounds write vulnerability",
+  "summary": "Microsoft Edge (Chromium-based) is affected by an out-of-bounds write vulnerability tracked as CVE-2026-131031 with a CVSS score of 9.6.",
+  "impact": "The out-of-bounds write defect can lead to critical security impact as indicated by its CVSS score of 9.6.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Edge (Chromium-based) installations for presence of CVE-2026-131031."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: уязвимость Out of bounds write CVE-2026-131031",
+  "summary": "Microsoft Edge (на базе Chromium) подвержен уязвимости записи за пределами буфера CVE-2026-131031 с оценкой CVSS 9.6.",
+  "impact": "Дефект записи за пределами буфера может привести к критическим последствиям, о чем свидетельствует оценка CVSS 9.6.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте инсталляции Microsoft Edge (на базе Chromium) на наличие CVE-2026-131031."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: Out-of-bounds-Write-Schwachstelle CVE-2026-131031",
+  "summary": "Microsoft Edge (Chromium-basiert) ist von einer Out-of-bounds-Write-Schwachstelle (CVE-2026-131031) mit einem CVSS-Score von 9.6 betroffen.",
+  "impact": "Der Out-of-bounds-Write-Fehler kann zu kritischen Auswirkungen führen, wie der CVSS-Score von 9.6 zeigt.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft Edge (Chromium-basiert) Installationen auf CVE-2026-131031."
+  ],
+  "regression": null
+ }
+}

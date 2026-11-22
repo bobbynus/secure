@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: COM+ Event System Service Elevation of Privilege Vulnerability",
+  "summary": "A privilege escalation vulnerability affects the Windows COM+ Event System Service in Microsoft Windows. Microsoft reports that the vulnerability is exploited.",
+  "impact": "An attacker can exploit the vulnerability to achieve elevation of privilege.",
+  "fix": "Apply the updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check Windows systems for the presence of the vulnerability and apply the October 2022 security updates."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость повышения привилегий в службе COM+ Event System",
+  "summary": "Уязвимость повышения привилегий затрагивает службу COM+ Event System в Microsoft Windows. Microsoft сообщает об эксплуатации уязвимости.",
+  "impact": "Злоумышленник может использовать уязвимость для повышения привилегий.",
+  "fix": "Установите обновления, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows на наличие уязвимости и установите октябрьские обновления безопасности 2022 года."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Schwachstelle zur Privilege Escalation im COM+ Event System Service",
+  "summary": "Eine Schwachstelle zur Privilegienerweiterung betrifft den COM+ Event System Service in Microsoft Windows. Microsoft berichtet über eine Ausnutzung der Schwachstelle.",
+  "impact": "Ein Angreifer kann die Schwachstelle ausnutzen, um Privilegien zu erlangen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows-Systeme auf das Vorhandensein der Schwachstelle und wenden Sie die Sicherheitsupdates vom Oktober 2022 an."
+  ],
+  "regression": null
+ }
+}

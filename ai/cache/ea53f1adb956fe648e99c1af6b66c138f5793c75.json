@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Windows 10",
+   "versions": "Windows 10",
+   "fixed": null,
+   "evidence": "Windows Message Queuing. Microsoft 2023-Aug security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows Message Queuing (MSMQ) Remote Code Execution Vulnerability",
+  "summary": "A remote code execution vulnerability exists in Microsoft Message Queuing (MSMQ) affecting various Windows 10 versions.",
+  "impact": "The vulnerability allows remote code execution.",
+  "fix": "Apply the updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check Windows 10 systems for MSMQ component installation.",
+   "Verify if Microsoft security updates are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Уязвимость удаленного выполнения кода в Microsoft Message Queuing (MSMQ)",
+  "summary": "В Microsoft Message Queuing (MSMQ) обнаружена уязвимость удаленного выполнения кода, затрагивающая различные версии Windows 10.",
+  "impact": "Уязвимость позволяет выполнять удаленный код.",
+  "fix": "Установите обновления, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows 10 на наличие установленного компонента MSMQ.",
+   "Убедитесь, что установлены обновления безопасности Microsoft."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Schwachstelle für Remotecodeausführung in Microsoft Message Queuing (MSMQ)",
+  "summary": "In Microsoft Message Queuing (MSMQ) existiert eine Schwachstelle zur Remotecodeausführung, die verschiedene Windows 10-Versionen betrifft.",
+  "impact": "Die Schwachstelle ermöglicht die Remotecodeausführung.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows 10-Systeme auf die Installation der MSMQ-Komponente.",
+   "Überprüfen Sie, ob Microsoft-Sicherheitsupdates angewendet wurden."
+  ],
+  "regression": null
+ }
+}

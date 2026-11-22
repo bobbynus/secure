@@ -1,0 +1,43 @@
+{
+ "affected": [
+  {
+   "product": "Azure Arc-enabled Kubernetes cluster",
+   "versions": "1.5.8, 1.6.19, 1.7.18, 1.8.11",
+   "fixed": null,
+   "evidence": "Azure Arc-enabled Kubernetes cluster 1.5.8\nAzure Arc-enabled Kubernetes cluster 1.6.19\nAzure Arc-enabled Kubernetes cluster 1.7.18\nAzure Arc-enabled Kubernetes cluster 1.8.11"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Azure Arc-enabled Kubernetes cluster: Elevation of Privilege",
+  "summary": "An elevation of privilege vulnerability exists in Azure Arc-enabled Kubernetes cluster Connect.",
+  "impact": "The sources do not specify the exact impact, preconditions, or exploitation details.",
+  "fix": "The sources do not specify fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Azure Arc-enabled Kubernetes cluster installations to check for affected versions."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Azure Arc-enabled Kubernetes cluster: повышение привилегий",
+  "summary": "В Azure Arc-enabled Kubernetes cluster Connect обнаружена уязвимость повышения привилегий.",
+  "impact": "Источники не уточняют точные последствия, предварительные условия или детали эксплуатации.",
+  "fix": "Источники не содержат информации об исправленных версиях.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию развертываний Azure Arc-enabled Kubernetes cluster для проверки уязвимых версий."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Azure Arc-enabled Kubernetes cluster: Privilegienerweiterung",
+  "summary": "In Azure Arc-enabled Kubernetes cluster Connect besteht eine Schwachstelle zur Privilegienerweiterung.",
+  "impact": "Die Quellen nennen keine genauen Auswirkungen, Voraussetzungen oder Details zur Ausnutzung.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Azure Arc-enabled Kubernetes cluster-Installationen, um nach betroffenen Versionen zu suchen."
+  ],
+  "regression": null
+ }
+}

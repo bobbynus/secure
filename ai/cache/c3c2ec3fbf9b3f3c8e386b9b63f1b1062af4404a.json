@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Windows 10",
+   "versions": "multiple",
+   "fixed": null,
+   "evidence": "Microsoft Message Queuing (MSMQ) Remote Code Execution Vulnerability\nWindows Message Queuing. Microsoft 2023-Aug security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows Message Queuing Remote Code Execution Vulnerability",
+  "summary": "A critical remote code execution vulnerability affects Microsoft Message Queuing (MSMQ) in Windows 10. The vendor released security updates in August 2023.",
+  "impact": "An attacker can achieve remote code execution on the affected system.",
+  "fix": "Apply the updates provided by Microsoft in the August 2023 security release (including KB5029242, KB5029244, KB5029247, KB5029250, KB5029253, KB5029259, KB5029263, KB5029295, KB5029296, KB5029301, KB5029304, KB5029307, KB5029308, KB5029312, KB5029318, KB5029367).",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows 10 systems running the Microsoft Message Queuing (MSMQ) service.",
+   "Verify that the August 2023 security updates are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Уязвимость удаленного выполнения кода в Microsoft Message Queuing",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает Microsoft Message Queuing (MSMQ) в Windows 10. Производитель выпустил обновления безопасности в августе 2023 года.",
+  "impact": "Злоумышленник может выполнить произвольный код на уязвимой системе.",
+  "fix": "Установите обновления, предоставленные Microsoft в рамках выпуска безопасности за август 2023 года (включая KB5029242, KB5029244, KB5029247, KB5029250, KB5029253, KB5029259, KB5029263, KB5029295, KB5029296, KB5029301, KB5029304, KB5029307, KB5029308, KB5029312, KB5029318, KB5029367).",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows 10, на которых запущена служба Microsoft Message Queuing (MSMQ).",
+   "Убедитесь, что установлены обновления безопасности за август 2023 года."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Schwachstelle in Microsoft Message Queuing ermöglicht Remotecodeausführung",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft Microsoft Message Queuing (MSMQ) unter Windows 10. Der Hersteller hat im August 2023 Sicherheitsupdates veröffentlicht.",
+  "impact": "Ein Angreifer kann auf dem betroffenen System Remotecode ausführen.",
+  "fix": "Wenden Sie die von Microsoft im Sicherheitsupdate vom August 2023 bereitgestellten Updates an (einschließlich KB5029242, KB5029244, KB5029247, KB5029250, KB5029253, KB5029259, KB5029263, KB5029295, KB5029296, KB5029301, KB5029304, KB5029307, KB5029308, KB5029312, KB5029318, KB5029367).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows 10-Systeme, auf denen der Dienst Microsoft Message Queuing (MSMQ) ausgeführt wird.",
+   "Überprüfen Sie, ob die Sicherheitsupdates vom August 2023 installiert sind."
+  ],
+  "regression": null
+ }
+}

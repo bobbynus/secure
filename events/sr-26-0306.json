@@ -59,21 +59,59 @@
  "texts": {
   "msrc:CVE-2026-131054": "Chromium CVE-2026-131054: Out of bounds write\nMicrosoft Edge (Chromium-based). Microsoft 2026-Nov security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "e7f26b6c6d97421081fcc3c4",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge (Chromium-based): Out of bounds write (CVE-2026-131054)",
+    "summary": "An out of bounds write vulnerability exists in Microsoft Edge (Chromium-based) tracked as CVE-2026-131054 with a CVSS score of 9.6.",
+    "impact": "The sources do not specify the exact impact or preconditions.",
+    "fix": "The sources list no fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check systems for Microsoft Edge (Chromium-based) installations."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge (Chromium-based): запись за пределами буфера (CVE-2026-131054)",
+    "summary": "В Microsoft Edge (Chromium-based) обнаружена уязвимость записи за пределами буфера, получившая идентификатор CVE-2026-131054 и оценку CVSS 9.6.",
+    "impact": "Источники не уточняют конкретные последствия или предварительные условия.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленного Microsoft Edge (Chromium-based)."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge (Chromium-based): Out-of-Bounds-Schreibzugriff (CVE-2026-131054)",
+    "summary": "In Microsoft Edge (Chromium-based) existiert eine Out-of-Bounds-Schreibschwachstelle, geführt als CVE-2026-131054 mit einem CVSS-Score von 9.6.",
+    "impact": "Die Quellen nennen keine genauen Auswirkungen oder Vorbedingungen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf Installationen von Microsoft Edge (Chromium-based)."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T08:21:05Z",
+  "slugs": {
+   "ru": "microsoft-edge-chromium-based-zapis-za-predelami-bufera-cve",
+   "de": "microsoft-edge-chromium-based-out-of-bounds-schreibzugriff-cve",
+   "en": "microsoft-edge-chromium-based-out-of-bounds-write-cve-2026"
+  },
+  "published_at": "2026-11-22T08:21:05Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
