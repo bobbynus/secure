@@ -1,0 +1,106 @@
+{
+  "id": "sr-26-0277",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2023-41763"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB3061064",
+      "KB4470124"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 5.3,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T11:20:57Z",
+    "updated": "2026-11-22T11:20:57Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Skype for Business Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-41763",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T11:20:57Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T11:20:57Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-skype-for-business-server-uyazvimost-povysheniya",
+      "title": "Microsoft Skype for Business Server: уязвимость повышения привилегий",
+      "summary": "Уязвимость повышения привилегий в Microsoft Skype for Business Server (CVE-2023-41763) позволяет повысить привилегии. Поставщик сообщает об эксплуатации.",
+      "impact": "Позволяет злоумышленнику повысить привилегии.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Провести инвентаризацию систем Skype for Business Server 2015 CU13 и Skype for Business Server 2019 CU7.",
+        "Проверить системы на предмет установки октябрьского обновления безопасности Microsoft 2023 года, о котором сообщал поставщик."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-skype-for-business-server-schwachstelle-zur",
+      "title": "Microsoft Skype for Business Server: Schwachstelle zur Privilegienerweiterung",
+      "summary": "Eine Schwachstelle zur Privilegienerweiterung in Microsoft Skype for Business Server (CVE-2023-41763) ermöglicht die Erhöhung von Privilegien. Der Hersteller meldet eine Ausnutzung.",
+      "impact": "Ermöglicht es einem Angreifer, Privilegien zu erweitern.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Inventarisieren Sie Skype for Business Server 2015 CU13 und Skype for Business Server 2019 CU7 Systeme.",
+        "Überprüfen Sie Systeme auf den Status des Microsoft Sicherheitsupdates von Oktober 2023 gemäß den Herstellerangaben."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-skype-for-business-server-elevation-of-privilege",
+      "title": "Microsoft Skype for Business Server: Elevation of Privilege Vulnerability",
+      "summary": "An elevation of privilege vulnerability in Microsoft Skype for Business Server (CVE-2023-41763) allows privilege escalation. The vendor reports exploitation.",
+      "impact": "Allows an attacker to achieve elevation of privilege.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "The sources do not state fixed versions.",
+      "checks": [
+        "Inventory Skype for Business Server 2015 CU13 and Skype for Business Server 2019 CU7 systems.",
+        "Check systems for the Microsoft 2023-Oct security update status as reported by the vendor."
+      ]
+    }
+  }
+}

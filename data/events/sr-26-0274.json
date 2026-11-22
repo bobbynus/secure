@@ -1,0 +1,117 @@
+{
+  "id": "sr-26-0274",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2023-29336"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5026363",
+      "KB5026382",
+      "KB5026408",
+      "KB5026409",
+      "KB5026411",
+      "KB5026413",
+      "KB5026415",
+      "KB5026419",
+      "KB5026426",
+      "KB5026427"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T11:20:57Z",
+    "updated": "2026-11-22T11:20:57Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Win32k Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29336",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T11:20:57Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T11:20:57Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-povysheniya-privilegiy-v-win32k",
+      "title": "Microsoft Windows: уязвимость повышения привилегий в Win32k (CVE-2023-29336)",
+      "summary": "В компоненте Win32k операционной системы Microsoft Windows обнаружена уязвимость повышения привилегий. По данным производителя, уязвимость эксплуатируется.",
+      "impact": "Злоумышленник может повысить свои привилегии. Эксплуатация подтверждена производителем.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft (включая KB5026363, KB5026382, KB5026408, KB5026409, KB5026411, KB5026413, KB5026415, KB5026419, KB5026426, KB5026427).",
+      "checks": [
+        "Проверьте системы на наличие CVE-2023-29336 и затронутых версий Windows",
+        "Убедитесь в установке обновлений безопасности Microsoft, включая KB5026363, KB5026382, KB5026408, KB5026409, KB5026411, KB5026413, KB5026415, KB5026419, KB5026426 и KB5026427"
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-schwachstelle-zur-rechteausweitung-in-win32k",
+      "title": "Microsoft Windows: Schwachstelle zur Rechteausweitung in Win32k (CVE-2023-29336)",
+      "summary": "In Win32k in Microsoft Windows existiert eine Schwachstelle zur Rechteausweitung. Der Hersteller berichtet über eine aktive Ausnutzung.",
+      "impact": "Ein Angreifer kann eine Rechteausweitung erreichen. Die Ausnutzung wird vom Hersteller gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5026363, KB5026382, KB5026408, KB5026409, KB5026411, KB5026413, KB5026415, KB5026419, KB5026426, KB5026427).",
+      "checks": [
+        "Überprüfen Sie Systeme auf CVE-2023-29336 und betroffene Windows-Versionen",
+        "Verifizieren Sie die Installation der Microsoft-Sicherheitsupdates einschließlich KB5026363, KB5026382, KB5026408, KB5026409, KB5026411, KB5026413, KB5026415, KB5026419, KB5026426 und KB5026427"
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-win32k-elevation-of-privilege-vulnerability",
+      "title": "Microsoft Windows: Win32k Elevation of Privilege Vulnerability (CVE-2023-29336)",
+      "summary": "An elevation of privilege vulnerability exists in Win32k in Microsoft Windows. The vendor reports exploitation in the wild.",
+      "impact": "An attacker can achieve elevation of privilege. Exploitation is reported by the vendor.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft (including KB5026363, KB5026382, KB5026408, KB5026409, KB5026411, KB5026413, KB5026415, KB5026419, KB5026426, KB5026427).",
+      "checks": [
+        "Check systems for the presence of CVE-2023-29336 and affected Windows versions",
+        "Verify installation of Microsoft security updates including KB5026363, KB5026382, KB5026408, KB5026409, KB5026411, KB5026413, KB5026415, KB5026419, KB5026426, and KB5026427"
+      ]
+    }
+  }
+}
