@@ -59,21 +59,59 @@
  "texts": {
   "msrc:CVE-2025-64657": "Azure Application Gateway Elevation of Privilege Vulnerability\nAzure Application Gateway. Microsoft 2025-Nov security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "bc0220913e7ca47c0e59a694",
+  "texts": {
+   "en": {
+    "title": "Microsoft Azure App Gateway: CVE-2025-64657 Elevation of Privilege Vulnerability",
+    "summary": "Microsoft Azure App Gateway contains an elevation of privilege vulnerability tracked as CVE-2025-64657 with a CVSS score of 9.8.",
+    "impact": "The vulnerability allows for elevation of privilege.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check Azure App Gateway deployments for exposure to CVE-2025-64657."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Azure App Gateway: уязвимость CVE-2025-64657 повышения привилегий",
+    "summary": "Microsoft Azure App Gateway содержит уязвимость повышения привилегий CVE-2025-64657 с оценкой CVSS 9.8.",
+    "impact": "Уязвимость приводит к повышению привилегий.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте развертывания Azure App Gateway на подверженность уязвимости CVE-2025-64657."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Azure App Gateway: CVE-2025-64657 Privilegienerweiterung",
+    "summary": "Microsoft Azure App Gateway weist eine Schwachstelle zur Privilegienerweiterung (CVE-2025-64657) mit einem CVSS-Score von 9.8 auf.",
+    "impact": "Die Schwachstelle ermöglicht eine Privilegienerweiterung.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Azure App Gateway-Bereitstellungen auf Anfälligkeit für CVE-2025-64657."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T13:20:51Z",
+  "slugs": {
+   "ru": "microsoft-azure-app-gateway-uyazvimost-cve-2025-64657",
+   "de": "microsoft-azure-app-gateway-cve-2025-64657",
+   "en": "microsoft-azure-app-gateway-cve-2025-64657-elevation-of"
+  },
+  "published_at": "2026-11-22T13:20:51Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

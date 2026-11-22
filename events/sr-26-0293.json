@@ -88,21 +88,62 @@
  "texts": {
   "msrc:CVE-2025-60724": "Windows GDI+ Remote Code Execution Vulnerability\nMicrosoft Graphics Component. Microsoft 2025-Nov security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "b646b6b904683487633dc67f",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows GDI+: Remote Code Execution Vulnerability (CVE-2025-60724)",
+    "summary": "A critical remote code execution vulnerability exists in Windows GDI+ affecting various Windows and Office products. An attacker can exploit this to execute arbitrary code.",
+    "impact": "An attacker can achieve remote code execution on vulnerable systems.",
+    "fix": "Updates are available from Microsoft referencing KBs KB5068779, KB5068781, KB5068787, KB5068791, KB5068840, KB5068861, KB5068864, KB5068865, KB5068904, KB5068905, KB5068906, KB5068907, KB5068908, KB5068909, and KB5068966.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows 10, Microsoft Office LTSC for Mac 2021, Microsoft Office LTSC for Mac 2024, and Microsoft Office for Android systems.",
+     "Verify installation of updates associated with CVE-2025-60724."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows GDI+: уязвимость удаленного выполнения кода (CVE-2025-60724)",
+    "summary": "Критическая уязвимость удаленного выполнения кода в Windows GDI+ затрагивает различные продукты Windows и Office. Злоумышленник может использовать ее для выполнения произвольного кода.",
+    "impact": "Злоумышленник может выполнить удаленный код на уязвимых системах.",
+    "fix": "Корпорация Microsoft выпустила обновления, ссылающиеся на KB5068779, KB5068781, KB5068787, KB5068791, KB5068840, KB5068861, KB5068864, KB5068865, KB5068904, KB5068905, KB5068906, KB5068907, KB5068908, KB5068909 и KB5068966.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows 10, Microsoft Office LTSC for Mac 2021, Microsoft Office LTSC for Mac 2024 и Microsoft Office for Android.",
+     "Проверьте установку обновлений, связанных с CVE-2025-60724."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows GDI+: Schwachstelle zur Remote-Code-Ausführung (CVE-2025-60724)",
+    "summary": "Eine kritische Schwachstelle zur Remotecodeausführung in Windows GDI+ betrifft verschiedene Windows- und Office-Produkte. Ein Angreifer kann dies ausnutzen, um beliebigen Code auszuführen.",
+    "impact": "Ein Angreifer kann eine Remotecodeausführung auf anfälligen Systemen erreichen.",
+    "fix": "Updates von Microsoft sind verfügbar und verweisen auf KB5068779, KB5068781, KB5068787, KB5068791, KB5068840, KB5068861, KB5068864, KB5068865, KB5068904, KB5068905, KB5068906, KB5068907, KB5068908, KB5068909 und KB5068966.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows 10, Microsoft Office LTSC for Mac 2021, Microsoft Office LTSC for Mac 2024 und Microsoft Office for Android Systeme.",
+     "Überprüfen Sie die Installation von Updates im Zusammenhang mit CVE-2025-60724."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T13:20:51Z",
+  "slugs": {
+   "ru": "microsoft-windows-gdi-uyazvimost-udalennogo-vypolneniya-koda",
+   "de": "microsoft-windows-gdi-schwachstelle-zur-remote-code-ausfuehrung",
+   "en": "microsoft-windows-gdi-remote-code-execution-vulnerability-cve"
+  },
+  "published_at": "2026-11-22T13:20:51Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

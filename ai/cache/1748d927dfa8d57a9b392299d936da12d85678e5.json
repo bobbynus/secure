@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Azure Application Gateway: Elevation of Privilege Vulnerability (CVE-2025-64656)",
+  "summary": "An elevation of privilege vulnerability (CVE-2025-64656) affects Microsoft Azure Application Gateway with a CVSS score of 9.4.",
+  "impact": "The vulnerability allows an attacker to elevate privileges.",
+  "fix": "The sources do not list specific fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check systems for Azure Application Gateway deployments."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Azure Application Gateway: уязвимость повышения привилегий (CVE-2025-64656)",
+  "summary": "Уязвимость повышения привилегий (CVE-2025-64656) затрагивает Microsoft Azure Application Gateway, оценка CVSS составляет 9.4.",
+  "impact": "Уязвимость позволяет злоумышленнику повысить привилегии.",
+  "fix": "В источниках не указаны конкретные исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие развертываний Azure Application Gateway."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Azure Application Gateway: Privilegienerweiterung (CVE-2025-64656)",
+  "summary": "Eine Schwachstelle zur Privilegienerweiterung (CVE-2025-64656) betrifft Microsoft Azure Application Gateway mit einem CVSS-Score von 9.4.",
+  "impact": "Die Schwachstelle ermöglicht es einem Angreifer, Privilegien zu erweitern.",
+  "fix": "Die Quellen nennen keine konkreten korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf Azure Application Gateway-Bereitstellungen."
+  ],
+  "regression": null
+ }
+}
