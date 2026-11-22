@@ -1,0 +1,118 @@
+{
+  "id": "sr-26-0253",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2022-41033"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5018410",
+      "KB5018411",
+      "KB5018418",
+      "KB5018419",
+      "KB5018421",
+      "KB5018425",
+      "KB5018427",
+      "KB5018446",
+      "KB5018450",
+      "KB5018454",
+      "KB5018457",
+      "KB5018474",
+      "KB5018476",
+      "KB5018478",
+      "KB5018479"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T08:21:05Z",
+    "updated": "2026-11-22T08:21:05Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows COM+ Event System Service Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-41033",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T08:21:05Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T08:21:05Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-povysheniya-privilegiy-v-sluzhbe",
+      "title": "Microsoft Windows: уязвимость повышения привилегий в службе COM+ Event System",
+      "summary": "Уязвимость повышения привилегий затрагивает службу COM+ Event System в Microsoft Windows. Microsoft сообщает об эксплуатации уязвимости.",
+      "impact": "Злоумышленник может использовать уязвимость для повышения привилегий.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft.",
+      "checks": [
+        "Проверьте системы Windows на наличие уязвимости и установите октябрьские обновления безопасности 2022 года."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-schwachstelle-zur-privilege-escalation-im-com",
+      "title": "Microsoft Windows: Schwachstelle zur Privilege Escalation im COM+ Event System Service",
+      "summary": "Eine Schwachstelle zur Privilegienerweiterung betrifft den COM+ Event System Service in Microsoft Windows. Microsoft berichtet über eine Ausnutzung der Schwachstelle.",
+      "impact": "Ein Angreifer kann die Schwachstelle ausnutzen, um Privilegien zu erlangen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+      "checks": [
+        "Überprüfen Sie Windows-Systeme auf das Vorhandensein der Schwachstelle und wenden Sie die Sicherheitsupdates vom Oktober 2022 an."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-com-event-system-service-elevation-of",
+      "title": "Microsoft Windows: COM+ Event System Service Elevation of Privilege Vulnerability",
+      "summary": "A privilege escalation vulnerability affects the Windows COM+ Event System Service in Microsoft Windows. Microsoft reports that the vulnerability is exploited.",
+      "impact": "An attacker can exploit the vulnerability to achieve elevation of privilege.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft.",
+      "checks": [
+        "Check Windows systems for the presence of the vulnerability and apply the October 2022 security updates."
+      ]
+    }
+  }
+}

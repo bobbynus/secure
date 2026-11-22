@@ -1,0 +1,100 @@
+{
+  "id": "sr-26-0252",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "kubernetes"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2022-37968"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 10.0,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T08:21:05Z",
+    "updated": "2026-11-22T08:21:05Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Azure Arc-enabled Kubernetes cluster Connect Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-37968",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T08:21:05Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T08:21:05Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-azure-arc-enabled-kubernetes-cluster-povyshenie",
+      "title": "Microsoft Azure Arc-enabled Kubernetes cluster: повышение привилегий",
+      "summary": "В Azure Arc-enabled Kubernetes cluster Connect обнаружена уязвимость повышения привилегий.",
+      "impact": "Источники не уточняют точные последствия, предварительные условия или детали эксплуатации.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Источники не содержат информации об исправленных версиях.",
+      "checks": [
+        "Проведите инвентаризацию развертываний Azure Arc-enabled Kubernetes cluster для проверки уязвимых версий."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-azure-arc-enabled-kubernetes-cluster",
+      "title": "Microsoft Azure Arc-enabled Kubernetes cluster: Privilegienerweiterung",
+      "summary": "In Azure Arc-enabled Kubernetes cluster Connect besteht eine Schwachstelle zur Privilegienerweiterung.",
+      "impact": "Die Quellen nennen keine genauen Auswirkungen, Voraussetzungen oder Details zur Ausnutzung.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Inventarisieren Sie Azure Arc-enabled Kubernetes cluster-Installationen, um nach betroffenen Versionen zu suchen."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-azure-arc-enabled-kubernetes-cluster-elevation-of",
+      "title": "Microsoft Azure Arc-enabled Kubernetes cluster: Elevation of Privilege",
+      "summary": "An elevation of privilege vulnerability exists in Azure Arc-enabled Kubernetes cluster Connect.",
+      "impact": "The sources do not specify the exact impact, preconditions, or exploitation details.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources do not specify fixed versions.",
+      "checks": [
+        "Inventory Azure Arc-enabled Kubernetes cluster installations to check for affected versions."
+      ]
+    }
+  }
+}
