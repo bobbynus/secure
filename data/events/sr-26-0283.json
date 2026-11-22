@@ -1,0 +1,116 @@
+{
+  "id": "sr-26-0283",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-47981"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5062552",
+      "KB5062553",
+      "KB5062554",
+      "KB5062557",
+      "KB5062560",
+      "KB5062561",
+      "KB5062570",
+      "KB5062572",
+      "KB5062592",
+      "KB5062597",
+      "KB5062619",
+      "KB5062632"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T11:50:43Z",
+    "updated": "2026-11-22T11:50:43Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SPNEGO Extended Negotiation (NEGOEX) Security Mechanism Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-47981",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T11:50:43Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T11:50:43Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-rce-v-spnego-extended-negotiation",
+      "title": "Microsoft Windows: уязвимость RCE в SPNEGO Extended Negotiation (NEGOEX)",
+      "summary": "Microsoft Windows содержит уязвимость удаленного выполнения кода в механизме безопасности SPNEGO Extended Negotiation (NEGOEX) с критическим баллом CVSS 9.8.",
+      "impact": "Злоумышленник может осуществить удаленное выполнение кода. Источники не приводят дополнительных предварительных условий.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Источники указывают, что доступны обновления безопасности, ссылаясь на такие базы знаний, как KB5062552, KB5062553, KB5062554, KB5062557, KB5062560, KB5062561, KB5062570, KB5062572, KB5062592, KB5062597, KB5062619 и KB5062632.",
+      "checks": [
+        "Проведите инвентаризацию систем Windows 10 на предмет уязвимости CVE-2025-47981.",
+        "Проверьте, установлены ли применимые обновления KB."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-rce-schwachstelle-in-spnego-extended",
+      "title": "Microsoft Windows: RCE-Schwachstelle in SPNEGO Extended Negotiation (NEGOEX)",
+      "summary": "Microsoft Windows enthält eine Remotecodeausführungs-Schwachstelle im SPNEGO Extended Negotiation (NEGOEX) Sicherheitsmechanismus mit einem kritischen CVSS-Score von 9.8.",
+      "impact": "Ein Angreifer kann Remotecode ausführen. Die Quellen nennen keine weiteren Vorbedingungen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Laut den Quellen sind Sicherheitsupdates verfügbar, wobei KBs wie KB5062552, KB5062553, KB5062554, KB5062557, KB5062560, KB5062561, KB5062570, KB5062572, KB5062592, KB5062597, KB5062619 und KB5062632 genannt werden.",
+      "checks": [
+        "Inventarisieren Sie Windows 10 Systeme auf Anfälligkeit für CVE-2025-47981.",
+        "Überprüfen Sie, ob die relevanten KB-Updates eingespielt wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-rce-vulnerability-in-spnego-extended",
+      "title": "Microsoft Windows: RCE vulnerability in SPNEGO Extended Negotiation (NEGOEX)",
+      "summary": "Microsoft Windows contains a remote code execution vulnerability in the SPNEGO Extended Negotiation (NEGOEX) Security Mechanism with a critical CVSS score of 9.8.",
+      "impact": "An attacker can achieve remote code execution. The sources do not specify further preconditions or requirements.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources state that security updates are available, referencing KBs such as KB5062552, KB5062553, KB5062554, KB5062557, KB5062560, KB5062561, KB5062570, KB5062572, KB5062592, KB5062597, KB5062619, and KB5062632.",
+      "checks": [
+        "Inventory Windows 10 systems to check for exposure to CVE-2025-47981.",
+        "Verify whether the applicable KB updates have been applied."
+      ]
+    }
+  }
+}

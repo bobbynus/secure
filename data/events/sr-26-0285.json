@@ -1,0 +1,121 @@
+{
+  "id": "sr-26-0285",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-33053"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5060118",
+      "KB5060525",
+      "KB5060526",
+      "KB5060531",
+      "KB5060533",
+      "KB5060841",
+      "KB5060842",
+      "KB5060996",
+      "KB5060998",
+      "KB5060999",
+      "KB5061010",
+      "KB5061018",
+      "KB5061026",
+      "KB5061059",
+      "KB5061078"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T11:50:43Z",
+    "updated": "2026-11-22T11:50:43Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Internet Shortcut Files Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-33053",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T11:50:43Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T11:50:43Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v",
+      "title": "Microsoft Windows: уязвимость удаленного выполнения кода в файлах ярлыков Интернета (CVE-2025-33053)",
+      "summary": "Microsoft Windows содержит уязвимость удаленного выполнения кода в файлах ярлыков Интернета (CVE-2025-33053), для которой зафиксирована эксплуатация.",
+      "impact": "Злоумышленник может выполнить удаленный код. Эксплуатация подтверждена производителем.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft (включая KB5060118, KB5060525, KB5060526, KB5060531, KB5060533, KB5060841, KB5060842, KB5060996, KB5060998, KB5060999, KB5061010, KB5061018, KB5061026, KB5061059, KB5061078).",
+      "checks": [
+        "Проведите инвентаризацию систем и версий Windows 10.",
+        "Проверьте установку актуальных обновлений безопасности Microsoft."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in",
+      "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in Internet-Verknüpfungsdateien (CVE-2025-33053)",
+      "summary": "Microsoft Windows enthält eine Remotecodeausführungsschwachstelle in Internet-Verknüpfungsdateien (CVE-2025-33053), deren Ausnutzung gemeldet wurde.",
+      "impact": "Ein Angreifer kann Remotecode ausführen. Die Ausnutzung wird vom Hersteller gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Installieren Sie die von Microsoft bereitgestellten Updates (einschließlich KB5060118, KB5060525, KB5060526, KB5060531, KB5060533, KB5060841, KB5060842, KB5060996, KB5060998, KB5060999, KB5061010, KB5061018, KB5061026, KB5061059, KB5061078).",
+      "checks": [
+        "Inventarisieren Sie Windows 10-Systeme und -Versionen.",
+        "Überprüfen Sie, ob die neuesten Microsoft-Sicherheitsupdates installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-internet-shortcut-files-remote-code-execution",
+      "title": "Microsoft Windows: Internet Shortcut Files Remote Code Execution Vulnerability (CVE-2025-33053)",
+      "summary": "Microsoft Windows contains a remote code execution vulnerability in Internet Shortcut Files tracked as CVE-2025-33053, which is reported as exploited.",
+      "impact": "An attacker can achieve remote code execution. Exploitation is reported by the vendor.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Install the updates provided by Microsoft (including KB5060118, KB5060525, KB5060526, KB5060531, KB5060533, KB5060841, KB5060842, KB5060996, KB5060998, KB5060999, KB5061010, KB5061018, KB5061026, KB5061059, KB5061078).",
+      "checks": [
+        "Inventory Windows 10 systems and versions.",
+        "Verify if the latest Microsoft security updates are installed."
+      ]
+    }
+  }
+}

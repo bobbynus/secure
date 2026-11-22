@@ -1,0 +1,115 @@
+{
+  "id": "sr-26-0286",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10",
+    "windows-11"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-30400"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5058379",
+      "KB5058384",
+      "KB5058385",
+      "KB5058392",
+      "KB5058405",
+      "KB5058411",
+      "KB5058497",
+      "KB5058500"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T11:50:43Z",
+    "updated": "2026-11-22T11:50:43Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft DWM Core Library Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-30400",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T11:50:43Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T11:50:43Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-povysheniya-privilegiy-v-dwm-core",
+      "title": "Microsoft Windows: уязвимость повышения привилегий в DWM Core Library",
+      "summary": "В библиотеке DWM Core Library от Microsoft обнаружена уязвимость повышения привилегий, эксплуатация которой подтверждена.",
+      "impact": "Злоумышленник может повысить свои привилегии. Предварительные условия и векторы атаки в источниках не указаны.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления безопасности, указанные в бюллетене.",
+      "checks": [
+        "Проведите инвентаризацию систем Windows на предмет уязвимых версий.",
+        "Проверьте, установлены ли обновления безопасности Microsoft."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-schwachstelle-in-dwm-core-library-ermoeglicht",
+      "title": "Microsoft Windows: Schwachstelle in DWM Core Library ermöglicht Privilegienerweiterung",
+      "summary": "In der Microsoft DWM Core Library existiert eine Schwachstelle zur Privilegienerweiterung, die laut Berichten ausgenutzt wird.",
+      "impact": "Ein Angreifer kann eine Privilegienerweiterung erreichen. Voraussetzungen und Angriffsmotive werden in den Quellen nicht näher genannt.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die in den Sicherheitsinformationen genannten Updates an.",
+      "checks": [
+        "Inventarisieren Sie Windows-Systeme auf betroffene Versionen.",
+        "Überprüfen Sie, ob Microsoft-Sicherheitsupdates eingespielt wurden."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-dwm-core-library-elevation-of-privilege",
+      "title": "Microsoft Windows: DWM Core Library Elevation of Privilege Vulnerability",
+      "summary": "An elevation of privilege vulnerability exists in the Microsoft DWM Core Library, reported as exploited.",
+      "impact": "An attacker can achieve elevation of privilege. Preconditions and specific attack vectors are not detailed in the source texts.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates listed in the security advisory.",
+      "checks": [
+        "Inventory Windows systems for vulnerable versions.",
+        "Verify if Microsoft security updates are applied."
+      ]
+    }
+  }
+}

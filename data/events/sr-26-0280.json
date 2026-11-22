@@ -1,0 +1,117 @@
+{
+  "id": "sr-26-0280",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2025-29824"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5055518",
+      "KB5055519",
+      "KB5055521",
+      "KB5055523",
+      "KB5055526",
+      "KB5055527",
+      "KB5055528",
+      "KB5055547",
+      "KB5055557",
+      "KB5055561",
+      "KB5055570",
+      "KB5055581",
+      "KB5055596",
+      "KB5055609"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-21T08:50:41Z",
+    "published": "2026-11-22T11:50:43Z",
+    "updated": "2026-11-22T11:50:43Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows Common Log File System Driver Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-29824",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-21"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-22T11:50:43Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-22T11:50:43Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-povyshenie-privilegiy-v-drayvere-common-log",
+      "title": "Microsoft Windows: повышение привилегий в драйвере Common Log File System",
+      "summary": "Уязвимость повышения привилегий в драйвере Windows Common Log File System позволяет злоумышленникам повысить привилегии. Производитель сообщает об эксплуатации.",
+      "impact": "Злоумышленник может повысить свои привилегии в системе.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления безопасности, предоставленные Microsoft.",
+      "checks": [
+        "Проверьте системы Windows 10 на наличие неустановленных обновлений безопасности."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-privilegienerweiterung-im-common-log-file",
+      "title": "Microsoft Windows: Privilegienerweiterung im Common Log File System Driver",
+      "summary": "Eine Schwachstelle zur Privilegienerweiterung im Windows Common Log File System Driver ermöglicht Angreifern die Erhöhung von Rechten. Die Ausnutzung wird vom Hersteller gemeldet.",
+      "impact": "Ein Angreifer kann Privilegien erlangen.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an.",
+      "checks": [
+        "Prüfen Sie Windows 10-Systeme auf fehlende Sicherheitsupdates."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-elevation-of-privilege-in-common-log-file",
+      "title": "Microsoft Windows: Elevation of Privilege in Common Log File System Driver",
+      "summary": "An elevation of privilege vulnerability in the Windows Common Log File System Driver allows attackers to escalate privileges. Exploitation is reported by the vendor.",
+      "impact": "An attacker can achieve elevation of privilege.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the security updates provided by Microsoft.",
+      "checks": [
+        "Check Windows 10 systems for missing security updates."
+      ]
+    }
+  }
+}
