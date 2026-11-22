@@ -89,21 +89,62 @@
  "texts": {
   "msrc:CVE-2023-32046": "Windows MSHTML Platform Elevation of Privilege Vulnerability\nWindows MSHTML Platform. Microsoft 2023-Jul security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "af821ad257bc6ee913f9c680",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: Elevation of privilege in MSHTML Platform",
+    "summary": "An elevation of privilege vulnerability exists in the Microsoft Windows MSHTML Platform. The vendor reports exploitation in the wild.",
+    "impact": "An attacker can achieve elevation of privilege. Exploitation is reported by the vendor.",
+    "fix": "Apply the security updates provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows systems for MSHTML Platform components.",
+     "Verify the application of Microsoft 2023-Jul security updates."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: повышение привилегий в MSHTML Platform",
+    "summary": "В Microsoft Windows MSHTML Platform обнаружена уязвимость повышения привилегий. Поставщик сообщает об эксплуатации уязвимости.",
+    "impact": "Злоумышленник может получить повышенные привилегии. Эксплуатация подтверждена производителем.",
+    "fix": "Установите обновления безопасности, предоставленные Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на наличие компонентов MSHTML Platform.",
+     "Убедитесь в применении обновлений безопасности Microsoft за июль 2023 года."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Privilegieneskalation in MSHTML Platform",
+    "summary": "In der Microsoft Windows MSHTML Platform existiert eine Schwachstelle zur Privilegieneskalation. Der Hersteller meldet die Ausnutzung.",
+    "impact": "Ein Angreifer kann eine Privilegieneskalation erreichen. Die Ausnutzung wird vom Hersteller gemeldet.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows-Systeme auf MSHTML Platform-Komponenten.",
+     "Überprüfen Sie die Anwendung der Sicherheitsupdates von Microsoft vom Juli 2023."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T08:50:52Z",
+  "slugs": {
+   "ru": "microsoft-windows-povyshenie-privilegiy-v-mshtml-platform",
+   "de": "microsoft-windows-privilegieneskalation-in-mshtml-platform",
+   "en": "microsoft-windows-elevation-of-privilege-in-mshtml-platform"
+  },
+  "published_at": "2026-11-22T08:50:52Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 2
  }
 }

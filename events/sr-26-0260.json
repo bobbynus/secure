@@ -90,21 +90,62 @@
  "texts": {
   "msrc:CVE-2023-35365": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability\nWindows Routing and Remote Access Service (RRAS). Microsoft 2023-Jul security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "e9fefbca0da13e8cba7ebf10",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: RRAS Remote Code Execution Vulnerability (CVE-2023-35365)",
+    "summary": "A critical remote code execution vulnerability exists in the Windows Routing and Remote Access Service (RRAS).",
+    "impact": "An attacker can execute arbitrary code on the affected system.",
+    "fix": "Apply the updates provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Check Windows systems for Routing and Remote Access Service (RRAS) exposure.",
+     "Verify the installation of Microsoft security updates containing CVE-2023-35365 fixes."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в RRAS (CVE-2023-35365)",
+    "summary": "В службе маршрутизации и удаленного доступа Windows (RRAS) обнаружена критическая уязвимость удаленного выполнения кода.",
+    "impact": "Злоумышленник может выполнить произвольный код на уязвимой системе.",
+    "fix": "Установите обновления, предоставленные Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на предмет использования службы маршрутизации и удаленного доступа (RRAS).",
+     "Убедитесь в установке обновлений безопасности Microsoft, содержащих исправления для CVE-2023-35365."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in RRAS (CVE-2023-35365)",
+    "summary": "Im Windows Routing and Remote Access Service (RRAS) existiert eine kritische Schwachstelle zur Remotecodeausführung.",
+    "impact": "Ein Angreifer kann beliebigen Code auf dem betroffenen System ausführen.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows-Systeme auf die Aktivierung des Routing and Remote Access Service (RRAS).",
+     "Überprüfen Sie die Installation der Microsoft-Sicherheitsupdates mit den Korrekturen für CVE-2023-35365."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T08:50:52Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-rras",
+   "de": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in-rras",
+   "en": "microsoft-windows-rras-remote-code-execution-vulnerability-cve"
+  },
+  "published_at": "2026-11-22T08:50:52Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

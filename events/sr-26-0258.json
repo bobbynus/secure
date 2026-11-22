@@ -82,21 +82,62 @@
  "texts": {
   "msrc:CVE-2023-21674": "Windows Advanced Local Procedure Call (ALPC) Elevation of Privilege Vulnerability\nWindows ALPC. Microsoft 2023-Jan security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "054395018046ab7d7a3cd9fa",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: ALPC Elevation of Privilege Vulnerability (CVE-2023-21674)",
+    "summary": "An elevation of privilege vulnerability exists in Microsoft Windows Advanced Local Procedure Call (ALPC), allowing attackers to escalate privileges. Microsoft reports exploitation.",
+    "impact": "An attacker can exploit this vulnerability to elevate privileges.",
+    "fix": "Apply the security updates provided by Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Check Windows systems for the installation of January 2023 security updates.",
+     "Verify system versions against the affected Windows products list."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость повышения привилегий в ALPC (CVE-2023-21674)",
+    "summary": "В Microsoft Windows Advanced Local Procedure Call (ALPC) обнаружена уязвимость повышения привилегий, позволяющая злоумышленникам повысить привилегии. Microsoft сообщает об эксплуатации.",
+    "impact": "Злоумышленник может использовать эту уязвимость для повышения привилегий.",
+    "fix": "Установите обновления безопасности, предоставленные Microsoft.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows на предмет установки январских обновлений безопасности 2023 года.",
+     "Сверьте версии систем со списком затронутых продуктов Windows."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: ALPC Schwachstelle zur Privilegienerweiterung (CVE-2023-21674)",
+    "summary": "In Microsoft Windows Advanced Local Procedure Call (ALPC) existiert eine Schwachstelle zur Privilegienerweiterung, die es Angreifern ermöglicht, Privilegien zu erhöhen. Microsoft meldet eine Ausnutzung.",
+    "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Privilegien zu erweitern.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows-Systeme auf die Installation der Sicherheitsupdates vom Januar 2023.",
+     "Überprüfen Sie die Systemversionen anhand der Liste der betroffenen Windows-Produkte."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T08:50:52Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-povysheniya-privilegiy-v-alpc-cve",
+   "de": "microsoft-windows-alpc-schwachstelle-zur-privilegienerweiterung",
+   "en": "microsoft-windows-alpc-elevation-of-privilege-vulnerability-cve"
+  },
+  "published_at": "2026-11-22T08:50:52Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

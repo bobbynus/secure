@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft .NET and Visual Studio: Denial of Service Vulnerability (CVE-2023-38180)",
+  "summary": "A denial of service vulnerability affects Microsoft .NET and Visual Studio, reported as exploited by the vendor.",
+  "impact": "An attacker can cause a denial of service. The exact preconditions and impact details depend on the specific deployment.",
+  "fix": "Apply the security update provided by Microsoft (KB5029688, KB5029689).",
+  "workaround": null,
+  "checks": [
+   "Check systems running .NET and Visual Studio for exposure.",
+   "Verify the installation of Microsoft security updates KB5029688 and KB5029689."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft .NET и Visual Studio: уязвимость отказа в обслуживании (CVE-2023-38180)",
+  "summary": "Уязвимость отказа в обслуживания затрагивает Microsoft .NET и Visual Studio. Эксплуатация подтверждена вендором.",
+  "impact": "Злоумышленник может вызвать отказ в обслуживании. Точные предварительные условия и детали воздействия зависят от конкретной конфигурации.",
+  "fix": "Установите обновление безопасности, предоставленное Microsoft (KB5029688, KB5029689).",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на базе .NET и Visual Studio на предмет уязвимости.",
+   "Убедитесь в установке обновлений безопасности Microsoft KB5029688 и KB5029689."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft .NET und Visual Studio: Schwachstelle bezüglich Denial of Service (CVE-2023-38180)",
+  "summary": "Eine Denial-of-Service-Schwachstelle betrifft Microsoft .NET und Visual Studio. Die Ausnutzung wurde vom Hersteller gemeldet.",
+  "impact": "Ein Angreifer kann einen Denial-of-Service-Zustand herbeiführen. Genaue Vorbedingungen und Auswirkungen hängen von der Umgebung ab.",
+  "fix": "Installieren Sie das von Microsoft bereitgestellte Sicherheitsupdate (KB5029688, KB5029689).",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme mit .NET und Visual Studio auf Betroffenheit.",
+   "Überprüfen Sie die Installation der Microsoft-Sicherheitsupdates KB5029688 und KB5029689."
+  ],
+  "regression": null
+ }
+}

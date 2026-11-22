@@ -91,21 +91,62 @@
  "texts": {
   "msrc:CVE-2023-35366": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability\nWindows Routing and Remote Access Service (RRAS). Microsoft 2023-Jul security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "4caa3c619c9cb48fe11a905b",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: RRAS Remote Code Execution Vulnerability (CVE-2023-35366)",
+    "summary": "A critical remote code execution vulnerability exists in the Windows Routing and Remote Access Service (RRAS).",
+    "impact": "An attacker can execute arbitrary code remotely. The CVSS score is 9.8.",
+    "fix": "Apply the updates provided by Microsoft in the July 2023 security update (refer to KB5028166, KB5028168, KB5028169, KB5028171, KB5028182, KB5028185, KB5028186, KB5028222, KB5028223, KB5028224, KB5028226, KB5028228, KB5028232, KB5028233, KB5028240).",
+    "workaround": null,
+    "checks": [
+     "Check Windows 10 systems for the installation of the July 2023 security update.",
+     "Verify the status of the Routing and Remote Access Service (RRAS) on affected systems."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows: уязвимость удаленного выполнения кода в RRAS (CVE-2023-35366)",
+    "summary": "В службе маршрутизации и удаленного доступа Windows (RRAS) обнаружена критическая уязвимость удаленного выполнения кода.",
+    "impact": "Злоумышленник может удаленно выполнить произвольный код. Оценка CVSS составляет 9.8.",
+    "fix": "Установите обновления, предоставленные Microsoft в рамках обновления безопасности за июль 2023 года (см. KB5028166, KB5028168, KB5028169, KB5028171, KB5028182, KB5028185, KB5028186, KB5028222, KB5028223, KB5028224, KB5028226, KB5028228, KB5028232, KB5028233, KB5028240).",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы Windows 10 на наличие установленного обновления безопасности за июль 2023 года.",
+     "Проверьте состояние службы маршрутизации и удаленного доступа (RRAS) на затронутых системах."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows: Remotecodeausführungsschwachstelle in RRAS (CVE-2023-35366)",
+    "summary": "Im Windows Routing and Remote Access Service (RRAS) existiert eine kritische Schwachstelle zur Remotecodeausführung.",
+    "impact": "Ein Angreifer kann beliebigen Code aus der Ferne ausführen. Der CVSS-Score beträgt 9.8.",
+    "fix": "Wenden Sie die von Microsoft im Sicherheitsupdate vom Juli 2023 bereitgestellten Updates an (siehe KB5028166, KB5028168, KB5028169, KB5028171, KB5028182, KB5028185, KB5028186, KB5028222, KB5028223, KB5028224, KB5028226, KB5028228, KB5028232, KB5028233, KB5028240).",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Windows 10-Systeme auf die Installation des Sicherheitsupdates vom Juli 2023.",
+     "Überprüfen Sie den Status des Routing and Remote Access Service (RRAS) auf betroffenen Systemen."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T08:50:52Z",
+  "slugs": {
+   "ru": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-rras",
+   "de": "microsoft-windows-remotecodeausfuehrungsschwachstelle-in-rras",
+   "en": "microsoft-windows-rras-remote-code-execution-vulnerability-cve"
+  },
+  "published_at": "2026-11-22T08:50:52Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

@@ -67,21 +67,62 @@
  "texts": {
   "msrc:CVE-2023-38180": ".NET and Visual Studio Denial of Service Vulnerability\nASP.NET. Microsoft 2023-Aug security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "123a990a3e5997acfc9bdac4",
+  "texts": {
+   "en": {
+    "title": "Microsoft .NET and Visual Studio: Denial of Service Vulnerability (CVE-2023-38180)",
+    "summary": "A denial of service vulnerability affects Microsoft .NET and Visual Studio, reported as exploited by the vendor.",
+    "impact": "An attacker can cause a denial of service. The exact preconditions and impact details depend on the specific deployment.",
+    "fix": "Apply the security update provided by Microsoft (KB5029688, KB5029689).",
+    "workaround": null,
+    "checks": [
+     "Check systems running .NET and Visual Studio for exposure.",
+     "Verify the installation of Microsoft security updates KB5029688 and KB5029689."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft .NET и Visual Studio: уязвимость отказа в обслуживании (CVE-2023-38180)",
+    "summary": "Уязвимость отказа в обслуживания затрагивает Microsoft .NET и Visual Studio. Эксплуатация подтверждена вендором.",
+    "impact": "Злоумышленник может вызвать отказ в обслуживании. Точные предварительные условия и детали воздействия зависят от конкретной конфигурации.",
+    "fix": "Установите обновление безопасности, предоставленное Microsoft (KB5029688, KB5029689).",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на базе .NET и Visual Studio на предмет уязвимости.",
+     "Убедитесь в установке обновлений безопасности Microsoft KB5029688 и KB5029689."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft .NET und Visual Studio: Schwachstelle bezüglich Denial of Service (CVE-2023-38180)",
+    "summary": "Eine Denial-of-Service-Schwachstelle betrifft Microsoft .NET und Visual Studio. Die Ausnutzung wurde vom Hersteller gemeldet.",
+    "impact": "Ein Angreifer kann einen Denial-of-Service-Zustand herbeiführen. Genaue Vorbedingungen und Auswirkungen hängen von der Umgebung ab.",
+    "fix": "Installieren Sie das von Microsoft bereitgestellte Sicherheitsupdate (KB5029688, KB5029689).",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme mit .NET und Visual Studio auf Betroffenheit.",
+     "Überprüfen Sie die Installation der Microsoft-Sicherheitsupdates KB5029688 und KB5029689."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-22T08:50:52Z",
+  "slugs": {
+   "ru": "microsoft-net-i-visual-studio-uyazvimost-otkaza-v-obsluzhivanii",
+   "de": "microsoft-net-und-visual-studio-schwachstelle-bezueglich-denial",
+   "en": "microsoft-net-and-visual-studio-denial-of-service-vulnerability"
+  },
+  "published_at": "2026-11-22T08:50:52Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 3
  }
 }
