@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "8d535a2c2276cb175f7a87e63349448c",
- "last_modified": "Mon, 23 Nov 2026 18:10:05 GMT",
- "checksum": "9c02b68506001eab6c68027cb0473cd2af08dfa075409277a00d4b9e873332d1",
+ "etag": "de73fb6f9a3b69030d5ddab9f50b43eb",
+ "last_modified": "Mon, 23 Nov 2026 18:38:40 GMT",
+ "checksum": "e49275c0dd30c6222164e98d6b4404e4f0a7da7f7925e80f73bca27b1c7bcfb0",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -51,12 +51,13 @@
   "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/": "5d8383b369376704932383da",
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/": "a98efb56cab08501fec41ac5",
   "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/": "7cc4d087b28d17eb3a9e8ef3",
-  "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/": "6a327b139184940fab3d0556"
+  "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/": "6a327b139184940fab3d0556",
+  "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/": "757933a73448aa74790564cb"
  },
- "last_attempt": "2026-11-23T18:10:43Z",
- "last_success": "2026-11-23T18:10:43Z",
+ "last_attempt": "2026-11-23T18:40:42Z",
+ "last_success": "2026-11-23T18:40:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 49
+ "items_total": 50
 }
