@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "8b5957d8c82af29bc503939681dd6ad5",
- "last_modified": "Mon, 23 Nov 2026 19:38:42 GMT",
- "checksum": "aaf14a5ba0d364d58d841bd5a9124f41660a3db767be5e279c803bbf1b324aa1",
+ "etag": "8738f6cae5e4de7428295495dd4176a0",
+ "last_modified": "Mon, 23 Nov 2026 20:10:21 GMT",
+ "checksum": "648041d758042398908951064e09f3c51ad81e9777d8652334f575ca5f75a0a7",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -52,12 +52,14 @@
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/": "a98efb56cab08501fec41ac5",
   "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/": "7cc4d087b28d17eb3a9e8ef3",
   "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/": "6a327b139184940fab3d0556",
-  "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/": "757933a73448aa74790564cb"
+  "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/": "757933a73448aa74790564cb",
+  "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/": "8d222f526e1707601fe39015",
+  "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/": "4cf1f6a2fb60eb334055a23b"
  },
- "last_attempt": "2026-11-23T19:40:40Z",
- "last_success": "2026-11-23T19:40:40Z",
+ "last_attempt": "2026-11-23T20:10:41Z",
+ "last_success": "2026-11-23T20:10:41Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 50
+ "items_total": 52
 }
