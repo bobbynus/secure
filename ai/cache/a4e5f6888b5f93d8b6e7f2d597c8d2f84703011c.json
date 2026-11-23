@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "SAP NetWeaver: Improper neutralization vulnerability in data query logic",
+  "summary": "SAP NetWeaver Enterprise Portal contains a vulnerability in data query logic allowing unauthenticated attackers to disclose or modify server information.",
+  "impact": "An unauthenticated attacker can disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory SAP NetWeaver Enterprise Portal installations.",
+   "Check systems for exposure and apply vendor-provided mitigations as required by CISA guidelines."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "SAP NetWeaver: уязвимость нейтрализации элементов в логике запросов данных",
+  "summary": "SAP NetWeaver Enterprise Portal содержит уязвимость в логике запросов данных, позволяющую неаутентифицированным злоумышленникам раскрывать или изменять информацию на сервере.",
+  "impact": "Неаутентифицированный злоумышленник может раскрыть или изменить информацию на сервере с помощью внедренных свойств среды JNDI или URL, используемого при операциях поиска JNDI.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установок SAP NetWeaver Enterprise Portal.",
+   "Проверьте системы на предмет доступности и примените смягчающие меры от производителя в соответствии с рекомендациями CISA."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "SAP NetWeaver: Schwachstelle bei Neutralisation von Elementen in Datenabfragelogik",
+  "summary": "SAP NetWeaver Enterprise Portal enthält eine Schwachstelle in der Datenabfragelogik, die es unauthentifizierten Angreifern ermöglicht, Serverinformationen offenzulegen oder zu modifizieren.",
+  "impact": "Ein unauthentifizierter Angreifer kann Serverinformationen über injizierte JNDI-Umgebungseigenschaften oder eine bei JNDI-Lookup-Operationen verwendete URL offenzulegen oder modifizieren.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie SAP NetWeaver Enterprise Portal-Installationen.",
+   "Überprüfen Sie Systeme auf Exponiertheit und wenden Sie vom Hersteller bereitgestellte Mitigationsmaßnahmen gemäß den CISA-Richtlinien an."
+  ],
+  "regression": null
+ }
+}

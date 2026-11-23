@@ -1,0 +1,49 @@
+{
+ "affected": [
+  {
+   "product": "Cisco Expressway Series",
+   "versions": "Cisco Expressway-C and Cisco Expressway-E",
+   "fixed": null,
+   "evidence": "enabling unauthenticated attackers to remotely execute arbitrary operating system commands as root on affected Cisco Expressway-C and Cisco Expressway-E devices configured in a cluster."
+  }
+ ],
+ "en": {
+  "title": "Cisco Expressway Series: Hard-coded credentials vulnerability (CVE-2026-76466)",
+  "summary": "Cisco Expressway Series contains a hard-coded credentials vulnerability allowing unauthenticated remote attackers to execute commands as root via the database service. CISA reports active exploitation in the wild.",
+  "impact": "An unauthenticated, remote attacker with persistent cookies and network access can execute arbitrary operating system commands as root on a clustered device via the database service.",
+  "fix": "The sources do not specify fixed version numbers, but mention that Cisco released security patches in late October.",
+  "workaround": null,
+  "checks": [
+   "Inventory Cisco Expressway-C and Expressway-E appliances and virtual machine deployments.",
+   "Verify whether clustered Cisco Expressway devices are exposed to the internet.",
+   "Check system logs and configurations for unauthorized access or persistent cookies usage associated with the database service."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Cisco Expressway Series: уязвимость жестко закодированных учетных данных (CVE-2026-76466)",
+  "summary": "Cisco Expressway Series содержит уязвимость жестко закодированных учетных данных, позволяющую неаутентифицированным удаленным злоумышленникам выполнять команды с правами root через службу базы данных. CISA сообщает об активной эксплуатации.",
+  "impact": "Неаутентифицированный удаленный злоумышленник с постоянными файлами cookie и сетевым доступом может выполнять произвольные команды операционной системы с правами root на кластеризованном устройстве через службу базы данных.",
+  "fix": "В источниках не указаны конкретные исправленные версии, но упоминается, что Cisco выпустила исправления безопасности в конце октября.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию устройств Cisco Expressway-C и Expressway-E, развернутых в виде аппаратных или виртуальных машин.",
+   "Проверьте, имеют ли кластеризованные устройства Cisco Expressway доступ из сети Интернет.",
+   "Проверьте системные журналы и конфигурации на наличие признаков несанкционированного доступа или использования постоянных файлов cookie, связанных со службой базы данных."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Cisco Expressway Series: Schwachstelle durch hartcodierte Anmeldedaten (CVE-2026-76466)",
+  "summary": "Die Cisco Expressway Series enthält eine Schwachstelle durch hartcodierte Anmeldedaten, die es unauthentifizierten Angreifern ermöglicht, Befehle als root über den Baudienst auszuführen. CISA meldet aktive Ausnutzung.",
+  "impact": "Ein unauthentifizierter, remote Angreifer mit persistenten Cookies und Netzzugang kann beliebige Betriebssystembefehle als root auf einem geclusterten Gerät über den Baudienst ausführen.",
+  "fix": "Die Quellen nennen keine konkreten korrigierten Versionen, erwähnen jedoch, dass Cisco Ende Oktober Sicherheitsupdates veröffentlicht hat.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Cisco Expressway-C und Expressway-E Appliances sowie virtuelle Maschinen.",
+   "Überprüfen Sie, ob geclusterte Cisco Expressway-Geräte dem Internet ausgesetzt sind.",
+   "Überprüfen Sie Systemprotokolle und Konfigurationen auf unbefugten Zugriff oder die Verwendung persistenter Cookies im Zusammenhang mit dem Baudienst."
+  ],
+  "regression": null
+ }
+}

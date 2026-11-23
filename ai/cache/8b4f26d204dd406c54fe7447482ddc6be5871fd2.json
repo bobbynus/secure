@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Apache Axis",
+   "versions": "all",
+   "fixed": null,
+   "evidence": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker"
+  }
+ ],
+ "en": {
+  "title": "Apache Axis: unsafe reflection vulnerability via crafted SOAP fault message",
+  "summary": "Apache Axis contains an unsafe reflection vulnerability allowing unauthenticated remote attackers to execute arbitrary code via a crafted SOAP fault message. CISA reports that the vulnerability is actively exploited.",
+  "impact": "An unauthenticated remote attacker can execute arbitrary code by sending a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class is available on the application classpath.",
+  "fix": "The sources state that the impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS), and users are advised to discontinue use and/or transition to a supported version.",
+  "workaround": null,
+  "checks": [
+   "Inventory systems running Apache Axis to check for exposure.",
+   "Check application classpath and software lifecycle status as products may be end-of-life (EoL) or end-of-service (EoS)."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Apache Axis: уязвимость небезопасной рефлексии через специально сформированное SOAP-сообщение об ошибке",
+  "summary": "Apache Axis содержит уязвимость небезопасной рефлексии, позволяющую неаутентифицированным удаленным злоумышленникам выполнять произвольный код с помощью специально сформированного SOAP-сообщения об ошибке. CISA сообщает об активной эксплуатации.",
+  "impact": "Неаутентифицированный удаленный злоумышленник может выполнить произвольный код, отправив специально сформированное SOAP-сообщение об ошибке, которое заставляет Axis загрузить и инициализировать указанный злоумышленником класс при наличии подходящего класса в пути классов приложения.",
+  "fix": "В источниках указано, что затронутый продукт может иметь истекший срок службы (EoL/EoS), и пользователям рекомендуется прекратить его использование или перейти на поддерживаемую версию.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем под управлением Apache Axis для проверки наличия уязвимости.",
+   "Проверьте путь классов приложения и статус жизненного цикла программного обеспечения, так как продукты могут находиться в статусе EoL или EoS."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Apache Axis: Unsichere Reflektierungsschwachstelle über präparierte SOAP-Fault-Nachricht",
+  "summary": "Apache Axis enthält eine Schwachstelle durch unsichere Reflexion, die es unauthentifizierten entfernt agierenden Angreifern ermöglicht, über eine präparierte SOAP-Fault-Nachricht beliebigen Code auszuführen. CISA meldet die aktive Ausnutzung.",
+  "impact": "Ein unauthentifizierter entfernter Angreifer kann beliebigen Code ausführen, indem er eine präparierte SOAP-Fault-Nachricht sendet, die Axis dazu veranlasst, eine vom Angreifer angegebene Klasse zu laden und zu instanziieren, wenn eine passende Klasse im Anwendungs-Classpath verfügbar ist.",
+  "fix": "Die Quellen geben an, dass die betroffenen Produkte das End-of-Life (EoL) und/oder End-of-Service (EoS) erreicht haben könnten, und empfehlen Anwendern, die Nutzung einzustellen oder auf eine unterstützte Version zu wechseln.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Systeme, auf denen Apache Axis läuft, um die Exposition zu prüfen.",
+   "Überprüfen Sie den Anwendungs-Classpath und den Produktlebenszyklusstatus, da die Produkte möglicherweise das End-of-Life (EoL) oder End-of-Service (EoS) erreicht haben."
+  ],
+  "regression": null
+ }
+}

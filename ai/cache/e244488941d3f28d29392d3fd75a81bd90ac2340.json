@@ -1,0 +1,52 @@
+{
+ "affected": [
+  {
+   "product": "VMware vCenter Server",
+   "versions": "prior to fixed versions",
+   "fixed": null,
+   "evidence": "You are affected if you are running any version of VMware vCenter, SDDC Manager, or VMware Tools for Windows prior to the versions listed as \"fixed\" in the VMSA"
+  }
+ ],
+ "en": {
+  "title": "VMware vCenter Server: Authentication Bypass Vulnerability (CVE-2026-123890)",
+  "summary": "An authentication bypass vulnerability in the VMware Directory Service of VMware vCenter Server allows unauthenticated attackers with network access to gain unauthorized administrative access. The flaw has been exploited in the wild.",
+  "impact": "Unauthenticated attackers with network access to a vulnerable vCenter Server can bypass authentication, obtain administrative access, execute arbitrary commands, acquire directory databases like data.mdb, and control managed virtual machines.",
+  "fix": "Apply security updates provided by Broadcom in VMSA-2026-0009.",
+  "workaround": "No official workarounds exist, but network restrictions and firewall controls can help reduce exposure.",
+  "checks": [
+   "Inventory VMware vCenter Server instances across the infrastructure.",
+   "Verify whether running versions are prior to the fixed versions listed in VMSA-2026-0009.",
+   "Apply vendor security updates as soon as possible.",
+   "Review network controls and restrict access to vCenter Server."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "VMware vCenter Server: уязвимость обхода аутентификации (CVE-2026-123890)",
+  "summary": "Уязвимость обхода аутентификации в VMware Directory Service в VMware vCenter Server позволяет неавторизованным злоумышленникам с сетевым доступом получить несанкционированный административный доступ. Проблема эксплуатируется в реальных атаках.",
+  "impact": "Неавторизованные злоумышленники с сетевым доступом к уязвимому vCenter Server могут обойти аутентификацию, получить административный доступ, выполнять произвольные команды, получать базы данных каталогов и управлять виртуальными машинами.",
+  "fix": "Установите обновления безопасности, выпущенные Broadcom в VMSA-2026-0009.",
+  "workaround": "Официальные обходные решения отсутствуют, однако сетевые ограничения и правила межсетевого экрана могут снизить уровень воздействия.",
+  "checks": [
+   "Проведите инвентаризацию экземпляров VMware vCenter Server в инфраструктуре.",
+   "Проверьте, используются ли версии до исправленных версий, указанных в VMSA-2026-0009.",
+   "Установите обновления безопасности от производителя как можно скорее.",
+   "Проверьте сетевые средства управления и ограничьте доступ к vCenter Server."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "VMware vCenter Server: Authentifizierungsumgehung (CVE-2026-123890)",
+  "summary": "Eine Authentifizierungsumgehungsschwachstelle im VMware Directory Service von VMware vCenter Server ermöglicht unauthentifizierten Angreifern mit Netzwerkzugriff einen unbefugten Administratorzugriff. Die Schwachstelle wird aktiv ausgenutzt.",
+  "impact": "Unauthentifizierte Angreifer mit Netzwerkzugriff auf einen anfälligen vCenter Server können die Authentifizierung umgehen, Administratorrechte erlangen, beliebige Befehle ausführen, Verzeichnisdatenbanken abrufen und verwaltete virtuelle Maschinen steuern.",
+  "fix": "Wenden Sie die von Broadcom in VMSA-2026-0009 bereitgestellten Sicherheitsupdates an.",
+  "workaround": "Es gibt keine offiziellen Workarounds, aber Netzwerkeinschränkungen und Firewall-Kontrollen können das Risiko verringern.",
+  "checks": [
+   "Erfassen Sie alle VMware vCenter Server-Instanzen in der Infrastruktur.",
+   "Prüfen Sie, ob Versionen vor den in VMSA-2026-0009 genannten korrigierten Versionen ausgeführt werden.",
+   "Installieren Sie die Hersteller-Updates so schnell wie möglich.",
+   "Überprüfen Sie die Netzwerkkontrollen und schränken Sie den Zugriff auf den vCenter Server ein."
+  ],
+  "regression": null
+ }
+}

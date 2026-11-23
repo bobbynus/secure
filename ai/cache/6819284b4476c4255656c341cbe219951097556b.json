@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Perforce Puppet Enterprise: deserialization vulnerability in report processing",
+  "summary": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in report-processing code, listed in CISA KEV.",
+  "impact": "Allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by submitting a report containing a crafted rich-data type through a PUT request. An unauthenticated network attacker can exploit this if certificates are automatically signed without strong verification.",
+  "fix": "Apply mitigations in accordance with vendor instructions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Perforce Puppet Enterprise installations.",
+   "Verify whether certificate authority automatically signs agent requests without strong verification."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Perforce Puppet Enterprise: уязвимость десериализации при обработке отчетов",
+  "summary": "В Perforce Puppet Enterprise обнаружена уязвимость десериализации недоверенных данных в коде обработки отчетов, включенная в каталог CISA KEV.",
+  "impact": "Позволяет клиенту с любым подписанным CA сертификатом агента выполнять произвольный код на Puppet Server от имени учетной записи службы путем отправки отчета с измененным типом данных через PUT-запрос. Неавторизованный сетевой злоумышленник может проэксплуатировать уязвимость, если сертификаты подписываются автоматически без строгой проверки.",
+  "fix": "Примените средства защиты в соответствии с инструкциями производителя.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установок Perforce Puppet Enterprise.",
+   "Проверьте, подписывает ли центр сертификации запросы агентов автоматически без строгой проверки."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Perforce Puppet Enterprise: Deserialisierungsschwachstelle in der Berichtsverarbeitung",
+  "summary": "Perforce Puppet Enterprise enthält eine Deserialisierungsschwachstelle für untrusted data im Berichtscode und ist im CISA KEV gelistet.",
+  "impact": "Ermöglicht einem Client mit einem beliebigen CA-signierten Agentenzertifikat die Ausführung von beliebigem Programmcode auf dem Puppet Server als Dienstbenutzer durch Einreichen eines Berichts mit einem manipulierten Datentyp über eine PUT-Anfrage. Ein unauthentifizierter Netzwerkangreifer kann dies ausnutzen, wenn Zertifikate ohne starke Überprüfung automatisch signiert werden.",
+  "fix": "Wenden Sie Milderungsmaßnahmen gemäß den Anweisungen des Herstellers an.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Perforce Puppet Enterprise-Installationen.",
+   "Überprüfen Sie, ob die Zertifizierungsstelle Agentenanfragen ohne starke Verifizierung automatisch signiert."
+  ],
+  "regression": null
+ }
+}

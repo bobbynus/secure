@@ -78,44 +78,41 @@
  },
  "publish_state": "published",
  "ai": {
-  "input_hash": "9fb4687fd188d09e24ab1499",
+  "input_hash": "ffbc19030a634d9384b10935",
   "texts": {
    "en": {
     "title": "SAP NetWeaver: Improper neutralization vulnerability in data query logic",
-    "summary": "SAP NetWeaver Enterprise Portal contains a vulnerability allowing unauthenticated attackers to disclose or modify server information via JNDI injection.",
+    "summary": "SAP NetWeaver Enterprise Portal contains a vulnerability in data query logic allowing unauthenticated attackers to disclose or modify server information.",
     "impact": "An unauthenticated attacker can disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
-    "fix": "The sources do not list fixed versions; apply mitigations in accordance with vendor instructions.",
+    "fix": "The sources do not list fixed versions.",
     "workaround": null,
     "checks": [
      "Inventory SAP NetWeaver Enterprise Portal installations.",
-     "Check systems for exposure to JNDI injection vectors.",
-     "Apply vendor-provided mitigations."
+     "Check systems for exposure and apply vendor-provided mitigations as required by CISA guidelines."
     ],
     "regression": null
    },
    "ru": {
-    "title": "SAP NetWeaver: уязвимость нейтрализации в логике запросов данных",
-    "summary": "SAP NetWeaver Enterprise Portal содержит уязвимость, позволяющую неаутентифицированным злоумышленникам раскрывать или изменять информацию о сервере через JNDI-инъекцию.",
-    "impact": "Неаутентифицированный злоумышленник может раскрыть или изменить информацию о сервере с помощью внедренных свойств среды JNDI или URL, используемого при операциях поиска JNDI.",
-    "fix": "В источниках не указаны исправленные версии; примените меры защиты в соответствии с инструкциями производителя.",
+    "title": "SAP NetWeaver: уязвимость нейтрализации элементов в логике запросов данных",
+    "summary": "SAP NetWeaver Enterprise Portal содержит уязвимость в логике запросов данных, позволяющую неаутентифицированным злоумышленникам раскрывать или изменять информацию на сервере.",
+    "impact": "Неаутентифицированный злоумышленник может раскрыть или изменить информацию на сервере с помощью внедренных свойств среды JNDI или URL, используемого при операциях поиска JNDI.",
+    "fix": "В источниках не указаны исправленные версии.",
     "workaround": null,
     "checks": [
      "Проведите инвентаризацию установок SAP NetWeaver Enterprise Portal.",
-     "Проверьте системы на подверженность векторам JNDI-инъекций.",
-     "Примените защитные меры от производителя."
+     "Проверьте системы на предмет доступности и примените смягчающие меры от производителя в соответствии с рекомендациями CISA."
     ],
     "regression": null
    },
    "de": {
-    "title": "SAP NetWeaver: Unzulängliche Neutralisierung in Datenabfragelogik",
-    "summary": "SAP NetWeaver Enterprise Portal enthält eine Schwachstelle, die es unauthentifizierten Angreifern ermöglicht, Serverinformationen über JNDI-Injektion offenzulegen oder zu modifizieren.",
-    "impact": "Ein unauthentifizierter Angreifer kann Serverinformationen über injizierte JNDI-Umgebungseigenschaften oder eine bei JNDI-Suchvorgängen verwendete URL offenlegen oder verändern.",
-    "fix": "Die Quellen nennen keine korrigierten Versionen; wenden Sie Abhilfemaßnahmen gemäß den Herstelleranweisungen an.",
+    "title": "SAP NetWeaver: Schwachstelle bei Neutralisation von Elementen in Datenabfragelogik",
+    "summary": "SAP NetWeaver Enterprise Portal enthält eine Schwachstelle in der Datenabfragelogik, die es unauthentifizierten Angreifern ermöglicht, Serverinformationen offenzulegen oder zu modifizieren.",
+    "impact": "Ein unauthentifizierter Angreifer kann Serverinformationen über injizierte JNDI-Umgebungseigenschaften oder eine bei JNDI-Lookup-Operationen verwendete URL offenzulegen oder modifizieren.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
     "workaround": null,
     "checks": [
      "Inventarisieren Sie SAP NetWeaver Enterprise Portal-Installationen.",
-     "Überprüfen Sie Systeme auf Anfälligkeit für JNDI-Injektionsvektoren.",
-     "Wenden Sie vom Hersteller bereitgestellte Abhilfemaßnahmen an."
+     "Überprüfen Sie Systeme auf Exponiertheit und wenden Sie vom Hersteller bereitgestellte Mitigationsmaßnahmen gemäß den CISA-Richtlinien an."
     ],
     "regression": null
    }
@@ -124,7 +121,7 @@
   "workaround": false,
   "model": "gemini-3.5-flash-lite",
   "prompt": "p3",
-  "generated_at": "2026-11-20T18:40:42Z",
+  "generated_at": "2026-11-23T10:30:43Z",
   "slugs": {
    "ru": "sap-netweaver-uyazvimost-neytralizatsii-v-logike-zaprosov",
    "de": "sap-netweaver-unzulaengliche-neutralisierung-in",
@@ -135,6 +132,6 @@
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 1
+  "calls": 2
  }
 }
