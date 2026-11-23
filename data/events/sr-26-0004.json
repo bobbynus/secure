@@ -66,46 +66,49 @@
   "generated": {
     "model": "gemini-3.5-flash-lite",
     "prompt": "p3",
-    "at": "2026-11-18T15:04:29Z"
+    "at": "2026-11-23T11:11:10Z"
   },
   "translations": {
     "ru": {
       "status": "ready",
       "slug": "microsoft-office-outlook-uyazvimost-spufinga-cve-2026-124194",
-      "title": "Microsoft Office Outlook: уязвимость спуфинга (CVE-2026-124194)",
-      "summary": "В Microsoft Office Outlook обнаружена уязвимость отсутствия взаимодействия с пользователем, позволяющая неавторизованным злоумышленникам выполнять спуфинг по сети. CISA внесла эту проблему в каталог эксплуатируемых уязвимостей.",
-      "impact": "Неавторизованный злоумышленник может осуществить спуфинг по сети из-за отсутствия взаимодействия с пользователем для потенциально небезопасного действия.",
+      "title": "Microsoft Outlook: уязвимость подделки из-за отсутствия взаимодействия с пользователем",
+      "summary": "Microsoft Office Outlook содержит уязвимость подделки, позволяющую неавторизованным злоумышленникам осуществлять подделку по сети. Данная уязвимость эксплуатируется.",
+      "impact": "Неавторизованный злоумышленник может выполнить подделку по сети из-за отсутствия требования взаимодействия с пользователем для потенциально небезопасного действия.",
       "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 10.11.2026: зафиксирована эксплуатация в реальных атаках.",
-      "fix": "Примените средства защиты в соответствии с инструкциями производителя.",
+      "fix": "Источники не указывают конкретных исправленных версий, но ссылаются на обновление безопасности Microsoft 2026-Nov.",
       "checks": [
-        "Проверьте системы Microsoft Office Outlook на наличие уязвимости CVE-2026-124194",
-        "Примените инструкции производителя и защитные меры в соответствии с рекомендациями CISA BOD 26-04"
+        "Проведите инвентаризацию установленных экземпляров Microsoft Office Outlook в системах.",
+        "Проверьте наличие сетевой уязвимости для атак подделки.",
+        "Примените ноябрьское обновление безопасности Microsoft 2026-Nov или рекомендации вендора."
       ]
     },
     "de": {
       "status": "ready",
       "slug": "microsoft-office-outlook-spoofing-schwachstelle-cve-2026-124194",
-      "title": "Microsoft Office Outlook: Spoofing-Schwachstelle (CVE-2026-124194)",
-      "summary": "Microsoft Office Outlook weist eine Schwachstelle durch fehlende Benutzerinteraktion auf, die es unbefugten Angreifern ermöglicht, Spoofing über ein Netzwerk durchzuführen. CISA listet dieses Problem im Katalog bekannter ausgenutzter Schwachstellen.",
-      "impact": "Ein unbefugter Angreifer kann aufgrund einer fehlenden Benutzerinteraktion für eine potenziell unsichere Aktion Spoofing über ein Netzwerk durchführen.",
+      "title": "Microsoft Outlook: Spoofing-Schwachstelle durch fehlende Benutzerinteraktion",
+      "summary": "Microsoft Office Outlook enthält eine Spoofing-Schwachstelle, die es unautorisierten Angreifern ermöglicht, Spoofing über ein Netzwerk auszuführen. Diese Schwachstelle wird aktiv ausgenutzt.",
+      "impact": "Ein unautorisierter Angreifer kann über ein Netzwerk Spoofing durchführen, da eine Benutzerinteraktion für eine möglicherweise unsichere Aktion fehlt.",
       "exploitation": "CISA hat die Schwachstelle am 10.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
-      "fix": "Wenden Sie Abhilfemaßnahmen gemäß den Anweisungen des Herstellers an.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen, verweisen jedoch auf das Sicherheitsupdate von Microsoft vom November 2026 (Microsoft 2026-Nov security update).",
       "checks": [
-        "Überprüfen Sie Microsoft Office Outlook-Systeme auf Betroffenheit von CVE-2026-124194",
-        "Wenden Sie Herstelleranweisungen und Abhilfemaßnahmen gemäß den CISA BOD 26-04-Richtlinien an"
+        "Inventarisieren Sie Microsoft Office Outlook-Installationen auf den Systemen.",
+        "Überprüfen Sie die Exponiertheit gegenüber netzwerksbasierten Spoofing-Angriffen.",
+        "Wenden Sie das Sicherheitsupdate von Microsoft (Microsoft 2026-Nov security update) oder Herstellermitigationen an."
       ]
     },
     "en": {
       "status": "ready",
       "slug": "microsoft-office-outlook-spoofing-vulnerability-cve-2026-124194",
-      "title": "Microsoft Office Outlook: spoofing vulnerability (CVE-2026-124194)",
-      "summary": "Microsoft Office Outlook has a missing user interaction vulnerability allowing unauthorized network attackers to perform spoofing. CISA lists this issue in its Known Exploited Vulnerabilities catalog.",
+      "title": "Microsoft Outlook: spoofing vulnerability via missing user interaction",
+      "summary": "Microsoft Office Outlook contains a spoofing vulnerability allowing unauthorized attackers to perform spoofing over a network. This flaw is known to be exploited in the wild.",
       "impact": "An unauthorized attacker can perform spoofing over a network due to a missing user interaction for a potentially unsafe action.",
       "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 10, 2026: exploitation in real attacks is confirmed.",
-      "fix": "Apply mitigations in accordance with vendor instructions.",
+      "fix": "The sources do not specify fixed versions, but refer to the Microsoft 2026-Nov security update.",
       "checks": [
-        "Check Microsoft Office Outlook systems for exposure to CVE-2026-124194",
-        "Apply vendor instructions and mitigations per CISA BOD 26-04 guidance"
+        "Inventory Microsoft Office Outlook deployments across systems.",
+        "Verify exposure to network-based spoofing attacks.",
+        "Apply the Microsoft 2026-Nov security update or vendor mitigations."
       ]
     }
   }

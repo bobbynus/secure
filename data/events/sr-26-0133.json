@@ -30,23 +30,13 @@
       "USN-9170-3",
       "USN-9171-2",
       "USN-9184-1",
+      "WID-SEC-2025-0155",
       "WID-SEC-2026-2640",
       "WID-SEC-2026-4008"
     ],
     "kb": []
   },
-  "affected": [
-    {
-      "product": "Linux kernel (Oracle)",
-      "versions": "< 4.15.0-1162.173~16.04.1",
-      "fixed": "4.15.0-1162.173~16.04.1"
-    },
-    {
-      "product": "Linux kernel (AWS FIPS)",
-      "versions": "< 5.4.0-1169.180+fips1",
-      "fixed": "5.4.0-1169.180+fips1"
-    }
-  ],
+  "affected": [],
   "cvss": {
     "score": 9.8,
     "version": "3.x",
@@ -113,6 +103,14 @@
       "publisher": "Ubuntu Security Notices",
       "kind": "vendor",
       "date": "2026-11-20"
+    },
+    {
+      "id": "s8",
+      "title": "Linux Kernel: Mehrere Schwachstellen ermöglichen Denial of Service",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-0155",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
+      "date": "2025-01-21"
     }
   ],
   "revisions": [
@@ -129,49 +127,46 @@
   "generated": {
     "model": "gemini-3.5-flash-lite",
     "prompt": "p3",
-    "at": "2026-11-19T17:20:53Z"
+    "at": "2026-11-23T11:11:10Z"
   },
   "translations": {
     "ru": {
       "status": "ready",
       "slug": "yadro-linux-use-after-free-v-setevoy-podsisteme-ipv4-cve-2026",
-      "title": "Ядро Linux: use-after-free в сетевой подсистеме IPv4 (CVE-2026-98432)",
-      "summary": "Уязвимость типа use-after-free в подсистеме IPv4 ядра Linux позволяет неаутентифицированным злоумышленникам выполнять неавторизованный код или команды.",
-      "impact": "Злоумышленник может выполнить неавторизованный код или команды из-за ошибки use-after-free в функциях tcp_v4_syn_recv_sock() и при миграции сокетов запросов во время параллельной обработки IPv4 SYN.",
+      "title": "Ядро Linux: несколько уязвимостей",
+      "summary": "Множественные уязвимости в ядре Linux позволяют злоумышленникам вызвать отказ в обслуживании либо выполнить несанкционированный код или команды.",
+      "impact": "Злоумышленник может использовать эти уязвимости для компрометации системы, выполнения несанкционированного кода или команд либо вызова отказа в обслуживании.",
       "exploitation": "В использованных источниках нет сведений об эксплуатации.",
-      "fix": "Обновите пакеты ядра Linux до версии `4.15.0-1162.173~16.04.1` для систем Oracle и `5.4.0-1169.180+fips1` для систем AWS FIPS, либо примените обновления от производителя.",
+      "fix": "Примените обновления, предоставленные вашим поставщиком, такие как бюллетени безопасности Ubuntu USN-9171-2 и USN-9170-2.",
       "checks": [
-        "Проведите инвентаризацию версий ядра Linux в системах Oracle и AWS FIPS.",
-        "Проверьте, используются ли уязвимые версии пакетов ядра до обновлений.",
-        "Установите соответствующие обновления ядра и перезагрузите систему."
+        "Проверьте установленные версии ядра Linux и обновления пакетов в затронутых системах.",
+        "Проверьте уязвимость компонентов сетевых подсистем IPv4, Netfilter, моста Ethernet и подсистемы XFRM."
       ]
     },
     "de": {
       "status": "ready",
       "slug": "linux-kernel-use-after-free-in-ipv4-netzwerksubsystem-cve-2026",
-      "title": "Linux-Kernel: Use-After-Free in IPv4-Netzwerksubsystem (CVE-2026-98432)",
-      "summary": "Eine Use-After-Free-Schwachstelle im IPv4-Netzwerksubsequent des Linux-Kernels ermöglicht unauthentifizierten Angreifern die Ausführung von unautorisiertem Code oder Befehlen.",
-      "impact": "Ein Angreifer kann unautorisierten Code oder Befehle ausführen aufgrund eines Use-After-Free-Fehlers in tcp_v4_syn_recv_sock() und der Anforderungs-Socket-Migration bei der gleichzeitigen IPv4-SYN-Verarbeitung.",
+      "title": "Linux-Kernel: Mehrere Schwachstellen",
+      "summary": "Mehrere Schwachstellen im Linux-Kernel ermöglichen es Angreifern, einen Denial-of-Service-Angriff durchzuführen oder unautorisierten Code oder Befehle auszuführen.",
+      "impact": "Ein Angreifer kann diese Schwachstellen ausnutzen, um das System zu kompromittieren, unautorisierten Code oder Befehle auszuführen oder einen Denial of Service zu verursachen.",
       "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
-      "fix": "Aktualisieren Sie die Linux-Kernel-Pakete auf Version `4.15.0-1162.173~16.04.1` für Oracle-Systeme und `5.4.0-1169.180+fips1` für AWS-FIPS-Systeme oder wenden Sie die Herstellerupdates an.",
+      "fix": "Wenden Sie die von Ihrem Anbieter bereitgestellten Updates an, wie zum Beispiel die Ubuntu-Sicherheitshinweise USN-9171-2 und USN-9170-2.",
       "checks": [
-        "Inventarisieren Sie Linux-Kernel-Versionen auf Oracle- und AWS-FIPS-Systemen.",
-        "Überprüfen Sie, ob anfällige Kernel-Paketversionen vor den Updates verwendet werden.",
-        "Wenden Sie die entsprechenden Kernel-Updates an und starten Sie das System neu."
+        "Überprüfen Sie die installierten Linux-Kernel-Versionen und Paketupdates auf betroffenen Systemen.",
+        "Überprüfen Sie die Exposition gegenüber Schwachstellen in IPv4-Networking, Netfilter, Ethernet-Bridge und XFRM-Subsystem."
       ]
     },
     "en": {
       "status": "ready",
       "slug": "linux-kernel-use-after-free-in-ipv4-networking-cve-2026-98432",
-      "title": "Linux kernel: use-after-free in IPv4 networking (CVE-2026-98432)",
-      "summary": "A use-after-free vulnerability in the Linux kernel IPv4 networking subsystem allows unauthenticated attackers to execute unauthorized code or commands.",
-      "impact": "An attacker can execute unauthorized code or commands due to a use-after-free flaw in tcp_v4_syn_recv_sock() and request socket migration handling during concurrent IPv4 SYN processing.",
+      "title": "Linux kernel: multiple vulnerabilities",
+      "summary": "Multiple vulnerabilities in the Linux kernel allow attackers to cause a denial of service or execute unauthorized code or commands.",
+      "impact": "An attacker can exploit these vulnerabilities to compromise the system, execute unauthorized code or commands, or cause a denial of service.",
       "exploitation": "The sources reviewed contain no reports of exploitation.",
-      "fix": "Update the Linux kernel packages to version `4.15.0-1162.173~16.04.1` for Oracle systems and `5.4.0-1169.180+fips1` for AWS FIPS systems, or apply vendor updates.",
+      "fix": "Apply the updates provided by your vendor, such as Ubuntu security notices USN-9171-2 and USN-9170-2.",
       "checks": [
-        "Inventory Linux kernel versions across Oracle and AWS FIPS systems.",
-        "Verify if running vulnerable kernel package versions prior to the updates.",
-        "Apply the corresponding kernel updates and reboot the system."
+        "Check installed Linux kernel versions and package updates across affected systems.",
+        "Verify system exposure to IPv4 networking, Netfilter, Ethernet bridge, and XFRM subsystem flaws."
       ]
     }
   }
