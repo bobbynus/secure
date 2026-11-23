@@ -1,0 +1,120 @@
+{
+  "id": "sr-26-0307",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2024-26234"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5036892",
+      "KB5036893",
+      "KB5036894",
+      "KB5036896",
+      "KB5036899",
+      "KB5036909",
+      "KB5036910",
+      "KB5036922",
+      "KB5036925",
+      "KB5036932",
+      "KB5036950",
+      "KB5036960",
+      "KB5036967",
+      "KB5036969"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 6.7,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-23T08:00:40Z",
+    "published": "2026-11-23T09:30:46Z",
+    "updated": "2026-11-23T09:30:46Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Proxy Driver Spoofing Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-26234",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-23"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-23T09:30:46Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-23T09:30:46Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-spufinga-v-proxy-driver-cve-2024",
+      "title": "Microsoft Windows: уязвимость спуфинга в Proxy Driver (CVE-2024-26234)",
+      "summary": "В драйвере прокси Windows обнаружена уязвимость спуфинга, получившая идентификатор CVE-2024-26234 и оценку CVSS 6.7. Microsoft сообщает о публичном раскрытии и эксплуатации уязвимости.",
+      "impact": "Уязвимость позволяет проводить атаки спуфинга в Windows.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления безопасности, предоставленные Microsoft.",
+      "checks": [
+        "Проведите инвентаризацию систем Windows для выявления уязвимых версий.",
+        "Проверьте установку обновлений безопасности Microsoft, содержащих KB5036892, KB5036893, KB5036894, KB5036896, KB5036899, KB5036909, KB5036910, KB5036922, KB5036925, KB5036932, KB5036950, KB5036960, KB5036967 или KB5036969."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-spoofing-schwachstelle-im-proxy-driver-cve",
+      "title": "Microsoft Windows: Spoofing-Schwachstelle im Proxy Driver (CVE-2024-26234)",
+      "summary": "Im Windows Proxy Driver existiert eine Spoofing-Schwachstelle, die unter CVE-2024-26234 mit einem CVSS-Score von 6.7 geführt wird. Microsoft meldet die öffentliche Offenlegung und Ausnutzung der Schwachstelle.",
+      "impact": "Die Schwachstelle ermöglicht Spoofing-Angriffe in Windows.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an.",
+      "checks": [
+        "Inventarisieren Sie Windows-Systeme, um anfällige Versionen zu identifizieren.",
+        "Überprüfen Sie die Anwendung der Microsoft-Sicherheitsupdates mit den Kennungen KB5036892, KB5036893, KB5036894, KB5036896, KB5036899, KB5036909, KB5036910, KB5036922, KB5036925, KB5036932, KB5036950, KB5036960, KB5036967 oder KB5036969."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-proxy-driver-spoofing-vulnerability-cve-2024",
+      "title": "Microsoft Windows: Proxy Driver Spoofing Vulnerability (CVE-2024-26234)",
+      "summary": "A spoofing vulnerability exists in the Windows Proxy Driver, tracked as CVE-2024-26234 with a CVSS score of 6.7. Microsoft reports public disclosure and exploitation of the vulnerability.",
+      "impact": "The vulnerability allows spoofing attacks in Windows.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the security updates provided by Microsoft.",
+      "checks": [
+        "Inventory Windows systems to identify vulnerable versions.",
+        "Verify the application of Microsoft security updates containing KB5036892, KB5036893, KB5036894, KB5036896, KB5036899, KB5036909, KB5036910, KB5036922, KB5036925, KB5036932, KB5036950, KB5036960, KB5036967, or KB5036969."
+      ]
+    }
+  }
+}

@@ -49,6 +49,14 @@
       "publisher": "Microsoft Security Response Center (CVRF API)",
       "kind": "vendor",
       "date": "2026-11-19"
+    },
+    {
+      "id": "s2",
+      "title": "Microsoft confirms Windows printing issues affecting Forcepoint users",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
+      "publisher": "BleepingComputer",
+      "kind": "media",
+      "date": "2026-11-23"
     }
   ],
   "revisions": [

@@ -1,0 +1,98 @@
+{
+  "id": "sr-26-0129",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-95350"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.6,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-19T08:40:42Z",
+    "published": "2026-11-23T09:30:46Z",
+    "updated": "2026-11-23T09:30:46Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Chromium CVE-2026-95350: Buffer overflow in ANGLE",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95350",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-19"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-23T09:30:46Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-23T09:30:46Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-edge-chromium-based-perepolnenie-bufera-v-angle",
+      "title": "Microsoft Edge (Chromium-based): переполнение буфера в ANGLE через CVE-2026-95350",
+      "summary": "Уязвимость переполнения буфера в ANGLE затрагивает Microsoft Edge (Chromium-based). Проблема отслеживается под идентификатором CVE-2026-95350 с оценкой CVSS 9.6.",
+      "impact": "Злоумышленник может вызвать переполнение буфера, приводящее к неопределенным последствиям.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проверьте установки Microsoft Edge (Chromium-based) на уязвимость к CVE-2026-95350."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-edge-chromium-based-pufferueberlauf-in-angle-durch",
+      "title": "Microsoft Edge (Chromium-based): Pufferüberlauf in ANGLE durch CVE-2026-95350",
+      "summary": "Eine Pufferüberlauf-Schwachstelle in ANGLE betrifft Microsoft Edge (Chromium-based). Das Problem wird unter CVE-2026-95350 mit einem CVSS-Score von 9.6 geführt.",
+      "impact": "Ein Angreifer kann einen Pufferüberlauf verursachen, der zu unbestimmten Auswirkungen führt.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Prüfen Sie Microsoft Edge (Chromium-based)-Installation auf Anfälligkeit für CVE-2026-95350."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-edge-chromium-based-buffer-overflow-in-angle-via-cve",
+      "title": "Microsoft Edge (Chromium-based): Buffer overflow in ANGLE via CVE-2026-95350",
+      "summary": "A buffer overflow vulnerability in ANGLE affects Microsoft Edge (Chromium-based). The issue is tracked as CVE-2026-95350 with a CVSS score of 9.6.",
+      "impact": "An attacker can cause a buffer overflow leading to unspecified impacts.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources list no fixed versions.",
+      "checks": [
+        "Check Microsoft Edge (Chromium-based) installations for vulnerability to CVE-2026-95350."
+      ]
+    }
+  }
+}
