@@ -91,38 +91,41 @@
  },
  "publish_state": "published",
  "ai": {
-  "input_hash": "e30d94b44d7e80993193959f",
+  "input_hash": "c7b6a1d4fc0438dad1b0e8a1",
   "texts": {
    "en": {
-    "title": "Microsoft Windows Kernel: CVE-2025-10263 memory access vulnerability",
-    "summary": "A critical vulnerability (CVE-2025-10263) in the Microsoft Windows Kernel affects memory access completion after TLBI.",
-    "impact": "Completion of affected memory accesses might not be guaranteed by completion of a TLBI in the kernel.",
-    "fix": "The sources list no fixed versions.",
+    "title": "Microsoft Windows: CVE-2025-10263 kernel vulnerability",
+    "summary": "A critical vulnerability (CVE-2025-10263) affects the Windows kernel in several Windows 10 and Windows 11 versions.",
+    "impact": "The sources report a vulnerability where completion of affected memory accesses might not be guaranteed by completion of a TLBI in the kernel.",
+    "fix": "Microsoft released updates addressing the issue (KBs include `KB5093998`, `KB5094126`, `KB5094127`, `KB5095051`).",
     "workaround": null,
     "checks": [
-     "Check systems running Windows 10 and Windows 11 for vulnerability status regarding CVE-2025-10263."
+     "Check Windows systems for installed updates `KB5093998`, `KB5094126`, `KB5094127`, or `KB5095051`.",
+     "Verify kernel components on affected Windows 10 and Windows 11 editions."
     ],
     "regression": null
    },
    "ru": {
-    "title": "Ядро Microsoft Windows: уязвимость доступа к памяти CVE-2025-10263",
-    "summary": "Критическая уязвимость (CVE-2025-10263) в ядре Microsoft Windows затрагивает завершение доступа к памяти после TLBI.",
-    "impact": "Завершение затронутых обращений к памяти может не гарантироваться завершением TLBI в ядре.",
-    "fix": "В источниках не указаны исправленные версии.",
+    "title": "Microsoft Windows: уязвимость ядра CVE-2025-10263",
+    "summary": "Критическая уязвимость (CVE-2025-10263) затрагивает ядро Windows в ряде версий Windows 10 и Windows 11.",
+    "impact": "Согласно источникам, завершение затронутых обращений к памяти может не гарантироваться завершением операции TLBI в ядре.",
+    "fix": "Microsoft выпустила обновления, устраняющие проблему (включая `KB5093998`, `KB5094126`, `KB5094127`, `KB5095051`).",
     "workaround": null,
     "checks": [
-     "Проверьте системы под управлением Windows 10 и Windows 11 на уязвимость CVE-2025-10263."
+     "Проверьте системы Windows на наличие установленных обновлений `KB5093998`, `KB5094126`, `KB5094127` или `KB5095051`.",
+     "Проверьте компоненты ядра на затронутых выпусках Windows 10 и Windows 11."
     ],
     "regression": null
    },
    "de": {
-    "title": "Microsoft Windows Kernel: Speicherzugriffsschwachstelle CVE-2025-10263",
-    "summary": "Eine kritische Schwachstelle (CVE-2025-10263) im Microsoft Windows Kernel betrifft den Abschluss von Speicherzugriffen nach TLBI.",
-    "impact": "Der Abschluss betroffener Speicherzugriffe ist möglicherweise nicht durch den Abschluss eines TLBI im Kernel garantiert.",
-    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "title": "Microsoft Windows: Kernel-Schwachstelle CVE-2025-10263",
+    "summary": "Eine kritische Schwachstelle (CVE-2025-10263) betrifft den Windows-Kernel in mehreren Windows 10- und Windows 11-Versionen.",
+    "impact": "Den Quellen zufolge ist der Abschluss betroffener Speicherzugriffe möglicherweise nicht durch den Abschluss eines TLBI im Kernel garantiert.",
+    "fix": "Microsoft hat Updates zur Behebung des Problems veröffentlicht (darunter `KB5093998`, `KB5094126`, `KB5094127`, `KB5095051`).",
     "workaround": null,
     "checks": [
-     "Überprüfen Sie Systeme unter Windows 10 und Windows 11 auf die Schwachstelle CVE-2025-10263."
+     "Überprüfen Sie Windows-Systeme auf installierte Updates `KB5093998`, `KB5094126`, `KB5094127` oder `KB5095051`.",
+     "Prüfen Sie die Kernel-Komponenten auf betroffenen Windows 10- und Windows 11-Editionen."
     ],
     "regression": null
    }
@@ -131,7 +134,7 @@
   "workaround": false,
   "model": "gemini-3.5-flash-lite",
   "prompt": "p3",
-  "generated_at": "2026-11-19T11:51:12Z",
+  "generated_at": "2026-11-23T11:11:10Z",
   "slugs": {
    "ru": "yadro-microsoft-windows-uyazvimost-dostupa-k-pamyati-cve-2025",
    "de": "microsoft-windows-kernel-speicherzugriffsschwachstelle-cve-2025",
@@ -142,6 +145,6 @@
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 2
+  "calls": 3
  }
 }

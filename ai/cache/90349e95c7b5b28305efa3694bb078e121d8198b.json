@@ -1,0 +1,52 @@
+{
+ "affected": [
+  {
+   "product": "Ubuntu Linux kernel (Oracle)",
+   "versions": "16.04 LTS",
+   "fixed": "4.15.0-1162.173~16.04.1",
+   "evidence": "linux-image-4.15.0-1162-oracle –\n4.15.0-1162.173~16.04.1"
+  },
+  {
+   "product": "Ubuntu Linux kernel (AWS FIPS)",
+   "versions": "20.04 LTS",
+   "fixed": "5.4.0-1169.180+fips1",
+   "evidence": "linux-image-5.4.0-1169-aws-fips –\n5.4.0-1169.180+fips1"
+  }
+ ],
+ "en": {
+  "title": "Linux kernel: multiple vulnerabilities",
+  "summary": "Multiple vulnerabilities in the Linux kernel allow attackers to cause a denial of service or execute unauthorized code or commands.",
+  "impact": "An attacker can exploit these vulnerabilities to compromise the system, execute unauthorized code or commands, or cause a denial of service.",
+  "fix": "Apply the updates provided by your vendor, such as Ubuntu security notices USN-9171-2 and USN-9170-2.",
+  "workaround": null,
+  "checks": [
+   "Check installed Linux kernel versions and package updates across affected systems.",
+   "Verify system exposure to IPv4 networking, Netfilter, Ethernet bridge, and XFRM subsystem flaws."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Ядро Linux: несколько уязвимостей",
+  "summary": "Множественные уязвимости в ядре Linux позволяют злоумышленникам вызвать отказ в обслуживании либо выполнить несанкционированный код или команды.",
+  "impact": "Злоумышленник может использовать эти уязвимости для компрометации системы, выполнения несанкционированного кода или команд либо вызова отказа в обслуживании.",
+  "fix": "Примените обновления, предоставленные вашим поставщиком, такие как бюллетени безопасности Ubuntu USN-9171-2 и USN-9170-2.",
+  "workaround": null,
+  "checks": [
+   "Проверьте установленные версии ядра Linux и обновления пакетов в затронутых системах.",
+   "Проверьте уязвимость компонентов сетевых подсистем IPv4, Netfilter, моста Ethernet и подсистемы XFRM."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Linux-Kernel: Mehrere Schwachstellen",
+  "summary": "Mehrere Schwachstellen im Linux-Kernel ermöglichen es Angreifern, einen Denial-of-Service-Angriff durchzuführen oder unautorisierten Code oder Befehle auszuführen.",
+  "impact": "Ein Angreifer kann diese Schwachstellen ausnutzen, um das System zu kompromittieren, unautorisierten Code oder Befehle auszuführen oder einen Denial of Service zu verursachen.",
+  "fix": "Wenden Sie die von Ihrem Anbieter bereitgestellten Updates an, wie zum Beispiel die Ubuntu-Sicherheitshinweise USN-9171-2 und USN-9170-2.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie die installierten Linux-Kernel-Versionen und Paketupdates auf betroffenen Systemen.",
+   "Überprüfen Sie die Exposition gegenüber Schwachstellen in IPv4-Networking, Netfilter, Ethernet-Bridge und XFRM-Subsystem."
+  ],
+  "regression": null
+ }
+}

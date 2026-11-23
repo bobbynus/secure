@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "9233b3ae5af23de8400616c8e838b4e3",
- "last_modified": "Mon, 23 Nov 2026 10:22:57 GMT",
- "checksum": "cf131fd19168bf92584203c0ddf5f45ce3affbbff50f34a29eb782f0dfe34108",
+ "etag": "7f70c0f141e043be65eb821957584971",
+ "last_modified": "Mon, 23 Nov 2026 11:02:59 GMT",
+ "checksum": "4a8d5515ed079897d6e73ced859b6ee493fe6149296a010fb49ca77cf1cce10b",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -49,8 +49,8 @@
   "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/": "80d124cce0a1ce4425203915",
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/": "a3332ea3f919eff2eeed1dec"
  },
- "last_attempt": "2026-11-23T10:30:41Z",
- "last_success": "2026-11-23T10:30:41Z",
+ "last_attempt": "2026-11-23T11:10:48Z",
+ "last_success": "2026-11-23T11:10:48Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

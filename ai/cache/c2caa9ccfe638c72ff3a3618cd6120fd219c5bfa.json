@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "BerriAI LiteLLM: Arbitrary Code Execution via Unprotected Alternate Channel",
+  "summary": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability allowing remote attackers to execute arbitrary code.",
+  "impact": "Remote attackers can execute arbitrary code via bytecode rewriting at the `/guardrails/test_custom_code` URI, or as an authenticated attacker with administrator privileges depending on the vector.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory BerriAI LiteLLM deployments and check exposure of the `/guardrails/test_custom_code` URI.",
+   "Apply mitigations in accordance with vendor instructions and CISA BOD 26-04 guidance."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "BerriAI LiteLLM: выполнение произвольного кода через незащищенный альтернативный канал",
+  "summary": "В BerriAI LiteLLM обнаружена уязвимость незащищенного альтернативного канала, позволяющая удаленным злоумышленникам выполнять произвольный код.",
+  "impact": "Удаленные злоумышленники могут выполнять произвольный код через перезапись байт-кода по URI `/guardrails/test_custom_code`, либо будучи аутентифицированным злоумышленником с правами администратора в зависимости от вектора.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Инвентаризируйте развертывания BerriAI LiteLLM и проверьте доступность URI `/guardrails/test_custom_code`.",
+   "Примените защитные меры в соответствии с инструкциями производителя и рекомендациями CISA BOD 26-04."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "BerriAI LiteLLM: Ausführen von beliebigem Programmcode über ungeschützten alternativen Kanal",
+  "summary": "BerriAI LiteLLM enthält eine Schwachstelle durch einen ungeschützten alternativen Kanal, die es Angreifern ermöglicht, beliebigen Code auszuführen.",
+  "impact": "Entfernte Angreifer können über Bytecode-Umschreibung am URI `/guardrails/test_custom_code` oder als authentifizierter Angreifer mit Administratorrechten beliebigen Programmcode ausführen.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie BerriAI LiteLLM-Installationen und überprüfen Sie die Erreichbarkeit des URI `/guardrails/test_custom_code`.",
+   "Wenden Sie Minderungsmassnahmen gemäss den Herstelleranweisungen und den CISA BOD 26-04-Richtlinien an."
+  ],
+  "regression": null
+ }
+}

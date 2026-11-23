@@ -98,41 +98,41 @@
  },
  "publish_state": "published",
  "ai": {
-  "input_hash": "6bcb0bf5ab1980b7ae14c948",
+  "input_hash": "b0b372fa6c20c8349516b72b",
   "texts": {
    "en": {
-    "title": "Linux Kernel KSMBD: remote code execution via SMB Direct",
-    "summary": "An integer underflow vulnerability in the Linux Kernel KSMBD component allows remote attackers to execute arbitrary code with kernel privileges via SMB Direct.",
-    "impact": "Remote code execution in the context of the kernel. Authentication may or may not be required depending on configuration. Only systems with SMB Direct enabled are vulnerable.",
-    "fix": "Linux has issued an update referenced by commit 7193241a49c958782ba4b8df06da3734d1e317d2.",
+    "title": "Linux Kernel KSMBD: SMB Direct Integer Underflow RCE",
+    "summary": "An integer underflow vulnerability in Linux Kernel KSMBD via SMB Direct allows remote attackers to execute arbitrary code with kernel privileges on systems with SMB Direct enabled.",
+    "impact": "Remote attackers can execute arbitrary code in the context of the kernel. Authentication may or may not be required depending on configuration, and SMB Direct must be enabled.",
+    "fix": "Linux has issued an update addressing the vulnerability.",
     "workaround": null,
     "checks": [
-     "Check if Linux kernel KSMBD is in use and SMB Direct is enabled.",
-     "Verify system kernel version against available updates and vendor commit 7193241a49c958782ba4b8df06da3734d1e317d2."
+     "Check if Linux kernel KSMBD with SMB Direct enabled is in use.",
+     "Verify whether the update referenced by commit `7193241a49c958782ba4b8df06da3734d1e317d2` has been applied."
     ],
     "regression": null
    },
    "ru": {
-    "title": "Linux Kernel KSMBD: удаленное выполнение кода через SMB Direct",
-    "summary": "Уязвимость целочисленного занижения в компоненте Linux Kernel KSMBD позволяет удаленным злоумышленникам выполнять произвольный код с привилегиями ядра через SMB Direct.",
-    "impact": "Удаленное выполнение кода в контексте ядра. Аутентификация может потребоваться или не потребоваться в зависимости от конфигурации. Уязвимы только системы с включенным SMB Direct.",
-    "fix": "Linux выпустила обновление, на которое ссылается коммит 7193241a49c958782ba4b8df06da3734d1e317d2.",
+    "title": "Linux Kernel KSMBD: уязвимость RCE в SMB Direct из-за переполнения снизу",
+    "summary": "Уязвимость целочисленного переполнения снизу в Linux Kernel KSMBD через SMB Direct позволяет удаленным злоумышленникам выполнять произвольный код с правами ядра на системах с включенным SMB Direct.",
+    "impact": "Удаленные злоумышленники могут выполнять произвольный код в контексте ядра. Аутентификация может потребоваться в зависимости от конфигурации, а SMB Direct должен быть включен.",
+    "fix": "Linux выпустила обновление для устранения уязвимости.",
     "workaround": null,
     "checks": [
-     "Проверьте, используется ли Linux kernel KSMBD и включен ли SMB Direct.",
-     "Сверьте версию ядра системы с доступными обновлениями и коммитом вендора 7193241a49c958782ba4b8df06da3734d1e317d2."
+     "Проверьте, используется ли Linux kernel KSMBD с включенным SMB Direct.",
+     "Убедитесь, что применено обновление, указанное в коммите `7193241a49c958782ba4b8df06da3734d1e317d2`."
     ],
     "regression": null
    },
    "de": {
-    "title": "Linux Kernel KSMBD: Remotecodeausführung über SMB Direct",
-    "summary": "Eine Integer-Underflow-Schwachstelle in der Linux Kernel KSMBD-Komponente ermöglicht es entfernten Angreifern, beliebigen Code mit Kernel-Rechten über SMB Direct auszuführen.",
-    "impact": "Remotecodeausführung im Kontext des Kernels. Eine Authentifizierung kann je nach Konfiguration erforderlich sein oder nicht. Nur Systeme mit aktiviertem SMB Direct sind anfällig.",
-    "fix": "Linux hat ein Update bereitgestellt, auf das im Commit 7193241a49c958782ba4b8df06da3734d1e317d2 verwiesen wird.",
+    "title": "Linux Kernel KSMBD: Integer-Underflow in SMB Direct ermöglicht RCE",
+    "summary": "Eine Integer-Underflow-Schwachstelle im Linux Kernel KSMBD über SMB Direct ermöglicht es entfernten Angreifern, beliebigen Code mit Kernel-Rechten auf Systemen mit aktiviertem SMB Direct auszuführen.",
+    "impact": "Entfernte Angreifer können beliebigen Code im Kontext des Kernels ausführen. Eine Authentifizierung kann je nach Konfiguration erforderlich sein, und SMB Direct muss aktiviert sein.",
+    "fix": "Linux hat ein Update zur Behebung der Schwachstelle bereitgestellt.",
     "workaround": null,
     "checks": [
-     "Überprüfen Sie, ob Linux kernel KSMBD verwendet wird und SMB Direct aktiviert ist.",
-     "Prüfen Sie die Kernel-Version des Systems anhand verfügbarer Updates und des Vendor-Commits 7193241a49c958782ba4b8df06da3734d1e317d2."
+     "Prüfen Sie, ob Linux kernel KSMBD mit aktiviertem SMB Direct verwendet wird.",
+     "Überprüfen Sie, ob das im Commit `7193241a49c958782ba4b8df06da3734d1e317d2` genannte Update eingespielt wurde."
     ],
     "regression": null
    }
@@ -141,7 +141,7 @@
   "workaround": false,
   "model": "gemini-3.5-flash-lite",
   "prompt": "p3",
-  "generated_at": "2026-11-19T16:20:56Z",
+  "generated_at": "2026-11-23T11:11:10Z",
   "slugs": {
    "ru": "linux-kernel-ksmbd-udalennoe-vypolnenie-koda-cherez-smb-direct",
    "de": "linux-kernel-ksmbd-remotecodeausfuehrung-ueber-smb-direct",
@@ -152,6 +152,6 @@
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 1
+  "calls": 2
  }
 }

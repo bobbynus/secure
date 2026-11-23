@@ -1,0 +1,42 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Outlook: spoofing vulnerability via missing user interaction",
+  "summary": "Microsoft Office Outlook contains a spoofing vulnerability allowing unauthorized attackers to perform spoofing over a network. This flaw is known to be exploited in the wild.",
+  "impact": "An unauthorized attacker can perform spoofing over a network due to a missing user interaction for a potentially unsafe action.",
+  "fix": "The sources do not specify fixed versions, but refer to the Microsoft 2026-Nov security update.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Office Outlook deployments across systems.",
+   "Verify exposure to network-based spoofing attacks.",
+   "Apply the Microsoft 2026-Nov security update or vendor mitigations."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Outlook: уязвимость подделки из-за отсутствия взаимодействия с пользователем",
+  "summary": "Microsoft Office Outlook содержит уязвимость подделки, позволяющую неавторизованным злоумышленникам осуществлять подделку по сети. Данная уязвимость эксплуатируется.",
+  "impact": "Неавторизованный злоумышленник может выполнить подделку по сети из-за отсутствия требования взаимодействия с пользователем для потенциально небезопасного действия.",
+  "fix": "Источники не указывают конкретных исправленных версий, но ссылаются на обновление безопасности Microsoft 2026-Nov.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установленных экземпляров Microsoft Office Outlook в системах.",
+   "Проверьте наличие сетевой уязвимости для атак подделки.",
+   "Примените ноябрьское обновление безопасности Microsoft 2026-Nov или рекомендации вендора."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Outlook: Spoofing-Schwachstelle durch fehlende Benutzerinteraktion",
+  "summary": "Microsoft Office Outlook enthält eine Spoofing-Schwachstelle, die es unautorisierten Angreifern ermöglicht, Spoofing über ein Netzwerk auszuführen. Diese Schwachstelle wird aktiv ausgenutzt.",
+  "impact": "Ein unautorisierter Angreifer kann über ein Netzwerk Spoofing durchführen, da eine Benutzerinteraktion für eine möglicherweise unsichere Aktion fehlt.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen, verweisen jedoch auf das Sicherheitsupdate von Microsoft vom November 2026 (Microsoft 2026-Nov security update).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Microsoft Office Outlook-Installationen auf den Systemen.",
+   "Überprüfen Sie die Exponiertheit gegenüber netzwerksbasierten Spoofing-Angriffen.",
+   "Wenden Sie das Sicherheitsupdate von Microsoft (Microsoft 2026-Nov security update) oder Herstellermitigationen an."
+  ],
+  "regression": null
+ }
+}
