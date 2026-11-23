@@ -14,10 +14,12 @@
   "cve": [
    "CVE-2026-76466"
   ],
-  "advisory": [],
+  "advisory": [
+   "cisco-sa-vcs-static-cred-hr7EWZ8t"
+  ],
   "kb": []
  },
- "severity": null,
+ "severity": "critical",
  "cvss": {
   "score": 9.8,
   "version": "3.1",
@@ -31,7 +33,7 @@
  "title_hint": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
  "summary_hint": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
  "created_at": "2026-11-20T18:40:39Z",
- "updated_at": "2026-11-23T08:00:40Z",
+ "updated_at": "2026-11-23T16:10:45Z",
  "event_date": "2026-11-20T00:00:00Z",
  "sources": [
   {
@@ -50,6 +52,15 @@
    "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
    "publisher": "BleepingComputer",
    "kind": "media",
+   "date": "2026-11-23"
+  },
+  {
+   "source_id": "cisco-psirt",
+   "item_key": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t",
+   "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Expressway%20Series%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1",
+   "title": "Cisco Expressway Series Remote Code Execution Vulnerability",
+   "publisher": "Cisco Security Advisories",
+   "kind": "vendor",
    "date": "2026-11-23"
   }
  ],
@@ -70,13 +81,20 @@
     "confirmation": "official"
    },
    "source": "bleepingcomputer:https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/"
+  },
+  {
+   "date": "2026-11-23T16:10:45Z",
+   "kind": "source",
+   "facts": {},
+   "source": "cisco-psirt:https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t"
   }
  ],
  "related": [],
  "reason": "added to CISA KEV",
  "texts": {
   "cisa-kev:CVE-2026-76466": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability\nCisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-  "bleepingcomputer:https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/": "CISA flags critical Cisco RCE flaw as actively exploited in attacks\nThe US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]"
+  "bleepingcomputer:https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/": "CISA flags critical Cisco RCE flaw as actively exploited in attacks\nThe US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]",
+  "cisco-psirt:https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t": "Cisco Expressway Series Remote Code Execution Vulnerability\nA vulnerability in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as root.\nThis vulnerability is due to the use of persistent cookies. Additionally, there is insufficient validation of client certificates when the TLS Verify Mode is set to Enabled for clustering, which means that client certificates are not validated. An attacker with possession of the cookies could exploit this vulnerability by connecting to the database service and invoking specific remote procedure call (RPC) commands. A successful exploit could allow the attacker to execute arbitrary commands as root on the underlying operating system of an affected device.\nNote: Cisco Expressway Series refers to Cisco Expressway Core (Expressway-C) devices and Cisco Expressway Edge (Expressway-E) devices.\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.\nThis advisory is available at the following link:\nhttps://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t\nThis advisory is part of a group of advisories. For a complete list of the advisories and links to them, see Cisco Advance Notification for Publication of October 21, 2026, Security Advisories. In addition, for further documentation of improvements and fixes in Cisco Expressway Series see Cisco Expressway Series Security Hardening Release: October 2026.\nSecurity Impact Rating: Critical\nCVE: CVE-2026-76466"
  },
  "publish_state": "published",
  "ai": {

@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "ce9a70635435281b5c56c0eea84c1944",
- "last_modified": "Mon, 23 Nov 2026 15:32:18 GMT",
- "checksum": "1b551bee9766136fefe47ec12226449ef847d26fc914f47e4221a6d820dc4493",
+ "etag": "b2650d10e9aeba7d4e65f491acfa5136",
+ "last_modified": "Mon, 23 Nov 2026 16:02:19 GMT",
+ "checksum": "8b92fe5ee5daf3c27de964bbd88c5c903d78eff15e3ea382fb158fe228511597",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -52,8 +52,8 @@
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/": "a98efb56cab08501fec41ac5",
   "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/": "7cc4d087b28d17eb3a9e8ef3"
  },
- "last_attempt": "2026-11-23T15:40:42Z",
- "last_success": "2026-11-23T15:40:42Z",
+ "last_attempt": "2026-11-23T16:10:45Z",
+ "last_success": "2026-11-23T16:10:45Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

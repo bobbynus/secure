@@ -2,7 +2,7 @@
  "id": "cisco-psirt",
  "etag": null,
  "last_modified": null,
- "checksum": "73fb6d8d5d78e14fd4c1a1769c222c11c4b4908bd4d24c5b6d1315ed89e0ff3c",
+ "checksum": "2c894b132925c8f536886dcdea2090405be9e3b0fddc2a2c68d6bc48309f9c8c",
  "cursor": {},
  "seen": {
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u": "c787835bb3612d2e835e6f36",
@@ -31,7 +31,7 @@
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-expressway-inf-disc-vvYqgSTS": "03f129b583d3f43120fa12e5",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asr9k-tUyxcyXN": "a1c4e0a78f82b5c1d4436b45",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucm-access-PW9e8Jt2": "298ca4e0d3bb2686d4d90551",
-  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t": "53953b6205e5dc537bc67c93",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t": "bc0e9023192f1c9b1e3ae5ef",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-opensrc-snort3-2fXGJPfe": "e2c9c3cfaab5aafde2adf95e",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sec-client-priv-esc-muF8eZdm": "28bea74a285bd1ba33b3e6f4",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cuic-sql-inject-2qbfWSm5": "d344dea5c6e833492d69238c",
@@ -59,10 +59,10 @@
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z": "9452824355a0dead1faf3cfc",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s": "80628deb09dffee942c70c1b"
  },
- "last_attempt": "2026-11-23T15:10:43Z",
- "last_success": "2026-11-23T15:10:43Z",
+ "last_attempt": "2026-11-23T16:10:45Z",
+ "last_success": "2026-11-23T16:10:45Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 58
+ "items_total": 59
 }
