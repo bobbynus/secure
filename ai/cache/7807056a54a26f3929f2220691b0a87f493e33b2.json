@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Sep security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Sep security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge (Chromium-based): CVE-2026-95313",
+  "summary": "A use-after-free vulnerability exists in Microsoft Edge (Chromium-based) within Fullscreen, tracked as CVE-2026-95313.",
+  "impact": "The sources do not detail the specific impact or preconditions.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Edge (Chromium-based) installations.",
+   "Check systems for CVE-2026-95313 exposure."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge (Chromium-based): CVE-2026-95313",
+  "summary": "В Microsoft Edge (Chromium-based) обнаружена уязвимость типа use-after-free в компоненте Fullscreen, зарегистрированная под идентификатором CVE-2026-95313.",
+  "impact": "Источники не описывают конкретные последствия или предварительные условия.",
+  "fix": "Источники не приводят исправленных версий.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установок Microsoft Edge (Chromium-based).",
+   "Проверьте системы на предмет уязвимости CVE-2026-95313."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge (Chromium-based): CVE-2026-95313",
+  "summary": "In Microsoft Edge (Chromium-based) existiert eine Use-After-Free-Schwachstelle in Fullscreen, geführt als CVE-2026-95313.",
+  "impact": "Die Quellen nennen keine konkreten Auswirkungen oder Vorbedingungen.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Erfassen Sie Installationen von Microsoft Edge (Chromium-based).",
+   "Überprüfen Sie Systeme auf Betroffenheit von CVE-2026-95313."
+  ],
+  "regression": null
+ }
+}
