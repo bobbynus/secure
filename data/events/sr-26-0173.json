@@ -19,7 +19,9 @@
     "cve": [
       "CVE-2026-70193"
     ],
-    "advisory": [],
+    "advisory": [
+      "WID-SEC-2026-4742"
+    ],
     "kb": [
       "KB5002927"
     ]
@@ -43,6 +45,14 @@
       "publisher": "Microsoft Security Response Center (CVRF API)",
       "kind": "vendor",
       "date": "2026-11-20"
+    },
+    {
+      "id": "s2",
+      "title": "Microsoft SharePoint: Schwachstelle ermöglicht Codeausführung",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4742",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
+      "date": "2026-11-22"
     }
   ],
   "revisions": [
