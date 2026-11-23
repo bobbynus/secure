@@ -1,0 +1,107 @@
+{
+  "id": "sr-26-0314",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-23",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Project MONAI",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-133968"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-23T00:00:00Z",
+    "published": "2026-11-23T23:11:00Z",
+    "updated": "2026-11-23T23:11:00Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Project MONAI MONAI Label Path Traversal Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133968",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-23"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-23T23:11:00Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-23T23:11:00Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "project-monai-monai-label-uyazvimost-obkhoda-kataloga-cve-2026",
+      "title": "Project MONAI MONAI Label: уязвимость обхода каталога (CVE-2026-133968)",
+      "summary": "Project MONAI MONAI Label содержит уязвимость обхода каталога, позволяющую неаутентифицированным злоумышленникам записывать произвольные файлы.",
+      "impact": "Позволяет неаутентифицированному удаленному злоумышленнику записывать произвольные файлы за пределами целевого каталога хранилища данных, что потенциально может привести к удаленному выполнению кода.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 23.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "Примените средства смягчения последствий в соответствии с инструкциями производителя.",
+      "checks": [
+        "Инвентаризируйте системы, использующие Project MONAI MONAI Label.",
+        "Проверьте активы на предмет доступности из интернета.",
+        "Примените средства устранения уязвимости согласно инструкциям производителя."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "project-monai-monai-label-path-traversal-schwachstelle-cve-2026",
+      "title": "Project MONAI MONAI Label: Path-Traversal-Schwachstelle (CVE-2026-133968)",
+      "summary": "Project MONAI MONAI Label enthält eine Path-Traversal-Schwachstelle, die es unauthentifizierten Angreifern ermöglicht, beliebige Dateien zu schreiben.",
+      "impact": "Ermöglicht einem unauthentifizierten, remote agierenden Angreifer, beliebige Dateien außerhalb des vorgesehenen Datastore-Verzeichnisses zu schreiben, was möglicherweise zur Remote-Code-Ausführung führt.",
+      "exploitation": "CISA hat die Schwachstelle am 23.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Wenden Sie die von der Herstellern bereitgestellten Mitigationsmaßnahmen an.",
+      "checks": [
+        "Erfassen Sie alle Systeme, auf denen Project MONAI MONAI Label ausgeführt wird.",
+        "Überprüfen Sie Assets auf Internetexposition.",
+        "Wenden Sie die Mitigationsmaßnahmen gemäß den Herstelleranweisungen an."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "project-monai-monai-label-path-traversal-vulnerability-cve-2026",
+      "title": "Project MONAI MONAI Label: Path Traversal Vulnerability (CVE-2026-133968)",
+      "summary": "Project MONAI MONAI Label contains a path traversal vulnerability that allows unauthenticated remote attackers to write arbitrary files.",
+      "impact": "Allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 23, 2026: exploitation in real attacks is confirmed.",
+      "fix": "Apply mitigations in accordance with vendor instructions.",
+      "checks": [
+        "Inventory systems running Project MONAI MONAI Label.",
+        "Check assets for internet exposure.",
+        "Apply vendor-provided mitigations as per vendor instructions."
+      ]
+    }
+  }
+}
