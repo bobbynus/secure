@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "b1d0ff4082248a69162d161ee7dc53fd",
- "last_modified": "Mon, 23 Nov 2026 07:26:00 GMT",
- "checksum": "2df7027330842edd033bf24f2a9d5ca32170c0ab1db902a05b950531925c5827",
+ "etag": "191ddeb1d215a1bdb07f64e7c933a0eb",
+ "last_modified": "Mon, 23 Nov 2026 07:54:21 GMT",
+ "checksum": "a6cf8eda78a004236101569e65f74314ffd88660164fe3333c53d8a9d6a5bc17",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -45,12 +45,13 @@
   "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/": "6078c1e8d84753d16d8635e3",
   "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/": "a316d3e6e3a4fd924adcd441",
   "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/": "9774bb2156b67e2fd2cb04fc",
-  "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/": "24d089b407de590bf95496bc"
+  "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/": "24d089b407de590bf95496bc",
+  "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/": "80d124cce0a1ce4425203915"
  },
- "last_attempt": "2026-11-23T07:30:42Z",
- "last_success": "2026-11-23T07:30:42Z",
+ "last_attempt": "2026-11-23T08:00:40Z",
+ "last_success": "2026-11-23T08:00:40Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 42
+ "items_total": 43
 }

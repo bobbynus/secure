@@ -402,8 +402,8 @@
   "CVE-2026-118028": "fafed86315cc90d1fd5533e6",
   "CVE-2026-134352": "7425f3c68b6e3ffe99698bac"
  },
- "last_attempt": "2026-11-23T07:00:38Z",
- "last_success": "2026-11-23T07:00:38Z",
+ "last_attempt": "2026-11-23T08:00:40Z",
+ "last_success": "2026-11-23T08:00:40Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

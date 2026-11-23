@@ -1,7 +1,7 @@
 {
  "id": "sr-26-0176",
  "category": "vulnerability",
- "priority": "high",
+ "priority": "critical",
  "confirmation": "official",
  "lifecycle": "confirmed",
  "fix": "unknown",
@@ -31,7 +31,7 @@
  "title_hint": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
  "summary_hint": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
  "created_at": "2026-11-20T18:40:39Z",
- "updated_at": "2026-11-20T18:40:39Z",
+ "updated_at": "2026-11-23T08:00:40Z",
  "event_date": "2026-11-20T00:00:00Z",
  "sources": [
   {
@@ -42,6 +42,15 @@
    "publisher": "CISA Known Exploited Vulnerabilities",
    "kind": "kev",
    "date": "2026-11-20"
+  },
+  {
+   "source_id": "bleepingcomputer",
+   "item_key": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+   "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+   "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+   "publisher": "BleepingComputer",
+   "kind": "media",
+   "date": "2026-11-23"
   }
  ],
  "revisions": [
@@ -52,12 +61,22 @@
     "reason": "added to CISA KEV"
    },
    "source": "cisa-kev:CVE-2026-76466"
+  },
+  {
+   "date": "2026-11-23T08:00:40Z",
+   "kind": "status",
+   "facts": {
+    "priority": "critical",
+    "confirmation": "official"
+   },
+   "source": "bleepingcomputer:https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/"
   }
  ],
  "related": [],
  "reason": "added to CISA KEV",
  "texts": {
-  "cisa-kev:CVE-2026-76466": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability\nCisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+  "cisa-kev:CVE-2026-76466": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability\nCisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+  "bleepingcomputer:https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/": "CISA flags critical Cisco RCE flaw as actively exploited in attacks\nThe US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]"
  },
  "publish_state": "published",
  "ai": {
