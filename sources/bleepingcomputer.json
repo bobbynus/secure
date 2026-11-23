@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "de73fb6f9a3b69030d5ddab9f50b43eb",
- "last_modified": "Mon, 23 Nov 2026 18:38:40 GMT",
- "checksum": "e49275c0dd30c6222164e98d6b4404e4f0a7da7f7925e80f73bca27b1c7bcfb0",
+ "etag": "4ef5d6bb49a2e38329beeca3816bcc91",
+ "last_modified": "Mon, 23 Nov 2026 19:08:41 GMT",
+ "checksum": "cb61cf90f11cabf6d71e3d945308efe06c506eda8f7599a508f142eacddfeed8",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -54,8 +54,8 @@
   "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/": "6a327b139184940fab3d0556",
   "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/": "757933a73448aa74790564cb"
  },
- "last_attempt": "2026-11-23T18:40:42Z",
- "last_success": "2026-11-23T18:40:42Z",
+ "last_attempt": "2026-11-23T19:10:55Z",
+ "last_success": "2026-11-23T19:10:55Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
