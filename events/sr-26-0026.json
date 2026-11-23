@@ -69,21 +69,92 @@
  "texts": {
   "ms-release-health:wrh-3721": "SQL Server linked server connections might remain open\nStatus: Confirmed. Originating update: OS Build 26200.9711 KB5127648 2026-10-13.\nAfter Windows updates released October 13, 2026 (KB5127648), and later are installed on server devices, connections created by SQL Server linked server queries might remain open after the queries complete. As additional queries are performed, connections to external databases can accumulate instead of closing as expected. This can slow or degrade server performance after prolonged run time.\nThis issue affects SQL Server linked server queries that use OLE DB providers to connect to external databases. Oracle and PostgreSQL connections are among those known to be affected. In affected environments, administrators might observe an increasing number of open connections to external databases, even when the associated SQL Server linked server queries are no longer running.\nIf idle connections can be identified, it is possible to manually close them in order to temporarily relieve server load. It is also possible to temporarily restore system stability by restarting the SQL service. However, these steps can also interrupt active queries or transactions, and the problem can resurface again after sufficient operation time.\nWorkaround: A mitigation is available for affected enterprise devices. To apply this mitigation in your organization, contact Microsoft Support for business.\nNext steps: We will address this issue with an out-of-band update that will be released in the next few days. We will update this documentation once the update is released.\nAffected platforms:\n​Client: Windows 11, version 26H1; Windows 11, version 25H2; Windows 11, version 24H2; Windows 11, version 23H2; Windows 10, version 1809; Windows 10 Enterprise LTSC 2019\n​Server: Windows Server 2025; Windows Server 2022; Windows Server, version 1809; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012"
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "c042cdfd2f9fd8fdb2e48d49",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows: SQL Server linked server connections remain open",
+    "summary": "After installing Windows update `KB5127648` and later, connections created by SQL Server linked server queries might remain open and accumulate, leading to performance degradation.",
+    "impact": "Connections created by SQL Server linked server queries using OLE DB providers (such as Oracle and PostgreSQL) remain open instead of closing, leading to an accumulation of open connections and degraded server performance over time.",
+    "fix": "Microsoft will address this issue with an out-of-band update.",
+    "workaround": "Administrators can manually close idle connections or restart the SQL service. A mitigation is also available for enterprise devices by contacting Microsoft Support for business.",
+    "checks": [
+     "Check systems for installed update `KB5127648` or later.",
+     "Monitor for an increasing number of open connections to external databases from SQL Server linked servers.",
+     "Verify if SQL Server linked server queries using OLE DB providers are active in the environment."
+    ],
+    "regression": {
+     "update": "KB5127648",
+     "symptoms": [
+      "SQL Server linked server connections remain open after queries complete",
+      "Accumulation of open connections to external databases like Oracle and PostgreSQL",
+      "Slowed or degraded server performance after prolonged run time"
+     ],
+     "conditions": "After installing Windows updates released October 13, 2026 (`KB5127648`) and later on server devices using SQL Server linked server queries with OLE DB providers.",
+     "vendorStatus": "Microsoft stated that an out-of-band update will be released in the next few days."
+    }
+   },
+   "ru": {
+    "title": "Microsoft Windows: соединения связанных серверов SQL Server остаются открытыми",
+    "summary": "После установки обновления Windows `KB5127648` и более поздних соединений, созданных запросами связанных серверов SQL Server, могут оставаться открытыми и накапливаться, приводя к деградации производительности.",
+    "impact": "Соединения, созданные запросами связанных серверов SQL Server с использованием провайдеров OLE DB (таких как Oracle и PostgreSQL), остаются открытыми вместо закрытия, что приводит к накоплению соединений и ухудшению производительности сервера со временем.",
+    "fix": "Microsoft устранит эту проблему в внеплановом обновлении.",
+    "workaround": "Администраторы могут вручную закрывать неактивные соединения или перезапускать службу SQL. Для корпоративных устройств доступно смягчение последствий через обращение в службу поддержки Microsoft Support for business.",
+    "checks": [
+     "Проверьте системы на наличие установленного обновления `KB5127648` или более поздних.",
+     "Отслеживайте увеличение числа открытых соединений с внешними базами данных от связанных серверов SQL Server.",
+     "Проверьте, используются ли в окружении запросы связанных серверов SQL Server через провайдеры OLE DB."
+    ],
+    "regression": {
+     "update": "KB5127648",
+     "symptoms": [
+      "Соединения связанных серверов SQL Server остаются открытыми после завершения запросов",
+      "Накопление открытых соединений с внешними базам данных, таким как Oracle и PostgreSQL",
+      "Замедление или деградация производительности сервера после длительной работы"
+     ],
+     "conditions": "После установки обновлений Windows, выпущенных 13 октября 2026 года (`KB5127648`) и позже на серверных устройствах, использующих запросы связанных серверов SQL Server с провайдерами OLE DB.",
+     "vendorStatus": "Microsoft заявила, что внеплановое обновление будет выпущено в ближайшие дни."
+    }
+   },
+   "de": {
+    "title": "Microsoft Windows: SQL-Server-Verbindungen zu verknüpften Servern bleiben offen",
+    "summary": "Nach der Installation des Windows-Updates `KB5127648` und späterer Updates können Verbindungen von Abfragen verknüpfter SQL-Server geöffnet bleiben und sich ansammeln, was zu Leistungseinbußen führt.",
+    "impact": "Verbindungen, die von Abfragen verknüpfter SQL-Server über OLE-DB-Anbieter (wie Oracle und PostgreSQL) erstellt wurden, bleiben offen anstatt sich zu schließen, was zu einer Anhäufung offener Verbindungen und einer Verschlechterung der Serverleistung führt.",
+    "fix": "Microsoft wird dieses Problem mit einem Out-of-Band-Update beheben.",
+    "workaround": "Administratoren können im Leerlauf befindliche Verbindungen manuell schließen oder den SQL-Dienst neu starten. Für Enterprise-Geräte ist eine Mitigierung über den Microsoft Support for business verfügbar.",
+    "checks": [
+     "Überprüfen Sie Systeme auf installierte Updates `KB5127648` oder neuer.",
+     "Überwachen Sie das System auf eine steigende Anzahl offener Verbindungen zu externen Datenbanken von verknüpften SQL-Servern.",
+     "Prüfen Sie, ob in der Umgebung Abfragen verknüpfter SQL-Server mit OLE-DB-Anbietern verwendet werden."
+    ],
+    "regression": {
+     "update": "KB5127648",
+     "symptoms": [
+      "Verbindungen verknüpfter SQL-Server bleiben nach Abschluss der Abfragen geöffnet",
+      "Anhäufung offener Verbindungen zu externen Datenbanken wie Oracle und PostgreSQL",
+      "Verlangsamte oder beeinträchtigte Serverleistung nach längerer Laufzeit"
+     ],
+     "conditions": "Nach der Installation von Windows-Updates vom 13. Oktober 2026 (`KB5127648`) und später auf Servergeräten, die Abfragen verknüpfter SQL-Server mit OLE-DB-Anbietern verwenden.",
+     "vendorStatus": "Microsoft hat erklärt, dass in den kommenden Tagen ein Out-of-Band-Update veröffentlicht wird."
+    }
+   }
+  },
   "affected": [],
-  "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "workaround": true,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-23T10:00:58Z",
+  "slugs": {
+   "ru": "microsoft-windows-soedineniya-svyazannykh-serverov-sql-server",
+   "de": "microsoft-windows-sql-server-verbindungen-zu-verknuepften",
+   "en": "microsoft-windows-sql-server-linked-server-connections-remain"
+  },
+  "published_at": "2026-11-23T10:00:58Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

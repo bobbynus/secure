@@ -61,21 +61,104 @@
  "texts": {
   "ms-release-health:wrh-5047": "Users might be unable to sign in to OWA or send emails on Exchange Server\nStatus: Resolved KB5131090. Originating update: OS Build 20348.5761 KB5126655 2026-10-13.\nAfter installing the October 2026 Windows security update (KB5126655), some on-premises Exchange servers might experience issues accessing or sending email. Users might be unable to sign in to Outlook on the web (OWA), or email messages sent from Outlook might remain in the Outbox and not be delivered. Additionally, Exchange might experience issues accessing mailboxes during mailbox replication.\nIn some affected configurations, Exchange Server OWA might fail with an error MapiExceptionMdbOffline: Unable to make connection to the server. (hr=0x80004005, ec=1142) with Event ID 1006 logged in the application log. Another reported symptom is growing email queues. Installing the October 2026 Exchange server security updates isn’t required for these issues to occur.\nResolution: This issue was resolved by Windows updates released November 10, 2026 (KB5131090), and updates released after that date. We recommend you install the latest update for your device as it contains important improvements and issue resolutions, including this one.\nIf you install an update released November 10, 2026 (KB5131090) or later, you do not need to use a workaround for this issue. If you are using an update released before November 10, and have this issue, you have the option to apply the following workaround.\nWorkaround: This issue can be temporarily mitigated by modifying the registry key as described in Exchange servers may become unstable after installation of October 2026 Windows updates.\nThe October 2026 update introduced a default limit on the amount of memory used by Endpoint Mapper when handling Endpoint Lookup calls. For workloads such as Exchange Server, the default limit of 512 simultaneous Endpoint Lookup calls might not be sufficient under heavy load. Administrators can use this registry setting to increase the maximum number of simultaneous Endpoint Lookup calls, which increases the amount of memory that Endpoint Mapper can use.\nAffected platforms:\n​Client: None\n​Server: Windows Server 2025; Windows Server 2022; Windows Server 2019; Windows Server 2016"
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "bafc485f501052e1b3f0a4b1",
+  "texts": {
+   "en": {
+    "title": "Microsoft Exchange Server and Windows Server: sign-in and mail delivery issues after update",
+    "summary": "Following update KB5126655, Exchange Server users might experience issues signing in to OWA, sending emails, or accessing mailboxes due to Endpoint Mapper memory limits.",
+    "impact": "Users might be unable to sign in to OWA, emails may remain stuck in the Outbox, and Exchange may fail to access mailboxes with error MapiExceptionMdbOffline and Event ID 1006. This occurs due to the October 2026 update introducing a default limit on memory used by Endpoint Mapper when handling Endpoint Lookup calls.",
+    "fix": "Resolved by Windows updates released November 10, 2026 (KB5131090) and later.",
+    "workaround": "Temporarily mitigated by modifying the registry key to increase the maximum number of simultaneous Endpoint Lookup calls for Endpoint Mapper.",
+    "checks": [
+     "Check if Windows Server 2025, 2022, 2019, or 2016 has update KB5126655 installed.",
+     "Verify if Exchange servers experience MapiExceptionMdbOffline errors or growing email queues.",
+     "Apply Windows update KB5131090 or later to resolve the issue.",
+     "Modify the registry setting to increase the maximum simultaneous Endpoint Lookup calls if using updates prior to KB5131090."
+    ],
+    "regression": {
+     "update": "KB5126655",
+     "symptoms": [
+      "Users unable to sign in to Outlook on the web (OWA)",
+      "Email messages sent from Outlook remain in the Outbox and not delivered",
+      "Exchange experiences issues accessing mailboxes during mailbox replication",
+      "OWA fails with MapiExceptionMdbOffline and Event ID 1006",
+      "Growing email queues"
+     ],
+     "conditions": "After installing the October 2026 Windows security update (KB5126655) under heavy load where the default 512 simultaneous Endpoint Lookup calls limit is reached.",
+     "vendorStatus": "Resolved by Windows updates released November 10, 2026 (KB5131090) and later.",
+     "fixedBy": "KB5131090"
+    }
+   },
+   "ru": {
+    "title": "Microsoft Exchange Server и Windows Server: проблемы с входом и доставкой почты после обновления",
+    "summary": "После обновления KB5126655 пользователи Exchange Server могут столкнуться с проблемами входа в OWA, отправки почты или доступа к ящикам из-за лимитов памяти Endpoint Mapper.",
+    "impact": "Пользователи могут не иметь возможности войти в OWA, письма могут оставаться в исходящих, а Exchange может испытывать проблемы с доступом к почтовым ящикам с ошибкой MapiExceptionMdbOffline и событием с ID 1006. Проблема возникает из-за того, что обновление за октябрь 2026 года ввело лимит памяти для Endpoint Mapper.",
+    "fix": "Исправлено обновлениями Windows, выпущенными 10 ноября 2026 года (KB5131090) и позже.",
+    "workaround": "В качестве временного решения можно изменить ключ реестра для увеличения максимального числа одновременных вызовов Endpoint Lookup.",
+    "checks": [
+     "Проверьте, установлено ли обновление KB5126655 на серверах Windows Server 2025, 2022, 2019 или 2016.",
+     "Проверьте, возникают ли на серверах Exchange ошибки MapiExceptionMdbOffline или растут ли очереди писем.",
+     "Установите обновление Windows KB5131090 или более позднее.",
+     "Измените настройки реестра для увеличения лимита вызовов Endpoint Lookup, если используются более ранние обновления."
+    ],
+    "regression": {
+     "update": "KB5126655",
+     "symptoms": [
+      "Пользователи не могут войти в Outlook в Интернете (OWA)",
+      "Письма из Outlook остаются в папке «Исходящие» и не доставляются",
+      "Exchange испытывает проблемы с доступом к почтовым ящикам при их репликации",
+      "OWA завершается с ошибкой MapiExceptionMdbOffline и событием с ID 1006",
+      "Увеличение очередей электронной почты"
+     ],
+     "conditions": "После установки октябрьского обновления безопасности Windows 2026 года (KB5126655) при высокой нагрузке, когда лимит в 512 одновременных вызовов Endpoint Lookup оказывается недостаточным.",
+     "vendorStatus": "Проблема решена в обновлениях Windows от 10 ноября 2026 года (KB5131090) и более поздних.",
+     "fixedBy": "KB5131090"
+    }
+   },
+   "de": {
+    "title": "Microsoft Exchange Server und Windows Server: Anmelde- und E-Mail-Zustellprobleme nach Update",
+    "summary": "Nach dem Update KB5126655 können Exchange-Server-Benutzer Probleme beim Anmelden an OWA, beim Senden von E-Mails oder beim Postfachzugriff haben.",
+    "impact": "Benutzer können sich möglicherweise nicht bei OWA anmelden, E-Mails bleiben im Postausgang stecken und Exchange kann beim Postfachzugriff den Fehler MapiExceptionMdbOffline mit der Ereignis-ID 1006 melden. Dies wird durch ein im Oktober 2026 eingeführtes Speicherlimit für den Endpoint Mapper verursacht.",
+    "fix": "Behoben durch Windows-Updates vom 10. November 2026 (KB5131090) und spätere Updates.",
+    "workaround": "Kann vorübergehend durch Ändern eines Registrierungsschlüssels zur Erhöhung der maximalen Anzahl gleichzeitiger Endpoint-Lookup-Aufrufe gemindert werden.",
+    "checks": [
+     "Prüfen Sie, ob auf Windows Server 2025, 2022, 2019 oder 2016 das Update KB5126655 installiert ist.",
+     "Überprüfen Sie Exchange-Server auf MapiExceptionMdbOffline-Fehler oder anwachsende E-Mail-Warteschlangen.",
+     "Installieren Sie das Windows-Update KB5131090 oder neuer.",
+     "Passen Sie bei Verwendung älterer Updates den Registrierungsschlüssel zur Erhöhung der Endpoint-Lookup-Limits an."
+    ],
+    "regression": {
+     "update": "KB5126655",
+     "symptoms": [
+      "Benutzer können sich nicht bei Outlook im Web (OWA) anmelden",
+      "Von Outlook gesendete E-Mails verbleiben im Postausgang und werden nicht zugestellt",
+      "Exchange hat Probleme beim Zugriff auf Postfächer während der Replikation",
+      "OWA schlägt mit MapiExceptionMdbOffline und Ereignis-ID 1006 fehl",
+      "Anwachsende E-Mail-Warteschlangen"
+     ],
+     "conditions": "Nach der Installation des Windows-Sicherheitsupdates vom Oktober 2026 (KB5126655) unter hoher Last, wenn das Standardlimit von 512 gleichzeitigen Endpoint-Lookup-Aufrufen nicht ausreicht.",
+     "vendorStatus": "Das Problem wurde durch Windows-Updates vom 10. November 2026 (KB5131090) und später behoben.",
+     "fixedBy": "KB5131090"
+    }
+   }
+  },
   "affected": [],
-  "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "workaround": true,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-23T10:00:58Z",
+  "slugs": {
+   "ru": "microsoft-exchange-server-i-windows-server-problemy-s-vkhodom-i",
+   "de": "microsoft-exchange-server-und-windows-server-anmelde-und-e-mail",
+   "en": "microsoft-exchange-server-and-windows-server-sign-in-and-mail"
+  },
+  "published_at": "2026-11-23T10:00:58Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

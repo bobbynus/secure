@@ -1,0 +1,43 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Sep security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Sep security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: Use after free vulnerability CVE-2026-95356",
+  "summary": "Microsoft Edge (Chromium-based) is affected by a use-after-free vulnerability in WindowDialog tracked as CVE-2026-95356.",
+  "impact": "The sources do not specify the exact impact or preconditions.",
+  "fix": "The sources list no fixed version.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Edge (Chromium-based) installations for the affected versions."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: уязвимость use-after-free CVE-2026-95356",
+  "summary": "Microsoft Edge (Chromium-based) подвержен уязвимости типа use-after-free в WindowDialog, зарегистрированной под идентификатором CVE-2026-95356.",
+  "impact": "Источники не уточняют конкретные последствия или предварительные условия.",
+  "fix": "В источниках не указана исправленная версия.",
+  "workaround": null,
+  "checks": [
+   "Проверьте установленные версии Microsoft Edge (Chromium-based)."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: Use-After-Free-Schwachstelle CVE-2026-95356",
+  "summary": "Microsoft Edge (Chromium-based) ist von einer Use-After-Free-Schwachstelle in WindowDialog betroffen, die als CVE-2026-95356 geführt wird.",
+  "impact": "Die Quellen nennen keine genauen Auswirkungen oder Vorbedingungen.",
+  "fix": "Die Quellen nennen keine korrigierte Version.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie die Installationen von Microsoft Edge (Chromium-based) auf die betroffenen Versionen."
+  ],
+  "regression": null
+ }
+}

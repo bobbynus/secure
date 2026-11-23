@@ -59,21 +59,59 @@
  "texts": {
   "msrc:CVE-2026-95357": "Chromium CVE-2026-95357: Out of bounds write in GPU\nMicrosoft Edge (Chromium-based). Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "43c01f4b1848ebf90a64eb29",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: Out of bounds write in GPU via CVE-2026-95357",
+    "summary": "A critical out of bounds write vulnerability exists in Microsoft Edge (Chromium-based) GPU component.",
+    "impact": "An attacker could exploit this vulnerability to cause system impact.",
+    "fix": "The sources list no fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft Edge (Chromium-based) installations for vulnerability to CVE-2026-95357"
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: ошибка записи за пределами буфера в GPU в CVE-2026-95357",
+    "summary": "В компоненте GPU Microsoft Edge (Chromium-based) обнаружена критическая уязвимость записи за пределами буфера.",
+    "impact": "Злоумышленник может использовать данную уязвимость для воздействия на систему.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте установки Microsoft Edge (Chromium-based) на уязвимость CVE-2026-95357"
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: Out-of-Bounds-Schreibfehler in GPU in CVE-2026-95357",
+    "summary": "In der GPU-Komponente von Microsoft Edge (Chromium-based) existiert eine kritische Out-of-Bounds-Schreibschwachstelle.",
+    "impact": "Ein Angreifer kann diese Schwachstelle ausnutzen, um Auswirkungen auf das System zu verursachen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft Edge (Chromium-based)-Installationen auf CVE-2026-95357"
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-23T10:00:58Z",
+  "slugs": {
+   "ru": "microsoft-edge-oshibka-zapisi-za-predelami-bufera-v-gpu-v-cve",
+   "de": "microsoft-edge-out-of-bounds-schreibfehler-in-gpu-in-cve-2026",
+   "en": "microsoft-edge-out-of-bounds-write-in-gpu-via-cve-2026-95357"
+  },
+  "published_at": "2026-11-23T10:00:58Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
