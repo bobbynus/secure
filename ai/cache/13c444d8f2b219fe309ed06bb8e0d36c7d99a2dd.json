@@ -1,0 +1,42 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Project MONAI MONAI Label: Path Traversal Vulnerability (CVE-2026-133968)",
+  "summary": "Project MONAI MONAI Label contains a path traversal vulnerability that allows unauthenticated remote attackers to write arbitrary files.",
+  "impact": "Allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
+  "fix": "Apply mitigations in accordance with vendor instructions.",
+  "workaround": null,
+  "checks": [
+   "Inventory systems running Project MONAI MONAI Label.",
+   "Check assets for internet exposure.",
+   "Apply vendor-provided mitigations as per vendor instructions."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Project MONAI MONAI Label: уязвимость обхода каталога (CVE-2026-133968)",
+  "summary": "Project MONAI MONAI Label содержит уязвимость обхода каталога, позволяющую неаутентифицированным злоумышленникам записывать произвольные файлы.",
+  "impact": "Позволяет неаутентифицированному удаленному злоумышленнику записывать произвольные файлы за пределами целевого каталога хранилища данных, что потенциально может привести к удаленному выполнению кода.",
+  "fix": "Примените средства смягчения последствий в соответствии с инструкциями производителя.",
+  "workaround": null,
+  "checks": [
+   "Инвентаризируйте системы, использующие Project MONAI MONAI Label.",
+   "Проверьте активы на предмет доступности из интернета.",
+   "Примените средства устранения уязвимости согласно инструкциям производителя."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Project MONAI MONAI Label: Path-Traversal-Schwachstelle (CVE-2026-133968)",
+  "summary": "Project MONAI MONAI Label enthält eine Path-Traversal-Schwachstelle, die es unauthentifizierten Angreifern ermöglicht, beliebige Dateien zu schreiben.",
+  "impact": "Ermöglicht einem unauthentifizierten, remote agierenden Angreifer, beliebige Dateien außerhalb des vorgesehenen Datastore-Verzeichnisses zu schreiben, was möglicherweise zur Remote-Code-Ausführung führt.",
+  "fix": "Wenden Sie die von der Herstellern bereitgestellten Mitigationsmaßnahmen an.",
+  "workaround": null,
+  "checks": [
+   "Erfassen Sie alle Systeme, auf denen Project MONAI MONAI Label ausgeführt wird.",
+   "Überprüfen Sie Assets auf Internetexposition.",
+   "Wenden Sie die Mitigationsmaßnahmen gemäß den Herstelleranweisungen an."
+  ],
+  "regression": null
+ }
+}

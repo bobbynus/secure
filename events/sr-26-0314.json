@@ -59,21 +59,65 @@
  "texts": {
   "cisa-kev:CVE-2026-133968": "Project MONAI MONAI Label Path Traversal Vulnerability\nProject MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "bda6229cf7436b216c29305a",
+  "texts": {
+   "en": {
+    "title": "Project MONAI MONAI Label: Path Traversal Vulnerability (CVE-2026-133968)",
+    "summary": "Project MONAI MONAI Label contains a path traversal vulnerability that allows unauthenticated remote attackers to write arbitrary files.",
+    "impact": "Allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
+    "fix": "Apply mitigations in accordance with vendor instructions.",
+    "workaround": null,
+    "checks": [
+     "Inventory systems running Project MONAI MONAI Label.",
+     "Check assets for internet exposure.",
+     "Apply vendor-provided mitigations as per vendor instructions."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Project MONAI MONAI Label: уязвимость обхода каталога (CVE-2026-133968)",
+    "summary": "Project MONAI MONAI Label содержит уязвимость обхода каталога, позволяющую неаутентифицированным злоумышленникам записывать произвольные файлы.",
+    "impact": "Позволяет неаутентифицированному удаленному злоумышленнику записывать произвольные файлы за пределами целевого каталога хранилища данных, что потенциально может привести к удаленному выполнению кода.",
+    "fix": "Примените средства смягчения последствий в соответствии с инструкциями производителя.",
+    "workaround": null,
+    "checks": [
+     "Инвентаризируйте системы, использующие Project MONAI MONAI Label.",
+     "Проверьте активы на предмет доступности из интернета.",
+     "Примените средства устранения уязвимости согласно инструкциям производителя."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Project MONAI MONAI Label: Path-Traversal-Schwachstelle (CVE-2026-133968)",
+    "summary": "Project MONAI MONAI Label enthält eine Path-Traversal-Schwachstelle, die es unauthentifizierten Angreifern ermöglicht, beliebige Dateien zu schreiben.",
+    "impact": "Ermöglicht einem unauthentifizierten, remote agierenden Angreifer, beliebige Dateien außerhalb des vorgesehenen Datastore-Verzeichnisses zu schreiben, was möglicherweise zur Remote-Code-Ausführung führt.",
+    "fix": "Wenden Sie die von der Herstellern bereitgestellten Mitigationsmaßnahmen an.",
+    "workaround": null,
+    "checks": [
+     "Erfassen Sie alle Systeme, auf denen Project MONAI MONAI Label ausgeführt wird.",
+     "Überprüfen Sie Assets auf Internetexposition.",
+     "Wenden Sie die Mitigationsmaßnahmen gemäß den Herstelleranweisungen an."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-23T23:11:00Z",
+  "slugs": {
+   "ru": "project-monai-monai-label-uyazvimost-obkhoda-kataloga-cve-2026",
+   "de": "project-monai-monai-label-path-traversal-schwachstelle-cve-2026",
+   "en": "project-monai-monai-label-path-traversal-vulnerability-cve-2026"
+  },
+  "published_at": "2026-11-23T23:11:00Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
