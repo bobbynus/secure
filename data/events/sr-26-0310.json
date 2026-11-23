@@ -1,0 +1,118 @@
+{
+  "id": "sr-26-0310",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2024-38112"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5040426",
+      "KB5040427",
+      "KB5040430",
+      "KB5040431",
+      "KB5040434",
+      "KB5040437",
+      "KB5040438",
+      "KB5040442",
+      "KB5040448",
+      "KB5040456",
+      "KB5040490",
+      "KB5040499"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.5,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-23T09:00:42Z",
+    "published": "2026-11-23T09:01:09Z",
+    "updated": "2026-11-23T09:01:09Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows MSHTML Platform Spoofing Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38112",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-23"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-23T09:01:09Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-23T09:01:09Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-spufinga-v-platforme-mshtml-cve",
+      "title": "Microsoft Windows: уязвимость спуфинга в платформе MSHTML CVE-2024-38112",
+      "summary": "В платформе Microsoft Windows MSHTML обнаружена уязвимость спуфинга, для которой зафиксирована эксплуатация.",
+      "impact": "Злоумышленник может использовать уязвимость спуфинга в платформе MSHTML. Сообщается об эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления, предоставленные Microsoft.",
+      "checks": [
+        "Проведите инвентаризацию систем Windows 10 на предмет уязвимости платформы MSHTML.",
+        "Проверьте установку обновлений безопасности Microsoft."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-spoofing-schwachstelle-in-mshtml-platform-cve",
+      "title": "Microsoft Windows: Spoofing-Schwachstelle in MSHTML Platform CVE-2024-38112",
+      "summary": "In der Microsoft Windows MSHTML Platform existiert eine Spoofing-Schwachstelle, deren Ausnutzung gemeldet wurde.",
+      "impact": "Ein Angreifer kann die Spoofing-Schwachstelle in der MSHTML Platform ausnutzen. Die Ausnutzung wurde gemeldet.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+      "checks": [
+        "Inventarisieren Sie Windows 10-Systeme, um die Exposition der MSHTML Platform zu prüfen.",
+        "Überprüfen Sie, ob Microsoft-Sicherheitsupdates installiert sind."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-cve-2024-38112-mshtml-platform-spoofing",
+      "title": "Microsoft Windows: CVE-2024-38112 MSHTML Platform Spoofing Vulnerability",
+      "summary": "A spoofing vulnerability exists in the Microsoft Windows MSHTML platform, reported as exploited.",
+      "impact": "An attacker can exploit the spoofing vulnerability in the MSHTML platform. Exploitation has been reported.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply the updates provided by Microsoft.",
+      "checks": [
+        "Inventory Windows 10 systems to check for MSHTML platform exposure.",
+        "Verify if Microsoft security updates are installed."
+      ]
+    }
+  }
+}

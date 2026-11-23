@@ -20,7 +20,9 @@
     "cve": [
       "CVE-2025-42884"
     ],
-    "advisory": [],
+    "advisory": [
+      "WID-SEC-2025-2536"
+    ],
     "kb": []
   },
   "affected": [],
@@ -42,6 +44,14 @@
       "publisher": "CISA Known Exploited Vulnerabilities",
       "kind": "kev",
       "date": "2026-11-20"
+    },
+    {
+      "id": "s2",
+      "title": "SAP Software: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-2536",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
+      "date": "2025-11-10"
     }
   ],
   "revisions": [
