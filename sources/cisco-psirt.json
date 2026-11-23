@@ -2,7 +2,7 @@
  "id": "cisco-psirt",
  "etag": null,
  "last_modified": null,
- "checksum": "2c894b132925c8f536886dcdea2090405be9e3b0fddc2a2c68d6bc48309f9c8c",
+ "checksum": "170917aef94cd299828b2686f7b9cf49b99025c5b687b036be58bfaae9fa08bb",
  "cursor": {},
  "seen": {
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u": "c787835bb3612d2e835e6f36",
@@ -56,13 +56,13 @@
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multiauth-bypass-sgD2HbL4": "4ad8b01c970a7180e26ee760",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftdvirtual-dos-MuenGnYR": "26b9fcd128233dbbca5b89a4",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-multi-e93M3vdA": "0ddd6eedf526a5f4ca8dd9d0",
-  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z": "9452824355a0dead1faf3cfc",
-  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s": "80628deb09dffee942c70c1b"
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z": "cd7ae6f24395456cd752fd9c",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s": "32223d65ea519876a8f8ac42"
  },
- "last_attempt": "2026-11-23T20:10:41Z",
- "last_success": "2026-11-23T20:10:41Z",
+ "last_attempt": "2026-11-23T21:10:42Z",
+ "last_success": "2026-11-23T21:10:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 59
+ "items_total": 61
 }

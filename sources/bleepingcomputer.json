@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "32c65b800afa4bdb75d836607e797607",
- "last_modified": "Mon, 23 Nov 2026 20:40:22 GMT",
- "checksum": "05de650af00b6de3f9f929c43f3bcf9799d4d1232120371de156e7bd1ac517c8",
+ "etag": "abe15b24d94445374a7c7bed648d99b1",
+ "last_modified": "Mon, 23 Nov 2026 21:04:52 GMT",
+ "checksum": "e6c64fc3747112b90eedabfe6b14b5f7d634467d25a69563f72a2d4984701181",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -54,12 +54,13 @@
   "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/": "6a327b139184940fab3d0556",
   "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/": "757933a73448aa74790564cb",
   "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/": "8d222f526e1707601fe39015",
-  "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/": "4cf1f6a2fb60eb334055a23b"
+  "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/": "4cf1f6a2fb60eb334055a23b",
+  "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/": "a26907bb28e704644b26a686"
  },
- "last_attempt": "2026-11-23T20:40:42Z",
- "last_success": "2026-11-23T20:40:42Z",
+ "last_attempt": "2026-11-23T21:10:42Z",
+ "last_success": "2026-11-23T21:10:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 52
+ "items_total": 53
 }
