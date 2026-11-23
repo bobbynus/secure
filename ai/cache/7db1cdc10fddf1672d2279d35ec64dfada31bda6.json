@@ -1,0 +1,85 @@
+{
+ "affected": [
+  {
+   "product": "Windows",
+   "versions": "multiple",
+   "fixed": "KB5131096",
+   "evidence": "Status: Resolved KB5131096. Originating update: OS Build 19045.7725 KB5122878 2026-09-08."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: USB audio devices fail to start after KB5122878",
+  "summary": "After installing update `KB5122878`, USB Audio Class 1.0 devices might fail to start or produce no sound on various Windows versions.",
+  "impact": "USB Audio Class 1.0 devices might fail to start with error code 10, produce no audio output, or have unresponsive volume controls and sound settings after installing `KB5122878`.",
+  "fix": "Resolved in update `KB5131096` and subsequent updates, as well as an out-of-band update released on September 14, 2026.",
+  "workaround": "Switching to 2-channel mode restored audio in some cases for multichannel audio features.",
+  "checks": [
+   "Check Windows systems for the installation of update `KB5122878`.",
+   "Verify if USB Audio Class 1.0 devices exhibit error Code 10 in Device Manager or lack audio output.",
+   "Apply the resolved update `KB5131096` or later updates."
+  ],
+  "regression": {
+   "update": "KB5122878",
+   "symptoms": [
+    "Device displays an error in Device Manager: \"This device cannot start (Code 10).\"",
+    "No audio output.",
+    "Volume controls are unresponsive or remain at zero.",
+    "Sound settings are unresponsive or unavailable."
+   ],
+   "conditions": "Installing the September 8, 2026, Windows security update (`KB5122878`) on systems with USB Audio Class 1.0 devices.",
+   "vendorStatus": "Resolved in subsequent updates.",
+   "fixedBy": "KB5131096",
+   "rollback": null
+  }
+ },
+ "ru": {
+  "title": "Microsoft Windows: сбои USB-аудиоустройств после обновления KB5122878",
+  "summary": "После установки обновления `KB5122878` USB-аудиоустройства класса 1.0 могут не запускаться или не воспроизводить звук в различных версиях Windows.",
+  "impact": "USB-аудиоустройства класса 1.0 могут выдавать ошибку с кодом 10 в Диспетчере устройств, не выводить звук или иметь не реагирующие элементы управления громкостью после установки `KB5122878`.",
+  "fix": "Проблема решена в обновлении `KB5131096` и более поздних, а также во внеплановом обновлении от 14 сентября 2026 года.",
+  "workaround": "Переключение в 2-канальный режим в некоторых случаях восстанавливало звук для многоканальных аудиофункций.",
+  "checks": [
+   "Проверьте системы Windows на наличие установленного обновления `KB5122878`.",
+   "Убедитесь, выдают ли USB-аудиоустройства класса 1.0 ошибку с кодом 10 в Диспетчере устройств или не имеют звука.",
+   "Установите исправленное обновление `KB5131096` или более поздние версии."
+  ],
+  "regression": {
+   "update": "KB5122878",
+   "symptoms": [
+    "Устройство отображает ошибку в Диспетчере устройств: \"This device cannot start (Code 10).\"",
+    "Отсутствует аудиовыход.",
+    "Элементы управления громкостью не реагируют или остаются на нуле.",
+    "Настройки звука не реагируют или недоступны."
+   ],
+   "conditions": "Установка сентябрьского обновления безопасности Windows от 8 сентября 2026 года (`KB5122878`) на системах с USB-аудиоустройствами класса 1.0.",
+   "vendorStatus": "Исправлено в последующих обновлениях.",
+   "fixedBy": "KB5131096",
+   "rollback": null
+  }
+ },
+ "de": {
+  "title": "Microsoft Windows: USB-Audiogeräte starten nach KB5122878 nicht",
+  "summary": "Nach der Installation von Update `KB5122878` starten USB Audio Class 1.0-Geräte unter verschiedenen Windows-Versionen möglicherweise nicht oder geben keinen Ton aus.",
+  "impact": "USB Audio Class 1.0-Geräte können nach der Installation von `KB5122878` im Geräte-Manager den Fehlercode 10 anzeigen, keinen Ton ausgeben oder nicht reagierende Lautstärkeregler aufweisen.",
+  "fix": "Behoben in Update `KB5131096` und späteren Updates sowie in einem Out-of-Band-Update vom 14. September 2026.",
+  "workaround": "Das Umschalten in den 2-Kanal-Modus stellte in einigen Fällen den Ton bei Mehrkanal-Audiofunktionen wieder her.",
+  "checks": [
+   "Überprüfen Sie Windows-Systeme auf die Installation des Updates `KB5122878`.",
+   "Prüfen Sie, ob USB Audio Class 1.0-Geräte im Geräte-Manager Fehlercode 10 anzeigen oder keinen Ton ausgeben.",
+   "Wenden Sie das korrigierte Update `KB5131096` oder neuere Updates an."
+  ],
+  "regression": {
+   "update": "KB5122878",
+   "symptoms": [
+    "Das Gerät zeigt im Geräte-Manager einen Fehler an: \"This device cannot start (Code 10).\"",
+    "Keine Tonausgabe.",
+    "Lautstärkeregler reagieren nicht oder bleiben auf Null.",
+    "Toneinstellungen reagieren nicht oder sind nicht verfügbar."
+   ],
+   "conditions": "Installation des Windows-Sicherheitsupdates vom 8. September 2026 (`KB5122878`) auf Systemen mit USB Audio Class 1.0-Geräten.",
+   "vendorStatus": "In späteren Updates behoben.",
+   "fixedBy": "KB5131096",
+   "rollback": null
+  }
+ }
+}

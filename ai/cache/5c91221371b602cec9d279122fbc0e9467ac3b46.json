@@ -1,0 +1,79 @@
+{
+ "affected": [
+  {
+   "product": "Windows 11",
+   "versions": "24H2 and later",
+   "fixed": null,
+   "evidence": "this known issue affects only systems running Windows 11 24H2 and later."
+  }
+ ],
+ "en": {
+  "title": "Windows: November 2026 hotpatch causes printing and app issues",
+  "summary": "The November 2026 Windows hotpatch update (KB5132043) causes printing and application issues on Windows 11 systems running the Forcepoint DLP Endpoint Agent.",
+  "impact": "Users may experience printing issues where the print option is greyed out or errors occur because the Print Spooler service fails to start, alongside app installation and launch issues.",
+  "fix": "No fix is yet available from Microsoft.",
+  "workaround": "Forcepoint has shared a temporary workaround in a support document accessible via the Forcepoint support portal.",
+  "checks": [
+   "Check systems for the installation of the November 2026 Windows hotpatch update `KB5132043`.",
+   "Verify whether Windows 11 24H2 or later systems running Forcepoint DLP Endpoint Agent experience printing issues or Print Spooler failures."
+  ],
+  "regression": {
+   "update": "KB5132043",
+   "symptoms": [
+    "Print option is greyed out or errors occur when selecting a printer",
+    "Print Spooler service fails to start",
+    "App installation and launch issues affecting Office and third-party applications"
+   ],
+   "conditions": "Systems running Windows 11 24H2 and later with the November 2026 Windows hotpatch update and Forcepoint DLP Endpoint Agent installed.",
+   "vendorStatus": "Microsoft confirmed the issues; a fix is not yet available.",
+   "fixedBy": null,
+   "rollback": null
+  }
+ },
+ "ru": {
+  "title": "Windows: ноябрьский хотфикс 2026 года вызывает проблемы с печатью",
+  "summary": "Ноябрьское обновление-хотфикс Windows 2026 года (KB5132043) вызывает проблемы с печатью и приложениями в системах Windows 11 с установленным агентом Forcepoint DLP Endpoint Agent.",
+  "impact": "Пользователи могут столкнуться с проблемами печати, когда опция печати неактивна или возникают ошибки из-за сбоя службы диспетчера печати (Print Spooler), а также с проблемами установки и запуска приложений.",
+  "fix": "Компания Microsoft еще не выпустила исправление.",
+  "workaround": "Forcepoint опубликовала временное обходное решение в документе поддержки на своем портале.",
+  "checks": [
+   "Проверьте системы на наличие ноябрьского обновления-хотфикса Windows 2026 года `KB5132043`.",
+   "Убедитесь, испытывают ли системы Windows 11 24H2 и новее с Forcepoint DLP Endpoint Agent проблемы с печатью или сбои службы диспетчера печати."
+  ],
+  "regression": {
+   "update": "KB5132043",
+   "symptoms": [
+    "Опция печати неактивна или возникают ошибки при выборе принтера",
+    "Служба диспетчера печати не запускается",
+    "Проблемы установки и запуска офисных и сторонних приложений"
+   ],
+   "conditions": "Системы под управлением Windows 11 24H2 и новее с установленным ноябрьским хотфиксом Windows 2026 года и агентом Forcepoint DLP Endpoint Agent.",
+   "vendorStatus": "Microsoft подтвердила наличие проблем, исправление пока недоступно.",
+   "fixedBy": null,
+   "rollback": null
+  }
+ },
+ "de": {
+  "title": "Windows: November-2026-Hotpatch verursacht Druck- und App-Probleme",
+  "summary": "Das Windows-Hotpatch-Update vom November 2026 (KB5132043) führt auf Windows-11-Systemen mit dem Forcepoint DLP Endpoint Agent zu Druck- und Anwendungsproblemen.",
+  "impact": "Benutzer können auf Druckprobleme stoßen, bei denen die Druckoption ausgegraut ist oder Fehler auftreten, weil der Druckdienst (Print Spooler) nicht startet, sowie auf Probleme bei der Installation und beim Start von Apps.",
+  "fix": "Microsoft hat noch keinen Fix bereitgestellt.",
+  "workaround": "Forcepoint hat ein temporäres Workaround in einem Support-Dokument im Forcepoint-Supportportal bereitgestellt.",
+  "checks": [
+   "Überprüfen Sie Systeme auf die Installation des Windows-Hotpatch-Updates vom November 2026 `KB5132043`.",
+   "Prüfen Sie, ob Windows 11 24H2 oder neuere Systeme mit dem Forcepoint DLP Endpoint Agent Druckprobleme oder Ausfälle des Druckdienstes aufweisen."
+  ],
+  "regression": {
+   "update": "KB5132043",
+   "symptoms": [
+    "Druckoption ist ausgegraut oder es treten Fehler bei der Druckerwahl auf",
+    "Druckdienst (Print Spooler) startet nicht",
+    "Probleme bei Installation und Start von Office- und Drittanbieteranwendungen"
+   ],
+   "conditions": "Systeme mit Windows 11 24H2 und neuer, auf denen das November-2026-Hotpatch-Update und der Forcepoint DLP Endpoint Agent installiert sind.",
+   "vendorStatus": "Microsoft hat die Probleme bestätigt; ein Fix ist noch nicht verfügbar.",
+   "fixedBy": null,
+   "rollback": null
+  }
+ }
+}

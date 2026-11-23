@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft SharePoint: Remote Code Execution Vulnerability (CVE-2026-70193)",
+  "summary": "A critical remote code execution vulnerability exists in Microsoft SharePoint Server and Microsoft SharePoint Online.",
+  "impact": "An attacker can achieve remote code execution. Preconditions and specific details are not provided in the sources.",
+  "fix": "Apply update KB5002927.",
+  "workaround": null,
+  "checks": [
+   "Inventory SharePoint Server and Microsoft SharePoint Online installations.",
+   "Check if KB5002927 is applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода (CVE-2026-70193)",
+  "summary": "В Microsoft SharePoint Server и Microsoft SharePoint Online обнаружена критическая уязвимость удаленного выполнения кода.",
+  "impact": "Злоумышленник может выполнить удаленный код. Предварительные условия и детали в источниках не указаны.",
+  "fix": "Установите обновление KB5002927.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установок SharePoint Server и Microsoft SharePoint Online.",
+   "Проверьте, установлено ли обновление KB5002927."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft SharePoint: Remotecodeausführung (CVE-2026-70193)",
+  "summary": "In Microsoft SharePoint Server und Microsoft SharePoint Online existiert eine kritische Schwachstelle zur Remotecodeausführung.",
+  "impact": "Ein Angreifer kann Remotecode ausführen. Voraussetzungen und Details werden in den Quellen nicht genannt.",
+  "fix": "Wenden Sie das Update KB5002927 an.",
+  "workaround": null,
+  "checks": [
+   "Erfassen Sie SharePoint Server- und Microsoft SharePoint Online-Installationen.",
+   "Prüfen Sie, ob KB5002927 angewendet wurde."
+  ],
+  "regression": null
+ }
+}

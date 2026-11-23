@@ -98,50 +98,50 @@
  },
  "publish_state": "published",
  "ai": {
-  "input_hash": "ebf50193f290fd0689a6c5e4",
+  "input_hash": "65cb077912dc593355e8f20d",
   "texts": {
    "en": {
-    "title": "Microsoft Windows: Xbox Live Networking Service RCE Vulnerability (CVE-2026-112967)",
-    "summary": "A critical remote code execution vulnerability affects the Windows Xbox Live Networking Service in Microsoft Windows.",
-    "impact": "An attacker can achieve remote code execution in the Windows Xbox Live Networking Service.",
-    "fix": "Apply the updates provided by Microsoft (including KB5131085, KB5131087, KB5131096, KB5132043, KB5132059, KB5132061).",
-    "workaround": null,
+    "title": "Windows: November 2026 hotpatch causes printing and app issues",
+    "summary": "The November 2026 Windows hotpatch update (KB5132043) causes printing and application issues on Windows 11 systems running the Forcepoint DLP Endpoint Agent.",
+    "impact": "Users may experience printing issues where the print option is greyed out or errors occur because the Print Spooler service fails to start, alongside app installation and launch issues.",
+    "fix": "No fix is yet available from Microsoft.",
+    "workaround": "Forcepoint has shared a temporary workaround in a support document accessible via the Forcepoint support portal.",
     "checks": [
-     "Inventory Microsoft Windows systems for Xbox Live Networking Service exposure",
-     "Verify whether updates KB5131085, KB5131087, KB5131096, KB5132043, KB5132059, or KB5132061 are installed"
+     "Check systems for the installation of the November 2026 Windows hotpatch update `KB5132043`.",
+     "Verify whether Windows 11 24H2 or later systems running Forcepoint DLP Endpoint Agent experience printing issues or Print Spooler failures."
     ],
     "regression": null
    },
    "ru": {
-    "title": "Microsoft Windows: уязвимость RCE в службе Xbox Live Networking Service (CVE-2026-112967)",
-    "summary": "Критическая уязвимость удаленного выполнения кода затрагивает службу Windows Xbox Live Networking Service в Microsoft Windows.",
-    "impact": "Злоумышленник может выполнить удаленный код в службе Windows Xbox Live Networking Service.",
-    "fix": "Установите обновления, предоставленные Microsoft (включая KB5131085, KB5131087, KB5131096, KB5132043, KB5132059, KB5132061).",
-    "workaround": null,
+    "title": "Windows: ноябрьский хотфикс 2026 года вызывает проблемы с печатью",
+    "summary": "Ноябрьское обновление-хотфикс Windows 2026 года (KB5132043) вызывает проблемы с печатью и приложениями в системах Windows 11 с установленным агентом Forcepoint DLP Endpoint Agent.",
+    "impact": "Пользователи могут столкнуться с проблемами печати, когда опция печати неактивна или возникают ошибки из-за сбоя службы диспетчера печати (Print Spooler), а также с проблемами установки и запуска приложений.",
+    "fix": "Компания Microsoft еще не выпустила исправление.",
+    "workaround": "Forcepoint опубликовала временное обходное решение в документе поддержки на своем портале.",
     "checks": [
-     "Проведите инвентаризацию систем Microsoft Windows на предмет использования службы Xbox Live Networking Service",
-     "Проверьте наличие установленных обновлений KB5131085, KB5131087, KB5131096, KB5132043, KB5132059 или KB5132061"
+     "Проверьте системы на наличие ноябрьского обновления-хотфикса Windows 2026 года `KB5132043`.",
+     "Убедитесь, испытывают ли системы Windows 11 24H2 и новее с Forcepoint DLP Endpoint Agent проблемы с печатью или сбои службы диспетчера печати."
     ],
     "regression": null
    },
    "de": {
-    "title": "Microsoft Windows: RCE-Schwachstelle im Xbox Live Networking Service (CVE-2026-112967)",
-    "summary": "Eine kritische Schwachstelle zur Remote-Code-Ausführung betrifft den Windows Xbox Live Networking Service in Microsoft Windows.",
-    "impact": "Ein Angreifer kann Remote-Code-Ausführung im Windows Xbox Live Networking Service erreichen.",
-    "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an (einschließlich KB5131085, KB5131087, KB5131096, KB5132043, KB5132059, KB5132061).",
-    "workaround": null,
+    "title": "Windows: November-2026-Hotpatch verursacht Druck- und App-Probleme",
+    "summary": "Das Windows-Hotpatch-Update vom November 2026 (KB5132043) führt auf Windows-11-Systemen mit dem Forcepoint DLP Endpoint Agent zu Druck- und Anwendungsproblemen.",
+    "impact": "Benutzer können auf Druckprobleme stoßen, bei denen die Druckoption ausgegraut ist oder Fehler auftreten, weil der Druckdienst (Print Spooler) nicht startet, sowie auf Probleme bei der Installation und beim Start von Apps.",
+    "fix": "Microsoft hat noch keinen Fix bereitgestellt.",
+    "workaround": "Forcepoint hat ein temporäres Workaround in einem Support-Dokument im Forcepoint-Supportportal bereitgestellt.",
     "checks": [
-     "Inventarisieren Sie Microsoft Windows-Systeme hinsichtlich des Xbox Live Networking Service",
-     "Überprüfen Sie, ob die Updates KB5131085, KB5131087, KB5131096, KB5132043, KB5132059 oder KB5132061 installiert sind"
+     "Überprüfen Sie Systeme auf die Installation des Windows-Hotpatch-Updates vom November 2026 `KB5132043`.",
+     "Prüfen Sie, ob Windows 11 24H2 oder neuere Systeme mit dem Forcepoint DLP Endpoint Agent Druckprobleme oder Ausfälle des Druckdienstes aufweisen."
     ],
     "regression": null
    }
   },
   "affected": [],
-  "workaround": false,
+  "workaround": true,
   "model": "gemini-3.5-flash-lite",
   "prompt": "p3",
-  "generated_at": "2026-11-20T16:30:55Z",
+  "generated_at": "2026-11-23T10:39:19Z",
   "slugs": {
    "ru": "microsoft-windows-uyazvimost-rce-v-sluzhbe-xbox-live-networking",
    "de": "microsoft-windows-rce-schwachstelle-im-xbox-live-networking",
@@ -152,6 +152,6 @@
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 1
+  "calls": 2
  }
 }
