@@ -1,7 +1,7 @@
 {
   "id": "sr-26-0176",
   "category": "vulnerability",
-  "priority": "high",
+  "priority": "critical",
   "confirmation": "official",
   "lifecycle": "confirmed",
   "fix": "unknown",
@@ -32,7 +32,7 @@
   "dates": {
     "event": "2026-11-20T00:00:00Z",
     "published": "2026-11-20T18:40:42Z",
-    "updated": "2026-11-20T18:40:42Z"
+    "updated": "2026-11-23T08:00:40Z"
   },
   "sources": [
     {
@@ -42,6 +42,14 @@
       "publisher": "CISA Known Exploited Vulnerabilities",
       "kind": "kev",
       "date": "2026-11-20"
+    },
+    {
+      "id": "s2",
+      "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+      "publisher": "BleepingComputer",
+      "kind": "media",
+      "date": "2026-11-23"
     }
   ],
   "revisions": [
@@ -52,6 +60,15 @@
         "ru": "Первая публикация.",
         "de": "Erstveröffentlichung.",
         "en": "First published."
+      }
+    },
+    {
+      "date": "2026-11-23T08:00:40Z",
+      "kind": "status",
+      "note": {
+        "ru": "Обновлены приоритет или статус подтверждения.",
+        "de": "Priorität oder Bestätigungsstatus aktualisiert.",
+        "en": "Priority or confirmation status updated."
       }
     }
   ],
