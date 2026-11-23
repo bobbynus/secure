@@ -17,7 +17,9 @@
     "cve": [
       "CVE-2026-113072"
     ],
-    "advisory": [],
+    "advisory": [
+      "WID-SEC-2026-4067"
+    ],
     "kb": []
   },
   "affected": [],
@@ -39,6 +41,14 @@
       "publisher": "Microsoft Security Response Center (CVRF API)",
       "kind": "vendor",
       "date": "2026-11-19"
+    },
+    {
+      "id": "s2",
+      "title": "Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4067",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
+      "date": "2026-10-20"
     }
   ],
   "revisions": [
