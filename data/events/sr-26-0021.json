@@ -86,7 +86,7 @@
       "title": "Synology DiskStation Manager (DSM): множественные уязвимости",
       "summary": "Synology DiskStation Manager (DSM) содержит множественные уязвимости, включая уязвимость некорректного кодирования или экранирования вывода, позволяющие удаленным злоумышленникам выполнять произвольный код.",
       "impact": "Удаленный злоумышленник может выполнить произвольный код, перехватить сеансы администратора, а также раскрыть или модифицировать информацию.",
-      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 18.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 18.11.2026: зафиксирована эксплуатация в реальных атаках. По данным CISA, она используется в кампаниях программ-вымогателей.",
       "fix": "В источниках не указаны исправленные версии.",
       "checks": [
         "Проверьте системы под управлением Synology DiskStation Manager (DSM) на предмет доступности.",
@@ -99,7 +99,7 @@
       "title": "Synology DiskStation Manager (DSM): Mehrere Schwachstellen",
       "summary": "Synology DiskStation Manager (DSM) enthält mehrere Schwachstellen, darunter eine mangelhafte Codierung oder Maskierung von Ausgaben, die es Angreifern ermöglichen, beliebigen Code auszuführen.",
       "impact": "Ein Angreifer kann beliebigen Code ausführen, Administratorsitzungen übernehmen sowie Informationen offenlegen oder manipulieren.",
-      "exploitation": "CISA hat die Schwachstelle am 18.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "exploitation": "CISA hat die Schwachstelle am 18.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt. Laut CISA wird sie in Ransomware-Kampagnen eingesetzt.",
       "fix": "Von den Quellen werden keine korrigierten Versionen genannt.",
       "checks": [
         "Überprüfen Sie Systeme mit Synology DiskStation Manager (DSM) auf Exposition.",
@@ -112,7 +112,7 @@
       "title": "Synology DiskStation Manager (DSM): Multiple Vulnerabilities",
       "summary": "Synology DiskStation Manager (DSM) contains multiple vulnerabilities, including an improper encoding or escaping of output vulnerability, allowing remote attackers to execute arbitrary code.",
       "impact": "A remote attacker can execute arbitrary code, take over administrator sessions, and disclose or manipulate information.",
-      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 18, 2026: exploitation in real attacks is confirmed.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 18, 2026: exploitation in real attacks is confirmed. CISA reports its use in ransomware campaigns.",
       "fix": "The sources list no fixed versions.",
       "checks": [
         "Check systems running Synology DiskStation Manager (DSM) for exposure.",
