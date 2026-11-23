@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "8738f6cae5e4de7428295495dd4176a0",
- "last_modified": "Mon, 23 Nov 2026 20:10:21 GMT",
- "checksum": "648041d758042398908951064e09f3c51ad81e9777d8652334f575ca5f75a0a7",
+ "etag": "32c65b800afa4bdb75d836607e797607",
+ "last_modified": "Mon, 23 Nov 2026 20:40:22 GMT",
+ "checksum": "05de650af00b6de3f9f929c43f3bcf9799d4d1232120371de156e7bd1ac517c8",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -56,8 +56,8 @@
   "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/": "8d222f526e1707601fe39015",
   "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/": "4cf1f6a2fb60eb334055a23b"
  },
- "last_attempt": "2026-11-23T20:10:41Z",
- "last_success": "2026-11-23T20:10:41Z",
+ "last_attempt": "2026-11-23T20:40:42Z",
+ "last_success": "2026-11-23T20:40:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
