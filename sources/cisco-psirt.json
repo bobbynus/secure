@@ -59,8 +59,8 @@
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z": "9452824355a0dead1faf3cfc",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s": "80628deb09dffee942c70c1b"
  },
- "last_attempt": "2026-11-23T01:50:41Z",
- "last_success": "2026-11-23T01:50:41Z",
+ "last_attempt": "2026-11-23T03:00:40Z",
+ "last_success": "2026-11-23T03:00:40Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
