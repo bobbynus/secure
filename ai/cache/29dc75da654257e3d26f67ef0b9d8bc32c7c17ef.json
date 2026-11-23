@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows Message Queuing (MSMQ) Remote Code Execution Vulnerability",
+  "summary": "A critical remote code execution vulnerability affects Microsoft Message Queuing (MSMQ) in Windows systems, tracked as CVE-2024-30080.",
+  "impact": "An attacker can achieve remote code execution on vulnerable systems.",
+  "fix": "Apply the updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Check systems for Windows Message Queuing (MSMQ) service installation and exposure.",
+   "Verify the installation of Microsoft security updates corresponding to CVE-2024-30080."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Уязвимость удаленного выполнения кода в Microsoft Message Queuing (MSMQ)",
+  "summary": "Критическая уязвимость удаленного выполнения кода затрагивает Microsoft Message Queuing (MSMQ) в системах Windows, отслеживаемая как CVE-2024-30080.",
+  "impact": "Злоумышленник может выполнить удаленный код в уязвимых системах.",
+  "fix": "Установите обновления, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на предмет установки и активности службы Microsoft Message Queuing (MSMQ).",
+   "Убедитесь в установке обновлений безопасности Microsoft для CVE-2024-30080."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Schwachstelle für Remotecodeausführung in Microsoft Message Queuing (MSMQ)",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung betrifft Microsoft Message Queuing (MSMQ) in Windows-Systemen und wird unter CVE-2024-30080 geführt.",
+  "impact": "Ein Angreifer kann auf anfälligen Systemen Remotecode ausführen.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf die Installation und Exposition des Dienstes Microsoft Message Queuing (MSMQ).",
+   "Überprüfen Sie die Installation der Microsoft-Sicherheitsupdates für CVE-2024-30080."
+  ],
+  "regression": null
+ }
+}

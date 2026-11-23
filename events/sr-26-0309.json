@@ -1,0 +1,139 @@
+{
+ "id": "sr-26-0309",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "windows-11",
+  "windows-server"
+ ],
+ "product_names": [
+  "Windows 11 Version 22H2 for ARM64-based Systems",
+  "Windows 11 Version 22H2 for x64-based Systems",
+  "Windows 11 Version 23H2 for ARM64-based Systems",
+  "Windows 11 Version 23H2 for x64-based Systems",
+  "Windows 11 version 21H2 for ARM64-based Systems",
+  "Windows 11 version 21H2 for x64-based Systems",
+  "Windows Server 2022",
+  "Windows Server 2022 (Server Core installation)",
+  "Windows Server 2022, 23H2 Edition (Server Core installation)"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2024-38080"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5040431",
+   "KB5040437",
+   "KB5040438",
+   "KB5040442"
+  ]
+ },
+ "severity": "high",
+ "cvss": {
+  "score": 7.8,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": true,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Windows Hyper-V Elevation of Privilege Vulnerability",
+ "summary_hint": "Role: Windows Hyper-V. Microsoft 2024-Jul security update.",
+ "created_at": "2026-11-23T09:00:42Z",
+ "updated_at": "2026-11-23T09:00:42Z",
+ "event_date": "2026-11-23T09:00:42Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2024-38080",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38080",
+   "title": "Windows Hyper-V Elevation of Privilege Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-23"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-23T09:00:42Z",
+   "kind": "created",
+   "facts": {
+    "reason": "vendor reports exploitation"
+   },
+   "source": "msrc:CVE-2024-38080"
+  }
+ ],
+ "related": [
+  "sr-26-0275",
+  "sr-26-0308"
+ ],
+ "reason": "vendor reports exploitation",
+ "texts": {
+  "msrc:CVE-2024-38080": "Windows Hyper-V Elevation of Privilege Vulnerability\nRole: Windows Hyper-V. Microsoft 2024-Jul security update."
+ },
+ "publish_state": "published",
+ "ai": {
+  "input_hash": "4af04fb7031348040b71dba0",
+  "texts": {
+   "en": {
+    "title": "Microsoft Windows Hyper-V: Elevation of Privilege Vulnerability (CVE-2024-38080)",
+    "summary": "An elevation of privilege vulnerability in Microsoft Windows Hyper-V (CVE-2024-38080) allows an attacker to escalate privileges. Exploitation is reported by the vendor.",
+    "impact": "Allows an attacker to achieve elevation of privilege.",
+    "fix": "Apply the security updates provided by Microsoft (including KB5040431, KB5040437, KB5040438, KB5040442).",
+    "workaround": null,
+    "checks": [
+     "Inventory Windows 11 and Windows Server systems running Hyper-V.",
+     "Verify whether the July 2024 security updates (such as KB5040431, KB5040437, KB5040438, KB5040442) are installed."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Windows Hyper-V: уязвимость повышения привилегий (CVE-2024-38080)",
+    "summary": "Уязвимость повышения привилегий в Microsoft Windows Hyper-V (CVE-2024-38080) позволяет злоумышленнику повысить привилегии. Эксплуатация подтверждена производителем.",
+    "impact": "Позволяет злоумышленнику повысить свои привилегии.",
+    "fix": "Установите обновления безопасности, предоставленные Microsoft (включая KB5040431, KB5040437, KB5040438, KB5040442).",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем Windows 11 и Windows Server с запущенным Hyper-V.",
+     "Проверьте, установлены ли обновления безопасности за июль 2024 года (включая KB5040431, KB5040437, KB5040438, KB5040442)."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Windows Hyper-V: Schwachstelle zur Privilegienerweiterung (CVE-2024-38080)",
+    "summary": "Eine Schwachstelle zur Privilegienerweiterung in Microsoft Windows Hyper-V (CVE-2024-38080) ermöglicht einem Angreifer, Privilegien zu erweitern. Die Ausnutzung wird vom Hersteller gemeldet.",
+    "impact": "Ermöglicht einem Angreifer die Erweiterung von Privilegien.",
+    "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an (einschließlich KB5040431, KB5040437, KB5040438, KB5040442).",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Windows 11- und Windows Server-Systeme mit aktivierten Hyper-V-Rollen.",
+     "Überprüfen Sie, ob die Sicherheitsupdates vom Juli 2024 (wie KB5040431, KB5040437, KB5040438, KB5040442) installiert sind."
+    ],
+    "regression": null
+   }
+  },
+  "affected": [],
+  "workaround": false,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-23T09:01:09Z",
+  "slugs": {
+   "ru": "microsoft-windows-hyper-v-uyazvimost-povysheniya-privilegiy-cve",
+   "de": "microsoft-windows-hyper-v-schwachstelle-zur",
+   "en": "microsoft-windows-hyper-v-elevation-of-privilege-vulnerability"
+  },
+  "published_at": "2026-11-23T09:01:09Z",
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 1
+ }
+}

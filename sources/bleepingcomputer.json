@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "8a37c4de458e53d1180f3edfba404926",
- "last_modified": "Mon, 23 Nov 2026 08:28:38 GMT",
- "checksum": "e57d71841f98e0eb0462765a4a753e36a979dfc20604702ae9d585902bf13d92",
+ "etag": "977e436d7c6c6c5d93d4df93585e617c",
+ "last_modified": "Mon, 23 Nov 2026 08:57:04 GMT",
+ "checksum": "464e43b1245347a3898c6564413bfc991c6f83a7b346e014fa95d4775884f952",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -48,8 +48,8 @@
   "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/": "24d089b407de590bf95496bc",
   "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/": "80d124cce0a1ce4425203915"
  },
- "last_attempt": "2026-11-23T08:30:39Z",
- "last_success": "2026-11-23T08:30:39Z",
+ "last_attempt": "2026-11-23T09:00:42Z",
+ "last_success": "2026-11-23T09:00:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

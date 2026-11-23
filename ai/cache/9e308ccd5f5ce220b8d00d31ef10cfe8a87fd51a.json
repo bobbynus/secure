@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Remote Code Execution in Remote Desktop Licensing Service",
+  "summary": "A critical remote code execution vulnerability (CVE-2024-38074) affects the Windows Remote Desktop Licensing Service.",
+  "impact": "An attacker can achieve remote code execution in the Windows Remote Desktop Licensing Service with a CVSS score of 9.8.",
+  "fix": "Microsoft released security updates addressing the vulnerability, referenced by KB5040430, KB5040434, KB5040437, KB5040438, KB5040456, KB5040485, KB5040497, and KB5040498.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows Server systems running the Remote Desktop Licensing Service.",
+   "Verify whether the updates KB5040430, KB5040434, KB5040437, KB5040438, KB5040456, KB5040485, KB5040497, or KB5040498 are applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: удаленное выполнение кода в службе лицензирования удаленных рабочих столов",
+  "summary": "Критическая уязвимость удаленного выполнения кода (CVE-2024-38074) затрагивает службу лицензирования удаленных рабочих столов Windows.",
+  "impact": "Злоумышленник может выполнить удаленный код в службе лицензирования удаленных рабочих столов Windows, оценка CVSS составляет 9.8.",
+  "fix": "Microsoft выпустила обновления безопасности, устраняющие уязвимость, на которые ссылаются KB5040430, KB5040434, KB5040437, KB5040438, KB5040456, KB5040485, KB5040497 и KB5040498.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows Server, запущенных со службой лицензирования удаленных рабочих столов.",
+   "Проверьте, установлены ли обновления KB5040430, KB5040434, KB5040437, KB5040438, KB5040456, KB5040485, KB5040497 или KB5040498."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Remotecodeausführung im Remotedesktop-Lizenzierungsdienst",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung (CVE-2024-38074) betrifft den Windows Remotedesktop-Lizenzierungsdienst.",
+  "impact": "Ein Angreifer kann im Windows Remotedesktop-Lizenzierungsdienst Remotecode ausführen; der CVSS-Score liegt bei 9.8.",
+  "fix": "Microsoft hat Sicherheitsupdates zur Behebung der Schwachstelle veröffentlicht, referenziert durch KB5040430, KB5040434, KB5040437, KB5040438, KB5040456, KB5040485, KB5040497 und KB5040498.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows Server-Systeme, auf denen der Remotedesktop-Lizenzierungsdienst ausgeführt wird.",
+   "Überprüfen Sie, ob die Updates KB5040430, KB5040434, KB5040437, KB5040438, KB5040456, KB5040485, KB5040497 oder KB5040498 eingespielt wurden."
+  ],
+  "regression": null
+ }
+}

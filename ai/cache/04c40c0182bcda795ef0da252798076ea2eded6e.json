@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows Server: Remote Code Execution Vulnerability in Remote Desktop Licensing",
+  "summary": "A critical remote code execution vulnerability (CVE-2024-38076) affects the Windows Remote Desktop Licensing Service in Windows Server.",
+  "impact": "An attacker can achieve remote code execution in the Windows Remote Desktop Licensing Service. The CVSS score is 9.8.",
+  "fix": "Apply updates referenced by KB5040430, KB5040434, KB5040437, or KB5040438.",
+  "workaround": null,
+  "checks": [
+   "Check Windows Server systems for the presence of the Remote Desktop Licensing Service.",
+   "Verify whether updates KB5040430, KB5040434, KB5040437, or KB5040438 are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows Server: уязвимость удаленного выполнения кода в службе лицензирования удаленных рабочих столов",
+  "summary": "Критическая уязвимость удаленного выполнения кода (CVE-2024-38076) затрагивает службу лицензирования удаленных рабочих столов в Windows Server.",
+  "impact": "Злоумышленник может выполнить удаленный код в службе лицензирования удаленных рабочих столов. Оценка CVSS составляет 9.8.",
+  "fix": "Установите обновления, указанные в KB5040430, KB5040434, KB5040437 или KB5040438.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы Windows Server на наличие службы лицензирования удаленных рабочих столов.",
+   "Убедитесь, установлены ли обновления KB5040430, KB5040434, KB5040437 или KB5040438."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows Server: Remotecodeausführungsschwachstelle in Remotedesktop-Lizenzierungsdiensten",
+  "summary": "Eine kritische Schwachstelle zur Remotecodeausführung (CVE-2024-38076) betrifft den Windows Remotedesktop-Lizenzierungsdienst in Windows Server.",
+  "impact": "Ein Angreifer kann eine Remotecodeausführung im Windows Remotedesktop-Lizenzierungsdienst erreichen. Der CVSS-Score liegt bei 9.8.",
+  "fix": "Wenden Sie die Updates an, auf die in KB5040430, KB5040434, KB5040437 oder KB5040438 verwiesen wird.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Windows Server-Systeme auf das Vorhandensein des Remotedesktop-Lizenzierungsdienstes.",
+   "Überprüfen Sie, ob die Updates KB5040430, KB5040434, KB5040437 oder KB5040438 installiert sind."
+  ],
+  "regression": null
+ }
+}

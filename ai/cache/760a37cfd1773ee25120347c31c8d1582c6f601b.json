@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Windows 10",
+   "versions": "Windows 10",
+   "fixed": null,
+   "evidence": "Windows MSHTML Platform Spoofing Vulnerability\nWindows MSHTML Platform. Microsoft 2024-Jul security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Windows: CVE-2024-38112 MSHTML Platform Spoofing Vulnerability",
+  "summary": "A spoofing vulnerability exists in the Microsoft Windows MSHTML platform, reported as exploited.",
+  "impact": "An attacker can exploit the spoofing vulnerability in the MSHTML platform. Exploitation has been reported.",
+  "fix": "Apply the updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows 10 systems to check for MSHTML platform exposure.",
+   "Verify if Microsoft security updates are installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость спуфинга в платформе MSHTML CVE-2024-38112",
+  "summary": "В платформе Microsoft Windows MSHTML обнаружена уязвимость спуфинга, для которой зафиксирована эксплуатация.",
+  "impact": "Злоумышленник может использовать уязвимость спуфинга в платформе MSHTML. Сообщается об эксплуатации.",
+  "fix": "Установите обновления, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows 10 на предмет уязвимости платформы MSHTML.",
+   "Проверьте установку обновлений безопасности Microsoft."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Spoofing-Schwachstelle in MSHTML Platform CVE-2024-38112",
+  "summary": "In der Microsoft Windows MSHTML Platform existiert eine Spoofing-Schwachstelle, deren Ausnutzung gemeldet wurde.",
+  "impact": "Ein Angreifer kann die Spoofing-Schwachstelle in der MSHTML Platform ausnutzen. Die Ausnutzung wurde gemeldet.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates an.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows 10-Systeme, um die Exposition der MSHTML Platform zu prüfen.",
+   "Überprüfen Sie, ob Microsoft-Sicherheitsupdates installiert sind."
+  ],
+  "regression": null
+ }
+}

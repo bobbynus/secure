@@ -14,7 +14,9 @@
   "cve": [
    "CVE-2025-42884"
   ],
-  "advisory": [],
+  "advisory": [
+   "WID-SEC-2025-2536"
+  ],
   "kb": []
  },
  "severity": null,
@@ -31,7 +33,7 @@
  "title_hint": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
  "summary_hint": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
  "created_at": "2026-11-20T18:40:39Z",
- "updated_at": "2026-11-20T18:40:39Z",
+ "updated_at": "2026-11-23T09:00:42Z",
  "event_date": "2026-11-20T00:00:00Z",
  "sources": [
   {
@@ -42,6 +44,15 @@
    "publisher": "CISA Known Exploited Vulnerabilities",
    "kind": "kev",
    "date": "2026-11-20"
+  },
+  {
+   "source_id": "cert-bund-wid",
+   "item_key": "WID-SEC-W-2025-2536",
+   "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-2536",
+   "title": "SAP Software: Mehrere Schwachstellen",
+   "publisher": "CERT-Bund (BSI) WID security advisories",
+   "kind": "cert",
+   "date": "2025-11-10"
   }
  ],
  "revisions": [
@@ -52,6 +63,12 @@
     "reason": "added to CISA KEV"
    },
    "source": "cisa-kev:CVE-2025-42884"
+  },
+  {
+   "date": "2026-11-23T09:00:42Z",
+   "kind": "source",
+   "facts": {},
+   "source": "cert-bund-wid:WID-SEC-W-2025-2536"
   }
  ],
  "related": [],

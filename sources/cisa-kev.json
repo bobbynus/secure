@@ -1798,8 +1798,8 @@
   "CVE-2025-42884": "01f82f1cbea6968e6a23531e",
   "CVE-2026-76466": "01f82f1cbea6968e6a23531e"
  },
- "last_attempt": "2026-11-23T08:30:39Z",
- "last_success": "2026-11-23T08:30:39Z",
+ "last_attempt": "2026-11-23T09:00:42Z",
+ "last_success": "2026-11-23T09:00:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
