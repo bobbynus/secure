@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Sep security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Sep security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: CVE-2026-95339 vulnerability in ServiceWorker",
+  "summary": "A critical use-after-free vulnerability in ServiceWorker affects Microsoft Edge (Chromium-based).",
+  "impact": "The vulnerability involves a use-after-free in ServiceWorker tracked as CVE-2026-95339 with a CVSS score of 9.6.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check systems for Microsoft Edge (Chromium-based) installations.",
+   "Verify vulnerability status regarding CVE-2026-95339."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: уязвимость CVE-2026-95339 в ServiceWorker",
+  "summary": "Критическая уязвимость типа use-after-free в ServiceWorker затрагивает Microsoft Edge (на базе Chromium).",
+  "impact": "Уязвимость связана с использованием памяти после освобождения (use-after-free) в ServiceWorker, отслеживаемая как CVE-2026-95339 с оценкой CVSS 9.6.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие установленного Microsoft Edge (на базе Chromium).",
+   "Проверьте статус уязвимости в отношении CVE-2026-95339."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: CVE-2026-95339 Schwachstelle in ServiceWorker",
+  "summary": "Eine kritische Use-After-Free-Schwachstelle in ServiceWorker betrifft Microsoft Edge (Chromium-basiert).",
+  "impact": "Die Schwachstelle betrifft ein Use-After-Free in ServiceWorker, geführt als CVE-2026-95339 mit einem CVSS-Score von 9.6.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Systeme auf Microsoft Edge (Chromium-basiert) Installationen.",
+   "Überprüfen Sie den Status der Schwachstelle CVE-2026-95339."
+  ],
+  "regression": null
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Sep security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Sep security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge (Chromium-based): Buffer overflow in ANGLE via CVE-2026-95350",
+  "summary": "A buffer overflow vulnerability in ANGLE affects Microsoft Edge (Chromium-based). The issue is tracked as CVE-2026-95350 with a CVSS score of 9.6.",
+  "impact": "An attacker can cause a buffer overflow leading to unspecified impacts.",
+  "fix": "The sources list no fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Edge (Chromium-based) installations for vulnerability to CVE-2026-95350."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge (Chromium-based): переполнение буфера в ANGLE через CVE-2026-95350",
+  "summary": "Уязвимость переполнения буфера в ANGLE затрагивает Microsoft Edge (Chromium-based). Проблема отслеживается под идентификатором CVE-2026-95350 с оценкой CVSS 9.6.",
+  "impact": "Злоумышленник может вызвать переполнение буфера, приводящее к неопределенным последствиям.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте установки Microsoft Edge (Chromium-based) на уязвимость к CVE-2026-95350."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge (Chromium-based): Pufferüberlauf in ANGLE durch CVE-2026-95350",
+  "summary": "Eine Pufferüberlauf-Schwachstelle in ANGLE betrifft Microsoft Edge (Chromium-based). Das Problem wird unter CVE-2026-95350 mit einem CVSS-Score von 9.6 geführt.",
+  "impact": "Ein Angreifer kann einen Pufferüberlauf verursachen, der zu unbestimmten Auswirkungen führt.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Prüfen Sie Microsoft Edge (Chromium-based)-Installation auf Anfälligkeit für CVE-2026-95350."
+  ],
+  "regression": null
+ }
+}

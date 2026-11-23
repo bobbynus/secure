@@ -1,0 +1,43 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Sep security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Sep security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge (Chromium-based): Buffer overflow in WebGL",
+  "summary": "A buffer overflow vulnerability in WebGL affects Microsoft Edge (Chromium-based).",
+  "impact": "The vulnerability involves a buffer overflow in WebGL, which can be caused by defects in Microsoft Edge (Chromium-based).",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Edge (Chromium-based) installations for vulnerability status."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge (Chromium-based): переполнение буфера в WebGL",
+  "summary": "Уязвимость переполнения буфера в WebGL затрагивает Microsoft Edge (Chromium-based).",
+  "impact": "Уязвимость связана с переполнением буфера в WebGL в Microsoft Edge (Chromium-based).",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте установки Microsoft Edge (Chromium-based) на наличие уязвимости."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge (Chromium-based): Pufferüberlauf in WebGL",
+  "summary": "Eine Pufferüberlauf-Schwachstelle in WebGL betrifft Microsoft Edge (Chromium-based).",
+  "impact": "Die Schwachstelle betrifft einen Pufferüberlauf in WebGL in Microsoft Edge (Chromium-based).",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft Edge (Chromium-based)-Installation auf den Schwachstellenstatus."
+  ],
+  "regression": null
+ }
+}

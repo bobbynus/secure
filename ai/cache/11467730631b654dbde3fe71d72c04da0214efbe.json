@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Windows: Proxy Driver Spoofing Vulnerability (CVE-2024-26234)",
+  "summary": "A spoofing vulnerability exists in the Windows Proxy Driver, tracked as CVE-2024-26234 with a CVSS score of 6.7. Microsoft reports public disclosure and exploitation of the vulnerability.",
+  "impact": "The vulnerability allows spoofing attacks in Windows.",
+  "fix": "Apply the security updates provided by Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Inventory Windows systems to identify vulnerable versions.",
+   "Verify the application of Microsoft security updates containing KB5036892, KB5036893, KB5036894, KB5036896, KB5036899, KB5036909, KB5036910, KB5036922, KB5036925, KB5036932, KB5036950, KB5036960, KB5036967, or KB5036969."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Windows: уязвимость спуфинга в Proxy Driver (CVE-2024-26234)",
+  "summary": "В драйвере прокси Windows обнаружена уязвимость спуфинга, получившая идентификатор CVE-2024-26234 и оценку CVSS 6.7. Microsoft сообщает о публичном раскрытии и эксплуатации уязвимости.",
+  "impact": "Уязвимость позволяет проводить атаки спуфинга в Windows.",
+  "fix": "Установите обновления безопасности, предоставленные Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию систем Windows для выявления уязвимых версий.",
+   "Проверьте установку обновлений безопасности Microsoft, содержащих KB5036892, KB5036893, KB5036894, KB5036896, KB5036899, KB5036909, KB5036910, KB5036922, KB5036925, KB5036932, KB5036950, KB5036960, KB5036967 или KB5036969."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Windows: Spoofing-Schwachstelle im Proxy Driver (CVE-2024-26234)",
+  "summary": "Im Windows Proxy Driver existiert eine Spoofing-Schwachstelle, die unter CVE-2024-26234 mit einem CVSS-Score von 6.7 geführt wird. Microsoft meldet die öffentliche Offenlegung und Ausnutzung der Schwachstelle.",
+  "impact": "Die Schwachstelle ermöglicht Spoofing-Angriffe in Windows.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Sicherheitsupdates an.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Windows-Systeme, um anfällige Versionen zu identifizieren.",
+   "Überprüfen Sie die Anwendung der Microsoft-Sicherheitsupdates mit den Kennungen KB5036892, KB5036893, KB5036894, KB5036896, KB5036899, KB5036909, KB5036910, KB5036922, KB5036925, KB5036932, KB5036950, KB5036960, KB5036967 oder KB5036969."
+  ],
+  "regression": null
+ }
+}

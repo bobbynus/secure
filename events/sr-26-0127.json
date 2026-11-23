@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-95339": "Chromium CVE-2026-95339: Use after free in ServiceWorker\nMicrosoft Edge (Chromium-based). Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "f322bb52656fc9bb691b18ef",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge: CVE-2026-95339 vulnerability in ServiceWorker",
+    "summary": "A critical use-after-free vulnerability in ServiceWorker affects Microsoft Edge (Chromium-based).",
+    "impact": "The vulnerability involves a use-after-free in ServiceWorker tracked as CVE-2026-95339 with a CVSS score of 9.6.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check systems for Microsoft Edge (Chromium-based) installations.",
+     "Verify vulnerability status regarding CVE-2026-95339."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge: уязвимость CVE-2026-95339 в ServiceWorker",
+    "summary": "Критическая уязвимость типа use-after-free в ServiceWorker затрагивает Microsoft Edge (на базе Chromium).",
+    "impact": "Уязвимость связана с использованием памяти после освобождения (use-after-free) в ServiceWorker, отслеживаемая как CVE-2026-95339 с оценкой CVSS 9.6.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы на наличие установленного Microsoft Edge (на базе Chromium).",
+     "Проверьте статус уязвимости в отношении CVE-2026-95339."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge: CVE-2026-95339 Schwachstelle in ServiceWorker",
+    "summary": "Eine kritische Use-After-Free-Schwachstelle in ServiceWorker betrifft Microsoft Edge (Chromium-basiert).",
+    "impact": "Die Schwachstelle betrifft ein Use-After-Free in ServiceWorker, geführt als CVE-2026-95339 mit einem CVSS-Score von 9.6.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme auf Microsoft Edge (Chromium-basiert) Installationen.",
+     "Überprüfen Sie den Status der Schwachstelle CVE-2026-95339."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-23T09:30:46Z",
+  "slugs": {
+   "ru": "microsoft-edge-uyazvimost-cve-2026-95339-v-serviceworker",
+   "de": "microsoft-edge-cve-2026-95339-schwachstelle-in-serviceworker",
+   "en": "microsoft-edge-cve-2026-95339-vulnerability-in-serviceworker"
+  },
+  "published_at": "2026-11-23T09:30:46Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

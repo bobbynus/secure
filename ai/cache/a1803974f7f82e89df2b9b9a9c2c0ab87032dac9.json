@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Sep security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Sep security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge (Chromium-based): CVE-2026-95329",
+  "summary": "A critical out of bounds write vulnerability in WebGL affects Microsoft Edge (Chromium-based).",
+  "impact": "The vulnerability allows an out of bounds write in WebGL.",
+  "fix": "The sources list no fixed version.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Edge (Chromium-based) installations.",
+   "Check systems for the Microsoft 2026-Sep security update context."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge (Chromium-based): CVE-2026-95329",
+  "summary": "Критическая уязвимость выхода за границы буфера при записи в WebGL затрагивает Microsoft Edge (Chromium-based).",
+  "impact": "Уязвимость приводит к выходу за границы буфера при записи в WebGL.",
+  "fix": "В источниках не указана исправленная версия.",
+  "workaround": null,
+  "checks": [
+   "Проинвентаризируйте установки Microsoft Edge (Chromium-based).",
+   "Проверьте системы на наличие контекста обновления безопасности Microsoft 2026-Sep."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge (Chromium-based): CVE-2026-95329",
+  "summary": "Eine kritische Out-of-Bounds-Schreibschwachstelle in WebGL betrifft Microsoft Edge (Chromium-based).",
+  "impact": "Die Schwachstelle ermöglicht einen Out-of-Bounds-Schreibzugriff in WebGL.",
+  "fix": "Die Quellen nennen keine korrigierte Version.",
+  "workaround": null,
+  "checks": [
+   "Erfassen Sie alle Installationen von Microsoft Edge (Chromium-based).",
+   "Überprüfen Sie Systeme auf den Kontext des Sicherheitsupdates Microsoft 2026-Sep."
+  ],
+  "regression": null
+ }
+}

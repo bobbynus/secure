@@ -59,21 +59,59 @@
  "texts": {
   "msrc:CVE-2026-95349": "Chromium CVE-2026-95349: Buffer overflow in WebGL\nMicrosoft Edge (Chromium-based). Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "75492498f275afaa5e8bb2e2",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge (Chromium-based): Buffer overflow in WebGL",
+    "summary": "A buffer overflow vulnerability in WebGL affects Microsoft Edge (Chromium-based).",
+    "impact": "The vulnerability involves a buffer overflow in WebGL, which can be caused by defects in Microsoft Edge (Chromium-based).",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft Edge (Chromium-based) installations for vulnerability status."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge (Chromium-based): переполнение буфера в WebGL",
+    "summary": "Уязвимость переполнения буфера в WebGL затрагивает Microsoft Edge (Chromium-based).",
+    "impact": "Уязвимость связана с переполнением буфера в WebGL в Microsoft Edge (Chromium-based).",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте установки Microsoft Edge (Chromium-based) на наличие уязвимости."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge (Chromium-based): Pufferüberlauf in WebGL",
+    "summary": "Eine Pufferüberlauf-Schwachstelle in WebGL betrifft Microsoft Edge (Chromium-based).",
+    "impact": "Die Schwachstelle betrifft einen Pufferüberlauf in WebGL in Microsoft Edge (Chromium-based).",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft Edge (Chromium-based)-Installation auf den Schwachstellenstatus."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-23T09:30:46Z",
+  "slugs": {
+   "ru": "microsoft-edge-chromium-based-perepolnenie-bufera-v-webgl",
+   "de": "microsoft-edge-chromium-based-pufferueberlauf-in-webgl",
+   "en": "microsoft-edge-chromium-based-buffer-overflow-in-webgl"
+  },
+  "published_at": "2026-11-23T09:30:46Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

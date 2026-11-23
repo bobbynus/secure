@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "977e436d7c6c6c5d93d4df93585e617c",
- "last_modified": "Mon, 23 Nov 2026 08:57:04 GMT",
- "checksum": "464e43b1245347a3898c6564413bfc991c6f83a7b346e014fa95d4775884f952",
+ "etag": "366ef43e55c40d7795476ad7ac196929",
+ "last_modified": "Mon, 23 Nov 2026 09:22:56 GMT",
+ "checksum": "5dd594406db552f01ef83dcdbaaca2558884797ea8f9bce7fbbf19dda860bea8",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -46,12 +46,13 @@
   "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/": "a316d3e6e3a4fd924adcd441",
   "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/": "9774bb2156b67e2fd2cb04fc",
   "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/": "24d089b407de590bf95496bc",
-  "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/": "80d124cce0a1ce4425203915"
+  "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/": "80d124cce0a1ce4425203915",
+  "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/": "a3332ea3f919eff2eeed1dec"
  },
- "last_attempt": "2026-11-23T09:00:42Z",
- "last_success": "2026-11-23T09:00:42Z",
+ "last_attempt": "2026-11-23T09:30:43Z",
+ "last_success": "2026-11-23T09:30:43Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 43
+ "items_total": 44
 }

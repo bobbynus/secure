@@ -59,21 +59,62 @@
  "texts": {
   "msrc:CVE-2026-95329": "Chromium CVE-2026-95329: Out of bounds write in WebGL\nMicrosoft Edge (Chromium-based). Microsoft 2026-Sep security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "272a4d68effa69e16575d4fe",
+  "texts": {
+   "en": {
+    "title": "Microsoft Edge (Chromium-based): CVE-2026-95329",
+    "summary": "A critical out of bounds write vulnerability in WebGL affects Microsoft Edge (Chromium-based).",
+    "impact": "The vulnerability allows an out of bounds write in WebGL.",
+    "fix": "The sources list no fixed version.",
+    "workaround": null,
+    "checks": [
+     "Inventory Microsoft Edge (Chromium-based) installations.",
+     "Check systems for the Microsoft 2026-Sep security update context."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Edge (Chromium-based): CVE-2026-95329",
+    "summary": "Критическая уязвимость выхода за границы буфера при записи в WebGL затрагивает Microsoft Edge (Chromium-based).",
+    "impact": "Уязвимость приводит к выходу за границы буфера при записи в WebGL.",
+    "fix": "В источниках не указана исправленная версия.",
+    "workaround": null,
+    "checks": [
+     "Проинвентаризируйте установки Microsoft Edge (Chromium-based).",
+     "Проверьте системы на наличие контекста обновления безопасности Microsoft 2026-Sep."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Edge (Chromium-based): CVE-2026-95329",
+    "summary": "Eine kritische Out-of-Bounds-Schreibschwachstelle in WebGL betrifft Microsoft Edge (Chromium-based).",
+    "impact": "Die Schwachstelle ermöglicht einen Out-of-Bounds-Schreibzugriff in WebGL.",
+    "fix": "Die Quellen nennen keine korrigierte Version.",
+    "workaround": null,
+    "checks": [
+     "Erfassen Sie alle Installationen von Microsoft Edge (Chromium-based).",
+     "Überprüfen Sie Systeme auf den Kontext des Sicherheitsupdates Microsoft 2026-Sep."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-23T09:30:46Z",
+  "slugs": {
+   "ru": "microsoft-edge-chromium-based-cve-2026-95329",
+   "de": "microsoft-edge-chromium-based-cve-2026-95329",
+   "en": "microsoft-edge-chromium-based-cve-2026-95329"
+  },
+  "published_at": "2026-11-23T09:30:46Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
