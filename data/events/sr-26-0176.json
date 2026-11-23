@@ -75,46 +75,49 @@
   "generated": {
     "model": "gemini-3.5-flash-lite",
     "prompt": "p3",
-    "at": "2026-11-20T18:40:42Z"
+    "at": "2026-11-23T10:30:43Z"
   },
   "translations": {
     "ru": {
       "status": "ready",
       "slug": "cisco-expressway-series-uyazvimost-zhestko-zakodirovannykh",
-      "title": "Cisco Expressway Series: уязвимость жестко закодированных учетных данных",
-      "summary": "Cisco Expressway Series содержит уязвимость жестко закодированных учетных данных, позволяющую неаутентифицированным удаленным злоумышленникам выполнять команды с правами root через службу базы данных. Уязвимость эксплуатируется.",
-      "impact": "Неаутентифицированный удаленный злоумышленник с постоянными файлами cookie и сетевым доступом может выполнять команды с правами root на кластеризованном устройстве через службу базы данных.",
+      "title": "Cisco Expressway Series: уязвимость жестко закодированных учетных данных (CVE-2026-76466)",
+      "summary": "Cisco Expressway Series содержит уязвимость жестко закодированных учетных данных, позволяющую неаутентифицированным удаленным злоумышленникам выполнять команды с правами root через службу базы данных. CISA сообщает об активной эксплуатации.",
+      "impact": "Неаутентифицированный удаленный злоумышленник с постоянными файлами cookie и сетевым доступом может выполнять произвольные команды операционной системы с правами root на кластеризованном устройстве через службу базы данных.",
       "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 20.11.2026: зафиксирована эксплуатация в реальных атаках.",
-      "fix": "В источниках не указаны исправленные версии.",
+      "fix": "В источниках не указаны конкретные исправленные версии, но упоминается, что Cisco выпустила исправления безопасности в конце октября.",
       "checks": [
-        "Проверьте развертывания Cisco Expressway Series на предмет доступности из интернета.",
-        "Проверьте состояние систем на наличие обновлений или средств защиты от производителя."
+        "Проведите инвентаризацию устройств Cisco Expressway-C и Expressway-E, развернутых в виде аппаратных или виртуальных машин.",
+        "Проверьте, имеют ли кластеризованные устройства Cisco Expressway доступ из сети Интернет.",
+        "Проверьте системные журналы и конфигурации на наличие признаков несанкционированного доступа или использования постоянных файлов cookie, связанных со службой базы данных."
       ]
     },
     "de": {
       "status": "ready",
       "slug": "cisco-expressway-series-schwachstelle-durch-hartcodierte",
-      "title": "Cisco Expressway Series: Schwachstelle durch hartcodierte Anmeldeinformationen",
-      "summary": "Cisco Expressway Series enthält eine Schwachstelle durch hartcodierte Anmeldeinformationen, die es unauthentifizierten Remotegegnern ermöglicht, Befehle als root über den Baudatenbankdienst auszuführen. Die Schwachstelle wird ausgenutzt.",
-      "impact": "Ein unauthentifizierter Remotegegner mit persistenten Cookies und Netzwerkzugriff kann Befehle als root auf einem geclusterten Gerät über den Datenbankdienst ausführen.",
+      "title": "Cisco Expressway Series: Schwachstelle durch hartcodierte Anmeldedaten (CVE-2026-76466)",
+      "summary": "Die Cisco Expressway Series enthält eine Schwachstelle durch hartcodierte Anmeldedaten, die es unauthentifizierten Angreifern ermöglicht, Befehle als root über den Baudienst auszuführen. CISA meldet aktive Ausnutzung.",
+      "impact": "Ein unauthentifizierter, remote Angreifer mit persistenten Cookies und Netzzugang kann beliebige Betriebssystembefehle als root auf einem geclusterten Gerät über den Baudienst ausführen.",
       "exploitation": "CISA hat die Schwachstelle am 20.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
-      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "fix": "Die Quellen nennen keine konkreten korrigierten Versionen, erwähnen jedoch, dass Cisco Ende Oktober Sicherheitsupdates veröffentlicht hat.",
       "checks": [
-        "Überprüfen Sie Cisco Expressway Series-Installationen auf Exposition im Internet.",
-        "Überprüfen Sie den Systemstatus hinsichtlich vom Hersteller bereitgestellter Updates oder Workarounds."
+        "Inventarisieren Sie Cisco Expressway-C und Expressway-E Appliances sowie virtuelle Maschinen.",
+        "Überprüfen Sie, ob geclusterte Cisco Expressway-Geräte dem Internet ausgesetzt sind.",
+        "Überprüfen Sie Systemprotokolle und Konfigurationen auf unbefugten Zugriff oder die Verwendung persistenter Cookies im Zusammenhang mit dem Baudienst."
       ]
     },
     "en": {
       "status": "ready",
       "slug": "cisco-expressway-series-hard-coded-credentials-vulnerability",
-      "title": "Cisco Expressway Series: Hard-coded credentials vulnerability",
-      "summary": "Cisco Expressway Series contains a hard-coded credentials vulnerability allowing unauthenticated remote attackers to execute commands as root via the database service. This vulnerability is actively exploited.",
-      "impact": "An unauthenticated, remote attacker with persistent cookies and network access can execute commands as root on a clustered device via the database service.",
+      "title": "Cisco Expressway Series: Hard-coded credentials vulnerability (CVE-2026-76466)",
+      "summary": "Cisco Expressway Series contains a hard-coded credentials vulnerability allowing unauthenticated remote attackers to execute commands as root via the database service. CISA reports active exploitation in the wild.",
+      "impact": "An unauthenticated, remote attacker with persistent cookies and network access can execute arbitrary operating system commands as root on a clustered device via the database service.",
       "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 20, 2026: exploitation in real attacks is confirmed.",
-      "fix": "The sources do not list fixed versions.",
+      "fix": "The sources do not specify fixed version numbers, but mention that Cisco released security patches in late October.",
       "checks": [
-        "Check Cisco Expressway Series deployments for internet exposure.",
-        "Verify system status regarding vendor-provided updates or mitigations."
+        "Inventory Cisco Expressway-C and Expressway-E appliances and virtual machine deployments.",
+        "Verify whether clustered Cisco Expressway devices are exposed to the internet.",
+        "Check system logs and configurations for unauthorized access or persistent cookies usage associated with the database service."
       ]
     }
   }

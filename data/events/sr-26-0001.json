@@ -5,7 +5,7 @@
   "confirmation": "official",
   "lifecycle": "confirmed",
   "fix": "unknown",
-  "workaround": true,
+  "workaround": false,
   "exploitation": {
     "status": "confirmed",
     "kev": true,
@@ -77,50 +77,47 @@
   "generated": {
     "model": "gemini-3.5-flash-lite",
     "prompt": "p3",
-    "at": "2026-11-18T22:00:44Z"
+    "at": "2026-11-23T10:30:43Z"
   },
   "translations": {
     "ru": {
       "status": "ready",
       "slug": "perforce-puppet-enterprise-uyazvimost-deserializatsii-v-kode",
       "title": "Perforce Puppet Enterprise: уязвимость десериализации при обработке отчетов",
-      "summary": "Perforce Puppet Enterprise содержит уязвимость десериализации недоверенных данных, позволяющую выполнять произвольный код.",
-      "impact": "Клиент с любым подписанным удостоверяющим центром сертификатом агента может выполнить произвольный код на сервере Puppet от имени пользователя службы, отправив специально сформированный отчет через PUT-запрос. Если центр сертификации автоматически подписывает запросы без строгой проверки, неаутентифицированный сетевой злоумышленник может получить действующий сертификат и проэксплуатировать уязвимость.",
+      "summary": "В Perforce Puppet Enterprise обнаружена уязвимость десериализации недоверенных данных в коде обработки отчетов, включенная в каталог CISA KEV.",
+      "impact": "Позволяет клиенту с любым подписанным CA сертификатом агента выполнять произвольный код на Puppet Server от имени учетной записи службы путем отправки отчета с измененным типом данных через PUT-запрос. Неавторизованный сетевой злоумышленник может проэксплуатировать уязвимость, если сертификаты подписываются автоматически без строгой проверки.",
       "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 17.11.2026: зафиксирована эксплуатация в реальных атаках.",
-      "fix": "В источниках не указаны конкретные исправленные версии.",
+      "fix": "Примените средства защиты в соответствии с инструкциями производителя.",
       "checks": [
-        "Проверьте экземпляры Puppet Enterprise на предмет доступности и изучите политики подписи центра сертификации.",
-        "Проведите аудит журналов обработки отчетов и механизмов отправки на наличие специально сформированных типов данных."
-      ],
-      "workaround": "Примените средства защиты в соответствии с инструкциями производителя."
+        "Проведите инвентаризацию установок Perforce Puppet Enterprise.",
+        "Проверьте, подписывает ли центр сертификации запросы агентов автоматически без строгой проверки."
+      ]
     },
     "de": {
       "status": "ready",
       "slug": "perforce-puppet-enterprise-deserialisierungsschwachstelle-im",
-      "title": "Perforce Puppet Enterprise: Deserialisierungsschwachstelle bei der Berichtsverarbeitung",
-      "summary": "Perforce Puppet Enterprise enthält eine Schwachstelle durch Deserialisierung nicht vertrauenswürdiger Daten, die Remotecodeausführung ermöglicht.",
-      "impact": "Ein Client mit einem beliebigen CA-signierten Agentenzertifikat kann auf dem Puppet Server als Dienstbenutzer beliebigen Code ausführen, indem er einen manipulierten Bericht per PUT-Anfrage übermittelt. Wenn Zertifikate ohne starke Verifizierung automatisch signiert werden, können unauthentifizierte Netzwerkangreifer ein gültiges Zertifikat erhalten und die Schwachstelle ausnutzen.",
+      "title": "Perforce Puppet Enterprise: Deserialisierungsschwachstelle in der Berichtsverarbeitung",
+      "summary": "Perforce Puppet Enterprise enthält eine Deserialisierungsschwachstelle für untrusted data im Berichtscode und ist im CISA KEV gelistet.",
+      "impact": "Ermöglicht einem Client mit einem beliebigen CA-signierten Agentenzertifikat die Ausführung von beliebigem Programmcode auf dem Puppet Server als Dienstbenutzer durch Einreichen eines Berichts mit einem manipulierten Datentyp über eine PUT-Anfrage. Ein unauthentifizierter Netzwerkangreifer kann dies ausnutzen, wenn Zertifikate ohne starke Überprüfung automatisch signiert werden.",
       "exploitation": "CISA hat die Schwachstelle am 17.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
-      "fix": "Die Quellen nennen keine spezifischen korrigierten Versionen.",
+      "fix": "Wenden Sie Milderungsmaßnahmen gemäß den Anweisungen des Herstellers an.",
       "checks": [
-        "Überprüfen Sie Puppet Enterprise-Instanzen auf Exposition und überprüfen Sie die Signierrichtlinien der Zertifizierungsstelle.",
-        "Überprüfen Sie Berichtsprotokolle und Übermittlungsmechanismen auf manipulierte Datentypen."
-      ],
-      "workaround": "Wenden Sie Migaierungsmaßnahmen gemäß den Anweisungen des Herstellers an."
+        "Inventarisieren Sie Perforce Puppet Enterprise-Installationen.",
+        "Überprüfen Sie, ob die Zertifizierungsstelle Agentenanfragen ohne starke Verifizierung automatisch signiert."
+      ]
     },
     "en": {
       "status": "ready",
       "slug": "perforce-puppet-enterprise-deserialization-vulnerability-in",
       "title": "Perforce Puppet Enterprise: deserialization vulnerability in report processing",
-      "summary": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability allowing arbitrary code execution.",
-      "impact": "A client with any CA-signed agent certificate can execute arbitrary code on the Puppet Server as the service user by submitting a crafted report via a PUT request. If certificates are signed without strong verification, unauthenticated network attackers can obtain a certificate and exploit the vulnerability.",
+      "summary": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in report-processing code, listed in CISA KEV.",
+      "impact": "Allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by submitting a report containing a crafted rich-data type through a PUT request. An unauthenticated network attacker can exploit this if certificates are automatically signed without strong verification.",
       "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 17, 2026: exploitation in real attacks is confirmed.",
-      "fix": "The sources do not list specific fixed versions.",
+      "fix": "Apply mitigations in accordance with vendor instructions.",
       "checks": [
-        "Check Puppet Enterprise instances for exposure and review certificate authority signing policies.",
-        "Audit report-processing logs and submission mechanisms for crafted rich-data types."
-      ],
-      "workaround": "Apply mitigations in accordance with vendor instructions."
+        "Inventory Perforce Puppet Enterprise installations.",
+        "Verify whether certificate authority automatically signs agent requests without strong verification."
+      ]
     }
   }
 }

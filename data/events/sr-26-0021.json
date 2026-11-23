@@ -77,46 +77,46 @@
   "generated": {
     "model": "gemini-3.5-flash-lite",
     "prompt": "p3",
-    "at": "2026-11-18T20:01:29Z"
+    "at": "2026-11-23T10:30:43Z"
   },
   "translations": {
     "ru": {
       "status": "ready",
       "slug": "synology-diskstation-manager-dsm-uyazvimost-kodirovaniya-vyvoda",
-      "title": "Synology DiskStation Manager (DSM): уязвимость кодирования вывода",
-      "summary": "Synology DiskStation Manager (DSM) содержит уязвимость некорректного кодирования или экранирования вывода, позволяющую удаленным злоумышленникам выполнять произвольный код.",
-      "impact": "Удаленный злоумышленник может выполнить произвольный код через неуказанные векторы.",
+      "title": "Synology DiskStation Manager (DSM): множественные уязвимости",
+      "summary": "Synology DiskStation Manager (DSM) содержит множественные уязвимости, включая уязвимость некорректного кодирования или экранирования вывода, позволяющие удаленным злоумышленникам выполнять произвольный код.",
+      "impact": "Удаленный злоумышленник может выполнить произвольный код, перехватить сеансы администратора, а также раскрыть или модифицировать информацию.",
       "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 18.11.2026: зафиксирована эксплуатация в реальных атаках.",
-      "fix": "Примените смягчающие меры в соответствии с инструкциями производителя.",
+      "fix": "В источниках не указаны исправленные версии.",
       "checks": [
-        "Проверьте системы на наличие развертываний Synology DiskStation Manager (DSM).",
-        "Проверьте уровень воздействия и примените смягчающие меры от производителя."
+        "Проверьте системы под управлением Synology DiskStation Manager (DSM) на предмет доступности.",
+        "Примените предоставленные вендором смягчающие меры или обновления в соответствии с инструкциями производителя."
       ]
     },
     "de": {
       "status": "ready",
       "slug": "synology-diskstation-manager-dsm-schwachstelle-bei-der-ausgabe",
-      "title": "Synology DiskStation Manager (DSM): Schwachstelle bei der Ausgabe-Codierung",
-      "summary": "Synology DiskStation Manager (DSM) enthält eine Schwachstelle durch unsachgemäße Codierung oder Maskierung von Ausgaben, die es Angreifern ermöglicht, beliebigen Code auszuführen.",
-      "impact": "Ein Remotegreifer kann über nicht näher bezeichnete Vektoren beliebigen Code ausführen.",
+      "title": "Synology DiskStation Manager (DSM): Mehrere Schwachstellen",
+      "summary": "Synology DiskStation Manager (DSM) enthält mehrere Schwachstellen, darunter eine mangelhafte Codierung oder Maskierung von Ausgaben, die es Angreifern ermöglichen, beliebigen Code auszuführen.",
+      "impact": "Ein Angreifer kann beliebigen Code ausführen, Administratorsitzungen übernehmen sowie Informationen offenlegen oder manipulieren.",
       "exploitation": "CISA hat die Schwachstelle am 18.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
-      "fix": "Wenden Sie Abhilfemaßnahmen gemäß den Anweisungen des Herstellers an.",
+      "fix": "Von den Quellen werden keine korrigierten Versionen genannt.",
       "checks": [
-        "Überprüfen Sie Systeme auf den Einsatz von Synology DiskStation Manager (DSM).",
-        "Überprüfen Sie die Exposition und wenden Sie die vom Hersteller bereitgestellten Abhilfemaßnahmen an."
+        "Überprüfen Sie Systeme mit Synology DiskStation Manager (DSM) auf Exposition.",
+        "Wenden Sie vom Hersteller bereitgestellte Mitigationsmaßnahmen oder Updates gemäß den Anweisungen des Herstellers an."
       ]
     },
     "en": {
       "status": "ready",
       "slug": "synology-diskstation-manager-dsm-improper-output-encoding",
-      "title": "Synology DiskStation Manager (DSM): Improper output encoding vulnerability",
-      "summary": "Synology DiskStation Manager (DSM) contains an improper encoding or escaping of output vulnerability that allows remote attackers to execute arbitrary code.",
-      "impact": "A remote attacker can execute arbitrary code via unspecified vectors.",
+      "title": "Synology DiskStation Manager (DSM): Multiple Vulnerabilities",
+      "summary": "Synology DiskStation Manager (DSM) contains multiple vulnerabilities, including an improper encoding or escaping of output vulnerability, allowing remote attackers to execute arbitrary code.",
+      "impact": "A remote attacker can execute arbitrary code, take over administrator sessions, and disclose or manipulate information.",
       "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 18, 2026: exploitation in real attacks is confirmed.",
-      "fix": "Apply mitigations in accordance with vendor instructions.",
+      "fix": "The sources list no fixed versions.",
       "checks": [
-        "Check systems for Synology DiskStation Manager (DSM) deployments.",
-        "Verify exposure and apply vendor-provided mitigations."
+        "Check systems running Synology DiskStation Manager (DSM) for exposure.",
+        "Apply vendor-provided mitigations or updates in accordance with vendor instructions."
       ]
     }
   }
