@@ -20,7 +20,9 @@
     "cve": [
       "CVE-2026-76466"
     ],
-    "advisory": [],
+    "advisory": [
+      "cisco-sa-vcs-static-cred-hr7EWZ8t"
+    ],
     "kb": []
   },
   "affected": [],
@@ -49,6 +51,14 @@
       "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
       "publisher": "BleepingComputer",
       "kind": "media",
+      "date": "2026-11-23"
+    },
+    {
+      "id": "s3",
+      "title": "Cisco Expressway Series Remote Code Execution Vulnerability",
+      "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Expressway%20Series%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1",
+      "publisher": "Cisco Security Advisories",
+      "kind": "vendor",
       "date": "2026-11-23"
     }
   ],
