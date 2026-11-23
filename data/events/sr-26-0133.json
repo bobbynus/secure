@@ -31,7 +31,9 @@
       "USN-9171-2",
       "USN-9184-1",
       "WID-SEC-2025-0155",
+      "WID-SEC-2026-2403",
       "WID-SEC-2026-2640",
+      "WID-SEC-2026-2852",
       "WID-SEC-2026-4008"
     ],
     "kb": []
@@ -111,6 +113,22 @@
       "publisher": "CERT-Bund (BSI) WID security advisories",
       "kind": "cert",
       "date": "2025-01-21"
+    },
+    {
+      "id": "s9",
+      "title": "Linux Kernel: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2403",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
+      "date": "2026-07-19"
+    },
+    {
+      "id": "s10",
+      "title": "Linux Kernel: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2852",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
+      "date": "2026-08-16"
     }
   ],
   "revisions": [
