@@ -14,7 +14,9 @@
   "cve": [
    "CVE-2026-106197"
   ],
-  "advisory": [],
+  "advisory": [
+   "WID-SEC-2026-3761"
+  ],
   "kb": []
  },
  "severity": "critical",
@@ -31,7 +33,7 @@
  "title_hint": "Chromium CVE-2026-106197: Use after free",
  "summary_hint": "Microsoft Edge (Chromium-based). Microsoft 2026-Oct security update.",
  "created_at": "2026-11-19T08:40:42Z",
- "updated_at": "2026-11-19T08:40:42Z",
+ "updated_at": "2026-11-23T13:10:39Z",
  "event_date": "2026-11-19T08:40:42Z",
  "sources": [
   {
@@ -42,6 +44,15 @@
    "publisher": "Microsoft Security Response Center (CVRF API)",
    "kind": "vendor",
    "date": "2026-11-19"
+  },
+  {
+   "source_id": "cert-bund-wid",
+   "item_key": "WID-SEC-W-2026-3761",
+   "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3761",
+   "title": "Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
+   "publisher": "CERT-Bund (BSI) WID security advisories",
+   "kind": "cert",
+   "date": "2026-10-06"
   }
  ],
  "revisions": [
@@ -52,6 +63,12 @@
     "reason": "critical severity in infrastructure product"
    },
    "source": "msrc:CVE-2026-106197"
+  },
+  {
+   "date": "2026-11-23T13:10:39Z",
+   "kind": "source",
+   "facts": {},
+   "source": "cert-bund-wid:WID-SEC-W-2026-3761"
   }
  ],
  "related": [],

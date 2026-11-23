@@ -29,11 +29,11 @@
  "exploited": true,
  "kev": true,
  "kev_added": "2026-11-18",
- "ransomware": false,
+ "ransomware": true,
  "title_hint": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
  "summary_hint": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
  "created_at": "2026-11-18T20:00:42Z",
- "updated_at": "2026-11-19T11:50:52Z",
+ "updated_at": "2026-11-23T13:10:39Z",
  "event_date": "2026-11-18T00:00:00Z",
  "sources": [
   {
@@ -72,6 +72,12 @@
     "confirmation": "official"
    },
    "source": "cert-bund-wid:WID-SEC-W-2024-3378"
+  },
+  {
+   "date": "2026-11-23T13:10:39Z",
+   "kind": "source",
+   "facts": {},
+   "source": "cisa-kev:CVE-2024-10441"
   }
  ],
  "related": [],

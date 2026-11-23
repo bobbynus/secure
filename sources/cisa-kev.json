@@ -1,10 +1,10 @@
 {
  "id": "cisa-kev",
- "etag": "\"1c8d17-660b8daa9ec10\"",
- "last_modified": "Fri, 20 Nov 2026 17:48:39 GMT",
- "checksum": "12c9ca4c5350ecacdf22bdce91b4ffcf06b8c8dc9c69b8bfb4c1a21be7a5fe50",
+ "etag": "\"1c8d15-660f118b2d958\"",
+ "last_modified": "Mon, 23 Nov 2026 12:54:38 GMT",
+ "checksum": "776fdde0a5d4f412bfe8336ffb6da32294890a794cc374c5d4c72a99ae5db84c",
  "cursor": {
-  "catalogVersion": "2026.11.20"
+  "catalogVersion": "2026.11.23"
  },
  "seen": {
   "CVE-2026-115731": "9b309f8ee7dc1a132147c244",
@@ -1789,7 +1789,7 @@
   "CVE-2020-10189": "a110c415bed654812d258ea4",
   "CVE-2019-8394": "a110c415bed654812d258ea4",
   "CVE-2020-29583": "a110c415bed654812d258ea4",
-  "CVE-2024-10441": "65a3ff0821c757e8f6b3f1f5",
+  "CVE-2024-10441": "187eeaa8e25e86e11ab35a37",
   "CVE-2026-40217": "0b26b5b1755e3086b9a1c92f",
   "CVE-2026-90817": "65a3ff0821c757e8f6b3f1f5",
   "CVE-2026-90436": "65a3ff0821c757e8f6b3f1f5",
@@ -1798,10 +1798,10 @@
   "CVE-2025-42884": "01f82f1cbea6968e6a23531e",
   "CVE-2026-76466": "01f82f1cbea6968e6a23531e"
  },
- "last_attempt": "2026-11-23T12:40:42Z",
- "last_success": "2026-11-23T12:40:42Z",
+ "last_attempt": "2026-11-23T13:10:39Z",
+ "last_success": "2026-11-23T13:10:39Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 1790
+ "items_total": 1791
 }
