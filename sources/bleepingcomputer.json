@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "6ff67b7770588f8caca51fc0552197ec",
- "last_modified": "Mon, 23 Nov 2026 06:55:59 GMT",
- "checksum": "a7701b515f4ba3fb733be4afca38cd36d8d796a48edc06028d9fe358c0da625e",
+ "etag": "b1d0ff4082248a69162d161ee7dc53fd",
+ "last_modified": "Mon, 23 Nov 2026 07:26:00 GMT",
+ "checksum": "2df7027330842edd033bf24f2a9d5ca32170c0ab1db902a05b950531925c5827",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -47,8 +47,8 @@
   "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/": "9774bb2156b67e2fd2cb04fc",
   "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/": "24d089b407de590bf95496bc"
  },
- "last_attempt": "2026-11-23T07:00:38Z",
- "last_success": "2026-11-23T07:00:38Z",
+ "last_attempt": "2026-11-23T07:30:42Z",
+ "last_success": "2026-11-23T07:30:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
