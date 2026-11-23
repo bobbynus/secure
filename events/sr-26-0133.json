@@ -26,7 +26,9 @@
    "USN-9171-2",
    "USN-9184-1",
    "WID-SEC-2025-0155",
+   "WID-SEC-2026-2403",
    "WID-SEC-2026-2640",
+   "WID-SEC-2026-2852",
    "WID-SEC-2026-4008"
   ],
   "kb": []
@@ -45,7 +47,7 @@
  "title_hint": "Linux kernel RCE CVE-2026-98432",
  "summary_hint": "CVSSv3 Score:\n9.8\nCVE-2026-98432:ipv4: free inet_opt and ireq_opt after an RCU grace period tcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the child socket (newinet->inet_opt) without copying it. Another cpu can concurrently process a retransmitted SYN for the same request socket, and send a SYNACK from tcp_check_req(). tcp_v4_send_synack() and inet_csk_route_req() read ireq->ireq_opt under rcu_read_lock() only, and ip_build_and_send_pkt() and ip_options_build() then read opt->optlen twice. Note that the SYNACK timer itself is not an issue: it holds a reference on its request socket, and inet_csk_reqsk_queue_drop() calls timer_delete_sync() before the child can be freed. Since commit 079096f103fa (\"tcp/dccp: install syn_recv requests into ehash table\"), request sockets are processed without holding the listener lock, so nothing prevents the child socket from being freed while the SYNACK is still being built. TCP child sockets do not have SOCK_RCU_FREE, and inet_sock_destruct() frees inet_opt with a plain kfree(), leading to a use-after-free in ip_options_build(). A similar issue exists with request socket migration (net.ipv4.tcp_migrate_req=1, or a BPF_SK_REUSEPORT_SELECT_OR_MIGRATE program). reqsk_timer_handler() clones the request socket with inet_reqsk_clone(), so that the old request socket and its clone share the same ireq_opt, then reqsk_migrate_reset() clears the pointer in the old one. Another cpu holding a reference on the old request socket can stil",
  "created_at": "2026-11-19T16:50:42Z",
- "updated_at": "2026-11-23T11:10:48Z",
+ "updated_at": "2026-11-23T12:10:44Z",
  "event_date": "2026-11-02T08:00:00Z",
  "sources": [
   {
@@ -119,6 +121,24 @@
    "publisher": "CERT-Bund (BSI) WID security advisories",
    "kind": "cert",
    "date": "2025-01-21"
+  },
+  {
+   "source_id": "cert-bund-wid",
+   "item_key": "WID-SEC-W-2026-2403",
+   "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2403",
+   "title": "Linux Kernel: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
+   "publisher": "CERT-Bund (BSI) WID security advisories",
+   "kind": "cert",
+   "date": "2026-07-19"
+  },
+  {
+   "source_id": "cert-bund-wid",
+   "item_key": "WID-SEC-W-2026-2852",
+   "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2852",
+   "title": "Linux Kernel: Mehrere Schwachstellen",
+   "publisher": "CERT-Bund (BSI) WID security advisories",
+   "kind": "cert",
+   "date": "2026-08-16"
   }
  ],
  "revisions": [
@@ -178,6 +198,18 @@
    "kind": "source",
    "facts": {},
    "source": "cert-bund-wid:WID-SEC-W-2025-0155"
+  },
+  {
+   "date": "2026-11-23T12:10:44Z",
+   "kind": "source",
+   "facts": {},
+   "source": "cert-bund-wid:WID-SEC-W-2026-2403"
+  },
+  {
+   "date": "2026-11-23T12:10:44Z",
+   "kind": "source",
+   "facts": {},
+   "source": "cert-bund-wid:WID-SEC-W-2026-2852"
   }
  ],
  "related": [],
