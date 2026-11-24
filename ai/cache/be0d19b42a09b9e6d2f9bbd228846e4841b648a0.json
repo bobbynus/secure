@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft SharePoint: Remote Code Execution Vulnerability (CVE-2026-70193)",
+  "summary": "A remote, authenticated attacker can exploit a vulnerability in Microsoft SharePoint Server and Microsoft SharePoint Online to execute arbitrary code.",
+  "impact": "An authenticated remote attacker can achieve remote code execution in Microsoft SharePoint.",
+  "fix": "Apply security update KB5002927 or follow Microsoft guidance.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft SharePoint Server and Microsoft SharePoint Online installations.",
+   "Check systems for the application of update `KB5002927`."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода (CVE-2026-70193)",
+  "summary": "Удаленный аутентифицированный злоумышленник может использовать уязвимость в Microsoft SharePoint Server и Microsoft SharePoint Online для выполнения произвольного кода.",
+  "impact": "Аутентифицированный удаленный злоумышленник может выполнить произвольный код в Microsoft SharePoint.",
+  "fix": "Установите обновление безопасности `KB5002927` или следуйте рекомендациям Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установок Microsoft SharePoint Server и Microsoft SharePoint Online.",
+   "Проверьте системы на наличие обновления `KB5002927`."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft SharePoint: Schwachstelle ermöglicht Codeausführung (CVE-2026-70193)",
+  "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Microsoft SharePoint Server und Microsoft SharePoint Online ausnutzen, um beliebigen Programmcode auszuführen.",
+  "impact": "Ein authentisierter, entfernter Angreifer kann beliebigen Programmcode in Microsoft SharePoint ausführen.",
+  "fix": "Installieren Sie das Sicherheitsupdate `KB5002927` oder folgen Sie den Anweisungen von Microsoft.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Microsoft SharePoint Server- und Microsoft SharePoint Online-Installationen.",
+   "Überprüfen Sie Systeme auf die Anwendung des Updates `KB5002927`."
+  ],
+  "regression": null
+ }
+}

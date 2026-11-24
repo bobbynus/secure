@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-11-24T00:40:43Z",
- "lastSuccess": "2026-11-24T00:40:43Z",
+ "generatedAt": "2026-11-24T01:10:50Z",
+ "lastSuccess": "2026-11-24T01:10:50Z",
  "run": {
   "ok": 18,
   "error": 0
  },
  "totals": {
-  "items_new": 0,
+  "items_new": 6,
   "events_created": 0,
   "events_updated": 0,
   "notifiable": 0
@@ -21,7 +21,7 @@
   {
    "id": "cisa-kev",
    "state": "ok",
-   "lastSuccess": "2026-11-24T00:40:43Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
@@ -32,35 +32,35 @@
   {
    "id": "ms-release-health",
    "state": "ok",
-   "lastSuccess": "2026-11-24T00:10:48Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "msrc",
    "state": "ok",
-   "lastSuccess": "2026-11-24T00:10:48Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "fortiguard-psirt",
    "state": "ok",
-   "lastSuccess": "2026-11-24T00:40:43Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "paloalto-psirt",
    "state": "ok",
-   "lastSuccess": "2026-11-24T00:40:43Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "ivanti-advisories",
    "state": "ok",
-   "lastSuccess": "2026-11-24T00:10:48Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
@@ -71,7 +71,7 @@
   {
    "id": "cisco-psirt",
    "state": "ok",
-   "lastSuccess": "2026-11-24T00:10:48Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
@@ -82,28 +82,28 @@
   {
    "id": "ubuntu-usn",
    "state": "ok",
-   "lastSuccess": "2026-11-24T00:40:43Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "debian-dsa",
    "state": "ok",
-   "lastSuccess": "2026-11-24T00:40:43Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "redhat-secdata",
    "state": "ok",
-   "lastSuccess": "2026-11-24T00:10:48Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "k8s-cve-feed",
    "state": "ok",
-   "lastSuccess": "2026-11-24T00:10:48Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
@@ -117,35 +117,35 @@
   {
    "id": "proxmox-announcements",
    "state": "ok",
-   "lastSuccess": "2026-11-23T19:10:55Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "opnsense-releases",
    "state": "ok",
-   "lastSuccess": "2026-11-23T19:10:55Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "cert-bund-wid",
    "state": "ok",
-   "lastSuccess": "2026-11-24T00:10:48Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "zdi-advisories",
    "state": "ok",
-   "lastSuccess": "2026-11-24T00:10:48Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   },
   {
    "id": "bleepingcomputer",
    "state": "ok",
-   "lastSuccess": "2026-11-24T00:40:43Z",
+   "lastSuccess": "2026-11-24T01:10:50Z",
    "lastError": null,
    "failures": 0
   }

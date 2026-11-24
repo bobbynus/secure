@@ -1,0 +1,43 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "Microsoft 2026-Oct security update",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Oct security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: Use after free vulnerability CVE-2026-106197",
+  "summary": "A use-after-free vulnerability affects Microsoft Edge (Chromium-based), carrying a critical CVSS score of 9.6.",
+  "impact": "The vulnerability allows attackers to cause unspecified impacts via a use-after-free condition.",
+  "fix": "The sources do not list specific fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Edge (Chromium-based) installations for exposure to CVE-2026-106197."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: уязвимость типа use-after-free CVE-2026-106197",
+  "summary": "Уязвимость use-after-free затрагивает Microsoft Edge (на базе Chromium) и имеет критическую оценку CVSS 9.6.",
+  "impact": "Уязвимость позволяет злоумышленникам вызывать неопределенные последствия из-за ошибки use-after-free.",
+  "fix": "В источниках не указаны конкретные исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте инсталляции Microsoft Edge (на базе Chromium) на предмет уязвимости CVE-2026-106197."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: Use-After-Free-Schwachstelle CVE-2026-106197",
+  "summary": "Eine Use-After-Free-Schwachstelle betrifft Microsoft Edge (Chromium-basiert) mit einem kritischen CVSS-Score von 9.6.",
+  "impact": "Die Schwachstelle ermöglicht es Angreifern, durch eine Use-After-Free-Bedingung unbestimmte Auswirkungen zu verursachen.",
+  "fix": "Die Quellen nennen keine konkreten korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft Edge (Chromium-basiert) Installationen auf Betroffenheit durch CVE-2026-106197."
+  ],
+  "regression": null
+ }
+}

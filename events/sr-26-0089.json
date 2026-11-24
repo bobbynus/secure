@@ -78,41 +78,38 @@
  },
  "publish_state": "published",
  "ai": {
-  "input_hash": "3548606502c865567d900934",
+  "input_hash": "dfe7ba97eb7ed3b75cbf95e7",
   "texts": {
    "en": {
-    "title": "Microsoft Edge: CVE-2026-113072 memory corruption vulnerability",
-    "summary": "A critical memory corruption vulnerability, CVE-2026-113072, affects Microsoft Edge (Chromium-based).",
-    "impact": "The vulnerability involves memory corruption in Microsoft Edge (Chromium-based), leading to unspecified impacts.",
-    "fix": "The sources do not list fixed versions.",
+    "title": "Microsoft Edge (Chromium-based): CVE-2026-113072 memory corruption",
+    "summary": "Microsoft Edge (Chromium-based) is affected by a memory corruption vulnerability tracked as CVE-2026-113072.",
+    "impact": "The sources do not provide detailed impact information beyond mentioning memory corruption.",
+    "fix": "The sources list no fixed versions.",
     "workaround": null,
     "checks": [
-     "Check systems running Microsoft Edge (Chromium-based) for vulnerability exposure.",
-     "Verify the installation status of the Microsoft 2026-Oct security update."
+     "Check systems for installed Microsoft Edge (Chromium-based) versions."
     ],
     "regression": null
    },
    "ru": {
-    "title": "Microsoft Edge: уязвимость повреждения памяти CVE-2026-113072",
-    "summary": "Критическая уязвимость повреждения памяти CVE-2026-113072 затрагивает Microsoft Edge (Chromium-based).",
-    "impact": "Уязвимость связана с повреждением памяти в Microsoft Edge (Chromium-based) и приводит к неопределенным последствиям.",
+    "title": "Microsoft Edge (Chromium-based): повреждение памяти CVE-2026-113072",
+    "summary": "Microsoft Edge (Chromium-based) подвержен уязвимости повреждения памяти, отслеживаемой под идентификатором CVE-2026-113072.",
+    "impact": "Источники не предоставляют подробной информации о последствиях, кроме упоминания повреждения памяти.",
     "fix": "В источниках не указаны исправленные версии.",
     "workaround": null,
     "checks": [
-     "Проверьте системы с установленным Microsoft Edge (Chromium-based) на подверженность уязвимости.",
-     "Проверьте статус установки октябрьского обновления безопасности Microsoft 2026 года."
+     "Проверьте системы на наличие установленных версий Microsoft Edge (Chromium-based)."
     ],
     "regression": null
    },
    "de": {
-    "title": "Microsoft Edge: Speicher corruption Schwachstelle CVE-2026-113072",
-    "summary": "Eine kritische Speicherbeschädigungsschwachstelle, CVE-2026-113072, betrifft Microsoft Edge (Chromium-based).",
-    "impact": "Die Schwachstelle betrifft die Speicherbeschädigung in Microsoft Edge (Chromium-based) mit unbestimmten Auswirkungen.",
+    "title": "Microsoft Edge (Chromium-based): Speicherbeschädigung CVE-2026-113072",
+    "summary": "Microsoft Edge (Chromium-based) ist von einer Speicherbeschädigungsschwachstelle betroffen, die als CVE-2026-113072 geführt wird.",
+    "impact": "Die Quellen nennen keine detaillierten Auswirkungen außer einer Speicherbeschädigung.",
     "fix": "Die Quellen nennen keine korrigierten Versionen.",
     "workaround": null,
     "checks": [
-     "Überprüfen Sie Systeme mit Microsoft Edge (Chromium-based) auf Anfälligkeit.",
-     "Überprüfen Sie den Installationsstatus des Sicherheitsupdates von Microsoft für Oktober 2026."
+     "Überprüfen Sie Systeme auf installierte Microsoft Edge (Chromium-based)-Versionen."
     ],
     "regression": null
    }
@@ -121,7 +118,7 @@
   "workaround": false,
   "model": "gemini-3.5-flash-lite",
   "prompt": "p3",
-  "generated_at": "2026-11-20T19:10:56Z",
+  "generated_at": "2026-11-24T01:11:06Z",
   "slugs": {
    "ru": "microsoft-edge-uyazvimost-povrezhdeniya-pamyati-cve-2026-113072",
    "de": "microsoft-edge-speicher-corruption-schwachstelle-cve-2026-113072",
@@ -132,6 +129,6 @@
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 1
+  "calls": 2
  }
 }
