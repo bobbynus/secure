@@ -37,7 +37,7 @@
  "title_hint": "Microsoft Office SharePoint Remote Code Execution Vulnerability",
  "summary_hint": "Microsoft Office SharePoint. Microsoft 2026-Nov security update.",
  "created_at": "2026-11-20T09:00:44Z",
- "updated_at": "2026-11-23T15:10:43Z",
+ "updated_at": "2026-11-24T12:20:50Z",
  "event_date": "2026-11-20T09:00:44Z",
  "sources": [
   {
@@ -84,51 +84,57 @@
    "kind": "source",
    "facts": {},
    "source": "cert-bund-wid:WID-SEC-W-2026-4742"
+  },
+  {
+   "date": "2026-11-24T12:20:50Z",
+   "kind": "source",
+   "facts": {},
+   "source": "cert-bund-wid:WID-SEC-W-2026-4742"
   }
  ],
  "related": [],
  "reason": "critical severity in infrastructure product",
  "texts": {
   "msrc:CVE-2026-70193": "Microsoft Office SharePoint Remote Code Execution Vulnerability\nMicrosoft Office SharePoint. Microsoft 2026-Nov security update.",
-  "cert-bund-wid:WID-SEC-W-2026-4742": "Microsoft SharePoint: Schwachstelle ermöglicht Codeausführung\nEin entfernter, authentisierter Angreifer kann eine Schwachstelle in Microsoft SharePoint ausnutzen, um beliebigen Programmcode auszuführen.\nMicrosoft Sharepoint Services ist ein Portalsystem für die zentrale Verwaltung von Dokumenten und Anwendungen. Die Inhalte werden u.a. über Webseiten zur Verfügung gestellt."
+  "cert-bund-wid:WID-SEC-W-2026-4742": "Microsoft SharePoint: Schwachstelle ermöglicht Codeausführung\nEin entfernter, authentisierter Angreifer kann eine Schwachstelle in Microsoft SharePoint ausnutzen, um beliebigen Programmcode auszuführen.\nMicrosoft Sharepoint Services ist ein Portalsystem für die zentrale Verwaltung von Dokumenten und Anwendungen. Die Inhalte werden u.a. über Webseiten zur Verfügung gestellt.\nRevision: Referenz(en) aufgenommen: EUVD-2026-133468"
  },
  "publish_state": "published",
  "ai": {
-  "input_hash": "d0480aea7c4bfdea838992c9",
+  "input_hash": "059eb54dd4ec33e5aa585277",
   "texts": {
    "en": {
-    "title": "Microsoft SharePoint: Remote Code Execution Vulnerability (CVE-2026-70193)",
-    "summary": "A remote, authenticated attacker can exploit a vulnerability in Microsoft SharePoint Server and Microsoft SharePoint Online to execute arbitrary code.",
-    "impact": "An authenticated remote attacker can achieve remote code execution in Microsoft SharePoint.",
-    "fix": "Apply security update KB5002927 or follow Microsoft guidance.",
+    "title": "Microsoft SharePoint: Remote Code Execution Vulnerability",
+    "summary": "A critical remote code execution vulnerability exists in Microsoft SharePoint. A remote authenticated attacker can exploit this to execute arbitrary code.",
+    "impact": "A remote authenticated attacker can execute arbitrary code on affected systems.",
+    "fix": "Apply the 2026-Nov security update (KB5002927).",
     "workaround": null,
     "checks": [
-     "Inventory Microsoft SharePoint Server and Microsoft SharePoint Online installations.",
-     "Check systems for the application of update `KB5002927`."
+     "Inventory Microsoft SharePoint Server and Microsoft SharePoint Online deployments.",
+     "Verify whether KB5002927 or the Microsoft 2026-Nov security update is installed."
     ],
     "regression": null
    },
    "ru": {
-    "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода (CVE-2026-70193)",
-    "summary": "Удаленный аутентифицированный злоумышленник может использовать уязвимость в Microsoft SharePoint Server и Microsoft SharePoint Online для выполнения произвольного кода.",
-    "impact": "Аутентифицированный удаленный злоумышленник может выполнить произвольный код в Microsoft SharePoint.",
-    "fix": "Установите обновление безопасности `KB5002927` или следуйте рекомендациям Microsoft.",
+    "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода",
+    "summary": "В Microsoft SharePoint обнаружена критическая уязвимость удаленного выполнения кода. Удаленный аутентифицированный злоумышленник может использовать ее для выполнения произвольного кода.",
+    "impact": "Удаленный аутентифицированный злоумышленник может выполнить произвольный код на уязвимых системах.",
+    "fix": "Установите ноябрьское обновление безопасности 2026 года (KB5002927).",
     "workaround": null,
     "checks": [
-     "Проведите инвентаризацию установок Microsoft SharePoint Server и Microsoft SharePoint Online.",
-     "Проверьте системы на наличие обновления `KB5002927`."
+     "Проведите инвентаризацию развертываний Microsoft SharePoint Server и Microsoft SharePoint Online.",
+     "Проверьте, установлено ли обновление безопасности KB5002927 или ноябрьское обновление безопасности 2026 года."
     ],
     "regression": null
    },
    "de": {
-    "title": "Microsoft SharePoint: Schwachstelle ermöglicht Codeausführung (CVE-2026-70193)",
-    "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Microsoft SharePoint Server und Microsoft SharePoint Online ausnutzen, um beliebigen Programmcode auszuführen.",
-    "impact": "Ein authentisierter, entfernter Angreifer kann beliebigen Programmcode in Microsoft SharePoint ausführen.",
-    "fix": "Installieren Sie das Sicherheitsupdate `KB5002927` oder folgen Sie den Anweisungen von Microsoft.",
+    "title": "Microsoft SharePoint: Schwachstelle ermöglicht Codeausführung",
+    "summary": "In Microsoft SharePoint existiert eine kritische Schwachstelle, die eine Codeausführung ermöglicht. Ein entfernter, authentisierter Angreifer kann dies ausnutzen, um beliebigen Code auszuführen.",
+    "impact": "Ein entfernter, authentisierter Angreifer kann beliebigen Programmcode auf betroffenen Systemen ausführen.",
+    "fix": "Installieren Sie das Sicherheitsupdate von November 2026 (KB5002927).",
     "workaround": null,
     "checks": [
-     "Inventarisieren Sie Microsoft SharePoint Server- und Microsoft SharePoint Online-Installationen.",
-     "Überprüfen Sie Systeme auf die Anwendung des Updates `KB5002927`."
+     "Inventarisieren Sie Microsoft SharePoint Server und Microsoft SharePoint Online.",
+     "Überprüfen Sie, ob KB5002927 oder das Microsoft-Sicherheitsupdate von November 2026 installiert ist."
     ],
     "regression": null
    }
@@ -137,7 +143,7 @@
   "workaround": false,
   "model": "gemini-3.5-flash-lite",
   "prompt": "p3",
-  "generated_at": "2026-11-24T01:11:06Z",
+  "generated_at": "2026-11-24T12:21:00Z",
   "slugs": {
    "ru": "microsoft-sharepoint-uyazvimost-udalennogo-vypolneniya-koda-cve",
    "de": "microsoft-sharepoint-schwachstelle-zur-remote-code-ausfuehrung",
@@ -148,6 +154,6 @@
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 3
+  "calls": 4
  }
 }

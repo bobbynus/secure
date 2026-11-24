@@ -1,0 +1,36 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft Edge: CVE-2026-126885",
+  "summary": "A use-after-free vulnerability affects Microsoft Edge (Chromium-based), reported in the Microsoft 2026-Nov security update.",
+  "impact": "The sources do not provide detailed impact information beyond the vulnerability type (use after free).",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Edge (Chromium-based) installations."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: CVE-2026-126885",
+  "summary": "Уязвимость типа use-after-free затрагивает Microsoft Edge (на базе Chromium), о чем сообщается в ноябрьском обновлении безопасности Microsoft за 2026 год.",
+  "impact": "Источники не предоставляют подробной информации о последствиях, кроме типа уязвимости (use-after-free).",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установок Microsoft Edge (на базе Chromium)."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: CVE-2026-126885",
+  "summary": "Eine Use-After-Free-Schwachstelle betrifft Microsoft Edge (Chromium-basiert), gemeldet im Microsoft-Sicherheitsupdate für November 2026.",
+  "impact": "Die Quellen nennen keine detaillierten Auswirkungen außer dem Schwachstellentyp (Use-After-Free).",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Microsoft Edge (Chromium-basiert) Installationen."
+  ],
+  "regression": null
+ }
+}

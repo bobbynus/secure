@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Microsoft SharePoint: Remote Code Execution Vulnerability",
+  "summary": "A critical remote code execution vulnerability exists in Microsoft SharePoint. A remote authenticated attacker can exploit this to execute arbitrary code.",
+  "impact": "A remote authenticated attacker can execute arbitrary code on affected systems.",
+  "fix": "Apply the 2026-Nov security update (KB5002927).",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft SharePoint Server and Microsoft SharePoint Online deployments.",
+   "Verify whether KB5002927 or the Microsoft 2026-Nov security update is installed."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода",
+  "summary": "В Microsoft SharePoint обнаружена критическая уязвимость удаленного выполнения кода. Удаленный аутентифицированный злоумышленник может использовать ее для выполнения произвольного кода.",
+  "impact": "Удаленный аутентифицированный злоумышленник может выполнить произвольный код на уязвимых системах.",
+  "fix": "Установите ноябрьское обновление безопасности 2026 года (KB5002927).",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию развертываний Microsoft SharePoint Server и Microsoft SharePoint Online.",
+   "Проверьте, установлено ли обновление безопасности KB5002927 или ноябрьское обновление безопасности 2026 года."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft SharePoint: Schwachstelle ermöglicht Codeausführung",
+  "summary": "In Microsoft SharePoint existiert eine kritische Schwachstelle, die eine Codeausführung ermöglicht. Ein entfernter, authentisierter Angreifer kann dies ausnutzen, um beliebigen Code auszuführen.",
+  "impact": "Ein entfernter, authentisierter Angreifer kann beliebigen Programmcode auf betroffenen Systemen ausführen.",
+  "fix": "Installieren Sie das Sicherheitsupdate von November 2026 (KB5002927).",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Microsoft SharePoint Server und Microsoft SharePoint Online.",
+   "Überprüfen Sie, ob KB5002927 oder das Microsoft-Sicherheitsupdate von November 2026 installiert ist."
+  ],
+  "regression": null
+ }
+}
