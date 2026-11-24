@@ -38,7 +38,18 @@
     ],
     "kb": []
   },
-  "affected": [],
+  "affected": [
+    {
+      "product": "Ubuntu Linux kernel-oracle",
+      "versions": "4.15.0",
+      "fixed": "4.15.0-1162.173~16.04.1"
+    },
+    {
+      "product": "Ubuntu Linux kernel-aws-fips",
+      "versions": "5.4.0",
+      "fixed": "5.4.0-1169.180+fips1"
+    }
+  ],
   "cvss": {
     "score": 9.8,
     "version": "3.x",
@@ -145,46 +156,49 @@
   "generated": {
     "model": "gemini-3.5-flash-lite",
     "prompt": "p3",
-    "at": "2026-11-23T11:11:10Z"
+    "at": "2026-11-24T01:11:06Z"
   },
   "translations": {
     "ru": {
       "status": "ready",
       "slug": "yadro-linux-use-after-free-v-setevoy-podsisteme-ipv4-cve-2026",
-      "title": "Ядро Linux: несколько уязвимостей",
-      "summary": "Множественные уязвимости в ядре Linux позволяют злоумышленникам вызвать отказ в обслуживании либо выполнить несанкционированный код или команды.",
-      "impact": "Злоумышленник может использовать эти уязвимости для компрометации системы, выполнения несанкционированного кода или команд либо вызова отказа в обслуживании.",
+      "title": "Ядро Linux: Множественные уязвимости в сетевой подсистеме IPv4 и других компонентах",
+      "summary": "В ядре Linux обнаружено несколько уязвимостей, позволяющих злоумышленникам скомпрометировать систему, вызвать отказ в обслуживании или получить права суперпользователя.",
+      "impact": "Злоумышленники могут скомпрометировать уязвимую систему, выполнить неавторизованный код или команды, вызвать отказ в обслуживании или повысить привилегии до root.",
       "exploitation": "В использованных источниках нет сведений об эксплуатации.",
-      "fix": "Примените обновления, предоставленные вашим поставщиком, такие как бюллетени безопасности Ubuntu USN-9171-2 и USN-9170-2.",
+      "fix": "Установите последние обновления ядра, предоставленные разработчиком вашего дистрибутива.",
       "checks": [
-        "Проверьте установленные версии ядра Linux и обновления пакетов в затронутых системах.",
-        "Проверьте уязвимость компонентов сетевых подсистем IPv4, Netfilter, моста Ethernet и подсистемы XFRM."
+        "Проинвентаризуйте системы Linux и проверьте используемые версии ядра.",
+        "Проверьте, используются ли уязвимые подсистемы и пакеты (например, linux-oracle или linux-aws-fips).",
+        "Установите обновления ядра от производителя и перезагрузите систему для завершения процесса."
       ]
     },
     "de": {
       "status": "ready",
       "slug": "linux-kernel-use-after-free-in-ipv4-netzwerksubsystem-cve-2026",
-      "title": "Linux-Kernel: Mehrere Schwachstellen",
-      "summary": "Mehrere Schwachstellen im Linux-Kernel ermöglichen es Angreifern, einen Denial-of-Service-Angriff durchzuführen oder unautorisierten Code oder Befehle auszuführen.",
-      "impact": "Ein Angreifer kann diese Schwachstellen ausnutzen, um das System zu kompromittieren, unautorisierten Code oder Befehle auszuführen oder einen Denial of Service zu verursachen.",
+      "title": "Linux-Kernel: Mehrere Schwachstellen in IPv4-Netzwerken und weiteren Subsystemen",
+      "summary": "Im Linux-Kernel wurden mehrere Schwachstellen entdeckt, die es Angreifern ermöglichen, Systeme zu kompromittieren, Denial-of-Service-Angriffe durchzuführen oder Root-Rechte zu erlangen.",
+      "impact": "Angreifer können das betroffene System möglicherweise kompromittieren, unautorisierten Code oder Befehle ausführen, einen Denial-of-Service verursachen oder Root-Privilegien erlangen.",
       "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
-      "fix": "Wenden Sie die von Ihrem Anbieter bereitgestellten Updates an, wie zum Beispiel die Ubuntu-Sicherheitshinweise USN-9171-2 und USN-9170-2.",
+      "fix": "Wenden Sie die neuesten vom Distributionen-Hersteller bereitgestellten Kernel-Updates an.",
       "checks": [
-        "Überprüfen Sie die installierten Linux-Kernel-Versionen und Paketupdates auf betroffenen Systemen.",
-        "Überprüfen Sie die Exposition gegenüber Schwachstellen in IPv4-Networking, Netfilter, Ethernet-Bridge und XFRM-Subsystem."
+        "Inventarisieren Sie Linux-Systeme und überprüfen Sie die laufenden Kernel-Versionen.",
+        "Überprüfen Sie, ob die betroffenen Subsysteme und Pakete (wie linux-oracle oder linux-aws-fips) eingesetzt werden.",
+        "Wenden Sie die vom Hersteller bereitgestellten Kernel-Updates an und starten Sie das System neu."
       ]
     },
     "en": {
       "status": "ready",
       "slug": "linux-kernel-use-after-free-in-ipv4-networking-cve-2026-98432",
-      "title": "Linux kernel: multiple vulnerabilities",
-      "summary": "Multiple vulnerabilities in the Linux kernel allow attackers to cause a denial of service or execute unauthorized code or commands.",
-      "impact": "An attacker can exploit these vulnerabilities to compromise the system, execute unauthorized code or commands, or cause a denial of service.",
+      "title": "Linux kernel: Multiple vulnerabilities in IPv4 networking and other subsystems",
+      "summary": "Several vulnerabilities have been discovered in the Linux kernel, allowing attackers to compromise systems, cause a denial of service, or gain root privileges.",
+      "impact": "Attackers can potentially compromise the affected system, execute unauthorized code or commands, cause a denial of service, or escalate privileges to root.",
       "exploitation": "The sources reviewed contain no reports of exploitation.",
-      "fix": "Apply the updates provided by your vendor, such as Ubuntu security notices USN-9171-2 and USN-9170-2.",
+      "fix": "Apply the latest kernel updates provided by your distribution vendor.",
       "checks": [
-        "Check installed Linux kernel versions and package updates across affected systems.",
-        "Verify system exposure to IPv4 networking, Netfilter, Ethernet bridge, and XFRM subsystem flaws."
+        "Inventory Linux systems and check the running kernel versions.",
+        "Verify whether the affected subsystems and packages (such as linux-oracle or linux-aws-fips) are deployed.",
+        "Apply vendor-provided kernel updates and reboot the system to complete the process."
       ]
     }
   }

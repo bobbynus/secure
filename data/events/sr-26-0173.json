@@ -78,46 +78,46 @@
   "generated": {
     "model": "gemini-3.5-flash-lite",
     "prompt": "p3",
-    "at": "2026-11-23T10:39:19Z"
+    "at": "2026-11-24T01:11:06Z"
   },
   "translations": {
     "ru": {
       "status": "ready",
       "slug": "microsoft-sharepoint-uyazvimost-udalennogo-vypolneniya-koda-cve",
       "title": "Microsoft SharePoint: уязвимость удаленного выполнения кода (CVE-2026-70193)",
-      "summary": "В Microsoft SharePoint Server и Microsoft SharePoint Online обнаружена критическая уязвимость удаленного выполнения кода.",
-      "impact": "Злоумышленник может выполнить удаленный код. Предварительные условия и детали в источниках не указаны.",
+      "summary": "Удаленный аутентифицированный злоумышленник может использовать уязвимость в Microsoft SharePoint Server и Microsoft SharePoint Online для выполнения произвольного кода.",
+      "impact": "Аутентифицированный удаленный злоумышленник может выполнить произвольный код в Microsoft SharePoint.",
       "exploitation": "В использованных источниках нет сведений об эксплуатации.",
-      "fix": "Установите обновление KB5002927.",
+      "fix": "Установите обновление безопасности `KB5002927` или следуйте рекомендациям Microsoft.",
       "checks": [
-        "Проведите инвентаризацию установок SharePoint Server и Microsoft SharePoint Online.",
-        "Проверьте, установлено ли обновление KB5002927."
+        "Проведите инвентаризацию установок Microsoft SharePoint Server и Microsoft SharePoint Online.",
+        "Проверьте системы на наличие обновления `KB5002927`."
       ]
     },
     "de": {
       "status": "ready",
       "slug": "microsoft-sharepoint-schwachstelle-zur-remote-code-ausfuehrung",
-      "title": "Microsoft SharePoint: Remotecodeausführung (CVE-2026-70193)",
-      "summary": "In Microsoft SharePoint Server und Microsoft SharePoint Online existiert eine kritische Schwachstelle zur Remotecodeausführung.",
-      "impact": "Ein Angreifer kann Remotecode ausführen. Voraussetzungen und Details werden in den Quellen nicht genannt.",
+      "title": "Microsoft SharePoint: Schwachstelle ermöglicht Codeausführung (CVE-2026-70193)",
+      "summary": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Microsoft SharePoint Server und Microsoft SharePoint Online ausnutzen, um beliebigen Programmcode auszuführen.",
+      "impact": "Ein authentisierter, entfernter Angreifer kann beliebigen Programmcode in Microsoft SharePoint ausführen.",
       "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
-      "fix": "Wenden Sie das Update KB5002927 an.",
+      "fix": "Installieren Sie das Sicherheitsupdate `KB5002927` oder folgen Sie den Anweisungen von Microsoft.",
       "checks": [
-        "Erfassen Sie SharePoint Server- und Microsoft SharePoint Online-Installationen.",
-        "Prüfen Sie, ob KB5002927 angewendet wurde."
+        "Inventarisieren Sie Microsoft SharePoint Server- und Microsoft SharePoint Online-Installationen.",
+        "Überprüfen Sie Systeme auf die Anwendung des Updates `KB5002927`."
       ]
     },
     "en": {
       "status": "ready",
       "slug": "microsoft-sharepoint-remote-code-execution-vulnerability-cve",
       "title": "Microsoft SharePoint: Remote Code Execution Vulnerability (CVE-2026-70193)",
-      "summary": "A critical remote code execution vulnerability exists in Microsoft SharePoint Server and Microsoft SharePoint Online.",
-      "impact": "An attacker can achieve remote code execution. Preconditions and specific details are not provided in the sources.",
+      "summary": "A remote, authenticated attacker can exploit a vulnerability in Microsoft SharePoint Server and Microsoft SharePoint Online to execute arbitrary code.",
+      "impact": "An authenticated remote attacker can achieve remote code execution in Microsoft SharePoint.",
       "exploitation": "The sources reviewed contain no reports of exploitation.",
-      "fix": "Apply update KB5002927.",
+      "fix": "Apply security update KB5002927 or follow Microsoft guidance.",
       "checks": [
-        "Inventory SharePoint Server and Microsoft SharePoint Online installations.",
-        "Check if KB5002927 is applied."
+        "Inventory Microsoft SharePoint Server and Microsoft SharePoint Online installations.",
+        "Check systems for the application of update `KB5002927`."
       ]
     }
   }
