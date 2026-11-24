@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "a9a653d2a37902b160a69b25f6804554",
- "last_modified": "Tue, 24 Nov 2026 02:32:33 GMT",
- "checksum": "4f34447661346b9bb0db39a5104e84264e03b2690535732bfe78b1244822e780",
+ "etag": "5769bc0f089d90ac82201896a29079a0",
+ "last_modified": "Tue, 24 Nov 2026 03:02:34 GMT",
+ "checksum": "879f4e4d80c08e0f25b2029fc65fb1678ba28ef7707a3edc1225f748be5a4678",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -57,8 +57,8 @@
   "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/": "4cf1f6a2fb60eb334055a23b",
   "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/": "a26907bb28e704644b26a686"
  },
- "last_attempt": "2026-11-24T02:40:45Z",
- "last_success": "2026-11-24T02:40:45Z",
+ "last_attempt": "2026-11-24T03:10:40Z",
+ "last_success": "2026-11-24T03:10:40Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
