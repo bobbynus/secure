@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "cd2431b33df9454c07e95f14c5eb4111",
- "last_modified": "Tue, 24 Nov 2026 15:46:47 GMT",
- "checksum": "fa9c26a6aa4a81cdc941d0bea1a49914f53cf0887ba16b9851edefe6e9f0e93c",
+ "etag": "30b2f1b4c8fd7bb414fbca546b4c6b3f",
+ "last_modified": "Tue, 24 Nov 2026 16:15:24 GMT",
+ "checksum": "b15418ca1859a6af792c9eda86e3e097d320e4104a10a55b2d7db8680697dbd3",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -59,12 +59,13 @@
   "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/": "57eb18dd4df13b87c7d3132e",
   "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/": "f60f98e4a3940cf48b398f06",
   "https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/": "6c7cbe7845bc4d134e102015",
-  "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/": "d089f7f0b6dc64f955af5176"
+  "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/": "d089f7f0b6dc64f955af5176",
+  "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/": "0287a667fed1267416769ac0"
  },
- "last_attempt": "2026-11-24T15:50:52Z",
- "last_success": "2026-11-24T15:50:52Z",
+ "last_attempt": "2026-11-24T16:20:43Z",
+ "last_success": "2026-11-24T16:20:43Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 57
+ "items_total": 58
 }
