@@ -412,8 +412,8 @@
   "CVE-2026-135736": "e6cded286b4cc1400e972270",
   "CVE-2026-135743": "e4a37f1d27b2485a8f45d9e3"
  },
- "last_attempt": "2026-11-24T17:20:41Z",
- "last_success": "2026-11-24T17:20:41Z",
+ "last_attempt": "2026-11-24T18:50:39Z",
+ "last_success": "2026-11-24T18:50:39Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

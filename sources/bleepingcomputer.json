@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "862b06f480c405606fb93158d913e2b9",
- "last_modified": "Tue, 24 Nov 2026 17:49:05 GMT",
- "checksum": "16aba9f5dc3fe14c974f5afc15e7b950976f4c2fff7262326bdaf67b90de5f25",
+ "etag": "943ae63dc113c5c7e0fe0bfe399bb32f",
+ "last_modified": "Tue, 24 Nov 2026 18:49:07 GMT",
+ "checksum": "8b83983cae7cf4d11218d926f9d175b480ee812f6e013456fc5615d9b7f2fa4e",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -65,8 +65,8 @@
   "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/": "e351312f7d1c17b76d15b5ea",
   "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/": "9fd2f01a641c97ba67d64229"
  },
- "last_attempt": "2026-11-24T17:50:40Z",
- "last_success": "2026-11-24T17:50:40Z",
+ "last_attempt": "2026-11-24T18:50:39Z",
+ "last_success": "2026-11-24T18:50:39Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
