@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "6bdcb6104dbd3adec784f809278349ac",
- "last_modified": "Tue, 24 Nov 2026 19:19:54 GMT",
- "checksum": "c781d47ea3d91d074abc4cbbc94e0b60434c10b4ff6830e16e1bb731e4fd9491",
+ "etag": "ac010f820d653a5e385fb929a92d5dc0",
+ "last_modified": "Tue, 24 Nov 2026 19:49:55 GMT",
+ "checksum": "d70ca39a9f2b1acaf4d03d3f62656194873e49e58c7df4eca90b0b45bbcd9839",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -66,8 +66,8 @@
   "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/": "9fd2f01a641c97ba67d64229",
   "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/": "460669e762a36f05ae627618"
  },
- "last_attempt": "2026-11-24T19:20:43Z",
- "last_success": "2026-11-24T19:20:43Z",
+ "last_attempt": "2026-11-24T19:50:39Z",
+ "last_success": "2026-11-24T19:50:39Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
