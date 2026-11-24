@@ -41,14 +41,9 @@
   },
   "affected": [
     {
-      "product": "Ubuntu Linux kernel-oracle",
-      "versions": "4.15.0",
+      "product": "linux-kernel",
+      "versions": "all affected versions",
       "fixed": "4.15.0-1162.173~16.04.1"
-    },
-    {
-      "product": "Ubuntu Linux kernel-aws-fips",
-      "versions": "5.4.0",
-      "fixed": "5.4.0-1169.180+fips1"
     }
   ],
   "cvss": {
@@ -165,49 +160,49 @@
   "generated": {
     "model": "gemini-3.5-flash-lite",
     "prompt": "p3",
-    "at": "2026-11-24T01:11:06Z"
+    "at": "2026-11-24T10:20:50Z"
   },
   "translations": {
     "ru": {
       "status": "ready",
       "slug": "yadro-linux-use-after-free-v-setevoy-podsisteme-ipv4-cve-2026",
-      "title": "Ядро Linux: Множественные уязвимости в сетевой подсистеме IPv4 и других компонентах",
-      "summary": "В ядре Linux обнаружено несколько уязвимостей, позволяющих злоумышленникам скомпрометировать систему, вызвать отказ в обслуживании или получить права суперпользователя.",
-      "impact": "Злоумышленники могут скомпрометировать уязвимую систему, выполнить неавторизованный код или команды, вызвать отказ в обслуживании или повысить привилегии до root.",
+      "title": "Ядро Linux: уязвимости в сетевой подсистеме IPv4 и других компонентах",
+      "summary": "В ядре Linux обнаружены множественные уязвимости, которые могут позволить злоумышленнику скомпрометировать систему, вызвать отказ в обслуживании или выполнить несанкционированный код.",
+      "impact": "Злоумышленник может выполнить несанкционированный код или команды, скомпрометировать систему либо вызвать отказ в обслуживании.",
       "exploitation": "В использованных источниках нет сведений об эксплуатации.",
-      "fix": "Установите последние обновления ядра, предоставленные разработчиком вашего дистрибутива.",
+      "fix": "Обновите пакеты ядра Linux до версий, указанных в соответствующих бюллетенях производителя, например до `4.15.0-1162.173~16.04.1` для систем Ubuntu 16.04 LTS Oracle.",
       "checks": [
-        "Проинвентаризуйте системы Linux и проверьте используемые версии ядра.",
-        "Проверьте, используются ли уязвимые подсистемы и пакеты (например, linux-oracle или linux-aws-fips).",
-        "Установите обновления ядра от производителя и перезагрузите систему для завершения процесса."
+        "Проведите инвентаризацию пакетов ядра Linux на всех системах.",
+        "Проверьте, используют ли работающие системы уязвимые версии ядра.",
+        "Примените соответствующие обновления ядра, предоставленные производителем."
       ]
     },
     "de": {
       "status": "ready",
       "slug": "linux-kernel-use-after-free-in-ipv4-netzwerksubsystem-cve-2026",
-      "title": "Linux-Kernel: Mehrere Schwachstellen in IPv4-Netzwerken und weiteren Subsystemen",
-      "summary": "Im Linux-Kernel wurden mehrere Schwachstellen entdeckt, die es Angreifern ermöglichen, Systeme zu kompromittieren, Denial-of-Service-Angriffe durchzuführen oder Root-Rechte zu erlangen.",
-      "impact": "Angreifer können das betroffene System möglicherweise kompromittieren, unautorisierten Code oder Befehle ausführen, einen Denial-of-Service verursachen oder Root-Privilegien erlangen.",
+      "title": "Linux-Kernel: Schwachstellen in IPv4-Netzwerken und anderen Subsystemen",
+      "summary": "Im Linux-Kernel wurden mehrere Schwachstellen entdeckt, die es einem Angreifer ermöglichen könnten, das System zu kompromizieren, einen Denial-of-Service zu verursachen oder Code auszuführen.",
+      "impact": "Ein Angreifer kann unautorisierten Code oder Befehle ausführen, das System kompromizieren oder einen Denial of Service verursachen.",
       "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
-      "fix": "Wenden Sie die neuesten vom Distributionen-Hersteller bereitgestellten Kernel-Updates an.",
+      "fix": "Aktualisieren Sie die Linux-Kernel-Pakete auf die in den jeweiligen Herstellermeldungen angegebenen Versionen, wie `4.15.0-1162.173~16.04.1` für Ubuntu 16.04 LTS Oracle-Systeme.",
       "checks": [
-        "Inventarisieren Sie Linux-Systeme und überprüfen Sie die laufenden Kernel-Versionen.",
-        "Überprüfen Sie, ob die betroffenen Subsysteme und Pakete (wie linux-oracle oder linux-aws-fips) eingesetzt werden.",
-        "Wenden Sie die vom Hersteller bereitgestellten Kernel-Updates an und starten Sie das System neu."
+        "Inventarisieren Sie Linux-Kernel-Pakete auf allen Systemen.",
+        "Überprüfen Sie, ob laufende Systeme anfällige Kernel-Versionen verwenden.",
+        "Wenden Sie die vom Hersteller bereitgestellten Kernel-Updates an."
       ]
     },
     "en": {
       "status": "ready",
       "slug": "linux-kernel-use-after-free-in-ipv4-networking-cve-2026-98432",
-      "title": "Linux kernel: Multiple vulnerabilities in IPv4 networking and other subsystems",
-      "summary": "Several vulnerabilities have been discovered in the Linux kernel, allowing attackers to compromise systems, cause a denial of service, or gain root privileges.",
-      "impact": "Attackers can potentially compromise the affected system, execute unauthorized code or commands, cause a denial of service, or escalate privileges to root.",
+      "title": "Linux kernel: vulnerabilities in IPv4 networking and other subsystems",
+      "summary": "Multiple vulnerabilities were discovered in the Linux kernel, which could allow an attacker to compromise the system, cause a denial of service, or execute unauthorized code.",
+      "impact": "An attacker can execute unauthorized code or commands, compromise the system, or cause a denial of service.",
       "exploitation": "The sources reviewed contain no reports of exploitation.",
-      "fix": "Apply the latest kernel updates provided by your distribution vendor.",
+      "fix": "Update the Linux kernel packages to the versions specified in the respective vendor advisories, such as `4.15.0-1162.173~16.04.1` for Ubuntu 16.04 LTS Oracle systems.",
       "checks": [
-        "Inventory Linux systems and check the running kernel versions.",
-        "Verify whether the affected subsystems and packages (such as linux-oracle or linux-aws-fips) are deployed.",
-        "Apply vendor-provided kernel updates and reboot the system to complete the process."
+        "Inventory Linux kernel packages across all systems.",
+        "Verify if running systems are using vulnerable kernel versions.",
+        "Apply the appropriate kernel updates provided by the vendor."
       ]
     }
   }
