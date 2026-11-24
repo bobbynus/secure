@@ -28,6 +28,7 @@
       "FG-IR-26-188",
       "USN-9170-2",
       "USN-9170-3",
+      "USN-9170-4",
       "USN-9171-2",
       "USN-9184-1",
       "WID-SEC-2025-0155",
@@ -140,6 +141,14 @@
       "publisher": "CERT-Bund (BSI) WID security advisories",
       "kind": "cert",
       "date": "2026-08-16"
+    },
+    {
+      "id": "s11",
+      "title": "USN-9170-4: Linux kernel (Azure) vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-9170-4",
+      "publisher": "Ubuntu Security Notices",
+      "kind": "vendor",
+      "date": "2026-11-24"
     }
   ],
   "revisions": [
