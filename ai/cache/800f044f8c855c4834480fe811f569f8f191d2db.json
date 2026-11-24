@@ -1,0 +1,49 @@
+{
+ "affected": [
+  {
+   "product": "Linux kernel",
+   "versions": "all affected versions",
+   "fixed": "4.15.0-1162.173~16.04.1",
+   "evidence": "linux-image-4.15.0-1162-oracle –\n4.15.0-1162.173~16.04.1"
+  }
+ ],
+ "en": {
+  "title": "Linux kernel: vulnerabilities in IPv4 networking and other subsystems",
+  "summary": "Multiple vulnerabilities were discovered in the Linux kernel, which could allow an attacker to compromise the system, cause a denial of service, or execute unauthorized code.",
+  "impact": "An attacker can execute unauthorized code or commands, compromise the system, or cause a denial of service.",
+  "fix": "Update the Linux kernel packages to the versions specified in the respective vendor advisories, such as `4.15.0-1162.173~16.04.1` for Ubuntu 16.04 LTS Oracle systems.",
+  "workaround": null,
+  "checks": [
+   "Inventory Linux kernel packages across all systems.",
+   "Verify if running systems are using vulnerable kernel versions.",
+   "Apply the appropriate kernel updates provided by the vendor."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Ядро Linux: уязвимости в сетевой подсистеме IPv4 и других компонентах",
+  "summary": "В ядре Linux обнаружены множественные уязвимости, которые могут позволить злоумышленнику скомпрометировать систему, вызвать отказ в обслуживании или выполнить несанкционированный код.",
+  "impact": "Злоумышленник может выполнить несанкционированный код или команды, скомпрометировать систему либо вызвать отказ в обслуживании.",
+  "fix": "Обновите пакеты ядра Linux до версий, указанных в соответствующих бюллетенях производителя, например до `4.15.0-1162.173~16.04.1` для систем Ubuntu 16.04 LTS Oracle.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию пакетов ядра Linux на всех системах.",
+   "Проверьте, используют ли работающие системы уязвимые версии ядра.",
+   "Примените соответствующие обновления ядра, предоставленные производителем."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Linux-Kernel: Schwachstellen in IPv4-Netzwerken und anderen Subsystemen",
+  "summary": "Im Linux-Kernel wurden mehrere Schwachstellen entdeckt, die es einem Angreifer ermöglichen könnten, das System zu kompromizieren, einen Denial-of-Service zu verursachen oder Code auszuführen.",
+  "impact": "Ein Angreifer kann unautorisierten Code oder Befehle ausführen, das System kompromizieren oder einen Denial of Service verursachen.",
+  "fix": "Aktualisieren Sie die Linux-Kernel-Pakete auf die in den jeweiligen Herstellermeldungen angegebenen Versionen, wie `4.15.0-1162.173~16.04.1` für Ubuntu 16.04 LTS Oracle-Systeme.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Linux-Kernel-Pakete auf allen Systemen.",
+   "Überprüfen Sie, ob laufende Systeme anfällige Kernel-Versionen verwenden.",
+   "Wenden Sie die vom Hersteller bereitgestellten Kernel-Updates an."
+  ],
+  "regression": null
+ }
+}
