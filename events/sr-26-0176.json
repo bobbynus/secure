@@ -98,44 +98,47 @@
  },
  "publish_state": "published",
  "ai": {
-  "input_hash": "ffc95e8c413d7b920072afbc",
+  "input_hash": "b4d5f6dc82e09ef19c79f904",
   "texts": {
    "en": {
-    "title": "Cisco Expressway Series: Hard-coded credentials vulnerability (CVE-2026-76466)",
-    "summary": "Cisco Expressway Series contains a hard-coded credentials vulnerability allowing unauthenticated remote attackers to execute commands as root via the database service. CISA reports active exploitation in the wild.",
-    "impact": "An unauthenticated, remote attacker with persistent cookies and network access can execute arbitrary operating system commands as root on a clustered device via the database service.",
-    "fix": "The sources do not specify fixed version numbers, but mention that Cisco released security patches in late October.",
+    "title": "Cisco Expressway Series: RCE via database service",
+    "summary": "A critical remote code execution vulnerability in Cisco Expressway Series allows unauthenticated, remote attackers with persistent cookies and network access to execute root commands.",
+    "impact": "Unauthenticated, remote attackers with persistent cookies and network access can execute arbitrary operating system commands as root on clustered Cisco Expressway-C and Expressway-E devices.",
+    "fix": "Upgrade to fixed software release `X15.5.20` or later, or migrate from versions `X14 and earlier`.",
     "workaround": null,
     "checks": [
-     "Inventory Cisco Expressway-C and Expressway-E appliances and virtual machine deployments.",
-     "Verify whether clustered Cisco Expressway devices are exposed to the internet.",
-     "Check system logs and configurations for unauthorized access or persistent cookies usage associated with the database service."
+     "Inventory Cisco Expressway-C and Expressway-E devices to identify running software versions.",
+     "Verify if devices are configured in a cluster.",
+     "Check network exposure and access controls for database services on Expressway devices.",
+     "Apply the software updates provided by Cisco to remediate CVE-2026-76466."
     ],
     "regression": null
    },
    "ru": {
-    "title": "Cisco Expressway Series: уязвимость жестко закодированных учетных данных (CVE-2026-76466)",
-    "summary": "Cisco Expressway Series содержит уязвимость жестко закодированных учетных данных, позволяющую неаутентифицированным удаленным злоумышленникам выполнять команды с правами root через службу базы данных. CISA сообщает об активной эксплуатации.",
-    "impact": "Неаутентифицированный удаленный злоумышленник с постоянными файлами cookie и сетевым доступом может выполнять произвольные команды операционной системы с правами root на кластеризованном устройстве через службу базы данных.",
-    "fix": "В источниках не указаны конкретные исправленные версии, но упоминается, что Cisco выпустила исправления безопасности в конце октября.",
+    "title": "Cisco Expressway Series: RCE через службу базы данных",
+    "summary": "Критическая уязвимость удаленного выполнения кода в Cisco Expressway Series позволяет неаутентифицированным удаленным злоумышленникам выполнять команды с правами root.",
+    "impact": "Неаутентифицированные удаленные злоумышленники, обладающие постоянными файлами cookie и сетевым доступом, могут выполнять произвольные команды ОС с правами root на кластеризованных устройствах Cisco Expressway-C и Expressway-E.",
+    "fix": "Обновите ПО до исправленной версии `X15.5.20` или новее, либо мигрируйте с версий `X14 and earlier`.",
     "workaround": null,
     "checks": [
-     "Проведите инвентаризацию устройств Cisco Expressway-C и Expressway-E, развернутых в виде аппаратных или виртуальных машин.",
-     "Проверьте, имеют ли кластеризованные устройства Cisco Expressway доступ из сети Интернет.",
-     "Проверьте системные журналы и конфигурации на наличие признаков несанкционированного доступа или использования постоянных файлов cookie, связанных со службой базы данных."
+     "Инвентаризируйте устройства Cisco Expressway-C и Expressway-E для определения используемых версий программного обеспечения.",
+     "Проверьте, настроены ли устройства в кластер.",
+     "Проверьте сетевую доступность и средства контроля доступа к службам базы данных на устройствах Expressway.",
+     "Примените обновления программного обеспечения, предоставленные Cisco для устранения CVE-2026-76466."
     ],
     "regression": null
    },
    "de": {
-    "title": "Cisco Expressway Series: Schwachstelle durch hartcodierte Anmeldedaten (CVE-2026-76466)",
-    "summary": "Die Cisco Expressway Series enthält eine Schwachstelle durch hartcodierte Anmeldedaten, die es unauthentifizierten Angreifern ermöglicht, Befehle als root über den Baudienst auszuführen. CISA meldet aktive Ausnutzung.",
-    "impact": "Ein unauthentifizierter, remote Angreifer mit persistenten Cookies und Netzzugang kann beliebige Betriebssystembefehle als root auf einem geclusterten Gerät über den Baudienst ausführen.",
-    "fix": "Die Quellen nennen keine konkreten korrigierten Versionen, erwähnen jedoch, dass Cisco Ende Oktober Sicherheitsupdates veröffentlicht hat.",
+    "title": "Cisco Expressway Series: RCE über Datenbankdienst",
+    "summary": "Eine kritische Remotecodeausführungsschwachstelle in der Cisco Expressway Series ermöglicht nicht authentifizierten Angreifern die Ausführung von Root-Befehlen.",
+    "impact": "Nicht authentifizierte, remote Angreifer mit persistenten Cookies und Netzwerkzugriff können beliebige Betriebssystembefehle als root auf geclusterten Cisco Expressway-C- und Expressway-E-Geräten ausführen.",
+    "fix": "Aktualisieren Sie auf die korrigierte Software-Version `X15.5.20` oder neuer bzw. migrieren Sie von den Versionen `X14 and earlier`.",
     "workaround": null,
     "checks": [
-     "Inventarisieren Sie Cisco Expressway-C und Expressway-E Appliances sowie virtuelle Maschinen.",
-     "Überprüfen Sie, ob geclusterte Cisco Expressway-Geräte dem Internet ausgesetzt sind.",
-     "Überprüfen Sie Systemprotokolle und Konfigurationen auf unbefugten Zugriff oder die Verwendung persistenter Cookies im Zusammenhang mit dem Baudienst."
+     "Erfassen Sie alle Cisco Expressway-C- und Expressway-E-Geräte, um die laufenden Softwareversionen zu ermitteln.",
+     "Überprüfen Sie, ob die Geräte in einem Cluster konfiguriert sind.",
+     "Prüfen Sie die Netzexposition und Zugriffskontrollen für die Datenbankdienste auf Expressway-Geräten.",
+     "Wenden Sie die von Cisco bereitgestellten Software-Updates zur Behebung von CVE-2026-76466 an."
     ],
     "regression": null
    }
@@ -144,7 +147,7 @@
   "workaround": false,
   "model": "gemini-3.5-flash-lite",
   "prompt": "p3",
-  "generated_at": "2026-11-23T10:30:43Z",
+  "generated_at": "2026-11-24T00:10:55Z",
   "slugs": {
    "ru": "cisco-expressway-series-uyazvimost-zhestko-zakodirovannykh",
    "de": "cisco-expressway-series-schwachstelle-durch-hartcodierte",
@@ -155,6 +158,6 @@
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 2
+  "calls": 3
  }
 }

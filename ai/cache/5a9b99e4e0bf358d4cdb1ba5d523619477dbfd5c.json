@@ -1,0 +1,58 @@
+{
+ "affected": [
+  {
+   "product": "Cisco Expressway Series",
+   "versions": "X14 and earlier",
+   "fixed": "Migrate to a fixed release.",
+   "evidence": "X14 and earlier\nMigrate to a fixed release."
+  },
+  {
+   "product": "Cisco Expressway Series",
+   "versions": "X15.5.3 and earlier",
+   "fixed": "X15.5.20",
+   "evidence": "X15.5.3 and earlier\nX15.5.20"
+  }
+ ],
+ "en": {
+  "title": "Cisco Expressway Series: RCE via database service",
+  "summary": "A critical remote code execution vulnerability in Cisco Expressway Series allows unauthenticated, remote attackers with persistent cookies and network access to execute root commands.",
+  "impact": "Unauthenticated, remote attackers with persistent cookies and network access can execute arbitrary operating system commands as root on clustered Cisco Expressway-C and Expressway-E devices.",
+  "fix": "Upgrade to fixed software release `X15.5.20` or later, or migrate from versions `X14 and earlier`.",
+  "workaround": null,
+  "checks": [
+   "Inventory Cisco Expressway-C and Expressway-E devices to identify running software versions.",
+   "Verify if devices are configured in a cluster.",
+   "Check network exposure and access controls for database services on Expressway devices.",
+   "Apply the software updates provided by Cisco to remediate CVE-2026-76466."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Cisco Expressway Series: RCE через службу базы данных",
+  "summary": "Критическая уязвимость удаленного выполнения кода в Cisco Expressway Series позволяет неаутентифицированным удаленным злоумышленникам выполнять команды с правами root.",
+  "impact": "Неаутентифицированные удаленные злоумышленники, обладающие постоянными файлами cookie и сетевым доступом, могут выполнять произвольные команды ОС с правами root на кластеризованных устройствах Cisco Expressway-C и Expressway-E.",
+  "fix": "Обновите ПО до исправленной версии `X15.5.20` или новее, либо мигрируйте с версий `X14 and earlier`.",
+  "workaround": null,
+  "checks": [
+   "Инвентаризируйте устройства Cisco Expressway-C и Expressway-E для определения используемых версий программного обеспечения.",
+   "Проверьте, настроены ли устройства в кластер.",
+   "Проверьте сетевую доступность и средства контроля доступа к службам базы данных на устройствах Expressway.",
+   "Примените обновления программного обеспечения, предоставленные Cisco для устранения CVE-2026-76466."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Cisco Expressway Series: RCE über Datenbankdienst",
+  "summary": "Eine kritische Remotecodeausführungsschwachstelle in der Cisco Expressway Series ermöglicht nicht authentifizierten Angreifern die Ausführung von Root-Befehlen.",
+  "impact": "Nicht authentifizierte, remote Angreifer mit persistenten Cookies und Netzwerkzugriff können beliebige Betriebssystembefehle als root auf geclusterten Cisco Expressway-C- und Expressway-E-Geräten ausführen.",
+  "fix": "Aktualisieren Sie auf die korrigierte Software-Version `X15.5.20` oder neuer bzw. migrieren Sie von den Versionen `X14 and earlier`.",
+  "workaround": null,
+  "checks": [
+   "Erfassen Sie alle Cisco Expressway-C- und Expressway-E-Geräte, um die laufenden Softwareversionen zu ermitteln.",
+   "Überprüfen Sie, ob die Geräte in einem Cluster konfiguriert sind.",
+   "Prüfen Sie die Netzexposition und Zugriffskontrollen für die Datenbankdienste auf Expressway-Geräten.",
+   "Wenden Sie die von Cisco bereitgestellten Software-Updates zur Behebung von CVE-2026-76466 an."
+  ],
+  "regression": null
+ }
+}

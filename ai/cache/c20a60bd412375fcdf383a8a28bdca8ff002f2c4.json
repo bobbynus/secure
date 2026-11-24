@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "N-able MailAssure: SSRF vulnerability in LDAP synchronization connection check",
+  "summary": "N-able MailAssure contains a server-side request forgery vulnerability allowing an authenticated API user to connect to arbitrary internal hosts and ports.",
+  "impact": "An authenticated API user can connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Verify N-able MailAssure installations for exposure.",
+   "Check vendor instructions for available mitigations and updates."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "N-able MailAssure: уязвимость SSRF в проверке соединения синхронизации LDAP",
+  "summary": "N-able MailAssure содержит уязвимость подделки запросов на стороне сервера, позволяющую аутентифицированному API-пользователю подключаться к произвольным внутренним хостам и портам.",
+  "impact": "Аутентифицированный API-пользователь может подключаться к произвольным внутренним хостам и портам, определять их доступность и отправлять специально сформированные данные во внутренние службы.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте инсталляции N-able MailAssure на наличие уязвимости.",
+   "Ознакомьтесь с инструкциями вендора относительно доступных смягчающих мер и обновлений."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "N-able MailAssure: SSRF-Schwachstelle bei LDAP-Synchronisationsverbindung",
+  "summary": "N-able MailAssure enthält eine Server-Side Request Forgery-Schwachstelle, die es einem authentifizierten API-Benutzer ermöglicht, sich mit beliebigen internen Hosts und Ports zu verbinden.",
+  "impact": "Ein authentifizierter API-Benutzer kann sich mit beliebigen internen Hosts und Ports verbinden, feststellen, welche erreichbar sind, und manipulierte Daten an interne Dienste senden.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie N-able MailAssure-Installationen auf Exposition.",
+   "Prüfen Sie die Herstelleranweisungen auf verfügbare Mitigierungsmaßnahmen und Updates."
+  ],
+  "regression": null
+ }
+}

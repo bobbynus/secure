@@ -5295,8 +5295,8 @@
   "CVE-2026-87612": "d9c5af9efeba37f10af85398",
   "CVE-2026-87625": "65bf894692e793db7f7bf200"
  },
- "last_attempt": "2026-11-23T23:10:40Z",
- "last_success": "2026-11-23T23:10:40Z",
+ "last_attempt": "2026-11-24T00:10:48Z",
+ "last_success": "2026-11-24T00:10:48Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

@@ -59,21 +59,62 @@
  "texts": {
   "cisa-kev:CVE-2026-134624": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability\nN-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "c1462b42c85fbd7f6a5b0817",
+  "texts": {
+   "en": {
+    "title": "N-able MailAssure: SSRF vulnerability in LDAP synchronization connection check",
+    "summary": "N-able MailAssure contains a server-side request forgery vulnerability allowing an authenticated API user to connect to arbitrary internal hosts and ports.",
+    "impact": "An authenticated API user can connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
+    "fix": "The sources do not list fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Verify N-able MailAssure installations for exposure.",
+     "Check vendor instructions for available mitigations and updates."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "N-able MailAssure: уязвимость SSRF в проверке соединения синхронизации LDAP",
+    "summary": "N-able MailAssure содержит уязвимость подделки запросов на стороне сервера, позволяющую аутентифицированному API-пользователю подключаться к произвольным внутренним хостам и портам.",
+    "impact": "Аутентифицированный API-пользователь может подключаться к произвольным внутренним хостам и портам, определять их доступность и отправлять специально сформированные данные во внутренние службы.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте инсталляции N-able MailAssure на наличие уязвимости.",
+     "Ознакомьтесь с инструкциями вендора относительно доступных смягчающих мер и обновлений."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "N-able MailAssure: SSRF-Schwachstelle bei LDAP-Synchronisationsverbindung",
+    "summary": "N-able MailAssure enthält eine Server-Side Request Forgery-Schwachstelle, die es einem authentifizierten API-Benutzer ermöglicht, sich mit beliebigen internen Hosts und Ports zu verbinden.",
+    "impact": "Ein authentifizierter API-Benutzer kann sich mit beliebigen internen Hosts und Ports verbinden, feststellen, welche erreichbar sind, und manipulierte Daten an interne Dienste senden.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie N-able MailAssure-Installationen auf Exposition.",
+     "Prüfen Sie die Herstelleranweisungen auf verfügbare Mitigierungsmaßnahmen und Updates."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-24T00:10:55Z",
+  "slugs": {
+   "ru": "n-able-mailassure-uyazvimost-ssrf-v-proverke-soedineniya",
+   "de": "n-able-mailassure-ssrf-schwachstelle-bei-ldap",
+   "en": "n-able-mailassure-ssrf-vulnerability-in-ldap-synchronization"
+  },
+  "published_at": "2026-11-24T00:10:55Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
