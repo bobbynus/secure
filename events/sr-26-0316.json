@@ -1,0 +1,85 @@
+{
+ "id": "sr-26-0316",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "official",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Red Hat",
+ "products": [
+  "rhel"
+ ],
+ "product_names": [
+  "Ruby"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-110264",
+   "CVE-2026-93577",
+   "CVE-2026-97229"
+  ],
+  "advisory": [
+   "WID-SEC-2026-4416"
+  ],
+  "kb": []
+ },
+ "severity": "critical",
+ "cvss": {
+  "score": 10.0,
+  "version": "3.1",
+  "source": "NVD",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+ },
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Ruby: Mehrere Schwachstellen ermöglichen Codeausführung",
+ "summary_hint": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Ruby und Red Hat Enterprise Linux ausnutzen, um beliebigen Programmcode auszuführen.\nRuby ist eine interpretierte, objektorientierte Skriptsprache.\nRed Hat Enterprise Linux (RHEL) ist eine populäre Linux-Distribution.\nRevision: Neue Updates von Red Hat aufgenommen",
+ "created_at": "2026-11-24T17:20:41Z",
+ "updated_at": "2026-11-24T17:20:41Z",
+ "event_date": "2026-11-08T23:00:00Z",
+ "sources": [
+  {
+   "source_id": "cert-bund-wid",
+   "item_key": "WID-SEC-W-2026-4416",
+   "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4416",
+   "title": "Ruby: Mehrere Schwachstellen ermöglichen Codeausführung",
+   "publisher": "CERT-Bund (BSI) WID security advisories",
+   "kind": "cert",
+   "date": "2026-11-08"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-24T17:20:41Z",
+   "kind": "created",
+   "facts": {
+    "reason": "critical severity in infrastructure product"
+   },
+   "source": "cert-bund-wid:WID-SEC-W-2026-4416"
+  }
+ ],
+ "related": [],
+ "reason": "critical severity in infrastructure product",
+ "texts": {
+  "cert-bund-wid:WID-SEC-W-2026-4416": "Ruby: Mehrere Schwachstellen ermöglichen Codeausführung\nEin entfernter, anonymer Angreifer kann mehrere Schwachstellen in Ruby und Red Hat Enterprise Linux ausnutzen, um beliebigen Programmcode auszuführen.\nRuby ist eine interpretierte, objektorientierte Skriptsprache.\nRed Hat Enterprise Linux (RHEL) ist eine populäre Linux-Distribution.\nRevision: Neue Updates von Red Hat aufgenommen"
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

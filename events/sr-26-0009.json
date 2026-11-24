@@ -14,7 +14,9 @@
   "cve": [
    "CVE-2026-125350"
   ],
-  "advisory": [],
+  "advisory": [
+   "WID-SEC-2026-4417"
+  ],
   "kb": []
  },
  "severity": "high",
@@ -31,7 +33,7 @@
  "title_hint": "Google Chromium Use-After-Free Vulnerability",
  "summary_hint": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
  "created_at": "2026-11-18T10:10:19Z",
- "updated_at": "2026-11-18T10:10:19Z",
+ "updated_at": "2026-11-24T17:20:41Z",
  "event_date": "2026-11-10T00:00:00Z",
  "sources": [
   {
@@ -51,6 +53,15 @@
    "publisher": "Red Hat Security Data API",
    "kind": "vendor",
    "date": "2026-11-10"
+  },
+  {
+   "source_id": "cert-bund-wid",
+   "item_key": "WID-SEC-W-2026-4417",
+   "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4417",
+   "title": "Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
+   "publisher": "CERT-Bund (BSI) WID security advisories",
+   "kind": "cert",
+   "date": "2026-11-09"
   }
  ],
  "revisions": [
@@ -67,6 +78,12 @@
    "kind": "source",
    "facts": {},
    "source": "redhat-secdata:CVE-2026-125350"
+  },
+  {
+   "date": "2026-11-24T17:20:41Z",
+   "kind": "source",
+   "facts": {},
+   "source": "cert-bund-wid:WID-SEC-W-2026-4417"
   }
  ],
  "related": [],
