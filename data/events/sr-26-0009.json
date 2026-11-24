@@ -20,7 +20,9 @@
     "cve": [
       "CVE-2026-125350"
     ],
-    "advisory": [],
+    "advisory": [
+      "WID-SEC-2026-4417"
+    ],
     "kb": []
   },
   "affected": [],
@@ -50,6 +52,14 @@
       "publisher": "Red Hat Security Data API",
       "kind": "vendor",
       "date": "2026-11-10"
+    },
+    {
+      "id": "s3",
+      "title": "Google Chrome / Microsoft Edge: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4417",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
+      "date": "2026-11-09"
     }
   ],
   "revisions": [
