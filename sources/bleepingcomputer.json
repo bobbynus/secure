@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "9e383da3cf5a882c16f754f50985bc22",
- "last_modified": "Tue, 24 Nov 2026 17:13:55 GMT",
- "checksum": "3d9c0da5b9373133811691142ccad02c4776d52cfd5b779fdd7d7385055c32ea",
+ "etag": "862b06f480c405606fb93158d913e2b9",
+ "last_modified": "Tue, 24 Nov 2026 17:49:05 GMT",
+ "checksum": "16aba9f5dc3fe14c974f5afc15e7b950976f4c2fff7262326bdaf67b90de5f25",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -62,12 +62,13 @@
   "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/": "d089f7f0b6dc64f955af5176",
   "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/": "0287a667fed1267416769ac0",
   "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/": "e96235d101aa4096d95a294a",
-  "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/": "e351312f7d1c17b76d15b5ea"
+  "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/": "e351312f7d1c17b76d15b5ea",
+  "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/": "9fd2f01a641c97ba67d64229"
  },
- "last_attempt": "2026-11-24T17:20:41Z",
- "last_success": "2026-11-24T17:20:41Z",
+ "last_attempt": "2026-11-24T17:50:40Z",
+ "last_success": "2026-11-24T17:50:40Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 60
+ "items_total": 61
 }

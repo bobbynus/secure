@@ -1,0 +1,74 @@
+{
+ "id": "sr-26-0319",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "official",
+ "lifecycle": "confirmed",
+ "fix": "unknown",
+ "vendor": "Drupal",
+ "products": [],
+ "product_names": [
+  "Core"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2026-132165"
+  ],
+  "advisory": [],
+  "kb": []
+ },
+ "severity": null,
+ "cvss": null,
+ "exploited": true,
+ "kev": true,
+ "kev_added": "2026-11-24",
+ "ransomware": false,
+ "title_hint": "Drupal Core Remote Code Execution Vulnerability",
+ "summary_hint": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+ "created_at": "2026-11-24T17:50:40Z",
+ "updated_at": "2026-11-24T17:50:40Z",
+ "event_date": "2026-11-24T00:00:00Z",
+ "sources": [
+  {
+   "source_id": "cisa-kev",
+   "item_key": "CVE-2026-132165",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-132165",
+   "title": "Drupal Core Remote Code Execution Vulnerability",
+   "publisher": "CISA Known Exploited Vulnerabilities",
+   "kind": "kev",
+   "date": "2026-11-24"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-24T17:50:40Z",
+   "kind": "created",
+   "facts": {
+    "reason": "added to CISA KEV"
+   },
+   "source": "cisa-kev:CVE-2026-132165"
+  }
+ ],
+ "related": [],
+ "reason": "added to CISA KEV",
+ "texts": {
+  "cisa-kev:CVE-2026-132165": "Drupal Core Remote Code Execution Vulnerability\nDrupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

@@ -1,10 +1,10 @@
 {
  "id": "cisa-kev",
- "etag": "\"1c9ae8-660f6d0756600\"",
- "last_modified": "Mon, 23 Nov 2026 19:43:55 GMT",
- "checksum": "ac8f0c4e73ec9212dd00afbb9bed2b43abc9cdb3c8719fc2c2606f008171f70a",
+ "etag": "\"1cb165-661094ee04ef8\"",
+ "last_modified": "Tue, 24 Nov 2026 17:47:46 GMT",
+ "checksum": "17dfaace755c075c10757f20687eaa588181ed9663de80e82936a08ba08e8a1f",
  "cursor": {
-  "catalogVersion": "2026.11.23"
+  "catalogVersion": "2026.11.24"
  },
  "seen": {
   "CVE-2026-115731": "9b309f8ee7dc1a132147c244",
@@ -1798,12 +1798,15 @@
   "CVE-2025-42884": "01f82f1cbea6968e6a23531e",
   "CVE-2026-76466": "01f82f1cbea6968e6a23531e",
   "CVE-2026-133968": "d9e41f2bf0e72c66412b7900",
-  "CVE-2026-134624": "d9e41f2bf0e72c66412b7900"
+  "CVE-2026-134624": "d9e41f2bf0e72c66412b7900",
+  "CVE-2026-132224": "321926b9bdb4d05ae6c43af1",
+  "CVE-2026-131914": "321926b9bdb4d05ae6c43af1",
+  "CVE-2026-132165": "321926b9bdb4d05ae6c43af1"
  },
- "last_attempt": "2026-11-24T17:20:41Z",
- "last_success": "2026-11-24T17:20:41Z",
+ "last_attempt": "2026-11-24T17:50:40Z",
+ "last_success": "2026-11-24T17:50:40Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 1793
+ "items_total": 1796
 }
