@@ -91,41 +91,41 @@
  "texts": {},
  "publish_state": "published",
  "ai": {
-  "input_hash": "6d898110368ea663b40029ed",
+  "input_hash": "3cc88d3cf25ef3a025082507",
   "texts": {
    "en": {
-    "title": "Google Chromium: Use-After-Free Vulnerability in XML",
-    "summary": "Google Chromium contains a use-after-free vulnerability in the XML component, which is actively exploited in the wild.",
-    "impact": "A remote attacker can execute arbitrary code inside the sandbox via a specially crafted webpage. Multiple web browsers utilizing Chromium may be affected.",
+    "title": "Chromium: use-after-free in XML component (CVE-2026-125350)",
+    "summary": "Google Chromium contains a use-after-free vulnerability in the XML component allowing remote attackers to execute arbitrary code.",
+    "impact": "A remote attacker can execute arbitrary code inside the sandbox via a specially crafted webpage.",
     "fix": "The sources do not list fixed versions.",
     "workaround": null,
     "checks": [
-     "Check systems for installed Google Chromium or browsers utilizing Chromium.",
-     "Review systems for internet exposure as outlined in CISA guidance."
+     "Check systems for installed Chromium-based browsers.",
+     "Verify exposure to untrusted web content."
     ],
     "regression": null
    },
    "ru": {
-    "title": "Google Chromium: уязвимость use-after-free в компоненте XML",
-    "summary": "Google Chromium содержит уязвимость use-after-free в компоненте XML, которая активно эксплуатируется.",
-    "impact": "Удаленный злоумышленник может выполнить произвольный код внутри песочницы с помощью специально сформированной веб-страницы. Затронуты могут быть различные браузеры на базе Chromium.",
+    "title": "Chromium: уязвимость use-after-free в компоненте XML (CVE-2026-125350)",
+    "summary": "Google Chromium содержит уязвимость use-after-free в компоненте XML, позволяющую удаленным злоумышленникам выполнять произвольный код.",
+    "impact": "Удаленный злоумышленник может выполнить произвольный код внутри песочницы с помощью специально сформированной веб-страницы.",
     "fix": "В источниках не указаны исправленные версии.",
     "workaround": null,
     "checks": [
-     "Проверьте системы на наличие установленного Google Chromium или браузеров на базе Chromium.",
-     "Проверьте системы на предмет выхода в интернет в соответствии с рекомендациями CISA."
+     "Проверьте системы на наличие браузеров на базе Chromium.",
+     "Проверьте подверженность воздействию ненадежного веб-контента."
     ],
     "regression": null
    },
    "de": {
-    "title": "Google Chromium: Use-After-Free-Schwachstelle in XML",
-    "summary": "Google Chromium enthält eine Use-After-Free-Schwachstelle in der XML-Komponente, die aktiv ausgenutzt wird.",
-    "impact": "Ein entfernter Angreifer kann über eine speziell präparierte Webseite beliebigen Code innerhalb der Sandbox ausführen. Mehrere Webbrowser, die Chromium verwenden, können betroffen sein.",
+    "title": "Chromium: Use-After-Free-Schwachstelle in XML-Komponente (CVE-2026-125350)",
+    "summary": "Google Chromium enthält eine Use-After-Free-Schwachstelle in der XML-Komponente, die Remotegreifer zur Ausführung von Code befähigt.",
+    "impact": "Ein Remotegreifer kann über eine speziell präparierte Webseite beliebigen Code innerhalb der Sandbox ausführen.",
     "fix": "Die Quellen nennen keine korrigierten Versionen.",
     "workaround": null,
     "checks": [
-     "Überprüfen Sie Systeme auf installierte Google Chromium-Instanzen oder Browser, die Chromium verwenden.",
-     "Überprüfen Sie Systeme hinsichtlich ihrer Internetexposition gemäß den CISA-Richtlinien."
+     "Systeme auf installierte Chromium-basierte Browser überprüfen.",
+     "Exposition gegenüber nicht vertrauenswürdigen Webinhalten verifizieren."
     ],
     "regression": null
    }
@@ -134,7 +134,7 @@
   "workaround": false,
   "model": "gemini-3.5-flash-lite",
   "prompt": "p3",
-  "generated_at": "2026-11-18T18:50:40Z",
+  "generated_at": "2026-11-24T23:20:48Z",
   "slugs": {
    "ru": "google-chromium-uyazvimost-use-after-free-v-komponente-xml",
    "de": "google-chromium-use-after-free-schwachstelle-in-xml",
@@ -145,6 +145,6 @@
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 1
+  "calls": 2
  }
 }

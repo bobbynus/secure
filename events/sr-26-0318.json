@@ -59,21 +59,62 @@
  "texts": {
   "cisa-kev:CVE-2026-131914": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability\nIdunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "95914a9e2a89303b52f9397b",
+  "texts": {
+   "en": {
+    "title": "Idunno AntiCsrf: deserialization vulnerability",
+    "summary": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability allowing unauthenticated remote code execution.",
+    "impact": "An unauthenticated remote attacker can execute arbitrary code via object injection. The impacted product may be end-of-life or end-of-service.",
+    "fix": "The sources list no fixed versions, advising users to discontinue use and/or transition to a supported version.",
+    "workaround": null,
+    "checks": [
+     "Inventory systems running Idunno AntiCsrf to check for exposure.",
+     "Verify whether deployed instances are end-of-life or end-of-service."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Idunno AntiCsrf: уязвимость десериализации",
+    "summary": "Idunno AntiCsrf содержит уязвимость десериализации ненадежных данных, позволяющую неавторизованным удаленным злоумышленникам выполнять код.",
+    "impact": "Неавторизованный удаленный злоумышленник может выполнить произвольный код посредством внедрения объектов. Затронутый продукт может быть снят с поддержки.",
+    "fix": "В источниках не указаны исправленные версии; пользователям рекомендуется прекратить использование или перейти на поддерживаемую версию.",
+    "workaround": null,
+    "checks": [
+     "Проведите инвентаризацию систем под управлением Idunno AntiCsrf для проверки доступности.",
+     "Проверьте, не прекращена ли поддержка используемых экземпляров продукта."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Idunno AntiCsrf: Deserialisierungs-Schwachstelle",
+    "summary": "Idunno AntiCsrf enthält eine Deserialisierungs-Schwachstelle für nicht vertrauenswürdige Daten, die Remotecodeausführung ermöglicht.",
+    "impact": "Ein nicht authentifizierter Remote-Angreifer kann durch Objektinjektion beliebigen Code ausführen. Das betroffene Produkt ist möglicherweise abgekündigt (EoL/EoS).",
+    "fix": "Die Quellen nennen keine korrigierten Versionen und raten dazu, die Nutzung einzustellen und/oder auf eine unterstützte Version zu wechseln.",
+    "workaround": null,
+    "checks": [
+     "Inventarisieren Sie Systeme mit Idunno AntiCsrf, um die Exponiertheit zu überprüfen.",
+     "Überprüfen Sie, ob die eingesetzten Instanzen das Ende ihres Lebenszyklus erreicht haben."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-24T23:20:48Z",
+  "slugs": {
+   "ru": "idunno-anticsrf-uyazvimost-deserializatsii",
+   "de": "idunno-anticsrf-deserialisierungs-schwachstelle",
+   "en": "idunno-anticsrf-deserialization-vulnerability"
+  },
+  "published_at": "2026-11-24T23:20:48Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

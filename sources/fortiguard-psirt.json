@@ -1,8 +1,8 @@
 {
  "id": "fortiguard-psirt",
- "etag": "\"6b061373-c705\"",
- "last_modified": "Tue, 24 Nov 2026 22:45:07 GMT",
- "checksum": "ca67f7fda8039c74c088405faac970ca2b96388ac5325af079e2dd495204b890",
+ "etag": "\"6b061a7b-c705\"",
+ "last_modified": "Tue, 24 Nov 2026 23:15:07 GMT",
+ "checksum": "3de4a575dff0ccd086dc5487ad4f5234c25beed06d71c1a7c08e74e0f6211c36",
  "cursor": {},
  "seen": {
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-188": "8dc42b213bae232f8651f5fc",
@@ -58,8 +58,8 @@
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-278": "066693ef3ad68ab3ca6e77d3",
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-279": "07733e523200142016ca8e16"
  },
- "last_attempt": "2026-11-24T22:50:39Z",
- "last_success": "2026-11-24T22:50:39Z",
+ "last_attempt": "2026-11-24T23:20:46Z",
+ "last_success": "2026-11-24T23:20:46Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,

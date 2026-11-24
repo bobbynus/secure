@@ -54,21 +54,62 @@
  "texts": {
   "cisa-kev:CVE-2026-132165": "Drupal Core Remote Code Execution Vulnerability\nDrupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "ced1230937ce6682824cc050",
+  "texts": {
+   "en": {
+    "title": "Drupal Core: Remote Code Execution Vulnerability",
+    "summary": "Drupal Core contains a vulnerability allowing unauthenticated attackers to execute arbitrary code or take over sites via the Drupal installer.",
+    "impact": "An unauthenticated attacker can take over an existing site or execute arbitrary code via the Drupal installer under specific conditions by using install.php.",
+    "fix": "The sources do not state fixed versions.",
+    "workaround": null,
+    "checks": [
+     "Check Drupal Core installations for exposure to install.php abuse.",
+     "Apply mitigations in accordance with vendor instructions."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Drupal Core: уязвимость удаленного выполнения кода",
+    "summary": "Drupal Core содержит уязвимость, позволяющую неаутентифицированным злоумышленникам выполнять произвольный код или захватывать сайты через установщик Drupal.",
+    "impact": "Неаутентифицированный злоумышленник может захватить существующий сайт или выполнить произвольный код через установщик Drupal при определенных условиях, используя install.php.",
+    "fix": "В источниках не указаны исправленные версии.",
+    "workaround": null,
+    "checks": [
+     "Проверьте инсталляции Drupal Core на предмет доступности install.php.",
+     "Примените смягчающие меры в соответствии с инструкциями производителя."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Drupal Core: Schwachstelle zur RCE-Ausführung",
+    "summary": "Drupal Core enthält eine Schwachstelle, die es unauthentifizierten Angreifern ermöglicht, über den Drupal-Installer beliebigen Code auszuführen oder Websites zu übernehmen.",
+    "impact": "Ein unauthentifizierter Angreifer kann unter bestimmten Bedingungen eine bestehende Website übernehmen oder über den Drupal-Installer mittels install.php beliebigen Code ausführen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Drupal-Core-Installationen auf die Exposition gegenüber install.php.",
+     "Wenden Sie Mitigationsmaßnahmen gemäß den Anweisungen des Herstellers an."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-24T23:20:48Z",
+  "slugs": {
+   "ru": "drupal-core-uyazvimost-udalennogo-vypolneniya-koda",
+   "de": "drupal-core-schwachstelle-zur-rce-ausfuehrung",
+   "en": "drupal-core-remote-code-execution-vulnerability"
+  },
+  "published_at": "2026-11-24T23:20:48Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

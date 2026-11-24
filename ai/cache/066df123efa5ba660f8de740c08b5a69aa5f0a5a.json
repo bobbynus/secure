@@ -1,0 +1,39 @@
+{
+ "affected": [],
+ "en": {
+  "title": "Chromium: use-after-free in XML component (CVE-2026-125350)",
+  "summary": "Google Chromium contains a use-after-free vulnerability in the XML component allowing remote attackers to execute arbitrary code.",
+  "impact": "A remote attacker can execute arbitrary code inside the sandbox via a specially crafted webpage.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Check systems for installed Chromium-based browsers.",
+   "Verify exposure to untrusted web content."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Chromium: уязвимость use-after-free в компоненте XML (CVE-2026-125350)",
+  "summary": "Google Chromium содержит уязвимость use-after-free в компоненте XML, позволяющую удаленным злоумышленникам выполнять произвольный код.",
+  "impact": "Удаленный злоумышленник может выполнить произвольный код внутри песочницы с помощью специально сформированной веб-страницы.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проверьте системы на наличие браузеров на базе Chromium.",
+   "Проверьте подверженность воздействию ненадежного веб-контента."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Chromium: Use-After-Free-Schwachstelle in XML-Komponente (CVE-2026-125350)",
+  "summary": "Google Chromium enthält eine Use-After-Free-Schwachstelle in der XML-Komponente, die Remotegreifer zur Ausführung von Code befähigt.",
+  "impact": "Ein Remotegreifer kann über eine speziell präparierte Webseite beliebigen Code innerhalb der Sandbox ausführen.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Systeme auf installierte Chromium-basierte Browser überprüfen.",
+   "Exposition gegenüber nicht vertrauenswürdigen Webinhalten verifizieren."
+  ],
+  "regression": null
+ }
+}

@@ -65,21 +65,59 @@
  "texts": {
   "cert-bund-wid:WID-SEC-W-2026-4416": "Ruby: Mehrere Schwachstellen ermöglichen Codeausführung\nEin entfernter, anonymer Angreifer kann mehrere Schwachstellen in Ruby und Red Hat Enterprise Linux ausnutzen, um beliebigen Programmcode auszuführen.\nRuby ist eine interpretierte, objektorientierte Skriptsprache.\nRed Hat Enterprise Linux (RHEL) ist eine populäre Linux-Distribution.\nRevision: Neue Updates von Red Hat aufgenommen"
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "f0b47986da68172e1ea8f14d",
+  "texts": {
+   "en": {
+    "title": "Ruby and Red Hat Enterprise Linux: Multiple Vulnerabilities",
+    "summary": "Remote anonymous attackers can exploit multiple vulnerabilities in Ruby and Red Hat Enterprise Linux to execute arbitrary code.",
+    "impact": "An attacker can execute arbitrary code on affected systems.",
+    "fix": "The sources list no fixed versions or updates.",
+    "workaround": null,
+    "checks": [
+     "Check systems running Ruby and Red Hat Enterprise Linux for exposure."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Ruby и Red Hat Enterprise Linux: Множественные уязвимости",
+    "summary": "Удаленный анонимный злоумышленник может использовать множественные уязвимости в Ruby и Red Hat Enterprise Linux для выполнения произвольного кода.",
+    "impact": "Злоумышленник может выполнить произвольный код на затронутых системах.",
+    "fix": "В источниках не указаны исправленные версии или обновления.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы, использующие Ruby и Red Hat Enterprise Linux, на уязвимость."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Ruby und Red Hat Enterprise Linux: Mehrere Schwachstellen",
+    "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Ruby und Red Hat Enterprise Linux ausnutzen, um beliebigen Programmcode auszuführen.",
+    "impact": "Ein Angreifer kann beliebigen Programmcode auf betroffenen Systemen ausführen.",
+    "fix": "Die Quellen nennen keine korrigierten Versionen oder Updates.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme, auf denen Ruby und Red Hat Enterprise Linux laufen, auf Anfälligkeit."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-24T23:20:48Z",
+  "slugs": {
+   "ru": "ruby-i-red-hat-enterprise-linux-mnozhestvennye-uyazvimosti",
+   "de": "ruby-und-red-hat-enterprise-linux-mehrere-schwachstellen",
+   "en": "ruby-and-red-hat-enterprise-linux-multiple-vulnerabilities"
+  },
+  "published_at": "2026-11-24T23:20:48Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }

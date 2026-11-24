@@ -1,16 +1,17 @@
 {
  "id": "docker-engine-notes",
- "etag": "W/\"4513e192c2bc6a918928280c2f17a1f9\"",
- "last_modified": "Tue, 24 Nov 2026 14:58:52 GMT",
- "checksum": "1fdfc1e623910b341f2d5defec7f6959ff161d36cdb257cf3c6cc63bb56892fd",
+ "etag": "W/\"bb3eb1343bd80c38dc32549084da0e69\"",
+ "last_modified": "Tue, 24 Nov 2026 21:50:38 GMT",
+ "checksum": "cd439c5e2c7b2a393ad9ff67f9e67fa4c9f60c6d2f7820772fda04aea5d803bf",
  "cursor": {},
  "seen": {
-  "docker-engine-29.9.3": "b87c780ba4f5eff5267a59e1"
+  "docker-engine-29.9.3": "b87c780ba4f5eff5267a59e1",
+  "docker-engine-29.10.1": "74227159d8a9cfcbd8b143dd"
  },
- "last_attempt": "2026-11-24T17:20:41Z",
- "last_success": "2026-11-24T17:20:41Z",
+ "last_attempt": "2026-11-24T23:20:46Z",
+ "last_success": "2026-11-24T23:20:46Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 1
+ "items_total": 2
 }
