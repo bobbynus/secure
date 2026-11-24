@@ -410,8 +410,8 @@
   "CVE-2026-134347": "89786c6ea7044ed806c11996",
   "CVE-2026-129975": "47c6ebbb6b5d71b14b8bbb1d"
  },
- "last_attempt": "2026-11-24T03:10:40Z",
- "last_success": "2026-11-24T03:10:40Z",
+ "last_attempt": "2026-11-24T04:10:47Z",
+ "last_success": "2026-11-24T04:10:47Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
