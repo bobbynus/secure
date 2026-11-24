@@ -59,21 +59,62 @@
  "texts": {
   "cisa-kev:CVE-2026-132224": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability\nOptimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScript. Successful exploitation can result in attacker-controlled JavaScript being distributed through Optimizely-hosted assets and executed in browsers visiting affected customer websites.\n\nRequired action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "9d551da51747052c6934d88d",
+  "texts": {
+   "en": {
+    "title": "Optimizely Web Experimentation: External Control of Critical State Data Vulnerability",
+    "summary": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow, actively exploited in the wild.",
+    "impact": "An attacker can impersonate existing customer users and modify Project JavaScript, resulting in attacker-controlled JavaScript being distributed through Optimizely-hosted assets and executed in browsers visiting affected customer websites.",
+    "fix": "Apply mitigations in accordance with vendor instructions.",
+    "workaround": null,
+    "checks": [
+     "Check systems using Optimizely Web Experimentation for exposure.",
+     "Apply vendor-provided mitigations for the account signup flow vulnerability."
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Optimizely Web Experimentation: уязвимость внешнего контроля критических данных состояния",
+    "summary": "Optimizely Web Experimentation содержит уязвимость внешнего контроля критических данных состояния в процессе регистрации учетной записи, которая активно эксплуатируется.",
+    "impact": "Злоумышленник может выдать себя за существующих пользователей и изменить Project JavaScript, что приведет к распространению управляемого злоумышленником JavaScript через размещенные ресурсы и его выполнению в браузерах посетителей.",
+    "fix": "Примените средства смягчения последствий в соответствии с инструкциями производителя.",
+    "workaround": null,
+    "checks": [
+     "Проверьте системы, использующие Optimizely Web Experimentation, на предмет уязвимости.",
+     "Примените предоставленные производителем средства смягчения последствий для уязвимости процесса регистрации."
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Optimizely Web Experimentation: Schwachstelle bei externer Kontrolle kritischer Zustandsdaten",
+    "summary": "Optimizely Web Experimentation enthält eine Schwachstelle bei der externen Kontrolle kritischer Zustandsdaten im Kontoregistrierungsflow, die aktiv ausgenutzt wird.",
+    "impact": "Ein Angreifer kann sich als bestehende Kundenbenutzer ausgeben und Project JavaScript modifizieren, was dazu führt, dass angreifergesteuertes JavaScript über Optimizely-gehostete Assets verteilt und in Browsern von Besuchern ausgeführt wird.",
+    "fix": "Wenden Sie Abhilfemaßnahmen gemäß den Herstelleranweisungen an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Systeme, die Optimizely Web Experimentation nutzen, auf Exposition.",
+     "Wenden Sie die vom Hersteller bereitgestellten Abhilfemaßnahmen für die Schwachstelle im Registrierungsflow an."
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-24T20:51:16Z",
+  "slugs": {
+   "ru": "optimizely-web-experimentation-uyazvimost-vneshnego-kontrolya",
+   "de": "optimizely-web-experimentation-schwachstelle-bei-externer",
+   "en": "optimizely-web-experimentation-external-control-of-critical"
+  },
+  "published_at": "2026-11-24T20:51:16Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
