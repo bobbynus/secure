@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Edge (Chromium-based)",
+   "versions": "unspecified",
+   "fixed": null,
+   "evidence": "Microsoft Edge (Chromium-based). Microsoft 2026-Sep security update."
+  }
+ ],
+ "en": {
+  "title": "Microsoft Edge: Buffer overflow in ANGLE (CVE-2026-95281)",
+  "summary": "A buffer overflow vulnerability exists in the ANGLE component of Microsoft Edge (Chromium-based).",
+  "impact": "The sources do not provide detailed impact information beyond the buffer overflow flaw in ANGLE.",
+  "fix": "The sources do not list fixed versions.",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Edge (Chromium-based) installations.",
+   "Check systems for the application of the Microsoft 2026-Sep security update."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Edge: переполнение буфера в ANGLE (CVE-2026-95281)",
+  "summary": "В компоненте ANGLE браузера Microsoft Edge (Chromium-based) обнаружена уязвимость переполнения буфера.",
+  "impact": "Источники не предоставляют подробной информации о последствиях, кроме уязвимости переполнения буфера в ANGLE.",
+  "fix": "В источниках не указаны исправленные версии.",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию установок Microsoft Edge (Chromium-based).",
+   "Проверьте системы на предмет применения сентябрьского обновления безопасности Microsoft 2026 года."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Edge: Pufferüberlauf in ANGLE (CVE-2026-95281)",
+  "summary": "Im ANGLE-Komponente von Microsoft Edge (Chromium-based) existiert eine Pufferüberlauf-Schwachstelle.",
+  "impact": "Die Quellen nennen keine detaillierten Auswirkungen über den Pufferüberlauf in ANGLE hinaus.",
+  "fix": "Die Quellen nennen keine korrigierten Versionen.",
+  "workaround": null,
+  "checks": [
+   "Inventarisieren Sie Microsoft Edge (Chromium-based)-Installationen.",
+   "Überprüfen Sie Systeme auf die Anwendung des Microsoft-Sicherheitsupdates von September 2026."
+  ],
+  "regression": null
+ }
+}

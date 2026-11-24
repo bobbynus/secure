@@ -78,41 +78,41 @@
  },
  "publish_state": "published",
  "ai": {
-  "input_hash": "59bc41b404694f795314520a",
+  "input_hash": "7eaafdf13da70396c6e5f5c2",
   "texts": {
    "en": {
-    "title": "Microsoft Edge: CVE-2026-118306 Memory corruption in FileSystem",
-    "summary": "Microsoft Edge (Chromium-based) contains a memory corruption vulnerability in FileSystem tracked as CVE-2026-118306.",
-    "impact": "The vulnerability involves memory corruption in FileSystem, potentially leading to critical security impacts.",
+    "title": "Microsoft Edge (Chromium-based): CVE-2026-118306 Memory corruption in FileSystem",
+    "summary": "A critical memory corruption vulnerability exists in Microsoft Edge (Chromium-based) within the FileSystem component, tracked as CVE-2026-118306.",
+    "impact": "The vulnerability allows memory corruption via the FileSystem component.",
     "fix": "The sources do not state fixed versions.",
     "workaround": null,
     "checks": [
      "Inventory Microsoft Edge (Chromium-based) installations.",
-     "Check systems for the presence of CVE-2026-118306."
+     "Check systems for the presence of the Microsoft 2026-Oct security update."
     ],
     "regression": null
    },
    "ru": {
-    "title": "Microsoft Edge: CVE-2026-118306 Повреждение памяти в FileSystem",
-    "summary": "Microsoft Edge (на базе Chromium) содержит уязвимость повреждения памяти в FileSystem, получившую идентификатор CVE-2026-118306.",
-    "impact": "Уязвимость связана с повреждением памяти в FileSystem и потенциально может привести к критическим последствиям.",
+    "title": "Microsoft Edge (Chromium-based): CVE-2026-118306 повреждение памяти в FileSystem",
+    "summary": "В Microsoft Edge (Chromium-based) обнаружена критическая уязвимость повреждения памяти в компоненте FileSystem, получившая идентификатор CVE-2026-118306.",
+    "impact": "Уязвимость приводит к повреждению памяти через компонент FileSystem.",
     "fix": "В источниках не указаны исправленные версии.",
     "workaround": null,
     "checks": [
-     "Проведите инвентаризацию установок Microsoft Edge (на базе Chromium).",
-     "Проверьте системы на наличие CVE-2026-118306."
+     "Проинвентаризируйте установленные экземпляры Microsoft Edge (Chromium-based).",
+     "Проверьте системы на наличие обновления безопасности Microsoft 2026-Oct."
     ],
     "regression": null
    },
    "de": {
-    "title": "Microsoft Edge: CVE-2026-118306 Speicherbeschädigung in FileSystem",
-    "summary": "Microsoft Edge (Chromium-basiert) enthält eine Speicherbeschädigungsschwachstelle in FileSystem mit der Kennung CVE-2026-118306.",
-    "impact": "Die Schwachstelle betrifft eine Speicherbeschädigung in FileSystem mit potenziell kritischen Auswirkungen.",
+    "title": "Microsoft Edge (Chromium-based): CVE-2026-118306 Speicher corruption in FileSystem",
+    "summary": "In Microsoft Edge (Chromium-based) existiert eine kritische Speicherbeschädigungsschwachstelle im FileSystem-Komponenten, geführt als CVE-2026-118306.",
+    "impact": "Die Schwachstelle ermöglicht eine Speicherbeschädigung über die FileSystem-Komponente.",
     "fix": "Die Quellen nennen keine korrigierten Versionen.",
     "workaround": null,
     "checks": [
-     "Inventarisieren Sie Microsoft Edge (Chromium-basiert) Installationen.",
-     "Überprüfen Sie Systeme auf CVE-2026-118306."
+     "Inventarisieren Sie Microsoft Edge (Chromium-based)-Installationen.",
+     "Überprüfen Sie Systeme auf das Vorhandensein des Microsoft 2026-Oct-Sicherheitsupdates."
     ],
     "regression": null
    }
@@ -121,7 +121,7 @@
   "workaround": false,
   "model": "gemini-3.5-flash-lite",
   "prompt": "p3",
-  "generated_at": "2026-11-20T19:10:56Z",
+  "generated_at": "2026-11-24T01:40:45Z",
   "slugs": {
    "ru": "microsoft-edge-cve-2026-118306-povrezhdenie-pamyati-v-filesystem",
    "de": "microsoft-edge-cve-2026-118306-speicherbeschaedigung-in",
@@ -132,6 +132,6 @@
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 1
+  "calls": 2
  }
 }
