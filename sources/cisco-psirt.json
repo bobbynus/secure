@@ -2,7 +2,7 @@
  "id": "cisco-psirt",
  "etag": null,
  "last_modified": null,
- "checksum": "e8398d3aee2dbfb6f63fd13e6289e6e4d2f71846ee9919e587fa511ea233040e",
+ "checksum": "d8c98b92457e455d27bcae5c37e50bd1afd6e9b8ba986ebddfe07da0e9407e82",
  "cursor": {},
  "seen": {
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u": "c787835bb3612d2e835e6f36",
@@ -55,15 +55,15 @@
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-iosxe-V8NMuMZJ": "707e82117485c0350650257f",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multiauth-bypass-sgD2HbL4": "4ad8b01c970a7180e26ee760",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftdvirtual-dos-MuenGnYR": "26b9fcd128233dbbca5b89a4",
-  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-multi-e93M3vdA": "0ddd6eedf526a5f4ca8dd9d0",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-multi-e93M3vdA": "adbc87d1b717d3688a0fbefb",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z": "cd7ae6f24395456cd752fd9c",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s": "32223d65ea519876a8f8ac42",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-phpaftershell-nov-2026-kT9pL4Xe": "3b9af903cdc19d7a66c2ac44"
  },
- "last_attempt": "2026-11-24T13:20:41Z",
- "last_success": "2026-11-24T13:20:41Z",
+ "last_attempt": "2026-11-24T14:20:42Z",
+ "last_success": "2026-11-24T14:20:42Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 62
+ "items_total": 63
 }
