@@ -1,0 +1,104 @@
+{
+  "id": "sr-26-0315",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-23",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "N-able",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-134624"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.3,
+    "version": "4.0",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-23T00:00:00Z",
+    "published": "2026-11-24T00:10:55Z",
+    "updated": "2026-11-24T00:10:55Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-134624",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-23"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-24T00:10:55Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-24T00:10:55Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "n-able-mailassure-uyazvimost-ssrf-v-proverke-soedineniya",
+      "title": "N-able MailAssure: уязвимость SSRF в проверке соединения синхронизации LDAP",
+      "summary": "N-able MailAssure содержит уязвимость подделки запросов на стороне сервера, позволяющую аутентифицированному API-пользователю подключаться к произвольным внутренним хостам и портам.",
+      "impact": "Аутентифицированный API-пользователь может подключаться к произвольным внутренним хостам и портам, определять их доступность и отправлять специально сформированные данные во внутренние службы.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 23.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проверьте инсталляции N-able MailAssure на наличие уязвимости.",
+        "Ознакомьтесь с инструкциями вендора относительно доступных смягчающих мер и обновлений."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "n-able-mailassure-ssrf-schwachstelle-bei-ldap",
+      "title": "N-able MailAssure: SSRF-Schwachstelle bei LDAP-Synchronisationsverbindung",
+      "summary": "N-able MailAssure enthält eine Server-Side Request Forgery-Schwachstelle, die es einem authentifizierten API-Benutzer ermöglicht, sich mit beliebigen internen Hosts und Ports zu verbinden.",
+      "impact": "Ein authentifizierter API-Benutzer kann sich mit beliebigen internen Hosts und Ports verbinden, feststellen, welche erreichbar sind, und manipulierte Daten an interne Dienste senden.",
+      "exploitation": "CISA hat die Schwachstelle am 23.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Überprüfen Sie N-able MailAssure-Installationen auf Exposition.",
+        "Prüfen Sie die Herstelleranweisungen auf verfügbare Mitigierungsmaßnahmen und Updates."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "n-able-mailassure-ssrf-vulnerability-in-ldap-synchronization",
+      "title": "N-able MailAssure: SSRF vulnerability in LDAP synchronization connection check",
+      "summary": "N-able MailAssure contains a server-side request forgery vulnerability allowing an authenticated API user to connect to arbitrary internal hosts and ports.",
+      "impact": "An authenticated API user can connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 23, 2026: exploitation in real attacks is confirmed.",
+      "fix": "The sources do not list fixed versions.",
+      "checks": [
+        "Verify N-able MailAssure installations for exposure.",
+        "Check vendor instructions for available mitigations and updates."
+      ]
+    }
+  }
+}
