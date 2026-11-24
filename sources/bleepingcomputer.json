@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "ac010f820d653a5e385fb929a92d5dc0",
- "last_modified": "Tue, 24 Nov 2026 19:49:55 GMT",
- "checksum": "d70ca39a9f2b1acaf4d03d3f62656194873e49e58c7df4eca90b0b45bbcd9839",
+ "etag": "a71f11d4808ba2c2afed20c52186146a",
+ "last_modified": "Tue, 24 Nov 2026 20:20:59 GMT",
+ "checksum": "f04ba743006c6701758e684c0b0c0a9b88080a9164c6ec524d2ec7186e650f16",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -64,12 +64,13 @@
   "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/": "e96235d101aa4096d95a294a",
   "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/": "e351312f7d1c17b76d15b5ea",
   "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/": "9fd2f01a641c97ba67d64229",
-  "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/": "460669e762a36f05ae627618"
+  "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/": "460669e762a36f05ae627618",
+  "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/": "da4a4176dc64d6be43c71164"
  },
- "last_attempt": "2026-11-24T19:50:39Z",
- "last_success": "2026-11-24T19:50:39Z",
+ "last_attempt": "2026-11-24T20:20:52Z",
+ "last_success": "2026-11-24T20:20:52Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 62
+ "items_total": 63
 }
