@@ -1,0 +1,104 @@
+{
+  "id": "sr-26-0317",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-24",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Optimizely",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-132224"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 7.1,
+    "version": "4.0",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-24T00:00:00Z",
+    "published": "2026-11-24T20:51:16Z",
+    "updated": "2026-11-24T20:51:16Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-132224",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-24"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-24T20:51:16Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-24T20:51:16Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "optimizely-web-experimentation-uyazvimost-vneshnego-kontrolya",
+      "title": "Optimizely Web Experimentation: уязвимость внешнего контроля критических данных состояния",
+      "summary": "Optimizely Web Experimentation содержит уязвимость внешнего контроля критических данных состояния в процессе регистрации учетной записи, которая активно эксплуатируется.",
+      "impact": "Злоумышленник может выдать себя за существующих пользователей и изменить Project JavaScript, что приведет к распространению управляемого злоумышленником JavaScript через размещенные ресурсы и его выполнению в браузерах посетителей.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 24.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "Примените средства смягчения последствий в соответствии с инструкциями производителя.",
+      "checks": [
+        "Проверьте системы, использующие Optimizely Web Experimentation, на предмет уязвимости.",
+        "Примените предоставленные производителем средства смягчения последствий для уязвимости процесса регистрации."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "optimizely-web-experimentation-schwachstelle-bei-externer",
+      "title": "Optimizely Web Experimentation: Schwachstelle bei externer Kontrolle kritischer Zustandsdaten",
+      "summary": "Optimizely Web Experimentation enthält eine Schwachstelle bei der externen Kontrolle kritischer Zustandsdaten im Kontoregistrierungsflow, die aktiv ausgenutzt wird.",
+      "impact": "Ein Angreifer kann sich als bestehende Kundenbenutzer ausgeben und Project JavaScript modifizieren, was dazu führt, dass angreifergesteuertes JavaScript über Optimizely-gehostete Assets verteilt und in Browsern von Besuchern ausgeführt wird.",
+      "exploitation": "CISA hat die Schwachstelle am 24.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Wenden Sie Abhilfemaßnahmen gemäß den Herstelleranweisungen an.",
+      "checks": [
+        "Überprüfen Sie Systeme, die Optimizely Web Experimentation nutzen, auf Exposition.",
+        "Wenden Sie die vom Hersteller bereitgestellten Abhilfemaßnahmen für die Schwachstelle im Registrierungsflow an."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "optimizely-web-experimentation-external-control-of-critical",
+      "title": "Optimizely Web Experimentation: External Control of Critical State Data Vulnerability",
+      "summary": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow, actively exploited in the wild.",
+      "impact": "An attacker can impersonate existing customer users and modify Project JavaScript, resulting in attacker-controlled JavaScript being distributed through Optimizely-hosted assets and executed in browsers visiting affected customer websites.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 24, 2026: exploitation in real attacks is confirmed.",
+      "fix": "Apply mitigations in accordance with vendor instructions.",
+      "checks": [
+        "Check systems using Optimizely Web Experimentation for exposure.",
+        "Apply vendor-provided mitigations for the account signup flow vulnerability."
+      ]
+    }
+  }
+}
