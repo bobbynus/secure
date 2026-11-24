@@ -1,0 +1,104 @@
+{
+  "id": "sr-26-0318",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-24",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Idunno",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-131914"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.3,
+    "version": "4.0",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-24T00:00:00Z",
+    "published": "2026-11-24T23:20:48Z",
+    "updated": "2026-11-24T23:20:48Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-131914",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-24"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-24T23:20:48Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-24T23:20:48Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "idunno-anticsrf-uyazvimost-deserializatsii",
+      "title": "Idunno AntiCsrf: уязвимость десериализации",
+      "summary": "Idunno AntiCsrf содержит уязвимость десериализации ненадежных данных, позволяющую неавторизованным удаленным злоумышленникам выполнять код.",
+      "impact": "Неавторизованный удаленный злоумышленник может выполнить произвольный код посредством внедрения объектов. Затронутый продукт может быть снят с поддержки.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 24.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "В источниках не указаны исправленные версии; пользователям рекомендуется прекратить использование или перейти на поддерживаемую версию.",
+      "checks": [
+        "Проведите инвентаризацию систем под управлением Idunno AntiCsrf для проверки доступности.",
+        "Проверьте, не прекращена ли поддержка используемых экземпляров продукта."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "idunno-anticsrf-deserialisierungs-schwachstelle",
+      "title": "Idunno AntiCsrf: Deserialisierungs-Schwachstelle",
+      "summary": "Idunno AntiCsrf enthält eine Deserialisierungs-Schwachstelle für nicht vertrauenswürdige Daten, die Remotecodeausführung ermöglicht.",
+      "impact": "Ein nicht authentifizierter Remote-Angreifer kann durch Objektinjektion beliebigen Code ausführen. Das betroffene Produkt ist möglicherweise abgekündigt (EoL/EoS).",
+      "exploitation": "CISA hat die Schwachstelle am 24.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen und raten dazu, die Nutzung einzustellen und/oder auf eine unterstützte Version zu wechseln.",
+      "checks": [
+        "Inventarisieren Sie Systeme mit Idunno AntiCsrf, um die Exponiertheit zu überprüfen.",
+        "Überprüfen Sie, ob die eingesetzten Instanzen das Ende ihres Lebenszyklus erreicht haben."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "idunno-anticsrf-deserialization-vulnerability",
+      "title": "Idunno AntiCsrf: deserialization vulnerability",
+      "summary": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability allowing unauthenticated remote code execution.",
+      "impact": "An unauthenticated remote attacker can execute arbitrary code via object injection. The impacted product may be end-of-life or end-of-service.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 24, 2026: exploitation in real attacks is confirmed.",
+      "fix": "The sources list no fixed versions, advising users to discontinue use and/or transition to a supported version.",
+      "checks": [
+        "Inventory systems running Idunno AntiCsrf to check for exposure.",
+        "Verify whether deployed instances are end-of-life or end-of-service."
+      ]
+    }
+  }
+}

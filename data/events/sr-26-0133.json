@@ -41,9 +41,14 @@
   },
   "affected": [
     {
-      "product": "linux-kernel",
-      "versions": "all affected versions",
+      "product": "Linux kernel Oracle",
+      "versions": "4.15.0 < 4.15.0-1162.173~16.04.1",
       "fixed": "4.15.0-1162.173~16.04.1"
+    },
+    {
+      "product": "Linux kernel AWS FIPS",
+      "versions": "5.4.0 < 5.4.0-1169.180+fips1",
+      "fixed": "5.4.0-1169.180+fips1"
     }
   ],
   "cvss": {
@@ -160,49 +165,52 @@
   "generated": {
     "model": "gemini-3.5-flash-lite",
     "prompt": "p3",
-    "at": "2026-11-24T10:20:50Z"
+    "at": "2026-11-24T23:20:48Z"
   },
   "translations": {
     "ru": {
       "status": "ready",
       "slug": "yadro-linux-use-after-free-v-setevoy-podsisteme-ipv4-cve-2026",
-      "title": "Ядро Linux: уязвимости в сетевой подсистеме IPv4 и других компонентах",
-      "summary": "В ядре Linux обнаружены множественные уязвимости, которые могут позволить злоумышленнику скомпрометировать систему, вызвать отказ в обслуживании или выполнить несанкционированный код.",
-      "impact": "Злоумышленник может выполнить несанкционированный код или команды, скомпрометировать систему либо вызвать отказ в обслуживании.",
+      "title": "Ядро Linux: Множественные уязвимости (CVE-2026-98432 и др.)",
+      "summary": "Множественные уязвимости в ядре Linux позволяют злоумышленникам компрометировать системы, вызывать отказ в обслуживании или получать права root.",
+      "impact": "Злоумышленники могут скомпрометировать систему, вызвать отказ в обслуживании или повысить привилегии до root. В частности, CVE-2026-98432 связана с состоянием use-after-free в стеке IPv4 из-за некорректной обработки ссылок при обработке пакетов TCP SYN.",
       "exploitation": "В использованных источниках нет сведений об эксплуатации.",
-      "fix": "Обновите пакеты ядра Linux до версий, указанных в соответствующих бюллетенях производителя, например до `4.15.0-1162.173~16.04.1` для систем Ubuntu 16.04 LTS Oracle.",
+      "fix": "Примените доступные обновления ядра, предоставленные поставщиком дистрибутива (например, бюллетени USN-9170-2, USN-9171-2 и др.). Для продуктов Fortinet виртуальный патч `Linux.Kernel.tcp_v4_syn_recv_sock.Use.After.Free.` доступен в обновлении базы данных FMWP 26.113.",
       "checks": [
-        "Проведите инвентаризацию пакетов ядра Linux на всех системах.",
-        "Проверьте, используют ли работающие системы уязвимые версии ядра.",
-        "Примените соответствующие обновления ядра, предоставленные производителем."
+        "Проведите инвентаризацию версий ядра Linux на всех системах и проверьте их на наличие уязвимых версий пакетов.",
+        "Проверьте системы Ubuntu на наличие применимых обновлений USN, таких как USN-9170-2 или USN-9171-2, и установите их.",
+        "Убедитесь, что необходимые обновления ядра установлены, и перезагрузите систему для их активации.",
+        "Проверьте наличие виртуального патча `Linux.Kernel.tcp_v4_syn_recv_sock.Use.After.Free.` в обновлении базы данных FMWP 26.113 на устройствах Fortinet, если применимо."
       ]
     },
     "de": {
       "status": "ready",
       "slug": "linux-kernel-use-after-free-in-ipv4-netzwerksubsystem-cve-2026",
-      "title": "Linux-Kernel: Schwachstellen in IPv4-Netzwerken und anderen Subsystemen",
-      "summary": "Im Linux-Kernel wurden mehrere Schwachstellen entdeckt, die es einem Angreifer ermöglichen könnten, das System zu kompromizieren, einen Denial-of-Service zu verursachen oder Code auszuführen.",
-      "impact": "Ein Angreifer kann unautorisierten Code oder Befehle ausführen, das System kompromizieren oder einen Denial of Service verursachen.",
+      "title": "Linux-Kernel: Mehrere Schwachstellen (CVE-2026-98432 etc.)",
+      "summary": "Mehrere Schwachstellen im Linux-Kernel ermöglichen Angreifern die Systemkompromittierung, Denial-of-Service-Angriffe oder das Erlangen von Root-Rechten.",
+      "impact": "Angreifer können das System kompromittieren, einen Denial-of-Service verursachen oder Root-Rechte erlangen. Insbesondere betrifft CVE-mannigfaltige Use-After-Free-Sicherheitslücken in der IPv4-Netzwerkverarbeitung bei der Behandlung von TCP-SYN-Paketen.",
       "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
-      "fix": "Aktualisieren Sie die Linux-Kernel-Pakete auf die in den jeweiligen Herstellermeldungen angegebenen Versionen, wie `4.15.0-1162.173~16.04.1` für Ubuntu 16.04 LTS Oracle-Systeme.",
+      "fix": "Installieren Sie die vom Distributor bereitgestellten Kernel-Updates (z. B. Ubuntu Security Notices USN-9170-2, USN-9171-2 usw.). Für Fortinet-Produkte ist ein virtueller Patch `Linux.Kernel.tcp_v4_syn_recv_sock.Use.After.Free.` im FMWP-Datenbankupdate 26.113 verfügbar.",
       "checks": [
-        "Inventarisieren Sie Linux-Kernel-Pakete auf allen Systemen.",
-        "Überprüfen Sie, ob laufende Systeme anfällige Kernel-Versionen verwenden.",
-        "Wenden Sie die vom Hersteller bereitgestellten Kernel-Updates an."
+        "Inventarisieren Sie die Linux-Kernel-Versionen auf allen Systemen und prüfen Sie diese auf betroffene Paketversionen.",
+        "Überprüfen Sie Ubuntu-Systeme auf anwendbare USN-Updates wie USN-9170-2 oder USN-9171-2 und wenden Sie diese an.",
+        "Stellen Sie sicher, dass die erforderlichen Kernel-Updates installiert sind, und starten Sie das System neu, um sie zu aktivieren.",
+        "Prüfen Sie Fortinet-Systeme auf das Vorhandensein des virtuellen Patches `Linux.Kernel.tcp_v4_syn_recv_sock.Use.After.Free.` im FMWP-DB-Update 26.113, sofern zutreffend."
       ]
     },
     "en": {
       "status": "ready",
       "slug": "linux-kernel-use-after-free-in-ipv4-networking-cve-2026-98432",
-      "title": "Linux kernel: vulnerabilities in IPv4 networking and other subsystems",
-      "summary": "Multiple vulnerabilities were discovered in the Linux kernel, which could allow an attacker to compromise the system, cause a denial of service, or execute unauthorized code.",
-      "impact": "An attacker can execute unauthorized code or commands, compromise the system, or cause a denial of service.",
+      "title": "Linux kernel: Multiple vulnerabilities (CVE-2026-98432 etc.)",
+      "summary": "Multiple vulnerabilities in the Linux kernel allow attackers to compromise systems, cause a denial of service, or gain root privileges.",
+      "impact": "Attackers can compromise the system, cause a denial of service, or escalate privileges to root. Specifically, CVE-2026-98432 involves a use-after-free in IPv4 networking due to missing reference handling during TCP SYN packet processing.",
       "exploitation": "The sources reviewed contain no reports of exploitation.",
-      "fix": "Update the Linux kernel packages to the versions specified in the respective vendor advisories, such as `4.15.0-1162.173~16.04.1` for Ubuntu 16.04 LTS Oracle systems.",
+      "fix": "Apply available kernel updates provided by your distribution vendor (e.g., Ubuntu Security Notices USN-9170-2, USN-9171-2, etc.). For Fortinet products, a virtual patch `Linux.Kernel.tcp_v4_syn_recv_sock.Use.After.Free.` is available in FMWP db update 26.113.",
       "checks": [
-        "Inventory Linux kernel packages across all systems.",
-        "Verify if running systems are using vulnerable kernel versions.",
-        "Apply the appropriate kernel updates provided by the vendor."
+        "Inventory Linux kernel versions across all systems and verify if they match vulnerable package versions.",
+        "Check Ubuntu systems for applicable USN updates such as USN-9170-2 or USN-9171-2 and apply them.",
+        "Verify that required kernel updates are installed and reboot the system to activate them.",
+        "Check Fortinet systems for the presence of virtual patch `Linux.Kernel.tcp_v4_syn_recv_sock.Use.After.Free.` in FMWP db update 26.113 if applicable."
       ]
     }
   }

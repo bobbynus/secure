@@ -1,0 +1,104 @@
+{
+  "id": "sr-26-0316",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Red Hat",
+  "products": [
+    "rhel"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-110264",
+      "CVE-2026-93577",
+      "CVE-2026-97229"
+    ],
+    "advisory": [
+      "WID-SEC-2026-4416"
+    ],
+    "kb": []
+  },
+  "affected": [],
+  "cvss": {
+    "score": 10.0,
+    "version": "3.1",
+    "source": "NVD"
+  },
+  "dates": {
+    "event": "2026-11-08T23:00:00Z",
+    "published": "2026-11-24T23:20:48Z",
+    "updated": "2026-11-24T23:20:48Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Ruby: Mehrere Schwachstellen ermöglichen Codeausführung",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4416",
+      "publisher": "CERT-Bund (BSI) WID security advisories",
+      "kind": "cert",
+      "date": "2026-11-08"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-24T23:20:48Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-24T23:20:48Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "ruby-i-red-hat-enterprise-linux-mnozhestvennye-uyazvimosti",
+      "title": "Ruby и Red Hat Enterprise Linux: Множественные уязвимости",
+      "summary": "Удаленный анонимный злоумышленник может использовать множественные уязвимости в Ruby и Red Hat Enterprise Linux для выполнения произвольного кода.",
+      "impact": "Злоумышленник может выполнить произвольный код на затронутых системах.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "В источниках не указаны исправленные версии или обновления.",
+      "checks": [
+        "Проверьте системы, использующие Ruby и Red Hat Enterprise Linux, на уязвимость."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "ruby-und-red-hat-enterprise-linux-mehrere-schwachstellen",
+      "title": "Ruby und Red Hat Enterprise Linux: Mehrere Schwachstellen",
+      "summary": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Ruby und Red Hat Enterprise Linux ausnutzen, um beliebigen Programmcode auszuführen.",
+      "impact": "Ein Angreifer kann beliebigen Programmcode auf betroffenen Systemen ausführen.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen oder Updates.",
+      "checks": [
+        "Überprüfen Sie Systeme, auf denen Ruby und Red Hat Enterprise Linux laufen, auf Anfälligkeit."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "ruby-and-red-hat-enterprise-linux-multiple-vulnerabilities",
+      "title": "Ruby and Red Hat Enterprise Linux: Multiple Vulnerabilities",
+      "summary": "Remote anonymous attackers can exploit multiple vulnerabilities in Ruby and Red Hat Enterprise Linux to execute arbitrary code.",
+      "impact": "An attacker can execute arbitrary code on affected systems.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "The sources list no fixed versions or updates.",
+      "checks": [
+        "Check systems running Ruby and Red Hat Enterprise Linux for exposure."
+      ]
+    }
+  }
+}

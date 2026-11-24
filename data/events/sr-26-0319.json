@@ -1,0 +1,99 @@
+{
+  "id": "sr-26-0319",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "official",
+  "lifecycle": "confirmed",
+  "fix": "unknown",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": true,
+    "kevAdded": "2026-11-24",
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Drupal",
+  "products": [],
+  "identifiers": {
+    "cve": [
+      "CVE-2026-132165"
+    ],
+    "advisory": [],
+    "kb": []
+  },
+  "affected": [],
+  "dates": {
+    "event": "2026-11-24T00:00:00Z",
+    "published": "2026-11-24T23:20:48Z",
+    "updated": "2026-11-24T23:20:48Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Drupal Core Remote Code Execution Vulnerability",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-132165",
+      "publisher": "CISA Known Exploited Vulnerabilities",
+      "kind": "kev",
+      "date": "2026-11-24"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-24T23:20:48Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-24T23:20:48Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "drupal-core-uyazvimost-udalennogo-vypolneniya-koda",
+      "title": "Drupal Core: уязвимость удаленного выполнения кода",
+      "summary": "Drupal Core содержит уязвимость, позволяющую неаутентифицированным злоумышленникам выполнять произвольный код или захватывать сайты через установщик Drupal.",
+      "impact": "Неаутентифицированный злоумышленник может захватить существующий сайт или выполнить произвольный код через установщик Drupal при определенных условиях, используя install.php.",
+      "exploitation": "CISA включило уязвимость в каталог эксплуатируемых уязвимостей (KEV) 24.11.2026: зафиксирована эксплуатация в реальных атаках.",
+      "fix": "В источниках не указаны исправленные версии.",
+      "checks": [
+        "Проверьте инсталляции Drupal Core на предмет доступности install.php.",
+        "Примените смягчающие меры в соответствии с инструкциями производителя."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "drupal-core-schwachstelle-zur-rce-ausfuehrung",
+      "title": "Drupal Core: Schwachstelle zur RCE-Ausführung",
+      "summary": "Drupal Core enthält eine Schwachstelle, die es unauthentifizierten Angreifern ermöglicht, über den Drupal-Installer beliebigen Code auszuführen oder Websites zu übernehmen.",
+      "impact": "Ein unauthentifizierter Angreifer kann unter bestimmten Bedingungen eine bestehende Website übernehmen oder über den Drupal-Installer mittels install.php beliebigen Code ausführen.",
+      "exploitation": "CISA hat die Schwachstelle am 24.11.2026 in den Katalog ausgenutzter Schwachstellen (KEV) aufgenommen: Ausnutzung in realen Angriffen ist belegt.",
+      "fix": "Die Quellen nennen keine korrigierten Versionen.",
+      "checks": [
+        "Überprüfen Sie Drupal-Core-Installationen auf die Exposition gegenüber install.php.",
+        "Wenden Sie Mitigationsmaßnahmen gemäß den Anweisungen des Herstellers an."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "drupal-core-remote-code-execution-vulnerability",
+      "title": "Drupal Core: Remote Code Execution Vulnerability",
+      "summary": "Drupal Core contains a vulnerability allowing unauthenticated attackers to execute arbitrary code or take over sites via the Drupal installer.",
+      "impact": "An unauthenticated attacker can take over an existing site or execute arbitrary code via the Drupal installer under specific conditions by using install.php.",
+      "exploitation": "CISA added the vulnerability to its Known Exploited Vulnerabilities (KEV) catalog on November 24, 2026: exploitation in real attacks is confirmed.",
+      "fix": "The sources do not state fixed versions.",
+      "checks": [
+        "Check Drupal Core installations for exposure to install.php abuse.",
+        "Apply mitigations in accordance with vendor instructions."
+      ]
+    }
+  }
+}
