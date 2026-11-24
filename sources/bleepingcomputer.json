@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "31c5425e3f70e809531a4a8bc667f2cc",
- "last_modified": "Tue, 24 Nov 2026 14:46:45 GMT",
- "checksum": "228d940d63cb3c30f9fd9cca8a2ae0ec6a3aec01aae4aa6678beea6a88b76276",
+ "etag": "cd7c8f6315fb1551f347d9439af89b8e",
+ "last_modified": "Tue, 24 Nov 2026 15:16:46 GMT",
+ "checksum": "f50f4a14199c60c9a107595e7b3b1de3e1cb16c4396f7e4dc21f16e34eb2a24c",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -57,12 +57,14 @@
   "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/": "4cf1f6a2fb60eb334055a23b",
   "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/": "a26907bb28e704644b26a686",
   "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/": "57eb18dd4df13b87c7d3132e",
-  "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/": "f60f98e4a3940cf48b398f06"
+  "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/": "f60f98e4a3940cf48b398f06",
+  "https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/": "6c7cbe7845bc4d134e102015",
+  "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/": "d089f7f0b6dc64f955af5176"
  },
- "last_attempt": "2026-11-24T14:50:40Z",
- "last_success": "2026-11-24T14:50:40Z",
+ "last_attempt": "2026-11-24T15:20:51Z",
+ "last_success": "2026-11-24T15:20:51Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 55
+ "items_total": 57
 }
