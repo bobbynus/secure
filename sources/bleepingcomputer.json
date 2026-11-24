@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "30b2f1b4c8fd7bb414fbca546b4c6b3f",
- "last_modified": "Tue, 24 Nov 2026 16:15:24 GMT",
- "checksum": "b15418ca1859a6af792c9eda86e3e097d320e4104a10a55b2d7db8680697dbd3",
+ "etag": "de84334ee29f7a519dc9f3004ed9681f",
+ "last_modified": "Tue, 24 Nov 2026 16:43:54 GMT",
+ "checksum": "8b05d12b97276a16d5f74fa95fdbeaeed778ee65175a001c82bf9ccb74542824",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -60,12 +60,14 @@
   "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/": "f60f98e4a3940cf48b398f06",
   "https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/": "6c7cbe7845bc4d134e102015",
   "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/": "d089f7f0b6dc64f955af5176",
-  "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/": "0287a667fed1267416769ac0"
+  "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/": "0287a667fed1267416769ac0",
+  "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/": "e96235d101aa4096d95a294a",
+  "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/": "e351312f7d1c17b76d15b5ea"
  },
- "last_attempt": "2026-11-24T16:20:43Z",
- "last_success": "2026-11-24T16:20:43Z",
+ "last_attempt": "2026-11-24T16:50:49Z",
+ "last_success": "2026-11-24T16:50:49Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 58
+ "items_total": 60
 }
