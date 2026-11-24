@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "19d01247aeafb6708ff6915a1c38de9e",
- "last_modified": "Tue, 24 Nov 2026 14:12:24 GMT",
- "checksum": "f3c0c87652f0fd1217cd0580220d831f5c1f4601396c05297622319e36382366",
+ "etag": "31c5425e3f70e809531a4a8bc667f2cc",
+ "last_modified": "Tue, 24 Nov 2026 14:46:45 GMT",
+ "checksum": "228d940d63cb3c30f9fd9cca8a2ae0ec6a3aec01aae4aa6678beea6a88b76276",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -59,8 +59,8 @@
   "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/": "57eb18dd4df13b87c7d3132e",
   "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/": "f60f98e4a3940cf48b398f06"
  },
- "last_attempt": "2026-11-24T14:20:42Z",
- "last_success": "2026-11-24T14:20:42Z",
+ "last_attempt": "2026-11-24T14:50:40Z",
+ "last_success": "2026-11-24T14:50:40Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
