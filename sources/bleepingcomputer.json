@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "943ae63dc113c5c7e0fe0bfe399bb32f",
- "last_modified": "Tue, 24 Nov 2026 18:49:07 GMT",
- "checksum": "8b83983cae7cf4d11218d926f9d175b480ee812f6e013456fc5615d9b7f2fa4e",
+ "etag": "6bdcb6104dbd3adec784f809278349ac",
+ "last_modified": "Tue, 24 Nov 2026 19:19:54 GMT",
+ "checksum": "c781d47ea3d91d074abc4cbbc94e0b60434c10b4ff6830e16e1bb731e4fd9491",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -63,12 +63,13 @@
   "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/": "0287a667fed1267416769ac0",
   "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/": "e96235d101aa4096d95a294a",
   "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/": "e351312f7d1c17b76d15b5ea",
-  "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/": "9fd2f01a641c97ba67d64229"
+  "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/": "9fd2f01a641c97ba67d64229",
+  "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/": "460669e762a36f05ae627618"
  },
- "last_attempt": "2026-11-24T18:50:39Z",
- "last_success": "2026-11-24T18:50:39Z",
+ "last_attempt": "2026-11-24T19:20:43Z",
+ "last_success": "2026-11-24T19:20:43Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 61
+ "items_total": 62
 }
