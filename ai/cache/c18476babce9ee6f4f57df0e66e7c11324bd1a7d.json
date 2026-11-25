@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Exchange Server",
+   "versions": "Microsoft Exchange Server 2013 Cumulative Update 23, Microsoft Exchange Server 2016 Cumulative Update 22, Microsoft Exchange Server 2016 Cumulative Update 23, Microsoft Exchange Server 2019 Cumulative Update 11, Microsoft Exchange Server 2019 Cumulative Update 12",
+   "fixed": null,
+   "evidence": "Microsoft Exchange Server Remote Code Execution Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Exchange Server: Remote Code Execution Vulnerability (CVE-2022-41082)",
+  "summary": "Microsoft Exchange Server contains a remote code execution vulnerability designated as CVE-2022-41082, which is reported to be exploited.",
+  "impact": "An attacker can achieve remote code execution. Vendor reports exploitation.",
+  "fix": "Apply update KB5019758 as available from the vendor.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Exchange Server installations for vulnerability and update status.",
+   "Verify if KB5019758 is applied."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Exchange Server: уязвимость удаленного выполнения кода (CVE-2022-41082)",
+  "summary": "В Microsoft Exchange Server обнаружена уязвимость удаленного выполнения кода CVE-2022-41082, для которой сообщается об эксплуатируемости.",
+  "impact": "Злоумышленник может выполнить удаленный код. Производитель сообщает об эксплуатации.",
+  "fix": "Установите обновление KB5019758, предоставленное производителем.",
+  "workaround": null,
+  "checks": [
+   "Проверьте установки Microsoft Exchange Server на наличие уязвимости и статус обновлений.",
+   "Убедитесь, что применено обновление KB5019758."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Exchange Server: Schwachstelle zur RCE (CVE-2022-41082)",
+  "summary": "Microsoft Exchange Server enthält eine Schwachstelle zur Remotecodeausführung (CVE-2022-41082), deren Ausnutzung gemeldet wurde.",
+  "impact": "Ein Angreifer kann Remotecode ausführen. Der Hersteller meldet eine Ausnutzung.",
+  "fix": "Wenden Sie das vom Hersteller bereitgestellte Update KB5019758 an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft Exchange Server-Installationen auf Schwachstellen und Update-Status.",
+   "Überprüfen Sie, ob KB5019758 angewendet wurde."
+  ],
+  "regression": null
+ }
+}

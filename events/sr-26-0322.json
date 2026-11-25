@@ -1,0 +1,111 @@
+{
+ "id": "sr-26-0322",
+ "category": "vulnerability",
+ "priority": "high",
+ "confirmation": "vendor",
+ "lifecycle": "fix-available",
+ "fix": "available",
+ "vendor": "Microsoft",
+ "products": [
+  "windows-10"
+ ],
+ "product_names": [
+  "Windows 10 Version 1607 for 32-bit Systems",
+  "Windows 10 Version 1607 for x64-based Systems",
+  "Windows 10 Version 1809 for 32-bit Systems",
+  "Windows 10 Version 1809 for ARM64-based Systems",
+  "Windows 10 Version 1809 for x64-based Systems",
+  "Windows 10 Version 20H2 for 32-bit Systems",
+  "Windows 10 Version 20H2 for ARM64-based Systems",
+  "Windows 10 Version 21H1 for 32-bit Systems",
+  "Windows 10 Version 21H1 for ARM64-based Systems",
+  "Windows 10 Version 21H1 for x64-based Systems",
+  "Windows 10 Version 21H2 for 32-bit Systems",
+  "Windows 10 Version 21H2 for ARM64-based Systems"
+ ],
+ "identifiers": {
+  "cve": [
+   "CVE-2022-34722"
+  ],
+  "advisory": [],
+  "kb": [
+   "KB5017305",
+   "KB5017308",
+   "KB5017315",
+   "KB5017316",
+   "KB5017327",
+   "KB5017328",
+   "KB5017358",
+   "KB5017361",
+   "KB5017365",
+   "KB5017367",
+   "KB5017370",
+   "KB5017371",
+   "KB5017373",
+   "KB5017377",
+   "KB5017392"
+  ]
+ },
+ "severity": "critical",
+ "cvss": {
+  "score": 9.8,
+  "version": "3.1",
+  "source": "Microsoft",
+  "vector": null
+ },
+ "exploited": false,
+ "kev": false,
+ "kev_added": null,
+ "ransomware": false,
+ "title_hint": "Windows Internet Key Exchange (IKE) Protocol Extensions Remote Code Execution Vulnerability",
+ "summary_hint": "Windows IKE Extension. Microsoft 2022-Sep security update.",
+ "created_at": "2026-11-25T08:20:38Z",
+ "updated_at": "2026-11-25T08:20:38Z",
+ "event_date": "2026-11-25T08:20:38Z",
+ "sources": [
+  {
+   "source_id": "msrc",
+   "item_key": "CVE-2022-34722",
+   "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-34722",
+   "title": "Windows Internet Key Exchange (IKE) Protocol Extensions Remote Code Execution Vulnerability",
+   "publisher": "Microsoft Security Response Center (CVRF API)",
+   "kind": "vendor",
+   "date": "2026-11-25"
+  }
+ ],
+ "revisions": [
+  {
+   "date": "2026-11-25T08:20:38Z",
+   "kind": "created",
+   "facts": {
+    "reason": "critical severity in infrastructure product"
+   },
+   "source": "msrc:CVE-2022-34722"
+  }
+ ],
+ "related": [
+  "sr-26-0320",
+  "sr-26-0321"
+ ],
+ "reason": "critical severity in infrastructure product",
+ "texts": {
+  "msrc:CVE-2022-34722": "Windows Internet Key Exchange (IKE) Protocol Extensions Remote Code Execution Vulnerability\nWindows IKE Extension. Microsoft 2022-Sep security update."
+ },
+ "publish_state": "pending",
+ "ai": {
+  "input_hash": null,
+  "texts": {},
+  "affected": [],
+  "workaround": false,
+  "model": null,
+  "prompt": null,
+  "generated_at": null,
+  "slugs": {},
+  "published_at": null,
+  "attempts": 0,
+  "failed_hash": null,
+  "last_error": null,
+  "next_try": null,
+  "calls": 0
+ }
+}

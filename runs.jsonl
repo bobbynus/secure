@@ -334,3 +334,4 @@
 {"generatedAt": "2026-11-25T06:50:46Z", "run": {"ok": 18, "error": 0}, "totals": {"items_new": 0, "events_created": 0, "events_updated": 0, "notifiable": 0}}
 {"generatedAt": "2026-11-25T07:20:42Z", "run": {"ok": 18, "error": 0}, "totals": {"items_new": 0, "events_created": 0, "events_updated": 0, "notifiable": 0}}
 {"generatedAt": "2026-11-25T07:50:42Z", "run": {"ok": 18, "error": 0}, "totals": {"items_new": 1, "events_created": 0, "events_updated": 0, "notifiable": 0}}
+{"generatedAt": "2026-11-25T08:20:38Z", "run": {"ok": 18, "error": 0}, "totals": {"items_new": 6037, "events_created": 14, "events_updated": 0, "notifiable": 14}}

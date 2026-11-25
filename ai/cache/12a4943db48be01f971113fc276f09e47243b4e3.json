@@ -1,0 +1,46 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Exchange Server",
+   "versions": "Microsoft Exchange Server 2013 Cumulative Update 23, Microsoft Exchange Server 2016 Cumulative Update 22, Microsoft Exchange Server 2016 Cumulative Update 23, Microsoft Exchange Server 2019 Cumulative Update 11, Microsoft Exchange Server 2019 Cumulative Update 12",
+   "fixed": null,
+   "evidence": "Microsoft Exchange Server Elevation of Privilege Vulnerability"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Exchange Server: Elevation of Privilege Vulnerability",
+  "summary": "An elevation of privilege vulnerability exists in Microsoft Exchange Server. Microsoft reports active exploitation.",
+  "impact": "Allows an attacker to elevate privileges. Exploitation is reported by the vendor.",
+  "fix": "Apply updates or fixes provided by Microsoft (KB5019758).",
+  "workaround": null,
+  "checks": [
+   "Inventory Microsoft Exchange Server instances.",
+   "Check systems for the installation of KB5019758."
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Exchange Server: уязвимость повышения привилегий",
+  "summary": "В Microsoft Exchange Server обнаружена уязвимость повышения привилегий. По заявлению вендора, зафиксирована эксплуатация.",
+  "impact": "Позволяет злоумышленнику повысить привилегии. Вендор сообщает об эксплуатации.",
+  "fix": "Установите обновления или исправления, предоставленные Microsoft (KB5019758).",
+  "workaround": null,
+  "checks": [
+   "Проведите инвентаризацию серверов Microsoft Exchange Server.",
+   "Проверьте системы на наличие установленного обновления KB5019758."
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Exchange Server: Schwachstelle zur Privilegienerweiterung",
+  "summary": "In Microsoft Exchange Server existiert eine Schwachstelle zur Privilegienerweiterung. Der Hersteller meldet Ausnutzung.",
+  "impact": "Ermöglicht einem Angreifer die Privilegienerweiterung. Eine Ausnutzung wird vom Hersteller gemeldet.",
+  "fix": "Wenden Sie die von Microsoft bereitgestellten Updates oder Fixes an (KB5019758).",
+  "workaround": null,
+  "checks": [
+   "Erfassen Sie alle Microsoft Exchange Server-Instanzen.",
+   "Überprüfen Sie Systeme auf die Installation von KB5019758."
+  ],
+  "regression": null
+ }
+}
