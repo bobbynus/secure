@@ -37,6 +37,14 @@
       "publisher": "CISA Known Exploited Vulnerabilities",
       "kind": "kev",
       "date": "2026-11-24"
+    },
+    {
+      "id": "s2",
+      "title": "Hackers now exploit critical Drupal RCE flaw to hijack sites",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
+      "publisher": "BleepingComputer",
+      "kind": "media",
+      "date": "2026-11-25"
     }
   ],
   "revisions": [
