@@ -32,7 +32,7 @@ if [ ! -f "$BASE/.env" ]; then cp "$APP/server/env.example" "$BASE/.env"; echo "
 chown $U:$U "$BASE/.env"; chmod 600 "$BASE/.env"
 
 say "Расписание (cron пользователя $U): сбор в :07 и :37"
-( crontab -u $U -l 2>/dev/null | grep -v 'server/collect.sh' ; echo "7,37 * * * * $APP/server/collect.sh" ) | crontab -u $U -
+( crontab -u $U -l 2>/dev/null | { grep -v 'server/collect.sh' || true; } ; echo "7,37 * * * * $APP/server/collect.sh" ) | crontab -u $U -
 crontab -u $U -l
 
 cat <<MSG
