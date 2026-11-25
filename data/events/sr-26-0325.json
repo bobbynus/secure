@@ -1,0 +1,107 @@
+{
+  "id": "sr-26-0325",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "exchange-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2022-41082"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5019758"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 8.0,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-25T08:20:38Z",
+    "published": "2026-11-25T08:21:05Z",
+    "updated": "2026-11-25T08:21:05Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-41082",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-25"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-25T08:21:05Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-25T08:21:05Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-uyazvimost-udalennogo-vypolneniya",
+      "title": "Microsoft Exchange Server: уязвимость удаленного выполнения кода (CVE-2022-41082)",
+      "summary": "В Microsoft Exchange Server обнаружена уязвимость удаленного выполнения кода CVE-2022-41082, для которой сообщается об эксплуатируемости.",
+      "impact": "Злоумышленник может выполнить удаленный код. Производитель сообщает об эксплуатации.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновление KB5019758, предоставленное производителем.",
+      "checks": [
+        "Проверьте установки Microsoft Exchange Server на наличие уязвимости и статус обновлений.",
+        "Убедитесь, что применено обновление KB5019758."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-schwachstelle-zur-rce-cve-2022-41082",
+      "title": "Microsoft Exchange Server: Schwachstelle zur RCE (CVE-2022-41082)",
+      "summary": "Microsoft Exchange Server enthält eine Schwachstelle zur Remotecodeausführung (CVE-2022-41082), deren Ausnutzung gemeldet wurde.",
+      "impact": "Ein Angreifer kann Remotecode ausführen. Der Hersteller meldet eine Ausnutzung.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie das vom Hersteller bereitgestellte Update KB5019758 an.",
+      "checks": [
+        "Überprüfen Sie Microsoft Exchange Server-Installationen auf Schwachstellen und Update-Status.",
+        "Überprüfen Sie, ob KB5019758 angewendet wurde."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-remote-code-execution-vulnerability",
+      "title": "Microsoft Exchange Server: Remote Code Execution Vulnerability (CVE-2022-41082)",
+      "summary": "Microsoft Exchange Server contains a remote code execution vulnerability designated as CVE-2022-41082, which is reported to be exploited.",
+      "impact": "An attacker can achieve remote code execution. Vendor reports exploitation.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply update KB5019758 as available from the vendor.",
+      "checks": [
+        "Check Microsoft Exchange Server installations for vulnerability and update status.",
+        "Verify if KB5019758 is applied."
+      ]
+    }
+  }
+}
