@@ -11,7 +11,8 @@ Project plan: [`secure-abramov-project-plan.md`](secure-abramov-project-plan.md)
 | `data/events/*.json` | Published events, one file per event (written by the pipeline; currently demo content) |
 | `data/products.json`, `data/sources.json` | Product catalog and source coverage catalog |
 | `.github/ISSUE_TEMPLATE/source-suggestion.yml` | "+ Source" form (MVP) |
-| `.github/workflows/deploy.yml` | Build + deploy to Cloudflare Workers static assets |
+| `server/` | **Production runtime on the owner's server `worker`**: collector every 30 min, deploy, alerts — see `server/README.md` |
+| `.github/workflows/deploy.yml` | Manual-only fallback deploy (the server deploys normally) |
 | `pipeline/` | Collector (stage 3, Python): adapters → items → dedup → events with revisions |
 | `worker/` | Cloudflare Worker for `/api/*`: stats, source suggestions → GitHub issues, Web Push (D1 `secure-db`) |
 | `worker/migrations/` | D1 schema migrations |

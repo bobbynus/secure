@@ -1,9 +1,8 @@
 name: Build and deploy
 
+# Обычно сайт деплоит сервер worker (server/deploy.sh), когда меняются события или код.
+# Отсюда — только вручную, в крайнем случае: события здесь старее, чем на сервере (см. server/README.md).
 on:
-  push:
-    branches: [main]
-    paths: ["site/**", "data/**", "worker/**", "wrangler.jsonc", "package.json", "package-lock.json", ".github/workflows/deploy.yml"]
   workflow_dispatch:
 
 permissions:
@@ -53,18 +52,6 @@ jobs:
       - name: Deploy to Cloudflare Workers
         if: ${{ env.CLOUDFLARE_API_TOKEN != '' }}
         run: npx wrangler deploy
-
-      - name: Sync Worker secrets kept in GitHub
-        if: ${{ env.CLOUDFLARE_API_TOKEN != '' }}
-        env:
-          COLLECT_TOKEN: ${{ secrets.COLLECT_TOKEN }}
-        run: |
-          # The value goes through stdin only; it is masked in logs and never written to disk.
-          if [ -n "$COLLECT_TOKEN" ]; then
-            printf '%s' "$COLLECT_TOKEN" | npx wrangler secret put COLLECT_TOKEN
-          else
-            echo "COLLECT_TOKEN not set, fallback scheduler stays off"
-          fi
 
       - name: Verify published URLs
         if: ${{ env.CLOUDFLARE_API_TOKEN != '' }}
