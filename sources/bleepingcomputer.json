@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "8a842ea3da3bb67ae92ab2d3ad83b96e",
- "last_modified": "Wed, 25 Nov 2026 10:13:23 GMT",
- "checksum": "5b459210c8b066fa0c890ff8d25b3ead951ca5f26d75d6c28eba0a3e39b8c090",
+ "etag": "241fdfa3f0d9de2420ba19541d22aeaf",
+ "last_modified": "Wed, 25 Nov 2026 10:43:27 GMT",
+ "checksum": "6a5f4fa76d8bc6380415e5d762fe1c64f77fde9c3d2755b21494d3cf028a23ad",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -71,8 +71,8 @@
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/": "f383a247d157ea6d3f278d29",
   "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/": "76a5e909d27e25bb864852f4"
  },
- "last_attempt": "2026-11-25T10:20:42Z",
- "last_success": "2026-11-25T10:20:42Z",
+ "last_attempt": "2026-11-25T10:50:39Z",
+ "last_success": "2026-11-25T10:50:39Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
