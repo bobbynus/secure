@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "2ab2bbed0092dfe0c99d00adc951dfd6",
- "last_modified": "Wed, 25 Nov 2026 08:15:10 GMT",
- "checksum": "90e4402fd9d1ff56e391f0d924a53aa0dabe50a77ff85fc198938da034b8f05f",
+ "etag": "0006c08f45a1c3f61a6c04e1de91aafd",
+ "last_modified": "Wed, 25 Nov 2026 08:45:35 GMT",
+ "checksum": "b942640d6d3594171f6d08c660528d5f5bbc099dcf6bc8d861fe5442939e1a33",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -69,8 +69,8 @@
   "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/": "f13764855bd990f0e389da7f",
   "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/": "f56db0b72944a526019d15f1"
  },
- "last_attempt": "2026-11-25T08:20:38Z",
- "last_success": "2026-11-25T08:20:38Z",
+ "last_attempt": "2026-11-25T08:50:40Z",
+ "last_success": "2026-11-25T08:50:40Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
