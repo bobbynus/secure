@@ -36,8 +36,8 @@
   "https://security.paloaltonetworks.com/PAN-SA-2026-0015": "e194dc6729d669165e15dcc4",
   "https://security.paloaltonetworks.com/PAN-SA-2026-0005": "671259bcaa6f77e7491b411b"
  },
- "last_attempt": "2026-11-25T02:20:42Z",
- "last_success": "2026-11-25T02:20:42Z",
+ "last_attempt": "2026-11-25T03:20:51Z",
+ "last_success": "2026-11-25T03:20:51Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
