@@ -410,12 +410,21 @@
   "CVE-2026-134347": "89786c6ea7044ed806c11996",
   "CVE-2026-129975": "47c6ebbb6b5d71b14b8bbb1d",
   "CVE-2026-135736": "e6cded286b4cc1400e972270",
-  "CVE-2026-135743": "e4a37f1d27b2485a8f45d9e3"
+  "CVE-2026-135743": "e4a37f1d27b2485a8f45d9e3",
+  "CVE-2026-116225": "830b78851d339c8089c7ebf3",
+  "CVE-2026-116382": "5a31f96a90a555b81f691366",
+  "CVE-2026-136156": "94aa304b273ab4c95f2c6df7",
+  "CVE-2026-136157": "3deccf3b69a031f65421f64d",
+  "CVE-2026-136155": "8115926de8254c3c4baaa169",
+  "CVE-2026-130822": "f3059a92240aead36611c7b7",
+  "CVE-2026-134401": "a857763fb8b106b9708681dd",
+  "CVE-2026-136328": "2e518816295494d3ff7d51f7",
+  "CVE-2026-136329": "6d92474d95003a1683ca8aed"
  },
- "last_attempt": "2026-11-24T23:50:40Z",
- "last_success": "2026-11-24T23:50:40Z",
+ "last_attempt": "2026-11-25T00:50:41Z",
+ "last_success": "2026-11-25T00:50:41Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
- "items_total": 506
+ "items_total": 515
 }
