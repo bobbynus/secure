@@ -8,8 +8,8 @@
   "docker-engine-29.9.3": "b87c780ba4f5eff5267a59e1",
   "docker-engine-29.10.1": "74227159d8a9cfcbd8b143dd"
  },
- "last_attempt": "2026-11-24T23:20:46Z",
- "last_success": "2026-11-24T23:20:46Z",
+ "last_attempt": "2026-11-25T05:20:55Z",
+ "last_success": "2026-11-25T05:20:55Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
