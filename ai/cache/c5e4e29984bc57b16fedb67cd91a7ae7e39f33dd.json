@@ -1,0 +1,52 @@
+{
+ "affected": [
+  {
+   "product": "Microsoft Exchange Server 2016",
+   "versions": "Cumulative Update 23",
+   "fixed": "KB5035606",
+   "evidence": "Microsoft Exchange Server 2016 Cumulative Update 23"
+  },
+  {
+   "product": "Microsoft Exchange Server 2019",
+   "versions": "Cumulative Update 13, Cumulative Update 14",
+   "fixed": "KB5036386",
+   "evidence": "Microsoft Exchange Server 2019 Cumulative Update 13"
+  }
+ ],
+ "en": {
+  "title": "Microsoft Exchange Server: Elevation of Privilege Vulnerability (CVE-2024-21410)",
+  "summary": "An elevation of privilege vulnerability (CVE-2024-21410) affects Microsoft Exchange Server. Vendor reports exploitation.",
+  "impact": "Allows an attacker to elevate privileges.",
+  "fix": "Apply updates KB5035606 or KB5036386.",
+  "workaround": null,
+  "checks": [
+   "Check Microsoft Exchange Server versions and cumulative updates",
+   "Verify installation of update KB5035606 or KB5036386"
+  ],
+  "regression": null
+ },
+ "ru": {
+  "title": "Microsoft Exchange Server: уязвимость повышения привилегий (CVE-2024-21410)",
+  "summary": "Уязвимость повышения привилегий (CVE-2024-21410) затрагивает Microsoft Exchange Server. Вендор сообщает об эксплуатации.",
+  "impact": "Позволяет злоумышленнику повысить привилегии.",
+  "fix": "Установите обновления KB5035606 или KB5036386.",
+  "workaround": null,
+  "checks": [
+   "Проверьте версии и кумулятивные обновления Microsoft Exchange Server",
+   "Убедитесь в установке обновления KB5035606 или KB5036386"
+  ],
+  "regression": null
+ },
+ "de": {
+  "title": "Microsoft Exchange Server: Schwachstelle zur Privilegienerweiterung (CVE-2024-21410)",
+  "summary": "Eine Schwachstelle zur Privilegienerweiterung (CVE-2024-21410) betrifft Microsoft Exchange Server. Der Hersteller meldet Ausnutzung.",
+  "impact": "Ermöglicht einem Angreifer die Erweiterung von Privilegien.",
+  "fix": "Wenden Sie die Updates KB5035606 oder KB5036386 an.",
+  "workaround": null,
+  "checks": [
+   "Überprüfen Sie Microsoft Exchange Server Versionen und kumulative Updates",
+   "Überprüfen Sie die Installation des Updates KB5035606 oder KB5036386"
+  ],
+  "regression": null
+ }
+}

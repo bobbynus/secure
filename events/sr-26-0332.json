@@ -66,21 +66,62 @@
  "texts": {
   "msrc:CVE-2024-21410": "Microsoft Exchange Server Elevation of Privilege Vulnerability\nMicrosoft Exchange Server. Microsoft 2024-Feb security update."
  },
- "publish_state": "pending",
+ "publish_state": "published",
  "ai": {
-  "input_hash": null,
-  "texts": {},
+  "input_hash": "7dff8eb2f150a9cee6d6f6db",
+  "texts": {
+   "en": {
+    "title": "Microsoft Exchange Server: Elevation of Privilege Vulnerability (CVE-2024-21410)",
+    "summary": "An elevation of privilege vulnerability (CVE-2024-21410) affects Microsoft Exchange Server. Vendor reports exploitation.",
+    "impact": "Allows an attacker to elevate privileges.",
+    "fix": "Apply updates KB5035606 or KB5036386.",
+    "workaround": null,
+    "checks": [
+     "Check Microsoft Exchange Server versions and cumulative updates",
+     "Verify installation of update KB5035606 or KB5036386"
+    ],
+    "regression": null
+   },
+   "ru": {
+    "title": "Microsoft Exchange Server: уязвимость повышения привилегий (CVE-2024-21410)",
+    "summary": "Уязвимость повышения привилегий (CVE-2024-21410) затрагивает Microsoft Exchange Server. Вендор сообщает об эксплуатации.",
+    "impact": "Позволяет злоумышленнику повысить привилегии.",
+    "fix": "Установите обновления KB5035606 или KB5036386.",
+    "workaround": null,
+    "checks": [
+     "Проверьте версии и кумулятивные обновления Microsoft Exchange Server",
+     "Убедитесь в установке обновления KB5035606 или KB5036386"
+    ],
+    "regression": null
+   },
+   "de": {
+    "title": "Microsoft Exchange Server: Schwachstelle zur Privilegienerweiterung (CVE-2024-21410)",
+    "summary": "Eine Schwachstelle zur Privilegienerweiterung (CVE-2024-21410) betrifft Microsoft Exchange Server. Der Hersteller meldet Ausnutzung.",
+    "impact": "Ermöglicht einem Angreifer die Erweiterung von Privilegien.",
+    "fix": "Wenden Sie die Updates KB5035606 oder KB5036386 an.",
+    "workaround": null,
+    "checks": [
+     "Überprüfen Sie Microsoft Exchange Server Versionen und kumulative Updates",
+     "Überprüfen Sie die Installation des Updates KB5035606 oder KB5036386"
+    ],
+    "regression": null
+   }
+  },
   "affected": [],
   "workaround": false,
-  "model": null,
-  "prompt": null,
-  "generated_at": null,
-  "slugs": {},
-  "published_at": null,
+  "model": "gemini-3.5-flash-lite",
+  "prompt": "p3",
+  "generated_at": "2026-11-25T09:20:47Z",
+  "slugs": {
+   "ru": "microsoft-exchange-server-uyazvimost-povysheniya-privilegiy-cve",
+   "de": "microsoft-exchange-server-schwachstelle-zur",
+   "en": "microsoft-exchange-server-elevation-of-privilege-vulnerability"
+  },
+  "published_at": "2026-11-25T09:20:47Z",
   "attempts": 0,
   "failed_hash": null,
   "last_error": null,
   "next_try": null,
-  "calls": 0
+  "calls": 1
  }
 }
