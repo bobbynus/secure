@@ -1,0 +1,116 @@
+{
+  "id": "sr-26-0320",
+  "category": "vulnerability",
+  "priority": "high",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "none-known",
+    "kev": false,
+    "evidence": []
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "windows-10"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2022-34718"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5017305",
+      "KB5017308",
+      "KB5017315",
+      "KB5017316",
+      "KB5017327",
+      "KB5017328",
+      "KB5017358",
+      "KB5017361",
+      "KB5017365",
+      "KB5017367",
+      "KB5017370",
+      "KB5017371",
+      "KB5017373",
+      "KB5017377",
+      "KB5017392"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-25T08:20:38Z",
+    "published": "2026-11-25T09:20:47Z",
+    "updated": "2026-11-25T09:20:47Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Windows TCP/IP Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-34718",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-25"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-25T09:20:47Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-25T09:20:47Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-windows-uyazvimost-udalennogo-vypolneniya-koda-v-tcp",
+      "title": "Microsoft Windows: Уязвимость удаленного выполнения кода в TCP/IP (CVE-2022-34718)",
+      "summary": "В Windows TCP/IP обнаружена критическая уязвимость удаленного выполнения кода, для которой Microsoft выпустила обновление безопасности за сентябрь 2022 г.",
+      "impact": "Злоумышленник может удаленно выполнить произвольный код. Конкретные предварительные условия в источниках не указаны.",
+      "exploitation": "В использованных источниках нет сведений об эксплуатации.",
+      "fix": "Установите обновления, указанные в KB5017305, KB5017308, KB5017315, KB5017316, KB5017327, KB5017328, KB5017358, KB5017361, KB5017365, KB5017367, KB5017370, KB5017371, KB5017373, KB5017377 или KB5017392.",
+      "checks": [
+        "Проверьте, установлены ли на системах Windows 10 обновления безопасности за сентябрь 2022 г."
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-windows-remotecodeausfuehrung-in-tcp-ip-cve-2022-34718",
+      "title": "Microsoft Windows: Remotecodeausführung in TCP/IP (CVE-2022-34718)",
+      "summary": "In Windows TCP/IP existiert eine kritische Schwachstelle zur Remotecodeausführung, die von Microsoft im Sicherheitsupdate vom September 2022 behoben wurde.",
+      "impact": "Ein Angreifer kann beliebigen Code aus der Ferne ausführen. Genaue Vorbedingungen werden in den Quellen nicht genannt.",
+      "exploitation": "Die ausgewerteten Quellen enthalten keine Hinweise auf Ausnutzung.",
+      "fix": "Wenden Sie die Updates an, die in KB5017305, KB5017308, KB5017315, KB5017316, KB5017327, KB5017328, KB5017358, KB5017361, KB5017365, KB5017367, KB5017370, KB5017371, KB5017373, KB5017377 oder KB5017392 referenziert sind.",
+      "checks": [
+        "Überprüfen Sie, ob auf Windows 10-Systemen das Sicherheitsupdate vom September 2022 fehlt."
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-windows-tcp-ip-remote-code-execution-vulnerability",
+      "title": "Microsoft Windows: TCP/IP Remote Code Execution Vulnerability (CVE-2022-34718)",
+      "summary": "A critical remote code execution vulnerability exists in Windows TCP/IP, addressed by Microsoft in the 2022-Sep security update.",
+      "impact": "An attacker can execute arbitrary code remotely. Specific preconditions are not detailed in the source texts.",
+      "exploitation": "The sources reviewed contain no reports of exploitation.",
+      "fix": "Apply the updates referenced by KB5017305, KB5017308, KB5017315, KB5017316, KB5017327, KB5017328, KB5017358, KB5017361, KB5017365, KB5017367, KB5017370, KB5017371, KB5017373, KB5017377, or KB5017392.",
+      "checks": [
+        "Verify whether Windows 10 systems are missing the 2022-Sep security update."
+      ]
+    }
+  }
+}

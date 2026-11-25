@@ -1,0 +1,108 @@
+{
+  "id": "sr-26-0332",
+  "category": "vulnerability",
+  "priority": "critical",
+  "confirmation": "vendor",
+  "lifecycle": "fix-available",
+  "fix": "available",
+  "workaround": false,
+  "exploitation": {
+    "status": "confirmed",
+    "kev": false,
+    "evidence": [
+      "s1"
+    ]
+  },
+  "vendor": "Microsoft",
+  "products": [
+    "exchange-server"
+  ],
+  "identifiers": {
+    "cve": [
+      "CVE-2024-21410"
+    ],
+    "advisory": [],
+    "kb": [
+      "KB5035606",
+      "KB5036386"
+    ]
+  },
+  "affected": [],
+  "cvss": {
+    "score": 9.8,
+    "version": "3.1",
+    "source": "Microsoft"
+  },
+  "dates": {
+    "event": "2026-11-25T08:20:38Z",
+    "published": "2026-11-25T09:20:47Z",
+    "updated": "2026-11-25T09:20:47Z"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-21410",
+      "publisher": "Microsoft Security Response Center (CVRF API)",
+      "kind": "vendor",
+      "date": "2026-11-25"
+    }
+  ],
+  "revisions": [
+    {
+      "date": "2026-11-25T09:20:47Z",
+      "kind": "created",
+      "note": {
+        "ru": "Первая публикация.",
+        "de": "Erstveröffentlichung.",
+        "en": "First published."
+      }
+    }
+  ],
+  "generated": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "p3",
+    "at": "2026-11-25T09:20:47Z"
+  },
+  "translations": {
+    "ru": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-uyazvimost-povysheniya-privilegiy-cve",
+      "title": "Microsoft Exchange Server: уязвимость повышения привилегий (CVE-2024-21410)",
+      "summary": "Уязвимость повышения привилегий (CVE-2024-21410) затрагивает Microsoft Exchange Server. Вендор сообщает об эксплуатации.",
+      "impact": "Позволяет злоумышленнику повысить привилегии.",
+      "exploitation": "Производитель сообщает о случаях эксплуатации.",
+      "fix": "Установите обновления KB5035606 или KB5036386.",
+      "checks": [
+        "Проверьте версии и кумулятивные обновления Microsoft Exchange Server",
+        "Убедитесь в установке обновления KB5035606 или KB5036386"
+      ]
+    },
+    "de": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-schwachstelle-zur",
+      "title": "Microsoft Exchange Server: Schwachstelle zur Privilegienerweiterung (CVE-2024-21410)",
+      "summary": "Eine Schwachstelle zur Privilegienerweiterung (CVE-2024-21410) betrifft Microsoft Exchange Server. Der Hersteller meldet Ausnutzung.",
+      "impact": "Ermöglicht einem Angreifer die Erweiterung von Privilegien.",
+      "exploitation": "Der Hersteller berichtet von Ausnutzung.",
+      "fix": "Wenden Sie die Updates KB5035606 oder KB5036386 an.",
+      "checks": [
+        "Überprüfen Sie Microsoft Exchange Server Versionen und kumulative Updates",
+        "Überprüfen Sie die Installation des Updates KB5035606 oder KB5036386"
+      ]
+    },
+    "en": {
+      "status": "ready",
+      "slug": "microsoft-exchange-server-elevation-of-privilege-vulnerability",
+      "title": "Microsoft Exchange Server: Elevation of Privilege Vulnerability (CVE-2024-21410)",
+      "summary": "An elevation of privilege vulnerability (CVE-2024-21410) affects Microsoft Exchange Server. Vendor reports exploitation.",
+      "impact": "Allows an attacker to elevate privileges.",
+      "exploitation": "The vendor reports exploitation.",
+      "fix": "Apply updates KB5035606 or KB5036386.",
+      "checks": [
+        "Check Microsoft Exchange Server versions and cumulative updates",
+        "Verify installation of update KB5035606 or KB5036386"
+      ]
+    }
+  }
+}
