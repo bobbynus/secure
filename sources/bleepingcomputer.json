@@ -1,8 +1,8 @@
 {
  "id": "bleepingcomputer",
- "etag": "a3bffe28830c6e2837cfe6194f700772",
- "last_modified": "Wed, 25 Nov 2026 03:47:41 GMT",
- "checksum": "e076262b223a4e8defaa41aca44aefa8e3dcd31d136c817f846902bf0884a094",
+ "etag": "8db255f747dcbb2a7f4ce02428f70ed8",
+ "last_modified": "Wed, 25 Nov 2026 04:17:42 GMT",
+ "checksum": "9189d6a0cfb5dc0e601a9efd3555a32e53abb81c5b30439b506bbb738eca2414",
  "cursor": {},
  "seen": {
   "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/": "1f1756ff85b943ce97360db8",
@@ -68,8 +68,8 @@
   "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/": "f3d72d283c87dc875725612e",
   "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/": "f13764855bd990f0e389da7f"
  },
- "last_attempt": "2026-11-25T03:50:42Z",
- "last_success": "2026-11-25T03:50:42Z",
+ "last_attempt": "2026-11-25T04:20:39Z",
+ "last_success": "2026-11-25T04:20:39Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
