@@ -60,8 +60,8 @@
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s": "c485aa286f7e0c528c3cc376",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-phpaftershell-nov-2026-kT9pL4Xe": "7cbd25c1f4ad5eabc5ce8b77"
  },
- "last_attempt": "2026-11-25T00:50:41Z",
- "last_success": "2026-11-25T00:50:41Z",
+ "last_attempt": "2026-11-25T01:50:43Z",
+ "last_success": "2026-11-25T01:50:43Z",
  "last_error": null,
  "consecutive_failures": 0,
  "bootstrapped": true,
